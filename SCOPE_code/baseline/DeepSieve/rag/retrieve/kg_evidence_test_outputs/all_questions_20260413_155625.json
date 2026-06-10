@@ -1,0 +1,58 @@
+[
+  {
+    "question": "Who is the player who received the North Carolina Sports Hall of Fame induction in 1998?",
+    "program": {
+      "question": "Who is the player who received the North Carolina Sports Hall of Fame induction in 1998?",
+      "backend": "mmqa_local_kg",
+      "api_url": "http://127.0.0.1:8002/query",
+      "entities": [
+        "North Carolina Sports Hall of Fame induction 1998"
+      ],
+      "relation_text": "player who received",
+      "relation_targets": [
+        {
+          "head": "North Carolina Sports Hall of Fame induction 1998",
+          "predicate": "received by",
+          "tail": "player"
+        }
+      ],
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "parser": "llm"
+    },
+    "answer": "",
+    "inner_content": [
+      {
+        "content": []
+      }
+    ],
+    "evidence_count": 1,
+    "evidence": [
+      {
+        "label": "North Carolina Sports Hall of Fame",
+        "qid": "Q41628143",
+        "meta": {},
+        "head_entity": "North Carolina Sports Hall of Fame",
+        "head_qid": "Q41628143",
+        "relation": "",
+        "direction": "self",
+        "parser": "llm",
+        "evidence_source": "entity_only_no_relation_match",
+        "head_entity_snapshot": {
+          "qid": "Q41628143",
+          "label": "North Carolina Sports Hall of Fame",
+          "types": [
+            "award"
+          ],
+          "attrs": {}
+        },
+        "tail_entity_snapshot": {},
+        "similarity_score": 60.6557
+      }
+    ],
+    "unresolved": []
+  }
+]

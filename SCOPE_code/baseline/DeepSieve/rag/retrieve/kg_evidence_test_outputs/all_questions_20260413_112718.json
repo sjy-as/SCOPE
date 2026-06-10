@@ -1,0 +1,79 @@
+[
+  {
+    "question": "Who was the coach of L.A. Lakers in the 1968-69 season?",
+    "program": {
+      "question": "Who was the coach of L.A. Lakers in the 1968-69 season?",
+      "backend": "mmqa_local_kg",
+      "api_url": "http://127.0.0.1:8002/query",
+      "entities": [
+        "L.A. Lakers"
+      ],
+      "relation_text": "coach of",
+      "relation_targets": [
+        {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        }
+      ],
+      "relation_target": {
+        "head": "L.A. Lakers",
+        "predicate": "coachedBy",
+        "tail": "coach"
+      },
+      "parser": "llm"
+    },
+    "answer": "",
+    "inner_content": [
+      {
+        "content": []
+      }
+    ],
+    "evidence_count": 2,
+    "evidence": [
+      {
+        "label": "Champion des champions français de L'Équipe",
+        "qid": "Q99526970",
+        "meta": {},
+        "head_entity": "Champion des champions français de L'Équipe",
+        "head_qid": "Q99526970",
+        "relation": "",
+        "direction": "self",
+        "parser": "llm",
+        "evidence_source": "entity_only_no_relation_match",
+        "head_entity_snapshot": {
+          "qid": "Q99526970",
+          "label": "Champion des champions français de L'Équipe",
+          "types": [
+            "award"
+          ],
+          "attrs": {}
+        },
+        "tail_entity_snapshot": {},
+        "similarity_score": 23.5294
+      },
+      {
+        "label": "Esportista català de l'any",
+        "qid": "Q28710767",
+        "meta": {},
+        "head_entity": "Esportista català de l'any",
+        "head_qid": "Q28710767",
+        "relation": "",
+        "direction": "self",
+        "parser": "llm",
+        "evidence_source": "entity_only_no_relation_match",
+        "head_entity_snapshot": {
+          "qid": "Q28710767",
+          "label": "Esportista català de l'any",
+          "types": [
+            "award"
+          ],
+          "attrs": {}
+        },
+        "tail_entity_snapshot": {},
+        "similarity_score": 23.5294
+      }
+    ],
+    "unresolved": []
+  }
+]

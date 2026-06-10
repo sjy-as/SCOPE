@@ -1,0 +1,45 @@
+{
+  "dataset_name": "mmqa",
+  "index": 1,
+  "question": "How did the team John Havlicek played for perform in the 1962-63 NBA Finals?",
+  "gold": [
+    "won the series 4-2"
+  ],
+  "reasoning_tree": {
+    "How did the team John Havlicek played for perform in the 1962-63 NBA Finals?": [
+      "1. Which team did John Havlicek play for?",
+      "2. How did [1] perform in the 1962-63 NBA Finals?"
+    ],
+    "1. Which team did John Havlicek play for?": [
+      "3. Who is John Havlicek?",
+      "4. Which team did [3] play for?"
+    ],
+    "3. Who is John Havlicek?": "Search(\"John Havlicek\")",
+    "4. Which team did [3] play for?": "Relate([3], \"team played for\")",
+    "2. How did [1] perform in the 1962-63 NBA Finals?": "Relate([1], \"1962-63 NBA Finals performance\")"
+  },
+  "postorder_q_list": [
+    {
+      "3. Who is John Havlicek?": "Search(\"John Havlicek\")"
+    },
+    {
+      "4. Which team did [3] play for?": "Relate([3], \"team played for\")"
+    },
+    {
+      "1. Which team did John Havlicek play for?": [
+        "3. Who is John Havlicek?",
+        "4. Which team did [3] play for?"
+      ]
+    },
+    {
+      "2. How did [1] perform in the 1962-63 NBA Finals?": "Relate([1], \"1962-63 NBA Finals performance\")"
+    },
+    {
+      "How did the team John Havlicek played for perform in the 1962-63 NBA Finals?": [
+        "1. Which team did John Havlicek play for?",
+        "2. How did [1] perform in the 1962-63 NBA Finals?"
+      ]
+    }
+  ],
+  "predicted": "Won, 4-2, Los Angeles Lakers"
+}

@@ -1,0 +1,54 @@
+{
+  "dataset_name": "mmqa",
+  "index": 0,
+  "question": "In the 1947 BAA Draft, which teams did the players selected by the Toronto Huskies later play for?",
+  "gold": [
+    "Sheboygan Red Skins",
+    "New York Knicks",
+    "Baltimore Bullets",
+    "Detroit Pistons"
+  ],
+  "reasoning_tree": {
+    "In the 1947 BAA Draft, which teams did the players selected by the Toronto Huskies later play for?": [
+      "1. What is the 1947 BAA Draft?",
+      "2. Who were the players selected by the Toronto Huskies in the 1947 BAA Draft?",
+      "3. For each player in [2], which teams did they later play for?"
+    ],
+    "1. What is the 1947 BAA Draft?": "Search(\"1947 BAA Draft\")",
+    "2. Who were the players selected by the Toronto Huskies in the 1947 BAA Draft?": "Relate([1], \"players selected by Toronto Huskies\")",
+    "3. For each player in [2], which teams did they later play for?": [
+      "4. For each player in [2], what teams did they play for?",
+      "5. Among [4], which teams did they play for after being selected by the Toronto Huskies in the 1947 BAA Draft?"
+    ],
+    "4. For each player in [2], what teams did they play for?": "Relate([2], \"teams played for\")",
+    "5. Among [4], which teams did they play for after being selected by the Toronto Huskies in the 1947 BAA Draft?": "Given answers of [2] and [4], filter out teams played for after the 1947 BAA Draft selection."
+  },
+  "postorder_q_list": [
+    {
+      "1. What is the 1947 BAA Draft?": "Search(\"1947 BAA Draft\")"
+    },
+    {
+      "2. Who were the players selected by the Toronto Huskies in the 1947 BAA Draft?": "Relate([1], \"players selected by Toronto Huskies\")"
+    },
+    {
+      "4. For each player in [2], what teams did they play for?": "Relate([2], \"teams played for\")"
+    },
+    {
+      "5. Among [4], which teams did they play for after being selected by the Toronto Huskies in the 1947 BAA Draft?": "Given answers of [2] and [4], filter out teams played for after the 1947 BAA Draft selection."
+    },
+    {
+      "3. For each player in [2], which teams did they later play for?": [
+        "4. For each player in [2], what teams did they play for?",
+        "5. Among [4], which teams did they play for after being selected by the Toronto Huskies in the 1947 BAA Draft?"
+      ]
+    },
+    {
+      "In the 1947 BAA Draft, which teams did the players selected by the Toronto Huskies later play for?": [
+        "1. What is the 1947 BAA Draft?",
+        "2. Who were the players selected by the Toronto Huskies in the 1947 BAA Draft?",
+        "3. For each player in [2], which teams did they later play for?"
+      ]
+    }
+  ],
+  "predicted": "Boston Celtics, Baltimore Bullets, New York Knicks, St. Louis Bombers, Syracuse Nationals, Detroit Pistons"
+}

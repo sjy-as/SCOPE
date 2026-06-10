@@ -1,0 +1,837 @@
+{
+  "award_received": {
+    "concept": "award_received",
+    "overall_description": "An award received is a formal recognition or honor bestowed upon an individual or entity, typically for an achievement or performance within a specific domain or time period.",
+    "sources": {
+      "KG": {
+        "description": "This source records the fact that a specific player received a particular award in a given year, using structured relationships between entity identifiers for the recipient and the award, along with a temporal attribute.",
+        "elements": [
+          "player",
+          "award",
+          "time"
+        ],
+        "data_examples": [
+          "player: Q1463357, award: Q7945958, time: 2005",
+          "player: Q2557724, award: Q4904894, time: 2005",
+          "player: Q930865, award: Q918054, time: 2013"
+        ]
+      },
+      "Table": {
+        "description": "This source documents award recipients within specific sports award contexts, detailing the season, the player's name, their affiliated school, playing position, and academic class at the time of receiving the honor.",
+        "elements": [
+          "Season",
+          "Player",
+          "School",
+          "Position",
+          "Class"
+        ],
+        "data_examples": [
+          "page_title: Adolph Rupp Trophy, section_title: Winners, header: [Season, Player, School, Position, Class], sample_row: [1971–72, Bill Walton Category:Articles with hCards, UCLA, Center, Sophomore]",
+          "page_title: John R. Wooden Award, section_title: Player of the Year Award winners, header: [Season, Player, School, Position, Class], sample_row: [2003–04, Alana Beard Category:Articles with hCards, Duke, Guard, Senior]",
+          "page_title: NABC Player of the Year, section_title: State Farm Junior College Player of the Year, header: [Season, Player, Junior college, State, Position, Class, University], sample_row: [2007–08, Jeremie Simmons Category:Articles with hCards, Mott CC, Michigan, Guard, Sophomore, Ohio State]"
+        ]
+      }
+    }
+  },
+  "broadcast_assignment": {
+    "concept": "broadcast_assignment",
+    "overall_description": "A contractual or scheduled arrangement designating a specific broadcaster or network to air a sports team's games, typically specifying the involved media outlets and on-air personnel.",
+    "sources": {
+      "Table": {
+        "description": "This source details broadcast assignments by year, listing the flagship station or channel and the specific personnel roles such as play-by-play announcers, color commentators, and studio hosts for a team's game coverage.",
+        "elements": [
+          "Year",
+          "Flagship Station",
+          "Play-by-play",
+          "Color commentator(s)",
+          "Studio host"
+        ],
+        "data_examples": [
+          "page_title: List of Boston Celtics broadcasters, section_title: 1990s, header: [Year, Flagship Station, Play-by-play, Color commentator(s), Studio host], sample_row: [1999-2000, WEEI, Howard David, Cedric Maxwell, Ted Sarandis]",
+          "page_title: List of Boston Celtics broadcasters, section_title: 2000s, header: [Year, Flagship Station, Play-by-play, Color commentator(s), Studio host], sample_row: [2009-10, WEEI, Sean Grande, Cedric Maxwell, John Ryder]",
+          "page_title: List of Boston Celtics broadcasters, section_title: 2000s, header: [Year, Channel, Play-by-play, Color commentator(s), Courtside reporter, Studio host, Studio analysts], sample_row: [2009-10, Comcast SportsNet New England, Mike Gorman, Tom Heinsohn or Donny Marshall (Select Road Games), Greg Dickerson, Gary Tanguay, Donny Marshall or Tom Heinsohn (Select road games)]"
+        ]
+      }
+    }
+  },
+  "competition": {
+    "concept": "competition",
+    "overall_description": "A structured contest or event where individuals, teams, or entities vie against each other according to defined rules, typically to determine a winner or establish rankings.",
+    "sources": {
+      "Table": {
+        "description": "Competitions are represented as structured events with tabular records detailing participant rankings, attributes, and match outcomes, such as the Slam Dunk Contest listing players by position and team or tennis tournaments showing match dates and scores.",
+        "elements": [
+          "Pos.",
+          "Player",
+          "Team",
+          "Height",
+          "Weight"
+        ],
+        "data_examples": [
+          "page_title: 2000 NBA All-Star Game, section_title: Slam Dunk Contest, header: [Pos., Player, Team, Height, Weight], sample_row: [G/F, Vince Carter, Toronto Raptors, 6–6, 220]",
+          "page_title: 2001 NBA All-Star Game, section_title: Slam Dunk Contest, header: [Pos., Player, Team, Height, Weight], sample_row: [G/F, Desmond Mason, Seattle SuperSonics, 6–5, 222]",
+          "page_title: Mario Ančić, section_title: Singles, header: [Date, Tournament, Surface, Opponent in the final, Score], sample_row: [21 February 2000, Zagreb, Croatia, Clay, Ivo Karlović, 7–6(14), 6–4]"
+        ]
+      },
+      "Doc": {
+        "description": "Competitions are described in free text as organized events with specific dates, locations, and participants, often highlighting awards or honors bestowed based on performance, such as the NBA All-Star Game or seasonal player selections like the All-NBA Team.",
+        "elements": [
+          "event",
+          "date",
+          "location",
+          "participants",
+          "result",
+          "award"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"49908604\", \"title\": \"2018 NBA All-Star Game\", \"section_title\": \"\", \"text\": \"2018 NBA All-Star Game 2018 NBA All-Star Game  The 2018 NBA All-Star Game was the 67th edition of an exhibition basketball game that was played on February 18, 2018. It was held at Staples Center in Los Angeles, California, home of the Los Angeles Lakers and Los Angeles Clippers. It was the sixth time that Los Angeles had hosted the All-Star Game and the first time since 2011. Team LeBron won against Team Stephen 148–145. The MVP of the game was LeBron James, scoring 29 points, 10 rebounds, 8 as\"}",
+          "{\"doc_id\": \"9000355\", \"title\": \"All-NBA Team\", \"section_title\": \"\", \"text\": \"All-NBA Team All-NBA Team  The All-NBA Team is an annual National Basketball Association  (NBA) honor bestowed on the best players in the league following every NBA season. The voting is conducted by a panel of sportswriters and broadcasters throughout the United States and Canada. The team has been selected in every season of the league's existence, dating back to its inaugural season in 1946. The All-NBA Team originally had two teams, but since 1988 it is typically composed of three five-man l\"}",
+          "{\"doc_id\": \"14580166\", \"title\": \"All-Pro\", \"section_title\": \"\", \"text\": \"All-Pro All-Pro  All-Pro is an honor bestowed upon professional American football players that designates the best player at each position during a given season. All-Pro players are typically selected by press organizations, who select an \\\"All-Pro team,\\\" a list that consists of at least 22 players, one for each offensive and defensive position, plus various special teams players depending on the press organization that compiles the list. All-Pro lists are exclusively limited to the major leagues\"}"
+        ]
+      }
+    }
+  },
+  "contract": {
+    "concept": "contract",
+    "overall_description": "A formal agreement between a player and a team or organization, defining the terms of their professional engagement, including duration and role.",
+    "sources": {
+      "KG": {
+        "description": "In the knowledge graph, a contract is represented as a structured relationship between a player and a team, with explicit temporal bounds (start_time, end_time) and specific role details such as sport_number and position (e.g., point guard, power forward).",
+        "elements": [
+          "player",
+          "team",
+          "start_time",
+          "end_time",
+          "sport_number",
+          "position"
+        ],
+        "data_examples": [
+          "player: Q298531, team: Q976396, start_time: 12 December 2011, end_time: 01 July 2013, sport_number: 1, position: point guard",
+          "player: Q298531, team: Q162954, start_time: 2008, end_time: 2011, sport_number: 1, position: point guard; shooting guard",
+          "player: Q36159, team: Q162990, start_time: 2014, end_time: 2018, sport_number: 23, position: power forward; small forward"
+        ]
+      },
+      "Table": {
+        "description": "In tabular data, contracts are represented as rows detailing a player's tenure with a specific team, including the 'Years in Orlando' column for duration and 'Position' column for role, often within the context of an all-time team roster.",
+        "elements": [
+          "Player",
+          "Nationality",
+          "Position",
+          "Years in Orlando",
+          "School/Club Team"
+        ],
+        "data_examples": [
+          "page_title: Orlando Magic all-time roster, section_title: P, header: [Player, Nationality, Position, Years in Orlando, School/Club Team], sample_row: [Zaza Pachulia, Georgia, Center, 2003–2004, Ülkerspor ( Turkey )]",
+          "page_title: Orlando Magic all-time roster, section_title: A, header: [Player, No., Nationality, Position, Years in Orlando, School/Club Team], sample_row: [Tariq Abdul-Wahad, 9, France, Forward, 1999–2000, San José State]",
+          "page_title: Orlando Magic all-time roster, section_title: K, header: [Player, No., Nationality, Position, Years in Orlando, School/Club Team], sample_row: [Mario Kasun, 41, Croatia, Center, 2004–2006, Gonzaga]"
+        ]
+      }
+    }
+  },
+  "draft": {
+    "concept": "draft",
+    "overall_description": "A systematic selection process where organizations choose individuals from a pool of eligible candidates, typically occurring at regular intervals within competitive domains.",
+    "sources": {
+      "KG": {
+        "description": "In the knowledge graph, a draft is represented as a structured event linking a player to a team at a specific time, capturing the core transactional relationship of the selection process.",
+        "elements": [
+          "player",
+          "team",
+          "time"
+        ],
+        "data_examples": [
+          "player: Q51337526, team: Q128109, time: 2018",
+          "player: Q60951627, team: Q170558, time: 2020",
+          "player: Q32860369, team: Q163480, time: 2018"
+        ]
+      },
+      "Table": {
+        "description": "In tabular data, a draft is detailed as a multi-round selection event with specific picks, listing drafted players along with their assigned teams, positions, and often their educational background or college.",
+        "elements": [
+          "Round",
+          "Pick",
+          "Player",
+          "Position",
+          "Team",
+          "College"
+        ],
+        "data_examples": [
+          "page_title: 1947 BAA draft, section_title: Draft, header: [Round, Pick, Player, Position, Team, College], sample_row: [1, 1, Clifton McNeely Category:Articles with hCards #, –, Pittsburgh Ironmen, Texas Wesleyan]",
+          "page_title: 1948 BAA draft, section_title: Draft, header: [Round, Pick, Player, Position, Team, College], sample_row: [1, 1, Andy Tonkovich Category:Articles with hCards, G, Providence Steamrollers, Marshall]",
+          "page_title: 1948 BAA draft, section_title: Other picks, header: [Round, Player, Position, Team, College], sample_row: [–, Johnny Bach Category:Articles with hCards, G/F, Boston Celtics, Fordham]"
+        ]
+      },
+      "Doc": {
+        "description": "In document passages, a draft is described as an annual event within professional sports leagues like the BAA or NBA, detailing its historical context, timing, and its role in the league's seasonal cycle.",
+        "elements": [],
+        "data_examples": [
+          "{\"doc_id\": \"12093691\", \"title\": \"1948 BAA draft\", \"section_title\": \"\", \"text\": \"1948 BAA draft 1948 BAA draft  The 1948 BAA draft was the second annual draft of the Basketball Association of America (BAA), which later became the National Basketball Association (NBA). The draft was held on May 10, 1948, before to the 1948–49 season. In this draft, eight BAA teams along with four teams who moved from the National Basketball League, took turns selecting amateur U.S. college basketball players.\"}",
+          "{\"doc_id\": \"11157130\", \"title\": \"1950 NBA draft\", \"section_title\": \"\", \"text\": \"1950 NBA draft 1950 NBA draft  The 1950 NBA draft was the fourth annual draft of the National Basketball Association (NBA). This is the first draft after the Basketball Association of America (BAA) was renamed the NBA. The draft was held on April 25, 1950, before the 1950–51 season. In this draft, 12 remaining NBA teams took turns selecting amateur U.S. college basketball players. In each round, the teams select in reverse order of their win–loss record in the previous season. The Chicago Stags \"}",
+          "{\"doc_id\": \"11139440\", \"title\": \"1951 NBA draft\", \"section_title\": \"\", \"text\": \"1951 NBA draft 1951 NBA draft  The 1951 NBA draft was the fifth annual draft of the National Basketball Association (NBA). The draft was held on April 25, 1951, before the 1951–52 season. In this draft, ten remaining NBA teams took turns selecting amateur U.S. college basketball players. In each round, the teams select in reverse order of their win–loss record in the previous season. The Tri-Cities Blackhawks participated in the draft, but relocated to Milwaukee and became the Milwaukee Hawks pr\"}"
+        ],
+        "inferred_elements_fallback_note": "LLM backend unavailable or returned no result; no inferred elements extracted."
+      }
+    }
+  },
+  "home_venue_assignment": {
+    "concept": "home_venue_assignment",
+    "overall_description": "The designation of a specific venue as the primary location where a sports team hosts its home games or events for a defined period.",
+    "sources": {
+      "KG": {
+        "description": "In the knowledge graph, a home venue assignment is represented as a temporal relationship between a team entity and a venue entity, with explicit start_time and end_time attributes defining the period of the assignment.",
+        "elements": [
+          "team",
+          "venue",
+          "start_time",
+          "end_time"
+        ],
+        "data_examples": [
+          "team: Q572134, venue: Q1048921, start_time: 1972, end_time: 1977",
+          "team: Q169661, venue: Q1144284, start_time: 1952, end_time: 1957",
+          "team: Q159893, venue: Q1058931, start_time: 1997, end_time: 1999"
+        ]
+      }
+    }
+  },
+  "monthly_schedule": {
+    "concept": "monthly_schedule",
+    "overall_description": "A chronological listing of events or activities organized by month, showing temporal sequences and associated details.",
+    "sources": {
+      "Table": {
+        "description": "A tabular schedule of sports games organized by month, detailing specific dates, home/away/neutral status, opponents, scores, and win-loss records, as seen in basketball season logs.",
+        "elements": [
+          "Date",
+          "H/A/N",
+          "Opponent",
+          "Score",
+          "Record"
+        ],
+        "data_examples": [
+          "page_title: 1970–71 Cleveland Cavaliers season, section_title: November, header: [Date, H/A/N, Opponent, Score, Record], sample_row: [November 1, H, Atlanta Hawks, 107-130, 0-10]",
+          "page_title: 1970–71 Cleveland Cavaliers season, section_title: December, header: [Date, H/A/N, Opponent, Score, Record], sample_row: [December 4, H, Boston Celtics, 107-118, 1-27]",
+          "page_title: 1970–71 Cleveland Cavaliers season, section_title: January, header: [Date, H/A/N, Opponent, Score, Record], sample_row: [January 1, H, Baltimore Bullets, 105-128, 5-40]"
+        ]
+      }
+    }
+  },
+  "player_performance": {
+    "concept": "player_performance",
+    "overall_description": "Quantitative measures of an athlete's contributions and achievements during competitive events, encompassing a range of statistical metrics that evaluate individual effectiveness.",
+    "sources": {
+      "Table": {
+        "description": "Tabular records of player statistics aggregated per season, detailing individual performance through specific metrics such as Minutes played, Field Goals, Rebounds, Assists, Steals, Blocks, and total Points, as shown in WNBA season player stats tables.",
+        "elements": [
+          "Player",
+          "Minutes",
+          "Field Goals",
+          "Rebounds",
+          "Assists",
+          "Steals",
+          "Blocks",
+          "Points"
+        ],
+        "data_examples": [
+          "page_title: 2000 Miami Sol season, section_title: Player stats, header: [Player, Minutes, Field Goals, Rebounds, Assists, Steals, Blocks, Points], sample_row: [Sheri Sam, 904, 147, 132, 66, 35, 5, 396]",
+          "page_title: 2000 Portland Fire season, section_title: Player stats, header: [Player, Minutes, Field Goals, Rebounds, Assists, Steals, Blocks, Points], sample_row: [Sophia Witherspoon, 1061, 175, 105, 68, 38, 8, 538]",
+          "page_title: 2001 Charlotte Sting season, section_title: Player stats, header: [Player, Minutes, Field Goals, Rebounds, Assists, Steals, Blocks, Points], sample_row: [Andrea Stinson, 1006, 179, 137, 88, 43, 19, 450]"
+        ]
+      }
+    }
+  },
+  "player_stats": {
+    "concept": "player_stats",
+    "overall_description": "Statistical records and career information for athletes, including performance metrics, team affiliations, positions, and temporal details across different contexts such as professional teams, college careers, or specific seasons.",
+    "sources": {
+      "Table": {
+        "description": "This source provides structured tabular data on player statistics, including specific performance metrics like rebounds and assists, along with career details such as player name, position, years active, and school or country affiliation, organized in tables with clear headers and rows.",
+        "elements": [
+          "Player",
+          "Pos.",
+          "From",
+          "School/Country",
+          "Rebs",
+          "Asts"
+        ],
+        "data_examples": [
+          "page_title: Phoenix Suns all-time roster, section_title: F, header: [Player, Pos., From, School/Country, Rebs, Asts], sample_row: [Butch Feher Category:Articles with hCards, G, 1976, Vanderbilt, 74, 36]",
+          "page_title: Hakim Warrick, section_title: College statistics, header: [Year, Rebs, Asts, Stls, Blks], sample_row: ['01–02, 4.8, 0.5, 0.5, 0.6]",
+          "page_title: Phoenix Suns all-time roster, section_title: P, header: [Player, Pos., From, School/Country, Rebs, Asts], sample_row: [Milt Palacio Category:Articles with hCards, PG, 2001, Colorado State, 23, 29]"
+        ]
+      },
+      "Doc": {
+        "description": "This source offers free-text descriptions of players, teams, positions, and awards within various sports contexts, including historical rankings like '50 Greatest Players in NBA History' and positional definitions such as 'Power forward' across different team sports.",
+        "elements": [
+          "player",
+          "team",
+          "position",
+          "sport",
+          "award"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"1277423\", \"title\": \"50 Greatest Players in NBA History\", \"section_title\": \"\", \"text\": \"50 Greatest Players in NBA History 50 Greatest Players in NBA History  The 50 Greatest Players in National Basketball Association History (also referred to as NBA's 50th Anniversary All-Time Team or NBA's Top 50) were chosen in 1996 to honor the fiftieth anniversary of the founding of the National Basketball Association (NBA). These fifty players were selected through a vote by a panel of media members, former players and coaches, and current and former general managers. In addition, the top ten\"}",
+          "{\"doc_id\": \"38804731\", \"title\": \"All-District Team\", \"section_title\": \"\", \"text\": \"All-District Team All-District Team  All-District Team may refer to:  BULLET::::- Regional selections by United States Basketball Writers Association (USBWA) for top contributors in college basketball  BULLET::::- Regional selections by National Association of Basketball Coaches (NABC) for top contributors in college basketball  BULLET::::- Regional selections for Academic All-America honoring top college student athletes\"}",
+          "{\"doc_id\": \"556479\", \"title\": \"Power forward\", \"section_title\": \"\", \"text\": \"Power forward Power forward  Power forward is a position or role in some team sports:  BULLET::::- Power forward (Australian rules football)  BULLET::::- Power forward (basketball)  BULLET::::- Power forward (ice hockey)\"}"
+        ]
+      }
+    }
+  },
+  "playoff_series": {
+    "concept": "playoff_series",
+    "overall_description": "A postseason tournament structure in sports where teams compete in a sequence of games or matches, with the winner advancing to the next round or winning a championship.",
+    "sources": {
+      "Table": {
+        "description": "This source represents playoff series as sequences of individual games, detailing each contest with specific dates, home and road teams, and final scores. It captures the progression of a series through numbered games (e.g., Game 1, Game 2) within events like the NBA Finals, showing the concrete matchups and outcomes that determine the series winner.",
+        "elements": [
+          "Game",
+          "Date",
+          "Home Team",
+          "Result",
+          "Road Team"
+        ],
+        "data_examples": [
+          "page_title: 1954–55 Syracuse Nationals season, section_title: NBA finals, header: [Game, Date, Home Team, Result, Road Team], sample_row: [Game 1, March 31, Syracuse, 86-82, Fort Wayne]",
+          "page_title: 1956–57 St. Louis Hawks season, section_title: NBA Finals, header: [Game, Date, Home Team, Result, Road Team], sample_row: [Game 1, March 30, Boston, 123-125 (2OT), St. Louis]",
+          "page_title: 1962–63 Boston Celtics season, section_title: NBA Finals, header: [Game, Date, Home Team, Result, Road Team], sample_row: [Game 1, April 14, Boston, 117-114, Los Angeles]"
+        ]
+      },
+      "Doc": {
+        "description": "This source describes playoff series in narrative form, focusing on the broader outcome of the postseason, including the winning and losing teams, the series score, and the league and year context. It provides summaries of entire playoff runs, such as championship victories in the WNBA Finals, highlighting the final result and its significance within a season.",
+        "elements": [
+          "year",
+          "league",
+          "winning_team",
+          "losing_team",
+          "series_score",
+          "mvp"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"19679749\", \"title\": \"1997 Houston Comets season\", \"section_title\": \"\", \"text\": \"1997 Houston Comets season 1997 Houston Comets season  The 1997 WNBA season was the first season for the Houston Comets. The Comets won the inaugural WNBA Finals.\"}",
+          "{\"doc_id\": \"43229960\", \"title\": \"1998 WNBA Playoffs\", \"section_title\": \"\", \"text\": \"1998 WNBA Playoffs 1998 WNBA Playoffs  The 1998 WNBA Playoffs was the postseason for the Women's National Basketball Association's 1998 season which ended with the Houston Comets beating the Phoenix Mercury, 2-1. Cynthia Cooper was named the MVP of the Finals. The Comets repeated as champions.\"}",
+          "{\"doc_id\": \"19700954\", \"title\": \"1998 Houston Comets season\", \"section_title\": \"\", \"text\": \"1998 Houston Comets season 1998 Houston Comets season  The 1998 WNBA season was the second season for the Houston Comets. The Comets won their second straight championship. Their record of 27-3 remains the best in league history.\"}"
+        ]
+      }
+    }
+  },
+  "teamgame_basic": {
+    "concept": "teamgame_basic",
+    "overall_description": "Records of games played by a sports team during a competitive season, capturing essential details about each match.",
+    "sources": {
+      "Table": {
+        "description": "This source provides a structured game log with columns for Game number, Date, Opponent, Score, Location/Attendance, and the team's season Record. It details individual match outcomes and cumulative standings within a specific team season.",
+        "elements": [
+          "Game",
+          "Date",
+          "Opponent",
+          "Score",
+          "Location/Attendance",
+          "Record"
+        ],
+        "data_examples": [
+          "page_title: 1965–66 Boston Celtics season, section_title: Game log, header: [Game, Date, Opponent, Score, Location/Attendance, Record], sample_row: [20, December 3, Philadelphia 76ers, 103–119, Boston Garden, 14–6]",
+          "page_title: 1965–66 Boston Celtics season, section_title: Game log, header: [Game, Date, Opponent, Score, Location/Attendance, Record], sample_row: [34, January 1, @ St. Louis Hawks, 98–100, St. Louis Arena, 24–10]",
+          "page_title: 1965–66 Boston Celtics season, section_title: Game log, header: [Game, Date, Opponent, Score, Location/Attendance, Record], sample_row: [51, February 1, Detroit Pistons, 100–81, New York, 35–16]"
+        ]
+      }
+    }
+  },
+  "teamgame": {
+    "concept": "teamgame",
+    "overall_description": "A teamgame is a competitive match involving a sports team, documenting the event details, participants, final outcome, and resulting team statistics.",
+    "sources": {
+      "Table": {
+        "description": "This source provides structured game logs for specific team seasons, detailing each match with columns for game number, date, opponent, result, scores, and updated season records and streaks.",
+        "elements": [
+          "Game",
+          "Date",
+          "Opponent",
+          "Result",
+          "Nets points",
+          "Opponent score",
+          "Record",
+          "Streak"
+        ],
+        "data_examples": [
+          "page_title: 1989–90 New Jersey Nets season, section_title: Schedule, header: [Game, Date, Opponent, Result, Nets points, Opponent score, Record, Streak], sample_row: [1, November 3, at Miami, Win, 110, 90, 1-0, Won 1]",
+          "page_title: 2008–09 New Jersey Nets season, section_title: Game log, header: [Game, Date, Team, Score, High points, High rebounds, High assists, Location Attendance, Record], sample_row: [2, November 1, Golden State, L 97–105 (OT), Vince Carter (20), Josh Boone (14), Keyon Dooling (6), Izod Center 17,390, 1–1]",
+          "page_title: 2008–09 New Jersey Nets season, section_title: Game log, header: [Game, Date, Team, Score, High points, High rebounds, Location Attendance, Record], sample_row: [17, December 2, Washington, L 88–108 (OT), Devin Harris (18), Brook Lopez (9), Izod Center 15,062, 9–8]"
+        ]
+      }
+    }
+  },
+  "wnba_game": {
+    "concept": "wnba_game",
+    "overall_description": "A competitive basketball match between two teams in the Women's National Basketball Association (WNBA), encompassing the event, its outcome, and associated performance statistics.",
+    "sources": {
+      "Table": {
+        "description": "A WNBA game is recorded as a row in a season schedule table, detailing the game number, date, opponent, final score, top performers in points/rebounds/assists, location, and the team's season record after that game.",
+        "elements": [
+          "Game",
+          "Date",
+          "Opponent",
+          "Score",
+          "High points",
+          "High rebounds",
+          "High assists",
+          "Location",
+          "Record"
+        ],
+        "data_examples": [
+          "page_title: 1999 Orlando Miracle season, section_title: Regular season, header: [Game, Date, Opponent, Score, High points, High rebounds, High assists, Location, Record], sample_row: [9, July 3, Charlotte, L 58-75, S. Johnson (17), McWilliams (11), S. Johnson (4), Amway Arena, 5-4]",
+          "page_title: 2000 Orlando Miracle season, section_title: Regular season, header: [Game, Date, Opponent, Score, High points, High rebounds, High assists, Location, Record], sample_row: [2, June 1, Charlotte, W 82-79, Sales (24), McWilliams (9), S. Johnson (7), TD Waterhouse Centre, 1-1]",
+          "page_title: 2008 Detroit Shock season, section_title: Regular season, header: [Game, Date, Opponent, Score, High points, High rebounds, High assists, Location/Attendance, Record], sample_row: [7, June 4, Seattle, 77-67, Smith (33), Ford (11), Nolan (8), Palace of Auburn Hills 8,108, 6-1]"
+        ]
+      }
+    }
+  },
+  "award": {
+    "concept": "award",
+    "overall_description": "A formal recognition or honor given to individuals, groups, or entities for achievements, excellence, or contributions in various fields.",
+    "sources": {
+      "KG": {
+        "description": "This source provides structured identifiers and titles for awards, such as the NBA All-Star Game and Presidential Order of Excellence, using unique award IDs and Wikipedia-linked titles to represent each distinct honor.",
+        "elements": [
+          "award_id",
+          "name",
+          "enwiki_title"
+        ],
+        "data_examples": [
+          "award_id: Q137341, name: NBA All-Star Game, enwiki_title: NBA All-Star Game",
+          "award_id: Q137003, name: 50 Greatest Players in NBA History, enwiki_title: 50 Greatest Players in NBA History",
+          "award_id: Q112451, name: Presidential Order of Excellence, enwiki_title: Presidential Order of Excellence"
+        ]
+      },
+      "Doc": {
+        "description": "This source contains detailed textual descriptions of awards, including their name, awarding organization, year established, category, and winners, as seen in entries for the ACB Most Valuable Player Award and Academy Award for Best Animated Short Film.",
+        "elements": [
+          "award_name",
+          "organization",
+          "year_established",
+          "category",
+          "winners"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"17096386\", \"title\": \"ACB Most Valuable Player Award\", \"section_title\": \"\", \"text\": \"ACB Most Valuable Player Award ACB Most Valuable Player Award  The ACB Most Valuable Player Award is an annual award of the Liga ACB, the top-tier professional basketball league in Spain. The ACB handed out the award first after the 1991–92 ACB season. Since then, four players have won the award more than once: Darryl Middleton (3-time winner), Arvydas Sabonis, Tanoka Beard, and Luis Scola (2-time winners). Additionally, only six Spanish players have won the award: Juan Carlos Navarro, Marc Gaso\"}",
+          "{\"doc_id\": \"8032948\", \"title\": \"ACC Athlete of the Year\", \"section_title\": \"\", \"text\": \"ACC Athlete of the Year ACC Athlete of the Year  The Atlantic Coast Conference Athlete of the Year award is given to the male and female athlete who show extraordinary talent throughout the entire season. The award is decided by members of the Atlantic Coast Sports Media Association.\"}",
+          "{\"doc_id\": \"61831\", \"title\": \"Academy Award for Best Animated Short Film\", \"section_title\": \"\", \"text\": \"Academy Award for Best Animated Short Film Academy Award for Best Animated Short Film  The Academy Award for Best Animated Short Film is an award given by the Academy of Motion Picture Arts and Sciences (AMPAS) as part of the Academy Awards annually since the 5th Academy Awards, covering the year 1931–32, to the present.  This category was known as \\\"Short Subjects, Cartoons\\\" from 1932 until 1970, and as \\\"Short Subjects, Animated Films\\\" from 1971 to 1973. The present title began with the 1974 awa\"}"
+        ]
+      }
+    }
+  },
+  "broadcast_channel_assignment": {
+    "concept": "broadcast_channel_assignment",
+    "overall_description": "The allocation and technical configuration of specific frequencies or numbers used for television broadcasting, encompassing identifiers, format specifications, and associated service information.",
+    "sources": {
+      "Table": {
+        "description": "This source details the digital channel assignments for specific television stations, listing concrete technical parameters such as the channel number, video resolution (e.g., 720p), aspect ratio (e.g., 16:9), PSIP short name, and associated network or programming.",
+        "elements": [
+          "Channel",
+          "Video",
+          "Aspect",
+          "PSIP Short Name",
+          "Network"
+        ],
+        "data_examples": [
+          "page_title: WPXN-TV, section_title: Digital channels, header: [Channel, Video, Aspect, PSIP Short Name, Network], sample_row: [31.1, 720p, 16:9, ION, Ion Television]",
+          "page_title: KSTP-TV, section_title: Digital channels, header: [Channel, Station, Video, Aspect, PSIP Short Name, Programming], sample_row: [5.1, KSTP-TV, 720p, 16:9, KSTPDT1, Main KSTP-TV programming / ABC]"
+        ]
+      },
+      "Doc": {
+        "description": "This source describes television stations' broadcast channel assignments within free-text passages, specifying identifiers like call signs, virtual channels, and digital channels, along with contextual details such as network affiliation, geographic location, and ownership structure.",
+        "elements": [
+          "call_sign",
+          "virtual_channel",
+          "digital_channel",
+          "network_affiliation",
+          "city",
+          "state",
+          "owner",
+          "duopoly_partner"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"21064127\", \"title\": \"WHDH-TV (1957–1972)\", \"section_title\": \"\", \"text\": \"WHDH-TV (1957–1972) WHDH-TV (1957–1972)  WHDH-TV, VHF analog channel 5, was a television station licensed to Boston, Massachusetts, United States. The station ceased operations on March 18, 1972, following the revocation of the station's license. The channel 5 allocation in the market was taken over by WCVB-TV the following morning, March 19, 1972. WCVB operates using a separate license from WHDH-TV; conversely, the original WHDH-TV is also of no relation to the current WHDH (channel 7), which i\"}",
+          "{\"doc_id\": \"1806781\", \"title\": \"WMYD\", \"section_title\": \"\", \"text\": \"WMYD WMYD  WMYD, virtual channel 20 (UHF digital channel 31), is a MyNetworkTV-affiliated television station licensed to Detroit, Michigan, United States. The station is owned by the E. W. Scripps Company, as part of a duopoly with ABC affiliate WXYZ-TV (channel 7).   The two stations share studios at Broadcast House on 10 Mile Road in Southfield; WMYD's transmitter is located on Eight Mile Road in Oak Park, along the Oakland–Wayne county line. Previously, WMYD maintained separate studios at the\"}",
+          "{\"doc_id\": \"3847175\", \"title\": \"KMYT-TV\", \"section_title\": \"\", \"text\": \"KMYT-TV KMYT-TV  KMYT-TV, virtual channel 41 (UHF digital channel 34), is a MyNetworkTV-affiliated television station licensed to Tulsa, Oklahoma, United States. The station is owned by the Cox Media Group subsidiary of Cox Enterprises, as part of a duopoly with Fox affiliate KOKI-TV (channel 23); KMYT and KOKI are, in turn, co-owned with local radio stations KRMG (740 AM and 102.3 FM), KRAV-FM (96.5), KWEN (95.5 FM) and KJSR (103.3 FM), as well as local cable television provider Cox Communicati\"}"
+        ]
+      }
+    }
+  },
+  "coach": {
+    "concept": "coach",
+    "overall_description": "A coach is a person who provides instruction, training, and strategic guidance to individuals or teams, primarily to develop skills and improve performance in a specific field.",
+    "sources": {
+      "KG": {
+        "description": "In the knowledge graph, a coach is represented as a person with structured biographical and professional attributes, including nationality, birthplace, language, gender, birth date, and the start and end years of their coaching career.",
+        "elements": [
+          "coach_id",
+          "name",
+          "enwiki_title",
+          "country_of_citizenship",
+          "place_of_birth",
+          "native_language",
+          "sex_or_gender",
+          "date_of_birth",
+          "work_period_start",
+          "work_period_end"
+        ],
+        "data_examples": [
+          "coach_id: Q922434, name: Earl Watson, enwiki_title: Earl Watson, country_of_citizenship: United States of America, place_of_birth: Kansas City, native_language: English, sex_or_gender: male, date_of_birth: 12 June 1979, work_period_start: 2001, work_period_end: 2014",
+          "coach_id: Q199896, name: Karl Malone, enwiki_title: Karl Malone, country_of_citizenship: United States of America, place_of_birth: Ruston, native_language: English, sex_or_gender: male, date_of_birth: 24 July 1963, work_period_start: 1985, work_period_end: 2004",
+          "coach_id: Q1348252, name: Jeff Malone, enwiki_title: Jeff Malone, country_of_citizenship: United States of America, place_of_birth: Mobile, native_language: English, sex_or_gender: male, date_of_birth: 28 June 1961, work_period_start: , work_period_end: "
+        ]
+      },
+      "Doc": {
+        "description": "In document passages, a coach is described in natural language with details such as their name, associated team and league, birth date, and specific coaching position, often within the context of professional sports like basketball.",
+        "elements": [
+          "coach_name",
+          "team",
+          "league",
+          "birth_date",
+          "position"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"4158702\", \"title\": \"Alvin Gentry\", \"section_title\": \"\", \"text\": \"Alvin Gentry Alvin Gentry  Alvin Harris Gentry (born November 5, 1954) is an American basketball coach who is head coach of the New Orleans Pelicans in the National Basketball Association (NBA). Gentry was a former college basketball player, who has led four different National Basketball Association (NBA) teams. He served as an interim head coach for the Miami Heat at the end of the 1994–95 season, and later coached the Detroit Pistons, Los Angeles Clippers, and Phoenix Suns.\"}",
+          "{\"doc_id\": \"775292\", \"title\": \"Anderson Packers\", \"section_title\": \"\", \"text\": \"Anderson Packers Anderson Packers  The Anderson Packers, also known as the Anderson Duffey Packers and the Chief Anderson Meat Packers, were a professional basketball team based in Anderson, Indiana, in the 1940s and 1950s.  The team was founded and owned by brothers Ike W. and John B. Duffey, founders of meat packing company Duffey's Incorporated, which had purchased the Hughes-Curry Packing Co. of Anderson in 1946, at which time the brothers founded the Anderson Packers. John Duffey was presid\"}",
+          "{\"doc_id\": \"6530036\", \"title\": \"Armond Hill\", \"section_title\": \"\", \"text\": \"Armond Hill Armond Hill  Armond G. Hill (born March 31, 1953) is an American basketball coach and retired professional basketball player. He currently works as an assistant coach for the Los Angeles Clippers.  He spent eight seasons in the NBA between 1976 and 1984, playing for the Atlanta Hawks, Seattle SuperSonics, San Diego Clippers and Milwaukee Bucks. After ending his playing career in 1984, he started a coaching career, and eventually became head coach at Columbia University in 1995. Hill \"}"
+        ]
+      }
+    }
+  },
+  "division": {
+    "concept": "division",
+    "overall_description": "A division is a competitive grouping within a sports league, typically organized by geographical region, conference affiliation, or competitive tier, used to structure teams for scheduling and playoff qualification.",
+    "sources": {
+      "KG": {
+        "description": "A division is represented as a structured entity with a unique identifier, a name, and a link to its Wikipedia page. Examples include the Southeast Division and Atlantic Division, which are specific named groupings within the NBA.",
+        "elements": [
+          "division_id",
+          "name",
+          "enwiki_title"
+        ],
+        "data_examples": [
+          "division_id: Q639928, name: Southeast Division, enwiki_title: Southeast Division (NBA)",
+          "division_id: Q723639, name: Northwest Division, enwiki_title: Northwest Division (NBA)",
+          "division_id: Q638908, name: Atlantic Division, enwiki_title: Atlantic Division (NBA)"
+        ]
+      }
+    }
+  },
+  "historical_moment_distribution": {
+    "concept": "historical_moment_distribution",
+    "overall_description": "A statistical breakdown of significant historical events, quantifying their frequency across different categorical dimensions and temporal intervals.",
+    "sources": {
+      "Table": {
+        "description": "This table specifically tallies NBA playoff moments by decade, counting occurrences across playoff rounds (First Round, Semifinals, Conference Finals, Finals) and providing a total per decade, as shown in its column headers and row data.",
+        "elements": [
+          "First round",
+          "Semifinals",
+          "Conference Finals",
+          "Finals",
+          "Total"
+        ],
+        "data_examples": [
+          "page_title: NBA 60 Greatest Playoff Moments, section_title: Numbers of moments by decades, header: [First round, Semifinals, Conference Finals, Finals, Total], sample_row: [—, 0, 0, 1, 1]"
+        ]
+      }
+    }
+  },
+  "player": {
+    "concept": "player",
+    "overall_description": "An individual who participates in sports or athletic activities, characterized by personal identifiers, biographical details, physical attributes, and career information.",
+    "sources": {
+      "KG": {
+        "description": "In this knowledge graph, a player is represented as a structured entity with attributes like name, nationality, birth details, physical measurements (height, mass), and career timeline (work period). It provides a formal, factual profile linking to external identifiers.",
+        "elements": [
+          "player_id",
+          "name",
+          "enwiki_title",
+          "country_of_citizenship",
+          "place_of_birth",
+          "date_of_birth",
+          "height",
+          "mass",
+          "work_period_start",
+          "work_period_end",
+          "schools_attended"
+        ],
+        "data_examples": [
+          "player_id: Q344531, name: İzzet Türkyılmaz, enwiki_title: %C4%B0zzet T%C3%BCrky%C4%B1lmaz, country_of_citizenship: Turkey, place_of_birth: Burhaniye, native_language: Turkish, sex_or_gender: male, date_of_birth: 20 May 1990, height: 216 centimetre, mass: 95 kilogram, work_period_start: 2007, work_period_end: , nickname: , handedness: , schools_attended: ",
+          "player_id: Q348696, name: Walt Frazier, enwiki_title: Walt Frazier, country_of_citizenship: United States of America, place_of_birth: Atlanta, native_language: English, sex_or_gender: male, date_of_birth: 29 March 1945, height: 193 centimetre, mass: 93 kilogram, work_period_start: 1967, work_period_end: 1980, nickname: , handedness: , schools_attended: David T. Howard High School; Southern Illinois University Carbondale",
+          "player_id: Q372859, name: Adrian Dantley, enwiki_title: Adrian Dantley, country_of_citizenship: United States of America, place_of_birth: Washington, D.C., native_language: English, sex_or_gender: male, date_of_birth: 28 February 1955, height: 196 centimetre, mass: 95 kilogram, work_period_start: 1976, work_period_end: 1991, nickname: Teach; A.D.; The Teacher, handedness: , schools_attended: DeMatha Catholic High School; University of Notre Dame"
+        ]
+      },
+      "Doc": {
+        "description": "In this document source, a player is described in natural language passages that include their name, birth date, nationality, and professional context such as team, league, and role (e.g., former player, coach). The text offers narrative details about their career and current status.",
+        "elements": [
+          "name",
+          "birth_date",
+          "nationality",
+          "profession",
+          "team",
+          "league"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"1722767\", \"title\": \"Aaron McKie\", \"section_title\": \"\", \"text\": \"Aaron McKie Aaron McKie  Aaron Fitzgerald McKie (born October 2, 1972) is an American basketball coach and former professional basketball player who played in the National Basketball Association (NBA). He is currently the head coach for his alma mater Temple University. Selected by the Portland Trail Blazers 17th overall in the 1994 NBA Draft, McKie spent time as a point guard, shooting guard or small forward throughout his professional playing career from 1994 to 2007.\"}",
+          "{\"doc_id\": \"57470636\", \"title\": \"Admiral Schofield\", \"section_title\": \"\", \"text\": \"Admiral Schofield Admiral Schofield  Admiral Schofield (born March 30, 1997) is an American professional basketball player for the Washington Wizards of the National Basketball Association (NBA). He played college basketball for the Tennessee Volunteers.\"}",
+          "{\"doc_id\": \"42965266\", \"title\": \"Alex McKechnie\", \"section_title\": \"\", \"text\": \"Alex McKechnie Alex McKechnie  Alex McKechnie (born in Glasgow, Scotland) is a Scottish-Canadian physiotherapist who works as the Director of Sports Science and an assistant coach for the Toronto Raptors of the National Basketball Association. He was inducted into the British Columbia Sports Hall of Fame in 2018.\"}"
+        ]
+      }
+    }
+  },
+  "position": {
+    "concept": "position",
+    "overall_description": "A role or designated area of responsibility for a player within a team sport, typically defined by specific duties, skills, and strategic placement during gameplay.",
+    "sources": {
+      "KG": {
+        "description": "This source provides structured, canonical definitions for specific positions, linking each to a unique identifier and a corresponding Wikipedia article for further reference. It concretely represents positions like small forward, power forward, and point guard as distinct entities with standardized names.",
+        "elements": [
+          "position_id",
+          "name",
+          "enwiki_title"
+        ],
+        "data_examples": [
+          "position_id: Q308879, name: small forward, enwiki_title: Small forward",
+          "position_id: Q462471, name: power forward, enwiki_title: Power forward",
+          "position_id: Q212413, name: point guard, enwiki_title: Point guard"
+        ]
+      }
+    }
+  },
+  "team": {
+    "concept": "team",
+    "overall_description": "An organized group of individuals formed to collaborate, compete, or work together toward common goals, often characterized by a shared identity, structure, and membership.",
+    "sources": {
+      "KG": {
+        "description": "This knowledge graph defines teams as entities with unique identifiers, formal names, and structured attributes including founding year and ownership. It specifically represents professional sports franchises, documenting their inception dates and current or historical owners as key relational properties.",
+        "elements": [
+          "team_id",
+          "name",
+          "enwiki_title",
+          "inception",
+          "owners"
+        ],
+        "data_examples": [
+          "team_id: Q3128787, name: Waterloo Hawks, enwiki_title: Waterloo Hawks, inception: 1948, owners: ",
+          "team_id: Q138089, name: Philadelphia 76ers, enwiki_title: Philadelphia 76ers, inception: 1946, owners: David Blitzer; Josh Harris",
+          "team_id: Q162954, name: Denver Nuggets, enwiki_title: Denver Nuggets, inception: 1967, owners: Kroenke Sports & Entertainment"
+        ]
+      }
+    }
+  },
+  "venue": {
+    "concept": "venue",
+    "overall_description": "A venue is a physical location designed to host events, gatherings, or activities, characterized by its name and specific functional attributes.",
+    "sources": {
+      "KG": {
+        "description": "In the knowledge graph, a venue is represented as a structured entity with a unique identifier, a canonical name, and a link to its Wikipedia article, enabling precise disambiguation and cross-reference.",
+        "elements": [
+          "venue_id",
+          "name",
+          "enwiki_title"
+        ],
+        "data_examples": [
+          "venue_id: Q1327633, name: The Palace of Auburn Hills, enwiki_title: The Palace of Auburn Hills",
+          "venue_id: Q1166157, name: Toyota Center, enwiki_title: Toyota Center",
+          "venue_id: Q1201545, name: Detroit Olympia, enwiki_title: Detroit Olympia"
+        ]
+      },
+      "Doc": {
+        "description": "In document passages, a venue is described with concrete details such as its location, capacity, associated teams, architectural type, opening date, and construction cost, providing rich contextual and historical information.",
+        "elements": [
+          "location",
+          "capacity",
+          "teams",
+          "type",
+          "opened",
+          "cost"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"277398\", \"title\": \"American Airlines Center\", \"section_title\": \"\", \"text\": \"American Airlines Center American Airlines Center  American Airlines Center (AAC) is a multi-purpose arena, located in the Victory Park neighborhood in downtown Dallas, Texas. The arena serves as the home to the Dallas Mavericks of the National Basketball Association, and the Dallas Stars of the National Hockey League. The arena is also used for concerts and other live entertainment. It opened in 2001 at a cost of $420 million.\"}",
+          "{\"doc_id\": \"4924295\", \"title\": \"Anderson High School Wigwam\", \"section_title\": \"\", \"text\": \"Anderson High School Wigwam Anderson High School Wigwam  Anderson High School Wigwam is an indoor arena in Anderson, Indiana. The current version hosted home games for the Anderson High School Indians and was home to the Indiana Alley Cats of the Continental Basketball Association and the Anderson Champions of the American Basketball Association. The previous arena hosted Anderson Packers, a founding member of the National Basketball Association.   The complex is being redeveloped into while pre\"}",
+          "{\"doc_id\": \"4923938\", \"title\": \"Baltimore Coliseum\", \"section_title\": \"\", \"text\": \"Baltimore Coliseum Baltimore Coliseum  Baltimore Coliseum was an indoor arena in Baltimore, Maryland. It hosted the NBA's original Baltimore Bullets from 1944 until 1954.  The Coliseum was built in 1930 on the corner of Monroe Street and Windsor Avenue near the Pennsylvania Avenue entertainment area and held 4,500 people. As a professional sports venue, it had been superseded by the Baltimore Civic Center in 1961, which prompted the Coliseum's closure not long after. The building, after over fou\"}"
+        ]
+      }
+    }
+  },
+  "broadcast_event_coverage": {
+    "concept": "broadcast_event_coverage",
+    "overall_description": "The recording or documentation of media organizations and commentators providing live or recorded reporting of a sports competition or event.",
+    "sources": {
+      "Doc": {
+        "description": "This source provides free-text lists and descriptions of broadcasters for specific sports teams, such as the Charlotte Hornets and Detroit Pistons, detailing the personnel and entities that have covered the team's games over time.",
+        "elements": [
+          "team"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"19751927\", \"title\": \"List of Charlotte Hornets broadcasters\", \"section_title\": \"\", \"text\": \"List of Charlotte Hornets broadcasters List of Charlotte Hornets broadcasters\"}",
+          "{\"doc_id\": \"26442473\", \"title\": \"List of Cleveland Cavaliers broadcasters\", \"section_title\": \"\", \"text\": \"List of Cleveland Cavaliers broadcasters List of Cleveland Cavaliers broadcasters\"}",
+          "{\"doc_id\": \"25780821\", \"title\": \"List of Detroit Pistons broadcasters\", \"section_title\": \"\", \"text\": \"List of Detroit Pistons broadcasters List of Detroit Pistons broadcasters  The following is a list of Detroit Pistons broadcasters, past and present.\"}"
+        ]
+      }
+    }
+  },
+  "team_season": {
+    "concept": "team_season",
+    "overall_description": "A sports team's competitive results and characteristics across a defined annual or multi-year competitive cycle within a league or tournament.",
+    "sources": {
+      "Doc": {
+        "description": "This source provides narrative descriptions of specific league seasons, detailing the participating teams, champion, key awards like MVP, and structural elements such as expansion. It captures the season's narrative context, including the number of games played and the postseason outcomes for teams.",
+        "elements": [
+          "year",
+          "league",
+          "champion",
+          "mvp",
+          "teams",
+          "expansion_teams",
+          "regular_season_games",
+          "season_number"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"43230040\", \"title\": \"1997 WNBA Playoffs\", \"section_title\": \"\", \"text\": \"1997 WNBA Playoffs 1997 WNBA Playoffs  The 1997 WNBA Playoffs was the postseason for the Women's National Basketball Association's 1997 season which ended with the Houston Comets beating the New York Liberty, 1-0 (65-51). Cynthia Cooper was named the MVP of the Finals. This was the first year of WNBA playoffs.\"}",
+          "{\"doc_id\": \"6756771\", \"title\": \"1997 WNBA season\", \"section_title\": \"\", \"text\": \"1997 WNBA season 1997 WNBA season  The 1997 WNBA Season was the Women's National Basketball Association's first in existence. It started off with 8 franchises: Charlotte Sting, Cleveland Rockers, Houston Comets, Los Angeles Sparks, New York Liberty, Phoenix Mercury, Sacramento Monarchs, and the Utah Starzz. It featured an inaugural game between the New York Liberty and the Los Angeles Sparks. The Sparks lost to the New York Liberty, 67-57. The attendance at the Forum was 14,284. The season ended\"}",
+          "{\"doc_id\": \"13083000\", \"title\": \"1998 WNBA season\", \"section_title\": \"\", \"text\": \"1998 WNBA season 1998 WNBA season  The 1998 WNBA season was the Women's National Basketball Association's second season. The 1998 season saw two expansion teams join the league, the Detroit Shock and Washington Mystics. The expansion teams allowed the defending champions Houston Comets to move to the Western Conference. The regular season was extended from 28 games to 30 games. The season ended with the Comets winning their second WNBA championship.\"}"
+        ]
+      }
+    }
+  },
+  "league_season": {
+    "concept": "league_season",
+    "overall_description": "A league_season represents a specific competitive period within a sports league, typically defined by a calendar year or a span of months, during which teams compete according to a structured schedule to determine a champion.",
+    "sources": {
+      "Doc": {
+        "description": "This source describes league seasons through free-text passages, often focusing on specific team seasons within a league. It captures details like the league name, team, year, whether it was an inaugural season, playoff results, and the months during which the season occurred, as illustrated by documents detailing WNBA team seasons.",
+        "elements": [
+          "league",
+          "team",
+          "year",
+          "playoff_result",
+          "is_inaugural",
+          "all_star_month",
+          "season_months",
+          "founding_year",
+          "number_of_teams"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"57721\", \"title\": \"Women's National Basketball Association\", \"section_title\": \"\", \"text\": \"Women's National Basketball Association Women's National Basketball Association  The Women's National Basketball Association (WNBA) is a professional basketball league in the United States. It is currently composed of twelve teams. The league was founded on April 24, 1996, as the women's counterpart to the National Basketball Association (NBA), and league play started in 1997. The regular season is played from May to September, with the All Star game being played midway through the season in Jul\"}",
+          "{\"doc_id\": \"19873061\", \"title\": \"1999 Minnesota Lynx season\", \"section_title\": \"\", \"text\": \"1999 Minnesota Lynx season 1999 Minnesota Lynx season  The 1999 Minnesota Lynx season was the inaugural season of the franchise.\"}",
+          "{\"doc_id\": \"25475078\", \"title\": \"2000 Minnesota Lynx season\", \"section_title\": \"\", \"text\": \"2000 Minnesota Lynx season 2000 Minnesota Lynx season  The 2000 WNBA season was the second for the Minnesota Lynx franchise. They were close to making the WNBA Playoffs, but came up short for the second consecutive year.\"}"
+        ]
+      }
+    }
+  },
+  "sports_broadcaster": {
+    "concept": "sports_broadcaster",
+    "overall_description": "A professional who provides commentary, analysis, or play-by-play narration for sports events and programming across media platforms such as television, radio, or digital networks.",
+    "sources": {
+      "Doc": {
+        "description": "This source describes individuals who work as on-air analysts or broadcasters for specific sports networks, often detailing their roles, associated shows, and co-hosts. Examples include former athletes like Brian Scalabrine serving as a television analyst for the Boston Celtics and Dan Dickau working as a broadcaster for networks such as the Pac-12 Network and CBS Sports Network.",
+        "elements": [
+          "name",
+          "birth_date",
+          "role",
+          "network",
+          "show",
+          "co_host"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"1959211\", \"title\": \"Brian Scalabrine\", \"section_title\": \"\", \"text\": \"Brian Scalabrine Brian Scalabrine  Brian David Scalabrine (born March 18, 1978) is an American former professional basketball player who is currently a television analyst for the Boston Celtics of the National Basketball Association (NBA). He is also the co-host of \\\"The Starting Lineup\\\", which airs weekdays from 7-10am ET on SiriusXM NBA Radio.  Raised in Enumclaw, Washington, Scalabrine attended the University of Southern California after transferring from Highline College. As a member of the U\"}",
+          "{\"doc_id\": \"4130682\", \"title\": \"Chris Jent\", \"section_title\": \"\", \"text\": \"Chris Jent Chris Jent  Christopher Matthew Jent (born January 11, 1970) is an American basketball coach and former player, currently an assistant coach with the Atlanta Hawks of the National Basketball Association (NBA). He was formerly the head coach of the Bakersfield Jam of the NBA Development League.\"}",
+          "{\"doc_id\": \"1243940\", \"title\": \"Dan Dickau\", \"section_title\": \"\", \"text\": \"Dan Dickau Dan Dickau  Daniel David \\\"Dan\\\" Dickau (born September 16, 1978) is a retired American professional basketball player who currently works as an on-air broadcaster for the Pac-12 Network, CBS Sports Network and Westwood One. He is also a co-host of the \\\"Dickau and Slim Show\\\" on Spokane's 700 ESPN with Sean \\\"Slim\\\" Widmer.\"}"
+        ]
+      }
+    }
+  },
+  "video_game": {
+    "concept": "video_game",
+    "overall_description": "A video game is an electronic game that involves interaction with a user interface or input device to generate visual feedback on a display, often categorized by genre, platform, and release details.",
+    "sources": {
+      "Doc": {
+        "description": "This source provides free-text document passages describing video games through elements like developer, publisher, release_date, genre, platform, and rating, with examples covering basketball-related content such as player positions and NBA events.",
+        "elements": [
+          "developer",
+          "publisher",
+          "release_date",
+          "genre",
+          "platform",
+          "rating"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"714871\", \"title\": \"Shooting guard\", \"section_title\": \"\", \"text\": \"Shooting guard Shooting guard  The shooting guard (SG), also known as the two or off guard, is one of the five traditional positions in a regulation basketball game. A shooting guard's main objective is to score points for his/her team and steal the ball on defense. Some teams ask their shooting guards to bring up the ball as well; these players are known colloquially as combo guards. A player who can switch between playing shooting guard and small forward is known as a swingman. In the NBA, sho\"}",
+          "{\"doc_id\": \"714927\", \"title\": \"Small forward\", \"section_title\": \"\", \"text\": \"Small forward Small forward  The small forward (SF), also known as the three, is one of the five positions in a regulation basketball game. Small forwards are typically shorter, quicker, and leaner than power forwards and centers, but typically taller and larger than either of the guard positions.   The small forward is considered to be perhaps the most versatile of the five main basketball positions. In the NBA, small forwards usually range from 6' 6\\\" (1.98 m) to 6' 10\\\" (2.08 m) while in the WN\"}",
+          "{\"doc_id\": \"24612090\", \"title\": \"National Basketball Association Christmas games\", \"section_title\": \"\", \"text\": \"National Basketball Association Christmas games National Basketball Association Christmas games  Games held by the National Basketball Association (NBA) on Christmas Day, December 25, have been an annual tradition since the league's second season in 1947. Currently, five games are played on Christmas. Unlike the National Football League (NFL)'s traditional Thanksgiving Day games, the NBA's Christmas Day games have no fixed opponents; rather, they feature some of the best teams and players. Very \"}"
+        ]
+      }
+    }
+  },
+  "coaching_assignment": {
+    "concept": "coaching_assignment",
+    "overall_description": "A coaching assignment links a sports team to the coach responsible for leading and training it, identifying who serves as the team's coach.",
+    "sources": {
+      "KG": {
+        "description": "In the knowledge graph, a coaching assignment is represented as a directed relationship from a team (the starting point) to its coach (the endpoint), recording which coach leads a given team.",
+        "elements": [
+          "team",
+          "coach"
+        ],
+        "data_examples": [
+          "team: Q976396, coach: Q2447626",
+          "team: Q128109, coach: Q580808",
+          "team: Q131364, coach: Q586579"
+        ]
+      }
+    }
+  },
+  "player_coach_identity": {
+    "concept": "player_coach_identity",
+    "overall_description": "An identity link asserting that a player and a coach refer to the same individual, capturing people who have held both roles over their career.",
+    "sources": {
+      "KG": {
+        "description": "In the knowledge graph, this relation connects a Player entity to a Coach entity that share the same underlying identifier, asserting that the two role-specific entities are in fact the same person.",
+        "elements": [
+          "player",
+          "coach"
+        ],
+        "data_examples": [
+          "player: Q17717, coach: Q17717",
+          "player: Q40444, coach: Q40444",
+          "player: Q40490, coach: Q40490"
+        ]
+      }
+    }
+  },
+  "division_membership": {
+    "concept": "division_membership",
+    "overall_description": "A division membership indicates that a team belongs to a particular division within a league's organizational or competitive structure.",
+    "sources": {
+      "KG": {
+        "description": "In the knowledge graph, a division membership is represented as a directed relationship from a team (the starting point) to the division (the endpoint) it is part of.",
+        "elements": [
+          "team",
+          "division"
+        ],
+        "data_examples": [
+          "team: Q128109, division: Q745984",
+          "team: Q169637, division: Q745984",
+          "team: Q169661, division: Q745984"
+        ]
+      }
+    }
+  },
+  "position_assignment": {
+    "concept": "position_assignment",
+    "overall_description": "A position assignment indicates the specific playing position a player occupies within a team sport.",
+    "sources": {
+      "KG": {
+        "description": "In the knowledge graph, a position assignment is represented as a directed relationship from a player (the starting point) to the position (the endpoint) they play on their team.",
+        "elements": [
+          "player",
+          "position"
+        ],
+        "data_examples": [
+          "player: Q16227014, position: Q212413",
+          "player: Q16581950, position: Q212413",
+          "player: Q8054397, position: Q212413"
+        ]
+      }
+    }
+  }
+}

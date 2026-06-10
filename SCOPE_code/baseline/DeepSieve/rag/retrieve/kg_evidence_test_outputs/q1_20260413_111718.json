@@ -1,0 +1,90 @@
+{
+  "question": "Who was the coach of L.A. Lakers in the 1968-69 season?",
+  "program": {
+    "question": "Who was the coach of L.A. Lakers in the 1968-69 season?",
+    "backend": "mmqa_local_kg",
+    "api_url": "http://127.0.0.1:8002/query",
+    "entities": [
+      "L.A. Lakers"
+    ],
+    "relation_text": "coach of",
+    "relation_targets": [
+      {
+        "head": "L.A. Lakers",
+        "predicate": "coachedBy",
+        "tail": "coach"
+      }
+    ],
+    "relation_target": {
+      "head": "L.A. Lakers",
+      "predicate": "coachedBy",
+      "tail": "coach"
+    },
+    "parser": "llm"
+  },
+  "answer": "",
+  "inner_content": [
+    {
+      "content": []
+    }
+  ],
+  "evidence_count": 2,
+  "evidence": [
+    {
+      "label": "L'Équipe Champion of Champions",
+      "qid": "Q1061233",
+      "meta": {},
+      "head_entity": "L'Équipe Champion of Champions",
+      "head_qid": "Q1061233",
+      "relation": "",
+      "direction": "self",
+      "parser": "llm",
+      "evidence_source": "entity_only_no_relation_match",
+      "head_entity_snapshot": {
+        "qid": "Q1061233",
+        "label": "L'Équipe Champion of Champions",
+        "types": [
+          "award"
+        ],
+        "attrs": {
+          "enwiki_title": "L%27%C3%89quipe Champion of Champions"
+        }
+      },
+      "tail_entity_snapshot": {},
+      "similarity_score": 31.4607
+    },
+    {
+      "label": "Hanno Möttölä",
+      "qid": "Q557835",
+      "meta": {},
+      "head_entity": "Hanno Möttölä",
+      "head_qid": "Q557835",
+      "relation": "",
+      "direction": "self",
+      "parser": "llm",
+      "evidence_source": "entity_only_no_relation_match",
+      "head_entity_snapshot": {
+        "qid": "Q557835",
+        "label": "Hanno Möttölä",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Hanno M%C3%B6tt%C3%B6l%C3%A4",
+          "country_of_citizenship": "Finland",
+          "place_of_birth": "Helsinki",
+          "sex_or_gender": "male",
+          "date_of_birth": "09 September 1976",
+          "height": "209 centimetre",
+          "mass": "112 kilogram",
+          "work_period_start": "1994",
+          "work_period_end": "2014",
+          "schools_attended": "University of Utah"
+        }
+      },
+      "tail_entity_snapshot": {},
+      "similarity_score": 16.6667
+    }
+  ],
+  "unresolved": []
+}

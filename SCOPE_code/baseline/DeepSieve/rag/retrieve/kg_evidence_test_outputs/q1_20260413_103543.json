@@ -1,0 +1,23 @@
+{
+  "question": "For each player in Glen Selbo, Paul Hoffman, Red Rocha, which NBA/BAA teams did they later play for in their career?",
+  "parsed": {},
+  "answer": "",
+  "inner_content": [
+    {
+      "content": []
+    }
+  ],
+  "evidence_count": 0,
+  "evidence": [],
+  "program": {
+    "question": "For each player in Glen Selbo, Paul Hoffman, Red Rocha, which NBA/BAA teams did they later play for in their career?",
+    "backend": "mmqa_local_kg",
+    "api_url": "http://127.0.0.1:8002/query",
+    "error": "LLM解析失败",
+    "entities": [],
+    "relation_text": "",
+    "relation_targets": [],
+    "relation_target": {},
+    "parser": "llm_failed"
+  }
+}

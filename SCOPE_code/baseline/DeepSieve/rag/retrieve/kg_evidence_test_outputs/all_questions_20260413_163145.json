@@ -1,0 +1,4860 @@
+[
+  {
+    "question": "Which player named Danny was drafted by the Cleveland Cavaliers?",
+    "program": {
+      "question": "Which player named Danny was drafted by the Cleveland Cavaliers?",
+      "backend": "mmqa_local_kg",
+      "api_url": "http://127.0.0.1:8002/query",
+      "entities": [
+        "Danny",
+        "Cleveland Cavaliers"
+      ],
+      "relation_text": "drafted by",
+      "relation_targets": [
+        {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        }
+      ],
+      "relation_target": {
+        "head": "Danny",
+        "predicate": "drafted by",
+        "tail": "Cleveland Cavaliers"
+      },
+      "parser": "llm"
+    },
+    "answer": "",
+    "inner_content": [
+      {
+        "content": []
+      }
+    ],
+    "evidence_count": 100,
+    "evidence": [
+      {
+        "label": "Steve Patterson",
+        "qid": "Q3973381",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3973381",
+          "label": "Steve Patterson",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Steve Patterson (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Riverside",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "24 June 1948",
+            "work_period_start": "1971",
+            "work_period_end": "1977"
+          }
+        },
+        "similarity_score": 64.4628
+      },
+      {
+        "label": "Dion Waiters",
+        "qid": "Q65039",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q65039",
+          "label": "Dion Waiters",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Dion Waiters",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Philadelphia",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "10 December 1991",
+            "height": "193 centimetre",
+            "mass": "98 kilogram; 215 pound",
+            "work_period_start": "2012",
+            "schools_attended": "South Kent School; Life Center Academy; Syracuse University"
+          }
+        },
+        "similarity_score": 64.4068
+      },
+      {
+        "label": "Bill Laimbeer",
+        "qid": "Q705206",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q705206",
+          "label": "Bill Laimbeer",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Bill Laimbeer",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Boston",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "19 May 1957",
+            "work_period_start": "1979",
+            "work_period_end": "1993"
+          }
+        },
+        "similarity_score": 63.8655
+      },
+      {
+        "label": "Danny Green",
+        "qid": "Q555436",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q555436",
+          "label": "Danny Green",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Danny Green (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Long Island",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "22 June 1987",
+            "height": "198 centimetre",
+            "mass": "98 kilogram",
+            "work_period_start": "2009",
+            "schools_attended": "St. Mary's High School; University of North Carolina at Chapel Hill"
+          }
+        },
+        "similarity_score": 63.2479
+      },
+      {
+        "label": "Dajuan Wagner",
+        "qid": "Q674520",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q674520",
+          "label": "Dajuan Wagner",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Dajuan Wagner",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Camden",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "04 February 1983",
+            "height": "187 centimetre",
+            "mass": "85 kilogram",
+            "work_period_end": "2007",
+            "schools_attended": "University of Memphis; Camden High School"
+          }
+        },
+        "similarity_score": 62.1849
+      },
+      {
+        "label": "Bruce Flowers",
+        "qid": "Q3645469",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3645469",
+          "label": "Bruce Flowers",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Bruce Flowers",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Rochester",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "13 June 1957",
+            "height": "203 centimetre",
+            "mass": "225 pound",
+            "work_period_start": "1979",
+            "work_period_end": "1987",
+            "schools_attended": "University of Notre Dame; Berkley High School"
+          }
+        },
+        "similarity_score": 62.1849
+      },
+      {
+        "label": "Paul Thompson",
+        "qid": "Q2895454",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2895454",
+          "label": "Paul Thompson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Paul Thompson (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Smyrna",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "25 May 1961",
+            "height": "198 centimetre",
+            "mass": "210 pound",
+            "work_period_start": "1983",
+            "work_period_end": "1999",
+            "schools_attended": "Tulane University; Peabody Magnet High School"
+          }
+        },
+        "similarity_score": 62.1849
+      },
+      {
+        "label": "Luke Witte",
+        "qid": "Q3840564",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3840564",
+          "label": "Luke Witte",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Luke Witte",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Philadelphia",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "19 October 1950",
+            "height": "213 centimetre",
+            "mass": "235 pound",
+            "work_period_start": "1973",
+            "work_period_end": "1976",
+            "schools_attended": "Ohio State University; Marlington High School"
+          }
+        },
+        "similarity_score": 62.069
+      },
+      {
+        "label": "Dan Roundfield",
+        "qid": "Q1463146",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1463146",
+          "label": "Dan Roundfield",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Dan Roundfield",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Detroit",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "26 May 1953",
+            "height": "203 centimetre",
+            "mass": "93 kilogram",
+            "work_period_start": "1975",
+            "work_period_end": "1988",
+            "schools_attended": "Central Michigan University; Chadsey High School"
+          }
+        },
+        "similarity_score": 61.6667
+      },
+      {
+        "label": "Brad Daugherty",
+        "qid": "Q896772",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q896772",
+          "label": "Brad Daugherty",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Brad Daugherty (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Black Mountain",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "19 October 1965",
+            "height": "213 centimetre",
+            "mass": "111 kilogram",
+            "work_period_start": "1986",
+            "work_period_end": "1994",
+            "nickname": "Mr. Softee",
+            "schools_attended": "Charles D. Owen High School; University of North Carolina at Chapel Hill"
+          }
+        },
+        "similarity_score": 61.6667
+      },
+      {
+        "label": "Mike Wilson",
+        "qid": "Q3856300",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3856300",
+          "label": "Mike Wilson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Mike Wilson (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Memphis",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "15 September 1959",
+            "height": "193 centimetre",
+            "mass": "175 pound",
+            "work_period_start": "1983",
+            "work_period_end": "1987",
+            "nickname": "Mike",
+            "schools_attended": "Marquette University"
+          }
+        },
+        "similarity_score": 61.5385
+      },
+      {
+        "label": "Stewart Granger",
+        "qid": "Q3973462",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3973462",
+          "label": "Stewart Granger",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Stewart Granger (basketball)",
+            "country_of_citizenship": "Canada",
+            "place_of_birth": "Montreal",
+            "sex_or_gender": "male",
+            "date_of_birth": "27 October 1961",
+            "height": "190 centimetre",
+            "mass": "190 pound",
+            "work_period_start": "1983",
+            "work_period_end": "1990",
+            "schools_attended": "Nazareth Regional High School; Villanova University"
+          }
+        },
+        "similarity_score": 61.157
+      },
+      {
+        "label": "Andre Miller",
+        "qid": "Q493208",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q493208",
+          "label": "Andre Miller",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Andre Miller",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Los Angeles",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "19 March 1976",
+            "height": "191 centimetre",
+            "mass": "91 kilogram",
+            "work_period_start": "1999",
+            "work_period_end": "2016",
+            "schools_attended": "Verbum Dei High School; University of Utah"
+          }
+        },
+        "similarity_score": 61.0169
+      },
+      {
+        "label": "Abdul Jeelani",
+        "qid": "Q3603386",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3603386",
+          "label": "Abdul Jeelani",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Abdul Jeelani",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Bells",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "10 February 1954",
+            "height": "203 centimetre",
+            "mass": "95 kilogram",
+            "work_period_end": "1989",
+            "schools_attended": "University of Wisconsin–Parkside; Washington Park High School"
+          }
+        },
+        "similarity_score": 60.5042
+      },
+      {
+        "label": "Bernard James",
+        "qid": "Q530232",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q530232",
+          "label": "Bernard James",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Bernard James",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Savannah",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "07 February 1985",
+            "height": "208 centimetre",
+            "mass": "109 kilogram",
+            "work_period_start": "2012",
+            "schools_attended": "Florida State University; Tallahassee Community College; Windsor Forest High School"
+          }
+        },
+        "similarity_score": 60.5042
+      },
+      {
+        "label": "Mike Mitchell",
+        "qid": "Q2731961",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2731961",
+          "label": "Mike Mitchell",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Mike Mitchell (basketball, born 1956)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Atlanta",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "01 January 1956",
+            "height": "201 centimetre",
+            "mass": "215 pound",
+            "work_period_start": "1978",
+            "work_period_end": "1999",
+            "schools_attended": "Auburn University"
+          }
+        },
+        "similarity_score": 60.5042
+      },
+      {
+        "label": "Tyus Jones",
+        "qid": "Q16730417",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q16730417",
+          "label": "Tyus Jones",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Tyus Jones",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Burnsville",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "10 May 1996",
+            "height": "188 centimetre",
+            "mass": "86 kilogram",
+            "work_period_start": "2015",
+            "schools_attended": "Duke University; Apple Valley High School"
+          }
+        },
+        "similarity_score": 60.3448
+      },
+      {
+        "label": "Ron Harper",
+        "qid": "Q372180",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q372180",
+          "label": "Ron Harper",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Ron Harper",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Dayton",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "20 January 1964",
+            "work_period_start": "1986",
+            "work_period_end": "2001"
+          }
+        },
+        "similarity_score": 60.3448
+      },
+      {
+        "label": "Mickey Dillard",
+        "qid": "Q962929",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q962929",
+          "label": "Mickey Dillard",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Mickey Dillard",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Hollywood",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "15 October 1958",
+            "height": "191 centimetre",
+            "mass": "77 kilogram",
+            "work_period_end": "1982",
+            "schools_attended": "Nova High School; Florida State University"
+          }
+        },
+        "similarity_score": 60.0
+      },
+      {
+        "label": "Donny Marshall",
+        "qid": "Q3714021",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3714021",
+          "label": "Donny Marshall",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Donny Marshall",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Detroit",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "17 July 1972",
+            "height": "201 centimetre",
+            "mass": "230 pound",
+            "work_period_start": "1995",
+            "work_period_end": "2003",
+            "schools_attended": "Federal Way High School; University of Connecticut"
+          }
+        },
+        "similarity_score": 60.0
+      },
+      {
+        "label": "Trajan Langdon",
+        "qid": "Q512356",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q512356",
+          "label": "Trajan Langdon",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Trajan Langdon",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Palo Alto",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "13 May 1976",
+            "height": "192 centimetre",
+            "mass": "95 kilogram",
+            "work_period_start": "1999",
+            "work_period_end": "2011",
+            "schools_attended": "Duke University; East Anchorage High School; Steller Secondary School"
+          }
+        },
+        "similarity_score": 60.0
+      },
+      {
+        "label": "John Bagley",
+        "qid": "Q3809053",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3809053",
+          "label": "John Bagley",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "John Bagley (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Bridgeport",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "23 April 1960",
+            "work_period_start": "1982",
+            "work_period_end": "1993"
+          }
+        },
+        "similarity_score": 59.8291
+      },
+      {
+        "label": "Dave Magley",
+        "qid": "Q3703039",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3703039",
+          "label": "Dave Magley",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Dave Magley",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "South Bend",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "24 November 1959",
+            "height": "203 centimetre",
+            "mass": "202 pound",
+            "work_period_start": "1982",
+            "work_period_end": "1986",
+            "schools_attended": "University of Kansas"
+          }
+        },
+        "similarity_score": 59.8291
+      },
+      {
+        "label": "Winston Bennett",
+        "qid": "Q943368",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q943368",
+          "label": "Winston Bennett",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Winston Bennett",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Louisville",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "09 February 1965",
+            "work_period_start": "1988",
+            "work_period_end": "1992"
+          }
+        },
+        "similarity_score": 59.5041
+      },
+      {
+        "label": "Terrell Brandon",
+        "qid": "Q1455879",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1455879",
+          "label": "Terrell Brandon",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Terrell Brandon",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Portland",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "20 May 1970",
+            "height": "180 centimetre",
+            "mass": "82 kilogram",
+            "work_period_start": "1991",
+            "work_period_end": "2002",
+            "schools_attended": "Grant High School; University of Oregon"
+          }
+        },
+        "similarity_score": 59.5041
+      },
+      {
+        "label": "Jimmy Oliver",
+        "qid": "Q2343335",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2343335",
+          "label": "Jimmy Oliver",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jimmy Oliver (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Menifee",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "12 July 1969",
+            "height": "196 centimetre",
+            "mass": "93 kilogram",
+            "work_period_start": "1991",
+            "work_period_end": "2007",
+            "schools_attended": "Morrilton High School; Purdue University"
+          }
+        },
+        "similarity_score": 59.322
+      },
+      {
+        "label": "Kyrie Irving",
+        "qid": "Q348618",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q348618",
+          "label": "Kyrie Irving",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Kyrie Irving",
+            "country_of_citizenship": "Australia; United States of America",
+            "place_of_birth": "Melbourne",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "23 March 1992",
+            "height": "188 centimetre",
+            "mass": "88.5 kilogram",
+            "work_period_start": "2011",
+            "schools_attended": "St. Patrick High School; Montclair Kimberley Academy; Duke University"
+          }
+        },
+        "similarity_score": 59.322
+      },
+      {
+        "label": "Joe Cooke",
+        "qid": "Q890711",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q890711",
+          "label": "Joe Cooke",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Joe Cooke (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Toledo",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "14 August 1948",
+            "height": "191 centimetre",
+            "mass": "79 kilogram",
+            "schools_attended": "Libbey High School; Indiana University Bloomington"
+          }
+        },
+        "similarity_score": 59.1304
+      },
+      {
+        "label": "Tristan Thompson",
+        "qid": "Q973212",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q973212",
+          "label": "Tristan Thompson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Tristan Thompson",
+            "country_of_citizenship": "Canada; United States of America",
+            "place_of_birth": "Brampton",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "13 March 1991",
+            "height": "206 centimetre",
+            "mass": "108 kilogram",
+            "work_period_start": "2011",
+            "schools_attended": "University of Texas at Austin; St. Marguerite d'Youville Secondary School"
+          }
+        },
+        "similarity_score": 59.0164
+      },
+      {
+        "label": "Jared Cunningham",
+        "qid": "Q1341440",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1341440",
+          "label": "Jared Cunningham",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jared Cunningham",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Oakland",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "22 May 1991",
+            "height": "195 centimetre; 193 centimetre",
+            "mass": "85 kilogram; 88 kilogram",
+            "work_period_start": "2012",
+            "schools_attended": "Oregon State University; San Leandro High School"
+          }
+        },
+        "similarity_score": 59.0164
+      },
+      {
+        "label": "Tim McCormick",
+        "qid": "Q1623309",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1623309",
+          "label": "Tim McCormick",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Tim McCormick",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Detroit",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "10 March 1962",
+            "height": "211 centimetre",
+            "mass": "109 kilogram",
+            "work_period_start": "1984",
+            "work_period_end": "1992",
+            "schools_attended": "University of Michigan; Clarkston High School"
+          }
+        },
+        "similarity_score": 58.8235
+      },
+      {
+        "label": "Randolph Keys",
+        "qid": "Q3930034",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3930034",
+          "label": "Randolph Keys",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Randolph Keys",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Collins",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "19 April 1966",
+            "height": "201 centimetre",
+            "mass": "195 pound",
+            "work_period_start": "1988",
+            "work_period_end": "2000",
+            "schools_attended": "University of Southern Mississippi"
+          }
+        },
+        "similarity_score": 58.8235
+      },
+      {
+        "label": "Daniel Gibson",
+        "qid": "Q443665",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q443665",
+          "label": "Daniel Gibson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Daniel Gibson",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Houston",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "27 February 1986",
+            "height": "188 centimetre",
+            "mass": "86 kilogram",
+            "work_period_start": "2006",
+            "work_period_end": "2013",
+            "schools_attended": "University of Texas at Austin; Jones Futures Academy"
+          }
+        },
+        "similarity_score": 58.8235
+      },
+      {
+        "label": "DeSagana Diop",
+        "qid": "Q1179612",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1179612",
+          "label": "DeSagana Diop",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "DeSagana Diop",
+            "country_of_citizenship": "Senegal",
+            "place_of_birth": "Dakar",
+            "sex_or_gender": "male",
+            "date_of_birth": "30 January 1982",
+            "work_period_start": "2001",
+            "work_period_end": "2013"
+          }
+        },
+        "similarity_score": 58.8235
+      },
+      {
+        "label": "Justin Harper",
+        "qid": "Q2486090",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2486090",
+          "label": "Justin Harper",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Justin Harper (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Richmond",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "30 August 1989",
+            "height": "208 centimetre",
+            "mass": "102 kilogram",
+            "work_period_start": "2011",
+            "schools_attended": "Meadowbrook High School; University of Richmond"
+          }
+        },
+        "similarity_score": 58.8235
+      },
+      {
+        "label": "Dave Sorenson",
+        "qid": "Q781925",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q781925",
+          "label": "Dave Sorenson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Dave Sorenson",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Findlay",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "08 July 1948",
+            "height": "203 centimetre",
+            "mass": "102 kilogram",
+            "schools_attended": "Ohio State University"
+          }
+        },
+        "similarity_score": 58.8235
+      },
+      {
+        "label": "Chad Kinch",
+        "qid": "Q3665714",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3665714",
+          "label": "Chad Kinch",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Chad Kinch",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Perth Amboy",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "22 May 1958",
+            "height": "193 centimetre",
+            "mass": "190 pound",
+            "work_period_start": "1980",
+            "work_period_end": "1981",
+            "schools_attended": "Perth Amboy High School; University of North Carolina at Charlotte"
+          }
+        },
+        "similarity_score": 58.6207
+      },
+      {
+        "label": "Jim Brewer",
+        "qid": "Q598461",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q598461",
+          "label": "Jim Brewer",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jim Brewer (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Maywood",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "03 December 1951",
+            "work_period_start": "1973",
+            "work_period_end": "1985"
+          }
+        },
+        "similarity_score": 58.6207
+      },
+      {
+        "label": "Henry Ward",
+        "qid": "Q3785012",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3785012",
+          "label": "Henry Ward",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Henry Ward (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Jackson",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "30 January 1952",
+            "height": "193 centimetre",
+            "mass": "195 pound"
+          }
+        },
+        "similarity_score": 58.6207
+      },
+      {
+        "label": "Mark Davis",
+        "qid": "Q3849471",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3849471",
+          "label": "Mark Davis",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Mark Davis (basketball, born 1963)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Chesapeake",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "08 June 1963",
+            "height": "198 centimetre",
+            "mass": "195 pound",
+            "schools_attended": "Old Dominion University; Great Bridge High School"
+          }
+        },
+        "similarity_score": 58.6207
+      },
+      {
+        "label": "Sergey Karasev",
+        "qid": "Q595258",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q595258",
+          "label": "Sergey Karasev",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Sergey Karasev",
+            "country_of_citizenship": "Russia",
+            "place_of_birth": "Saint Petersburg",
+            "sex_or_gender": "male",
+            "date_of_birth": "26 October 1993",
+            "height": "203 centimetre",
+            "mass": "95 kilogram",
+            "work_period_start": "2010"
+          }
+        },
+        "similarity_score": 58.3333
+      },
+      {
+        "label": "Andrew Wiggins",
+        "qid": "Q4758911",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q4758911",
+          "label": "Andrew Wiggins",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Andrew Wiggins",
+            "country_of_citizenship": "Canada",
+            "place_of_birth": "Thornhill",
+            "sex_or_gender": "male",
+            "date_of_birth": "23 February 1995",
+            "height": "203 centimetre",
+            "mass": "91 kilogram",
+            "work_period_start": "2014",
+            "schools_attended": "University of Kansas; St. Joseph Central Catholic High School; Vaughan Secondary School"
+          }
+        },
+        "similarity_score": 58.3333
+      },
+      {
+        "label": "Harry Davis",
+        "qid": "Q676808",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q676808",
+          "label": "Harry Davis",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Harry Davis (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Cleveland",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "27 January 1956",
+            "height": "201 centimetre",
+            "mass": "100 kilogram",
+            "work_period_start": "1978",
+            "work_period_end": "1985",
+            "schools_attended": "Florida State University"
+          }
+        },
+        "similarity_score": 58.1197
+      },
+      {
+        "label": "Chris Mills",
+        "qid": "Q1626618",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1626618",
+          "label": "Chris Mills",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Chris Mills (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Los Angeles",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "25 January 1970",
+            "height": "198 centimetre",
+            "mass": "98 kilogram",
+            "work_period_start": "1993",
+            "work_period_end": "2003",
+            "schools_attended": "University of Arizona; Fairfax High School; University of Kentucky"
+          }
+        },
+        "similarity_score": 58.1197
+      },
+      {
+        "label": "Jae Crowder",
+        "qid": "Q585866",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q585866",
+          "label": "Jae Crowder",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jae Crowder",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Villa Rica",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "06 July 1990",
+            "height": "198 centimetre",
+            "mass": "107 kilogram",
+            "work_period_start": "2012",
+            "schools_attended": "Marquette University; South Georgia Technical College; Villa Rica High School; Howard College"
+          }
+        },
+        "similarity_score": 58.1197
+      },
+      {
+        "label": "Bob Sura",
+        "qid": "Q2333700",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2333700",
+          "label": "Bob Sura",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Bob Sura",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Wilkes-Barre",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "25 March 1973",
+            "height": "196 centimetre",
+            "mass": "91 kilogram",
+            "work_period_start": "1995",
+            "work_period_end": "2005",
+            "nickname": "Bobby; Hondo; Schoolyard",
+            "schools_attended": "G. A. R. Memorial Junior Senior High School; Florida State University"
+          }
+        },
+        "similarity_score": 57.8947
+      },
+      {
+        "label": "Kevin Henderson",
+        "qid": "Q893223",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q893223",
+          "label": "Kevin Henderson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Kevin Henderson (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Baltimore",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "22 March 1964",
+            "height": "193 centimetre",
+            "mass": "88 kilogram",
+            "schools_attended": "Centennial High School; California State University, Fullerton"
+          }
+        },
+        "similarity_score": 57.8512
+      },
+      {
+        "label": "Milan Mačvan",
+        "qid": "Q553505",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q553505",
+          "label": "Milan Mačvan",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Milan Ma%C4%8Dvan",
+            "country_of_citizenship": "Serbia",
+            "place_of_birth": "Vukovar",
+            "sex_or_gender": "male",
+            "date_of_birth": "16 November 1989",
+            "height": "206 centimetre",
+            "mass": "120 kilogram; 107 kilogram",
+            "work_period_start": "2007"
+          }
+        },
+        "similarity_score": 57.6271
+      },
+      {
+        "label": "Ben McDonald",
+        "qid": "Q967072",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q967072",
+          "label": "Ben McDonald",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Ben McDonald (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Torrance",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "20 July 1962",
+            "work_period_start": "1984",
+            "work_period_end": "1994"
+          }
+        },
+        "similarity_score": 57.6271
+      },
+      {
+        "label": "Dwight Davis",
+        "qid": "Q2326383",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2326383",
+          "label": "Dwight Davis",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Dwight Davis (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Houston",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "11 October 1949",
+            "height": "203 centimetre",
+            "mass": "100 kilogram",
+            "work_period_start": "1972",
+            "work_period_end": "1977",
+            "schools_attended": "University of Houston; Worthing High School"
+          }
+        },
+        "similarity_score": 57.6271
+      },
+      {
+        "label": "Foots Walker",
+        "qid": "Q3747853",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3747853",
+          "label": "Foots Walker",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Foots Walker",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Southampton",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "21 May 1951",
+            "height": "183 centimetre",
+            "mass": "172 pound",
+            "work_period_end": "1984",
+            "schools_attended": "Vincennes University; University of West Georgia"
+          }
+        },
+        "similarity_score": 57.6271
+      },
+      {
+        "label": "Allen Crabbe",
+        "qid": "Q4731604",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q4731604",
+          "label": "Allen Crabbe",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Allen Crabbe",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Los Angeles",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "09 April 1992",
+            "height": "198 centimetre",
+            "mass": "215 pound",
+            "work_period_start": "2013",
+            "schools_attended": "University of California, Berkeley; Frederick K.C. Price III Christian Schools"
+          }
+        },
+        "similarity_score": 57.6271
+      },
+      {
+        "label": "Ron Anderson",
+        "qid": "Q1627976",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1627976",
+          "label": "Ron Anderson",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Ron Anderson (basketball, born 1958)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Chicago",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "15 October 1958",
+            "work_period_start": "1984",
+            "work_period_end": "1999"
+          }
+        },
+        "similarity_score": 57.6271
+      },
+      {
+        "label": "Luke Jackson",
+        "qid": "Q2569684",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2569684",
+          "label": "Luke Jackson",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Luke Jackson (basketball, born 1981)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Eugene",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "06 November 1981",
+            "work_period_start": "2004",
+            "work_period_end": "2011"
+          }
+        },
+        "similarity_score": 57.6271
+      },
+      {
+        "label": "Donald Royal",
+        "qid": "Q1631692",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1631692",
+          "label": "Donald Royal",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Donald Royal",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "New Orleans",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "22 May 1966",
+            "height": "203 centimetre",
+            "mass": "95 kilogram",
+            "work_period_start": "1987",
+            "work_period_end": "1998",
+            "schools_attended": "University of Notre Dame; St. Augustine High School"
+          }
+        },
+        "similarity_score": 57.6271
+      },
+      {
+        "label": "Eddie Jordan",
+        "qid": "Q1134403",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1134403",
+          "label": "Eddie Jordan",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Eddie Jordan (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Washington, D.C.",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "29 January 1955",
+            "work_period_start": "1977",
+            "work_period_end": "1984"
+          }
+        },
+        "similarity_score": 57.6271
+      },
+      {
+        "label": "John Lambert",
+        "qid": "Q3809410",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3809410",
+          "label": "John Lambert",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "John Lambert (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Berkeley",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "14 January 1953",
+            "height": "208 centimetre",
+            "mass": "225 pound",
+            "work_period_start": "1975",
+            "work_period_end": "1983",
+            "schools_attended": "University of Southern California; Berkeley High School"
+          }
+        },
+        "similarity_score": 57.6271
+      },
+      {
+        "label": "Jason Kapono",
+        "qid": "Q334470",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q334470",
+          "label": "Jason Kapono",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jason Kapono",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Long Beach",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "04 February 1981",
+            "height": "203 centimetre",
+            "mass": "97 kilogram",
+            "work_period_start": "2003",
+            "work_period_end": "2013",
+            "schools_attended": "University of California, Los Angeles; Artesia High School"
+          }
+        },
+        "similarity_score": 57.6271
+      },
+      {
+        "label": "Mo Howard",
+        "qid": "Q3859694",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3859694",
+          "label": "Mo Howard",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Mo Howard (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Philadelphia",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "25 August 1954",
+            "height": "188 centimetre",
+            "mass": "170 pound",
+            "schools_attended": "University of Maryland"
+          }
+        },
+        "similarity_score": 57.3913
+      },
+      {
+        "label": "Kevin Porter Jr.",
+        "qid": "Q58974788",
+        "meta": {
+          "time": "2019"
+        },
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q58974788",
+          "label": "Kevin Porter Jr.",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Kevin Porter Jr.",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Seattle",
+            "sex_or_gender": "male",
+            "date_of_birth": "04 May 2000",
+            "height": "193 centimetre",
+            "mass": "216 pound",
+            "work_period_start": "2019",
+            "schools_attended": "University of Southern California; Rainier Beach High School"
+          }
+        },
+        "similarity_score": 57.3529
+      },
+      {
+        "label": "Charlie Davis",
+        "qid": "Q3666658",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3666658",
+          "label": "Charlie Davis",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Charlie Davis (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "New York City",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "07 September 1949",
+            "height": "188 centimetre",
+            "mass": "160 pound",
+            "work_period_start": "1971",
+            "work_period_end": "1973",
+            "schools_attended": "Laurinburg Institute; Wake Forest University; Brooklyn Technical High School"
+          }
+        },
+        "similarity_score": 57.1429
+      },
+      {
+        "label": "Campy Russell",
+        "qid": "Q2329242",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2329242",
+          "label": "Campy Russell",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Campy Russell",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Jackson",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "12 January 1952",
+            "height": "203 centimetre",
+            "mass": "98 kilogram",
+            "work_period_start": "1974",
+            "work_period_end": "1985",
+            "schools_attended": "University of Michigan; Pontiac Central High School"
+          }
+        },
+        "similarity_score": 57.1429
+      },
+      {
+        "label": "Brevin Knight",
+        "qid": "Q2557166",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2557166",
+          "label": "Brevin Knight",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Brevin Knight",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Livingston",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "08 November 1975",
+            "height": "178 centimetre",
+            "mass": "79 kilogram",
+            "work_period_start": "1997",
+            "work_period_end": "2009",
+            "schools_attended": "Stanford University"
+          }
+        },
+        "similarity_score": 57.1429
+      },
+      {
+        "label": "Brian Mahoney",
+        "qid": "Q3644479",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3644479",
+          "label": "Brian Mahoney",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Brian Mahoney (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Rockville Centre",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "17 December 1948",
+            "work_period_start": "1972",
+            "work_period_end": "1973"
+          }
+        },
+        "similarity_score": 57.1429
+      },
+      {
+        "label": "Ryan Stack",
+        "qid": "Q2735509",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2735509",
+          "label": "Ryan Stack",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Ryan Stack",
+            "country_of_citizenship": "United States of America; North Macedonia",
+            "place_of_birth": "Nashville",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "24 July 1975",
+            "height": "211 centimetre",
+            "mass": "98 kilogram",
+            "work_period_start": "1998",
+            "work_period_end": "2009",
+            "schools_attended": "University of South Carolina"
+          }
+        },
+        "similarity_score": 56.8966
+      },
+      {
+        "label": "Joe Harris",
+        "qid": "Q16227291",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q16227291",
+          "label": "Joe Harris",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Joe Harris (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Chelan",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "07 September 1991",
+            "height": "198 centimetre",
+            "mass": "98 kilogram",
+            "work_period_start": "2014",
+            "schools_attended": "Chelan High School; University of Virginia"
+          }
+        },
+        "similarity_score": 56.8966
+      },
+      {
+        "label": "Jamal Crawford",
+        "qid": "Q447286",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q447286",
+          "label": "Jamal Crawford",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jamal Crawford",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Seattle",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "20 March 1980",
+            "height": "196 centimetre",
+            "mass": "90 kilogram",
+            "work_period_start": "2014",
+            "schools_attended": "University of Michigan; Rainier Beach High School"
+          }
+        },
+        "similarity_score": 56.6667
+      },
+      {
+        "label": "A. J. Bramlett",
+        "qid": "Q1634914",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1634914",
+          "label": "A. J. Bramlett",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "A. J. Bramlett",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "DeKalb",
+            "sex_or_gender": "male",
+            "date_of_birth": "10 January 1977",
+            "height": "208 centimetre",
+            "mass": "103 kilogram",
+            "work_period_start": "1999",
+            "work_period_end": "2008",
+            "schools_attended": "La Cueva High School; University of Arizona"
+          }
+        },
+        "similarity_score": 56.6667
+      },
+      {
+        "label": "Derek Anderson",
+        "qid": "Q1200001",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1200001",
+          "label": "Derek Anderson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Derek Anderson (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Louisville",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "18 July 1974",
+            "height": "196 centimetre",
+            "mass": "88 kilogram",
+            "work_period_start": "1997",
+            "work_period_end": "2008",
+            "schools_attended": "Ohio State University; University of Kentucky; University of Kentucky; Doss High School"
+          }
+        },
+        "similarity_score": 56.6667
+      },
+      {
+        "label": "Steve Hawes",
+        "qid": "Q3973345",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3973345",
+          "label": "Steve Hawes",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Steve Hawes",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Seattle",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "26 May 1950",
+            "height": "206 centimetre",
+            "mass": "100 kilogram",
+            "work_period_start": "1972",
+            "work_period_end": "1985",
+            "schools_attended": "Mercer Island High School; University of Washington"
+          }
+        },
+        "similarity_score": 56.4103
+      },
+      {
+        "label": "John Morton",
+        "qid": "Q3809501",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3809501",
+          "label": "John Morton",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "John Morton (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "The Bronx",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "18 May 1967",
+            "work_period_start": "1989",
+            "work_period_end": "2002"
+          }
+        },
+        "similarity_score": 56.4103
+      },
+      {
+        "label": "John Garris",
+        "qid": "Q3809291",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3809291",
+          "label": "John Garris",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "John Garris",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Bridgeport",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "06 June 1959",
+            "height": "203 centimetre",
+            "mass": "205 pound",
+            "work_period_start": "1983",
+            "work_period_end": "1993",
+            "schools_attended": "University of Michigan"
+          }
+        },
+        "similarity_score": 56.4103
+      },
+      {
+        "label": "Brendan Haywood",
+        "qid": "Q908715",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q908715",
+          "label": "Brendan Haywood",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Brendan Haywood",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "New York City",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "27 November 1979",
+            "height": "213 centimetre",
+            "mass": "119 kilogram",
+            "work_period_start": "2001",
+            "work_period_end": "2015",
+            "schools_attended": "James B. Dudley High School; University of North Carolina at Chapel Hill"
+          }
+        },
+        "similarity_score": 56.1983
+      },
+      {
+        "label": "Reggie Geary",
+        "qid": "Q115509",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q115509",
+          "label": "Reggie Geary",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Reggie Geary",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Trenton",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "31 August 1973",
+            "work_period_start": "1996",
+            "work_period_end": "2004"
+          }
+        },
+        "similarity_score": 55.9322
+      },
+      {
+        "label": "Chucky Brown",
+        "qid": "Q2342369",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2342369",
+          "label": "Chucky Brown",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Chucky Brown",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "New York City",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "29 February 1968",
+            "work_period_start": "1989",
+            "work_period_end": "2002"
+          }
+        },
+        "similarity_score": 55.9322
+      },
+      {
+        "label": "Jimmy Foster",
+        "qid": "Q3806562",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3806562",
+          "label": "Jimmy Foster",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jimmy Foster (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Jersey City",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "16 December 1951",
+            "height": "185 centimetre",
+            "mass": "175 pound",
+            "schools_attended": "Hoboken High School; Becker College; University of Connecticut"
+          }
+        },
+        "similarity_score": 55.9322
+      },
+      {
+        "label": "Cedric Henderson",
+        "qid": "Q1458403",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1458403",
+          "label": "Cedric Henderson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Cedric Henderson (basketball, born 1975)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Memphis",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "11 March 1975",
+            "height": "201 centimetre",
+            "mass": "98 kilogram",
+            "work_period_start": "1997",
+            "work_period_end": "2007",
+            "schools_attended": "East High School; University of Memphis"
+          }
+        },
+        "similarity_score": 55.7377
+      },
+      {
+        "label": "Dylan Windler",
+        "qid": "Q63117693",
+        "meta": {
+          "time": "2019"
+        },
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q63117693",
+          "label": "Dylan Windler",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Dylan Windler",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Indianapolis",
+            "sex_or_gender": "male",
+            "date_of_birth": "22 September 1996",
+            "height": "203 centimetre",
+            "mass": "89 kilogram",
+            "work_period_start": "2019",
+            "schools_attended": "Perry Meridian High School; Belmont University"
+          }
+        },
+        "similarity_score": 55.6391
+      },
+      {
+        "label": "Carlos Boozer",
+        "qid": "Q310411",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q310411",
+          "label": "Carlos Boozer",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Carlos Boozer",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Aschaffenburg",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "20 November 1981",
+            "height": "206 centimetre",
+            "mass": "121 kilogram",
+            "work_period_start": "2002",
+            "work_period_end": "2017",
+            "nickname": "Booz; Booz Cruise; CBooz",
+            "schools_attended": "Juneau-Douglas High School; Duke University"
+          }
+        },
+        "similarity_score": 55.4622
+      },
+      {
+        "label": "Jackie Ridgle",
+        "qid": "Q3805721",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3805721",
+          "label": "Jackie Ridgle",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jackie Ridgle",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Altheimer",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "13 February 1948",
+            "height": "193 centimetre",
+            "mass": "195 pound",
+            "schools_attended": "University of California, Berkeley"
+          }
+        },
+        "similarity_score": 55.4622
+      },
+      {
+        "label": "Shannon Brown",
+        "qid": "Q440291",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q440291",
+          "label": "Shannon Brown",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Shannon Brown",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Maywood",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "29 November 1985",
+            "height": "193 centimetre",
+            "mass": "93 kilogram",
+            "work_period_start": "2006",
+            "schools_attended": "Proviso East High School; Michigan State University; Stanhope Elmore High School"
+          }
+        },
+        "similarity_score": 55.4622
+      },
+      {
+        "label": "John Howard Getty  Johnson",
+        "qid": "Q2334585",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2334585",
+          "label": "John Howard Getty  Johnson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "John Johnson (basketball, born 1947)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Carthage",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "18 October 1947",
+            "height": "201 centimetre",
+            "mass": "91 kilogram",
+            "work_period_start": "1970",
+            "work_period_end": "1982",
+            "nickname": "J.J",
+            "schools_attended": "University of Iowa; Messmer High School"
+          }
+        },
+        "similarity_score": 54.9618
+      },
+      {
+        "label": "Žydrūnas Ilgauskas",
+        "qid": "Q72353",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q72353",
+          "label": "Žydrūnas Ilgauskas",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Zydrunas Ilgauskas",
+            "country_of_citizenship": "Lithuania; United States of America",
+            "place_of_birth": "Kaunas",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "05 June 1975",
+            "height": "221 centimetre",
+            "mass": "108 kilogram",
+            "work_period_start": "1993",
+            "work_period_end": "2011"
+          }
+        },
+        "similarity_score": 54.8387
+      },
+      {
+        "label": "Austin Carr",
+        "qid": "Q933952",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q933952",
+          "label": "Austin Carr",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Austin Carr",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Washington, D.C.",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "10 March 1948",
+            "height": "193 centimetre",
+            "mass": "91 kilogram",
+            "work_period_start": "1971",
+            "work_period_end": "1981",
+            "schools_attended": "Archbishop Carroll High School; University of Notre Dame"
+          }
+        },
+        "similarity_score": 54.7009
+      },
+      {
+        "label": "Jim O'Brien",
+        "qid": "Q3808365",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3808365",
+          "label": "Jim O'Brien",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jim O%27Brien (basketball, born 1951)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Falls Church",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "07 November 1951",
+            "height": "201 centimetre",
+            "mass": "200 pound",
+            "work_period_start": "1973",
+            "work_period_end": "1975",
+            "schools_attended": "University of Maryland; Justice High School"
+          }
+        },
+        "similarity_score": 54.7009
+      },
+      {
+        "label": "Jeff Trepagnier",
+        "qid": "Q1627982",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1627982",
+          "label": "Jeff Trepagnier",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jeff Trepagnier",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Los Angeles",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "11 July 1979",
+            "height": "193 centimetre",
+            "mass": "91 kilogram",
+            "work_period_start": "2001",
+            "work_period_end": "2013",
+            "schools_attended": "University of Southern California; Compton High School"
+          }
+        },
+        "similarity_score": 54.5455
+      },
+      {
+        "label": "Anthony Bennett",
+        "qid": "Q4772101",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q4772101",
+          "label": "Anthony Bennett",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Anthony Bennett (basketball)",
+            "country_of_citizenship": "Canada",
+            "place_of_birth": "Brampton",
+            "sex_or_gender": "male",
+            "date_of_birth": "14 March 1993",
+            "height": "203 centimetre",
+            "mass": "111 kilogram",
+            "work_period_start": "2013",
+            "schools_attended": "Harold M. Brathwaite Secondary School; University of Nevada, Las Vegas"
+          }
+        },
+        "similarity_score": 54.5455
+      },
+      {
+        "label": "LeBron James",
+        "qid": "Q36159",
+        "meta": {
+          "time": "26 June 2003"
+        },
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q36159",
+          "label": "LeBron James",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "LeBron James",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Akron",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "30 December 1984",
+            "height": "206 centimetre",
+            "mass": "113 kilogram",
+            "work_period_start": "2003",
+            "nickname": "King James",
+            "schools_attended": "Buchtel High School; St. Vincent–St. Mary High School"
+          }
+        },
+        "similarity_score": 54.2857
+      },
+      {
+        "label": "Chuckie Williams",
+        "qid": "Q3676054",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3676054",
+          "label": "Chuckie Williams",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Chuckie Williams",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Columbus",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "31 December 1953",
+            "height": "190 centimetre",
+            "mass": "180 pound",
+            "work_period_start": "1976",
+            "work_period_end": "1978",
+            "schools_attended": "Kansas State University; East High School"
+          }
+        },
+        "similarity_score": 54.0984
+      },
+      {
+        "label": "Eric Fernsten",
+        "qid": "Q2347822",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2347822",
+          "label": "Eric Fernsten",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Eric Fernsten",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Oakland",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "01 November 1953",
+            "height": "208 centimetre",
+            "mass": "93 kilogram",
+            "work_period_start": "1975",
+            "work_period_end": "1988",
+            "schools_attended": "University of San Francisco; Skyline High School"
+          }
+        },
+        "similarity_score": 53.7815
+      },
+      {
+        "label": "Kevin Johnson",
+        "qid": "Q203286",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q203286",
+          "label": "Kevin Johnson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Kevin Johnson (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Sacramento",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "04 March 1966",
+            "height": "185 centimetre",
+            "mass": "86 kilogram",
+            "work_period_start": "1987",
+            "work_period_end": "2000",
+            "schools_attended": "University of California, Berkeley; Sacramento Charter High School"
+          }
+        },
+        "similarity_score": 53.7815
+      },
+      {
+        "label": "Carrick Felix",
+        "qid": "Q13605965",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q13605965",
+          "label": "Carrick Felix",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Carrick Felix",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Goodyear",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "17 August 1990",
+            "height": "198 centimetre",
+            "mass": "91 kilogram",
+            "work_period_start": "2013",
+            "schools_attended": "College of Southern Idaho; Millennium High School; Arizona State University"
+          }
+        },
+        "similarity_score": 53.7815
+      },
+      {
+        "label": "J. J. Hickson",
+        "qid": "Q533068",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q533068",
+          "label": "J. J. Hickson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "JJ Hickson",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Atlanta",
+            "sex_or_gender": "male",
+            "date_of_birth": "04 September 1988",
+            "height": "206 centimetre",
+            "mass": "110 kilogram",
+            "work_period_start": "2008",
+            "schools_attended": "Joseph Wheeler High School; North Carolina State University"
+          }
+        },
+        "similarity_score": 53.4483
+      },
+      {
+        "label": "Roy Hinson",
+        "qid": "Q1612392",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1612392",
+          "label": "Roy Hinson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Roy Hinson",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Trenton",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "02 May 1961",
+            "height": "206 centimetre",
+            "mass": "95 kilogram",
+            "work_period_start": "1983",
+            "work_period_end": "1991",
+            "schools_attended": "Rutgers University; Rutgers University–New Brunswick; Franklin High School"
+          }
+        },
+        "similarity_score": 53.4483
+      },
+      {
+        "label": "Charles Oakley",
+        "qid": "Q608514",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q608514",
+          "label": "Charles Oakley",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Charles Oakley",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Cleveland",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "18 December 1963",
+            "work_period_start": "1985",
+            "work_period_end": "2004"
+          }
+        },
+        "similarity_score": 53.3333
+      },
+      {
+        "label": "John \"Hot Rod\" Williams",
+        "qid": "Q1606354",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1606354",
+          "label": "John \"Hot Rod\" Williams",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "John %22Hot Rod%22 Williams",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Sorrento",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "09 August 1962",
+            "height": "211 centimetre",
+            "mass": "98 kilogram",
+            "work_period_start": "1985",
+            "work_period_end": "1999",
+            "schools_attended": "Tulane University; St. Amant High School"
+          }
+        },
+        "similarity_score": 52.7132
+      },
+      {
+        "label": "Chris Dudley",
+        "qid": "Q2354822",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2354822",
+          "label": "Chris Dudley",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Chris Dudley",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Stamford",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "22 February 1965",
+            "height": "211 centimetre",
+            "mass": "107 kilogram",
+            "work_period_start": "1987",
+            "work_period_end": "2003",
+            "schools_attended": "Pierson College; Greene Street Friends School; Torrey Pines High School; Timothy Dwight College; Yale University"
+          }
+        },
+        "similarity_score": 52.5424
+      },
+      {
+        "label": "Darius Garland",
+        "qid": "Q53397350",
+        "meta": {
+          "time": "2019"
+        },
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q53397350",
+          "label": "Darius Garland",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Darius Garland",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Gary",
+            "sex_or_gender": "male",
+            "date_of_birth": "26 January 2000",
+            "height": "1.88 metre",
+            "mass": "175 pound",
+            "work_period_start": "2019",
+            "schools_attended": "Brentwood Academy; Vanderbilt University"
+          }
+        },
+        "similarity_score": 52.2388
+      },
+      {
+        "label": "Kevin Restani",
+        "qid": "Q431329",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q431329",
+          "label": "Kevin Restani",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Kevin Restani",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "San Francisco",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "23 December 1951",
+            "work_period_start": "1974",
+            "work_period_end": "1988"
+          }
+        },
+        "similarity_score": 52.1008
+      },
+      {
+        "label": "Johnny Newman",
+        "qid": "Q2333450",
+        "meta": {},
+        "head_entity": "Cleveland Cavaliers",
+        "head_qid": "Q162990",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "Danny",
+          "predicate": "drafted by",
+          "tail": "Cleveland Cavaliers"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q162990",
+          "label": "Cleveland Cavaliers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Cleveland Cavaliers",
+            "inception": "1970",
+            "owners": "Dan Gilbert"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2333450",
+          "label": "Johnny Newman",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Johnny Newman",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Danville",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "28 November 1963",
+            "height": "201 centimetre",
+            "mass": "86 kilogram",
+            "work_period_start": "1986",
+            "work_period_end": "2003",
+            "schools_attended": "University of Richmond; George Washington High School"
+          }
+        },
+        "similarity_score": 52.1008
+      }
+    ],
+    "unresolved": []
+  }
+]
