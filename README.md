@@ -51,6 +51,9 @@ SCOPE_code/
 |           |-- KG/                    # local KG index and retriever
 |           |-- Table/                 # BM25 table index and Flask service
 |           `-- Doc/                   # ColBERT document index and service
+|-- CMQA/                              # raw benchmark/data source package
+|   |-- qa_bench/                      # benchmark jsonl files
+|   |-- data_sources/                  # KG / Table / Doc source files
 |-- baseline/                          # compared methods
 |   |-- StandardPrompt/
 |   |-- CoT/
@@ -61,13 +64,10 @@ SCOPE_code/
 |   |-- ToG2/
 |   |-- HydraRAG/
 |   |-- DeepSieve/
-|   `-- Atomr/
-|-- CMQA/                              # raw benchmark/data source package
-|   |-- qa_bench/                      # benchmark jsonl files
-|   |-- data_sources/                  # KG / Table / Doc source files
+|   |-- Atomr/
 |-- run_ex_main.py                     # main experiment runner
 |-- run_ex_abla.py                     # ablation experiment runner
-`-- show_progress.py                   # terminal progress visualization
+|-- show_progress.py                   # terminal progress visualization
 ```
 
 ## Installation
