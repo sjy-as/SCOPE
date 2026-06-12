@@ -12,9 +12,11 @@
 
 </div>
 
-SCOPE is a multi-source QA framework for answering complex questions whose evidence may be distributed across a knowledge graph, relational tables, and free-text documents. It decomposes a complex question into sub-questions, routes each sub-question to suitable knowledge sources, builds a semantic operator plan, executes the plan over live retrieval services, and synthesizes the final answer with traceable intermediate evidence.
+SCOPE is a multi-source QA framework designed to answer complex questions whose evidence is distributed across heterogeneous sources such as knowledge graphs, relational tables, and unstructured documents, without physically merging the underlying data. To bridge these heterogeneous sources, SCOPE first constructs an offline semantic directory that aligns them through meta, basic, and hyper concepts. During online inference, it performs fine-grained source routing and unified operator planning based on this directory, organizing cross-source knowledge access into executable operator plans. The framework then executes these plans over live retrieval services and synthesizes the final answer with traceable intermediate evidence. 
 
-The current benchmark setting uses CMQA-style NBA data with three paired-source QA splits: KG-Doc, KG-Table, and Table-Doc.
+We also introduce a new benchmark for multi-sourece QA over heterogeneous sources, CMQA. CMQA is a challenging multi-source QA benchmark where each question requires joint reasoning across multiple heterogeneous sources and cannot be reliably answered from a single source or from model parametric knowledge alone. Specifically, we adopt CMQA-style NBA data with three paired-source QA splits: KG-Doc, KG-Table, and Table-Doc.
+
+
 
 ## Framework
 
