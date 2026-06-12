@@ -55,16 +55,7 @@ SCOPE_code/
 |   |-- qa_bench/                      # benchmark jsonl files
 |   |-- data_sources/                  # KG / Table / Doc source files
 |-- baseline/                          # compared methods
-|   |-- StandardPrompt/
-|   |-- CoT/
-|   |-- SelfAsk/
-|   |-- StandardRAG/
-|   |-- IRCoT/
-|   |-- CoK/
-|   |-- ToG2/
-|   |-- HydraRAG/
-|   |-- DeepSieve/
-|   |-- Atomr/
+|-- wo_abla/                          # compared wo
 |-- run_ex_main.py                     # main experiment runner
 |-- run_ex_abla.py                     # ablation experiment runner
 |-- show_progress.py                   # terminal progress visualization
