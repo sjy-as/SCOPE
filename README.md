@@ -36,21 +36,21 @@ SCOPE_code/
 |   |-- data_sources/                  # KG / Table / Doc source files
 |   |-- step1_oag/
 |   |   |-- extract/                   # source extraction utilities
-|   |   `-- fusion/                    # concept fusion and semantic catalog
+|   |   |-- fusion/                    # concept fusion and semantic catalog
 |   |-- step2_decompose/
 |   |   |-- sq.py                      # sub-question decomposition
 |   |   |-- route.py                   # graph/semantic source routing
 |   |   |-- route_baselines.py         # AtomR / DeepSieve routing variants
 |   |   |-- semantic.py                # semantic parse for each sub-query
-|   |   `-- operator_plan.py           # operator-tree planning
-|   `-- step3_execute/
+|   |   |-- operator_plan.py           # operator-tree planning
+|   |-- step3_execute/
 |       |-- reasoner.py                # multi-source operator executor
 |       |-- knowledge_sources/         # KG / Table / Doc operator layers
 |       |-- prompts/                   # source-specific prompts
-|       `-- service/
+|       |-- service/
 |           |-- KG/                    # local KG index and retriever
 |           |-- Table/                 # BM25 table index and Flask service
-|           `-- Doc/                   # ColBERT document index and service
+|           |-- Doc/                   # ColBERT document index and service
 |-- CMQA/                              # raw benchmark/data source package
 |   |-- qa_bench/                      # benchmark jsonl files
 |   |-- data_sources/                  # KG / Table / Doc source files
