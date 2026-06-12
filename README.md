@@ -103,7 +103,7 @@ The full experiment scripts use absolute paths under `/root/autodl-tmp`. The eas
 |-- eval/                              # evaluator scripts and models_config.py
 |-- run_ex_main.py
 |-- run_ex_abla.py
-`-- show_progress.py
+|-- show_progress.py
 ```
 
 For example:
@@ -136,7 +136,7 @@ After copying, the expected benchmark files are:
 SCOPE/qa_bench/
 |-- kg-doc-1154.jsonl
 |-- kg-table-1147.jsonl
-`-- table-doc-1120.jsonl
+|-- table-doc-1120.jsonl
 ```
 
 The expected source files are:
@@ -145,7 +145,7 @@ The expected source files are:
 SCOPE/data_sources/
 |-- KG/                                # entity and relation CSV files
 |-- Table/                             # metadata.sql and nba_wikisql.sql
-`-- Text/                              # wiki documents and TSV text corpus
+|-- Text/                              # wiki documents and TSV text corpus
 ```
 
 When using the `/root/autodl-tmp` layout, run the same copy under `/root/autodl-tmp/new_model`.
