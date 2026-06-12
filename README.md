@@ -18,13 +18,13 @@ We also introduce a new benchmark for multi-sourece QA over heterogeneous source
 
 
 
-## Framework
+## 🧩 Framework
 
 <p align="center">
   <img src="figure/framework.png" width="860" alt="SCOPE framework">
 </p>
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```text
 SCOPE_code/
@@ -89,7 +89,7 @@ pip install -e .
 
 If you run ColBERT on CPU only, use `conda_env_cpu.yml` instead.
 
-## Expected Server Layout
+## 🖥️ Expected Server Layout
 
 The full experiment scripts use absolute paths under `/root/autodl-tmp`. The easiest setup is:
 
@@ -192,7 +192,7 @@ curl "http://127.0.0.1:1216/api/search?query=LeBron%20James&k=3"
 curl "http://127.0.0.1:1215/api/search?query=LeBron%20James&k=3"
 ```
 
-## LLM Configuration
+## 🔐 LLM Configuration
 
 For a single SCOPE run, pass the LLM endpoint directly:
 
@@ -253,7 +253,7 @@ result/scope/<split>/
 |-- traces/
 ```
 
-## Main Experiment
+## 🧪 Main Experiment
 
 Start the Table BM25 service and Doc ColBERT service first. Then launch the main experiment:
 
@@ -301,7 +301,7 @@ If an optional baseline is not prepared, skip it explicitly, for example:
 python3 run_ex_main.py --skip-model aop
 ```
 
-## Ablation Experiment
+## 🔬 Ablation Experiment
 
 Run the main experiment first, because the ablation table reads the full SCOPE results from `ex_main`.
 
@@ -350,7 +350,7 @@ The implemented ablation variants are:
 | `new_modl_wo_semlist_plan` | Remove semantic-list metadata from operator planning. |
 | `new_modl_wo_opplan` | Remove operator-tree planning. |
 
-## Results
+## 📊 Results
 
 The experiment scripts produce Excel tables for strict and loose final-answer accuracy:
 
@@ -361,7 +361,7 @@ The experiment scripts produce Excel tables for strict and loose final-answer ac
 
 Add the finalized paper numbers here before release.
 
-## Troubleshooting
+## 🧯 Troubleshooting
 
 - `openpyxl not installed`: install `openpyxl` to enable Excel export.
 - `Table index not found`: run `build_table_index.py` before starting `serve_table_bm25.py`.
@@ -369,10 +369,10 @@ Add the finalized paper numbers here before release.
 - `SQL file not found at /root/autodl-tmp/new_model/data_sources/Table/nba_wikisql.sql`: use the expected server layout or update `TableRetriever.WIKISQL_PATH`.
 - Missing `eval/models_config.py` or `evaluate_answer_*.py`: place the evaluation package under `/root/autodl-tmp/eval`.
 
-## Citation
+## 📖 Citation
 
 If you find this repository useful, please cite our paper. The BibTeX entry will be added after the paper metadata is finalized.
 
-## License
+## 📄 License
 
 This project is released for research use. Please check the licenses of SCOPE, CMQA, and each baseline before redistribution.
