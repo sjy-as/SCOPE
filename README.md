@@ -375,4 +375,4 @@ If you find this repository useful, please cite our paper. The BibTeX entry will
 
 ## License
 
-This project is released for research use. Please check the licenses of CMQA, ColBERT, and each baseline before redistribution.
+This project is released for research use. Please check the licenses of SCOPE, CMQA, and each baseline before redistribution.
