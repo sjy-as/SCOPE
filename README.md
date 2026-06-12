@@ -1,4 +1,4 @@
-# SCOPE: an operator planning framework guided by a semantic directory
+# 🧠 SCOPE: an operator planning framework guided by a semantic directory
 
 <div align="center">
 
@@ -67,7 +67,7 @@ SCOPE_code/
 |-- show_progress.py                   # terminal progress visualization
 ```
 
-## Installation
+## 🛠️ Installation
 
 We recommend Python 3.10+ for the SCOPE pipeline and a separate Python 3.8 ColBERT environment for the document retrieval service.
 
@@ -116,7 +116,7 @@ cp /path/to/SCOPE_code/show_progress.py .
 
 If you keep another layout, update the path constants in `run_ex_main.py`, `run_ex_abla.py`, `show_progress.py`, and `SCOPE/step3_execute/service/Table/table_retriever.py`.
 
-## Data Preparation
+## 📚 Data Preparation
 
 Copy the two CMQA folders into the SCOPE runtime directories:
 
@@ -147,7 +147,7 @@ SCOPE/data_sources/
 
 When using the `/root/autodl-tmp` layout, run the same copy under `/root/autodl-tmp/new_model`.
 
-## Retrieval Services
+## 🧰 Retrieval Services
 
 SCOPE loads KG files in process, but Table and Doc retrieval are served over local HTTP APIs.
 
@@ -218,7 +218,7 @@ run_ex_abla.py
 |-- JUDGE_API_KEY
 ```
 
-## Run SCOPE Only
+## 🚀 Run SCOPE Only
 
 ```bash
 cd /root/autodl-tmp/new_model
