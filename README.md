@@ -1,4 +1,4 @@
-# SCOPE
+# SCOPE: an operator planning framework guided by a semantic directory
 
 <div align="center">
 
