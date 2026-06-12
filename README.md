@@ -18,30 +18,9 @@ The current benchmark setting uses CMQA-style NBA data with three paired-source 
 
 ## Framework
 
-<!-- If you have the original framework figure, put it at assets/framework.png and replace the Mermaid diagram below with:
 <p align="center">
-  <img src="assets/framework.png" width="860" alt="SCOPE framework">
+  <img src="figure/framework.png" width="860" alt="SCOPE framework">
 </p>
--->
-
-```mermaid
-flowchart LR
-    Q[Complex question] --> D[Sub-question decomposition]
-    D --> R[Source routing]
-    R --> S[Semantic parsing]
-    S --> P[Operator-tree planning]
-    P --> E[Multi-source execution]
-    E --> V[Fallback and verification]
-    V --> A[Final answer]
-
-    C[Semantic concept catalog] --> R
-    C --> S
-    C --> P
-
-    KG[KG CSV index] --> E
-    TB[Table BM25 service] --> E
-    DC[Doc ColBERT service] --> E
-```
 
 ## Repository Structure
 
