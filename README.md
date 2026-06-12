@@ -63,6 +63,8 @@ SCOPE_code/
 |   |-- DeepSieve/
 |   `-- Atomr/
 |-- CMQA/                              # raw benchmark/data source package
+|   |-- qa_bench/                      # benchmark jsonl files
+|   |-- data_sources/                  # KG / Table / Doc source files
 |-- run_ex_main.py                     # main experiment runner
 |-- run_ex_abla.py                     # ablation experiment runner
 `-- show_progress.py                   # terminal progress visualization
