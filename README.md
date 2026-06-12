@@ -53,13 +53,13 @@ SCOPE_code/
 |           |-- Doc/                   # ColBERT document index and service
 |-- CMQA/                              # raw benchmark/data source package
 |   |-- qa_bench/                      # benchmark jsonl files
-|       |-- KG-Doc
-|       |-- KG-Table
-|       |-- Table-Doc
+|   |   |-- KG-Doc
+|   |   |-- KG-Table
+|   |   |-- Table-Doc
 |   |-- data_sources/                  # KG / Table / Doc source files
-|       |-- KG
-|       |-- Table
-|       |-- Doc
+|   |   |-- KG
+|   |   |-- Table
+|   |   |-- Doc
 |-- baseline/                          # compared methods
 |-- wo_abla/                          # compared wo
 |-- run_ex_main.py                     # main experiment runner
