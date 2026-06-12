@@ -212,13 +212,13 @@ run_ex_main.py
 |-- LLM_CONFIGS
 |-- JUDGE_LLM_URL
 |-- JUDGE_LLM_MODEL
-`-- JUDGE_API_KEYS_BY_DATASET
+|-- JUDGE_API_KEYS_BY_DATASET
 
 run_ex_abla.py
 |-- LLM_CONFIGS
 |-- JUDGE_LLM_URL
 |-- JUDGE_LLM_MODEL
-`-- JUDGE_API_KEY
+|-- JUDGE_API_KEY
 ```
 
 ## Run SCOPE Only
@@ -253,7 +253,7 @@ Each run writes:
 result/scope/<split>/
 |-- predictions.jsonl
 |-- summary.json
-`-- traces/
+|-- traces/
 ```
 
 ## Main Experiment
@@ -293,9 +293,9 @@ Main experiment outputs are written to:
 |-- <dataset>/<llm>/<model>/
 |   |-- predictions.jsonl
 |   |-- traces/
-|   `-- cost_summary.json
+|   |-- cost_summary.json
 |-- <dataset>/<llm>/eval_summary/summary.json
-`-- tables/main_tables.xlsx
+|-- tables/main_tables.xlsx
 ```
 
 If an optional baseline is not prepared, skip it explicitly, for example:
@@ -339,7 +339,7 @@ Ablation outputs are written to:
 /root/autodl-tmp/eval/result/ex_abla/
 |-- <dataset>/<llm>/<ablation_model>/predictions.jsonl
 |-- <dataset>/<llm>/eval_summary/summary.json
-`-- tables/abla_tables.xlsx
+|-- tables/abla_tables.xlsx
 ```
 
 The implemented ablation variants are:
