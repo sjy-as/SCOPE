@@ -2,7 +2,9 @@
 
 <div align="center">
 
-**Semantic concept-guided operator planning and execution for multi-source complex question answering**
+**SCOPE: an operator planning framework guided by a semantic directory**
+
+> Code for **Bridging Heterogeneous Evidence for Multi-Source Question Answering**
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](#installation)
 [![Retrieval](https://img.shields.io/badge/Retrieval-BM25%20%7C%20ColBERT-green)](#retrieval-services)
