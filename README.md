@@ -30,7 +30,7 @@ We also introduce a new benchmark for multi-source QA over heterogeneous sources
 ## 📁 Repository Structure
 
 ```text
-SCOPE_code/
+SCOPE/
 |-- SCOPE/                  # core SCOPE pipeline
 |   |-- qa_bench/           # CMQA benchmark files
 |   |-- data_sources/       # KG / Table / Doc sources
