@@ -16,6 +16,10 @@ SCOPE is a multi-source QA framework designed to answer complex questions whose 
 
 We also introduce a new benchmark for multi-source QA over heterogeneous sources, CMQA. CMQA is a challenging multi-source QA benchmark where each question requires joint reasoning across multiple heterogeneous sources and cannot be reliably answered from a single source or from model parametric knowledge alone. Specifically, we adopt CMQA-style NBA data with three paired-source QA splits: KG-Doc, KG-Table, and Table-Doc.
 
+<p align="center">
+  <img src="figure/CMQA.jpg" width="860" alt="CMQA benchmark">
+</p>
+
 ## 🧩 Framework
 
 <p align="center">
@@ -26,47 +30,20 @@ We also introduce a new benchmark for multi-source QA over heterogeneous sources
 
 ```text
 SCOPE_code/
-|-- SCOPE/
-|   |-- run.py                         # run SCOPE on one QA file
-|   |-- pipeline.py                    # end-to-end orchestration
-|   |-- run_route_only.py              # route-only analysis entry
-|   |-- qa_bench/                      # benchmark jsonl files
-|   |-- data_sources/                  # KG / Table / Doc source files
-|   |-- step1_oag/
-|   |   |-- extract/                   # source extraction utilities
-|   |   |-- fusion/                    # concept fusion and semantic catalog
-|   |-- step2_decompose/
-|   |   |-- sq.py                      # sub-question decomposition
-|   |   |-- route.py                   # graph/semantic source routing
-|   |   |-- route_baselines.py         # AtomR / DeepSieve routing variants
-|   |   |-- semantic.py                # semantic parse for each sub-query
-|   |   |-- operator_plan.py           # operator-tree planning
-|   |-- step3_execute/
-|       |-- reasoner.py                # multi-source operator executor
-|       |-- knowledge_sources/         # KG / Table / Doc operator layers
-|       |-- prompts/                   # source-specific prompts
-|       |-- service/
-|           |-- KG/                    # local KG index and retriever
-|           |-- Table/                 # BM25 table index and Flask service
-|           |-- Doc/                   # ColBERT document index and service
-|-- CMQA/                              # raw benchmark/data source package
-|   |-- qa_bench/                      # benchmark jsonl files
-|   |-- data_sources/                  # KG / Table / Doc source files
-|-- eval/                              # LLM-judge evaluation package
-|   |-- models_config.py               # model lists, display names, evaluator flags
-|   |-- evaluate_answer_kg_doc.py      # KG-Doc answer evaluation
-|   |-- evaluate_answer_kg_table.py    # KG-Table answer evaluation
-|   |-- evaluate_answer_table_doc.py   # Table-Doc answer evaluation
-|   |-- analyze_routes.py              # route-analysis utility
-|   |-- sample_results/                # lightweight sampled predictions/traces
-|-- configs/                           # example environment configuration
-|-- scripts/                           # reproducibility helpers
-|   |-- reproduce_from_predictions.sh  # rebuild tables from saved summaries
-|-- baseline/                          # compared methods
-|-- wo_abla/                           # ablation variants
-|-- run_ex_main.py                     # main experiment runner
-|-- run_ex_abla.py                     # ablation experiment runner
-|-- show_progress.py                   # terminal progress visualization
+|-- SCOPE/                  # core SCOPE pipeline
+|   |-- qa_bench/           # CMQA benchmark files
+|   |-- data_sources/       # KG / Table / Doc sources
+|   |-- step1_oag/          # semantic directory construction
+|   |-- step2_decompose/    # decomposition, routing, and planning
+|   `-- step3_execute/      # operator execution and retrieval services
+|-- CMQA/                   # benchmark and raw source package
+|-- baseline/               # compared methods
+|-- wo_abla/                # ablation variants
+|-- eval/                   # evaluation and result aggregation
+|-- configs/                # environment configuration
+|-- scripts/                # reproducibility helpers
+|-- run_ex_main.py          # main experiment runner
+`-- run_ex_abla.py          # ablation experiment runner
 ```
 
 ## 🛠️ Installation
