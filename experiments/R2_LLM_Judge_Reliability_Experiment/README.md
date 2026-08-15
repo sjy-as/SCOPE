@@ -13,6 +13,7 @@
 | **Avg. F1** | **0.637** | 0.564 (DeepSieve) | **+7.3 pp** |
 
 * 🏆 **SCOPE remains the best method overall under EM and F1.**
+* 🧾 **The LLM Judge evaluates final answers only and does not receive structured evidence or intermediate reasoning traces as input.**
 * 🔍 On **100** SCOPE cases with `Judge=1` but `EM=0`, **83%** are semantically equivalent answers missed by strict string matching.
 * ✅ In the revised paper, **EM/F1 are the primary metrics**; the **LLM Judge is supplementary only**.
 
