@@ -12,12 +12,16 @@
 
 The swapped-order pipeline is compared with the original full SCOPE results reported in the main experiment.
 
-| Source Pair | Original SCOPE | Swapped Order (Full) |     Δ |
-| ----------- | -------------: | -------------------: | ----: |
-| KG–Doc      |          0.771 |                    — |     — |
-| KG–Table    |          0.737 |                    — |     — |
-| Table–Doc   |          0.696 |                    — |     — |
-| **Overall** |      **0.735** |                **—** | **—** |
+| Source Pair | Original SCOPE | Swapped Order (Full) |         Δ |
+| ----------- | -------------: | -------------------: | --------: |
+| KG–Doc      |          0.771 |                0.765 | -0.58 pp |
+| KG–Table    |          0.737 |                0.704 | -3.26 pp |
+| Table–Doc   |          0.696 |                0.619 | -7.73 pp |
+| **Overall** |      **0.735** |            **0.696** | **-3.85 pp** |
+
+🎊 On the full CMQA benchmark, swapping the Stage-2 module order results in only a moderate decrease in final-answer accuracy, from 73.47% to 69.61% (-3.85 pp). 
+Despite this change, SCOPE still maintains a clear advantage over the strongest baseline (69.61% vs. 60.4%), indicating that its performance is not highly sensitive to a specific module order. 
+The remaining degradation may arise because the swapped pipeline directly matches less-processed subqueries against the fine-grained Semantic Directory, leading to weaker semantic alignment and downstream routing errors. This result further supports the rationale of our original pipeline design, where semantic processing provides a better interface between natural-language subqueries and fine-grained semantic guidance.
 
 ---
 
