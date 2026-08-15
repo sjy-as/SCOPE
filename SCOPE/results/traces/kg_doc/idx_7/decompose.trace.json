@@ -1,0 +1,31 @@
+{
+  "sub_q1": "Who is the player who played for the Miami Heat between 1991 and 1994?",
+  "sub_q2": "What is [1] widely regarded as an excellent shooter of?",
+  "rewrite_reasoning": "The original query asks for what a specific player is widely regarded as an excellent shooter of. To answer, we first need to identify the player who played for the Miami Heat between 1991 and 1994. Then, using that player's identity, we can determine what they are widely regarded as an excellent shooter of.",
+  "match1": null,
+  "match2": null,
+  "route1": {
+    "matched_concept": "contract",
+    "primary_source": "kg",
+    "fallback_source": "doc",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: Miami Heat (team). ASKED target: player. Phase-1 rule: relation-first. The contract concept links player and team, which exactly matches the pair (team, player). The query asks for the player who played for the Miami Heat between 1991 and 1994, so the contract relation with its temporal bounds (start_time, end_time) is the appropriate concept. Source selection: KG is LIKELY because its elements include player, team, start_time, end_time, which directly support the query. Doc is LIKELY because player and team information may appear in narrative text, but KG is preferred as primary because it directly names the asked target (player) and has structured temporal attributes. Fallback is doc."
+  },
+  "route2": {
+    "matched_concept": "player",
+    "primary_source": "doc",
+    "fallback_source": "kg",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: [1] (a player reference). ASKED target: what the player is widely regarded as an excellent shooter of (likely a skill or attribute, e.g., basketball). No relation concept links a player to a skill/attribute; the query asks for an attribute/neighbor of the player. Phase-1 rule (c) known-entity fallback applies: match the concept of the KNOWN entity, which is 'player'. For source selection: KG for player has elements like player_id, name, height, etc., but no element for 'shooter' or skill, so KG is RULED-OUT for this attribute. Doc for player has free-text descriptions that likely mention the player's shooting ability, so doc is LIKELY. Thus primary=doc, fallback=kg (only other live source, though ruled out)."
+  },
+  "decompose_llm_calls": [
+    {
+      "stage": "step2.sq",
+      "ts": 1786685492.9026175,
+      "prompt": "You are a query decomposition assistant.\n\n        Your job is to transform ONE natural-language semantic query into EXACTLY two sub-questions.\n\n        Requirements:\n        1. The input is already a natural semantic query. Do NOT rewrite it into a different intent.\n        2. Output exactly two sub-questions: q1 and q2.\n        3. q1 should extract the first necessary piece of information.\n        4. q2 should depend on q1 and use [1] to refer to the answer of q1 when needed.\n        5. Do not do event judgment, schema routing, source selection, or query rewriting.\n        6. Keep the sub-questions faithful to the original meaning.\n        7. Return valid JSON only.\n\n        Return format:\n        {\n        \"reasoning\": \"brief explanation of the decomposition\",\n        \"subqueries\": [\n            {\n            \"id\": \"q1\",\n            \"query\": \"...\",\n            \"depends_on\": [],\n            \"variables\": []\n            },\n            {\n            \"id\": \"q2\",\n            \"query\": \"...\",\n            \"depends_on\": [\"q1\"],\n            \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n            }\n        ]\n        }\n\n        Question: What is the player who played for the Miami Heat between 1991 and 1994 widely regarded as an excellent shooter of?\n\n    ",
+      "response": "{\n  \"reasoning\": \"The original query asks for what a specific player is widely regarded as an excellent shooter of. To answer, we first need to identify the player who played for the Miami Heat between 1991 and 1994. Then, using that player's identity, we can determine what they are widely regarded as an excellent shooter of.\",\n  \"subqueries\": [\n    {\n      \"id\": \"q1\",\n      \"query\": \"Who is the player who played for the Miami Heat between 1991 and 1994?\",\n      \"depends_on\": [],\n      \"variables\": []\n    },\n    {\n      \"id\": \"q2\",\n      \"query\": \"What is [1] widely regarded as an excellent shooter of?\",\n      \"depends_on\": [\"q1\"],\n      \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n    }\n  ]\n}",
+      "module": "step2.sq",
+      "model": "deepseek-chat"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "question": "For each player in Glen Selbo, Paul Hoffman, Red Rocha, which NBA/BAA teams did they later play for in their career?",
+  "parsed": {},
+  "answer": "",
+  "inner_content": [
+    {
+      "content": []
+    }
+  ],
+  "evidence_count": 4,
+  "evidence": [
+    {
+      "label": "Sheboygan Red Skins",
+      "qid": "Q2354728",
+      "meta": {},
+      "head_entity": "Glen Selbo",
+      "head_qid": "Q1627358",
+      "relation": "playsFor",
+      "direction": "outgoing",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "Glen Selbo",
+        "predicate": "later played for",
+        "tail": "NBA/BAA team"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q1627358",
+        "label": "Glen Selbo",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Glen Selbo",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "La Crosse",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "29 March 1926",
+          "height": "190 centimetre",
+          "mass": "89 kilogram",
+          "work_period_start": "1947",
+          "work_period_end": "1951",
+          "schools_attended": "Logan High School; University of Wisconsin–Madison; University of Michigan"
+        }
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q2354728",
+        "label": "Sheboygan Red Skins",
+        "types": [
+          "team"
+        ],
+        "attrs": {
+          "enwiki_title": "Sheboygan Red Skins",
+          "inception": "1938"
+        }
+      },
+      "similarity_score": 36.25
+    },
+    {
+      "label": "Baltimore Bullets",
+      "qid": "Q2928124",
+      "meta": {},
+      "head_entity": "Paul Hoffman",
+      "head_qid": "Q1622629",
+      "relation": "playsFor",
+      "direction": "outgoing",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "Paul Hoffman",
+        "predicate": "later played for",
+        "tail": "NBA/BAA team"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q1622629",
+        "label": "Paul Hoffman",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Paul Hoffman (basketball)",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Indiana",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "05 May 1925",
+          "work_period_start": "1947",
+          "work_period_end": "1955"
+        }
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q2928124",
+        "label": "Baltimore Bullets",
+        "types": [
+          "team"
+        ],
+        "attrs": {
+          "enwiki_title": "Baltimore Bullets (1944%E2%80%931954)",
+          "inception": "1944"
+        }
+      },
+      "similarity_score": 36.25
+    },
+    {
+      "label": "Detroit Pistons",
+      "qid": "Q169661",
+      "meta": {},
+      "head_entity": "Red Rocha",
+      "head_qid": "Q2328645",
+      "relation": "playsFor",
+      "direction": "outgoing",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "Red Rocha",
+        "predicate": "later played for",
+        "tail": "NBA/BAA team"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q2328645",
+        "label": "Red Rocha",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Red Rocha",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Hilo",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "18 September 1923",
+          "work_period_start": "1947",
+          "work_period_end": "1957"
+        }
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q169661",
+        "label": "Detroit Pistons",
+        "types": [
+          "team"
+        ],
+        "attrs": {
+          "enwiki_title": "Detroit Pistons",
+          "inception": "1937; 1941"
+        }
+      },
+      "similarity_score": 33.5484
+    },
+    {
+      "label": "New York Knicks",
+      "qid": "Q131364",
+      "meta": {},
+      "head_entity": "Paul Hoffman",
+      "head_qid": "Q1622629",
+      "relation": "playsFor",
+      "direction": "outgoing",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "Paul Hoffman",
+        "predicate": "later played for",
+        "tail": "NBA/BAA team"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q1622629",
+        "label": "Paul Hoffman",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Paul Hoffman (basketball)",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Indiana",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "05 May 1925",
+          "work_period_start": "1947",
+          "work_period_end": "1955"
+        }
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q131364",
+        "label": "New York Knicks",
+        "types": [
+          "team"
+        ],
+        "attrs": {
+          "enwiki_title": "New York Knicks",
+          "inception": "1946"
+        }
+      },
+      "similarity_score": 30.3797
+    }
+  ],
+  "program": {
+    "question": "For each player in Glen Selbo, Paul Hoffman, Red Rocha, which NBA/BAA teams did they later play for in their career?",
+    "backend": "mmqa_local_kg",
+    "api_url": "http://127.0.0.1:8002/query",
+    "entities": [
+      "Glen Selbo",
+      "Paul Hoffman",
+      "Red Rocha"
+    ],
+    "relation_text": "later played for",
+    "relation_targets": [
+      {
+        "head": "Glen Selbo",
+        "predicate": "later played for",
+        "tail": "NBA/BAA team"
+      },
+      {
+        "head": "Paul Hoffman",
+        "predicate": "later played for",
+        "tail": "NBA/BAA team"
+      },
+      {
+        "head": "Red Rocha",
+        "predicate": "later played for",
+        "tail": "NBA/BAA team"
+      }
+    ],
+    "relation_target": {
+      "head": "Glen Selbo",
+      "predicate": "later played for",
+      "tail": "NBA/BAA team"
+    },
+    "parser": "llm"
+  }
+}

@@ -1,0 +1,962 @@
+{
+  "administrative_division_population_record": {
+    "concept": "administrative_division_population_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of an administrative division (e.g., governorate, province, district) with its capital and population figures for different census years.",
+    "routing_guide": "Choose Table when the user asks for specific population figures, capitals, or comparisons across administrative divisions. Use Doc if the query requires narrative context or additional details not in the table.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve",
+        "verify"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "division_name",
+        "capital_city"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides tabular data listing administrative divisions with fields such as division_name, capital_city, population_2004_census, population_2006_estimate, and other attributes like area and district names. Useful for structured queries and comparisons.",
+        "elements": [
+          "division_name",
+          "capital_city",
+          "population_2004_census",
+          "population_2006_estimate",
+          "Headquarters",
+          "Division",
+          "Districts",
+          "Name of District",
+          "Area ( km² )",
+          "Population 2001 Census",
+          "Population 2011 Census",
+          "S. No",
+          "District",
+          "Population ( 2011 )",
+          "Area in km²",
+          "Key",
+          "Capital city",
+          "Population 2004 census",
+          "Population 2006 est"
+        ],
+        "data_examples": [
+          "page_title: Administrative divisions of Yemen, section_title: List, header: [Key, Division, Capital city, Population 2004 census, Population 2006 est], sample_row: [1, 'Adan, Aden, 589,419, 634,710]"
+        ]
+      }
+    }
+  },
+  "administrative_division_record": {
+    "concept": "administrative_division_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of an administrative division, such as a county, canton, district, or parish, including its name, governing jurisdiction, key attributes like population or area, and sometimes historical or administrative details.",
+    "routing_guide": "Choose Table when the user needs a list of administrative divisions with comparable attributes (e.g., population, area) or when filtering/sorting by structured fields. Choose Doc when the user needs detailed information about a specific division, including historical context or administrative subdivisions. Use both when a comprehensive answer requires both structured comparisons and in-depth details.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "division_name",
+        "parent_jurisdiction",
+        "capital"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured lists of administrative divisions with attributes such as name, capital, population, area, and dates (e.g., creation, supersession). Examples include former provinces, cantons, counties, and parishes.",
+        "elements": [
+          "province_name",
+          "capital",
+          "peak_population",
+          "canton_name",
+          "population",
+          "area_sq_km",
+          "county_name",
+          "territory_or_state",
+          "creation_date",
+          "supersession_date",
+          "history",
+          "rank",
+          "province",
+          "highest_point",
+          "elevation",
+          "parish_name",
+          "local_government_area",
+          "towns",
+          "district_name",
+          "mayor"
+        ],
+        "data_examples": [
+          "page_title: Provinces of South Africa, section_title: Former administrative divisions, header: [Province, Capital, Peak population], sample_row: [Cape of Good Hope ( 1910-1994 ), Cape Town, 6,125,335]",
+          "page_title: El Oro Province, section_title: Cantons, header: [Canton, Pop . ( 2001 ), Area ( km² ), Seat/Capital], sample_row: [Arenillas, 22,477, 803, Arenillas]",
+          "page_title: County of Churchill, Queensland, section_title: Parishes, header: [Parish, LGA, Towns], sample_row: [Alfred, Ipswich, Grandchester]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides detailed narrative descriptions of individual administrative divisions, including location, population, capital, historical notes, and administrative structure. Examples include county records, district descriptions, and canton profiles.",
+        "elements": [
+          "county_name",
+          "state",
+          "metropolitan_statistical_area",
+          "combined_statistical_area",
+          "government_status",
+          "population",
+          "census_year",
+          "location",
+          "capital",
+          "major_industries",
+          "rivers",
+          "district_name",
+          "headquarters",
+          "division",
+          "coordinates",
+          "bordering_districts",
+          "historical_notes",
+          "subdivisions",
+          "blocks",
+          "administrative_area"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Peketon_County,_Kansas_Territory\", \"title\": \"Peketon County, Kansas Territory\", \"text\": \"Peketon County was a county of the United States Territory of Kansas that existed from February 7 , 1859 to January 29 , 1861 , when Kansas joined the Union as a state .\"}",
+          "{\"doc_id\": \"/wiki/Sucúa_Canton\", \"title\": \"Sucúa Canton\", \"text\": \"Sucúa Canton is a canton of Ecuador , located in the Morona-Santiago Province . Its capital is the town of Sucúa . Its population at the 2001 census was 14,412 .\"}",
+          "{\"doc_id\": \"/wiki/Zapotillo_Canton\", \"title\": \"Zapotillo Canton\", \"text\": \"Zapotillo Canton is a canton of Ecuador , located in the Loja Province . Its capital is the town of Zapotillo . Its population at the 2001 census was 10,940 .\"}"
+        ]
+      }
+    }
+  },
+  "country_record": {
+    "concept": "country_record",
+    "semantic_type": "entity",
+    "overall_description": "A record describing the geography and basic attributes of a country or island state, including its location, area, population, borders, and major landforms.",
+    "routing_guide": "Use Doc when the query requires detailed geographic or historical information about a country, such as its landforms, neighboring seas, or etymology. Use Table if a structured summary of country attributes (e.g., population, area) is needed, but note that Table source is not currently available.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "country_name"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides detailed textual descriptions of countries, including official names, former names, population, area, government structure, etymology, borders, coastline length, highest point, climate, historical context, geographic region, main island area, coordinates, neighboring seas, adjacent landmasses, and major landforms.",
+        "elements": [
+          "country_name",
+          "official_name",
+          "former_name",
+          "population",
+          "area",
+          "government_type",
+          "legislative_body",
+          "judicial_body",
+          "etymology",
+          "borders",
+          "coastline_length",
+          "highest_point",
+          "climate",
+          "historical_context",
+          "geographic_region",
+          "main_island_area",
+          "coordinates",
+          "neighboring_seas",
+          "adjacent_landmasses",
+          "major_landforms"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Geography_of_Taiwan\", \"title\": \"Geography of Taiwan\", \"text\": \"Taiwan , officially the Republic of China ( ROC ) , is an island state in East Asia . The main island of Taiwan , known historically in English as Formosa , makes up 99% of the area controlled by the ROC , measuring 35,808 square kilometres ( 13,826 sq mi ) and lying some 180 kilometres ( 112 mi ) across the Taiwan Strait from the southeastern coast of mainland China . The East China Sea lies to its north , the Philippine Sea to its east , the Luzon Strait directly to its south and the South Chi\"}",
+          "{\"doc_id\": \"/wiki/Guinea\", \"title\": \"Guinea\", \"text\": \"Guinea ( /ˈɡɪni/ ( listen ) ) , officially the Republic of Guinea ( French : République de Guinée ) , is a west-coastal country in West Africa . Formerly known as French Guinea ( French : Guinée française ) , the modern country is sometimes referred to as Guinea-Conakry to distinguish it from other countries with Guinea in the name and the eponymous region , such as Guinea-Bissau and Equatorial Guinea . Guinea has a population of 12.4 million and an area of 245,857 square kilometres ( 94,926 sq \"}",
+          "{\"doc_id\": \"/wiki/Wales\", \"title\": \"Wales\", \"text\": \"Wales ( Welsh : Cymru [ ˈkəmri ] ( listen ) ) is a country that is part of the United Kingdom . It is bordered by England to the east , the Irish Sea to the north and west , and the Bristol Channel to the south . It had a population in 2011 of 3,063,456 and has a total area of 20,779 km2 ( 8,023 sq mi ) . Wales has over 1,680 miles ( 2,700 km ) of coastline and is largely mountainous with its higher peaks in the north and central areas , including Snowdon ( Yr Wyddfa ) , its highest summit . The\"}"
+        ]
+      }
+    }
+  },
+  "electoral_geography_record": {
+    "concept": "electoral_geography_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of an individual elected to a legislative body for a specific electoral district, including election year, party affiliation, and vote share, or a record of an election's outcome in terms of seats won by parties.",
+    "routing_guide": "Choose Table when the query asks for structured lists of representatives with vote shares or party affiliations for a specific district. Choose Doc when the query involves election outcomes, seat distributions, or biographical details of politicians. Use both when a comprehensive answer requires combining structured district-level data with contextual election or biographical information.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "electoral_district",
+        "party",
+        "election_year",
+        "representative_name"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on district representatives, with fields such as year, representative name, party, and first vote percentage, as exemplified by the Hamburg Altona electoral district table.",
+        "elements": [
+          "year",
+          "representative_name",
+          "party",
+          "first_vote_percentage",
+          "Name",
+          "First vote%"
+        ],
+        "data_examples": [
+          "page_title: Hamburg Altona (electoral district), section_title: District representatives, header: [Year, Name, Party, First vote%], sample_row: [2009, Olaf Scholz, SPD, 36.1%]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides unstructured text describing either a specific election (e.g., date, legislative body, seats won by parties) or a politician's biography (e.g., personal details, party, electoral district, terms of service), as seen in the 1969 West German federal election and Harry O. Downey entries.",
+        "elements": [
+          "election_date",
+          "country",
+          "legislative_body",
+          "election_year",
+          "party",
+          "seats_won",
+          "total_seats",
+          "person_name",
+          "birth_date",
+          "death_date",
+          "occupation",
+          "political_party",
+          "electoral_district",
+          "term_start_year",
+          "term_end_year",
+          "role",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/1969_West_German_federal_election\", \"title\": \"1969 West German federal election\", \"text\": \"Federal elections were held in West Germany on 28 September 1969 to elect the members of the 6th Bundestag . The CDU/CSU remained the largest faction and the Social Democratic Party remained the largest single party in the Bundestag , winning 237 of the 518 seats .\"}",
+          "{\"doc_id\": \"/wiki/Harry_O._Downey\", \"title\": \"Harry O. Downey\", \"text\": \"Harry Orliff Downey ( May 9 , 1897 - April 17 , 1974 ) was a fox rancher and political figure in the Province of New Brunswick , Canada . He represented Albert in the Legislative Assembly of New Brunswick from 1931 to 1952 as a Liberal member . He was born in Curryville , New Brunswick , the son of Oscar E. Downey and Rose E. Matthews . Downey was speaker for the provincial assembly from 1944 to 1952 .\"}"
+        ]
+      }
+    }
+  },
+  "ethnic_population_record": {
+    "concept": "ethnic_population_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of the population of an ethnic group in a country or region, including official census figures, estimates, and references to further information, or a record of a city or populated place with its population count for a specific ethnic group, along with the percentage of the total population.",
+    "routing_guide": "Choose Table when the user needs specific population counts, percentages, or comparative data across multiple locations or ethnic groups. Choose Doc when the user needs contextual information about a community's history, settlement patterns, or cultural institutions. Use both when a comprehensive answer requires both quantitative data and qualitative context.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "country",
+        "city",
+        "ethnic_group"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on ethnic populations, including fields such as city, state, country, ethnic group, population count, percentage, official census figures, other estimates, and links to further information. Examples include lists of U.S. cities with large Japanese-American populations and countries with Turkish diaspora populations.",
+        "elements": [
+          "city",
+          "state",
+          "ethnic_group",
+          "population_count",
+          "percentage",
+          "country",
+          "official_census_figures",
+          "other_estimates",
+          "further_information",
+          "Rank",
+          "Official State census figures",
+          "Other estimates",
+          "Further information",
+          "Chinese-Americans",
+          "Japanese-Americans",
+          "Korean-Americans",
+          "Municipality",
+          "County",
+          "MSA",
+          "Region"
+        ],
+        "data_examples": [
+          "page_title: List of U.S. cities with large Japanese-American populations, section_title: Smaller communities in Hawaii, header: [Rank, City, State, Japanese-Americans, Percentage], sample_row: [1, Aiea, Hawaii, 2,877, 31.9%]",
+          "page_title: Turkish population, section_title: Turkish diasporas -- Europe, header: [Country, Official State census figures, Other estimates, Further information], sample_row: [Austria, N/A . The Austrian census collects data on country of birth but does not collect data on ethnicity, 350,000 -500,000, Turks in Austria]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides narrative descriptions of ethnic communities, including origins, settlement areas, population distribution, and cultural institutions. Example: an article about Assyrians in New Zealand.",
+        "elements": [
+          "community_name",
+          "country",
+          "origin",
+          "settlement_areas",
+          "population_distribution",
+          "cultural_institutions",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Assyrians_in_New_Zealand\", \"title\": \"Assyrians in New Zealand\", \"text\": \"Assyrians in New Zealand are New Zealanders of Assyrian descent or Assyrians who have New Zealand citizenship . The Assyrian community in NZ began in the 1990s when refugees from Iraq and Iran settled in the country . The majority of Assyrian New zealanders live in Auckland in Suburbs of Manurewa and Papatoetoe , They have a Assyrian church of the east and Chaldean Catholic Church . Wellington has a sizeable Assyrian population consisting of several hundred people , Communities can be found in M\"}"
+        ]
+      }
+    }
+  },
+  "institution_record": {
+    "concept": "institution_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of an institution such as a school, museum, library, nature center, or place of worship, including its name, location, and descriptive details.",
+    "routing_guide": "Use Table when the query requires structured attributes like location, type, or affiliation, and when filtering or sorting by these fields is needed. Use Doc when the query involves detailed descriptions, historical context, or accreditation information not captured in tabular fields. Use both when combining structured attributes with rich textual details.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify",
+        "filter"
+      ],
+      "join_keys": [
+        "name",
+        "location"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Tabular data with structured fields such as name, location (e.g., county, suburb, neighborhood), and descriptive summaries or attributes (e.g., denomination, grade, type).",
+        "elements": [
+          "name",
+          "location",
+          "county",
+          "summary",
+          "denomination_affiliation",
+          "grade",
+          "notes",
+          "school_name",
+          "suburb",
+          "district",
+          "opening_year",
+          "website",
+          "neighborhood",
+          "borough",
+          "type",
+          "school_nickname",
+          "colors",
+          "conference_name",
+          "branch_name",
+          "address"
+        ],
+        "data_examples": [
+          "page_title: List of museums and cultural institutions in New York City, section_title: Museums -- History, header: [Name, Neighborhood, Borough, Type, Summary], sample_row: [Ellis Island Museum, Ellis Island, Manhattan, History, Tours by boat from Battery Park in Manhattan or Liberty State Park in Jersey City , New Jersey ; immigration experience and history of the immigrants]",
+          "page_title: List of places of worship in Horsham District, section_title: Open places of worship, header: [Name, Location, Denomination/ Affiliation, Grade, Notes], sample_row: [St Michael 's Church, Amberley 50°54′32″N 0°32′22″W / 50.9090°N 0.5394°W / 50.9090 ; -0.5394 ( St Michael and All Angels Church , Amberley ), Anglican, I, Amberley 's parish church stands next to the castle and has Norman origins : Bishop Luffa founded it in about 1100 , and its windows were extended to thumping great proportions in the 1150s . Most of the present structure is 13th-century ; in particular , Bishop Ralph Neville extended the chancel in about 1230 . Gordon Macdonald Hills carried out restoration in the Victorian era]",
+          "page_title: List of schools in the Australian Capital Territory, section_title: Public schools -- Primary schools ( K–6 ), header: [Name, Suburb, District, Opened, Website], sample_row: [Ainslie School, Braddon, North Canberra, 1927, Website]"
+        ]
+      },
+      "Doc": {
+        "description": "Free-text documents describing institutions, including name, location, founding details, governance, academic programs, and accreditation.",
+        "elements": [
+          "university_name",
+          "location",
+          "administrative_district",
+          "city",
+          "country",
+          "academic_structure",
+          "degree_granting_status",
+          "institution_name",
+          "founding_year",
+          "governing_body",
+          "sponsoring_entities",
+          "academic_programs",
+          "accreditation",
+          "enrollment",
+          "campus_locations",
+          "program_types",
+          "accreditation_body",
+          "institution_type",
+          "name",
+          "founding_date"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Seoul_Women's_University\", \"title\": \"Seoul Women's University\", \"text\": \"Seoul Women 's University is a private university in Nowon-gu , Seoul , South Korea . The university comprises five colleges and is a doctorate degree-granting institution .\"}",
+          "{\"doc_id\": \"/wiki/Columbia-Greene_Community_College\", \"title\": \"Columbia-Greene Community College\", \"text\": \"Columbia-Greene Community College ( Co-Greene or C-GCC ) is a community college located in Hudson , New York . Founded in 1966 , C-GCC is one of 64 campuses governed by the State University of New York ( SUNY ) and is locally sponsored by two rural counties , Columbia and Greene , which have a combined population of about 112,000 . The College was originally located in Athens , New York until its permanent relocation to the City of Hudson in 1974 . The College currently offers 32 associate degre\"}",
+          "{\"doc_id\": \"/wiki/Bryant_&_Stratton_College\", \"title\": \"Bryant & Stratton College\", \"text\": \"Bryant & Stratton College , also known as BSC , is a private for-profit college with campuses in New York , Ohio , Virginia , and Wisconsin , as well as an online campus . Founded in 1854 , the college offers associate degree programs at all campuses and bachelor 's degree programs at some campuses . The college is approved by the New York State Board of Regents and regionally accredited by the Middle States Commission on Higher Education .\"}"
+        ]
+      }
+    }
+  },
+  "island_population_record": {
+    "concept": "island_population_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of an island or continental landmass with its population and population density, often including a ranking and the country or countries it belongs to.",
+    "routing_guide": "Use Table when the query requires structured data such as rankings, population figures, density, or country associations. Use Doc if additional context or narrative is needed, but for this concept, Table is primary.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "island_name",
+        "country"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides tabular data with columns for ranking, island name, population, density, area, and country, including continental landmasses for comparison.",
+        "elements": [
+          "ranking",
+          "island_name",
+          "population",
+          "density",
+          "country",
+          "Island",
+          "Density ( /km² )",
+          "Area km²",
+          "Density per km²",
+          "Year"
+        ],
+        "data_examples": [
+          "page_title: List of islands by population, section_title: Islands ordered by population -- Population over 10 million, header: [Ranking, Island, Population, Density ( /km² ), Country], sample_row: [-, Afro-Eurasia, 6,151,810,000 ( 2013 ), 72.4, ]"
+        ]
+      }
+    }
+  },
+  "island_record": {
+    "concept": "island_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of an island, including its name, location, administrative division, area, coordinates, and descriptive or historical context.",
+    "routing_guide": "Use Table when the query requires structured attributes like area, coordinates, or administrative divisions, or when comparing multiple islands. Use Doc when the query asks for descriptive or historical information, or when the island is not covered in the table. For comprehensive answers, use both sources.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "island_name"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured tabular data on islands, with fields such as island name, province, municipality, county, location, area, coordinates, and island chain/group. Examples include lists of islands from South Africa, Michigan, and Thailand.",
+        "elements": [
+          "island_name",
+          "province",
+          "location",
+          "area_hectares",
+          "coordinates",
+          "description",
+          "municipality",
+          "county",
+          "local_name",
+          "island_chain",
+          "Name",
+          "Island",
+          "Island Chain , Group , Archipelago",
+          "Thai Name",
+          "Area ( km )",
+          "Province and location",
+          "Area in Ha",
+          "Coördinates",
+          "Group",
+          "Area ( ha )"
+        ],
+        "data_examples": [
+          "page_title: List of islands of South Africa, section_title: List of Islands of South Africa, header: [Name, Province and location, Area in Ha, Coördinates, description], sample_row: [Bird Island Group ( 3 ), Eastern Cape near Port Elizabeth, , , now part of the Addo Elephant National Park]",
+          "page_title: List of islands of Michigan, section_title: St. Marys River, header: [Island, Municipality, County], sample_row: [Advance Island, Sugar Island Township, Chippewa]",
+          "page_title: List of islands of Thailand, section_title: Southern Islands ( Gulf of Thailand ), header: [Name, Thai Name, Province, Island Chain , Group , Archipelago], sample_row: [Ko Wiang, เกาะเวียง, Chumphon, Pathio District coast]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides narrative descriptions of individual islands, including details like area, distance from mainland, administrative division, alternative names, and historical context. Examples include Hiiumaa and Nendo Island.",
+        "elements": [
+          "island_name",
+          "area",
+          "distance_from_mainland",
+          "largest_town",
+          "administrative_division",
+          "historical_control",
+          "alternative_names",
+          "location",
+          "historical_context",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Hiiumaa\", \"title\": \"Hiiumaa\", \"text\": \"Hiiumaa ( US : /ˈhiːʊmɑː , ˈhiːəmɑː/ , Estonian : [ ˈhiːumɑː ] ; German and Swedish : Dagö ; Finnish : Hiidenmaa ) is the second largest island in Estonia and is part of the West Estonian archipelago , in the Baltic Sea . It has an area of 989 km2 and is 22 km from the Estonian mainland . Its largest town is Kärdla . It is located within Hiiu County . Hiiumaa was controlled by the Brothers of the Sword in the early 1200s ( known as the Teutonic Knights from 1237 ) . During this time it was first\"}",
+          "{\"doc_id\": \"/wiki/Nendo_Island\", \"title\": \"Nendo Island\", \"text\": \"Nendo ( or more exactly Nendö ) is the largest of the Santa Cruz Islands , located in the Temotu province of the Solomon Islands . The island is also known as Santa Cruz , Ndeni , Nitendi or Ndende . The name Santa Cruz was given to the island in 1595 by the Spanish navigator Álvaro de Mendaña , who started a colony there .\"}"
+        ]
+      }
+    }
+  },
+  "lake_record": {
+    "concept": "lake_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of a lake, including its name, location, and additional notes.",
+    "routing_guide": "Choose Table when the query requires structured attributes such as lake name, location, or notes, and when filtering, sorting, or aggregating by these fields is needed. Choose Doc if the query involves unstructured narrative or contextual details not captured in the table fields. Use both when combining structured and unstructured information.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve",
+        "join"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "lake_name",
+        "location"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured lists of lakes with fields for lake name, location (region, district, gewog), and notes, as seen in sources like 'List of lakes of New Zealand' and 'Lakes of Bhutan'.",
+        "elements": [
+          "lake_name",
+          "location",
+          "notes",
+          "district",
+          "gewog",
+          "Lake",
+          "Lake name"
+        ],
+        "data_examples": [
+          "page_title: List of lakes of New Zealand, section_title: North Island -- Taranaki, header: [Lake, Location, Notes], sample_row: [Lake Dive, Egmont N.P, ]",
+          "page_title: Lakes of Bhutan, section_title: Lists of lakes -- List of non-glacial lakes, header: [Lake name, District, Gewog, Notes], sample_row: [Animo Tsho, Bumthang District, Chhoekhor Gewog, Located near Dhur , Animo Tsho sits at an elevation of 4,375 metres ( 14,354 ft ) on the road from Bumthang to Lunana . It is a holy lake where speech is forbidden]"
+        ]
+      }
+    }
+  },
+  "landform_record": {
+    "concept": "landform_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of a mountain peak or summit, including its name, elevation, location, and administrative or geographical context.",
+    "routing_guide": "For queries about specific peaks, their attributes, or narrative details, use the Doc source. If tabular data is available, use Table for structured comparisons or aggregations. When both are present, use Doc for detailed context and Table for quantitative analysis.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "join_keys": [
+        "peak_name",
+        "location",
+        "country"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "This source provides a narrative description of a specific peak (Saka Haphong), including its name, elevation, location, border context, and measurement details. It offers fields such as peak_name, elevation, location, country, administrative_division, border, coordinates, measurement_source, title, text, and linked_table_id.",
+        "elements": [
+          "peak_name",
+          "elevation",
+          "location",
+          "country",
+          "administrative_division",
+          "border",
+          "coordinates",
+          "measurement_source",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Saka_Haphong\", \"title\": \"Saka Haphong\", \"text\": \"Saka Haphong ( also Mowdok Taung or Tlang Moy ) is a peak in Bangladesh , often considered the highest point of the country , with an elevation of 1,052 metres ( 3,451 ft ) . Located on the Bangladesh-Burma border , it is situated between Thanchi , Bandarban , Bangladesh and the Chin State of Burma . Saka Haphong is not officially the highest peak of Bangladesh , but maps and other data indicate there are no higher peaks within the country . In February 2006 a GPS reading of 1,064 metres was rec\"}"
+        ]
+      }
+    }
+  },
+  "populated_place_population_record": {
+    "concept": "populated_place_population_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of a city or town with its population and administrative district, typically from a census or official list.",
+    "routing_guide": "Use Table when the query involves multiple populated places, requires structured comparison, ranking, or aggregation by administrative division. Use Doc when the query focuses on a single city's detailed attributes or historical context. Use both when combining structured population data with additional descriptive information.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify",
+        "compare"
+      ],
+      "join_keys": [
+        "name",
+        "state",
+        "region",
+        "district",
+        "canton",
+        "prefecture"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides tabular data on populated places, including name, administrative division (state, region, canton, district), population, and sometimes rank or type. Examples include lists of towns in India, cities in New Zealand, Swiss municipalities, and cities in Niger.",
+        "elements": [
+          "name",
+          "state",
+          "type",
+          "population",
+          "urban_area",
+          "region",
+          "territorial_authority",
+          "rank",
+          "city",
+          "canton",
+          "city_name",
+          "census_division",
+          "position",
+          "district",
+          "number_of_places",
+          "densest_place",
+          "density",
+          "metro_area",
+          "population_1990",
+          "population_2009"
+        ],
+        "data_examples": [
+          "page_title: List of cities in Bhutan, section_title: 10 largest cities, header: [Rank, City, Population ( 2017 ), District], sample_row: [1, Thimphu, 114,551, Thimphu]",
+          "page_title: List of towns in India by population, section_title: A, header: [Name of Town, State, Type, Population ( 2011 )], sample_row: [Achhnera, Uttar Pradesh, N.P, 22,781]",
+          "page_title: List of cities and towns in the South Island by population, section_title: Towns -- Population 10,000 and over, header: [Urban Area, Population, Region, Territorial Authority], sample_row: [Ashburton, 19,600, Canterbury, Ashburton District]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides a narrative description of a single city, including its name, administrative division (prefecture), population, population density, and area, as well as historical context.",
+        "elements": [
+          "city_name",
+          "prefecture",
+          "country",
+          "incorporation_date",
+          "population",
+          "population_density",
+          "total_area",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Ibaraki,_Osaka\", \"title\": \"Ibaraki, Osaka\", \"text\": \"Ibaraki ( 茨木市 , Ibaraki-shi ) is a city located in Osaka Prefecture , Japan . It is a suburban city of Osaka City and a part of the Kyoto-Osaka-Kobe metropolitan area . Ibaraki translates to wild trees or thorny trees . The city was incorporated on January 1 , 1948 . As of February 2017 , the city has an estimated population of 280,562 and a population density of 3,580 persons per km2 . The total area is 76.52 km2 .\"}"
+        ]
+      }
+    }
+  },
+  "populated_place_record": {
+    "concept": "populated_place_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of a populated place, such as a city, town, village, or neighborhood, including its name and possibly other geographic or administrative attributes.",
+    "routing_guide": "Use Table when the query requires structured attributes such as population, area, administrative designation, or ranking, and when the user expects tabular data. Use Doc when the query involves descriptive information about a specific place, such as its history, etymology, or neighborhood boundaries, or when the place is not covered in the Table sources. Use both when the query needs both structured attributes and descriptive context, or when the Table lacks specific details that Doc can provide.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "city",
+        "country",
+        "population"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on populated places, including municipality names, island chains, populations, areas, name etymologies, special city designations, and cost-of-living rankings, with fields like municipality_name, city, population, area_sq_km, language_of_origin, designation_date, and country.",
+        "elements": [
+          "municipality_name",
+          "island_chain",
+          "population",
+          "area_sq_km",
+          "area_sq_mi",
+          "city",
+          "language_of_origin",
+          "explanation",
+          "city_name",
+          "native_name",
+          "designation_date",
+          "region",
+          "prefecture",
+          "ranking",
+          "country",
+          "Name",
+          "Area ( km )",
+          "Language of origin",
+          "Population ( 2011 )",
+          "Chain"
+        ],
+        "data_examples": [
+          "page_title: List of islands of the Marshall Islands, section_title: Inhabited municipalities, header: [Municipality, Chain, Population ( 2011 ), Area ( km² ), Area ( mi² )], sample_row: [Ailinglaplap Atoll, Ralik, 1,729, 15, 6]",
+          "page_title: List of Canada city name etymologies, section_title: Alberta, header: [City, Language of origin, Explanation], sample_row: [Airdrie, Scottish Gaelic, Named for Airdrie , North Lanarkshire , in Scotland . Possibly originally from Gaelic An Àrd Ruigh meaning a level height or high pasture]",
+          "page_title: Special cities of Japan, section_title: List of special cities, header: [Name, Japanese, Population ( 2012 ), Date of designation, Region, Prefecture], sample_row: [Atsugi, 厚木市, 224,181, 2002-04-01, Kantō, Kanagawa]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides descriptive articles about populated places, including their type (e.g., town, neighborhood, hamlet), location, administrative divisions, population, elevation, and other attributes, with fields like name, type, county, state, country, population, elevation, and coordinates.",
+        "elements": [
+          "name",
+          "type",
+          "county",
+          "state",
+          "country",
+          "population",
+          "elevation",
+          "highway",
+          "location",
+          "administrative_division",
+          "coordinates",
+          "category_name",
+          "administrative_region",
+          "population_threshold",
+          "related_category",
+          "neighborhood_name",
+          "city",
+          "section",
+          "bounding_streets",
+          "settlement_type"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Nagarkurnool\", \"title\": \"Nagarkurnool\", \"text\": \"or\"}",
+          "{\"doc_id\": \"/wiki/Ahyeon-dong\", \"title\": \"Ahyeon-dong\", \"text\": \"Ahyeon-dong is a dong , neighbourhood of Mapo-gu in Seoul , South Korea .\"}",
+          "{\"doc_id\": \"/wiki/Bulgwang-dong\", \"title\": \"Bulgwang-dong\", \"text\": \"Bulgwang-dong is a neighbourhood ( dong ) of Eunpyeong-gu in Seoul , South Korea .\"}"
+        ]
+      }
+    }
+  },
+  "protected_historic_place_record": {
+    "concept": "protected_historic_place_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of a nationally protected historic place, including its identification number, name, description, location, and administrative area, as well as architectural and contextual details when available.",
+    "routing_guide": "Use Table when the query requires structured data on multiple protected places, such as listing, filtering, or aggregating by location or type. Use Doc when the query seeks in-depth details about a specific historic place, such as architectural features or historical context. Use both when combining structured attributes with narrative details, e.g., enriching a table record with descriptive information from a document.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "location"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured lists of historic districts, national monuments, and archaeological sites with fields such as district name, location, municipality, monument number, name, description, townland, coordinates, site number, and city.",
+        "elements": [
+          "district_name",
+          "location",
+          "municipality",
+          "monument_number",
+          "monument_name",
+          "description",
+          "townland",
+          "location_coordinates",
+          "site_number",
+          "site_name",
+          "location_description",
+          "city",
+          "NM #",
+          "Monument name",
+          "Landmark name",
+          "Number",
+          "Name",
+          "District name",
+          "Property name"
+        ],
+        "data_examples": [
+          "page_title: List of National Monuments in County Westmeath, section_title: National Monuments, header: [NM #, Monument name, Description, Townland, Location], sample_row: [520, Athlone Castle, Castle, Athlone, 53°25′23″N 7°56′34″W / 53.423161°N 7.942875°W / 53.423161 ; -7.942875]",
+          "page_title: Washington County History & Landmarks Foundation, section_title: Historic districts, header: [District name, Location, Municipality], sample_row: [Beallsville Historic District, National Road , from Oak Alley to West Alley and Sunset Drive to Sargent Alley, Beallsville Borough]",
+          "page_title: Green River Shell Middens Archeological District, section_title: Contributing properties, header: [Number, Name, Location, City], sample_row: [15BT5, Carlston Annis, Eastern side of the Green River off Kentucky Route 403 37°16′28″N 86°48′19″W / 37.27444°N 86.80528°W / 37.27444 ; -86.80528 ( 15BT5 ), Schulztown]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides detailed narrative descriptions of individual historic places, including name, alternative name, location, county, country, distance from reference points, architectural style, features, and nearby amenities.",
+        "elements": [
+          "name",
+          "alternative_name",
+          "location",
+          "county",
+          "country",
+          "distance_from_reference_point",
+          "architectural_style",
+          "architectural_features",
+          "nearby_amenities",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Delvin_Castle\", \"title\": \"Delvin Castle\", \"text\": \"Clonyn Castle also known as Delvin Castle , is a Victorian country house situated in Delvin , County Westmeath , Ireland some 18 km from Mullingar along the N52 . It is a square , symmetrical , two-storey castle-like building of cut limestone with four tall , round corner towers at each corner . The interior has a large two-storey hall with gallery and arcading . It was one of the last Victorian baronial castles to be built in Ireland . A golf course open to the public lies behind the castle , 5\"}"
+        ]
+      }
+    }
+  },
+  "river_record": {
+    "concept": "river_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of a river, including its name, length within a specific region, total length, and the waterbody it drains into.",
+    "routing_guide": "Use Table when the query involves structured attributes like river name, lengths, or drainage, and when comparisons or aggregations are needed. Use Doc if the information is in narrative form or requires contextual understanding.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "river_name"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides tabular data on rivers, with columns for river name, length within a region, total length, and drainage destination, as seen in lists of rivers by country.",
+        "elements": [
+          "river_name",
+          "length_within_region",
+          "total_length",
+          "drains_into",
+          "River",
+          "Length within Croatia ( km )",
+          "Total length ( km )",
+          "Drains into",
+          "Local authority",
+          "OS Grid reference",
+          "Islands",
+          "Loch",
+          "Country",
+          "Neighbour",
+          "Border length ( km )",
+          "Border length ( mi )"
+        ],
+        "data_examples": [
+          "page_title: List of rivers of Croatia, section_title: Rivers shorter than 50 km in Croatia, header: [River, Length within Croatia ( km ), Total length ( km ), Drains into], sample_row: [Trnava, 47, 47, Mura]"
+        ]
+      }
+    }
+  },
+  "waterbody_record": {
+    "concept": "waterbody_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of a waterbody such as a canal, including its name, location, length, operational period, purpose, and historical significance.",
+    "routing_guide": "Choose Doc when the query involves detailed narrative information about a waterbody, such as its history, purpose, or operational period. Choose Table if a structured table with waterbody records is available; otherwise, use Doc. For comprehensive answers, consider both sources if a linked table exists.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "verify"
+      ],
+      "join_keys": [
+        "canal_name",
+        "location",
+        "length",
+        "operational_period",
+        "purpose",
+        "historical_significance"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "This source provides a narrative description of a canal, including its name, location, length, operational period, purpose, and historical significance. It includes fields such as canal_name, location, length, operational_period, purpose, historical_significance, title, text, and linked_table_id.",
+        "elements": [
+          "canal_name",
+          "location",
+          "length",
+          "operational_period",
+          "purpose",
+          "historical_significance",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Morris_Canal\", \"title\": \"Morris Canal\", \"text\": \"The Morris Canal ( 1829-1924 ) was a 107-mile ( 172-km ) common carrier coal canal across northern New Jersey in the United States that connected the two industrial canals at Easton , Pennsylvania , across the Delaware River from its western terminus at Phillipsburg , New Jersey , to New York Harbor and the New York City markets via its eastern terminals in Newark and on the Hudson River in Jersey City , New Jersey . ( The canal was sometimes called the Morris and Essex Canal , in error , due to\"}"
+        ]
+      }
+    }
+  }
+}

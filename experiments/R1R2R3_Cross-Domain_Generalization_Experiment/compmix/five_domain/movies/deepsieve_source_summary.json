@@ -1,0 +1,63 @@
+{
+  "domain": "movies",
+  "generated_from": "semantic_catalog_build_report.json",
+  "multi_source_patterns": [
+    "Queries about film awards, nominations, and critical reception often require combining structured award data (KG) with narrative context (Doc) and tabulated lists (Table).",
+    "Queries about a film's production details (cast, crew, budget) are best answered by Table records, but may need KG for exact relationships (e.g., 'director of') and Doc for background.",
+    "Queries about a film's place in a franchise or series benefit from Table (film series lists) and KG (sequel/prequel relations), while Doc provides plot summaries.",
+    "Queries about a person's filmography or career milestones are served by Table (filmography tables) and KG (actor-film relations), with Doc for biographical narrative."
+  ],
+  "routing_boundary": "Use Table for precise, row-level facts (e.g., release dates, box office, cast lists) and for comparisons across multiple films. Use KG for explicit relationships between entities (e.g., 'director of', 'starring actor') and for queries requiring graph traversal (e.g., 'all films by director X'). Use Doc for narrative descriptions, plot summaries, critical analysis, and contextual information that is not easily structured. Avoid using Doc for exact numeric or list-based facts; avoid using KG for open-ended or comparative queries; avoid using Table for prose or subjective content.",
+  "sources": {
+    "doc": {
+      "data_shape": "Narrative passages from Wikipedia articles, typically 2-5 paragraphs, covering film plots, biographies, production history, and critical reception. Each document is identified by a title and contains unstructured text.",
+      "summary": "Doc provides rich, contextual information about films and people, including plot summaries, behind-the-scenes details, and critical analysis. It is best for understanding the 'why' and 'how' behind facts, and for answering questions that require synthesis or interpretation.",
+      "best_for": [
+        "Summarizing a film's plot or a person's career in a narrative form.",
+        "Explaining the production background or development of a film.",
+        "Providing critical reception or thematic analysis of a film.",
+        "Answering 'why' or 'how' questions that require contextual understanding."
+      ],
+      "avoid_when": [
+        "When the answer is a specific numeric fact (e.g., release year, budget) that is better found in a table.",
+        "When the query asks for a list of items (e.g., all films by a director) that is more efficiently answered by structured data.",
+        "When the query requires exact relationships between entities (e.g., 'who directed film X?') that are explicitly modeled in KG."
+      ]
+    },
+    "kg": {
+      "data_shape": "A knowledge graph with entities (e.g., films, people, awards) and relations (e.g., 'director', 'starring actor', 'nominated for'). Each triple is a subject-predicate-object statement, possibly with qualifiers (e.g., time, location). The graph contains 24,471 entities and 32,195 triples.",
+      "summary": "KG provides explicit, structured relationships between entities, enabling precise graph-based queries. It is ideal for questions that involve specific relations, such as 'who directed film X?' or 'which films did actor Y star in?' However, it may contain broad safe distractor relations, so predicate and entity compatibility is crucial.",
+      "best_for": [
+        "Queries that ask for a specific relationship, e.g., 'director of', 'cast member', 'production company'.",
+        "Traversing the graph to find connected entities, e.g., 'all films by director X' or 'all actors in film Y'.",
+        "Answering questions about awards and nominations, e.g., 'which films won Best Picture?'",
+        "Queries that require disambiguation between entities with similar names, using properties like 'native language' or 'country for sport'."
+      ],
+      "avoid_when": [
+        "When the query requires narrative or descriptive content, such as plot summaries or critical analysis.",
+        "When the query is open-ended or comparative, e.g., 'which film is better?' or 'what are the themes of film X?'",
+        "When the answer is a list of items that is better presented in a table, e.g., a filmography list with multiple attributes."
+      ]
+    },
+    "table": {
+      "data_shape": "Structured tables with rows and columns, each table representing a specific topic (e.g., a film's cast, a film series' box office, a person's filmography). Tables contain 5,630 rows across 845 tables, with each row typically representing a film or person and columns representing attributes like release date, role, or award.",
+      "summary": "Table provides precise, row-level data that is ideal for comparisons and lookups. It is best for queries that require specific attributes of multiple items, such as 'list all films in the Marvel Cinematic Universe with their release dates' or 'compare box office earnings of films directed by X'.",
+      "best_for": [
+        "Queries that require a list of items with specific attributes, e.g., 'films released in 1994' or 'actors in The Godfather'.",
+        "Comparative queries across multiple entities, e.g., 'which film had the highest box office?'",
+        "Queries that need exact dates, numbers, or names, e.g., 'release date of Tenet' or 'cast of Moonraker'.",
+        "When the answer is a structured list that can be presented as a table, e.g., filmography or awards list."
+      ],
+      "avoid_when": [
+        "When the query requires narrative or descriptive content, such as plot summaries or critical analysis.",
+        "When the query involves complex relationships that are not directly represented in a single table, e.g., 'who directed the film that won Best Picture in 1994?' (requires joining multiple tables or using KG).",
+        "When the query is about a concept that is not tabulated, e.g., 'themes in David Lynch films'."
+      ]
+    }
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_basis": "balanced_cluster_representatives"
+  }
+}

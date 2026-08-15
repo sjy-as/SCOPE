@@ -1,0 +1,31 @@
+{
+  "sub_q1": "Who received the NBA Rookie of the Year Award in 2001?",
+  "sub_q2": "During the January games of the 2007–08 Memphis Grizzlies season, what was the highest score for [1]?",
+  "rewrite_reasoning": "The question asks for a specific player's highest score during January games of the 2007–08 Memphis Grizzlies season, but first we need to identify who that player is. The player is described as the recipient of the NBA Rookie of the Year Award in 2001. So q1 identifies the player, and q2 uses that player to find their highest score in January 2008 games.",
+  "match1": null,
+  "match2": null,
+  "route1": {
+    "matched_concept": "award_received",
+    "primary_source": "kg",
+    "fallback_source": "table",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: NBA Rookie of the Year Award (award) and 2001 (time). ASKED target: player (who received). Phase-1 rule: relation-first. The award_received concept links player + award + time, which exactly matches the pair (award, player) with a time constraint. Source selection: KG is LIKELY because its elements (player, award, time) directly match the query's components. Table is LIKELY because it documents award recipients with season and player columns, which could cover this award. KG is preferred as primary because its elements most directly name the ASKED target (player) and the structured fact (player-award-time) is atomic. Table is fallback."
+  },
+  "route2": {
+    "matched_concept": "monthly_schedule",
+    "primary_source": "table",
+    "fallback_source": "kg",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: 2007–08 Memphis Grizzlies season (a team season). ASKED target: the highest score during the January games (a statistical value from game logs). Phase-1 rule: No relation concept links a team season to a score; the query asks for an attribute (score) of a known entity (the season's January games). The known entity is the team season, and the concept that covers team season game logs is monthly_schedule. Phase-2: KG is RULED-OUT because its elements (team, venue, start_time, end_time) do not include scores or game results. Table is LIKELY because monthly_schedule's elements (Date, H/A/N, Opponent, Score, Record) directly cover game scores by month, and the data examples show January game logs with scores. Primary source is table; fallback is kg (only other live source, though ruled out)."
+  },
+  "decompose_llm_calls": [
+    {
+      "stage": "step2.sq",
+      "ts": 1786685492.9210804,
+      "prompt": "You are a query decomposition assistant.\n\n        Your job is to transform ONE natural-language semantic query into EXACTLY two sub-questions.\n\n        Requirements:\n        1. The input is already a natural semantic query. Do NOT rewrite it into a different intent.\n        2. Output exactly two sub-questions: q1 and q2.\n        3. q1 should extract the first necessary piece of information.\n        4. q2 should depend on q1 and use [1] to refer to the answer of q1 when needed.\n        5. Do not do event judgment, schema routing, source selection, or query rewriting.\n        6. Keep the sub-questions faithful to the original meaning.\n        7. Return valid JSON only.\n\n        Return format:\n        {\n        \"reasoning\": \"brief explanation of the decomposition\",\n        \"subqueries\": [\n            {\n            \"id\": \"q1\",\n            \"query\": \"...\",\n            \"depends_on\": [],\n            \"variables\": []\n            },\n            {\n            \"id\": \"q2\",\n            \"query\": \"...\",\n            \"depends_on\": [\"q1\"],\n            \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n            }\n        ]\n        }\n\n        Question: During the January games of the 2007–08 Memphis Grizzlies season, what was his highest score for the player who received NBA Rookie of the Year Award in 2001?\n\n    ",
+      "response": "{\n  \"reasoning\": \"The question asks for a specific player's highest score during January games of the 2007–08 Memphis Grizzlies season, but first we need to identify who that player is. The player is described as the recipient of the NBA Rookie of the Year Award in 2001. So q1 identifies the player, and q2 uses that player to find their highest score in January 2008 games.\",\n  \"subqueries\": [\n    {\n      \"id\": \"q1\",\n      \"query\": \"Who received the NBA Rookie of the Year Award in 2001?\",\n      \"depends_on\": [],\n      \"variables\": []\n    },\n    {\n      \"id\": \"q2\",\n      \"query\": \"During the January games of the 2007–08 Memphis Grizzlies season, what was the highest score for [1]?\",\n      \"depends_on\": [\"q1\"],\n      \"variables\": [\n        {\n          \"name\": \"ref_1\",\n          \"source_query\": \"q1\"\n        }\n      ]\n    }\n  ]\n}",
+      "module": "step2.sq",
+      "model": "deepseek-chat"
+    }
+  ]
+}

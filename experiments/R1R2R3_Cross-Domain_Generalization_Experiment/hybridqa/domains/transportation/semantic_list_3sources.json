@@ -1,0 +1,2123 @@
+{
+  "administrative_division": {
+    "concept": "administrative_division",
+    "semantic_type": "entity",
+    "overall_description": "A principal administrative division of a country, such as a department, province, or state, with defined boundaries and local governance.",
+    "routing_guide": "For queries about administrative divisions, use Doc when the information is embedded in descriptive text or when you need to retrieve details such as borders, ethnic groups, or languages. Use Table if a structured table of administrative divisions is available, but in this catalog, only Doc is present. Choose Doc for all administrative division queries.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "name",
+        "country",
+        "type"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Documents provide descriptive text about administrative divisions, including their name, country, type, capital, borders, ethnic groups, languages, and other attributes. The text field contains the full narrative description, while structured elements like name, country, type, capital, and borders are available as fields.",
+        "elements": [
+          "name",
+          "country",
+          "type",
+          "capital",
+          "borders",
+          "ethnic_groups",
+          "languages",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Huehuetenango_Department\", \"title\": \"Huehuetenango Department\", \"text\": \"Huehuetenango is one of the 22 departments of Guatemala . It is situated in the western highlands and shares borders with the Mexican state of Chiapas in the north and west ; with El Quiché in the east , with Totonicapán , Quetzaltenango and San Marcos to the south . The capital is the city of Huehuetenango . Huehuetenango 's ethnic composition is one of the most diverse in Guatemala . While the Mam are predominant in the department , other Maya groups are the Q'anjob'al , Chuj , Jakaltek , Tekt\"}"
+        ]
+      }
+    }
+  },
+  "air_route": {
+    "concept": "air_route",
+    "semantic_type": "entity",
+    "overall_description": "A route between two airports, typically characterized by the origin and destination airports and the volume of passenger traffic.",
+    "routing_guide": "Use Table when the query involves structured data such as rankings, counts, or specific fields like origin/destination airports or passenger numbers. Use Doc if additional context or narrative is needed, but for this concept, Table is primary.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "sort",
+        "aggregate",
+        "compare"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "origin_airport",
+        "destination_airport"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides tabular data on busiest passenger air routes, including rank, origin and destination cities/airports, flight counts, passenger counts, and top carriers, with examples from specific years and regions.",
+        "elements": [
+          "rank",
+          "origin_city",
+          "destination_city",
+          "flight_count",
+          "top_carriers",
+          "origin_airport",
+          "destination_airport",
+          "passenger_count",
+          "year",
+          "Airport 1",
+          "Airport 2",
+          "Passengers ( 2017 )",
+          "Airport",
+          "Top carriers",
+          "Passengers",
+          "Aircraft Movements",
+          "Carriers",
+          "Passengers 2018",
+          "Flight",
+          "City"
+        ],
+        "data_examples": [
+          "page_title: List of busiest passenger air routes, section_title: Regional statistics -- Argentina ( 2017 ), header: [Rank, Airport 1, Airport 2, Passengers ( 2017 )], sample_row: [1, Buenos Aires, Santiago de Chile, 2,027,000]",
+          "page_title: List of busiest passenger air routes, section_title: By aircraft movements -- Domestic, header: [Rank, City 1, City 2, Flights from Mar . 2018 to Feb. 2019, Top carriers], sample_row: [1, Jeju, Seoul-Gimpo, 79,460, Air Busan , Air Seoul , Asiana Airlines , Eastar Jet , Jeju Air , Jin Air , Korean Air , T'way Air]"
+        ]
+      }
+    }
+  },
+  "air_transport_association": {
+    "concept": "air_transport_association",
+    "semantic_type": "entity",
+    "overall_description": "A trade association or industry body representing airlines, setting standards, and advocating for the industry.",
+    "routing_guide": "Use Doc when the query involves descriptive details about the association, such as its founding, membership, or operational scope. Use Table if tabular data about associations is available; otherwise, rely on Doc.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "sort",
+        "aggregate"
+      ],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify"
+      ],
+      "join_keys": [
+        "name"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides narrative descriptions of the association, including its name, founding year, headquarters and executive office locations, member count, member countries, member airlines, traffic share, and title/text content.",
+        "elements": [
+          "name",
+          "founding_year",
+          "headquarters_location",
+          "executive_office_location",
+          "member_count",
+          "member_countries",
+          "member_airlines",
+          "traffic_share",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/IATA\", \"title\": \"IATA\", \"text\": \"The International Air Transport Association ( IATA /aɪˈɑːtə/ ) is a trade association of the world 's airlines founded in 1945 . IATA has been described as a cartel since , in addition to setting technical standards for airline , IATA also organized tariff conferences that served as a forum for price fixing . Consisting of 290 airlines , primarily major carriers , representing 117 countries , the IATA 's member airlines account for carrying approximately 82% of total available seat miles air tra\"}"
+        ]
+      }
+    }
+  },
+  "aircraft": {
+    "concept": "aircraft",
+    "semantic_type": "entity",
+    "overall_description": "Aircraft are powered or unpowered flying vehicles designed for air travel, used in military, transport, and utility roles. This concept encompasses various types, including fixed-wing aircraft, gliders, and special-purpose attack aircraft, as evidenced by historical World War II examples.",
+    "routing_guide": "Choose Table when you need to filter, sort, or compare aircraft based on structured attributes like name, year, or country. Choose Doc when you need detailed descriptions or historical context about a specific aircraft. Use both when you need to combine structured data with narrative details, e.g., to verify a fact or enrich a comparison.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "type",
+        "country_of_origin",
+        "year_in_service"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on aircraft used in World War II, including attributes such as name, year in service, country of origin, and type. It offers tabular information suitable for filtering, sorting, and comparing aircraft based on these fields.",
+        "elements": [
+          "name",
+          "year_in_service",
+          "country_of_origin",
+          "Name of aircraft",
+          "Country of origin",
+          "Year in service",
+          "Aircraft",
+          "Allied Code name",
+          "First flown",
+          "Number built",
+          "Service",
+          "Year first flight",
+          "Type",
+          "Origin",
+          "Description"
+        ],
+        "data_examples": [
+          "page_title: List of aircraft of World War II, section_title: Operational aircraft -- Transport and utility aircraft, header: [Name of aircraft, Year in service, Country of origin], sample_row: [Arado Ar 232, 1943, Germany]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides descriptive text about specific aircraft, including details on their type, propulsion, role, and historical context. It offers narrative information that can be used for retrieval and verification of aircraft details.",
+        "elements": [
+          "name",
+          "type",
+          "propulsion",
+          "role",
+          "country_of_origin",
+          "era",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Antonov_A-7\", \"title\": \"Antonov A-7\", \"text\": \"The Antonov A-7 was a Soviet light troop military glider of World War II .\"}",
+          "{\"doc_id\": \"/wiki/Yokosuka_MXY-7\", \"title\": \"Yokosuka MXY-7\", \"text\": \"The Yokosuka MXY-7 Ohka ( 櫻花 , Ōka , cherry blossom ; 桜花 in modern orthography ) was a purpose-built , rocket-powered human-guided kamikaze attack aircraft employed by Japan against Allied ships towards the end of World War II .\"}"
+        ]
+      }
+    }
+  },
+  "airline": {
+    "concept": "airline",
+    "semantic_type": "entity",
+    "overall_description": "An airline is a company that provides air transport services for passengers or cargo, operating aircraft and typically holding necessary certifications and operating from specific hubs or headquarters.",
+    "routing_guide": "Use Table when you need structured, tabular data about airlines, such as codes, hubs, or operational notes. Use Doc when you need detailed narrative descriptions, including company history, legal names, or service details. Use both when you need comprehensive information combining structured attributes with contextual descriptions.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify",
+        "filter"
+      ],
+      "join_keys": [
+        "airline_name",
+        "name"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on airlines, including airline name, IATA/ICAO codes, callsign, hub airport or headquarters, and notes on services, as exemplified by the list of airlines of Manitoba.",
+        "elements": [
+          "airline_name",
+          "iata_code",
+          "icao_code",
+          "callsign",
+          "hub_airport_or_headquarters",
+          "notes",
+          "Airline",
+          "Hub airport ( s ) or headquarters",
+          "ICAO",
+          "IATA",
+          "Hub Airport ( s )",
+          "Commenced operations"
+        ],
+        "data_examples": [
+          "page_title: List of airlines of Manitoba, section_title: Current airlines, header: [Airline, IATA, ICAO, Callsign, Hub Airport ( s ) or headquarters, Notes], sample_row: [Calm Air, MO, CAV, CALM AIR, Thompson, Scheduled passenger service , charters , cargo]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides descriptive text about specific airlines, including legal name, headquarters location, size ranking, types of services, main base, and hubs, as seen in articles about Arkia and SeaDream Yacht Club.",
+        "elements": [
+          "name",
+          "headquarters",
+          "country",
+          "main_base",
+          "hubs",
+          "services",
+          "headquarters_location",
+          "founding_year",
+          "founder",
+          "type",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/SeaDream_Yacht_Club\", \"title\": \"SeaDream Yacht Club\", \"text\": \"SeaDream Yacht Club is a private cruise line with its headquarters in Oslo , Norway . It was founded in 2001 by Atle Brynestad , the Norwegian founder of Seabourn Cruise Line .\"}",
+          "{\"doc_id\": \"/wiki/Arkia\", \"title\": \"Arkia\", \"text\": \"Arkia , legally incorporated as Arkia Israeli Airlines Ltd ( Hebrew : ארקיע , I will soar , Arabic : خطوط أركيا ) , is an Israeli airline . Its head office is on the grounds of Sde Dov Airport in Tel Aviv , Israel . It is Israel 's second-largest airline , operating scheduled domestic and international services , as well as charter flights to destinations in Western Europe and across the Mediterranean . Its main base is Ben Gurion Airport , with hubs at Eilat Airport and Ramon Airport .\"}"
+        ]
+      }
+    }
+  },
+  "airline_destination": {
+    "concept": "airline_destination",
+    "semantic_type": "entity",
+    "overall_description": "A destination served by an airline, characterized by city, country, and airport codes, and associated with a specific airline's route network.",
+    "routing_guide": "Use Table for structured queries involving specific destinations, codes, or route networks. Use Doc if additional context or unstructured information is needed.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "city",
+        "country",
+        "iata_code",
+        "icao_code",
+        "airport"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on airline destinations, including city, country, IATA and ICAO codes, and airport names, as exemplified by the Kuban Airlines destinations table.",
+        "elements": [
+          "city",
+          "country",
+          "iata_code",
+          "icao_code",
+          "airport",
+          "Notes",
+          "IATA",
+          "ICAO",
+          "Destination",
+          "Airport Name",
+          "Company",
+          "Type",
+          "Principal activities",
+          "Incorporated in",
+          "Group 's equity shareholding"
+        ],
+        "data_examples": [
+          "page_title: List of Kuban Airlines destinations, section_title: , header: [City, Country, IATA, ICAO, Airport], sample_row: [Anapa, Russia, AAQ, URKA, Anapa Airport]"
+        ]
+      }
+    }
+  },
+  "airport": {
+    "concept": "airport",
+    "semantic_type": "entity",
+    "overall_description": "An airport is a facility where aircraft take off and land, typically with runways, terminals, and associated infrastructure, serving as a point of origin or destination for air travel.",
+    "routing_guide": "Choose Table when the query involves comparing multiple airports, ranking by passenger traffic, or filtering by location or codes. Choose Doc when the query requires detailed information about a specific airport, such as its infrastructure, history, or hub status. Use both when a comprehensive answer is needed, e.g., comparing airports and then retrieving details for the top ones.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "airport_name",
+        "IATA_code",
+        "ICAO_code",
+        "city_served",
+        "location"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Tabular sources provide structured lists of airports with attributes such as rank, airport name, location (city, country, province), IATA/ICAO codes, passenger counts, aircraft movements, and annual changes. These are useful for comparing airports by traffic, filtering by location, and sorting by various metrics.",
+        "elements": [
+          "rank",
+          "airport_name",
+          "location",
+          "iata_icao_code",
+          "total_passengers",
+          "percentage_change",
+          "year",
+          "community",
+          "TC_LID",
+          "city_served",
+          "country",
+          "passengers",
+          "annual_change",
+          "icao_code",
+          "iata_code",
+          "served_area",
+          "aircraft_movements",
+          "province",
+          "current_use",
+          "city"
+        ],
+        "data_examples": [
+          "page_title: List of airports in Mozambique, section_title: Airports, header: [City served, ICAO, IATA, Airport name], sample_row: [Angoche, FQAG, ANO, Angoche Airport]",
+          "page_title: List of the busiest airports in Canada, section_title: 2010 -- Canada 's 20 busiest airports by aircraft movements, header: [Rank, Airport, Serves, Aircraft movements, Annual change], sample_row: [1, Toronto Pearson International Airport, Greater Toronto Area, 419,061, 2.7%]",
+          "page_title: List of airports in Alberta, section_title: List of airports and heliports, header: [Community, Airport name, TC LID], sample_row: [Airdrie, Airdrie Aerodrome, CEF4]"
+        ]
+      },
+      "Doc": {
+        "description": "Document sources provide detailed textual descriptions of individual airports, including IATA/ICAO codes, location, passenger traffic statistics, hub status, runway and terminal details, and operational history. These are useful for retrieving specific information about a particular airport and verifying facts.",
+        "elements": [
+          "name",
+          "IATA_code",
+          "ICAO_code",
+          "location",
+          "passenger_traffic",
+          "hub_airline",
+          "runways",
+          "terminals",
+          "terminal_count",
+          "terminal_area",
+          "runway_length",
+          "total_area",
+          "opening_year",
+          "served_city",
+          "runway_width",
+          "hub_status",
+          "busiest_rank",
+          "transcontinental_service",
+          "city",
+          "country"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Regina_International_Airport\", \"title\": \"Regina International Airport\", \"text\": \"Regina International Airport ( IATA : YQR , ICAO : CYQR ) is an international airport located in Regina , Saskatchewan , Canada , located 2 nautical miles ( 3.7 km ; 2.3 mi ) south-west and 7 km ( 4.3 mi ) west south-west of the city centre . It is run by the Regina Airport Authority . It was , in 2010 , the second busiest Nav Canada airport in Saskatchewan ( Saskatoon John G. Diefenbaker being the busiest ) . The airport is classified as an airport of entry by Nav Canada and is staffed by the C\"}",
+          "{\"doc_id\": \"/wiki/Ottawa/Manotick_(Hope_Field)_Aerodrome\", \"title\": \"Ottawa/Manotick (Hope Field) Aerodrome\", \"text\": \"Ottawa/Manotick ( Hope Field ) Aerodrome ( TC LID : CHF2 ) , is a small airport located 2.3 nautical miles ( 4.3 km ; 2.6 mi ) southwest of Manotick , Ontario , Canada , south of Ottawa .\"}",
+          "{\"doc_id\": \"/wiki/Gatwick_Airport\", \"title\": \"Gatwick Airport\", \"text\": \"Gatwick Airport ( /ˈɡætwɪk/ ) , also known as London Gatwick ( IATA : LGW , ICAO : EGKK ) , is a major international airport near Crawley in West Sussex , southeast England , 29.5 miles ( 47.5 km ) south of Central London . It is the second-busiest airport by total passenger traffic in the UK , after Heathrow Airport . Gatwick is the ninth-busiest airport in Europe . It covers a total area of 674 hectares ( 1,670 acres ) . Gatwick opened as an aerodrome in the late 1920s ; it has been in use for\"}"
+        ]
+      }
+    }
+  },
+  "bridge": {
+    "concept": "bridge",
+    "semantic_type": "entity",
+    "overall_description": "A structure built to span physical obstacles such as rivers, valleys, or roads, providing passage for vehicles or pedestrians, and characterized by its location, span, length, and opening date.",
+    "routing_guide": "Choose Table when the query requires structured attributes like length, year, or location, or when comparing multiple bridges. Use Doc if detailed historical or narrative context is needed. Both can be used together for comprehensive information.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "location"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured lists of bridges with attributes such as name, location, year built, design, length, span, and historical notes, as seen in examples from the Philippines, New York, and Calgary.",
+        "elements": [
+          "name",
+          "location",
+          "year_built",
+          "design",
+          "length",
+          "historical_notes",
+          "bridge_name",
+          "carries",
+          "remarks",
+          "spans",
+          "region",
+          "length_meters",
+          "opened_year",
+          "length_ft",
+          "span",
+          "design_and_historical_notes",
+          "Bridge",
+          "Length in meters",
+          "Opened",
+          "Year Built"
+        ],
+        "data_examples": [
+          "page_title: List of bridges in the Philippines, section_title: Luzon, header: [Bridge, Spans, Region, Length in meters, Opened], sample_row: [Agat ( Bued ) Bridge, Bued River between Sison and Rosario, Ilocos Region, 500, 2010]",
+          "page_title: List of covered bridges in New York, section_title: 24 identified by New York Society of Covered Bridges, header: [Name, Location, Year Built, Length ( ft ), Spans, Design and Historical Notes], sample_row: [Downsville Bridge, Delaware County, 1854, 174, East Branch of the Delaware River, Listed on the National Register of Historic Places in 1999]",
+          "page_title: List of bridges in Calgary, section_title: Crossings -- Fish Creek, header: [Bridge, Carries, Remarks], sample_row: [37 St SW Bridge, 37 St SW, Connects the neighbourhoods of Woodbine and Evergreen]"
+        ]
+      }
+    }
+  },
+  "bus_company": {
+    "concept": "bus_company",
+    "semantic_type": "entity",
+    "overall_description": "A company that operates bus services, typically providing local, regional, or charter transportation for passengers, and may also offer vehicle hire or other related services.",
+    "routing_guide": "Choose Doc when the query involves understanding the full context of a bus company, such as its history, service details, or operational scope. Use Table if a structured tabular representation of bus companies is available, but in this catalog, only Doc is present. For queries requiring specific attributes like founding year or headquarters, Doc can be used with extraction. For routing, prefer Doc for entity-centric questions.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "headquarters_location",
+        "founding_year",
+        "service_area",
+        "service_types"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides narrative descriptions of bus companies, including details such as name, headquarters location, founding year, service area, and types of services offered. The 'elements' field lists the semantic fields that can be extracted from the text, and 'data_examples' shows a sample document with structured information.",
+        "elements": [
+          "name",
+          "headquarters_location",
+          "founding_year",
+          "service_area",
+          "service_types",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Sullivan_Buses\", \"title\": \"Sullivan Buses\", \"text\": \"Sullivan Buses is a bus company based in South Mimms , Hertfordshire , England . Founded in 1998 , it operates local bus services in and around Hertfordshire and north London including school services , rail replacement bus services in and near London , bus links in Surrey to and from Thorpe Park and vehicle hire for television programmes .\"}"
+        ]
+      }
+    }
+  },
+  "bus_route": {
+    "concept": "bus_route",
+    "semantic_type": "entity",
+    "overall_description": "A scheduled service for buses operating along a defined path between two terminal points, typically identified by a route number and operated by a specific transit operator.",
+    "routing_guide": "Use the Table source when structured data on bus routes is needed, such as for filtering by operator or sorting by route number. Use Doc if additional unstructured context is required, but for this concept, Table is primary.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "route_number",
+        "operator"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides tabular data on bus routes, including route number, start and end locations, and operating company, as exemplified by the London bus routes table.",
+        "elements": [
+          "route_number",
+          "start_location",
+          "end_location",
+          "operator",
+          "Route",
+          "Start",
+          "End",
+          "Letter code",
+          "Schools"
+        ],
+        "data_examples": [
+          "page_title: List of bus routes in London, section_title: List of routes -- 100–199, header: [Route, Start, End, Operator], sample_row: [100, St. Pauls, Shadwell station, London General]"
+        ]
+      }
+    }
+  },
+  "census_designated_place": {
+    "concept": "census_designated_place",
+    "semantic_type": "entity",
+    "overall_description": "A populated place or community recognized by a census bureau for statistical purposes, often unincorporated and defined by population counts and geographic boundaries.",
+    "routing_guide": "Use Doc when the query involves natural language descriptions, contextual details, or attributes not structured in tables. For structured queries requiring specific fields like population or census year, prefer Table if available. If both sources are present, use Doc for enrichment and Table for precise filtering and aggregation.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "state",
+        "county"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides textual descriptions of census-designated places, including their name, administrative division, district, state, country, nearby cities, type, county, population, census year, location, and title. Examples include detailed narratives about specific CDPs like Andes (CDP), New York, and Murbad, India.",
+        "elements": [
+          "name",
+          "administrative_division",
+          "district",
+          "state",
+          "country",
+          "nearby_cities",
+          "type",
+          "county",
+          "population",
+          "census_year",
+          "location",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Andes_(CDP),_New_York\", \"title\": \"Andes (CDP), New York\", \"text\": \"Andes is a hamlet and census-designated place ( CDP ) in Delaware County , New York , United States . The population was 252 at the 2010 census . It was formerly a village . Andes is located on Route 28 and is the only significant community in the town of Andes .\"}",
+          "{\"doc_id\": \"/wiki/Murbad\", \"title\": \"Murbad\", \"text\": \"Murbad is a census town within the administrative division ( Taluka ) of Thane district in the Indian state of Maharashtra . Murbad city ; its neighboring villages jointly form the Murbad Nagar Panchayat , which is near the cities of Thane , Karjat and Kalyan . Nearby cities include Badlapur , Ambernath , Ulhasnagar , and Dombivli . It is a largely industrial town with private and public enterprises ( MIDC ) .\"}"
+        ]
+      }
+    }
+  },
+  "city": {
+    "concept": "city",
+    "semantic_type": "entity",
+    "overall_description": "A populated place that serves as an administrative center, often with historical significance and local governance.",
+    "routing_guide": "Use Doc when the query involves detailed textual information about a city's history, administrative role, or descriptive attributes. For structured data like population figures or municipal status, Doc can be used if Table is not available. If both sources are present, prefer Table for structured queries and Doc for narrative or context-rich queries.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "compare",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "country",
+        "administrative_role",
+        "population",
+        "location"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides textual descriptions of cities, including their name, country, administrative role, historical capital status, location features, population, and municipal status. Examples include Zomba, Malawi; Abbotsford, British Columbia; and Butuan City, Philippines.",
+        "elements": [
+          "name",
+          "country",
+          "administrative_role",
+          "historical_capital_status",
+          "location_features",
+          "population",
+          "location",
+          "municipal_status",
+          "census_metropolitan_area",
+          "historical_significance",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Zomba,_Malawi\", \"title\": \"Zomba, Malawi\", \"text\": \"Zomba is a city in southern Malawi , in the Shire Highlands . It is the administrative capital of Zomba District . It was the capital of first British Central Africa and then Nyasaland Protectorate before the establishment of Malawi in 1964 . It was also the first capital of Malawi and remained so until 1974 , when Lilongwe became the capital . The Parliament remained even longer , until 1994 in Zomba . The city is best known for its British colonial architecture and its location at the base of \"}",
+          "{\"doc_id\": \"/wiki/Abbotsford,_British_Columbia\", \"title\": \"Abbotsford, British Columbia\", \"text\": \"Abbotsford is a city located in British Columbia , adjacent to the Canada-United States border , Greater Vancouver and the Fraser River . With an estimated population of 141,397 people it is the largest municipality in the province outside Metro Vancouver . Abbotsford-Mission has the third highest proportion of visible minorities among census metropolitan areas in Canada , after the Greater Toronto Area and the Greater Vancouver CMA . It is home to Tradex , the University of the Fraser Valley , \"}",
+          "{\"doc_id\": \"/wiki/Butuan_City\", \"title\": \"Butuan City\", \"text\": \"Butuan ( pronounced /ˌbuːtuˈʔɑːn/ ) , officially the City of Butuan ( Cebuano : Dakbayan sa Butuan ; Butuanon : Dakbayan hong Butuan ) , or simply known as Butuan City , is a 1st class highly urbanized city and regional center of the Caraga Region , Philippines . According to the 2015 census , it has a population of 337,063 people . It served as the former capital of the Rajahnate of Butuan before 1001 until 1756 . The city used to be known during that time as the best in gold and boat manufactu\"}"
+        ]
+      }
+    }
+  },
+  "country": {
+    "concept": "country",
+    "semantic_type": "entity",
+    "overall_description": "A country is a distinct territorial body or political entity, often a sovereign state, with defined borders, a population, and a government.",
+    "routing_guide": "Use Doc when the query requires comprehensive country information such as historical context, detailed descriptions, or specific attributes like capital or area. Use Table if structured tabular data is available for countries; otherwise, prefer Doc. For queries involving multiple countries and comparisons, consider both sources if Table is present.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "name",
+        "capital",
+        "area",
+        "population"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides detailed textual descriptions of countries, including their name, capital, area, population, borders, location, and administrative divisions, as exemplified by the Montenegro article.",
+        "elements": [
+          "name",
+          "capital",
+          "area",
+          "population",
+          "borders",
+          "location",
+          "administrative divisions",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Montenegro\", \"title\": \"Montenegro\", \"text\": \"Montenegro ( /ˌmɒntɪˈneɪɡroʊ , -ˈniːɡroʊ , -ˈnɛɡroʊ/ ( listen ) ; Montenegrin : Црна Гора , romanized : Crna Gora , [ tsr̩̂ːnaː ɡǒra ] ) is a country of South and Southeast Europe on the coast of the Balkans . It borders Bosnia-Herzegovina to the northwest , Serbia to the northeast , Kosovo [ a ] to the east , Albania to the southeast , the Adriatic Sea to the southwest , and Croatia to the west . Montenegro has an area of 13,812 square kilometres and a population of 620,079 ( 2011 census ) . It\"}"
+        ]
+      }
+    }
+  },
+  "county": {
+    "concept": "county",
+    "semantic_type": "entity",
+    "overall_description": "A county is an administrative or political subdivision of a state or country, typically with defined boundaries, a local government, and a population, often serving as a geographic unit for governance and statistics.",
+    "routing_guide": "For queries about specific county details, demographics, or administrative information, use the Doc source. For comparative or statistical analyses across multiple counties, consider using a Table source if available; otherwise, rely on Doc and aggregate manually.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "name",
+        "state",
+        "country"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides detailed textual descriptions of individual counties, including attributes such as name, state, country, population, county seat, metropolitan statistical area, and geographic location. It offers rich narrative context and specific data points for a given county.",
+        "elements": [
+          "name",
+          "state",
+          "country",
+          "population",
+          "county_seat",
+          "metropolitan_statistical_area",
+          "geographic_location",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/DeKalb_County,_Georgia\", \"title\": \"DeKalb County, Georgia\", \"text\": \"DeKalb County ( /dəˈkæb/ də-KAB ) is a county in the U.S. state of Georgia . As of the 2010 census , the population was 691,893 , making it Georgia 's fourth-most populous county . Its county seat is Decatur . DeKalb County is included in the Atlanta-Sandy Springs-Roswell , GA Metropolitan Statistical Area . It contains roughly 10% of the city of Atlanta ( the other 90% lies in Fulton County ) . [ citation needed ] It is Georgia 's most diverse county . DeKalb is primarily a suburban county , an\"}"
+        ]
+      }
+    }
+  },
+  "county_route": {
+    "concept": "county_route",
+    "semantic_type": "entity",
+    "overall_description": "A road or highway maintained by a county, typically identified by a route number and having defined endpoints and length.",
+    "routing_guide": "Choose Table when the query involves structured data on county routes, such as route numbers, lengths, or endpoints. Use Doc if additional narrative or context is needed, but for this concept, Table is the primary source.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve",
+        "verify"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "route_number",
+        "length_miles",
+        "length_kilometers",
+        "from_location",
+        "via_road",
+        "to_location"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured lists of county routes with fields such as route number, length in miles and kilometers, and endpoints (from, via, to). Examples include specific routes in New York counties.",
+        "elements": [
+          "route_number",
+          "length_miles",
+          "length_kilometers",
+          "from_location",
+          "via_road",
+          "to_location",
+          "origin",
+          "via",
+          "destination",
+          "Route",
+          "From",
+          "To",
+          "Length ( mi )",
+          "Length ( km )",
+          "Notes"
+        ],
+        "data_examples": [
+          "page_title: List of county routes in Washington County, New York, section_title: Routes 41 and up, header: [Route, Length ( mi ), Length ( km ), From, Via, To], sample_row: [CR 41, 6.09, 9.80, US 4 in Hudson Falls, Notre Dame and Mud streets, NY 149 in Kingsbury]",
+          "page_title: List of county routes in Montgomery County, New York, section_title: Routes 51–100, header: [Route, Length ( mi ), Length ( km ), From, Via, To], sample_row: [CR 51, 0.34, 0.55, CR 61, South St. Johnsville Road in Minden, Dead end]",
+          "page_title: List of county routes in Fulton County, New York, section_title: Routes 131 and up, header: [Route, Length ( mi ), Length ( km ), From, Via, To], sample_row: [CR 131, 2.09, 3.36, NY 29, Meco Road in Johnstown, CR 101 at West Fulton Street Extension]"
+        ]
+      }
+    }
+  },
+  "cruise_ship": {
+    "concept": "cruise_ship",
+    "semantic_type": "entity",
+    "overall_description": "A cruise ship is a passenger ship used for pleasure voyages, offering amenities and accommodations, and operated by a cruise line.",
+    "routing_guide": "Use Table for overview queries, comparisons, or aggregations across multiple ships (e.g., list ships by operator, count ships by status). Use Doc for in-depth details about a specific ship (e.g., capacity, deployment). Use both when needing both summary and detailed information.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "compare"
+      ],
+      "join_keys": [
+        "name"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides a list of cruise ships with attributes such as name, operator, began operation, tonnage, and status, including historical names.",
+        "elements": [
+          "name",
+          "operator",
+          "began_operation",
+          "tonnage",
+          "status",
+          "Began operation"
+        ],
+        "data_examples": [
+          "page_title: List of cruise ships, section_title: G, header: [Name, Operator, Began operation, Tonnage, Status], sample_row: [Gemini, Celestyal Cruises, 1995, 19,093, Operating . Formerly Cunard Crown Jewel , Superstar Gemini , Vision Star , built as Crown Jewel]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides detailed descriptions of individual cruise ships, including class, owner, operator, builder, shipyard, order in class, passenger capacity, gross tonnage, deployment areas, and notable features.",
+        "elements": [
+          "name",
+          "class",
+          "owner",
+          "operator",
+          "builder",
+          "shipyard",
+          "order_in_class",
+          "passenger_capacity",
+          "gross_tonnage",
+          "deployment_area",
+          "notable_features",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/AIDAluna\", \"title\": \"AIDAluna\", \"text\": \"AIDAluna is a Sphinx class cruise ship , owned by US based Carnival Corp and operated by AIDA Cruises . Built by Meyer Werft shipyards in Papenburg , Germany , she is the third ship of the class , preceded by AIDAdiva and AIDAbella , and is followed by AIDAblu , AIDAsol , and AIDAmar . The ship has a capacity of 2,100 passengers and has a gross tonnage of 69,203 . AIDAluna was initially deployed in the Baltic Sea for the 2009 Summer season . In Winter 2009 , she was redeployed in Canary Islands \"}"
+        ]
+      }
+    }
+  },
+  "district": {
+    "concept": "district",
+    "semantic_type": "entity",
+    "overall_description": "A district is a defined administrative or geographic subdivision within a larger city or region, often used for local governance, statistical, or planning purposes.",
+    "routing_guide": "Choose Doc when detailed descriptive information about a district is needed, such as its location, population, or administrative context. Table is not present in this catalog, so Doc is the primary source for district-related queries.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "name",
+        "parent_administrative_division"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides descriptive text about a district, including its name, parent administrative division, location, population, coordinates, and title. It offers rich contextual information for understanding district characteristics.",
+        "elements": [
+          "name",
+          "parent_administrative_division",
+          "location",
+          "population",
+          "coordinates",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Edmonton,_London\", \"title\": \"Edmonton, London\", \"text\": \"Edmonton is a district in North London in the London Borough of Enfield , England , 8.4 miles ( 13.5 km ) north-northeast of Charing Cross . The population of all of Edmonton was 82,472 as of 2011 .\"}"
+        ]
+      }
+    }
+  },
+  "expedition_ship": {
+    "concept": "expedition_ship",
+    "semantic_type": "entity",
+    "overall_description": "An expedition ship is a passenger vessel designed for expedition cruises, often equipped for polar or remote regions, with amenities and facilities for education and exploration.",
+    "routing_guide": "For queries about specific expedition ships, their characteristics, or routes, use the Doc source. If tabular data is available, it may be used for structured comparisons or aggregations, but currently only Doc evidence is provided.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "join_keys": [
+        "name",
+        "operator",
+        "capacity",
+        "ice_class",
+        "facilities",
+        "routes",
+        "regions"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides detailed descriptions of individual expedition ships, including name, operator, capacity, ice class, facilities, routes, and regions, as extracted from Wikipedia articles.",
+        "elements": [
+          "name",
+          "operator",
+          "capacity",
+          "ice_class",
+          "facilities",
+          "routes",
+          "regions",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/MS_National_Geographic_Explorer\", \"title\": \"MS National Geographic Explorer\", \"text\": \"National Geographic Explorer is a small passenger vessel in the Lindblad Expeditions fleet . She can accommodate 148 guests . The ship is equipped with extra hull plating to withstand higher ice breaking tolerances . The ship has educational and entertainment facilities , including a chart room , library , observation lounge , a fleet of 36 kayaks , a remote operated vehicle capable of diving to 1000 feet depth , a fleet of 14 zodiacs , lounge and fitness center . The ship frequently follows rou\"}"
+        ]
+      }
+    }
+  },
+  "governorate": {
+    "concept": "governorate",
+    "semantic_type": "entity",
+    "overall_description": "A principal administrative division of a country, often with its own local government and defined boundaries.",
+    "routing_guide": "Use Doc when the query involves governorate names, their country, or descriptive text. Use Table if a structured table with governorate attributes is available; otherwise, rely on Doc.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "country"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides the name of the governorate, its country, type, title, text, and linked_table_id. The text includes the name and Arabic transliteration, and the doc_id indicates the specific governorate.",
+        "elements": [
+          "name",
+          "country",
+          "type",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Medenine_Governorate\", \"title\": \"Medenine Governorate\", \"text\": \"Medenine ( Arabic : مدنين Mednīn ) is one of the 24 governorates ( provinces ) of Tunisia .\"}"
+        ]
+      }
+    }
+  },
+  "hamlet": {
+    "concept": "hamlet",
+    "semantic_type": "entity",
+    "overall_description": "A hamlet is a small, typically unincorporated settlement or community, often with historical significance, located within a larger administrative area such as a county or province.",
+    "routing_guide": "Use Doc when detailed narrative information about a hamlet's history, naming, or specific location is needed. Use Table if structured data on hamlets is available (e.g., for filtering or aggregation). If both narrative and structured data are required, use both sources and join on semantic fields like 'name' or 'doc_id'.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "aggregate",
+        "join"
+      ],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare"
+      ],
+      "join_keys": [
+        "name",
+        "doc_id"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides narrative descriptions of hamlets, including name, location (country, province, county, census division), historical details (settlement year, naming year, name origin), and references to related documents or tables.",
+        "elements": [
+          "name",
+          "country",
+          "province",
+          "county",
+          "location",
+          "census_division",
+          "settlement_year",
+          "naming_year",
+          "name_origin",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Alhambra,_Alberta\", \"title\": \"Alhambra, Alberta\", \"text\": \"Alhambra is a hamlet in Alberta , Canada within Clearwater County . It is located close to the David Thompson Highway , east of Rocky Mountain House . The hamlet is located in census division No . 9 . It was first settled in 1906 and named Alhambra when the railroad arrived in 1914 . The community takes its name from Alhambra , in Spain .\"}"
+        ]
+      }
+    }
+  },
+  "heliport": {
+    "concept": "heliport",
+    "semantic_type": "entity",
+    "overall_description": "A heliport is a designated facility for helicopter takeoff and landing, often associated with hospitals, corporate bases, or other specific locations, and identified by official codes.",
+    "routing_guide": "Use Table when you need to retrieve or compare heliport details such as codes and locations. Use Doc if additional narrative or operational information is needed; otherwise, Table is sufficient.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "heliport_name",
+        "icao_tc_lid_iata_code",
+        "location"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "This source lists heliports in the Calgary area, providing their names, ICAO/TC LID/IATA codes, and the city or location they serve.",
+        "elements": [
+          "heliport_name",
+          "icao_tc_lid_iata_code",
+          "location",
+          "Airport name",
+          "ICAO / TC LID / IATA"
+        ],
+        "data_examples": [
+          "page_title: List of airports in the Calgary area, section_title: Heliports, header: [Airport name, ICAO / TC LID / IATA, Location], sample_row: [Calgary ( Aerial Recon ) Heliport, CAR3, Calgary]"
+        ]
+      }
+    }
+  },
+  "high_speed_rail_line": {
+    "concept": "high_speed_rail_line",
+    "semantic_type": "entity",
+    "overall_description": "A dedicated railway line designed for high-speed passenger rail service, typically with speeds of at least 250 km/h for new tracks, connecting specific start and end points.",
+    "routing_guide": "Use the Table source when the query requires specific attributes of high-speed rail lines, such as speed, length, or opening dates, or when comparing multiple lines. Use the Doc source if available for narrative context or additional details not captured in the table.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "line_name",
+        "start_point",
+        "end_point"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "The table provides structured data on high-speed railway lines, including line name, start and end points, maximum speed, opening date, and length, with examples such as HSL 1 from LGV Nord to Bruxelles-Sud.",
+        "elements": [
+          "line_name",
+          "start_point",
+          "end_point",
+          "maximum_speed",
+          "opening_date",
+          "length",
+          "Name",
+          "Line",
+          "Location",
+          "Opened",
+          "Closed",
+          "Current Status",
+          "Line name",
+          "Start and end points",
+          "Maximum speed",
+          "Opening",
+          "Upgrade"
+        ],
+        "data_examples": [
+          "page_title: List of high-speed railway lines, section_title: Belgium -- Dedicated high-speed line, header: [Line name, Start and end points, Maximum speed, Opening, Length], sample_row: [HSL 1, LGV Nord - Bruxelles-Sud, 300 km/h ( 190 mph ), December 14 , 1997, 88 km ( 55 mi )]"
+        ]
+      }
+    }
+  },
+  "historical_port": {
+    "concept": "historical_port",
+    "semantic_type": "entity",
+    "overall_description": "A port that has ceased active commercial operations but retains historical significance, often associated with a specific geographic location and community.",
+    "routing_guide": "For queries about historical ports, use the Doc source when the question involves descriptive details, historical context, or community aspects. If structured data (e.g., population, census year) is needed, consider extracting from the Doc's linked table if available. For broad comparisons or aggregations across multiple historical ports, use the Table source if it exists; otherwise, rely on Doc and extract structured fields.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "join_keys": [
+        "name",
+        "location",
+        "body_of_water"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides narrative descriptions of historical ports, including details such as name, location, body of water, status (e.g., ceased operation), population, census year, local governance, cultural sites, and linked table IDs. It offers rich contextual information for understanding the port's historical and community significance.",
+        "elements": [
+          "name",
+          "location",
+          "body_of_water",
+          "status",
+          "population",
+          "census_year",
+          "local_governance",
+          "cultural_sites",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Awanui\", \"title\": \"Awanui\", \"text\": \"Awanui is an historical river port in the far north of New Zealand , on the banks of the Awanui River just before it flows into Rangaunu Bay . Awanui lies at the south end of the Aupouri Peninsula in the Far North District Council of the Northland Region , approximately 7 km north of Kaitaia . The river port has ceased operation and a recreational wharf is located at Unahi , on the shore of Rangaunu Bay , approximately 3 km north of the township . The traditional name of Awanui was Kaiwaka and A\"}"
+        ]
+      }
+    }
+  },
+  "historical_ship": {
+    "concept": "historical_ship",
+    "semantic_type": "entity",
+    "overall_description": "A ship that is notable in the history of a region, including military, commercial, and other vessels, characterized by its name, tonnage, registry, owners, and eventual fate.",
+    "routing_guide": "Choose Table when you need structured data about historical ships, such as filtering by registry flag or comparing tonnage. Use Doc if available for narrative context or additional details not captured in the table.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "ship_name"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "This source lists historical ships in British Columbia, providing columns for ship name, tonnage, registry flag, owners, and demise.",
+        "elements": [
+          "ship_name",
+          "tonnage",
+          "registry_flag",
+          "owner",
+          "demise",
+          "Ship",
+          "Registry ( flag )",
+          "Owner ( s )",
+          "Tons",
+          "Type",
+          "Dates in BC"
+        ],
+        "data_examples": [
+          "page_title: List of historical ships in British Columbia, section_title: C, header: [Ship, Tons, Registry ( flag ), Owner ( s ), Demise], sample_row: [Cadboro, 71, Britain, HBC, Sold ( 1846 ? )]"
+        ]
+      }
+    }
+  },
+  "light_rail_transit_system": {
+    "concept": "light_rail_transit_system",
+    "semantic_type": "entity",
+    "overall_description": "An integrated public transportation network that includes light rail and bus rapid transit services, typically operated by a transit authority or private operator, serving a metropolitan area.",
+    "routing_guide": "Use Doc when the query involves descriptive details, historical milestones, or operational context of the system. For structured comparisons or aggregations, consider extracting fields from Doc text if needed.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "join_keys": [
+        "system_name",
+        "operator",
+        "parent_transit_system",
+        "location",
+        "country"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides narrative descriptions of the system, including its name, operator, parent transit system, location, country, route replacements, phase opening dates, planned extensions, construction start year, environmental assessment year, council approval date, funding approval date, and other textual details.",
+        "elements": [
+          "system_name",
+          "operator",
+          "parent_transit_system",
+          "location",
+          "country",
+          "route_200_replacement",
+          "phase_1_opening_date",
+          "phase_2_planned",
+          "construction_start_year",
+          "environmental_assessment_year",
+          "council_approval_date",
+          "funding_approval_date",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Ion_rapid_transit\", \"title\": \"Ion rapid transit\", \"text\": \"Ion , stylized as ION , is an integrated public transportation network in the Regional Municipality of Waterloo in Ontario , Canada . It is operated by Keolis and is part of the Grand River Transit ( GRT ) system , partially replacing GRT 's Route 200 iXpress bus service . The section of Route 200 serving Cambridge has been renamed Ion Bus . The first phase commenced operations on June 21 , 2019 , between the north end of Waterloo and the south end of Kitchener . A future extension of light rail\"}"
+        ]
+      }
+    }
+  },
+  "locomotive": {
+    "concept": "locomotive",
+    "semantic_type": "entity",
+    "overall_description": "A rail vehicle that provides motive power for a train, characterized by attributes such as model designation, build year, wheel arrangement, prime mover, and power output.",
+    "routing_guide": "Use Table when you need to retrieve, filter, sort, compare, or aggregate locomotive models based on structured attributes. Use Doc when you need narrative context or details not captured in the table. Prefer Table for quantitative or categorical queries.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare",
+        "aggregate"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "model_designation",
+        "build_year",
+        "wheel_arrangement",
+        "prime_mover",
+        "power_output"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on locomotive models, including fields for model designation, build year, total produced, AAR wheel arrangement, prime mover, and power output, enabling tabular operations.",
+        "elements": [
+          "model_designation",
+          "build_year",
+          "total_produced",
+          "wheel_arrangement",
+          "prime_mover",
+          "power_output",
+          "Model designation",
+          "Build year",
+          "Total produced",
+          "AAR wheel arrangement",
+          "Prime mover",
+          "Power output",
+          "Class",
+          "Wheel arrangement",
+          "Number",
+          "Name",
+          "Home Base",
+          "Status"
+        ],
+        "data_examples": [
+          "page_title: List of GM-EMD locomotives, section_title: Cowl units, header: [Model designation, Build year, Total produced, AAR wheel arrangement, Prime mover, Power output], sample_row: [FP45, 1967-1970, 14, C-C, EMD 20-645E3, 3,600 hp ( 2.7 MW )]"
+        ]
+      }
+    }
+  },
+  "military_aviation_unit": {
+    "concept": "military_aviation_unit",
+    "semantic_type": "entity",
+    "overall_description": "A military aviation unit within a marine corps, typically composed of aircraft and personnel, organized under a group and wing, and stationed at a specific base.",
+    "routing_guide": "Use the Table source when the user query involves specific squadron attributes such as name, nickname, commissioning date, senior command, or station, and requires operations like filtering, sorting, comparing, or aggregating. Use Doc source if available for narrative details or historical context not captured in the table. If both are available, consider joining on squadron name for comprehensive answers.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve",
+        "verify"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "squadron_name"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "The table provides structured data on active United States Marine Corps aircraft squadrons, including squadron name, nickname, commissioning date, senior command, and station. It offers fields for filtering, sorting, and comparing squadrons based on these attributes.",
+        "elements": [
+          "squadron_name",
+          "nickname",
+          "date_commissioned",
+          "senior_command",
+          "station",
+          "Squadron Name",
+          "Date Commissioned",
+          "Senior Command",
+          "Aircraft",
+          "Name",
+          "Status",
+          "Homebase",
+          "Aircrafttype",
+          "History",
+          "Notes",
+          "Operator",
+          "Unit ( s )",
+          "Total"
+        ],
+        "data_examples": [
+          "page_title: List of active United States Marine Corps aircraft squadrons, section_title: Rotary-wing aircraft -- Marine Light Attack Helicopter Squadrons, header: [Squadron Name, Nickname, Date Commissioned, Senior Command, Station], sample_row: [HMLA-167, Warriors, 1 April 1968, MAG-29 , 2nd MAW, MCAS New River , NC]"
+        ]
+      }
+    }
+  },
+  "municipal_road": {
+    "concept": "municipal_road",
+    "semantic_type": "entity",
+    "overall_description": "A road maintained by a municipal government, typically within a city or town, providing local connectivity and often listed with endpoints and length.",
+    "routing_guide": "Use Table when the query involves structured attributes like road names, endpoints, or lengths, and when you need to filter, sort, or compare multiple roads. Use Doc if the information is in narrative form, but for this concept, Table is the primary source.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare",
+        "aggregate"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "road_name"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides a structured list of municipal roads with fields for road name, endpoints (northern/southern or eastern/western), length in kilometers, and additional notes. Useful for tabular queries and comparisons.",
+        "elements": [
+          "road_name",
+          "northern_end",
+          "southern_end",
+          "length_km",
+          "additional_notes",
+          "Road name",
+          "Eastern end",
+          "Western end",
+          "Additional information",
+          "Northern End",
+          "Southern End",
+          "Length ( km )",
+          "Additional notes"
+        ],
+        "data_examples": [
+          "page_title: List of municipal roads in Markham, Ontario, section_title: North-South routes, header: [Road name, Northern End, Southern End, Length ( km ), Additional notes], sample_row: [Aileen Road, Green Lane, John Street, 0.4, ]"
+        ]
+      }
+    }
+  },
+  "municipality": {
+    "concept": "municipality",
+    "semantic_type": "entity",
+    "overall_description": "A municipality is an administrative division or local government unit, typically a city, town, or village, with defined boundaries and local governance.",
+    "routing_guide": "For queries about municipalities, use the Doc source when the information is primarily textual or requires contextual details such as historical background, geographic descriptions, or infrastructure. If the query involves structured comparisons or aggregations (e.g., population statistics, area rankings), consider using the Table source if available, or extract structured fields from Doc. When both sources are available, use Doc for narrative details and Table for quantitative analysis.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "aggregate",
+        "sort",
+        "compare"
+      ],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "country",
+        "state",
+        "population",
+        "area",
+        "coordinates",
+        "founded_date",
+        "county",
+        "census_year",
+        "location",
+        "municipality_class",
+        "province"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides textual descriptions of municipalities, including attributes such as name, country, state, population, area, coordinates, founded date, county, census year, location, municipality class, province, and infrastructure like bridges. It also includes structured data elements like linked_table_id, which may point to additional tabular data.",
+        "elements": [
+          "name",
+          "country",
+          "state",
+          "population",
+          "area",
+          "coordinates",
+          "founded_date",
+          "county",
+          "census_year",
+          "location",
+          "municipality_class",
+          "province",
+          "bridge",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Cacoal\", \"title\": \"Cacoal\", \"text\": \"N/A\"}",
+          "{\"doc_id\": \"/wiki/Northville,_Fulton_County,_New_York\", \"title\": \"Northville, Fulton County, New York\", \"text\": \"Northville is a village in Fulton County , New York . The population was 1,099 at the 2010 census . The village is in the northern part of the town of Northampton and is northeast of Gloversville .\"}",
+          "{\"doc_id\": \"/wiki/Liloan,_Southern_Leyte\", \"title\": \"Liloan, Southern Leyte\", \"text\": \"Liloan , officially the Municipality of Liloan , is a 4th class municipality in the province of Southern Leyte , Philippines . According to the 2015 census , it has a population of 23,981 people . Liloan 's town center is located at the northern part of Panaon Island which is connected to the mainland of Leyte by a bridge ( Wawa Bridge ) . Liloan is derived from the local term lilo , meaning whirlpool . Whirlpools can be seen at Panaon Strait , the navigable narrow waterway between the mainland \"}"
+        ]
+      }
+    }
+  },
+  "national_highway": {
+    "concept": "national_highway",
+    "semantic_type": "entity",
+    "overall_description": "A major road network in a country, typically maintained by the national government, connecting major cities and regions, and identified by a national route number.",
+    "routing_guide": "For queries about specific national highways, use the Doc source. For aggregate or comparative analysis across multiple highways, use the Table source if available; otherwise, rely on Doc and perform aggregation manually.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "route_number"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides detailed descriptions of individual national highways, including route number, origin, destination, length, states served, junctions, contract agency, and construction status, as exemplified by National Highway 30 in India.",
+        "elements": [
+          "route_number",
+          "origin",
+          "destination",
+          "length_km",
+          "states_served",
+          "junction_origin",
+          "junction_destination",
+          "contract_agency",
+          "construction_status",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/National_Highway_30_(India)\", \"title\": \"National Highway 30 (India)\", \"text\": \"National Highway 30 ( NH 30 ) is a primary national highway in India . NH 30 connects Sitarganj in Uttarakhand with Ibrahimpatnam in Andhra Pradesh . The total length of this highway is 1,984.3 km ( 1,233.0 mi ) . It starts at the junction of NH 9 at Sitarganj and ends at the junction of NH 65 at Ibrahimpatnam . Development of Ibrahimpatnam-Jagadalpur Route is under process . Rajdeep Rohan joint venture is the contract agency for this project . Second bridge is under construction at pilgrimage c\"}"
+        ]
+      }
+    }
+  },
+  "naval_vessel": {
+    "concept": "naval_vessel",
+    "semantic_type": "entity",
+    "overall_description": "A naval vessel is a ship or boat used by a navy, including warships, support craft, and auxiliary vessels, characterized by its name, type, class, service dates, and historical notes.",
+    "routing_guide": "Choose Table when you need to compare, filter, sort, or aggregate multiple vessels based on structured attributes like type, class, or service dates. Choose Doc when you need detailed narrative information about a specific vessel, such as its history or former names, or when you need to verify facts from textual sources. Use both when you need comprehensive coverage, e.g., first filter the Table to identify candidate vessels, then retrieve Doc entries for detailed verification.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "type",
+        "class"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured lists of naval vessels with fields for name, type, class, dates of service, and notes on fate or history, enabling tabular operations like filtering, sorting, and aggregation.",
+        "elements": [
+          "name",
+          "type",
+          "class",
+          "dates",
+          "notes"
+        ],
+        "data_examples": [
+          "page_title: List of ships of the Royal Australian Navy, section_title: Past ships -- H, header: [Name, Type, Class, Dates, Notes], sample_row: [HMAS Hankow, Coal hulk, , 1913-1932, sunk as target by HMAS Albatross]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides detailed textual descriptions of individual naval vessels, including name, type, class, operator, service history, and service dates, useful for retrieving specific vessel information and verifying details.",
+        "elements": [
+          "name",
+          "type",
+          "class",
+          "operator",
+          "service_history",
+          "service_start_date",
+          "service_end_date",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/HMAS_Gull\", \"title\": \"HMAS Gull\", \"text\": \"HMAS Gull ( M 1185 ) ( formerly HMS Swanston ) was a Ton-class minesweeper that served in the Royal Navy ( RN ) and Royal Australian Navy ( RAN ) .\"}",
+          "{\"doc_id\": \"/wiki/HMAS_Sprightly\", \"title\": \"HMAS Sprightly\", \"text\": \"HMAS Sprightly was a tugboat operated by the Royal Australian Navy ( RAN ) between 1943 and 1953 .\"}"
+        ]
+      }
+    }
+  },
+  "passenger_train_service": {
+    "concept": "passenger_train_service",
+    "semantic_type": "entity",
+    "overall_description": "A scheduled passenger train service operating between specific origin and destination locations, often with a named identity and operated by a railway company.",
+    "routing_guide": "Choose Doc when the query involves narrative details, historical context, or named train services. For structured data like timetables or operator lists, use Table if available. If both are present, prefer Table for exact fields and Doc for enrichment.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve",
+        "verify"
+      ],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "service_name",
+        "origin",
+        "destination",
+        "operator"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides narrative descriptions of passenger train services, including service name, origin, destination, route, start year, name adoption year, operator, and other contextual details.",
+        "elements": [
+          "service_name",
+          "origin",
+          "destination",
+          "route",
+          "start_year",
+          "name_adopted_year",
+          "operator",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Flying_Scotsman_(train)\", \"title\": \"Flying Scotsman (train)\", \"text\": \"The Flying Scotsman is an express passenger train service that has operated between Edinburgh and London , the capitals of Scotland and England , via the East Coast Main Line . The service began in 1862 ; the name was officially adopted in 1924 . It is currently operated by London North Eastern Railway .\"}"
+        ]
+      }
+    }
+  },
+  "pastoral_lease": {
+    "concept": "pastoral_lease",
+    "semantic_type": "entity",
+    "overall_description": "A pastoral lease is a large area of land, typically in Australia, leased from the government for grazing livestock, often operating as a cattle or sheep station.",
+    "routing_guide": "Use Doc when the query involves detailed narrative information about a specific pastoral lease, such as its history, ownership changes, or operational details. Use Table if a structured table is available for tabular comparisons or aggregations. If both are available, prefer Doc for rich context and Table for quantitative analysis.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "compare",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "location",
+        "area",
+        "owner",
+        "operator",
+        "established_year",
+        "type_of_livestock"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides narrative descriptions of pastoral leases, including details on location, area, ownership, operator, established year, type of livestock, and historical context. Each document corresponds to a specific station and includes structured elements such as name, location, area, owner, operator, established_year, type_of_livestock, title, text, and linked_table_id.",
+        "elements": [
+          "name",
+          "location",
+          "area",
+          "owner",
+          "operator",
+          "established_year",
+          "type_of_livestock",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Arrabury\", \"title\": \"Arrabury\", \"text\": \"Arrabury Station is a pastoral lease that currently operates as a cattle station in Queensland . It is located approximately 106 kilometres ( 66 mi ) north of Innamincka and 186 kilometres ( 116 mi ) south east of Birdsville in the Channel Country of Queensland . The Arrabury Pastoral Company , controlled by the Daley family , currently own the property along with neighbouring Cluny station that was acquired in 1992 . Arrubury occupies and area of 7,600 square kilometres ( 2,934 sq mi ) and Clun\"}"
+        ]
+      }
+    }
+  },
+  "pilgrimage_route": {
+    "concept": "pilgrimage_route",
+    "semantic_type": "entity",
+    "overall_description": "A pilgrimage route is a culturally or religiously significant path or network of paths connecting sacred sites, characterized by its geographic area, associated cultural assets, and locations.",
+    "routing_guide": "Choose Table when the query requires structured data about specific cultural assets, their types, or locations along the route. Choose Doc if the query involves narrative descriptions or historical context not captured in tabular form. Use both when a comprehensive understanding of the route's assets and their significance is needed.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve",
+        "verify"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "area",
+        "cultural_asset",
+        "type",
+        "location"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "The Table source provides a structured list of cultural assets along the pilgrimage route, with fields for area, cultural asset name, type, and location, as exemplified by the UNESCO listing for the Kii Mountain Range.",
+        "elements": [
+          "area",
+          "cultural_asset",
+          "type",
+          "location",
+          "Cultural asset"
+        ],
+        "data_examples": [
+          "page_title: Sacred Sites and Pilgrimage Routes in the Kii Mountain Range, section_title: List of sites, header: [Area, Cultural asset, Type, Location], sample_row: [Yoshino and Ōmine, Mount Yoshino ( 吉野山 , Yoshino-yama ), nature Mountain, nara yoshino yoshino Yoshino-chō , Yoshino-gun , Nara-ken]"
+        ]
+      }
+    }
+  },
+  "port": {
+    "concept": "port",
+    "semantic_type": "entity",
+    "overall_description": "A port is a maritime facility where ships dock to load and unload cargo or passengers, often including infrastructure such as wharves, cranes, and storage areas.",
+    "routing_guide": "Choose Table when the query involves specific port names, locations, or attributes such as province/state. Use Doc if additional narrative or contextual information about ports is needed. For most structured queries, Table is sufficient.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "port_name",
+        "province_or_state"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "This source lists ports in the United States, providing the port name and the associated province or state, with an external link for further information.",
+        "elements": [
+          "port_name",
+          "province_or_state",
+          "external_link",
+          "Port",
+          "Country , Province or State",
+          "External Link"
+        ],
+        "data_examples": [
+          "page_title: List of ports in the United States, section_title: Non-continental islands, header: [Port, Country , Province or State, External Link], sample_row: [San Juan, PR, ]"
+        ]
+      }
+    }
+  },
+  "province": {
+    "concept": "province",
+    "semantic_type": "entity",
+    "overall_description": "A province is a principal administrative division of a country, often with its own local government and defined boundaries.",
+    "routing_guide": "When the query requires detailed descriptive information about a province (e.g., its history, subdivisions, or specific attributes), use the Doc source. If the query involves structured comparisons or aggregations across multiple provinces, consider using a Table source if available; otherwise, extract structured data from Doc text.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "name",
+        "country"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides descriptive text about a province, including its name, country, population, area, capital, administrative divisions, borders, and other details. It offers rich contextual information for understanding the province's characteristics.",
+        "elements": [
+          "name",
+          "country",
+          "population",
+          "area",
+          "capital",
+          "administrative_divisions",
+          "borders",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Manicaland_Province\", \"title\": \"Manicaland Province\", \"text\": \"Manicaland is a province in eastern Zimbabwe . After Harare Province , it is the country 's second-most populous province , with a population of 1.75 million , as of the 2012 census . After Harare and Bulawayo provinces , it is Zimbabwe 's third-most densely populated province . Manicaland was one of five original provinces established in Southern Rhodesia in the early colonial period . The province is divided into ten administrative subdivisions of seven rural districts and three towns/councils\"}"
+        ]
+      }
+    }
+  },
+  "railway_carriage": {
+    "concept": "railway_carriage",
+    "semantic_type": "entity",
+    "overall_description": "A railway carriage is a passenger-carrying vehicle that is part of a train, characterized by its original owning company, number, type, and preservation status.",
+    "routing_guide": "Use the Table source when you need structured data about specific railway carriages, such as their original company, number, type, or preservation status. Use Doc if available for narrative descriptions or historical context. For most queries involving specific attributes, prefer Table; for general information or when the query is ambiguous, consider both.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve",
+        "verify"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "original_company",
+        "number",
+        "type"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "The Table source is a museum inventory listing preserved railway carriages, with columns for original company, number, type, and status/notes, including details like build year and current condition.",
+        "elements": [
+          "original_company",
+          "number",
+          "type",
+          "status_notes",
+          "Class",
+          "Number ( and name )",
+          "Chassis",
+          "Status",
+          "Notes",
+          "Original company",
+          "Status/Notes"
+        ],
+        "data_examples": [
+          "page_title: Buckinghamshire Railway Centre, section_title: Carriages -- Passenger coaching stock, header: [Original company, Number, Type, Status/Notes], sample_row: [LCDR, 9, 4-wheel first, Built 1880 . Sold to Woolwich Arsenal in 1916 . One of only two LCDR carriages to be preserved on their original underframe . Operational]"
+        ]
+      }
+    }
+  },
+  "railway_operator": {
+    "concept": "railway_operator",
+    "semantic_type": "entity",
+    "overall_description": "A company or government entity that operates a railway, including freight or passenger services, characterized by its name, reporting marks, operational locale, ownership, and additional notes.",
+    "routing_guide": "Use Table when you need structured data about railway operators, such as their names, reporting marks, locale, ownership, or notes. Use Doc when you need narrative or contextual information about railway operators that is not captured in tabular form. If both structured and unstructured information is needed, consult both sources.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "reporting_marks",
+        "locale",
+        "ownership"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides a list of railway operators with fields for name, reporting marks, locale, ownership, and notes, as exemplified by Canadian freight railways by province.",
+        "elements": [
+          "name",
+          "reporting_marks",
+          "locale",
+          "ownership",
+          "notes",
+          "Reporting marks"
+        ],
+        "data_examples": [
+          "page_title: List of Canadian railways, section_title: Freight railways by province -- British Columbia, header: [Name, Reporting marks, Locale, Ownership, Notes], sample_row: [BC Rail, BCOL, Surrey to Roberts Bank Superport, Provincially owned, Terminal railway that is the last publicly managed portion of a formerly large scale system ; the BC government still technically owns the North Vancouver to Prince George line , although it is leased to and managed by CN]"
+        ]
+      }
+    }
+  },
+  "reference_route": {
+    "concept": "reference_route",
+    "semantic_type": "entity",
+    "overall_description": "An unsigned highway designation assigned by a state or regional transportation authority to roads that have signed names or are too minor for a signed touring route number, typically maintained by the state and identified by a route code.",
+    "routing_guide": "Use the Table source when you need structured data about reference routes, such as route codes, lengths, origins, vias, and destinations. Use the Doc source if available for additional context or narrative descriptions. If both are available, prefer Table for quantitative and relational queries, and Doc for qualitative understanding.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve",
+        "verify"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "route_code"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "The table lists reference routes in New York, with columns for route code, length in miles and kilometers, origin, via (road name and location), and destination, as part of a regional list.",
+        "elements": [
+          "route_code",
+          "length_miles",
+          "length_kilometers",
+          "origin",
+          "via",
+          "destination",
+          "Route",
+          "Length ( mi )",
+          "Length ( km )",
+          "From",
+          "To",
+          "Current route formed"
+        ],
+        "data_examples": [
+          "page_title: List of reference routes in New York, section_title: Region 9, header: [Route, Length ( mi ), Length ( km ), From, Via, To], sample_row: [990D, 1.12, 1.80, Binghamton city line, Riverside Drive ( SH 444 ) in Johnson City, NY 201]"
+        ]
+      }
+    }
+  },
+  "state_highway": {
+    "concept": "state_highway",
+    "semantic_type": "entity",
+    "overall_description": "A state highway is a road or route maintained by a state or provincial government, typically connecting important locations and identified by a route number.",
+    "routing_guide": "Choose Table when you need tabular data for multiple highways, such as comparing lengths or listing routes by district. Choose Doc when you need detailed narrative information about a specific highway, including its history and context. Use both when you need comprehensive information, joining on route number or name.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "route_number",
+        "state_highway_number",
+        "title"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "The Table source provides structured data on state highways, including route numbers, endpoints, lengths, formation/elimination years, and districts passed through, as seen in examples from Ontario and Maharashtra.",
+        "elements": [
+          "route",
+          "from",
+          "to",
+          "length",
+          "formed",
+          "eliminated",
+          "state_highway_number",
+          "route_description",
+          "districts_passed_through",
+          "State Highway No",
+          "Passes through - District ( s )",
+          "Length ( km )",
+          "NH",
+          "Route inside Bihar",
+          "Complete Route",
+          "Length in State ( km )",
+          "Total Length",
+          "Length ( mi )"
+        ],
+        "data_examples": [
+          "page_title: List of state highways in Maharashtra, section_title: Major state highways, header: [State Highway No, Route, Passes through - District ( s )], sample_row: [MH MSH 1, Songir - Chimthane - Dondaicha - Nimgul - Shahada - Dhadgaon - Kathi - Molgi - Wadifali - Uptill Maharashtra - Gujarat state border, Dhule , Nandurbar ,]",
+          "page_title: List of highways in Ontario, section_title: King 's Highways, header: [Route, From, To, Length, Formed, Eliminated], sample_row: [Highway 2, Highway 401 in Gananoque ( pre-1997 : Banwell Road in Windsor ), Gananoque ( pre-1997 : Route 338 towards Dorion , QC ), 1.1 km ( 0.68 mi ), 1925, 1997-98 ( partial )]"
+        ]
+      },
+      "Doc": {
+        "description": "The Doc source provides descriptive articles about specific state highways, including details on route number, state, county, length, start/end points, history, concurrent routes, and maintenance jurisdiction, as exemplified by New York State Route 174 and NY 17.",
+        "elements": [
+          "route_number",
+          "state",
+          "county",
+          "length",
+          "start_point",
+          "end_point",
+          "history",
+          "counties_served",
+          "concurrent_routes",
+          "maintenance_jurisdiction",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/New_York_State_Route_990G\", \"title\": \"New York State Route 990G\", \"text\": \"New York State Route 17 ( NY 17 ) is a major state highway that extends for 397 miles ( 638.91 km ) through the Southern Tier and Downstate regions of New York in the United States . It begins at the Pennsylvania state line in Mina and follows the Southern Tier Expressway east through Corning to Binghamton and the Quickway from Binghamton east to Woodbury , where it turns south to follow the Orange Turnpike to the New Jersey state line near Suffern , where it connects to New Jersey Route 17 . Fr\"}",
+          "{\"doc_id\": \"/wiki/NY_174\", \"title\": \"NY 174\", \"text\": \"New York State Route 174 ( NY 174 ) is a state highway in Onondaga County , located in Central New York , in the United States . The highway is 16.7 miles ( 26.9 km ) long and passes through mostly rural regions . Route 174 begins at an intersection with NY 41 in Borodino , a hamlet of Spafford . It heads generally northward for most of its length , except for short distances in the villages of Marcellus and Camillus . The route ends at a junction with NY 5 west of Camillus , at the west end of \"}"
+        ]
+      }
+    }
+  },
+  "town": {
+    "concept": "town",
+    "semantic_type": "entity",
+    "overall_description": "A town is a populated place that serves as an administrative division or local government unit, typically smaller than a city, with defined boundaries and local governance.",
+    "routing_guide": "For queries about towns, use the Doc source when the query involves textual descriptions, geographic context, administrative details, or transportation infrastructure mentioned in prose. If the query requires structured data or comparisons across multiple towns, consider using a Table source if available; otherwise, rely on Doc and extract fields as needed.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "join_keys": [
+        "name",
+        "country",
+        "province",
+        "district"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides textual descriptions of towns, including their name, location (country, province, county, district), nearby cities, transportation infrastructure (highways, rail lines, train stations), waterways, population, and administrative roles (e.g., headquarters, seat of municipality). Examples include Carleton Place, Kaoma, and Gopalganj.",
+        "elements": [
+          "name",
+          "country",
+          "province",
+          "county",
+          "location",
+          "highways",
+          "waterways",
+          "nearby_cities",
+          "rail_lines",
+          "train_station",
+          "history",
+          "district",
+          "type",
+          "municipality_status",
+          "state",
+          "population",
+          "seat_of",
+          "transit_service",
+          "title",
+          "text"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Carleton_Place\", \"title\": \"Carleton Place\", \"text\": \"Carleton Place is a town in Eastern Ontario , Canada , in Lanark County , about 46 kilometres ( 29 mi ) west of downtown Ottawa . It is located at the crossroads of Highway 15 and Highway 7 , halfway between the towns of Perth , Almonte , Smiths Falls , and the nation 's capital , Ottawa . The Mississippi River , a tributary of the Ottawa River flows through the town . Mississippi Lake is just upstream by boat , as well as by car .\"}",
+          "{\"doc_id\": \"/wiki/Kaoma,_Zambia\", \"title\": \"Kaoma, Zambia\", \"text\": \"Kaoma is a town in Zambia . It is the headquarters of Kaoma District in the Western Province .\"}",
+          "{\"doc_id\": \"/wiki/Gopalganj,_India\", \"title\": \"Gopalganj, India\", \"text\": \"Gopalganj is a town , municipality and headquarters of Gopalganj district in the Indian state of Bihar .\"}"
+        ]
+      }
+    }
+  },
+  "tram_system": {
+    "concept": "tram_system",
+    "semantic_type": "entity",
+    "overall_description": "A tram or light rail transit system operating in a city or urban area, providing regular public transit service, characterized by its location, country, system name, opening year, and type.",
+    "routing_guide": "Choose Table when the user needs to retrieve, filter, sort, or compare tram systems based on attributes like location, country, opening year, or type. Use Doc if additional narrative or context is needed, but for this concept, Table is the primary source.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare",
+        "aggregate"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "location",
+        "country",
+        "system_name",
+        "year_opened",
+        "type"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "The table lists tram and light rail transit systems in Africa, with columns for location, country, system name, year opened, and type. It provides structured data for filtering, sorting, and comparing systems.",
+        "elements": [
+          "location",
+          "country",
+          "system_name",
+          "year_opened",
+          "type",
+          "Date",
+          "Dead",
+          "Injured",
+          "Details",
+          "Perpetrators",
+          "System",
+          "Year opened"
+        ],
+        "data_examples": [
+          "page_title: List of tram and light rail transit systems, section_title: Africa, header: [Location, Country, System, Year opened, Type], sample_row: [Algiers, Algeria, Algiers tramway, 2011, Tram]"
+        ]
+      }
+    }
+  },
+  "transit_station": {
+    "concept": "transit_station",
+    "semantic_type": "entity",
+    "overall_description": "A transit station is a designated location in a public transportation network where passengers board or alight from vehicles, characterized by attributes such as name, serving lines, platform layout, and opening year.",
+    "routing_guide": "Choose Table when the query requires structured attributes of transit stations, such as filtering by line, sorting by opening year, or aggregating counts by locality. Use Doc if the query involves unstructured descriptions or historical context not captured in tabular fields. For most operational queries, Table is preferred due to its structured nature.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "station_name",
+        "line",
+        "opening_year"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on transit stations, including station names, serving lines, platform layouts, opening years, and other attributes like locality, division, and services, as evidenced by lists of railway, subway, and metro stations.",
+        "elements": [
+          "station_name",
+          "locality",
+          "province",
+          "category",
+          "division",
+          "line",
+          "services",
+          "opened",
+          "county",
+          "rail_company",
+          "year_opened",
+          "year_closed",
+          "alternate_name",
+          "opening_year",
+          "interchange",
+          "serving_lines",
+          "platform_layout",
+          "Station",
+          "Year opened",
+          "Name"
+        ],
+        "data_examples": [
+          "page_title: List of Muni Metro stations, section_title: Surface stations, header: [Station, Line ( s ), Platform Layout, Year Opened], sample_row: [20th Street, T Third Street, Side, 2007]",
+          "page_title: List of New York City Subway stations in the Bronx, section_title: Stations, header: [Station, , Division, Line, Services, Opened], sample_row: [003 Third Avenue-138th Street **‡, 1, A ( IRT ), Pelham Line, 6 < 6 > ​, August 1 , 1918]",
+          "page_title: List of closed railway stations in Ireland, section_title: Table of stations, header: [Station ( Town , unless in station name ), County, Rail company, Year opened, Year closed], sample_row: [Abbeydorney, Kerry, Great Southern and Western, 1880, 1963]"
+        ]
+      }
+    }
+  },
+  "village": {
+    "concept": "village",
+    "semantic_type": "entity",
+    "overall_description": "A village is a small administrative or populated place with defined boundaries and local governance, often part of a larger town or municipality, and may have attributes such as name, location, population, and incorporation details.",
+    "routing_guide": "Use Doc when detailed narrative information about a village is needed, such as its history, geographic context, or specific attributes like incorporation year. If structured tabular data is available, prefer Table for efficient filtering and aggregation. For comprehensive queries, consider both sources.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "town",
+        "county",
+        "state",
+        "country"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides narrative descriptions of villages, including name, incorporation year, town, county, state, country, population, location, and references to related entities. Useful for extracting detailed contextual information and verifying existence.",
+        "elements": [
+          "name",
+          "incorporation_year",
+          "town",
+          "county",
+          "state",
+          "country",
+          "population",
+          "location",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/West_Haverstraw,_New_York\", \"title\": \"West Haverstraw, New York\", \"text\": \"West Haverstraw is a village incorporated in 1883 in the town of Haverstraw , Rockland County , New York , United States . It is located northwest of Haverstraw village , east of Thiells , south of the hamlet of Stony Point , and west of the Hudson River . The population was 10,165 at the 2010 census . The majority of the hamlet of Garnerville is contained in the village of West Haverstraw .\"}"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,3060 @@
+[
+  {
+    "question_id": "02a9539a76c4873a",
+    "answer": "United States",
+    "gold_table_id": "List_of_historical_ships_in_British_Columbia_17",
+    "answer_node": [
+      [
+        "United States",
+        [
+          1,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "United States",
+        [
+          3,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "United States",
+        [
+          0,
+          2
+        ],
+        "/wiki/United_States",
+        "passage"
+      ],
+      [
+        "Haida people",
+        [
+          0,
+          5
+        ],
+        "/wiki/Haida_people",
+        "passage"
+      ],
+      [
+        "Canada",
+        [
+          2,
+          2
+        ],
+        "/wiki/Canada",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "07efe2340c5d3ebd",
+    "answer": "Angoche Airport",
+    "gold_table_id": "List_of_airports_in_Mozambique_0",
+    "answer_node": [
+      [
+        "Angoche Airport",
+        [
+          0,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "08ceec05484b39ab",
+    "answer": "GFLL",
+    "gold_table_id": "List_of_airports_in_Sierra_Leone_0",
+    "answer_node": [
+      [
+        "GFLL",
+        [
+          3,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Lungi International Airport",
+        [
+          3,
+          3
+        ],
+        "/wiki/Lungi_International_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "097b1c1bce5531e7",
+    "answer": "The airport terminals are located entirely in the suburb of Dorval",
+    "gold_table_id": "List_of_the_busiest_airports_in_Canada_5",
+    "answer_node": [
+      [
+        "Montréal–Pierre Elliott Trudeau International Airport",
+        [
+          3,
+          1
+        ],
+        "/wiki/Montréal–Pierre_Elliott_Trudeau_International_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "0c176ecec0bc489c",
+    "answer": "on South Percy Island off the coast of Queensland",
+    "gold_table_id": "List_of_ships_of_the_Royal_Australian_Navy_13",
+    "answer_node": [
+      [
+        "HMAS Lae (L-3035)",
+        [
+          4,
+          0
+        ],
+        "/wiki/HMAS_Lae_(L-3035)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "0c944b369522fcc5",
+    "answer": "Georgian",
+    "gold_table_id": "List_of_highways_in_Ontario_0",
+    "answer_node": [
+      [
+        "Ontario Highway 400",
+        [
+          8,
+          1
+        ],
+        "/wiki/Ontario_Highway_400",
+        "passage"
+      ],
+      [
+        "Ontario Highway 400",
+        [
+          10,
+          1
+        ],
+        "/wiki/Ontario_Highway_400",
+        "passage"
+      ],
+      [
+        "Ontario Highway 10",
+        [
+          8,
+          2
+        ],
+        "/wiki/Ontario_Highway_10",
+        "passage"
+      ],
+      [
+        "Ontario Highway 10",
+        [
+          9,
+          0
+        ],
+        "/wiki/Ontario_Highway_10",
+        "passage"
+      ],
+      [
+        "Ontario Highway 10",
+        [
+          17,
+          2
+        ],
+        "/wiki/Ontario_Highway_10",
+        "passage"
+      ],
+      [
+        "Ontario Highway 26",
+        [
+          9,
+          2
+        ],
+        "/wiki/Ontario_Highway_26",
+        "passage"
+      ],
+      [
+        "Ontario Highway 26",
+        [
+          17,
+          2
+        ],
+        "/wiki/Ontario_Highway_26",
+        "passage"
+      ],
+      [
+        "Owen Sound",
+        [
+          9,
+          2
+        ],
+        "/wiki/Owen_Sound",
+        "passage"
+      ],
+      [
+        "Owen Sound",
+        [
+          17,
+          2
+        ],
+        "/wiki/Owen_Sound",
+        "passage"
+      ],
+      [
+        "Ontario Highway 93",
+        [
+          11,
+          2
+        ],
+        "/wiki/Ontario_Highway_93",
+        "passage"
+      ],
+      [
+        "Midland, Ontario",
+        [
+          11,
+          2
+        ],
+        "/wiki/Midland,_Ontario",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "0fbf394df032a291",
+    "answer": "37",
+    "gold_table_id": "List_of_closed_railway_stations_in_Victoria_0",
+    "answer_node": [
+      [
+        "Port Fairy railway line",
+        [
+          0,
+          1
+        ],
+        "/wiki/Port_Fairy_railway_line",
+        "passage"
+      ],
+      [
+        "Port Fairy railway line",
+        [
+          1,
+          1
+        ],
+        "/wiki/Port_Fairy_railway_line",
+        "passage"
+      ],
+      [
+        "Port Fairy railway line",
+        [
+          2,
+          1
+        ],
+        "/wiki/Port_Fairy_railway_line",
+        "passage"
+      ],
+      [
+        "Port Fairy railway line",
+        [
+          3,
+          1
+        ],
+        "/wiki/Port_Fairy_railway_line",
+        "passage"
+      ],
+      [
+        "Port Fairy railway line",
+        [
+          4,
+          1
+        ],
+        "/wiki/Port_Fairy_railway_line",
+        "passage"
+      ],
+      [
+        "Port Fairy railway line",
+        [
+          5,
+          1
+        ],
+        "/wiki/Port_Fairy_railway_line",
+        "passage"
+      ],
+      [
+        "Port Fairy railway line",
+        [
+          6,
+          1
+        ],
+        "/wiki/Port_Fairy_railway_line",
+        "passage"
+      ],
+      [
+        "Port Fairy railway line",
+        [
+          7,
+          1
+        ],
+        "/wiki/Port_Fairy_railway_line",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "193703377cd64bb9",
+    "answer": "Tierra del Fuego",
+    "gold_table_id": "World's_busiest_passenger_air_routes_12",
+    "answer_node": [
+      [
+        "Ushuaia – Malvinas Argentinas International Airport",
+        [
+          7,
+          2
+        ],
+        "/wiki/Ushuaia_–_Malvinas_Argentinas_International_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1a917e1d05a2a0cd",
+    "answer": "Dutch East Indies",
+    "gold_table_id": "List_of_the_busiest_airports_in_Asia_6",
+    "answer_node": [
+      [
+        "Jakarta",
+        [
+          6,
+          3
+        ],
+        "/wiki/Jakarta",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1bcc36801ece09e6",
+    "answer": "Saint Lawrence",
+    "gold_table_id": "List_of_highways_in_Ontario_1",
+    "answer_node": [
+      [
+        "Brockville, Ontario",
+        [
+          6,
+          1
+        ],
+        "/wiki/Brockville,_Ontario",
+        "passage"
+      ],
+      [
+        "Gananoque",
+        [
+          9,
+          1
+        ],
+        "/wiki/Gananoque",
+        "passage"
+      ],
+      [
+        "Seeleys Bay",
+        [
+          9,
+          2
+        ],
+        "/wiki/Seeleys_Bay",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1d27b53619245aa5",
+    "answer": "566",
+    "gold_table_id": "List_of_AEW&C_aircraft_operators_0",
+    "answer_node": [
+      [
+        "Brazilian Air Force",
+        [
+          1,
+          0
+        ],
+        "/wiki/Brazilian_Air_Force",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "237f9bbf883540da",
+    "answer": "CR 202",
+    "gold_table_id": "List_of_county_routes_in_Wayne_County,_New_York_1",
+    "answer_node": [
+      [
+        "CR 201 / CR 202 in Walworth",
+        [
+          0,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "CR 202",
+        [
+          2,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "NY 286 / CR 202 / CR 203",
+        [
+          5,
+          5
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "263476447c84ac2b",
+    "answer": "Tighina Airport",
+    "gold_table_id": "List_of_airports_in_Moldova_0",
+    "answer_node": [
+      [
+        "Tighina Airport",
+        [
+          8,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "283b57e05569ffe6",
+    "answer": "3",
+    "gold_table_id": "List_of_cruise_ships_22",
+    "answer_node": [],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "2d58952a98f66965",
+    "answer": "1.5 million",
+    "gold_table_id": "List_of_Seville_metro_stations_0",
+    "answer_node": [
+      [
+        "Seville",
+        [
+          4,
+          2
+        ],
+        "/wiki/Seville",
+        "passage"
+      ],
+      [
+        "Seville",
+        [
+          5,
+          2
+        ],
+        "/wiki/Seville",
+        "passage"
+      ],
+      [
+        "Seville",
+        [
+          6,
+          2
+        ],
+        "/wiki/Seville",
+        "passage"
+      ],
+      [
+        "Seville",
+        [
+          7,
+          2
+        ],
+        "/wiki/Seville",
+        "passage"
+      ],
+      [
+        "Seville",
+        [
+          8,
+          2
+        ],
+        "/wiki/Seville",
+        "passage"
+      ],
+      [
+        "Seville",
+        [
+          9,
+          2
+        ],
+        "/wiki/Seville",
+        "passage"
+      ],
+      [
+        "Seville",
+        [
+          10,
+          2
+        ],
+        "/wiki/Seville",
+        "passage"
+      ],
+      [
+        "Seville",
+        [
+          11,
+          2
+        ],
+        "/wiki/Seville",
+        "passage"
+      ],
+      [
+        "Seville",
+        [
+          12,
+          2
+        ],
+        "/wiki/Seville",
+        "passage"
+      ],
+      [
+        "Seville",
+        [
+          13,
+          2
+        ],
+        "/wiki/Seville",
+        "passage"
+      ],
+      [
+        "Seville",
+        [
+          14,
+          2
+        ],
+        "/wiki/Seville",
+        "passage"
+      ],
+      [
+        "Seville",
+        [
+          15,
+          2
+        ],
+        "/wiki/Seville",
+        "passage"
+      ],
+      [
+        "Seville",
+        [
+          16,
+          2
+        ],
+        "/wiki/Seville",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "3177bdd8b935e45f",
+    "answer": "Highway 2",
+    "gold_table_id": "List_of_the_busiest_airports_in_Canada_8",
+    "answer_node": [
+      [
+        "Edmonton International Airport",
+        [
+          4,
+          1
+        ],
+        "/wiki/Edmonton_International_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "33df4173d1133a51",
+    "answer": "J Church K Ingleside",
+    "gold_table_id": "List_of_Muni_Metro_stations_2",
+    "answer_node": [
+      [
+        "J Church K Ingleside",
+        [
+          6,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "34c1bff132375563",
+    "answer": "522.59 km",
+    "gold_table_id": "List_of_highways_in_Essex_County,_New_York_1",
+    "answer_node": [
+      [
+        "US 9 (NY)",
+        [
+          2,
+          3
+        ],
+        "/wiki/US_9_(NY)",
+        "passage"
+      ],
+      [
+        "US 9 (NY)",
+        [
+          3,
+          5
+        ],
+        "/wiki/US_9_(NY)",
+        "passage"
+      ],
+      [
+        "US 9 (NY)",
+        [
+          5,
+          3
+        ],
+        "/wiki/US_9_(NY)",
+        "passage"
+      ],
+      [
+        "US 9 (NY)",
+        [
+          9,
+          3
+        ],
+        "/wiki/US_9_(NY)",
+        "passage"
+      ],
+      [
+        "US 9 (NY)",
+        [
+          11,
+          5
+        ],
+        "/wiki/US_9_(NY)",
+        "passage"
+      ],
+      [
+        "US 9 (NY)",
+        [
+          15,
+          3
+        ],
+        "/wiki/US_9_(NY)",
+        "passage"
+      ],
+      [
+        "US 9 (NY)",
+        [
+          16,
+          5
+        ],
+        "/wiki/US_9_(NY)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "35e4463ff9685e93",
+    "answer": "1565",
+    "gold_table_id": "List_of_the_busiest_airports_in_Latin_America_0",
+    "answer_node": [
+      [
+        "Rio de Janeiro",
+        [
+          10,
+          2
+        ],
+        "/wiki/Rio_de_Janeiro",
+        "passage"
+      ],
+      [
+        "Rio de Janeiro",
+        [
+          18,
+          2
+        ],
+        "/wiki/Rio_de_Janeiro",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "37f7b9b770b30bc1",
+    "answer": "Pailin Airport",
+    "gold_table_id": "List_of_airports_in_Cambodia_0",
+    "answer_node": [
+      [
+        "Pailin Airport",
+        [
+          9,
+          4
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "3832ebd26bede85f",
+    "answer": "1,163",
+    "gold_table_id": "List_of_highways_in_Essex_County,_New_York_1",
+    "answer_node": [
+      [
+        "Elizabethtown, New York",
+        [
+          7,
+          5
+        ],
+        "/wiki/Elizabethtown,_New_York",
+        "passage"
+      ],
+      [
+        "Elizabethtown, New York",
+        [
+          9,
+          3
+        ],
+        "/wiki/Elizabethtown,_New_York",
+        "passage"
+      ],
+      [
+        "Elizabethtown, New York",
+        [
+          10,
+          3
+        ],
+        "/wiki/Elizabethtown,_New_York",
+        "passage"
+      ],
+      [
+        "Elizabethtown, New York",
+        [
+          11,
+          4
+        ],
+        "/wiki/Elizabethtown,_New_York",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "47d2f78d75402d50",
+    "answer": "First Opium War",
+    "gold_table_id": "China_Airlines_0",
+    "answer_node": [
+      [
+        "Hong Kong",
+        [
+          2,
+          3
+        ],
+        "/wiki/Hong_Kong",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "481d9930f6124d2a",
+    "answer": "J.W . Baughman",
+    "gold_table_id": "List_of_covered_bridges_in_Georgia_(U.S._state)_0",
+    "answer_node": [
+      [
+        "Coheelee Creek Covered Bridge",
+        [
+          3,
+          0
+        ],
+        "/wiki/Coheelee_Creek_Covered_Bridge",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "4acd87a45301a71a",
+    "answer": "76",
+    "gold_table_id": "Ministry_of_Highways_and_Infrastructure_(Saskatchewan)_0",
+    "answer_node": [
+      [
+        "Clarence George Willis",
+        [
+          19,
+          1
+        ],
+        "/wiki/Clarence_George_Willis",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "4c18213568508e6e",
+    "answer": "Bruce",
+    "gold_table_id": "List_of_highways_in_Ontario_0",
+    "answer_node": [
+      [
+        "Ontario Highway 6",
+        [
+          3,
+          1
+        ],
+        "/wiki/Ontario_Highway_6",
+        "passage"
+      ],
+      [
+        "Ontario Highway 6",
+        [
+          4,
+          0
+        ],
+        "/wiki/Ontario_Highway_6",
+        "passage"
+      ],
+      [
+        "Ontario Highway 6",
+        [
+          9,
+          2
+        ],
+        "/wiki/Ontario_Highway_6",
+        "passage"
+      ],
+      [
+        "Ontario Highway 6",
+        [
+          17,
+          2
+        ],
+        "/wiki/Ontario_Highway_6",
+        "passage"
+      ],
+      [
+        "Grimsby, Ontario",
+        [
+          7,
+          1
+        ],
+        "/wiki/Grimsby,_Ontario",
+        "passage"
+      ],
+      [
+        "Kincardine, Ontario",
+        [
+          8,
+          2
+        ],
+        "/wiki/Kincardine,_Ontario",
+        "passage"
+      ],
+      [
+        "Hamilton, Ontario",
+        [
+          16,
+          2
+        ],
+        "/wiki/Hamilton,_Ontario",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "5b29c0b9a2aa8b1f",
+    "answer": "707 ha",
+    "gold_table_id": "List_of_airports_in_the_Calgary_area_0",
+    "answer_node": [
+      [
+        "Springbank, Alberta",
+        [
+          5,
+          2
+        ],
+        "/wiki/Springbank,_Alberta",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "5bbcabc92b3834a5",
+    "answer": "2",
+    "gold_table_id": "List_of_airports_in_Manitoba_0",
+    "answer_node": [
+      [
+        "Carman (South) Airport",
+        [
+          12,
+          1
+        ],
+        "/wiki/Carman_(South)_Airport",
+        "passage"
+      ],
+      [
+        "Crystal City-Pilot Mound/Louise Municipal Airport",
+        [
+          18,
+          1
+        ],
+        "/wiki/Crystal_City-Pilot_Mound/Louise_Municipal_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "5f211d0084a3f3d2",
+    "answer": "CR 43",
+    "gold_table_id": "List_of_county_routes_in_Sullivan_County,_New_York_3",
+    "answer_node": [
+      [
+        "CR 43 at Leers Road",
+        [
+          1,
+          5
+        ],
+        null,
+        "table"
+      ],
+      [
+        "CR 43",
+        [
+          2,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "CR 43",
+        [
+          3,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "NY 42 / CR 43",
+        [
+          7,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "621119ded262a5f1",
+    "answer": "6",
+    "gold_table_id": "List_of_airports_in_Malawi_0",
+    "answer_node": [
+      [
+        "Ntchisi Airport",
+        [
+          17,
+          3
+        ],
+        "/wiki/Ntchisi_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "624764b796080261",
+    "answer": "17.34 million",
+    "gold_table_id": "List_of_the_busiest_airports_in_Canada_23",
+    "answer_node": [
+      [
+        "Calgary International Airport",
+        [
+          2,
+          1
+        ],
+        "/wiki/Calgary_International_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "646b223b1a2b2392",
+    "answer": "2,411",
+    "gold_table_id": "List_of_county_routes_in_Delaware_County,_New_York_0",
+    "answer_node": [
+      [
+        "Franklin (town), New York",
+        [
+          12,
+          3
+        ],
+        "/wiki/Franklin_(town),_New_York",
+        "passage"
+      ],
+      [
+        "Franklin (town), New York",
+        [
+          13,
+          5
+        ],
+        "/wiki/Franklin_(town),_New_York",
+        "passage"
+      ],
+      [
+        "Franklin (town), New York",
+        [
+          17,
+          5
+        ],
+        "/wiki/Franklin_(town),_New_York",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "677c324db9cc665d",
+    "answer": "1875",
+    "gold_table_id": "List_of_covered_bridges_in_Columbia_County,_Pennsylvania_0",
+    "answer_node": [
+      [
+        "1875",
+        [
+          1,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "1875",
+        [
+          6,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "1875",
+        [
+          12,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Josiah Hess Covered Bridge No. 122",
+        [
+          6,
+          0
+        ],
+        "/wiki/Josiah_Hess_Covered_Bridge_No._122",
+        "passage"
+      ],
+      [
+        "Lawrence L. Knoebel Covered Bridge",
+        [
+          8,
+          0
+        ],
+        "/wiki/Lawrence_L._Knoebel_Covered_Bridge",
+        "passage"
+      ],
+      [
+        "Kreigbaum Covered Bridge",
+        [
+          10,
+          0
+        ],
+        "/wiki/Kreigbaum_Covered_Bridge",
+        "passage"
+      ],
+      [
+        "Patterson Covered Bridge No. 112",
+        [
+          12,
+          0
+        ],
+        "/wiki/Patterson_Covered_Bridge_No._112",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "68bb583b7da5beb0",
+    "answer": "troop transport",
+    "gold_table_id": "List_of_aircraft_of_World_War_II_13",
+    "answer_node": [
+      [
+        "Bristol Bombay",
+        [
+          7,
+          0
+        ],
+        "/wiki/Bristol_Bombay",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6cb2bbe99a907e49",
+    "answer": "Uruguay",
+    "gold_table_id": "World's_busiest_passenger_air_routes_12",
+    "answer_node": [
+      [
+        "Aeroparque Jorge Newbery",
+        [
+          1,
+          1
+        ],
+        "/wiki/Aeroparque_Jorge_Newbery",
+        "passage"
+      ],
+      [
+        "Aeroparque Jorge Newbery",
+        [
+          2,
+          1
+        ],
+        "/wiki/Aeroparque_Jorge_Newbery",
+        "passage"
+      ],
+      [
+        "Aeroparque Jorge Newbery",
+        [
+          3,
+          1
+        ],
+        "/wiki/Aeroparque_Jorge_Newbery",
+        "passage"
+      ],
+      [
+        "Aeroparque Jorge Newbery",
+        [
+          4,
+          1
+        ],
+        "/wiki/Aeroparque_Jorge_Newbery",
+        "passage"
+      ],
+      [
+        "Aeroparque Jorge Newbery",
+        [
+          5,
+          1
+        ],
+        "/wiki/Aeroparque_Jorge_Newbery",
+        "passage"
+      ],
+      [
+        "Aeroparque Jorge Newbery",
+        [
+          6,
+          1
+        ],
+        "/wiki/Aeroparque_Jorge_Newbery",
+        "passage"
+      ],
+      [
+        "Aeroparque Jorge Newbery",
+        [
+          7,
+          1
+        ],
+        "/wiki/Aeroparque_Jorge_Newbery",
+        "passage"
+      ],
+      [
+        "Aeroparque Jorge Newbery",
+        [
+          8,
+          1
+        ],
+        "/wiki/Aeroparque_Jorge_Newbery",
+        "passage"
+      ],
+      [
+        "Aeroparque Jorge Newbery",
+        [
+          9,
+          1
+        ],
+        "/wiki/Aeroparque_Jorge_Newbery",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "73a06eb1a6eb5ce1",
+    "answer": "Vityazevo",
+    "gold_table_id": "Kuban_Airlines_destinations_0",
+    "answer_node": [
+      [
+        "Anapa Airport",
+        [
+          0,
+          4
+        ],
+        "/wiki/Anapa_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "742eb6e4ca81cd0c",
+    "answer": "1988",
+    "gold_table_id": "List_of_ships_of_the_Royal_Australian_Navy_13",
+    "answer_node": [
+      [
+        "HMAS Ladava (P 92)",
+        [
+          3,
+          0
+        ],
+        "/wiki/HMAS_Ladava_(P_92)",
+        "passage"
+      ],
+      [
+        "HMAS Lae (P 93)",
+        [
+          5,
+          0
+        ],
+        "/wiki/HMAS_Lae_(P_93)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "769733d51f863c22",
+    "answer": "gold",
+    "gold_table_id": "List_of_South_African_airports_by_passenger_movements_2",
+    "answer_node": [
+      [
+        "Johannesburg",
+        [
+          0,
+          2
+        ],
+        "/wiki/Johannesburg",
+        "passage"
+      ],
+      [
+        "Cape Town",
+        [
+          1,
+          2
+        ],
+        "/wiki/Cape_Town",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "77a25813b5580f8c",
+    "answer": "R802",
+    "gold_table_id": "List_of_Dublin_bridges_and_tunnels_2",
+    "answer_node": [
+      [
+        "Ringsend Road , Bridge Street - R802",
+        [
+          0,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Ringsend Bridge",
+        [
+          0,
+          0
+        ],
+        "/wiki/Ringsend_Bridge",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "7efb7f0d84a405fa",
+    "answer": "2.6",
+    "gold_table_id": "List_of_airports_in_Alberta_0",
+    "answer_node": [
+      [
+        "Airdrie Aerodrome",
+        [
+          0,
+          1
+        ],
+        "/wiki/Airdrie_Aerodrome",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "80b11cca1f828609",
+    "answer": "8.84",
+    "gold_table_id": "List_of_county_routes_in_Sullivan_County,_New_York_9",
+    "answer_node": [
+      [
+        "8.84",
+        [
+          4,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "8112efcd44fc4737",
+    "answer": "Ciénaga de la Virgen",
+    "gold_table_id": "World's_busiest_passenger_air_routes_14",
+    "answer_node": [
+      [
+        "Rafael Núñez International Airport",
+        [
+          1,
+          2
+        ],
+        "/wiki/Rafael_Núñez_International_Airport",
+        "passage"
+      ],
+      [
+        "Rafael Núñez International Airport",
+        [
+          8,
+          1
+        ],
+        "/wiki/Rafael_Núñez_International_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "8189497c5ab37fe7",
+    "answer": "First Avenue South Bridge",
+    "gold_table_id": "List_of_Seattle_bridges_0",
+    "answer_node": [
+      [
+        "First Avenue South Bridge",
+        [
+          3,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "82196a4e60db95ce",
+    "answer": "Skytrax Best North American Airport",
+    "gold_table_id": "List_of_the_busiest_airports_in_Canada_12",
+    "answer_node": [
+      [
+        "Vancouver International Airport",
+        [
+          1,
+          1
+        ],
+        "/wiki/Vancouver_International_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "82d70abca1bf2d34",
+    "answer": "April 10 , 1888",
+    "gold_table_id": "List_of_New_York_City_Subway_stations_in_Brooklyn_0",
+    "answer_node": [
+      [
+        "April 10 , 1888",
+        [
+          12,
+          4
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "8506f6549f21a197",
+    "answer": "Merrion Road",
+    "gold_table_id": "List_of_Dublin_bridges_and_tunnels_2",
+    "answer_node": [
+      [
+        "Pembroke Road , Merrion Road - R118",
+        [
+          4,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "8524304318e5f09a",
+    "answer": "A1A-2",
+    "gold_table_id": "List_of_GM-EMD_locomotives_0",
+    "answer_node": [
+      [
+        "A1A-2",
+        [
+          9,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "86302eeb34a8cc7e",
+    "answer": "Forestburgh",
+    "gold_table_id": "List_of_county_routes_in_Sullivan_County,_New_York_9",
+    "answer_node": [
+      [
+        "Cold Spring Road in Forestburgh",
+        [
+          0,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "CR 101 / CR 108 in Forestburgh",
+        [
+          1,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Saint Josephs Road in Forestburgh",
+        [
+          6,
+          4
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "875fec1e1c50aada",
+    "answer": "65 million",
+    "gold_table_id": "Linate_Airport_2",
+    "answer_node": [
+      [
+        "Frankfurt Airport",
+        [
+          3,
+          1
+        ],
+        "/wiki/Frankfurt_Airport",
+        "passage"
+      ],
+      [
+        "EasyJet",
+        [
+          4,
+          3
+        ],
+        "/wiki/EasyJet",
+        "passage"
+      ],
+      [
+        "EasyJet",
+        [
+          5,
+          3
+        ],
+        "/wiki/EasyJet",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "8981141529183172",
+    "answer": "7,500",
+    "gold_table_id": "Budapest_Ferenc_Liszt_International_Airport_4",
+    "answer_node": [
+      [
+        "Madrid Airport",
+        [
+          15,
+          1
+        ],
+        "/wiki/Madrid_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "89e1c7f63ef47776",
+    "answer": "2.11",
+    "gold_table_id": "List_of_county_routes_in_Fulton_County,_New_York_1",
+    "answer_node": [
+      [
+        "2.11",
+        [
+          18,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "8dcee8dde8621db6",
+    "answer": "2012",
+    "gold_table_id": "List_of_airports_in_Queensland_1",
+    "answer_node": [
+      [
+        "Bohle River Aerodrome",
+        [
+          6,
+          1
+        ],
+        "/wiki/Bohle_River_Aerodrome",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "90a911cf8907b814",
+    "answer": "Mother City",
+    "gold_table_id": "List_of_South_African_airports_by_passenger_movements_0",
+    "answer_node": [
+      [
+        "Cape Town",
+        [
+          1,
+          2
+        ],
+        "/wiki/Cape_Town",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "90a96e96bee8325f",
+    "answer": "Cessna Citation Excel ( Model 560XL )",
+    "gold_table_id": "Swiss_Air_Force_aircraft_squadrons_1",
+    "answer_node": [
+      [
+        "Cessna Citation Excel",
+        [
+          1,
+          3
+        ],
+        "/wiki/Cessna_Citation_Excel",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9372e477ca76a9a0",
+    "answer": "Callao",
+    "gold_table_id": "World's_busiest_passenger_air_routes_15",
+    "answer_node": [
+      [
+        "Lima",
+        [
+          2,
+          2
+        ],
+        "/wiki/Lima",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "947305a59e725d8a",
+    "answer": "Annadrumman Crossing",
+    "gold_table_id": "List_of_closed_railway_stations_in_Ireland:_N_0",
+    "answer_node": [
+      [
+        "Annadrumman Crossing",
+        [
+          16,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9578b7b3e4105ec7",
+    "answer": "2.09",
+    "gold_table_id": "List_of_county_routes_in_Wayne_County,_New_York_1",
+    "answer_node": [
+      [
+        "2.09",
+        [
+          15,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9657d7a59943c2ac",
+    "answer": "Brimley Road",
+    "gold_table_id": "List_of_municipal_roads_in_Markham,_Ontario_0",
+    "answer_node": [
+      [
+        "Brimley Road",
+        [
+          3,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "96ad5e8f36eca29e",
+    "answer": "CR 132",
+    "gold_table_id": "List_of_county_routes_in_Fulton_County,_New_York_1",
+    "answer_node": [
+      [
+        "CR 132",
+        [
+          2,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9988b4c640ad1d31",
+    "answer": "Lac Ste . Anne",
+    "gold_table_id": "List_of_Alberta_provincial_highways_6",
+    "answer_node": [
+      [
+        "Rochfort Bridge, Alberta",
+        [
+          3,
+          4
+        ],
+        "/wiki/Rochfort_Bridge,_Alberta",
+        "passage"
+      ],
+      [
+        "Onoway",
+        [
+          11,
+          4
+        ],
+        "/wiki/Onoway",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9a4e4a03693ff8d0",
+    "answer": "Slim",
+    "gold_table_id": "List_of_aircraft_of_Japan_during_World_War_II_3",
+    "answer_node": [
+      [
+        "Slim",
+        [
+          12,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9bafedf1eec75302",
+    "answer": "Land overflowed by the sea",
+    "gold_table_id": "List_of_county_routes_in_Suffolk_County,_New_York_1",
+    "answer_node": [
+      [
+        "Napeague, New York",
+        [
+          11,
+          3
+        ],
+        "/wiki/Napeague,_New_York",
+        "passage"
+      ],
+      [
+        "Napeague, New York",
+        [
+          11,
+          4
+        ],
+        "/wiki/Napeague,_New_York",
+        "passage"
+      ],
+      [
+        "Napeague, New York",
+        [
+          12,
+          3
+        ],
+        "/wiki/Napeague,_New_York",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9c3dc7011fdbf7ce",
+    "answer": "14 December 1944",
+    "gold_table_id": "List_of_ships_of_the_Royal_Australian_Navy_20",
+    "answer_node": [
+      [
+        "HMAS Shoalhaven (K535)",
+        [
+          7,
+          0
+        ],
+        "/wiki/HMAS_Shoalhaven_(K535)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9cee894057e868da",
+    "answer": "2.6 nautical miles",
+    "gold_table_id": "List_of_airports_in_the_Calgary_area_0",
+    "answer_node": [
+      [
+        "Airdrie Aerodrome",
+        [
+          0,
+          0
+        ],
+        "/wiki/Airdrie_Aerodrome",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9e3fe607c59d7827",
+    "answer": "Canada Border Services Agency",
+    "gold_table_id": "List_of_the_busiest_airports_in_Canada_0",
+    "answer_node": [
+      [
+        "Ottawa Macdonald–Cartier International Airport",
+        [
+          5,
+          1
+        ],
+        "/wiki/Ottawa_Macdonald–Cartier_International_Airport",
+        "passage"
+      ],
+      [
+        "Victoria International Airport",
+        [
+          10,
+          1
+        ],
+        "/wiki/Victoria_International_Airport",
+        "passage"
+      ],
+      [
+        "St. John's International Airport",
+        [
+          12,
+          1
+        ],
+        "/wiki/St._John's_International_Airport",
+        "passage"
+      ],
+      [
+        "Saskatoon John G. Diefenbaker International Airport",
+        [
+          13,
+          1
+        ],
+        "/wiki/Saskatoon_John_G._Diefenbaker_International_Airport",
+        "passage"
+      ],
+      [
+        "Regina International Airport",
+        [
+          14,
+          1
+        ],
+        "/wiki/Regina_International_Airport",
+        "passage"
+      ],
+      [
+        "Thunder Bay International Airport",
+        [
+          15,
+          1
+        ],
+        "/wiki/Thunder_Bay_International_Airport",
+        "passage"
+      ],
+      [
+        "Abbotsford International Airport",
+        [
+          16,
+          1
+        ],
+        "/wiki/Abbotsford_International_Airport",
+        "passage"
+      ],
+      [
+        "John C. Munro Hamilton International Airport",
+        [
+          17,
+          1
+        ],
+        "/wiki/John_C._Munro_Hamilton_International_Airport",
+        "passage"
+      ],
+      [
+        "London International Airport",
+        [
+          18,
+          1
+        ],
+        "/wiki/London_International_Airport",
+        "passage"
+      ],
+      [
+        "Greater Moncton Roméo LeBlanc International Airport",
+        [
+          19,
+          1
+        ],
+        "/wiki/Greater_Moncton_Roméo_LeBlanc_International_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a021a5ae2b2dec59",
+    "answer": "Mountain Pine Ridge",
+    "gold_table_id": "List_of_airports_in_Belize_1",
+    "answer_node": [
+      [
+        "Mountain Pine Ridge",
+        [
+          5,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ab5eb9535349cd7a",
+    "answer": "266",
+    "gold_table_id": "List_of_the_busiest_airports_in_Canada_4",
+    "answer_node": [
+      [
+        "Kelowna International Airport",
+        [
+          10,
+          1
+        ],
+        "/wiki/Kelowna_International_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ac7e2fab6703aaa5",
+    "answer": "7,536,383",
+    "gold_table_id": "List_of_bridges_in_the_Philippines_1",
+    "answer_node": [
+      [
+        "Western Visayas",
+        [
+          3,
+          2
+        ],
+        "/wiki/Western_Visayas",
+        "passage"
+      ],
+      [
+        "Western Visayas",
+        [
+          4,
+          2
+        ],
+        "/wiki/Western_Visayas",
+        "passage"
+      ],
+      [
+        "Western Visayas",
+        [
+          8,
+          2
+        ],
+        "/wiki/Western_Visayas",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ad0c86402eb091ee",
+    "answer": "Belgium",
+    "gold_table_id": "List_of_railway_artillery_0",
+    "answer_node": [
+      [
+        "France",
+        [
+          0,
+          2
+        ],
+        "/wiki/France",
+        "passage"
+      ],
+      [
+        "France",
+        [
+          3,
+          2
+        ],
+        "/wiki/France",
+        "passage"
+      ],
+      [
+        "France",
+        [
+          7,
+          2
+        ],
+        "/wiki/France",
+        "passage"
+      ],
+      [
+        "France",
+        [
+          8,
+          2
+        ],
+        "/wiki/France",
+        "passage"
+      ],
+      [
+        "France",
+        [
+          9,
+          2
+        ],
+        "/wiki/France",
+        "passage"
+      ],
+      [
+        "15 cm K (E)",
+        [
+          2,
+          1
+        ],
+        "/wiki/15_cm_K_(E)",
+        "passage"
+      ],
+      [
+        "20.3 cm K (E)",
+        [
+          10,
+          1
+        ],
+        "/wiki/20.3_cm_K_(E)",
+        "passage"
+      ],
+      [
+        "24 cm SK L/40 \"Theodor Karl\"",
+        [
+          17,
+          1
+        ],
+        "/wiki/24_cm_SK_L/40_\"Theodor_Karl\"",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ad0f5ea98bb5f2bf",
+    "answer": "Highway 25",
+    "gold_table_id": "List_of_highways_in_Ontario_1",
+    "answer_node": [
+      [
+        "Highway 25",
+        [
+          4,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "afac2f38d7c97817",
+    "answer": "Queens Boulevard Line",
+    "gold_table_id": "List_of_New_York_City_Subway_stations_in_Queens_1",
+    "answer_node": [
+      [
+        "Queens Boulevard Line",
+        [
+          5,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Queens Boulevard Line",
+        [
+          8,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Queens Boulevard Line",
+        [
+          12,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Queens Boulevard Line",
+        [
+          13,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Queens Boulevard Line",
+        [
+          14,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Queens Boulevard Line",
+        [
+          17,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "G (New York City Subway service)",
+        [
+          0,
+          4
+        ],
+        "/wiki/G_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "21st Street–Queensbridge (IND 63rd Street Line)",
+        [
+          1,
+          0
+        ],
+        "/wiki/21st_Street–Queensbridge_(IND_63rd_Street_Line)",
+        "passage"
+      ],
+      [
+        "63rd Street Line",
+        [
+          1,
+          3
+        ],
+        "/wiki/63rd_Street_Line",
+        "passage"
+      ],
+      [
+        "N (New York City Subway service)",
+        [
+          2,
+          4
+        ],
+        "/wiki/N_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "N (New York City Subway service)",
+        [
+          4,
+          4
+        ],
+        "/wiki/N_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "N (New York City Subway service)",
+        [
+          6,
+          4
+        ],
+        "/wiki/N_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "36th Street (IND Queens Boulevard Line)",
+        [
+          5,
+          0
+        ],
+        "/wiki/36th_Street_(IND_Queens_Boulevard_Line)",
+        "passage"
+      ],
+      [
+        "M (New York City Subway service)",
+        [
+          5,
+          4
+        ],
+        "/wiki/M_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "M (New York City Subway service)",
+        [
+          8,
+          4
+        ],
+        "/wiki/M_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "M (New York City Subway service)",
+        [
+          12,
+          4
+        ],
+        "/wiki/M_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "M (New York City Subway service)",
+        [
+          13,
+          4
+        ],
+        "/wiki/M_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "M (New York City Subway service)",
+        [
+          14,
+          4
+        ],
+        "/wiki/M_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "R (New York City Subway service)",
+        [
+          5,
+          4
+        ],
+        "/wiki/R_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "R (New York City Subway service)",
+        [
+          8,
+          4
+        ],
+        "/wiki/R_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "R (New York City Subway service)",
+        [
+          12,
+          4
+        ],
+        "/wiki/R_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "R (New York City Subway service)",
+        [
+          13,
+          4
+        ],
+        "/wiki/R_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "R (New York City Subway service)",
+        [
+          14,
+          4
+        ],
+        "/wiki/R_(New_York_City_Subway_service)",
+        "passage"
+      ],
+      [
+        "46th Street (IND Queens Boulevard Line)",
+        [
+          8,
+          0
+        ],
+        "/wiki/46th_Street_(IND_Queens_Boulevard_Line)",
+        "passage"
+      ],
+      [
+        "63rd Drive–Rego Park (IND Queens Boulevard Line)",
+        [
+          12,
+          0
+        ],
+        "/wiki/63rd_Drive–Rego_Park_(IND_Queens_Boulevard_Line)",
+        "passage"
+      ],
+      [
+        "65th Street (IND Queens Boulevard Line)",
+        [
+          13,
+          0
+        ],
+        "/wiki/65th_Street_(IND_Queens_Boulevard_Line)",
+        "passage"
+      ],
+      [
+        "67th Avenue (IND Queens Boulevard Line)",
+        [
+          14,
+          0
+        ],
+        "/wiki/67th_Avenue_(IND_Queens_Boulevard_Line)",
+        "passage"
+      ],
+      [
+        "74th Street–Broadway (IRT Flushing Line)",
+        [
+          16,
+          0
+        ],
+        "/wiki/74th_Street–Broadway_(IRT_Flushing_Line)",
+        "passage"
+      ],
+      [
+        "75th Avenue (IND Queens Boulevard Line)",
+        [
+          17,
+          0
+        ],
+        "/wiki/75th_Avenue_(IND_Queens_Boulevard_Line)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b11d2d57cdacbc9e",
+    "answer": "10 km",
+    "gold_table_id": "List_of_South_African_airports_by_passenger_movements_0",
+    "answer_node": [
+      [
+        "Kimberley Airport",
+        [
+          7,
+          1
+        ],
+        "/wiki/Kimberley_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b148284a6b9ca70a",
+    "answer": "the grounds of the Belmont Park racetrack",
+    "gold_table_id": "List_of_Long_Island_Rail_Road_stations_0",
+    "answer_node": [
+      [
+        "Belmont Park Branch",
+        [
+          6,
+          0
+        ],
+        "/wiki/Belmont_Park_Branch",
+        "passage"
+      ],
+      [
+        "Belmont Park station",
+        [
+          6,
+          2
+        ],
+        "/wiki/Belmont_Park_station",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b16c668f54c230e7",
+    "answer": "21,000",
+    "gold_table_id": "List_of_airlines_of_Alberta_0",
+    "answer_node": [
+      [
+        "Peace River Airport",
+        [
+          8,
+          3
+        ],
+        "/wiki/Peace_River_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b2aa2a04a4526c7b",
+    "answer": "1941",
+    "gold_table_id": "List_of_aircraft_of_World_War_II_25",
+    "answer_node": [
+      [
+        "1941",
+        [
+          13,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "1941",
+        [
+          16,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "1941",
+        [
+          18,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "CANSA FC.20",
+        [
+          18,
+          0
+        ],
+        "/wiki/CANSA_FC.20",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b77833c98ba62ea6",
+    "answer": "Rancho-Boyeros Airport",
+    "gold_table_id": "List_of_the_busiest_airports_in_the_Caribbean_0",
+    "answer_node": [
+      [
+        "José Martí International Airport",
+        [
+          2,
+          1
+        ],
+        "/wiki/José_Martí_International_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b7f5f8134be6815f",
+    "answer": "Mano Dayak International Airport",
+    "gold_table_id": "List_of_airports_in_Niger_0",
+    "answer_node": [
+      [
+        "Mano Dayak International Airport",
+        [
+          0,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "bbc7c83f4fab9d5b",
+    "answer": "Indian Air Force",
+    "gold_table_id": "World's_busiest_passenger_air_routes_6",
+    "answer_node": [
+      [
+        "Indira Gandhi International Airport",
+        [
+          2,
+          1
+        ],
+        "/wiki/Indira_Gandhi_International_Airport",
+        "passage"
+      ],
+      [
+        "Indira Gandhi International Airport",
+        [
+          18,
+          1
+        ],
+        "/wiki/Indira_Gandhi_International_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "bc6f0dbe34d71a31",
+    "answer": "21",
+    "gold_table_id": "List_of_terrorist_incidents_involving_railway_systems_0",
+    "answer_node": [
+      [
+        "Japanese Communist Party",
+        [
+          8,
+          4
+        ],
+        "/wiki/Japanese_Communist_Party",
+        "passage"
+      ],
+      [
+        "Japanese Communist Party",
+        [
+          9,
+          4
+        ],
+        "/wiki/Japanese_Communist_Party",
+        "passage"
+      ],
+      [
+        "Hải Vân Pass",
+        [
+          10,
+          0
+        ],
+        "/wiki/Hải_Vân_Pass",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "c4269931638a5d4b",
+    "answer": "AENA",
+    "gold_table_id": "List_of_the_busiest_airports_in_Latin_America_1",
+    "answer_node": [
+      [
+        "Recife/Guararapes–Gilberto Freyre International Airport",
+        [
+          18,
+          1
+        ],
+        "/wiki/Recife/Guararapes–Gilberto_Freyre_International_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "c67ea18da325ac4d",
+    "answer": "RWJ Airpark",
+    "gold_table_id": "List_of_airports_in_the_Greater_Houston_Area_0",
+    "answer_node": [
+      [
+        "RWJ Airpark",
+        [
+          19,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ca54329376733d0f",
+    "answer": "88 km",
+    "gold_table_id": "High-speed_rail_by_country_4",
+    "answer_node": [
+      [
+        "88 km ( 55 mi )",
+        [
+          0,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "HSL 1",
+        [
+          0,
+          0
+        ],
+        "/wiki/HSL_1",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ca7e39005fb5e7e5",
+    "answer": "Crystal Palace",
+    "gold_table_id": "List_of_bus_routes_in_London_4",
+    "answer_node": [
+      [
+        "Crystal Palace",
+        [
+          6,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Crystal Palace",
+        [
+          12,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ca97175a558ce34b",
+    "answer": "explosion and fire",
+    "gold_table_id": "List_of_cruise_ships_1",
+    "answer_node": [
+      [
+        "MV Bianca C.",
+        [
+          4,
+          0
+        ],
+        "/wiki/MV_Bianca_C.",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "cb26ba8d4988861c",
+    "answer": "a number of Garifuna emigrants from Honduras",
+    "gold_table_id": "List_of_airports_in_Belize_0",
+    "answer_node": [
+      [
+        "Punta Gorda, Belize",
+        [
+          15,
+          0
+        ],
+        "/wiki/Punta_Gorda,_Belize",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "cd1284f4d6e8b11e",
+    "answer": "1903",
+    "gold_table_id": "Bridges_and_tunnels_in_New_York_City_0",
+    "answer_node": [
+      [
+        "Joralemon Street Tunnel",
+        [
+          1,
+          0
+        ],
+        "/wiki/Joralemon_Street_Tunnel",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "cfe9af0201f3980d",
+    "answer": "1823",
+    "gold_table_id": "List_of_airports_in_Belize_0",
+    "answer_node": [
+      [
+        "Punta Gorda, Belize",
+        [
+          15,
+          0
+        ],
+        "/wiki/Punta_Gorda,_Belize",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d005e27549adce7b",
+    "answer": "E5",
+    "gold_table_id": "List_of_bus_routes_in_London_8",
+    "answer_node": [
+      [
+        "E5",
+        [
+          18,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d28d604a963379aa",
+    "answer": "Toyo Aviation",
+    "gold_table_id": "List_of_airlines_of_Romania_1",
+    "answer_node": [
+      [
+        "Toyo Aviation",
+        [
+          6,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "TOYO AVIATION",
+        [
+          6,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d2a242889b34efbe",
+    "answer": "10",
+    "gold_table_id": "List_of_South_African_airports_by_passenger_movements_5",
+    "answer_node": [
+      [
+        "Kimberley Airport",
+        [
+          7,
+          1
+        ],
+        "/wiki/Kimberley_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d67b931721866e23",
+    "answer": "1 , 2 , 3",
+    "gold_table_id": "List_of_New_York_City_Subway_stations_in_Manhattan_1",
+    "answer_node": [
+      [
+        "A Division (New York City Subway)",
+        [
+          5,
+          2
+        ],
+        "/wiki/A_Division_(New_York_City_Subway)",
+        "passage"
+      ],
+      [
+        "A Division (New York City Subway)",
+        [
+          12,
+          2
+        ],
+        "/wiki/A_Division_(New_York_City_Subway)",
+        "passage"
+      ],
+      [
+        "A Division (New York City Subway)",
+        [
+          15,
+          2
+        ],
+        "/wiki/A_Division_(New_York_City_Subway)",
+        "passage"
+      ],
+      [
+        "A Division (New York City Subway)",
+        [
+          16,
+          2
+        ],
+        "/wiki/A_Division_(New_York_City_Subway)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d82506405d5a9184",
+    "answer": "East Finchley",
+    "gold_table_id": "List_of_bus_routes_in_London_6",
+    "answer_node": [
+      [
+        "East Finchley",
+        [
+          8,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Muswell Hill",
+        [
+          2,
+          2
+        ],
+        "/wiki/Muswell_Hill",
+        "passage"
+      ],
+      [
+        "Finchley",
+        [
+          16,
+          1
+        ],
+        "/wiki/Finchley",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d988727e6d46b168",
+    "answer": "43,013",
+    "gold_table_id": "List_of_bus_routes_in_London_2",
+    "answer_node": [
+      [
+        "Kingston upon Thames",
+        [
+          13,
+          1
+        ],
+        "/wiki/Kingston_upon_Thames",
+        "passage"
+      ],
+      [
+        "Kingston upon Thames",
+        [
+          16,
+          1
+        ],
+        "/wiki/Kingston_upon_Thames",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "db5406cc936ce416",
+    "answer": "Greater Sudbury , Ontario , Canada",
+    "gold_table_id": "List_of_Canadian_railways_8",
+    "answer_node": [
+      [
+        "Inco Railway",
+        [
+          12,
+          0
+        ],
+        "/wiki/Inco_Railway",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e170fbdcf6d8f02f",
+    "answer": "Waco Aircraft Company",
+    "gold_table_id": "List_of_aircraft_of_World_War_II_15",
+    "answer_node": [
+      [
+        "Waco CG-4",
+        [
+          13,
+          0
+        ],
+        "/wiki/Waco_CG-4",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e31fb506167c7774",
+    "answer": "50-mile",
+    "gold_table_id": "List_of_state_routes_in_New_York_1",
+    "answer_node": [
+      [
+        "NY 13",
+        [
+          7,
+          4
+        ],
+        "/wiki/NY_13",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e4df00db72f0e8d9",
+    "answer": "London General Omnibus Company",
+    "gold_table_id": "List_of_bus_routes_in_London_2",
+    "answer_node": [
+      [
+        "London General",
+        [
+          0,
+          3
+        ],
+        "/wiki/London_General",
+        "passage"
+      ],
+      [
+        "London General",
+        [
+          2,
+          3
+        ],
+        "/wiki/London_General",
+        "passage"
+      ],
+      [
+        "London General",
+        [
+          9,
+          3
+        ],
+        "/wiki/London_General",
+        "passage"
+      ],
+      [
+        "London General",
+        [
+          13,
+          3
+        ],
+        "/wiki/London_General",
+        "passage"
+      ],
+      [
+        "London General",
+        [
+          14,
+          3
+        ],
+        "/wiki/London_General",
+        "passage"
+      ],
+      [
+        "London General",
+        [
+          19,
+          3
+        ],
+        "/wiki/London_General",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e5a8b6285d9d3c9c",
+    "answer": "Rivers in the United Kingdom",
+    "gold_table_id": "List_of_ships_of_the_Royal_Australian_Navy_5",
+    "answer_node": [
+      [
+        "River-class frigate",
+        [
+          3,
+          2
+        ],
+        "/wiki/River-class_frigate",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ef29accb078e66fa",
+    "answer": "February 1 , 1943",
+    "gold_table_id": "List_of_United_States_Marine_Corps_aviation_support_units_1",
+    "answer_node": [
+      [
+        "February 1 , 1943",
+        [
+          8,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f60e2bbd2b92126f",
+    "answer": "8,000",
+    "gold_table_id": "Gimhae_International_Airport_3",
+    "answer_node": [
+      [
+        "Suvarnabhumi Airport",
+        [
+          4,
+          1
+        ],
+        "/wiki/Suvarnabhumi_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ff97b77fffd1ac16",
+    "answer": "10.8%",
+    "gold_table_id": "Sofia_Airport_1",
+    "answer_node": [
+      [
+        "Schwechat Airport",
+        [
+          1,
+          1
+        ],
+        "/wiki/Schwechat_Airport",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "domain": "music",
+  "generated_from": "semantic_catalog_build_report.json",
+  "multi_source_patterns": [
+    "Queries about artist biographies, career milestones, and cultural impact often require narrative context from documents.",
+    "Queries about specific factual attributes (e.g., release dates, chart positions, personnel) are best answered by structured tables.",
+    "Queries about relationships between entities (e.g., 'who directed this film?', 'what is the headquarters of this label?') are best served by the knowledge graph.",
+    "Queries that combine narrative context with structured data (e.g., 'how did the album's production influence its chart performance?') may require cross-source reasoning."
+  ],
+  "routing_boundary": "The primary boundary is between narrative prose (documents) and structured data (tables and knowledge graph). Documents provide rich context and storytelling, while tables and KG provide precise, queryable facts. Tables are optimal for row/column lookups and comparisons, whereas KG excels at traversing explicit relationships. Avoid using documents for exact factual lookups, and avoid using tables or KG for open-ended explanatory questions.",
+  "sources": {
+    "doc": {
+      "data_shape": "Narrative passages from Wikipedia articles, covering artists, albums, songs, and music industry topics. Each document is a continuous text with paragraphs, lists, and infoboxes, but the clustering evidence shows that documents group by thematic similarity (e.g., artist-centric clusters like Michael Jackson, Black Sabbath, or song-specific clusters like 'Bad Guy'). The representative titles indicate a mix of biographical, discographical, and cultural topics.",
+      "summary": "Documents are the go-to source for understanding the 'story' behind music entities—biographies, historical context, critical reception, and cultural significance. They provide depth and nuance that structured sources lack.",
+      "best_for": [
+        "Biographical narratives of artists, including early life, career evolution, and personal struggles.",
+        "Contextual explanations of an album's or song's creation, inspiration, and legacy.",
+        "Historical accounts of music events, movements, or industry trends (e.g., the impact of a record label).",
+        "Comparative discussions of artists or works, such as 'how did Michael Jackson influence later pop stars?'"
+      ],
+      "avoid_when": [
+        "Exact factual lookups like 'What is the release date of album X?'—tables are more precise.",
+        "Queries requiring specific numeric data (e.g., chart positions, sales figures) that are better in tables.",
+        "Queries about explicit relationships between entities (e.g., 'who is the mother of X?')—KG is more direct."
+      ]
+    },
+    "kg": {
+      "data_shape": "A knowledge graph with entities (e.g., artists, albums, songs) and relations (e.g., 'occupation', 'publication date', 'headquarters location'). The clustering evidence shows relations grouped by semantic type, such as biographical properties (P106 occupation, P25 mother), temporal properties (P577 publication date, P585 point in time), and organizational properties (P159 headquarters, P355 subsidiary). The graph includes both core relations and safe distractors, meaning some relations may be irrelevant to a query.",
+      "summary": "The KG is ideal for answering direct, relationship-based questions with high precision. It provides structured, queryable facts about entities and their connections, but requires careful matching of predicates to the query intent.",
+      "best_for": [
+        "Queries like 'What is the occupation of X?' or 'Who is the director of film Y?' that map to specific relations.",
+        "Traversing relationships, e.g., 'Which subsidiaries does Epic Records have?' or 'What is the headquarters location of DGC Records?'",
+        "Queries involving temporal facts, such as 'When was this album published?' or 'What is the point in time of this event?'",
+        "Queries about entity attributes like 'What is the population of Morrison, Colorado?' or 'What is the eye color of X?'"
+      ],
+      "avoid_when": [
+        "Queries requiring narrative context or explanation—KG lacks prose.",
+        "Queries that need comparative analysis across multiple attributes—tables are more suitable.",
+        "Queries with ambiguous predicates or when the relation is not explicitly present in the KG—may lead to false results."
+      ]
+    },
+    "table": {
+      "data_shape": "Structured tables with rows and columns, often representing discographies, track listings, chart histories, or personnel credits. The clustering evidence shows tables grouped by album or song (e.g., 'Shape of You' has multiple clusters, indicating different table types like track listings, chart positions, or certifications). Tables are dense with numeric and categorical data.",
+      "summary": "Tables are the most precise source for structured, row/column data. They excel at providing exact values, comparisons, and aggregations, but lack the contextual richness of documents and the relationship traversal of KG.",
+      "best_for": [
+        "Queries like 'What are the track listings for album X?' or 'What are the chart positions of song Y?'",
+        "Comparative queries, e.g., 'How did the sales of album A compare to album B?'",
+        "Queries requiring specific data points like release dates, durations, or certifications.",
+        "Aggregations, such as 'How many tracks are on this album?' or 'What is the total number of weeks at number one?'"
+      ],
+      "avoid_when": [
+        "Queries requiring narrative context or background information—documents are better.",
+        "Queries about relationships between entities that are not directly in the same table—KG is more efficient.",
+        "Queries with open-ended or interpretive questions—tables are too rigid."
+      ]
+    }
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_basis": "balanced_cluster_representatives"
+  }
+}

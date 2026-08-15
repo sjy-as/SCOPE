@@ -1,0 +1,32 @@
+{
+  "domain": "soccer",
+  "routing_mode": "atomr",
+  "knowledge_base": [
+    "kg",
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/soccer/qa_benchmark/questions_clean.jsonl",
+  "output_dir": "/root/autodl-tmp/BBB_CompMix/experiments/route_only/outputs/atomr/soccer",
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 18.690615055151284,
+  "semantic_catalog": null,
+  "atomr_prompts": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/soccer/atomr_few_shot_prompts.json",
+  "deepsieve_source_summary": null,
+  "decomposition_counts": {
+    "1": 95,
+    "2": 5
+  },
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 16,
+    "route1.kg": 81,
+    "route1.table": 3,
+    "route2.kg": 5
+  }
+}

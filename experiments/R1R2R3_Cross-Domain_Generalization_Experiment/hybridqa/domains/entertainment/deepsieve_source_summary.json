@@ -1,0 +1,39 @@
+{
+  "domain": "entertainment",
+  "generated_from": "semantic_catalog/semantic_list_3sources.json",
+  "sources": {
+    "table": {
+      "summary": "The Table source provides structured, columnar data ideal for queries that require exact values, rankings, dates, or numeric comparisons. It contains lists of entities such as actors, albums, awards, films, songs, and television programs, with attributes like names, years, nationalities, titles, and chart positions. Use this source when the question asks for a specific entity (e.g., 'Who won the Grammy in 2010?') or when you need to filter, sort, or compare across many rows (e.g., 'Which album spent the most weeks at number one?'). The table is complete for the bound question, so all relevant rows are available for direct lookup. It is best for queries that can be answered by scanning a single row or aggregating multiple rows based on clear criteria.",
+      "best_for": [
+        "Finding a specific entity's attribute (e.g., actor's nationality, album's release year)",
+        "Ranking or comparing numeric values (e.g., highest grossing film, longest-running show)",
+        "Listing entities that meet a condition (e.g., all films directed by X, all songs by artist Y)",
+        "Queries involving dates, years, or durations (e.g., 'What year did the show debut?')"
+      ],
+      "avoid_when": [
+        "The query asks for descriptive prose, background, or narrative details not present in the table columns",
+        "The answer requires information from a linked entity's biography or article (e.g., 'What awards did the director win?')",
+        "The query involves a concept that only exists in Doc (e.g., band, novel, manga, video game)"
+      ]
+    },
+    "doc": {
+      "summary": "The Doc source provides rich, narrative descriptions of entities such as actors, albums, awards, films, and television programs. It contains biographical articles, plot summaries, production details, and other prose facts that are not available in the table. Use this source when the query asks for a fact about a linked entity that is not a direct column value, such as an actor's birth date, a film's plot, or an award ceremony's venue. The Doc source is accessed by first identifying the entity in the table, then following documents whose linked_from_table_ids include the bound table. Only the title and first sentence of each document are read initially to filter candidates; full text is read only if needed. This source is best for queries that require contextual understanding or verification of a specific fact mentioned in prose.",
+      "best_for": [
+        "Biographical details of a person (e.g., birth date, birthplace, career start year)",
+        "Descriptive attributes of a work (e.g., plot, genre, awards, production company)",
+        "Information about an event (e.g., ceremony date, venue, host)",
+        "Queries that require reading a linked entity's article to extract a fact not in the table"
+      ],
+      "avoid_when": [
+        "The query can be answered directly from a table column (e.g., 'What is the album title?')",
+        "The query requires comparing many rows or aggregating numeric data",
+        "The entity is not linked to a document (e.g., some table-only concepts like award_submission)"
+      ]
+    }
+  },
+  "routing_boundary": "Use the Table source to identify an entity or value (e.g., find the film title, actor name, or album) and to answer queries that involve structured attributes like rankings, dates, or lists. Use the Doc source to retrieve a linked entity's prose fact (e.g., a director's birth date, a film's plot, or an award ceremony's venue) that is not present in the table. The bridge is: first, use the table to locate the entity and its linked_table_id; then, use the doc to fetch the specific prose detail. Do not use the table for narrative descriptions, and do not use the doc for direct column lookups.",
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat"
+  }
+}

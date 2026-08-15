@@ -1,0 +1,31 @@
+{
+  "sub_q1": "Which player played for the Cleveland Cavaliers in 2017?",
+  "sub_q2": "What state wrestling championship did [1] win as an eight-year-old?",
+  "rewrite_reasoning": "The question asks about a specific player's childhood wrestling achievement, but first we need to identify which player is being referred to. The first subquery identifies the player who played for the Cleveland Cavaliers in 2017. The second subquery then asks about that player's state wrestling championship as an eight-year-old, using the identified player's name.",
+  "match1": null,
+  "match2": null,
+  "route1": {
+    "matched_concept": "contract",
+    "primary_source": "kg",
+    "fallback_source": "doc",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: Cleveland Cavaliers (team). ASKED target: player. Phase-1 rule: relation-first. The contract concept links player and team, which exactly matches the pair (team, player). The query asks for a player who played for the Cleveland Cavaliers in 2017, so the contract relation with its temporal attributes (start_time, end_time) can capture the 2017 season. KG is LIKELY because its elements include player, team, start_time, end_time, which can directly answer the query. Doc is LIKELY because player and team descriptions in free text may mention team affiliations and years, but KG is more direct. Therefore, primary_source is kg, fallback_source is doc."
+  },
+  "route2": {
+    "matched_concept": "player",
+    "primary_source": "doc",
+    "fallback_source": "kg",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: [1] (a player, referenced by token). ASKED target: a specific state wrestling championship won at age eight. Phase-1 rule: Known-entity fallback. No relation concept links a player to a championship; award_received links player to award, but the target is a specific championship event, not an award. The query asks for an attribute/neighbor of the player, so match the concept of the KNOWN entity, player. Source selection: KG is RULED-OUT because its player elements (player_id, name, enwiki_title, country_of_citizenship, place_of_birth, date_of_birth, height, mass, work_period_start, work_period_end, schools_attended) do not include any championship or wrestling-related attribute. Doc is LIKELY because it contains free-text player descriptions that could mention such a championship. Primary source: doc (only LIKELY source). Fallback: kg (RULED-OUT but only other live source)."
+  },
+  "decompose_llm_calls": [
+    {
+      "stage": "step2.sq",
+      "ts": 1786685498.1801429,
+      "prompt": "You are a query decomposition assistant.\n\n        Your job is to transform ONE natural-language semantic query into EXACTLY two sub-questions.\n\n        Requirements:\n        1. The input is already a natural semantic query. Do NOT rewrite it into a different intent.\n        2. Output exactly two sub-questions: q1 and q2.\n        3. q1 should extract the first necessary piece of information.\n        4. q2 should depend on q1 and use [1] to refer to the answer of q1 when needed.\n        5. Do not do event judgment, schema routing, source selection, or query rewriting.\n        6. Keep the sub-questions faithful to the original meaning.\n        7. Return valid JSON only.\n\n        Return format:\n        {\n        \"reasoning\": \"brief explanation of the decomposition\",\n        \"subqueries\": [\n            {\n            \"id\": \"q1\",\n            \"query\": \"...\",\n            \"depends_on\": [],\n            \"variables\": []\n            },\n            {\n            \"id\": \"q2\",\n            \"query\": \"...\",\n            \"depends_on\": [\"q1\"],\n            \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n            }\n        ]\n        }\n\n        Question: For the player who played for the Cleveland Cavaliers in 2017, what state wrestling championship did he win as an eight-year-old?\n\n    ",
+      "response": "{\n  \"reasoning\": \"The question asks about a specific player's childhood wrestling achievement, but first we need to identify which player is being referred to. The first subquery identifies the player who played for the Cleveland Cavaliers in 2017. The second subquery then asks about that player's state wrestling championship as an eight-year-old, using the identified player's name.\",\n  \"subqueries\": [\n    {\n      \"id\": \"q1\",\n      \"query\": \"Which player played for the Cleveland Cavaliers in 2017?\",\n      \"depends_on\": [],\n      \"variables\": []\n    },\n    {\n      \"id\": \"q2\",\n      \"query\": \"What state wrestling championship did [1] win as an eight-year-old?\",\n      \"depends_on\": [\"q1\"],\n      \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n    }\n  ]\n}",
+      "module": "step2.sq",
+      "model": "deepseek-chat"
+    }
+  ]
+}

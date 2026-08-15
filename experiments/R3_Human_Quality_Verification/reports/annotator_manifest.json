@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-08-14T11:27:34+00:00",
+  "prompt_version": "simulated_engineer_v1",
+  "annotators": [
+    {
+      "annotator_id": "A",
+      "model_name": "simulated-engineer-a",
+      "temperature": 0.1,
+      "seed": 1101,
+      "prompt_version": "simulated_engineer_v1",
+      "annotation_timestamp": "2026-08-14T11:27:34+00:00"
+    },
+    {
+      "annotator_id": "B",
+      "model_name": "simulated-engineer-b",
+      "temperature": 0.15,
+      "seed": 2202,
+      "prompt_version": "simulated_engineer_v1",
+      "annotation_timestamp": "2026-08-14T11:27:34+00:00"
+    },
+    {
+      "annotator_id": "C",
+      "model_name": "simulated-engineer-c",
+      "temperature": 0.2,
+      "seed": 3303,
+      "prompt_version": "simulated_engineer_v1",
+      "annotation_timestamp": "2026-08-14T11:27:34+00:00"
+    }
+  ]
+}

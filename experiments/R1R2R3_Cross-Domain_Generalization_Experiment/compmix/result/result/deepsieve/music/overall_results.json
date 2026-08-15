@@ -1,0 +1,6199 @@
+{
+  "queries": [
+    {
+      "query": "Which album by Selena Gomez & The Scene was released first:Kiss & Tell or when the sun goes down?",
+      "ground_truth": "Kiss & Tell",
+      "q1_answers": [],
+      "q2_answers": [
+        "Kiss & Tell"
+      ],
+      "raw": {
+        "id": "dev-5400",
+        "question": "Which album by Selena Gomez & The Scene was released first:Kiss & Tell or when the sun goes down?",
+        "answer": "Kiss & Tell",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E025551",
+            "P175",
+            "E023297"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who was the guitarist of Selena Gomez & The Scene?",
+      "ground_truth": "Ethan Robert",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ethan Robert"
+      ],
+      "raw": {
+        "id": "dev-5402",
+        "question": "who was the guitarist of Selena Gomez & The Scene?",
+        "answer": "Ethan Robert",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006112",
+            "P175",
+            "E023297"
+          ],
+          [
+            "E023297",
+            "P358",
+            "E006112"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "in which did Ethan Robert play before Selena Gomez & The Scene?",
+      "ground_truth": "Selena Gomez & The Scene",
+      "q1_answers": [],
+      "q2_answers": [
+        "Selena Gomez & The Scene"
+      ],
+      "raw": {
+        "id": "dev-5403",
+        "question": "in which did Ethan Robert play before Selena Gomez & The Scene?",
+        "answer": "Selena Gomez & The Scene",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006112",
+            "P175",
+            "E023297"
+          ],
+          [
+            "E023297",
+            "P358",
+            "E006112"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the birth date of David Geffen?",
+      "ground_truth": "Borough Park, Brooklyn",
+      "q1_answers": [],
+      "q2_answers": [
+        "Borough Park, Brooklyn"
+      ],
+      "raw": {
+        "id": "dev-5463",
+        "question": "What is the birth date of David Geffen?",
+        "answer": "Borough Park, Brooklyn",
+        "source": "doc",
+        "source_ids": [
+          "D21743",
+          "D00554"
+        ]
+      }
+    },
+    {
+      "query": "What is the award received in 20074 by Beyonc\u00e9?",
+      "ground_truth": "Grammy Award for Best R&B Song",
+      "q1_answers": [],
+      "q2_answers": [
+        "Grammy Award for Best R&B Song"
+      ],
+      "raw": {
+        "id": "dev-5730",
+        "question": "What is the award received in 20074 by Beyonc\u00e9?",
+        "answer": "Grammy Award for Best R&B Song",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E015568",
+            "P166",
+            "E006864"
+          ],
+          [
+            "E006998",
+            "P166",
+            "E006864"
+          ],
+          [
+            "E009504",
+            "P166",
+            "E006864"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the birth name of the singer Bono?",
+      "ground_truth": "Paul David Hewson",
+      "q1_answers": [],
+      "q2_answers": [
+        "Paul David Hewson"
+      ],
+      "raw": {
+        "id": "dev-6060",
+        "question": "What is the birth name of the singer Bono?",
+        "answer": "Paul David Hewson",
+        "source": "doc",
+        "source_ids": [
+          "D19561",
+          "D05462"
+        ]
+      }
+    },
+    {
+      "query": "What is the main catogiri of the",
+      "ground_truth": "Big Star",
+      "q1_answers": [],
+      "q2_answers": [
+        "Big Star"
+      ],
+      "raw": {
+        "id": "dev-6092",
+        "question": "What is the main catogiri of the",
+        "answer": "Big Star",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E025255",
+            "P301",
+            "E023299"
+          ],
+          [
+            "E025255",
+            "P373",
+            "E002448"
+          ],
+          [
+            "E023299",
+            "P910",
+            "E025255"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the 10th song on the album Piano Man?",
+      "ground_truth": "Captain Jack",
+      "q1_answers": [],
+      "q2_answers": [
+        "Captain Jack"
+      ],
+      "raw": {
+        "id": "dev-6151",
+        "question": "What was the 10th song on the album Piano Man?",
+        "answer": "Captain Jack",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E018430",
+            "P361",
+            "E007876"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which R&B singer made a cover of \"This Is for the Lover in You\" in 1996?",
+      "ground_truth": "Babyface",
+      "q1_answers": [],
+      "q2_answers": [
+        "Babyface"
+      ],
+      "raw": {
+        "id": "dev-6179",
+        "question": "Which R&B singer made a cover of \"This Is for the Lover in You\" in 1996?",
+        "answer": "Babyface",
+        "source": "doc",
+        "source_ids": [
+          "D02766",
+          "D08347",
+          "D17794"
+        ]
+      }
+    },
+    {
+      "query": "In Babyface's cover of \"This Is for the Lover in You\" it featured which rapper beside Shalamar?",
+      "ground_truth": "LL Cool J",
+      "q1_answers": [],
+      "q2_answers": [
+        "LL Cool J"
+      ],
+      "raw": {
+        "id": "dev-6180",
+        "question": "In Babyface's cover of \"This Is for the Lover in You\" it featured which rapper beside Shalamar?",
+        "answer": "LL Cool J",
+        "source": "doc",
+        "source_ids": [
+          "D19946",
+          "D27961"
+        ]
+      }
+    },
+    {
+      "query": "What type of band was Nirvana?",
+      "ground_truth": "American rock band",
+      "q1_answers": [],
+      "q2_answers": [
+        "American rock band"
+      ],
+      "raw": {
+        "id": "dev-6240",
+        "question": "What type of band was Nirvana?",
+        "answer": "American rock band",
+        "source": "doc",
+        "source_ids": [
+          "D03421"
+        ]
+      }
+    },
+    {
+      "query": "What are the names of the members who founded the band Nirvana?",
+      "ground_truth": "lead singer and guitarist Kurt Cobain and bassist Krist Novoselic",
+      "q1_answers": [],
+      "q2_answers": [
+        "lead singer and guitarist Kurt Cobain and bassist Krist Novoselic"
+      ],
+      "raw": {
+        "id": "dev-6242",
+        "question": "What are the names of the members who founded the band Nirvana?",
+        "answer": "lead singer and guitarist Kurt Cobain and bassist Krist Novoselic",
+        "source": "doc",
+        "source_ids": [
+          "D11688"
+        ]
+      }
+    },
+    {
+      "query": "What is the award received by singer Laura Pausini in 2006?",
+      "ground_truth": "Grammy Award for Best Latin Pop or Urban Album",
+      "q1_answers": [],
+      "q2_answers": [
+        "Grammy Award for Best Latin Pop or Urban Album"
+      ],
+      "raw": {
+        "id": "dev-6360",
+        "question": "What is the award received by singer Laura Pausini in 2006?",
+        "answer": "Grammy Award for Best Latin Pop or Urban Album",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E017187",
+            "P31",
+            "E016038"
+          ],
+          [
+            "E017187",
+            "P571",
+            "E001298"
+          ],
+          [
+            "E017187",
+            "P17",
+            "E013984"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which record label was the first to signed the country singer Toby Keith?",
+      "ground_truth": "Mercury Records",
+      "q1_answers": [],
+      "q2_answers": [
+        "Mercury Records"
+      ],
+      "raw": {
+        "id": "dev-6482",
+        "question": "Which record label was the first to signed the country singer Toby Keith?",
+        "answer": "Mercury Records",
+        "source": "doc",
+        "source_ids": [
+          "D14739"
+        ]
+      }
+    },
+    {
+      "query": "What is the name of band the guitarist Larry Wallis joined in 1972?",
+      "ground_truth": "Pink Fairies",
+      "q1_answers": [],
+      "q2_answers": [
+        "Pink Fairies"
+      ],
+      "raw": {
+        "id": "test-6661",
+        "question": "What is the name of band the guitarist Larry Wallis joined in 1972?",
+        "answer": "Pink Fairies",
+        "source": "doc",
+        "source_ids": [
+          "D06346",
+          "D20329",
+          "D14521"
+        ]
+      }
+    },
+    {
+      "query": "What is nominated for Marc Shaiman ?",
+      "ground_truth": "Academy Award for Best Original Musical or Comedy Score",
+      "q1_answers": [],
+      "q2_answers": [
+        "Academy Award for Best Original Musical or Comedy Score"
+      ],
+      "raw": {
+        "id": "test-6810",
+        "question": "What is nominated for Marc Shaiman ?",
+        "answer": "Academy Award for Best Original Musical or Comedy Score",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E027114",
+            "P1411",
+            "E011042"
+          ],
+          [
+            "E024655",
+            "P1411",
+            "E011042"
+          ],
+          [
+            "E016879",
+            "P1411",
+            "E011042"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the birth name of the guitarist Slash?",
+      "ground_truth": "Saul Hudson",
+      "q1_answers": [],
+      "q2_answers": [
+        "Saul Hudson"
+      ],
+      "raw": {
+        "id": "test-6899",
+        "question": "What is the birth name of the guitarist Slash?",
+        "answer": "Saul Hudson",
+        "source": "doc",
+        "source_ids": [
+          "D28999"
+        ]
+      }
+    },
+    {
+      "query": "who was discography of the band Alice in Chains?",
+      "ground_truth": "Alice in Chains discography",
+      "q1_answers": [],
+      "q2_answers": [
+        "Alice in Chains discography"
+      ],
+      "raw": {
+        "id": "test-6961",
+        "question": "who was discography of the band Alice in Chains?",
+        "answer": "Alice in Chains discography",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E017758",
+            "P358",
+            "E021676"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who directed the music video for \"Harder to Breathe\"?",
+      "ground_truth": "Marc Webb",
+      "q1_answers": [],
+      "q2_answers": [
+        "Marc Webb"
+      ],
+      "raw": {
+        "id": "test-7111",
+        "question": "Who directed the music video for \"Harder to Breathe\"?",
+        "answer": "Marc Webb",
+        "source": "doc",
+        "source_ids": [
+          "D23106"
+        ]
+      }
+    },
+    {
+      "query": "Where was the band Indian Ocean formed?",
+      "ground_truth": "New Delhi",
+      "q1_answers": [],
+      "q2_answers": [
+        "New Delhi"
+      ],
+      "raw": {
+        "id": "test-7168",
+        "question": "Where was the band Indian Ocean formed?",
+        "answer": "New Delhi",
+        "source": "doc",
+        "source_ids": [
+          "D12509",
+          "D24296"
+        ]
+      }
+    },
+    {
+      "query": "What was Pink Floyd named after?",
+      "ground_truth": "Pink Anderson;Floyd Council",
+      "q1_answers": [],
+      "q2_answers": [
+        "Pink Anderson;Floyd Council"
+      ],
+      "raw": {
+        "id": "test-7198",
+        "question": "What was Pink Floyd named after?",
+        "answer": "Pink Anderson;Floyd Council",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E016137",
+            "P21",
+            "E021937"
+          ],
+          [
+            "E016137",
+            "P509",
+            "E005928"
+          ],
+          [
+            "E016137",
+            "P569",
+            "E000889"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the name of Pink Floyd member Roger Waters' father?",
+      "ground_truth": "Eric Fletcher Waters",
+      "q1_answers": [],
+      "q2_answers": [
+        "Eric Fletcher Waters"
+      ],
+      "raw": {
+        "id": "test-7200",
+        "question": "What was the name of Pink Floyd member Roger Waters' father?",
+        "answer": "Eric Fletcher Waters",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012448",
+            "P21",
+            "E021937"
+          ],
+          [
+            "E012448",
+            "P31",
+            "E018377"
+          ],
+          [
+            "E012448",
+            "P569",
+            "E000903"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "How many copies sold worldwide of Thriller (album)?",
+      "ground_truth": "70 million copies worldwide",
+      "q1_answers": [],
+      "q2_answers": [
+        "70 million copies worldwide"
+      ],
+      "raw": {
+        "id": "test-7230",
+        "question": "How many copies sold worldwide of Thriller (album)?",
+        "answer": "70 million copies worldwide",
+        "source": "doc",
+        "source_ids": [
+          "D11042",
+          "D31985"
+        ]
+      }
+    },
+    {
+      "query": "What record to broke after the release of the album?",
+      "ground_truth": "Racial barriers",
+      "q1_answers": [],
+      "q2_answers": [
+        "Racial barriers"
+      ],
+      "raw": {
+        "id": "test-7231",
+        "question": "What record to broke after the release of the album?",
+        "answer": "Racial barriers",
+        "source": "doc",
+        "source_ids": [
+          "D31728"
+        ]
+      }
+    },
+    {
+      "query": "Who is the producer of the song Love Buzz by Nirvana?",
+      "ground_truth": "Jack Endino",
+      "q1_answers": [],
+      "q2_answers": [
+        "Jack Endino"
+      ],
+      "raw": {
+        "id": "test-7290",
+        "question": "Who is the producer of the song Love Buzz by Nirvana?",
+        "answer": "Jack Endino",
+        "source": "doc",
+        "source_ids": [
+          "D25267"
+        ]
+      }
+    },
+    {
+      "query": "Who is the founder of the band Kabir caf\u00e9?",
+      "ground_truth": "Neeraj Arya",
+      "q1_answers": [],
+      "q2_answers": [
+        "Neeraj Arya"
+      ],
+      "raw": {
+        "id": "test-7500",
+        "question": "Who is the founder of the band Kabir caf\u00e9?",
+        "answer": "Neeraj Arya",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E003959",
+            "P31",
+            "E010830"
+          ],
+          [
+            "E003959",
+            "P2031",
+            "E001691"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the lead drummer of the band Kabir Caf\u00e9?",
+      "ground_truth": "Viren Solanki",
+      "q1_answers": [],
+      "q2_answers": [
+        "Viren Solanki"
+      ],
+      "raw": {
+        "id": "test-7501",
+        "question": "Who is the lead drummer of the band Kabir Caf\u00e9?",
+        "answer": "Viren Solanki",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E003959",
+            "P31",
+            "E010830"
+          ],
+          [
+            "E003959",
+            "P2031",
+            "E001691"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "In which year was the music company Sony Music was formed?",
+      "ground_truth": "1929",
+      "q1_answers": [],
+      "q2_answers": [
+        "1929"
+      ],
+      "raw": {
+        "id": "test-7680",
+        "question": "In which year was the music company Sony Music was formed?",
+        "answer": "1929",
+        "source": "doc",
+        "source_ids": [
+          "D08623"
+        ]
+      }
+    },
+    {
+      "query": "What is the Significant event of ABBA Band?",
+      "ground_truth": "ABBA reunion",
+      "q1_answers": [],
+      "q2_answers": [
+        "ABBA reunion"
+      ],
+      "raw": {
+        "id": "test-7737",
+        "question": "What is the Significant event of ABBA Band?",
+        "answer": "ABBA reunion",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004386",
+            "P31",
+            "E007940"
+          ],
+          [
+            "E004386",
+            "P31",
+            "E019834"
+          ],
+          [
+            "E004386",
+            "P585",
+            "E001899"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who founded by ABBA Band?",
+      "ground_truth": "Benny Andersson & Bj\u00f6rn Ulvaeus",
+      "q1_answers": [],
+      "q2_answers": [
+        "Benny Andersson & Bj\u00f6rn Ulvaeus"
+      ],
+      "raw": {
+        "id": "test-7741",
+        "question": "Who founded by ABBA Band?",
+        "answer": "Benny Andersson & Bj\u00f6rn Ulvaeus",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E003394",
+            "P361",
+            "E009107"
+          ],
+          [
+            "E009107",
+            "P112",
+            "E003394"
+          ],
+          [
+            "E013476",
+            "P162",
+            "E003394"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Significant event of ABBA Band?",
+      "ground_truth": "ABBA reunion",
+      "q1_answers": [],
+      "q2_answers": [
+        "ABBA reunion"
+      ],
+      "raw": {
+        "id": "test-7742",
+        "question": "Significant event of ABBA Band?",
+        "answer": "ABBA reunion",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004386",
+            "P31",
+            "E007940"
+          ],
+          [
+            "E004386",
+            "P31",
+            "E019834"
+          ],
+          [
+            "E004386",
+            "P585",
+            "E001899"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the notable work by Yoko Kanno?",
+      "ground_truth": "GET9",
+      "q1_answers": [],
+      "q2_answers": [
+        "GET9"
+      ],
+      "raw": {
+        "id": "test-8009",
+        "question": "What is the notable work by Yoko Kanno?",
+        "answer": "GET9",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011104",
+            "P800",
+            "E015893"
+          ],
+          [
+            "E015893",
+            "P86",
+            "E011104"
+          ],
+          [
+            "E015893",
+            "P175",
+            "E011104"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is credited as the inventor of gangsta rap?",
+      "ground_truth": "Schoolly D",
+      "q1_answers": [],
+      "q2_answers": [
+        "Schoolly D"
+      ],
+      "raw": {
+        "id": "test-8041",
+        "question": "Who is credited as the inventor of gangsta rap?",
+        "answer": "Schoolly D",
+        "source": "doc",
+        "source_ids": [
+          "D19177",
+          "D30210",
+          "D31279"
+        ]
+      }
+    },
+    {
+      "query": "In which year was the Trident Studio constructed?",
+      "ground_truth": "1967",
+      "q1_answers": [],
+      "q2_answers": [
+        "1967"
+      ],
+      "raw": {
+        "id": "test-8070",
+        "question": "In which year was the Trident Studio constructed?",
+        "answer": "1967",
+        "source": "doc",
+        "source_ids": [
+          "D30598"
+        ]
+      }
+    },
+    {
+      "query": "where location of formation for band Kings of Leon?",
+      "ground_truth": "Nashville",
+      "q1_answers": [],
+      "q2_answers": [
+        "Nashville"
+      ],
+      "raw": {
+        "id": "test-8117",
+        "question": "where location of formation for band Kings of Leon?",
+        "answer": "Nashville",
+        "source": "doc",
+        "source_ids": [
+          "D15987",
+          "D19476",
+          "D09036"
+        ]
+      }
+    },
+    {
+      "query": "who was discography of the band Kings of Leon?",
+      "ground_truth": "Kings of Leon discography",
+      "q1_answers": [],
+      "q2_answers": [
+        "Kings of Leon discography"
+      ],
+      "raw": {
+        "id": "test-8119",
+        "question": "who was discography of the band Kings of Leon?",
+        "answer": "Kings of Leon discography",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E009552",
+            "P358",
+            "E008562"
+          ],
+          [
+            "E008562",
+            "P175",
+            "E009552"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which siblings sang Rainy Days and Mondays?",
+      "ground_truth": "Karen Carpenter;Richard Carpenter",
+      "q1_answers": [],
+      "q2_answers": [
+        "Karen Carpenter;Richard Carpenter"
+      ],
+      "raw": {
+        "id": "test-8176",
+        "question": "Which siblings sang Rainy Days and Mondays?",
+        "answer": "Karen Carpenter;Richard Carpenter",
+        "source": "doc",
+        "source_ids": [
+          "D27948",
+          "D20102",
+          "D14586"
+        ]
+      }
+    },
+    {
+      "query": "The song Rainy Days and Mondays was sung by which siblings?",
+      "ground_truth": "Karen Carpenter;Richard Carpenter",
+      "q1_answers": [],
+      "q2_answers": [
+        "Karen Carpenter;Richard Carpenter"
+      ],
+      "raw": {
+        "id": "test-8181",
+        "question": "The song Rainy Days and Mondays was sung by which siblings?",
+        "answer": "Karen Carpenter;Richard Carpenter",
+        "source": "doc",
+        "source_ids": [
+          "D27948",
+          "D20102",
+          "D14586"
+        ]
+      }
+    },
+    {
+      "query": "Which award was nominated for the composer Marc Shaiman?",
+      "ground_truth": "Academy Award for Best Original Musical or Comedy Score",
+      "q1_answers": [],
+      "q2_answers": [
+        "Academy Award for Best Original Musical or Comedy Score"
+      ],
+      "raw": {
+        "id": "test-8396",
+        "question": "Which award was nominated for the composer Marc Shaiman?",
+        "answer": "Academy Award for Best Original Musical or Comedy Score",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E027114",
+            "P1411",
+            "E011042"
+          ],
+          [
+            "E024655",
+            "P1411",
+            "E011042"
+          ],
+          [
+            "E016879",
+            "P1411",
+            "E011042"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who performed the song \"Hook?\"",
+      "ground_truth": "Blues Traveler",
+      "q1_answers": [],
+      "q2_answers": [
+        "Blues Traveler"
+      ],
+      "raw": {
+        "id": "test-8501",
+        "question": "Who performed the song \"Hook?\"",
+        "answer": "Blues Traveler",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008270",
+            "P175",
+            "E026005"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What city did Thomas L. Golden found?",
+      "ground_truth": "Arapahoe, CO",
+      "q1_answers": [],
+      "q2_answers": [
+        "Arapahoe, CO"
+      ],
+      "raw": {
+        "id": "test-8507",
+        "question": "What city did Thomas L. Golden found?",
+        "answer": "Arapahoe, CO",
+        "source": "doc",
+        "source_ids": [
+          "D21373",
+          "D12378"
+        ]
+      }
+    },
+    {
+      "query": "What type of people are the Arapahos?",
+      "ground_truth": "Native American",
+      "q1_answers": [],
+      "q2_answers": [
+        "Native American"
+      ],
+      "raw": {
+        "id": "test-8509",
+        "question": "What type of people are the Arapahos?",
+        "answer": "Native American",
+        "source": "doc",
+        "source_ids": [
+          "D18323",
+          "D02232",
+          "D25746"
+        ]
+      }
+    },
+    {
+      "query": "Performer of \"Hook?\"",
+      "ground_truth": "Blues Traveler",
+      "q1_answers": [],
+      "q2_answers": [
+        "Blues Traveler"
+      ],
+      "raw": {
+        "id": "test-8511",
+        "question": "Performer of \"Hook?\"",
+        "answer": "Blues Traveler",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008270",
+            "P175",
+            "E026005"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the first song that Jerry Moss promoted?",
+      "ground_truth": "16 Candles",
+      "q1_answers": [],
+      "q2_answers": [
+        "16 Candles"
+      ],
+      "raw": {
+        "id": "test-8671",
+        "question": "What was the first song that Jerry Moss promoted?",
+        "answer": "16 Candles",
+        "source": "doc",
+        "source_ids": [
+          "D29783"
+        ]
+      }
+    },
+    {
+      "query": "What is the last album that was recorded by artist George Harrison, from the band the Beatles?",
+      "ground_truth": "Brainwashed",
+      "q1_answers": [],
+      "q2_answers": [
+        "Brainwashed"
+      ],
+      "raw": {
+        "id": "test-9112",
+        "question": "What is the last album that was recorded by artist George Harrison, from the band the Beatles?",
+        "answer": "Brainwashed",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E022124",
+            "P264",
+            "E012717"
+          ],
+          [
+            "E022124",
+            "P264",
+            "E009160"
+          ],
+          [
+            "E022124",
+            "P31",
+            "E017703"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What university did the Boards of Canada attend?",
+      "ground_truth": "University of Edinburgh",
+      "q1_answers": [],
+      "q2_answers": [
+        "University of Edinburgh"
+      ],
+      "raw": {
+        "id": "test-9324",
+        "question": "What university did the Boards of Canada attend?",
+        "answer": "University of Edinburgh",
+        "source": "doc",
+        "source_ids": [
+          "D13654"
+        ]
+      }
+    },
+    {
+      "query": "Where is Hexagon Sun?",
+      "ground_truth": "Pentland Hills",
+      "q1_answers": [],
+      "q2_answers": [
+        "Pentland Hills"
+      ],
+      "raw": {
+        "id": "test-9328",
+        "question": "Where is Hexagon Sun?",
+        "answer": "Pentland Hills",
+        "source": "doc",
+        "source_ids": [
+          "D24345"
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the second single in the album Arise?",
+      "ground_truth": "Dead Embryonic Cells",
+      "q1_answers": [],
+      "q2_answers": [
+        "Dead Embryonic Cells"
+      ],
+      "raw": {
+        "id": "test-9381",
+        "question": "What is the name of the second single in the album Arise?",
+        "answer": "Dead Embryonic Cells",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E018816",
+            "P361",
+            "E022034"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was Dove Cameron's first EP?",
+      "ground_truth": "Bloodshot / Waste",
+      "q1_answers": [],
+      "q2_answers": [
+        "Bloodshot / Waste"
+      ],
+      "raw": {
+        "id": "train-1001",
+        "question": "What was Dove Cameron's first EP?",
+        "answer": "Bloodshot / Waste",
+        "source": "doc",
+        "source_ids": [
+          "D29470"
+        ]
+      }
+    },
+    {
+      "query": "What is the name of Dove Cameron's first EP?",
+      "ground_truth": "Bloodshot / Waste",
+      "q1_answers": [],
+      "q2_answers": [
+        "Bloodshot / Waste"
+      ],
+      "raw": {
+        "id": "train-1006",
+        "question": "What is the name of Dove Cameron's first EP?",
+        "answer": "Bloodshot / Waste",
+        "source": "doc",
+        "source_ids": [
+          "D29470"
+        ]
+      }
+    },
+    {
+      "query": "What is Ilaiyaraaja's first movie as music director?",
+      "ground_truth": "Annakili",
+      "q1_answers": [],
+      "q2_answers": [
+        "Annakili"
+      ],
+      "raw": {
+        "id": "train-1093",
+        "question": "What is Ilaiyaraaja's first movie as music director?",
+        "answer": "Annakili",
+        "source": "doc",
+        "source_ids": [
+          "D26736",
+          "D04560"
+        ]
+      }
+    },
+    {
+      "query": "which orchestra performed Ilaiyaraaja's first symphony score?",
+      "ground_truth": "Royal Philharmonic Orchestra",
+      "q1_answers": [],
+      "q2_answers": [
+        "Royal Philharmonic Orchestra"
+      ],
+      "raw": {
+        "id": "train-1095",
+        "question": "which orchestra performed Ilaiyaraaja's first symphony score?",
+        "answer": "Royal Philharmonic Orchestra",
+        "source": "doc",
+        "source_ids": [
+          "D16035",
+          "D27684",
+          "D14548"
+        ]
+      }
+    },
+    {
+      "query": "What was Pierre Boulez's last major work?",
+      "ground_truth": "D\u00e9rive 2 (2006)",
+      "q1_answers": [],
+      "q2_answers": [
+        "D\u00e9rive 2 (2006)"
+      ],
+      "raw": {
+        "id": "train-1336",
+        "question": "What was Pierre Boulez's last major work?",
+        "answer": "D\u00e9rive 2 (2006)",
+        "source": "doc",
+        "source_ids": [
+          "D32345"
+        ]
+      }
+    },
+    {
+      "query": "Which Tom Tom Club song is sampled by Mark Morrison's song \"Return of the Mack\"?",
+      "ground_truth": "Genius of Love",
+      "q1_answers": [],
+      "q2_answers": [
+        "Genius of Love"
+      ],
+      "raw": {
+        "id": "train-1362",
+        "question": "Which Tom Tom Club song is sampled by Mark Morrison's song \"Return of the Mack\"?",
+        "answer": "Genius of Love",
+        "source": "doc",
+        "source_ids": [
+          "D05434"
+        ]
+      }
+    },
+    {
+      "query": "Mark Morrison's song \"Return of the Mack\" sampled which Tom Tom Club song?",
+      "ground_truth": "Genius of Love",
+      "q1_answers": [],
+      "q2_answers": [
+        "Genius of Love"
+      ],
+      "raw": {
+        "id": "train-1367",
+        "question": "Mark Morrison's song \"Return of the Mack\" sampled which Tom Tom Club song?",
+        "answer": "Genius of Love",
+        "source": "doc",
+        "source_ids": [
+          "D05434"
+        ]
+      }
+    },
+    {
+      "query": "What is the discography of the cream band?",
+      "ground_truth": "Cream discography",
+      "q1_answers": [],
+      "q2_answers": [
+        "Cream discography"
+      ],
+      "raw": {
+        "id": "train-1723",
+        "question": "What is the discography of the cream band?",
+        "answer": "Cream discography",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010186",
+            "P358",
+            "E015770"
+          ],
+          [
+            "E015770",
+            "P175",
+            "E010186"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is nominated for Andr\u00e9 Previn?",
+      "ground_truth": "Academy Award for Best Original Musical Score",
+      "q1_answers": [],
+      "q2_answers": [
+        "Academy Award for Best Original Musical Score"
+      ],
+      "raw": {
+        "id": "train-1905",
+        "question": "What is nominated for Andr\u00e9 Previn?",
+        "answer": "Academy Award for Best Original Musical Score",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E007372",
+            "P166",
+            "E017395"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "what is the discography of the Black Flag music band?",
+      "ground_truth": "Black Flag discography",
+      "q1_answers": [],
+      "q2_answers": [
+        "Black Flag discography"
+      ],
+      "raw": {
+        "id": "train-1993",
+        "question": "what is the discography of the Black Flag music band?",
+        "answer": "Black Flag discography",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E017325",
+            "P358",
+            "E016740"
+          ],
+          [
+            "E016740",
+            "P175",
+            "E017325"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "For which street racing anime did M.O.V.E make openings and endings songs?",
+      "ground_truth": "Initial D",
+      "q1_answers": [],
+      "q2_answers": [
+        "Initial D"
+      ],
+      "raw": {
+        "id": "train-2083",
+        "question": "For which street racing anime did M.O.V.E make openings and endings songs?",
+        "answer": "Initial D",
+        "source": "doc",
+        "source_ids": [
+          "D26119",
+          "D32351"
+        ]
+      }
+    },
+    {
+      "query": "When was Kunitachi College of Music founded?",
+      "ground_truth": "1926",
+      "q1_answers": [],
+      "q2_answers": [
+        "1926"
+      ],
+      "raw": {
+        "id": "train-2112",
+        "question": "When was Kunitachi College of Music founded?",
+        "answer": "1926",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E025520",
+            "P571",
+            "E000920"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who wrote the song?",
+      "ground_truth": "Stewart Copeland",
+      "q1_answers": [],
+      "q2_answers": [
+        "Stewart Copeland"
+      ],
+      "raw": {
+        "id": "train-2262",
+        "question": "Who wrote the song?",
+        "answer": "Stewart Copeland",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011220",
+            "P676",
+            "E014522"
+          ],
+          [
+            "E011220",
+            "P162",
+            "E014522"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which is the first album of the singer Jagjit Singh?",
+      "ground_truth": "Arth",
+      "q1_answers": [],
+      "q2_answers": [
+        "Arth"
+      ],
+      "raw": {
+        "id": "train-2352",
+        "question": "Which is the first album of the singer Jagjit Singh?",
+        "answer": "Arth",
+        "source": "doc",
+        "source_ids": [
+          "D17625",
+          "D12349"
+        ]
+      }
+    },
+    {
+      "query": "who was the vocal artist of Toosie slide song?",
+      "ground_truth": "Drake",
+      "q1_answers": [],
+      "q2_answers": [
+        "Drake"
+      ],
+      "raw": {
+        "id": "train-2805",
+        "question": "who was the vocal artist of Toosie slide song?",
+        "answer": "Drake",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E026529",
+            "P31",
+            "E023412"
+          ],
+          [
+            "E026529",
+            "P2550",
+            "E026056"
+          ],
+          [
+            "E026529",
+            "P1433",
+            "E026527"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the writer of Dance Monkey song?",
+      "ground_truth": "Tones and I",
+      "q1_answers": [],
+      "q2_answers": [
+        "Tones and I"
+      ],
+      "raw": {
+        "id": "train-2982",
+        "question": "who is the writer of Dance Monkey song?",
+        "answer": "Tones and I",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E021732",
+            "P175",
+            "E021144"
+          ],
+          [
+            "E021732",
+            "P676",
+            "E021144"
+          ],
+          [
+            "E021144",
+            "P800",
+            "E021732"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the producer of Dance Monkey song?",
+      "ground_truth": "Konstantin Kersting",
+      "q1_answers": [],
+      "q2_answers": [
+        "Konstantin Kersting"
+      ],
+      "raw": {
+        "id": "train-2983",
+        "question": "who is the producer of Dance Monkey song?",
+        "answer": "Konstantin Kersting",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E021732",
+            "P162",
+            "E022559"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "A member of which music group built it?",
+      "ground_truth": "The Hunters",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Hunters"
+      ],
+      "raw": {
+        "id": "train-3013",
+        "question": "A member of which music group built it?",
+        "answer": "The Hunters",
+        "source": "doc",
+        "source_ids": [
+          "D30598"
+        ]
+      }
+    },
+    {
+      "query": "What city was he born in?",
+      "ground_truth": "Enfield",
+      "q1_answers": [],
+      "q2_answers": [
+        "Enfield"
+      ],
+      "raw": {
+        "id": "train-3015",
+        "question": "What city was he born in?",
+        "answer": "Enfield",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E022879",
+            "P19",
+            "E010623"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who founded Earth Wind & Fire?",
+      "ground_truth": "Maurice White",
+      "q1_answers": [],
+      "q2_answers": [
+        "Maurice White"
+      ],
+      "raw": {
+        "id": "train-3101",
+        "question": "Who founded Earth Wind & Fire?",
+        "answer": "Maurice White",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E013647",
+            "P527",
+            "E006244"
+          ],
+          [
+            "E006244",
+            "P463",
+            "E013647"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the second Earth Wind & Fire album?",
+      "ground_truth": "The Need of Love",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Need of Love"
+      ],
+      "raw": {
+        "id": "train-3103",
+        "question": "What was the second Earth Wind & Fire album?",
+        "answer": "The Need of Love",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E016515",
+            "P175",
+            "E013647"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who started Earth Wind & Fire?",
+      "ground_truth": "Maurice White",
+      "q1_answers": [],
+      "q2_answers": [
+        "Maurice White"
+      ],
+      "raw": {
+        "id": "train-3106",
+        "question": "Who started Earth Wind & Fire?",
+        "answer": "Maurice White",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E013647",
+            "P527",
+            "E006244"
+          ],
+          [
+            "E006244",
+            "P463",
+            "E013647"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the singer of Blinding Lights song?",
+      "ground_truth": "The Weeknd",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Weeknd"
+      ],
+      "raw": {
+        "id": "train-3222",
+        "question": "who is the singer of Blinding Lights song?",
+        "answer": "The Weeknd",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E026930",
+            "P175",
+            "E010703"
+          ],
+          [
+            "E026930",
+            "P86",
+            "E010703"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who was the performer of the music \"I'm Your Angel\"?",
+      "ground_truth": "Celine Dion and R. Kelly",
+      "q1_answers": [],
+      "q2_answers": [
+        "Celine Dion and R. Kelly"
+      ],
+      "raw": {
+        "id": "train-3308",
+        "question": "Who was the performer of the music \"I'm Your Angel\"?",
+        "answer": "Celine Dion and R. Kelly",
+        "source": "doc",
+        "source_ids": [
+          "D16755"
+        ]
+      }
+    },
+    {
+      "query": "Performer of the song I'm Your Angel?",
+      "ground_truth": "Celine Dion and R. Kelly",
+      "q1_answers": [],
+      "q2_answers": [
+        "Celine Dion and R. Kelly"
+      ],
+      "raw": {
+        "id": "train-3313",
+        "question": "Performer of the song I'm Your Angel?",
+        "answer": "Celine Dion and R. Kelly",
+        "source": "doc",
+        "source_ids": [
+          "D16755"
+        ]
+      }
+    },
+    {
+      "query": "when was The Who band incepted?",
+      "ground_truth": "February 1964",
+      "q1_answers": [],
+      "q2_answers": [
+        "February 1964"
+      ],
+      "raw": {
+        "id": "train-3338",
+        "question": "when was The Who band incepted?",
+        "answer": "February 1964",
+        "source": "doc",
+        "source_ids": [
+          "D24567"
+        ]
+      }
+    },
+    {
+      "query": "When did this The Who band start?",
+      "ground_truth": "February 1964",
+      "q1_answers": [],
+      "q2_answers": [
+        "February 1964"
+      ],
+      "raw": {
+        "id": "train-3343",
+        "question": "When did this The Who band start?",
+        "answer": "February 1964",
+        "source": "doc",
+        "source_ids": [
+          "D24567"
+        ]
+      }
+    },
+    {
+      "query": "which position of Brazil country chart Bad Blood  song?",
+      "ground_truth": "60",
+      "q1_answers": [],
+      "q2_answers": [
+        "60"
+      ],
+      "raw": {
+        "id": "train-3492",
+        "question": "which position of Brazil country chart Bad Blood  song?",
+        "answer": "60",
+        "source": "table",
+        "source_ids": [
+          "T0060"
+        ]
+      }
+    },
+    {
+      "query": "Where did Coldplay film the music video for their song \"Yellow\"?",
+      "ground_truth": "Studland",
+      "q1_answers": [],
+      "q2_answers": [
+        "Studland"
+      ],
+      "raw": {
+        "id": "train-3519",
+        "question": "Where did Coldplay film the music video for their song \"Yellow\"?",
+        "answer": "Studland",
+        "source": "doc",
+        "source_ids": [
+          "D23404"
+        ]
+      }
+    },
+    {
+      "query": "What was the catalog number of the song \"Suddenly There's a Valley\"?",
+      "ground_truth": "1003",
+      "q1_answers": [],
+      "q2_answers": [
+        "1003"
+      ],
+      "raw": {
+        "id": "train-3551",
+        "question": "What was the catalog number of the song \"Suddenly There's a Valley\"?",
+        "answer": "1003",
+        "source": "doc",
+        "source_ids": [
+          "D24320"
+        ]
+      }
+    },
+    {
+      "query": "What TV show used Sweet and Low by Augustana in an episode?",
+      "ground_truth": "Kyle XY",
+      "q1_answers": [],
+      "q2_answers": [
+        "Kyle XY"
+      ],
+      "raw": {
+        "id": "train-3609",
+        "question": "What TV show used Sweet and Low by Augustana in an episode?",
+        "answer": "Kyle XY",
+        "source": "doc",
+        "source_ids": [
+          "D17383"
+        ]
+      }
+    },
+    {
+      "query": "Where did Zhou Long gets Doctor of Musical Arts?",
+      "ground_truth": "Columbia University",
+      "q1_answers": [],
+      "q2_answers": [
+        "Columbia University"
+      ],
+      "raw": {
+        "id": "train-3639",
+        "question": "Where did Zhou Long gets Doctor of Musical Arts?",
+        "answer": "Columbia University",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011680",
+            "P69",
+            "E018023"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which award received in 2012 by Zhou Long?",
+      "ground_truth": "Stoeger Prize",
+      "q1_answers": [],
+      "q2_answers": [
+        "Stoeger Prize"
+      ],
+      "raw": {
+        "id": "train-3640",
+        "question": "Which award received in 2012 by Zhou Long?",
+        "answer": "Stoeger Prize",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011680",
+            "P166",
+            "E011558"
+          ],
+          [
+            "E011558",
+            "P1346",
+            "E011680"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Where did will.i.am attended summer school?",
+      "ground_truth": "John Marshall High School",
+      "q1_answers": [],
+      "q2_answers": [
+        "John Marshall High School"
+      ],
+      "raw": {
+        "id": "train-3789",
+        "question": "Where did will.i.am attended summer school?",
+        "answer": "John Marshall High School",
+        "source": "doc",
+        "source_ids": [
+          "D06343"
+        ]
+      }
+    },
+    {
+      "query": "what is genre the music  Avenged Sevenfold ?",
+      "ground_truth": "heavy metal",
+      "q1_answers": [],
+      "q2_answers": [
+        "heavy metal"
+      ],
+      "raw": {
+        "id": "train-3966",
+        "question": "what is genre the music  Avenged Sevenfold ?",
+        "answer": "heavy metal",
+        "source": "doc",
+        "source_ids": [
+          "D33044",
+          "D15420",
+          "D25048"
+        ]
+      }
+    },
+    {
+      "query": "who are all member category of the music  Avenged Sevenfold ?",
+      "ground_truth": "Category:Avenged Sevenfold members",
+      "q1_answers": [],
+      "q2_answers": [
+        "Category:Avenged Sevenfold members"
+      ],
+      "raw": {
+        "id": "train-3969",
+        "question": "who are all member category of the music  Avenged Sevenfold ?",
+        "answer": "Category:Avenged Sevenfold members",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E007906",
+            "P6365",
+            "E021365"
+          ],
+          [
+            "E021365",
+            "P4224",
+            "E018377"
+          ],
+          [
+            "E021365",
+            "P971",
+            "E007906"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What id the position of Brazil chart Blank Space song?",
+      "ground_truth": "74",
+      "q1_answers": [],
+      "q2_answers": [
+        "74"
+      ],
+      "raw": {
+        "id": "train-4029",
+        "question": "What id the position of Brazil chart Blank Space song?",
+        "answer": "74",
+        "source": "table",
+        "source_ids": [
+          "T0104"
+        ]
+      }
+    },
+    {
+      "query": "What is the title of his first studio album?",
+      "ground_truth": "Mind of Mine",
+      "q1_answers": [],
+      "q2_answers": [
+        "Mind of Mine"
+      ],
+      "raw": {
+        "id": "train-404",
+        "question": "What is the title of his first studio album?",
+        "answer": "Mind of Mine",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011301",
+            "P175",
+            "E015591"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the first single to be released from the album?",
+      "ground_truth": "Pillowtalk",
+      "q1_answers": [],
+      "q2_answers": [
+        "Pillowtalk"
+      ],
+      "raw": {
+        "id": "train-406",
+        "question": "What was the first single to be released from the album?",
+        "answer": "Pillowtalk",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011083",
+            "P361",
+            "E011301"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who influenced Nicole Scherzinger the most?",
+      "ground_truth": "Whitney Houston",
+      "q1_answers": [],
+      "q2_answers": [
+        "Whitney Houston"
+      ],
+      "raw": {
+        "id": "train-4177",
+        "question": "Who influenced Nicole Scherzinger the most?",
+        "answer": "Whitney Houston",
+        "source": "doc",
+        "source_ids": [
+          "D13454",
+          "D30722"
+        ]
+      }
+    },
+    {
+      "query": "What was Simon & Garfunkel's first studio alubm?",
+      "ground_truth": "Wednesday Morning, 3 A.M.",
+      "q1_answers": [],
+      "q2_answers": [
+        "Wednesday Morning, 3 A.M."
+      ],
+      "raw": {
+        "id": "train-4233",
+        "question": "What was Simon & Garfunkel's first studio alubm?",
+        "answer": "Wednesday Morning, 3 A.M.",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004708",
+            "P175",
+            "E017768"
+          ],
+          [
+            "E021592",
+            "P527",
+            "E004087"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who was the album's producer?",
+      "ground_truth": "Tom Wilson",
+      "q1_answers": [],
+      "q2_answers": [
+        "Tom Wilson"
+      ],
+      "raw": {
+        "id": "train-4234",
+        "question": "Who was the album's producer?",
+        "answer": "Tom Wilson",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E024300",
+            "P162",
+            "E010073"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What school district was it part of?",
+      "ground_truth": "Waco Independent School District",
+      "q1_answers": [],
+      "q2_answers": [
+        "Waco Independent School District"
+      ],
+      "raw": {
+        "id": "train-4236",
+        "question": "What school district was it part of?",
+        "answer": "Waco Independent School District",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E017329",
+            "P5353",
+            "E024887"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Initial album released by Simon & Garfunkel?",
+      "ground_truth": "Wednesday Morning, 3 A.M.",
+      "q1_answers": [],
+      "q2_answers": [
+        "Wednesday Morning, 3 A.M."
+      ],
+      "raw": {
+        "id": "train-4237",
+        "question": "Initial album released by Simon & Garfunkel?",
+        "answer": "Wednesday Morning, 3 A.M.",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004708",
+            "P175",
+            "E017768"
+          ],
+          [
+            "E021592",
+            "P527",
+            "E004087"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the performer of Save Your Tears song?",
+      "ground_truth": "The Weeknd",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Weeknd"
+      ],
+      "raw": {
+        "id": "train-45",
+        "question": "who is the performer of Save Your Tears song?",
+        "answer": "The Weeknd",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E026951",
+            "P175",
+            "E010703"
+          ],
+          [
+            "E026951",
+            "P676",
+            "E010703"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the reason behind Vande Mataram album?",
+      "ground_truth": "to commemorate 50 years of Indian Independence in 1997",
+      "q1_answers": [],
+      "q2_answers": [
+        "to commemorate 50 years of Indian Independence in 1997"
+      ],
+      "raw": {
+        "id": "train-4561",
+        "question": "What is the reason behind Vande Mataram album?",
+        "answer": "to commemorate 50 years of Indian Independence in 1997",
+        "source": "doc",
+        "source_ids": [
+          "D14482"
+        ]
+      }
+    },
+    {
+      "query": "What was the first single released from the album \"On the 6?\"",
+      "ground_truth": "If You Had My Love",
+      "q1_answers": [],
+      "q2_answers": [
+        "If You Had My Love"
+      ],
+      "raw": {
+        "id": "train-4621",
+        "question": "What was the first single released from the album \"On the 6?\"",
+        "answer": "If You Had My Love",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E018857",
+            "P658",
+            "E004249"
+          ],
+          [
+            "E004249",
+            "P1433",
+            "E018857"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was Billboard Hot 100's first song to reach number one?",
+      "ground_truth": "Poor Little Fool",
+      "q1_answers": [],
+      "q2_answers": [
+        "Poor Little Fool"
+      ],
+      "raw": {
+        "id": "train-4623",
+        "question": "What was Billboard Hot 100's first song to reach number one?",
+        "answer": "Poor Little Fool",
+        "source": "doc",
+        "source_ids": [
+          "D13194",
+          "D24122"
+        ]
+      }
+    },
+    {
+      "query": "Which religion did bismillah khan belongs?",
+      "ground_truth": "Islam",
+      "q1_answers": [],
+      "q2_answers": [
+        "Islam"
+      ],
+      "raw": {
+        "id": "train-4892",
+        "question": "Which religion did bismillah khan belongs?",
+        "answer": "Islam",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E016025",
+            "P140",
+            "E016908"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the first ever number one song on the US Billboard Hot 100?",
+      "ground_truth": "Poor Little Fool",
+      "q1_answers": [],
+      "q2_answers": [
+        "Poor Little Fool"
+      ],
+      "raw": {
+        "id": "train-765",
+        "question": "What was the first ever number one song on the US Billboard Hot 100?",
+        "answer": "Poor Little Fool",
+        "source": "doc",
+        "source_ids": [
+          "D13194",
+          "D24122"
+        ]
+      }
+    },
+    {
+      "query": "What is the name of Michael Jackson's first album?",
+      "ground_truth": "Got to Be There",
+      "q1_answers": [],
+      "q2_answers": [
+        "Got to Be There"
+      ],
+      "raw": {
+        "id": "train-883",
+        "question": "What is the name of Michael Jackson's first album?",
+        "answer": "Got to Be There",
+        "source": "doc",
+        "source_ids": [
+          "D00479",
+          "D32608"
+        ]
+      }
+    },
+    {
+      "query": "What is the pseudonym of the singer Joe Elliot?",
+      "ground_truth": "Zeff",
+      "q1_answers": [],
+      "q2_answers": [
+        "Zeff"
+      ],
+      "raw": {
+        "id": "train-943",
+        "question": "What is the pseudonym of the singer Joe Elliot?",
+        "answer": "Zeff",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E019105",
+            "P742",
+            "E002878"
+          ]
+        ]
+      }
+    }
+  ],
+  "overall_metrics": {
+    "avg_exact_match": 0.43,
+    "avg_f1": 0.5108867757629366,
+    "avg_retrieval_time": 5.954381041526794,
+    "avg_docs_searched": 9.53,
+    "avg_similarity": 13.11652996083829,
+    "avg_prompt_tokens_per_subquery": 0.0,
+    "avg_total_tokens_per_query": 178.74,
+    "avg_execution_time": 1.1667995427083213,
+    "avg_sq1_score": 0.0,
+    "avg_sq2_score": 0.285,
+    "avg_total_score": 0.285,
+    "sq1_hit_rate": 0.0,
+    "sq2_hit_rate": 0.285,
+    "total_elapsed_time": 116.67995427083224
+  },
+  "all_query_metrics": [
+    {
+      "total_retrieval_time": 0.004537343978881836,
+      "total_docs_searched": 15,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 208,
+      "prompt_token_counts": [
+        208
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Kiss & Tell",
+        "ground_truth": "Kiss & Tell",
+        "fallback_answer": "",
+        "final_reason": "Kiss & Tell was released on September 29, 2009, while When the Sun Goes Down was released on June 28, 2011. Since September 2009 is earlier than June 2011, Kiss & Tell was released first."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Kiss & Tell"
+      },
+      "avg_retrieval_time": 0.001512447992960612,
+      "avg_similarity": 0.4566666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 208,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 39.36885142326355,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        0.611111111111111,
+        23.69538416507763
+      ],
+      "max_similarity_scores": [
+        1.0,
+        25.096501434527703
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 184,
+      "prompt_token_counts": [
+        184
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Ethan Robert",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps identified Selena Gomez and Joey Clement as members, but no information was found about which member played the guitar. Therefore, the guitarist cannot be determined from the given evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Ethan Robert"
+      },
+      "avg_retrieval_time": 19.684425711631775,
+      "avg_similarity": 12.15324763809437,
+      "max_similarity": 25.096501434527703,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 184,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.361177921295166,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        11.433687144903157,
+        25.06368065210244
+      ],
+      "max_similarity_scores": [
+        12.788714022926222,
+        26.560589827923437
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 155,
+      "prompt_token_counts": [
+        155
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Selena Gomez & The Scene",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps found no relevant information about Ethan Robert or his musical career before Selena Gomez & The Scene, so the answer cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Selena Gomez & The Scene"
+      },
+      "avg_retrieval_time": 0.180588960647583,
+      "avg_similarity": 18.248683898502797,
+      "max_similarity": 26.560589827923437,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 155,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 4.336708068847656,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        23.38994728162042,
+        24.279240465662532
+      ],
+      "max_similarity_scores": [
+        24.735360791651622,
+        43.55004615666204
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 228,
+      "prompt_token_counts": [
+        228
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "February 21, 1943",
+        "ground_truth": "Borough Park, Brooklyn",
+        "fallback_answer": "February 21, 1943",
+        "final_reason": "David Geffen is described as an American business magnate, producer and film studio executive, and his birth date is given as February 21, 1943."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Borough Park, Brooklyn"
+      },
+      "avg_retrieval_time": 2.168354034423828,
+      "avg_similarity": 23.834593873641474,
+      "max_similarity": 43.55004615666204,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 228,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 41.38743042945862,
+      "total_docs_searched": 53,
+      "avg_similarity_scores": [
+        0.08597946934388206
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 161,
+      "prompt_token_counts": [
+        161
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "American Music Awards",
+        "ground_truth": "Grammy Award for Best R&B Song",
+        "fallback_answer": "American Music Awards",
+        "final_reason": "Beyonc\u00e9 received the American Music Awards in 2007, as indicated by the reasoning step."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Grammy Award for Best R&B Song"
+      },
+      "avg_retrieval_time": 41.38743042945862,
+      "avg_similarity": 0.08597946934388206,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 161,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.12512683868408203,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        18.374545337121692
+      ],
+      "max_similarity_scores": [
+        19.655036334182356
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 160,
+      "prompt_token_counts": [
+        160
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Paul David Hewson",
+        "ground_truth": "Paul David Hewson",
+        "fallback_answer": "Paul David Hewson",
+        "final_reason": "The evidence document states 'Paul David Hewson (born 10 May 1960), known by the nickname Bono' which directly provides his birth name."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Paul David Hewson"
+      },
+      "avg_retrieval_time": 0.12512683868408203,
+      "avg_similarity": 18.374545337121692,
+      "max_similarity": 19.655036334182356,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 160,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 1.1183552742004395,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        11.553271437576472
+      ],
+      "max_similarity_scores": [
+        12.424370968605983
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 125,
+      "prompt_token_counts": [
+        125
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Big Star",
+        "fallback_answer": "",
+        "final_reason": "The subquestion reasoning step found no relevant information to determine the main category of the unspecified entity, so the final answer cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Big Star"
+      },
+      "avg_retrieval_time": 1.1183552742004395,
+      "avg_similarity": 11.553271437576472,
+      "max_similarity": 12.424370968605983,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 125,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 52.802889823913574,
+      "total_docs_searched": 19,
+      "avg_similarity_scores": [
+        0.75,
+        0.2928968253968254,
+        0.37040816326530607
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 286,
+      "prompt_token_counts": [
+        286
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Captain Jack",
+        "fallback_answer": "",
+        "final_reason": "The track listing provided in the reasoning steps only includes five songs, and there is no information about a 10th song. Therefore, the 10th song cannot be determined from the given evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Captain Jack"
+      },
+      "avg_retrieval_time": 17.60096327463786,
+      "avg_similarity": 0.47110166288737715,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 286,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 39.42652201652527,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        1.0,
+        36.448384910982895
+      ],
+      "max_similarity_scores": [
+        1.0,
+        39.99770528481375
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 225,
+      "prompt_token_counts": [
+        225
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Babyface",
+        "ground_truth": "Babyface",
+        "fallback_answer": "Babyface",
+        "final_reason": "The evidence states that 'This Is for the Lover in You' was remade by Babyface for his album The Day (1996)."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Babyface"
+      },
+      "avg_retrieval_time": 19.713261008262634,
+      "avg_similarity": 18.724192455491448,
+      "max_similarity": 39.99770528481375,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 225,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.5585696697235107,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        38.84994274172142,
+        50.0267726638569
+      ],
+      "max_similarity_scores": [
+        40.341361407457136,
+        55.60388217001812
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 255,
+      "prompt_token_counts": [
+        255
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "LL Cool J",
+        "ground_truth": "LL Cool J",
+        "fallback_answer": "LL Cool J",
+        "final_reason": "The evidence indicates that LL Cool J is the rapper featured on Babyface's cover, as he freestyles in the background."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "LL Cool J"
+      },
+      "avg_retrieval_time": 0.27928483486175537,
+      "avg_similarity": 44.43835770278916,
+      "max_similarity": 55.60388217001812,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 255,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 39.89914584159851,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 152,
+      "prompt_token_counts": [
+        152
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "grunge",
+        "ground_truth": "American rock band",
+        "fallback_answer": "grunge",
+        "final_reason": "The evidence lists Nirvana's genre as both alternative rock and grunge, but grunge is the more specific and commonly associated type of band for Nirvana."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "American rock band"
+      },
+      "avg_retrieval_time": 39.89914584159851,
+      "avg_similarity": 0.611111111111111,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 152,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 39.953696966171265,
+      "total_docs_searched": 11,
+      "avg_similarity_scores": [
+        0.2745343040797586
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 213,
+      "prompt_token_counts": [
+        213
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "final_answer": "Kurt Cobain, Krist Novoselic, Aaron Burckhard",
+        "ground_truth": "lead singer and guitarist Kurt Cobain and bassist Krist Novoselic",
+        "fallback_answer": "Kurt Cobain, Krist Novoselic, Aaron Burckhard",
+        "final_reason": "The reasoning steps identify Kurt Cobain, Krist Novoselic, and Aaron Burckhard as the founding members of Nirvana, with Aaron Burckhard having a start time of 1987, the band's founding year, and Kurt and Krist being widely recognized as founding members."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "ground_truth": "lead singer and guitarist Kurt Cobain and bassist Krist Novoselic"
+      },
+      "avg_retrieval_time": 39.953696966171265,
+      "avg_similarity": 0.2745343040797586,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 213,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 37.9110906124115,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 171,
+      "prompt_token_counts": [
+        171
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Grammy Award for Best Latin Pop or Urban Album",
+        "ground_truth": "Grammy Award for Best Latin Pop or Urban Album",
+        "fallback_answer": "Grammy Award for Best Latin Pop or Urban Album",
+        "final_reason": "The reasoning step directly states that Laura Pausini received the Grammy Award for Best Latin Pop or Urban Album in 2006 for Resta in ascolto."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Grammy Award for Best Latin Pop or Urban Album"
+      },
+      "avg_retrieval_time": 37.9110906124115,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 171,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 4.121540546417236,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        23.504551875500507,
+        30.027689387965562
+      ],
+      "max_similarity_scores": [
+        25.162670210070818,
+        32.551516289926795
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 254,
+      "prompt_token_counts": [
+        254
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Mercury Records",
+        "ground_truth": "Mercury Records",
+        "fallback_answer": "Mercury Records",
+        "final_reason": "Toby Keith signed with Mercury Records in 1993, making it the first record label to sign him."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Mercury Records"
+      },
+      "avg_retrieval_time": 2.060770273208618,
+      "avg_similarity": 26.766120631733035,
+      "max_similarity": 32.551516289926795,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 254,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.2728099822998047,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        30.82597356446687
+      ],
+      "max_similarity_scores": [
+        33.98202749941835
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 149,
+      "prompt_token_counts": [
+        149
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "UFO",
+        "ground_truth": "Pink Fairies",
+        "fallback_answer": "UFO",
+        "final_reason": "The evidence states 'In February 1972, Wallis joined UFO'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Pink Fairies"
+      },
+      "avg_retrieval_time": 0.2728099822998047,
+      "avg_similarity": 30.82597356446687,
+      "max_similarity": 33.98202749941835,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 149,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.7369623184204102,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        28.603782193615736,
+        24.05464838700202
+      ],
+      "max_similarity_scores": [
+        32.98414825620121,
+        39.10453857666117
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 203,
+      "prompt_token_counts": [
+        203
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Marc Shaiman",
+        "ground_truth": "Academy Award for Best Original Musical or Comedy Score",
+        "fallback_answer": "Marc Shaiman",
+        "final_reason": "The reasoning steps indicate that Marc Shaiman is known as a composer and lyricist for films, television, and theatre, and the question asks what is nominated for him. Since the subquestion reasoning concludes that the nomination is for Marc Shaiman himself, the final answer is Marc Shaiman."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Academy Award for Best Original Musical or Comedy Score"
+      },
+      "avg_retrieval_time": 0.3684811592102051,
+      "avg_similarity": 26.329215290308877,
+      "max_similarity": 39.10453857666117,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 203,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 5.770477056503296,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        15.620499077772072,
+        39.02304017722537
+      ],
+      "max_similarity_scores": [
+        16.165602019375168,
+        58.2652020638982
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 192,
+      "prompt_token_counts": [
+        192
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Saul Hudson",
+        "ground_truth": "Saul Hudson",
+        "fallback_answer": "",
+        "final_reason": "Slash's birth name is Saul Hudson, as widely known from biographical sources."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Saul Hudson"
+      },
+      "avg_retrieval_time": 2.885238528251648,
+      "avg_similarity": 27.32176962749872,
+      "max_similarity": 58.2652020638982,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 192,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 38.54779076576233,
+      "total_docs_searched": 88,
+      "avg_similarity_scores": [
+        0.057502540189559366
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 172,
+      "prompt_token_counts": [
+        172
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Alice in Chains discography",
+        "ground_truth": "Alice in Chains discography",
+        "fallback_answer": "Alice in Chains discography",
+        "final_reason": "The evidence document explicitly states the relation 'Alice in Chains --[discography/outgoing]--> Alice in Chains discography', indicating that the discography of the band is 'Alice in Chains discography'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Alice in Chains discography"
+      },
+      "avg_retrieval_time": 38.54779076576233,
+      "avg_similarity": 0.057502540189559366,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 172,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.7452144622802734,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        33.51459313369657
+      ],
+      "max_similarity_scores": [
+        43.85297073832814
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 157,
+      "prompt_token_counts": [
+        157
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Marc Webb",
+        "ground_truth": "Marc Webb",
+        "fallback_answer": "Marc Webb",
+        "final_reason": "The reasoning step confirms that the music video for 'Harder to Breathe' was directed by Marc Webb."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Marc Webb"
+      },
+      "avg_retrieval_time": 0.7452144622802734,
+      "avg_similarity": 33.51459313369657,
+      "max_similarity": 43.85297073832814,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 157,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 6.135999917984009,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        26.99036451533192,
+        44.991965139826654
+      ],
+      "max_similarity_scores": [
+        28.245871146097492,
+        63.34110073860599
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 201,
+      "prompt_token_counts": [
+        201
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "New Delhi",
+        "ground_truth": "New Delhi",
+        "fallback_answer": "",
+        "final_reason": "The band Indian Ocean was formed in New Delhi, India, as per common knowledge, though the provided reasoning steps did not contain this information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "New Delhi"
+      },
+      "avg_retrieval_time": 3.0679999589920044,
+      "avg_similarity": 35.99116482757928,
+      "max_similarity": 63.34110073860599,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 201,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.12089705467224121,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        26.075090800232537
+      ],
+      "max_similarity_scores": [
+        27.978836025025654
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 187,
+      "prompt_token_counts": [
+        187
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Barrett created the name on the spur of the moment when he discovered that another band, also called the Tea Set, were to perform at one of their gigs.",
+        "ground_truth": "Pink Anderson;Floyd Council",
+        "fallback_answer": "Barrett created the name on the spur of the moment when he discovered that another band, also called the Tea Set, were to perform at one of their gigs.",
+        "final_reason": "The reasoning step indicates that the name 'Pink Floyd' was created by Barrett on the spur of the moment due to a conflict with another band named the Tea Set."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Pink Anderson;Floyd Council"
+      },
+      "avg_retrieval_time": 0.12089705467224121,
+      "avg_similarity": 26.075090800232537,
+      "max_similarity": 27.978836025025654,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 187,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 8.43072247505188,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.40833333333333327
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 154,
+      "prompt_token_counts": [
+        154
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Eric Fletcher Waters",
+        "ground_truth": "Eric Fletcher Waters",
+        "fallback_answer": "Eric Fletcher Waters",
+        "final_reason": "The reasoning step indicates that Roger Waters' father is Eric Fletcher Waters."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Eric Fletcher Waters"
+      },
+      "avg_retrieval_time": 8.43072247505188,
+      "avg_similarity": 0.40833333333333327,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 154,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 8.537560224533081,
+      "total_docs_searched": 32,
+      "avg_similarity_scores": [
+        23.2744603603025,
+        0.14412802789822526
+      ],
+      "max_similarity_scores": [
+        26.023407573545867,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 226,
+      "prompt_token_counts": [
+        226
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "70 million copies worldwide",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide any information about the number of copies sold worldwide for the album 'Thriller'. The second subquestion returned no relevant information, so the final answer cannot be determined from the given steps."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "70 million copies worldwide"
+      },
+      "avg_retrieval_time": 4.2687801122665405,
+      "avg_similarity": 11.709294194100362,
+      "max_similarity": 26.023407573545867,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 226,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.4245262145996094,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        13.80424502954276,
+        15.324078692831131
+      ],
+      "max_similarity_scores": [
+        15.340537153207142,
+        17.05372042221068
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 189,
+      "prompt_token_counts": [
+        189
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "most copies of an album sold in its first week of release",
+        "ground_truth": "Racial barriers",
+        "fallback_answer": "most copies of an album sold in its first week of release",
+        "final_reason": "The album in question set the record for most copies sold in its first week, and this record was later broken by Garth Brooks' album."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Racial barriers"
+      },
+      "avg_retrieval_time": 0.2122631072998047,
+      "avg_similarity": 14.564161861186946,
+      "max_similarity": 17.05372042221068,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 189,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 8.986684083938599,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.40833333333333327
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 149,
+      "prompt_token_counts": [
+        149
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Nirvana",
+        "ground_truth": "Jack Endino",
+        "fallback_answer": "Nirvana",
+        "final_reason": "The evidence indicates that Nirvana produced the song 'Love Buzz'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Jack Endino"
+      },
+      "avg_retrieval_time": 8.986684083938599,
+      "avg_similarity": 0.40833333333333327,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 149,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.27306151390075684,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        14.26502846204915
+      ],
+      "max_similarity_scores": [
+        17.660839160299325
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Neeraj Arya",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine the founder of the band Kabir Caf\u00e9."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Neeraj Arya"
+      },
+      "avg_retrieval_time": 0.27306151390075684,
+      "avg_similarity": 14.26502846204915,
+      "max_similarity": 17.660839160299325,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.23584318161010742,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        14.917324757851091
+      ],
+      "max_similarity_scores": [
+        17.411610808668435
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 131,
+      "prompt_token_counts": [
+        131
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Viren Solanki",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to identify the lead drummer of Kabir Caf\u00e9."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Viren Solanki"
+      },
+      "avg_retrieval_time": 0.23584318161010742,
+      "avg_similarity": 14.917324757851091,
+      "max_similarity": 17.411610808668435,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 131,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 10.532957077026367,
+      "total_docs_searched": 9,
+      "avg_similarity_scores": [
+        0.31432980599647264
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 151,
+      "prompt_token_counts": [
+        151
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "2009",
+        "ground_truth": "1929",
+        "fallback_answer": "2009",
+        "final_reason": "Sony Music was formed in 2009, as indicated by its inception relation."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "1929"
+      },
+      "avg_retrieval_time": 10.532957077026367,
+      "avg_similarity": 0.31432980599647264,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 151,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 2.6181750297546387,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        0.0
+      ],
+      "max_similarity_scores": [
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 127,
+      "prompt_token_counts": [
+        127
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No relevant information found",
+        "ground_truth": "ABBA reunion",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found regarding the significant event of ABBA Band."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "ABBA reunion"
+      },
+      "avg_retrieval_time": 2.6181750297546387,
+      "avg_similarity": 0.0,
+      "max_similarity": 0.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 127,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 9.22600507736206,
+      "total_docs_searched": 9,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 301,
+      "prompt_token_counts": [
+        301
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Benny Andersson & Bj\u00f6rn Ulvaeus",
+        "ground_truth": "Benny Andersson & Bj\u00f6rn Ulvaeus",
+        "fallback_answer": "Benny Andersson & Bj\u00f6rn Ulvaeus",
+        "final_reason": "The reasoning steps indicate that ABBA was founded by Benny Andersson and Bj\u00f6rn Ulvaeus, as stated in the evidence for q2."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Benny Andersson & Bj\u00f6rn Ulvaeus"
+      },
+      "avg_retrieval_time": 4.61300253868103,
+      "avg_similarity": 0.48874999999999996,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 301,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 12.404036045074463,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.0
+      ],
+      "max_similarity_scores": [
+        1.0,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 194,
+      "prompt_token_counts": [
+        194
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No significant event found",
+        "ground_truth": "ABBA reunion",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps identified ABBA as a Swedish pop group, but no specific significant event was found in the provided information. Therefore, the answer is that no significant event is known from the given context."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "ABBA reunion"
+      },
+      "avg_retrieval_time": 6.2020180225372314,
+      "avg_similarity": 0.22833333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 194,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.22711801528930664,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        27.225744263903476,
+        14.851650214987501
+      ],
+      "max_similarity_scores": [
+        30.12294821729204,
+        15.962070210229633
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 166,
+      "prompt_token_counts": [
+        166
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "The Seatbelts",
+        "ground_truth": "GET9",
+        "fallback_answer": "",
+        "final_reason": "Yoko Kanno is a Japanese composer known for her work with the band Seatbelts, notably the soundtrack for the anime Cowboy Bebop."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "GET9"
+      },
+      "avg_retrieval_time": 0.11355900764465332,
+      "avg_similarity": 21.03869723944549,
+      "max_similarity": 30.12294821729204,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 166,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 3.0418283939361572,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Schoolly D",
+        "ground_truth": "Schoolly D",
+        "fallback_answer": "",
+        "final_reason": "Schoolly D is widely credited as the inventor of gangsta rap, particularly for his 1985 song 'P.S.K. What Does It Mean?' which is considered one of the first gangsta rap tracks."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Schoolly D"
+      },
+      "avg_retrieval_time": 3.0418283939361572,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.11699891090393066,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        17.85158908840831,
+        14.528717417186709
+      ],
+      "max_similarity_scores": [
+        18.910598330181667,
+        16.17176426831776
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 177,
+      "prompt_token_counts": [
+        177
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "1970s",
+        "ground_truth": "1967",
+        "fallback_answer": "1970s",
+        "final_reason": "Trident Studio is a recording studio, and the evidence indicates that a recording studio was constructed in the 1970s."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "1967"
+      },
+      "avg_retrieval_time": 0.05849945545196533,
+      "avg_similarity": 16.190153252797508,
+      "max_similarity": 18.910598330181667,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 177,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.1538536548614502,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        28.108292659716927
+      ],
+      "max_similarity_scores": [
+        31.188531155219277
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 141,
+      "prompt_token_counts": [
+        141
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "Nashville, Tennessee",
+        "ground_truth": "Nashville",
+        "fallback_answer": "Nashville, Tennessee",
+        "final_reason": "The band Kings of Leon was formed in Nashville, Tennessee, in 1999."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "Nashville"
+      },
+      "avg_retrieval_time": 0.1538536548614502,
+      "avg_similarity": 28.108292659716927,
+      "max_similarity": 31.188531155219277,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 141,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 1.9441518783569336,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        0.0
+      ],
+      "max_similarity_scores": [
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 130,
+      "prompt_token_counts": [
+        130
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No relevant information found",
+        "ground_truth": "Kings of Leon discography",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found for the discography of Kings of Leon."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Kings of Leon discography"
+      },
+      "avg_retrieval_time": 1.9441518783569336,
+      "avg_similarity": 0.0,
+      "max_similarity": 0.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 130,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 5.162832975387573,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        0.611111111111111,
+        16.428935552853947
+      ],
+      "max_similarity_scores": [
+        1.0,
+        20.5571857945796
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 203,
+      "prompt_token_counts": [
+        203
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "final_answer": "Richard Carpenter and Karen Carpenter",
+        "ground_truth": "Karen Carpenter;Richard Carpenter",
+        "fallback_answer": "Richard Carpenter and Karen Carpenter",
+        "final_reason": "The Carpenters sang 'Rainy Days and Mondays', and the siblings in The Carpenters are Richard and Karen Carpenter."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "ground_truth": "Karen Carpenter;Richard Carpenter"
+      },
+      "avg_retrieval_time": 2.5814164876937866,
+      "avg_similarity": 8.520023331982529,
+      "max_similarity": 20.5571857945796,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 203,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 4.767230272293091,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        0.611111111111111,
+        16.428935552853947
+      ],
+      "max_similarity_scores": [
+        1.0,
+        20.5571857945796
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 212,
+      "prompt_token_counts": [
+        212
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "final_answer": "Richard Carpenter and Karen Carpenter",
+        "ground_truth": "Karen Carpenter;Richard Carpenter",
+        "fallback_answer": "Richard Carpenter and Karen Carpenter",
+        "final_reason": "The Carpenters, who originally performed 'Rainy Days and Mondays', were the sibling duo Richard and Karen Carpenter."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "ground_truth": "Karen Carpenter;Richard Carpenter"
+      },
+      "avg_retrieval_time": 2.3836151361465454,
+      "avg_similarity": 8.520023331982529,
+      "max_similarity": 20.5571857945796,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 212,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 3.864351749420166,
+      "total_docs_searched": 9,
+      "avg_similarity_scores": [
+        27.664611909395695,
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        31.381395401879463,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 226,
+      "prompt_token_counts": [
+        226
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Academy Award for Best Original Musical or Comedy Score",
+        "ground_truth": "Academy Award for Best Original Musical or Comedy Score",
+        "fallback_answer": "Academy Award for Best Original Musical or Comedy Score",
+        "final_reason": "Marc Shaiman was nominated for the Academy Award for Best Original Musical or Comedy Score, while other awards were wins."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Academy Award for Best Original Musical or Comedy Score"
+      },
+      "avg_retrieval_time": 1.932175874710083,
+      "avg_similarity": 14.092722621364514,
+      "max_similarity": 31.381395401879463,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 226,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 4.7746381759643555,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 154,
+      "prompt_token_counts": [
+        154
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Blues Traveler",
+        "ground_truth": "Blues Traveler",
+        "fallback_answer": "Blues Traveler",
+        "final_reason": "The reasoning steps indicate that the song 'Hook' was performed by Blues Traveler."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Blues Traveler"
+      },
+      "avg_retrieval_time": 2.3873190879821777,
+      "avg_similarity": 0.6033333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 154,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 13.291449308395386,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        1.0,
+        11.661138084057091
+      ],
+      "max_similarity_scores": [
+        1.0,
+        13.057944848822661
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 151,
+      "prompt_token_counts": [
+        151
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Arapahoe, CO",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps only establish that Thomas L. Golden is a human, but no information is found about any city he founded. Therefore, the answer cannot be determined from the given evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Arapahoe, CO"
+      },
+      "avg_retrieval_time": 6.645724654197693,
+      "avg_similarity": 6.330569042028546,
+      "max_similarity": 13.057944848822661,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 151,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.19032621383666992,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        11.895401552371291,
+        13.589986513231093
+      ],
+      "max_similarity_scores": [
+        13.595014741676085,
+        19.210303450658635
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 206,
+      "prompt_token_counts": [
+        206
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Native American",
+        "ground_truth": "Native American",
+        "fallback_answer": "Native American",
+        "final_reason": "The Arapaho are identified as a Native American people historically living on the plains of Colorado and Wyoming."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Native American"
+      },
+      "avg_retrieval_time": 0.09516310691833496,
+      "avg_similarity": 12.742694032801193,
+      "max_similarity": 19.210303450658635,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 206,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.16730189323425293,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        13.84298976248632,
+        10.621222944102168
+      ],
+      "max_similarity_scores": [
+        14.512146614236178,
+        11.431907082864091
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 173,
+      "prompt_token_counts": [
+        173
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "The Who",
+        "ground_truth": "Blues Traveler",
+        "fallback_answer": "The Who",
+        "final_reason": "The song commonly referred to as 'Hook' could not be identified, but the evidence documents all pertain to the band The Who, so the performer is inferred to be The Who."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Blues Traveler"
+      },
+      "avg_retrieval_time": 0.08365094661712646,
+      "avg_similarity": 12.232106353294245,
+      "max_similarity": 14.512146614236178,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 173,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.24864745140075684,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        26.962829225893824,
+        37.12176022695583
+      ],
+      "max_similarity_scores": [
+        28.623700876272125,
+        37.63903642287113
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 241,
+      "prompt_token_counts": [
+        241
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "16 Candles",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not yield any information about the first song Jerry Moss promoted. The subquestion q2 returned no relevant information, so the final answer cannot be determined from the provided evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "16 Candles"
+      },
+      "avg_retrieval_time": 0.12432372570037842,
+      "avg_similarity": 32.04229472642483,
+      "max_similarity": 37.63903642287113,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 241,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 3.533529281616211,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 158,
+      "prompt_token_counts": [
+        158
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Brainwashed",
+        "ground_truth": "Brainwashed",
+        "fallback_answer": "Brainwashed",
+        "final_reason": "George Harrison's last studio album is Brainwashed, as confirmed by the reasoning step."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Brainwashed"
+      },
+      "avg_retrieval_time": 3.533529281616211,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 158,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 4.497705936431885,
+      "total_docs_searched": 16,
+      "avg_similarity_scores": [
+        0.40833333333333327,
+        24.63403553513349,
+        24.63403553513349
+      ],
+      "max_similarity_scores": [
+        1.0,
+        35.579549790740145,
+        35.579549790740145
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 262,
+      "prompt_token_counts": [
+        262
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "University of Edinburgh",
+        "ground_truth": "University of Edinburgh",
+        "fallback_answer": "University of Edinburgh",
+        "final_reason": "The members of Boards of Canada are Marcus Eoin and Michael Sandison, and they attended the University of Edinburgh."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "University of Edinburgh"
+      },
+      "avg_retrieval_time": 1.4992353121439617,
+      "avg_similarity": 16.558801467866772,
+      "max_similarity": 35.579549790740145,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 262,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.13999366760253906,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        30.18272238352436,
+        23.430553236375324
+      ],
+      "max_similarity_scores": [
+        31.412271563601305,
+        57.09214929227139
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 197,
+      "prompt_token_counts": [
+        197
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.8,
+        "final_answer": "Pentland Hills, Scotland",
+        "ground_truth": "Pentland Hills",
+        "fallback_answer": "Pentland Hills, Scotland",
+        "final_reason": "Hexagon Sun is an artistic collective based in the Pentland Hills, Scotland, so its location is the Pentland Hills in Scotland."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.8,
+        "ground_truth": "Pentland Hills"
+      },
+      "avg_retrieval_time": 0.06999683380126953,
+      "avg_similarity": 26.80663780994984,
+      "max_similarity": 57.09214929227139,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 197,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 9.77743649482727,
+      "total_docs_searched": 9,
+      "avg_similarity_scores": [
+        0.5208333333333333,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 158,
+      "prompt_token_counts": [
+        158
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Dead Embryonic Cells",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find any relevant information about the track listing or singles from the album Arise, so the second single cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Dead Embryonic Cells"
+      },
+      "avg_retrieval_time": 4.888718247413635,
+      "avg_similarity": 0.48874999999999996,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 158,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 13.488364696502686,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.75,
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 176,
+      "prompt_token_counts": [
+        176
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "Bloodshot",
+        "ground_truth": "Bloodshot / Waste",
+        "fallback_answer": "",
+        "final_reason": "Dove Cameron's discography lists her first EP as 'Bloodshot', released in 2019."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Bloodshot / Waste"
+      },
+      "avg_retrieval_time": 6.744182348251343,
+      "avg_similarity": 0.875,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 176,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.13546085357666016,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        23.955882494317766
+      ],
+      "max_similarity_scores": [
+        31.430193545988054
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 153,
+      "prompt_token_counts": [
+        153
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Bloodshot / Waste",
+        "ground_truth": "Bloodshot / Waste",
+        "fallback_answer": "Bloodshot / Waste",
+        "final_reason": "The evidence states that Dove Cameron released her debut extended play, Bloodshot / Waste, on September 27, 2019."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Bloodshot / Waste"
+      },
+      "avg_retrieval_time": 0.13546085357666016,
+      "avg_similarity": 23.955882494317766,
+      "max_similarity": 31.430193545988054,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 153,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.06247091293334961,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        20.827027352105766
+      ],
+      "max_similarity_scores": [
+        22.165977618897166
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 135,
+      "prompt_token_counts": [
+        135
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Annakili",
+        "ground_truth": "Annakili",
+        "fallback_answer": "",
+        "final_reason": "Ilaiyaraaja's first movie as a music director is Annakili (1976), based on common knowledge, as the provided reasoning steps did not yield a direct answer."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Annakili"
+      },
+      "avg_retrieval_time": 0.06247091293334961,
+      "avg_similarity": 20.827027352105766,
+      "max_similarity": 22.165977618897166,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 135,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.22745990753173828,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        22.007216009533188,
+        14.1785165510402
+      ],
+      "max_similarity_scores": [
+        24.85058518264349,
+        18.5113477906486
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 224,
+      "prompt_token_counts": [
+        224
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.3333333333333333,
+        "final_answer": "London Symphony Orchestra",
+        "ground_truth": "Royal Philharmonic Orchestra",
+        "fallback_answer": "London Symphony Orchestra",
+        "final_reason": "Ilaiyaraaja's first symphony is 'How to Name It?', and the London Symphony Orchestra performed it."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.3333333333333333,
+        "ground_truth": "Royal Philharmonic Orchestra"
+      },
+      "avg_retrieval_time": 0.11372995376586914,
+      "avg_similarity": 18.092866280286692,
+      "max_similarity": 24.85058518264349,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 224,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.08129119873046875,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        27.914746824138895
+      ],
+      "max_similarity_scores": [
+        32.42830428483196
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 158,
+      "prompt_token_counts": [
+        158
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.8,
+        "final_answer": "D\u00e9rive 2",
+        "ground_truth": "D\u00e9rive 2 (2006)",
+        "fallback_answer": "D\u00e9rive 2",
+        "final_reason": "The evidence states that Boulez's last major work was D\u00e9rive 2 (2006), a 45-minute piece for eleven instruments."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.8,
+        "ground_truth": "D\u00e9rive 2 (2006)"
+      },
+      "avg_retrieval_time": 0.08129119873046875,
+      "avg_similarity": 27.914746824138895,
+      "max_similarity": 32.42830428483196,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 158,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.28265810012817383,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        42.78611019602042
+      ],
+      "max_similarity_scores": [
+        62.48615445146636
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 171,
+      "prompt_token_counts": [
+        171
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Genius of Love",
+        "ground_truth": "Genius of Love",
+        "fallback_answer": "Genius of Love",
+        "final_reason": "The beat of 'Return of the Mack' is sampled from the song 'Genius of Love' by Tom Tom Club."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Genius of Love"
+      },
+      "avg_retrieval_time": 0.28265810012817383,
+      "avg_similarity": 42.78611019602042,
+      "max_similarity": 62.48615445146636,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 171,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.3673560619354248,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        31.69402988134174,
+        32.720596066412654
+      ],
+      "max_similarity_scores": [
+        33.79536763302329,
+        37.15037350661779
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 186,
+      "prompt_token_counts": [
+        186
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Genius of Love",
+        "ground_truth": "Genius of Love",
+        "fallback_answer": "Genius of Love",
+        "final_reason": "The evidence document for 'Return of the Mack' states that its beat is sampled from 'Genius of Love' by Tom Tom Club."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Genius of Love"
+      },
+      "avg_retrieval_time": 0.1836780309677124,
+      "avg_similarity": 32.207312973877194,
+      "max_similarity": 37.15037350661779,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 186,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 10.51201319694519,
+      "total_docs_searched": 51,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.09601494013013269
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 215,
+      "prompt_token_counts": [
+        215
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Cream discography",
+        "ground_truth": "Cream discography",
+        "fallback_answer": "Cream discography",
+        "final_reason": "The band called 'cream' is Cream, and its discography is titled 'Cream discography'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Cream discography"
+      },
+      "avg_retrieval_time": 5.256006598472595,
+      "avg_similarity": 0.27634080339839967,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 215,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.05407309532165527,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        11.459548789710926,
+        10.725660082095006
+      ],
+      "max_similarity_scores": [
+        12.228594809991517,
+        11.687026381797578
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 140,
+      "prompt_token_counts": [
+        140
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Academy Award for Best Original Musical Score",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide any relevant information to determine what Andr\u00e9 Previn was nominated for."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Academy Award for Best Original Musical Score"
+      },
+      "avg_retrieval_time": 0.027036547660827637,
+      "avg_similarity": 11.092604435902967,
+      "max_similarity": 12.228594809991517,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 140,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 4.372026205062866,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 151,
+      "prompt_token_counts": [
+        151
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Black Flag discography",
+        "ground_truth": "Black Flag discography",
+        "fallback_answer": "Black Flag discography",
+        "final_reason": "The evidence directly states that Black Flag has a discography relation pointing to 'Black Flag discography'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Black Flag discography"
+      },
+      "avg_retrieval_time": 4.372026205062866,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 151,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 1.4693045616149902,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        37.526941055604695
+      ],
+      "max_similarity_scores": [
+        0.0,
+        57.76219613032188
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 208,
+      "prompt_token_counts": [
+        208
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Initial D",
+        "ground_truth": "Initial D",
+        "fallback_answer": "yes",
+        "final_reason": "M.O.V.E provided music for the street racing anime Initial D, and they performed all of the opening and some ending themes, thus making both opening and ending songs."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Initial D"
+      },
+      "avg_retrieval_time": 0.7346522808074951,
+      "avg_similarity": 18.763470527802347,
+      "max_similarity": 57.76219613032188,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 208,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 4.104334354400635,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 145,
+      "prompt_token_counts": [
+        145
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "1926",
+        "ground_truth": "1926",
+        "fallback_answer": "1926",
+        "final_reason": "The evidence document states that Kunitachi College of Music has an inception date of 1926."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "1926"
+      },
+      "avg_retrieval_time": 4.104334354400635,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 145,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 1.0810341835021973,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        12.289117189693258
+      ],
+      "max_similarity_scores": [
+        0.0,
+        13.589460513949506
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 139,
+      "prompt_token_counts": [
+        139
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Stewart Copeland",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to identify the song or its writer."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Stewart Copeland"
+      },
+      "avg_retrieval_time": 0.5405170917510986,
+      "avg_similarity": 6.144558594846629,
+      "max_similarity": 13.589460513949506,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 139,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.24673247337341309,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        24.81962880999775,
+        16.573948312402848
+      ],
+      "max_similarity_scores": [
+        25.238958919277316,
+        18.158034884242323
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 203,
+      "prompt_token_counts": [
+        203
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Arth",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide any information about Jagjit Singh's first album. The subquestion about the first album returned no relevant information, so the answer cannot be determined from the given evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Arth"
+      },
+      "avg_retrieval_time": 0.12336623668670654,
+      "avg_similarity": 20.6967885612003,
+      "max_similarity": 25.238958919277316,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 203,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 5.868030071258545,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 160,
+      "prompt_token_counts": [
+        160
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Drake",
+        "ground_truth": "Drake",
+        "fallback_answer": "Drake",
+        "final_reason": "The reasoning step confirms that the performer of 'Toosie Slide' is Drake, making him the vocal artist."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Drake"
+      },
+      "avg_retrieval_time": 5.868030071258545,
+      "avg_similarity": 0.611111111111111,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 160,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 3.916888952255249,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 156,
+      "prompt_token_counts": [
+        156
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Tones and I",
+        "ground_truth": "Tones and I",
+        "fallback_answer": "Tones and I",
+        "final_reason": "The reasoning step confirms that the lyrics of 'Dance Monkey' were written by Tones and I, making her the writer of the song."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Tones and I"
+      },
+      "avg_retrieval_time": 3.916888952255249,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 156,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 11.05246615409851,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.75,
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 196,
+      "prompt_token_counts": [
+        196
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Konstantin Kersting",
+        "ground_truth": "Konstantin Kersting",
+        "fallback_answer": "Konstantin Kersting",
+        "final_reason": "The song 'Dance Monkey' was performed by Tones and I, and its producer is Konstantin Kersting."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Konstantin Kersting"
+      },
+      "avg_retrieval_time": 5.526233077049255,
+      "avg_similarity": 0.6805555555555556,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 196,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 1.2601966857910156,
+      "total_docs_searched": 11,
+      "avg_similarity_scores": [
+        0.0,
+        9.010537728325692,
+        17.12530946785632
+      ],
+      "max_similarity_scores": [
+        0.0,
+        13.102361362721146,
+        18.916700507099208
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 166,
+      "prompt_token_counts": [
+        166
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "The Hunters",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not identify the referent of 'it' or the builder, so the music group membership cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The Hunters"
+      },
+      "avg_retrieval_time": 0.42006556193033856,
+      "avg_similarity": 8.711949065394004,
+      "max_similarity": 18.916700507099208,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 166,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 3.324617862701416,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        16.19625007668072,
+        1.0
+      ],
+      "max_similarity_scores": [
+        17.275567859953888,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 209,
+      "prompt_token_counts": [
+        209
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Pannaipuram",
+        "ground_truth": "Enfield",
+        "fallback_answer": "Pannaipuram",
+        "final_reason": "The person referred to as 'he' is Ilaiyaraaja, and the evidence states he was born in Pannaipuram."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Enfield"
+      },
+      "avg_retrieval_time": 1.662308931350708,
+      "avg_similarity": 8.59812503834036,
+      "max_similarity": 17.275567859953888,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 209,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.012423515319824219,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        16.68232528121659
+      ],
+      "max_similarity_scores": [
+        20.28563453019546
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 121,
+      "prompt_token_counts": [
+        121
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Maurice White",
+        "ground_truth": "Maurice White",
+        "fallback_answer": "",
+        "final_reason": "Earth Wind & Fire was founded by Maurice White in 1969. Although the provided reasoning steps did not contain relevant information, this is a well-known fact."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Maurice White"
+      },
+      "avg_retrieval_time": 0.012423515319824219,
+      "avg_similarity": 16.68232528121659,
+      "max_similarity": 20.28563453019546,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 121,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 5.395840644836426,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.0,
+        0.0
+      ],
+      "max_similarity_scores": [
+        0.0,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 186,
+      "prompt_token_counts": [
+        186
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.28571428571428575,
+        "final_answer": "That's the Way of the World",
+        "ground_truth": "The Need of Love",
+        "fallback_answer": "That's the Way of the World",
+        "final_reason": "The discography of Earth Wind & Fire lists their albums in order, with 'That's the Way of the World' as the second album."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.28571428571428575,
+        "ground_truth": "The Need of Love"
+      },
+      "avg_retrieval_time": 2.697920322418213,
+      "avg_similarity": 0.0,
+      "max_similarity": 0.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 186,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.32287168502807617,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        19.990267260634564,
+        21.98157873500193
+      ],
+      "max_similarity_scores": [
+        25.83187140898471,
+        27.75353947576538
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 158,
+      "prompt_token_counts": [
+        158
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Maurice White",
+        "ground_truth": "Maurice White",
+        "fallback_answer": "",
+        "final_reason": "Maurice White is widely recognized as the founder and primary initiator of Earth Wind & Fire, having formed the band in 1969. Although the reasoning steps did not provide explicit information, this is the well-known fact."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Maurice White"
+      },
+      "avg_retrieval_time": 0.16143584251403809,
+      "avg_similarity": 20.985922997818246,
+      "max_similarity": 27.75353947576538,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 158,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.10841917991638184,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        28.39963630122754
+      ],
+      "max_similarity_scores": [
+        29.247810702656366
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 176,
+      "prompt_token_counts": [
+        176
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Weeknd",
+        "ground_truth": "The Weeknd",
+        "fallback_answer": "The Weeknd",
+        "final_reason": "The Weeknd is the singer of the song 'Blinding Lights'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Weeknd"
+      },
+      "avg_retrieval_time": 0.10841917991638184,
+      "avg_similarity": 28.39963630122754,
+      "max_similarity": 29.247810702656366,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 176,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.09618258476257324,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        36.841415385341705
+      ],
+      "max_similarity_scores": [
+        37.980648523377035
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 153,
+      "prompt_token_counts": [
+        153
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5714285714285715,
+        "final_answer": "R. Kelly",
+        "ground_truth": "Celine Dion and R. Kelly",
+        "fallback_answer": "R. Kelly",
+        "final_reason": "The evidence states that 'I'm Your Angel' is a duet with R. Kelly, indicating he performed the music."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5714285714285715,
+        "ground_truth": "Celine Dion and R. Kelly"
+      },
+      "avg_retrieval_time": 0.09618258476257324,
+      "avg_similarity": 36.841415385341705,
+      "max_similarity": 37.980648523377035,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 153,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.04827308654785156,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 221,
+      "prompt_token_counts": [
+        221
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "",
+        "ground_truth": "Celine Dion and R. Kelly",
+        "fallback_answer": "C\u00e9line Dion and R. Kelly",
+        "final_reason": "The evidence documents do not explicitly state the performer of 'I'm Your Angel', and the reasoning steps indicate that the answer is left empty because it cannot be strictly derived from the provided evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.8000000000000002,
+        "ground_truth": "Celine Dion and R. Kelly"
+      },
+      "avg_retrieval_time": 0.04827308654785156,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 221,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 4.6910271644592285,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.37040816326530607
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 138,
+      "prompt_token_counts": [
+        138
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "1964",
+        "ground_truth": "February 1964",
+        "fallback_answer": "1964",
+        "final_reason": "The Who band was formed in 1964, specifically on 1 February 1964."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "February 1964"
+      },
+      "avg_retrieval_time": 4.6910271644592285,
+      "avg_similarity": 0.37040816326530607,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 138,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 8.234598398208618,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        0.37040816326530607,
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 181,
+      "prompt_token_counts": [
+        181
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "1964",
+        "ground_truth": "February 1964",
+        "fallback_answer": "1964",
+        "final_reason": "The Who band refers to The Who, which started in 1964."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "February 1964"
+      },
+      "avg_retrieval_time": 4.117299199104309,
+      "avg_similarity": 0.685204081632653,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 181,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.10697650909423828,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        42.80704429039521,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        43.95534226200398,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 228,
+      "prompt_token_counts": [
+        228
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "60",
+        "ground_truth": "60",
+        "fallback_answer": "60",
+        "final_reason": "The chart table for 'Bad Blood (Taylor Swift song)' lists its position on the Brazil (Brasil Hot 100) chart as 60."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "60"
+      },
+      "avg_retrieval_time": 0.05348825454711914,
+      "avg_similarity": 21.631855478530937,
+      "max_similarity": 43.95534226200398,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 228,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.1015634536743164,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        30.133480645093034
+      ],
+      "max_similarity_scores": [
+        31.613063543725268
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 177,
+      "prompt_token_counts": [
+        177
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.2857142857142857,
+        "final_answer": "Studland Bay, Dorset, South West England",
+        "ground_truth": "Studland",
+        "fallback_answer": "Studland Bay, Dorset, South West England",
+        "final_reason": "The evidence states that the music video for 'Yellow' was filmed at Studland Bay in Dorset, South West England."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.2857142857142857,
+        "ground_truth": "Studland"
+      },
+      "avg_retrieval_time": 0.1015634536743164,
+      "avg_similarity": 30.133480645093034,
+      "max_similarity": 31.613063543725268,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 177,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 5.608389377593994,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        1.0,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 184,
+      "prompt_token_counts": [
+        184
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "1003",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps could not find the catalog number for the song 'Suddenly There's a Valley' by Glen Campbell. No relevant information was found in the provided evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "1003"
+      },
+      "avg_retrieval_time": 2.804194688796997,
+      "avg_similarity": 0.7283333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 184,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.11578822135925293,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        40.82747893250954
+      ],
+      "max_similarity_scores": [
+        41.84705338591749
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 148,
+      "prompt_token_counts": [
+        148
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Kyle XY",
+        "ground_truth": "Kyle XY",
+        "fallback_answer": "Kyle XY",
+        "final_reason": "The song 'Sweet and Low' by Augustana was used in an episode of Kyle XY."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Kyle XY"
+      },
+      "avg_retrieval_time": 0.11578822135925293,
+      "avg_similarity": 40.82747893250954,
+      "max_similarity": 41.84705338591749,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 148,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.19303679466247559,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        25.91746770557925
+      ],
+      "max_similarity_scores": [
+        27.408840114048555
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 128,
+      "prompt_token_counts": [
+        128
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Columbia University",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine where Zhou Long received his Doctor of Musical Arts."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Columbia University"
+      },
+      "avg_retrieval_time": 0.19303679466247559,
+      "avg_similarity": 25.91746770557925,
+      "max_similarity": 27.408840114048555,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 128,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 4.35861349105835,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 162,
+      "prompt_token_counts": [
+        162
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Stoeger Prize",
+        "ground_truth": "Stoeger Prize",
+        "fallback_answer": "Stoeger Prize",
+        "final_reason": "Zhou Long received the Stoeger Prize in 2012, as indicated by the reasoning step."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Stoeger Prize"
+      },
+      "avg_retrieval_time": 4.35861349105835,
+      "avg_similarity": 0.611111111111111,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 162,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.025349855422973633,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        28.2519714600004,
+        28.214816863562316
+      ],
+      "max_similarity_scores": [
+        30.001081688997072,
+        30.001081688997076
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 189,
+      "prompt_token_counts": [
+        189
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "John Marshall High School",
+        "ground_truth": "John Marshall High School",
+        "fallback_answer": "John Marshall High School",
+        "final_reason": "The evidence states that will.i.am attended summer school at John Marshall High School, where he met Allan Pineda."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "John Marshall High School"
+      },
+      "avg_retrieval_time": 0.012674927711486816,
+      "avg_similarity": 28.23339416178136,
+      "max_similarity": 30.001081688997076,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 189,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 5.097200870513916,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.37040816326530607
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 169,
+      "prompt_token_counts": [
+        169
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.21052631578947367,
+        "final_answer": "Heavy metal music, new wave of American heavy metal, hard rock, traditional heavy metal, progressive metal, Metalcore",
+        "ground_truth": "heavy metal",
+        "fallback_answer": "Heavy metal music, new wave of American heavy metal, hard rock, traditional heavy metal, progressive metal, Metalcore",
+        "final_reason": "The reasoning step identified the genres associated with Avenged Sevenfold as listed in the evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.21052631578947367,
+        "ground_truth": "heavy metal"
+      },
+      "avg_retrieval_time": 5.097200870513916,
+      "avg_similarity": 0.37040816326530607,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 169,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 5.525576591491699,
+      "total_docs_searched": 9,
+      "avg_similarity_scores": [
+        0.31432980599647264
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 167,
+      "prompt_token_counts": [
+        167
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Category:Avenged Sevenfold members",
+        "ground_truth": "Category:Avenged Sevenfold members",
+        "fallback_answer": "Category:Avenged Sevenfold members",
+        "final_reason": "The reasoning steps indicate that the member category of Avenged Sevenfold is directly given as 'Category:Avenged Sevenfold members'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Category:Avenged Sevenfold members"
+      },
+      "avg_retrieval_time": 5.525576591491699,
+      "avg_similarity": 0.31432980599647264,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 167,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.10473847389221191,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        33.24980045031274,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        37.73860110640781,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 220,
+      "prompt_token_counts": [
+        220
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "74",
+        "ground_truth": "74",
+        "fallback_answer": "74",
+        "final_reason": "The song 'Blank Space' by Taylor Swift reached position 74 on the Brazil (Brasil Hot 100) chart."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "74"
+      },
+      "avg_retrieval_time": 0.05236923694610596,
+      "avg_similarity": 16.853233558489702,
+      "max_similarity": 37.73860110640781,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 220,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 1.1191928386688232,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        14.098301759313719
+      ],
+      "max_similarity_scores": [
+        0.0,
+        14.357381885096844
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 154,
+      "prompt_token_counts": [
+        154
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Mind of Mine",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not identify the person referred to as 'his' and found no information about the first studio album. Therefore, the answer cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Mind of Mine"
+      },
+      "avg_retrieval_time": 0.5595964193344116,
+      "avg_similarity": 7.049150879656859,
+      "max_similarity": 14.357381885096844,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 154,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.15642070770263672,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        13.80424502954276,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        15.340537153207142,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 153,
+      "prompt_token_counts": [
+        153
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Pillowtalk",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not identify the album or provide any information about its first single, so the answer cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Pillowtalk"
+      },
+      "avg_retrieval_time": 0.07821035385131836,
+      "avg_similarity": 7.130455848104713,
+      "max_similarity": 15.340537153207142,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 153,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 5.14234733581543,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        23.994231192366332,
+        0.0,
+        0.0
+      ],
+      "max_similarity_scores": [
+        25.43438803894546,
+        0.0,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 290,
+      "prompt_token_counts": [
+        290
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No definitive answer can be provided based on the given reasoning steps.",
+        "ground_truth": "Whitney Houston",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not yield any relevant information about Nicole Scherzinger's musical influences. Therefore, it is impossible to determine who influenced her the most."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Whitney Houston"
+      },
+      "avg_retrieval_time": 1.7141157786051433,
+      "avg_similarity": 7.998077064122111,
+      "max_similarity": 25.43438803894546,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 290,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.001687765121459961,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 138,
+      "prompt_token_counts": [
+        138
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Wednesday Morning, 3 A.M.",
+        "ground_truth": "Wednesday Morning, 3 A.M.",
+        "fallback_answer": "",
+        "final_reason": "Simon & Garfunkel's first studio album is widely known as 'Wednesday Morning, 3 A.M.', released in 1964. Although the reasoning steps did not provide information, this is the correct answer based on general knowledge."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Wednesday Morning, 3 A.M."
+      },
+      "avg_retrieval_time": 0.001687765121459961,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 138,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.17572355270385742,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        14.20355380856349,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        15.340537153207142,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 145,
+      "prompt_token_counts": [
+        145
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Tom Wilson",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not identify the album or its producer due to lack of relevant information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Tom Wilson"
+      },
+      "avg_retrieval_time": 0.08786177635192871,
+      "avg_similarity": 7.330110237615078,
+      "max_similarity": 15.340537153207142,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 145,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.23415660858154297,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        15.36547198031399,
+        13.476618051736128
+      ],
+      "max_similarity_scores": [
+        16.71976428525256,
+        17.197386131315298
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 188,
+      "prompt_token_counts": [
+        188
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Waco Independent School District",
+        "fallback_answer": "",
+        "final_reason": "The original question lacks context about the specific entity or location, and the reasoning steps found no relevant information to determine the school district."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Waco Independent School District"
+      },
+      "avg_retrieval_time": 0.11707830429077148,
+      "avg_similarity": 14.421045016025058,
+      "max_similarity": 17.197386131315298,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 188,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.25932979583740234,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        19.09732098613093
+      ],
+      "max_similarity_scores": [
+        22.53633962806174
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 133,
+      "prompt_token_counts": [
+        133
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Wednesday Morning, 3 A.M.",
+        "ground_truth": "Wednesday Morning, 3 A.M.",
+        "fallback_answer": "",
+        "final_reason": "The first studio album released by Simon & Garfunkel is 'Wednesday Morning, 3 A.M.' (1964)."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Wednesday Morning, 3 A.M."
+      },
+      "avg_retrieval_time": 0.25932979583740234,
+      "avg_similarity": 19.09732098613093,
+      "max_similarity": 22.53633962806174,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 133,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 3.9842371940612793,
+      "total_docs_searched": 4,
+      "avg_similarity_scores": [
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 167,
+      "prompt_token_counts": [
+        167
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Weeknd",
+        "ground_truth": "The Weeknd",
+        "fallback_answer": "The Weeknd",
+        "final_reason": "The evidence states that 'Save Your Tears' has the performer relation (P175) with The Weeknd, and also with Ariana Grande for the remix. The original performer is The Weeknd."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Weeknd"
+      },
+      "avg_retrieval_time": 3.9842371940612793,
+      "avg_similarity": 0.5208333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 167,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.29639363288879395,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        28.728347331132646,
+        31.018742751759838
+      ],
+      "max_similarity_scores": [
+        30.17811315194249,
+        31.854417027539693
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 223,
+      "prompt_token_counts": [
+        223
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.23529411764705882,
+        "final_answer": "dedicate this album to the future generations of India",
+        "ground_truth": "to commemorate 50 years of Indian Independence in 1997",
+        "fallback_answer": "dedicate this album to the future generations of India",
+        "final_reason": "The evidence states that A. R. Rahman said, 'I dedicate this album to the future generations of India,' which indicates the reason behind the album's creation/release."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.23529411764705882,
+        "ground_truth": "to commemorate 50 years of Indian Independence in 1997"
+      },
+      "avg_retrieval_time": 0.14819681644439697,
+      "avg_similarity": 29.873545041446242,
+      "max_similarity": 31.854417027539693,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 223,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 2.554673194885254,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        0.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 154,
+      "prompt_token_counts": [
+        154
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No answer found",
+        "ground_truth": "If You Had My Love",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide any relevant information about the album 'On the 6' or its first single."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "If You Had My Love"
+      },
+      "avg_retrieval_time": 1.277336597442627,
+      "avg_similarity": 0.22833333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 154,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 3.899955987930298,
+      "total_docs_searched": 58,
+      "avg_similarity_scores": [
+        0.08010783782314994
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 137,
+      "prompt_token_counts": [
+        137
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.4,
+        "final_answer": "The Billboard Hot 100's first number-one song was \"Poor Little Fool\" by Ricky Nelson.",
+        "ground_truth": "Poor Little Fool",
+        "fallback_answer": "",
+        "final_reason": "The Billboard Hot 100 chart was first published in the issue dated August 4, 1958. The first song to reach number one on that chart was \"Poor Little Fool\" by Ricky Nelson, which topped the chart for two weeks starting August 4, 1958."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Poor Little Fool"
+      },
+      "avg_retrieval_time": 3.899955987930298,
+      "avg_similarity": 0.08010783782314994,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 137,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.09560585021972656,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        25.67535647798713,
+        13.792587385022056
+      ],
+      "max_similarity_scores": [
+        26.00512350867383,
+        15.741186047072391
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 234,
+      "prompt_token_counts": [
+        234
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Muslim",
+        "ground_truth": "Islam",
+        "fallback_answer": "Muslim",
+        "final_reason": "Bismillah Khan was an Indian shehnai player, and based on his name and biographical context, he belonged to the Muslim religion."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Islam"
+      },
+      "avg_retrieval_time": 0.04780292510986328,
+      "avg_similarity": 19.73397193150459,
+      "max_similarity": 26.00512350867383,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 234,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.10097098350524902,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        33.5938135243793
+      ],
+      "max_similarity_scores": [
+        36.31473524799144
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 172,
+      "prompt_token_counts": [
+        172
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Poor Little Fool",
+        "ground_truth": "Poor Little Fool",
+        "fallback_answer": "Poor Little Fool",
+        "final_reason": "The first number-one song on the US Billboard Hot 100 was 'Poor Little Fool' by Ricky Nelson, on August 4, 1958."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Poor Little Fool"
+      },
+      "avg_retrieval_time": 0.10097098350524902,
+      "avg_similarity": 33.5938135243793,
+      "max_similarity": 36.31473524799144,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 172,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 0.1284782886505127,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        21.319937150208297
+      ],
+      "max_similarity_scores": [
+        22.59663618584275
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Got to Be There",
+        "ground_truth": "Got to Be There",
+        "fallback_answer": "",
+        "final_reason": "Michael Jackson's first solo studio album was 'Got to Be There', released in 1972."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Got to Be There"
+      },
+      "avg_retrieval_time": 0.1284782886505127,
+      "avg_similarity": 21.319937150208297,
+      "max_similarity": 22.59663618584275,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.1667995427083224
+    },
+    {
+      "total_retrieval_time": 3.9605214595794678,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        14.254936111609755
+      ],
+      "max_similarity_scores": [
+        1.0,
+        17.061063937211276
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 187,
+      "prompt_token_counts": [
+        187
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Nils Sj\u00f6berg",
+        "ground_truth": "Zeff",
+        "fallback_answer": "Nils Sj\u00f6berg",
+        "final_reason": "The reasoning steps incorrectly identify Joe Elliot as Taylor Swift, but based on the provided steps, the pseudonym for the singer is Nils Sj\u00f6berg."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Zeff"
+      },
+      "avg_retrieval_time": 1.9802607297897339,
+      "avg_similarity": 7.355801389138211,
+      "max_similarity": 17.061063937211276,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 187,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.1667995427083224
+    }
+  ]
+}

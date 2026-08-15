@@ -1,0 +1,27 @@
+{
+  "domain": "transportation",
+  "routing_mode": "deepsieve",
+  "knowledge_base": [
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/transportation/questions.json",
+  "output_dir": "/root/autodl-tmp/BBB_hybridQA/experiments/route_only/outputs/deepsieve/transportation",
+  "semantic_catalog": null,
+  "atomr_prompts": null,
+  "deepsieve_source_summary": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/transportation/deepsieve_source_summary.json",
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 27.08294710330665,
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 23,
+    "route1.table": 77,
+    "route2.doc": 33,
+    "route2.table": 67
+  }
+}

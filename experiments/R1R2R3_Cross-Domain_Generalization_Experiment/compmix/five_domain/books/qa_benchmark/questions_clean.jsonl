@@ -1,0 +1,100 @@
+{"id": "dev-5118", "question": "What year was Catcher in the Rye published?", "answer": "1951", "source": "doc", "source_ids": ["D12715"]}
+{"id": "dev-5451", "question": "Which prize was won by Roberto Bolaño in 1999?", "answer": "Rómulo Gallegos Prize", "source": "kg", "source_ids": [["E013564", "P166", "E004458"]]}
+{"id": "dev-5481", "question": "What was the theme of the book \"Adventures of Huckleberry Finn\"?", "answer": "Race and identity", "source": "doc", "source_ids": ["D10165"]}
+{"id": "dev-5509", "question": "What is the genre of the book The God of Small Things?", "answer": "magic realist fiction", "source": "kg", "source_ids": [["E003064", "P31", "E004361"], ["E003064", "P279", "E026353"], ["E003064", "P135", "E011694"]]}
+{"id": "dev-5599", "question": "In what year was Mary Tuffley born?", "answer": "1659", "source": "kg", "source_ids": [["E010915", "P569", "E000814"]]}
+{"id": "dev-5630", "question": "Who is the publisher of the book Disgrace?", "answer": "Harvill Secker", "source": "kg", "source_ids": [["E027761", "P123", "E020651"]]}
+{"id": "dev-5808", "question": "Which is the first book of Paulo Coelho?", "answer": "Teatro da Educação", "source": "table", "source_ids": ["T0085"]}
+{"id": "dev-5869", "question": "Who was the main character of the novel \"The Outsiders\"?", "answer": "Ponyboy Curtis", "source": "doc", "source_ids": ["D25587", "D22390", "D05458"]}
+{"id": "dev-5897", "question": "What is the second book of Francisco de Robles?", "answer": "Don Quixote de la Mancha", "source": "kg", "source_ids": [["E020606", "P98", "E008984"]]}
+{"id": "dev-5898", "question": "Who wrote the Francisco de Robles?", "answer": "Miguel de Cervantes", "source": "doc", "source_ids": ["D06034"]}
+{"id": "dev-5930", "question": "Who is the former governor of Ardsmuir Prison?", "answer": "Lord John Grey", "source": "doc", "source_ids": ["D25991", "D17184", "D10856"]}
+{"id": "dev-5990", "question": "What is the third book in the Incarnations of Immortality series?", "answer": "With a Tangled Skein", "source": "kg", "source_ids": [["E026131", "P179", "E021380"]]}
+{"id": "dev-6229", "question": "What religion inspired the author?", "answer": "Mormonism", "source": "doc", "source_ids": ["D17164", "D27076", "D31058"]}
+{"id": "dev-6436", "question": "Under what pseudonym was The Hardy Boys books written?", "answer": "Franklin W. Dixon", "source": "doc", "source_ids": ["D13033", "D16081"]}
+{"id": "dev-6439", "question": "What year did The Hardy Boys book series first debut?", "answer": "1927", "source": "doc", "source_ids": ["D06132", "D13491", "D06878"]}
+{"id": "dev-6441", "question": "What is the pseudonym with which The Hardy Boys was written?", "answer": "Franklin W. Dixon", "source": "doc", "source_ids": ["D13033", "D16081"]}
+{"id": "dev-6467", "question": "How many copies of Sense and Sensibility were printed at first?", "answer": "750", "source": "doc", "source_ids": ["D23782"]}
+{"id": "test-6977", "question": "In the first edition of Charlie and the Chocolate Factory what were the Oompa-Loompas?", "answer": "African Pygmies", "source": "doc", "source_ids": ["D23009"]}
+{"id": "test-7037", "question": "Who were the main characters featured in the Hardy Boys?", "answer": "Frank Hardy;Joe Hardy", "source": "doc", "source_ids": ["D30705", "D22369", "D13669"]}
+{"id": "test-7067", "question": "What is the profession of Balram in the novel The White Tiger?", "answer": "Halwai", "source": "doc", "source_ids": ["D22574", "D16763"]}
+{"id": "test-7125", "question": "Who was the author of the first book published in the Dune series?", "answer": "Frank Herbert", "source": "kg", "source_ids": [["E008434", "P138", "E008989"], ["E008434", "P8345", "E008438"], ["E008438", "P527", "E008434"]]}
+{"id": "test-7128", "question": "What was the last book in the Dune series written by Frank Herbert?", "answer": "Chapterhouse: Dune", "source": "kg", "source_ids": [["E021679", "P527", "E013074"], ["E013074", "P179", "E021679"], ["E017290", "P179", "E021679"]]}
+{"id": "test-7130", "question": "Author of first published Dune book?", "answer": "Frank Herbert", "source": "kg", "source_ids": [["E008434", "P138", "E008989"], ["E008434", "P8345", "E008438"], ["E008438", "P527", "E008434"]]}
+{"id": "test-7337", "question": "What noble title was conferred on Leo Tolstoy?", "answer": "graf", "source": "kg", "source_ids": [["E023749", "P97", "E013386"]]}
+{"id": "test-7428", "question": "Where does The Shining take place?", "answer": "the Southern Rocky Mountains", "source": "doc", "source_ids": ["D01103", "D09473", "D11350"]}
+{"id": "test-7489", "question": "The author of the Book \"The Power of Habit\" Charles Duhigg is residing in which city?", "answer": "Santa Cruz, California", "source": "doc", "source_ids": ["D26673"]}
+{"id": "test-7635", "question": "What is the main subject of the book The Origin of Species?", "answer": "theory of evolution", "source": "kg", "source_ids": [["E010786", "P921", "E005086"]]}
+{"id": "test-7636", "question": "Who is the author name of the book The Origin of Species?", "answer": "Charles Darwin", "source": "kg", "source_ids": [["E010786", "P50", "E003160"]]}
+{"id": "test-7640", "question": "The Origin of Species books main subject?", "answer": "theory of evolution", "source": "kg", "source_ids": [["E010786", "P921", "E005086"]]}
+{"id": "test-7756", "question": "What is the last book of the series The Famous Five?", "answer": "Five Are Together Again", "source": "kg", "source_ids": [["E019881", "P179", "E004924"]]}
+{"id": "test-7909", "question": "What book was the final one in the Little Women series?", "answer": "Jo's Boys", "source": "doc", "source_ids": ["D27346", "D07825"]}
+{"id": "test-7967", "question": "Who wrote the Alfred A. Knopf Inc series?", "answer": "Toni Morrison", "source": "table", "source_ids": ["T0001"]}
+{"id": "test-8028", "question": "Who was the bookshop owner that Little, Brown and Company traces its roots to?", "answer": "Ebenezer Battelle", "source": "doc", "source_ids": ["D18135"]}
+{"id": "test-8059", "question": "Which movies are based on the novel Five Point Someone?", "answer": "3 Idiots;Nanban", "source": "doc", "source_ids": ["D04246", "D27071", "D31822"]}
+{"id": "test-8288", "question": "How many day did Piscine survive in sea in the book Life of Pi?", "answer": "227 days", "source": "doc", "source_ids": ["D16617"]}
+{"id": "test-8428", "question": "When was The Wind Through the Keyhole book published?", "answer": "February 2012", "source": "doc", "source_ids": ["D02326"]}
+{"id": "test-8701", "question": "Who is the main character of the Wolf Hall book series?", "answer": "Thomas Cromwell", "source": "doc", "source_ids": ["D25693", "D04691"]}
+{"id": "test-8702", "question": "What is the first name of the Cardinal that Thomas Cromwell advises Wolf Hall book series?", "answer": "Thomas Wolsey", "source": "doc", "source_ids": ["D00564"]}
+{"id": "test-8762", "question": "Which book preceded Kingdom Come in the Left Behind series?", "answer": "Glorious Appearing", "source": "kg", "source_ids": [["E022329", "P155", "E020295"], ["E020295", "P156", "E022329"]]}
+{"id": "test-9304", "question": "Who first published The Lady Astronaut of Mars?", "answer": "Audible", "source": "doc", "source_ids": ["D28809"]}
+{"id": "test-9307", "question": "Mary Robinette Kowal was president of which organization for professional writers between 2019 and 2021?", "answer": "Science Fiction and Fantasy Writers of America", "source": "doc", "source_ids": ["D01309", "D20959", "D30023"]}
+{"id": "test-9356", "question": "What is the name of the school that was the basis of Malory Towers?", "answer": "Benenden School", "source": "doc", "source_ids": ["D11764", "D13773"]}
+{"id": "test-9358", "question": "Name the fifth book in Malory Towers series.", "answer": "In the Fifth at Malory Towers", "source": "doc", "source_ids": ["D25438", "D30955", "D18969"]}
+{"id": "train-1111", "question": "Who is the author of the The Last Thing he told me book?", "answer": "Laura Dave", "source": "kg", "source_ids": [["E003934", "P50", "E022499"]]}
+{"id": "train-1140", "question": "What novel did the Three Laws of Robotics appear in?", "answer": "I, Robot", "source": "doc", "source_ids": ["D18545", "D16299"]}
+{"id": "train-1142", "question": "When was the zeroth law of Robotics given a name?", "answer": "Robots and Empire", "source": "doc", "source_ids": ["D08163", "D15498", "D07612"]}
+{"id": "train-1145", "question": "In which novel did the Three Laws of Robotics first appear?", "answer": "I, Robot", "source": "doc", "source_ids": ["D18545", "D16299"]}
+{"id": "train-1230", "question": "What year did the first feature film adaptation of the novel Nineteen Eighty-Four come out?", "answer": "1956", "source": "doc", "source_ids": ["D00344"]}
+{"id": "train-1233", "question": "Who honored George Orwell as one of \"The 50 greatest British writers since 1945\"?", "answer": "The Times", "source": "doc", "source_ids": ["D16089", "D27254", "D12542"]}
+{"id": "train-1235", "question": "The novel Nineteen Eighty-Four's first feature film adaptation came out in what year?", "answer": "1956", "source": "doc", "source_ids": ["D00344"]}
+{"id": "train-1290", "question": "Who is the author of The Chosen?", "answer": "Chaim Potok", "source": "kg", "source_ids": [["E012806", "P50", "E020409"]]}
+{"id": "train-1295", "question": "Who wrote the novel The Chosen?", "answer": "Chaim Potok", "source": "kg", "source_ids": [["E012806", "P50", "E020409"]]}
+{"id": "train-1412", "question": "Where did Jean Valjean go to prison in Les Misérables?", "answer": "Bagne of Toulon", "source": "doc", "source_ids": ["D17235"]}
+{"id": "train-1439", "question": "Which novelist's mother was Anne-Charlotte-Laure Sallambier and also won the Légion d'honneur?", "answer": "Honoré de Balzac", "source": "kg", "source_ids": [["E009154", "P40", "E027955"], ["E027955", "P25", "E009154"]]}
+{"id": "train-1441", "question": "Which book of Honoré de Balzac is third to feature the character called Rastignac?", "answer": "Les Secrets de la princesse de Cadignan", "source": "kg", "source_ids": [["E014560", "P50", "E027955"]]}
+{"id": "train-1443", "question": "What is the name of the wife of the writer Honoré de Balzac?", "answer": "Ewelina Hańska", "source": "kg", "source_ids": [["E027955", "P26", "E012434"], ["E012434", "P26", "E027955"]]}
+{"id": "train-1444", "question": "Which writer's mother was named Anne-Charlotte-Laure Sallambier and was also conferred upon with Légion d'honneur?", "answer": "Honoré de Balzac", "source": "kg", "source_ids": [["E009154", "P40", "E027955"], ["E027955", "P25", "E009154"]]}
+{"id": "train-1473", "question": "How many copies of The Hunger Games were sold by February, 2010?", "answer": "800,000", "source": "doc", "source_ids": ["D10302", "D06344"]}
+{"id": "train-1623", "question": "What is the Daily mean temperature of Kabul in jan?", "answer": "−2.3", "source": "doc", "source_ids": ["D29202"]}
+{"id": "train-1743", "question": "What was the final publication written by Ian Fleming?", "answer": "Octopussy and The Living Daylights", "source": "kg", "source_ids": [["E006822", "P31", "E005776"], ["E006822", "P179", "E026565"], ["E006822", "P50", "E026324"]]}
+{"id": "train-1833", "question": "What type of bomber did the main character Captain John Yossarian fly in the novel Catch-22?", "answer": "North American B-25 Mitchell", "source": "doc", "source_ids": ["D30683"]}
+{"id": "train-1860", "question": "What book did the character of D'Artagnan die?", "answer": "The Vicomte of Bragelonne: Ten Years Later", "source": "kg", "source_ids": [["E005552", "P1441", "E024609"], ["E024609", "P674", "E005552"]]}
+{"id": "train-1922", "question": "Where is Frodo heading in The Two Towers?", "answer": "Mordor", "source": "doc", "source_ids": ["D11887", "D16196", "D11281"]}
+{"id": "train-1953", "question": "What was the flat number of Sherlock Holmes in the novel A Study in Scarlet?", "answer": "221B", "source": "doc", "source_ids": ["D16159"]}
+{"id": "train-2100", "question": "What is the name of the last Percy Jackson & the Olympians book?", "answer": "The Last Olympian", "source": "kg", "source_ids": [["E010525", "P527", "E010182"], ["E010182", "P179", "E010525"]]}
+{"id": "train-211", "question": "what is the second book of The Kent Family Chronicles?", "answer": "The Rebels", "source": "kg", "source_ids": [["E025316", "P179", "E022382"]]}
+{"id": "train-212", "question": "who wrote the The Kent Family Chronicles series?", "answer": "John Jakes", "source": "kg", "source_ids": [["E022382", "P50", "E005693"], ["E005693", "P800", "E022382"]]}
+{"id": "train-2250", "question": "Who made this genre name popular?", "answer": "Richard Garriott", "source": "doc", "source_ids": ["D19523"]}
+{"id": "train-2278", "question": "What is the name of the first novel of Percy Jackson and the Olympians?", "answer": "The Lightning Thief", "source": "kg", "source_ids": [["E010525", "P527", "E018803"], ["E018803", "P179", "E010525"]]}
+{"id": "train-2279", "question": "What is the name of the second book in the series Percy Jackson and the Olympians?", "answer": "The Sea of Monsters", "source": "kg", "source_ids": [["E010525", "P527", "E027265"], ["E027265", "P179", "E010525"]]}
+{"id": "train-2280", "question": "What is the name of Percy Jackson's mother?", "answer": "Sally Jackson", "source": "kg", "source_ids": [["E003176", "P1441", "E010525"]]}
+{"id": "train-2612", "question": "Who was the main character in A Tale of Two Cities?", "answer": "Alexandre Manette", "source": "doc", "source_ids": ["D11644", "D23448"]}
+{"id": "train-2703", "question": "What is the full meaning of the novel title \"Moby-Dick\"?", "answer": "Different problem", "source": "doc", "source_ids": ["D20981"]}
+{"id": "train-2970", "question": "who is the publisher of The Scarlet Letter?", "answer": "Ticknor, Reed & Fields", "source": "doc", "source_ids": ["D26995"]}
+{"id": "train-3000", "question": "Who originally illustrated the cover?", "answer": "Tim Jacobus", "source": "kg", "source_ids": [["E014379", "P736", "E016467"]]}
+{"id": "train-3002", "question": "What city was it founded in?", "answer": "Wilkinsburg, PA", "source": "kg", "source_ids": [["E005055", "P740", "E005227"]]}
+{"id": "train-3003", "question": "Who was the city named after?", "answer": "John Wilkins Jr.", "source": "kg", "source_ids": [["E005227", "P138", "E022011"]]}
+{"id": "train-3089", "question": "If Beale Street Could Talk is by who?", "answer": "James Baldwin", "source": "kg", "source_ids": [["E021456", "P50", "E012733"]]}
+{"id": "train-3094", "question": "Who created the book If Beale Street Could Talk?", "answer": "James Baldwin", "source": "kg", "source_ids": [["E021456", "P50", "E012733"]]}
+{"id": "train-3121", "question": "What years does The Thorn Birds span?", "answer": "1915 to 1969", "source": "doc", "source_ids": ["D05934"]}
+{"id": "train-3122", "question": "Where does most of the action in The Thorn Birds take place?", "answer": "The Australian Outback", "source": "doc", "source_ids": ["D05934"]}
+{"id": "train-3182", "question": "What was the name of the first Hercule Poirot novel?", "answer": "The Mysterious Affair at Styles", "source": "kg", "source_ids": [["E018042", "P674", "E007949"], ["E018042", "P31", "E024806"], ["E018042", "P50", "E015290"]]}
+{"id": "train-32", "question": "who wrote the Writers & Lovers novel?", "answer": "Lily King", "source": "kg", "source_ids": [["E027858", "P50", "E022623"]]}
+{"id": "train-331", "question": "who is the publisher of the book the Tale of peter Rabbit?", "answer": "Frederick Warne & Co", "source": "kg", "source_ids": [["E010572", "P800", "E020927"], ["E020927", "P50", "E010572"], ["E020927", "P110", "E010572"]]}
+{"id": "train-3417", "question": "What is the name of the second book in the Oz series?", "answer": "The Marvelous Land of Oz", "source": "kg", "source_ids": [["E007560", "P50", "E010175"]]}
+{"id": "train-3420", "question": "What company published this book?", "answer": "Reilly & Lee", "source": "kg", "source_ids": [["E025588", "P123", "E023873"]]}
+{"id": "train-4072", "question": "What is the name of the first book of the series The Farseer Trilogy?", "answer": "Assassin's Apprentice", "source": "kg", "source_ids": [["E012033", "P527", "E011999"], ["E004642", "P179", "E012033"], ["E011999", "P179", "E012033"]]}
+{"id": "train-4073", "question": "What is the second book of The Farseer Trilogy?", "answer": "Assassin's Quest", "source": "kg", "source_ids": [["E012033", "P527", "E012007"], ["E012007", "P179", "E012033"]]}
+{"id": "train-4077", "question": "Name of the first book of the series The Farseer Trilogy?", "answer": "Assassin's Apprentice", "source": "kg", "source_ids": [["E012033", "P527", "E011999"], ["E004642", "P179", "E012033"], ["E011999", "P179", "E012033"]]}
+{"id": "train-4105", "question": "What is the first novel adaptation movie that Matt Damon acted in?", "answer": "The Good Mother", "source": "table", "source_ids": ["T0078"]}
+{"id": "train-4164", "question": "What is the total number of novels that feature Perry Mason?", "answer": "82", "source": "doc", "source_ids": ["D28859"]}
+{"id": "train-4759", "question": "Where did Exodus take place?", "answer": "Cyprus internment camp", "source": "doc", "source_ids": ["D17464"]}
+{"id": "train-4818", "question": "What was the last series title of Empire of the Moghul?", "answer": "Traitors in the Shadows", "source": "table", "source_ids": ["T0026"]}
+{"id": "train-4819", "question": "What was the name of the third series in Empire of the Moghul?", "answer": "Ruler of the World", "source": "table", "source_ids": ["T0026"]}
+{"id": "train-512", "question": "Who director of Little Women?", "answer": "Greta Gerwig", "source": "doc", "source_ids": ["D01187"]}
+{"id": "train-543", "question": "Who are the founders Rupa Publications?", "answer": "D. Mehra and R. K. Mehra", "source": "doc", "source_ids": ["D24708"]}
+{"id": "train-719", "question": "Who wrote the book series The Folk of the Air?", "answer": "Holly Black", "source": "kg", "source_ids": [["E017967", "P50", "E012502"]]}
+{"id": "train-724", "question": "Who is the author of The Folk of the Air book series?", "answer": "Holly Black", "source": "kg", "source_ids": [["E017967", "P50", "E012502"]]}
+{"id": "train-751", "question": "What was the name of Becky Chambers' first published book?", "answer": "The Long Way to a Small, Angry Planet", "source": "kg", "source_ids": [["E012084", "P800", "E016875"], ["E012084", "P1411", "E007702"], ["E016875", "P50", "E012084"]]}
+{"id": "train-93", "question": "What is the name of the book written by Charlotte Brontë in 1833?", "answer": "The Green Dwarf, A Tale of the Perfect Tense", "source": "kg", "source_ids": [["E007559", "P50", "E005745"]]}

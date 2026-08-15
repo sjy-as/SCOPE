@@ -1,0 +1,31 @@
+{
+  "sub_q1": "Who won the Men's John R. Wooden Award in 1986–87?",
+  "sub_q2": "After which idol did [1] choose his jersey number 50?",
+  "rewrite_reasoning": "The question asks for the idol after which the 1986-87 Men's John R. Wooden Award winner chose jersey number 50. First, we need to identify that player. Then, we need to find the idol associated with that player's choice of number 50.",
+  "match1": null,
+  "match2": null,
+  "route1": {
+    "matched_concept": "award_received",
+    "primary_source": "table",
+    "fallback_source": "doc",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: Men's John R. Wooden Award (an award). ASKED target: the winner (player) for the 1986–87 season. Phase-1 rule: relation-first. The concept 'award_received' links award + player + time, matching the pair (award, player). Source selection: The 'award_received' concept exposes only a table source, so primary_source is table. Since only one source is exposed, fallback_source is doc (the only other live source). The table is LIKELY because its elements include 'Season' and 'Player', which directly cover the query. Doc is RULED-OUT because the concept does not expose a doc source, and no other concept's doc source is relevant."
+  },
+  "route2": {
+    "matched_concept": "player",
+    "primary_source": "doc",
+    "fallback_source": "table",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: [1] (a player, since the query asks about 'his jersey number'). ASKED target: the idol after whom [1] chose his jersey number 50. No relation concept in the catalog links a player to an idol or jersey number choice. Thus, the known-entity fallback rule fires: match the concept of the KNOWN entity, which is 'player'. The player concept's doc source describes players with narrative details about their career and choices, likely including jersey number origins. The table source for player_stats provides tabular career stats but not narrative explanations, so doc is primary and table is fallback."
+  },
+  "decompose_llm_calls": [
+    {
+      "stage": "step2.sq",
+      "ts": 1786685492.043035,
+      "prompt": "You are a query decomposition assistant.\n\n        Your job is to transform ONE natural-language semantic query into EXACTLY two sub-questions.\n\n        Requirements:\n        1. The input is already a natural semantic query. Do NOT rewrite it into a different intent.\n        2. Output exactly two sub-questions: q1 and q2.\n        3. q1 should extract the first necessary piece of information.\n        4. q2 should depend on q1 and use [1] to refer to the answer of q1 when needed.\n        5. Do not do event judgment, schema routing, source selection, or query rewriting.\n        6. Keep the sub-questions faithful to the original meaning.\n        7. Return valid JSON only.\n\n        Return format:\n        {\n        \"reasoning\": \"brief explanation of the decomposition\",\n        \"subqueries\": [\n            {\n            \"id\": \"q1\",\n            \"query\": \"...\",\n            \"depends_on\": [],\n            \"variables\": []\n            },\n            {\n            \"id\": \"q2\",\n            \"query\": \"...\",\n            \"depends_on\": [\"q1\"],\n            \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n            }\n        ]\n        }\n\n        Question: For the player who won the Men's John R. Wooden Award in 1986–87, after which idol did this player choose his jersey number 50?\n\n    ",
+      "response": "{\n  \"reasoning\": \"The question asks for the idol after which the 1986-87 Men's John R. Wooden Award winner chose jersey number 50. First, we need to identify that player. Then, we need to find the idol associated with that player's choice of number 50.\",\n  \"subqueries\": [\n    {\n      \"id\": \"q1\",\n      \"query\": \"Who won the Men's John R. Wooden Award in 1986–87?\",\n      \"depends_on\": [],\n      \"variables\": []\n    },\n    {\n      \"id\": \"q2\",\n      \"query\": \"After which idol did [1] choose his jersey number 50?\",\n      \"depends_on\": [\"q1\"],\n      \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n    }\n  ]\n}",
+      "module": "step2.sq",
+      "model": "deepseek-chat"
+    }
+  ]
+}

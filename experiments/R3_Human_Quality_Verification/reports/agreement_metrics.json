@@ -1,0 +1,239 @@
+{
+  "dimensions": {
+    "question_validity": {
+      "exact_agreement": 0.0,
+      "binary_agreement": 0.994153756211634,
+      "pairwise_agreement": {
+        "A_B": 0.0,
+        "A_C": 0.0,
+        "B_C": 0.9997076878105817
+      },
+      "fleiss_kappa_binary": {
+        "kappa": -0.0019525529629166633,
+        "observed_agreement": 0.9961025041410897,
+        "expected_agreement": 0.9961100993780745,
+        "n": 3421
+      },
+      "gwet_ac2": {
+        "ac2": -0.46282416753480865,
+        "weighting_scheme": "quadratic",
+        "observed_weighted_agreement": 0.9258826204162799,
+        "chance_agreement": 0.9493326804214448,
+        "n": 3421,
+        "ci95": [
+          -0.47701467082538473,
+          -0.4463710178471981
+        ]
+      },
+      "krippendorff_alpha_ordinal": {
+        "alpha": -0.46268163375443216,
+        "n": 3421,
+        "ci95": [
+          -0.47687075435929605,
+          -0.44623008721892377
+        ]
+      },
+      "spearman_pairwise": {
+        "A_B": {
+          "rho": 1.0000000000000002,
+          "p_value": 0.0
+        },
+        "A_C": {
+          "rho": 0.9745361730066927,
+          "p_value": 0.0
+        },
+        "B_C": {
+          "rho": 0.9745361730066927,
+          "p_value": 0.0
+        }
+      },
+      "spearman_rho_mean": 0.9830241153377952
+    },
+    "answer_correctness": {
+      "exact_agreement": 0.47705349313066353,
+      "binary_agreement": 0.9415375621163402,
+      "pairwise_agreement": {
+        "A_B": 0.645717626425022,
+        "A_C": 0.6661794796843028,
+        "B_C": 0.6422098801520023
+      },
+      "fleiss_kappa_binary": {
+        "kappa": 0.4273138323546717,
+        "observed_agreement": 0.9610250414108932,
+        "expected_agreement": 0.93194360054241,
+        "n": 3421
+      },
+      "gwet_ac2": {
+        "ac2": 0.4546424124281759,
+        "weighting_scheme": "quadratic",
+        "observed_weighted_agreement": 0.9612632217133232,
+        "chance_agreement": 0.9289699471146075,
+        "n": 3421,
+        "ci95": [
+          0.43333178772837666,
+          0.4776004021536711
+        ]
+      },
+      "krippendorff_alpha_ordinal": {
+        "alpha": 0.4546955506524787,
+        "n": 3421,
+        "ci95": [
+          0.4333870024044203,
+          0.47765130341112105
+        ]
+      },
+      "spearman_pairwise": {
+        "A_B": {
+          "rho": 0.4041791344081287,
+          "p_value": 0.0
+        },
+        "A_C": {
+          "rho": 0.4377505061199471,
+          "p_value": 0.0
+        },
+        "B_C": {
+          "rho": 0.3979652282417862,
+          "p_value": 0.0
+        }
+      },
+      "spearman_rho_mean": 0.413298289589954
+    },
+    "evidence_bridge_consistency": {
+      "exact_agreement": 0.5945629932768196,
+      "binary_agreement": 0.9757380882782812,
+      "pairwise_agreement": {
+        "A_B": 0.7272727272727273,
+        "A_C": 0.7316574101140018,
+        "B_C": 0.7223034200526162
+      },
+      "fleiss_kappa_binary": {
+        "kappa": 0.12725299990168681,
+        "observed_agreement": 0.9838253921855216,
+        "expected_agreement": 0.9814670141373658,
+        "n": 3421
+      },
+      "gwet_ac2": {
+        "ac2": 0.2773966129073976,
+        "weighting_scheme": "quadratic",
+        "observed_weighted_agreement": 0.9673043402946494,
+        "chance_agreement": 0.9547529664413812,
+        "n": 3421,
+        "ci95": [
+          0.2500325721325796,
+          0.29771466257450907
+        ]
+      },
+      "krippendorff_alpha_ordinal": {
+        "alpha": 0.27746702150109337,
+        "n": 3421,
+        "ci95": [
+          0.2501056470071842,
+          0.2977830914302553
+        ]
+      },
+      "spearman_pairwise": {
+        "A_B": {
+          "rho": 0.2887211007416089,
+          "p_value": 0.0
+        },
+        "A_C": {
+          "rho": 0.2651553918891626,
+          "p_value": 0.0
+        },
+        "B_C": {
+          "rho": 0.26029520435696357,
+          "p_value": 0.0
+        }
+      },
+      "spearman_rho_mean": 0.27139056566257835
+    },
+    "cross_source_necessity": {
+      "exact_agreement": 0.45513007892429114,
+      "binary_agreement": 0.9193218357205496,
+      "pairwise_agreement": {
+        "A_B": 0.6439637532885122,
+        "A_C": 0.5589009061677872,
+        "B_C": 0.707395498392283
+      },
+      "fleiss_kappa_binary": {
+        "kappa": 0.471578622181052,
+        "observed_agreement": 0.9462145571470351,
+        "expected_agreement": 0.8982148620198456,
+        "n": 3421
+      },
+      "gwet_ac2": {
+        "ac2": 0.4427578242049486,
+        "weighting_scheme": "quadratic",
+        "observed_weighted_agreement": 0.9596392651054477,
+        "chance_agreement": 0.9275705668958615,
+        "n": 3421,
+        "ci95": [
+          0.41289524622914475,
+          0.4642552052482657
+        ]
+      },
+      "krippendorff_alpha_ordinal": {
+        "alpha": 0.4428121204325155,
+        "n": 3421,
+        "ci95": [
+          0.4129524521886263,
+          0.46430740682696814
+        ]
+      },
+      "spearman_pairwise": {
+        "A_B": {
+          "rho": 0.38003584562083087,
+          "p_value": 0.0
+        },
+        "A_C": {
+          "rho": 0.33055740994476,
+          "p_value": 0.0
+        },
+        "B_C": {
+          "rho": 0.3885332000876172,
+          "p_value": 0.0
+        }
+      },
+      "spearman_rho_mean": 0.36637548521773605
+    }
+  },
+  "macro_average": {
+    "exact_agreement": 0.38168664133294355,
+    "binary_agreement": 0.9576878105817013,
+    "fleiss_kappa": 0.2560482253686235,
+    "gwet_ac2": 0.17799317050142835,
+    "krippendorff_alpha_ordinal": 0.17807326470791385,
+    "spearman_rho_mean": 0.5085221139520159
+  },
+  "overall_pass": {
+    "fleiss_kappa_binary": {
+      "kappa": 0.42606012705928337,
+      "observed_agreement": 0.9002241060118891,
+      "expected_agreement": 0.8261561904091355,
+      "n": 3421
+    },
+    "three_way_binary_agreement": 0.850336159017831,
+    "pass_rate_by_annotator": {
+      "A": 0.8740134463607132,
+      "B": 0.8807366267173341,
+      "C": 0.9567377959660918
+    }
+  },
+  "mean_quality_score_spearman": {
+    "pairwise": {
+      "A_B": {
+        "rho": 0.4634873837904059,
+        "p_value": 0.0
+      },
+      "A_C": {
+        "rho": 0.39066293248534584,
+        "p_value": 0.0
+      },
+      "B_C": {
+        "rho": 0.40775387194757207,
+        "p_value": 0.0
+      }
+    },
+    "mean_rho": 0.42063472940777463
+  }
+}

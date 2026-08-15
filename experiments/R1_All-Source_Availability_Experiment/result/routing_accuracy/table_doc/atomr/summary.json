@@ -1,0 +1,42 @@
+{
+  "input": "/root/autodl-tmp/new_model/qa_bench/table-doc-1120.jsonl",
+  "output_dir": "/root/autodl-tmp/route_result_new/table_doc/atomr",
+  "routing_mode": "atomr",
+  "knowledge_base": [
+    "kg",
+    "table",
+    "doc"
+  ],
+  "prompt_version": "v2",
+  "resume": true,
+  "skipped_existing_success": 0,
+  "processed_this_run": 1120,
+  "profiles_path": null,
+  "total": 1120,
+  "succeeded": 1120,
+  "failed": 0,
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 34,
+    "route1.kg": 815,
+    "route1.table": 271,
+    "route2.doc": 190,
+    "route2.kg": 312,
+    "route2.table": 618
+  },
+  "fallback_source_counts": {
+    "route1.doc": 98,
+    "route1.kg": 282,
+    "route1.table": 740,
+    "route2.doc": 95,
+    "route2.kg": 797,
+    "route2.table": 228
+  },
+  "routing_layer_counts": {
+    "route1.atomr": 1120,
+    "route2.atomr": 1120
+  }
+}

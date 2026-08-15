@@ -1,0 +1,27 @@
+{
+  "domain": "entertainment",
+  "routing_mode": "graph",
+  "knowledge_base": [
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/entertainment/questions.json",
+  "output_dir": "/root/autodl-tmp/BBB_hybridQA/experiments/route_only/outputs/new_model/entertainment",
+  "semantic_catalog": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/entertainment/semantic_catalog/semantic_list_3sources.json",
+  "atomr_prompts": null,
+  "deepsieve_source_summary": null,
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 51.59572432376444,
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 72,
+    "route1.table": 28,
+    "route2.doc": 83,
+    "route2.table": 17
+  }
+}

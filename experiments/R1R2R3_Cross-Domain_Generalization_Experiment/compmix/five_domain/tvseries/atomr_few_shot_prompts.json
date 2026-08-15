@@ -1,0 +1,300 @@
+{
+  "domain": "tvseries",
+  "description": "Leakage-aware tvseries-domain AtomR demonstrations derived from non-evaluation Table, Doc, and KG facts and quality-audited.",
+  "minimum_examples_per_stage": 8,
+  "replace_base_examples": true,
+  "stage_guidance": {
+    "tree_generation": "Keep tvseries questions executable: isolate facts about television series, episodes, seasons, creators, cast, characters, networks, air dates, genres, production, and television awards; add a later child only when it genuinely depends on an earlier bridge answer.",
+    "source_selection": "Use KG for explicit entity-predicate-entity facts and qualifiers; Table for complete structured rows, chronology, rank, filters, comparisons, and aggregation; Text for narrative context, explanation, biography, plot, reception, and contextual wording. Select multiple labels only when the answer truly crosses boundaries.",
+    "direct_answer": "Return short evidence-compatible entities, dates, counts, organizations, places, or phrases about television series, episodes, seasons, creators, cast, characters, networks, air dates, genres, production, and television awards; never invent a fact.",
+    "direct_rag": "Ground every hop in supplied KG triples, table rows, or text passages, distinguishing exact graph edges from prose context and row operations.",
+    "search": "Identify only the entity requested at the current hop from the supplied evidence.",
+    "relate": "Extract the requested relation value exactly for the demonstrated tvseries fact.",
+    "filter": "Apply every condition to the candidate set; use Table rows and KG qualifiers only when explicitly supplied.",
+    "answer_from_child_qa": "Resolve child dependencies in order and report only the final requested answer."
+  },
+  "stages": {
+    "tree_generation": [
+      {
+        "input": "Who is the creator of the character George Costanza?",
+        "output": "{\"Who is the creator of the character George Costanza?\": [\"1. Which character is George Costanza?\", \"2. Who created [1]?\"], \"1. Which character is George Costanza?\": \"Search('George Costanza')\", \"2. Who created [1]?\": \"Relate([1], 'creator')\"}"
+      },
+      {
+        "input": "What is the list of episodes for the TV series Fringe?",
+        "output": "{\"What is the list of episodes for the TV series Fringe?\": [\"1. Which TV series is Fringe?\", \"2. What is the list of episodes for [1]?\"], \"1. Which TV series is Fringe?\": \"Search('Fringe')\", \"2. What is the list of episodes for [1]?\": \"Relate([1], 'list of episodes')\"}"
+      },
+      {
+        "input": "In the TV series Everybody Loves Raymond, what was the rank of season 5?",
+        "output": "{\"In the TV series Everybody Loves Raymond, what was the rank of season 5?\": [\"1. Which table contains season data for Everybody Loves Raymond?\", \"2. What is the rank for season 5 in [1]?\"], \"1. Which table contains season data for Everybody Loves Raymond?\": \"Search('Everybody Loves Raymond season table')\", \"2. What is the rank for season 5 in [1]?\": \"Filter([1], 'Season = 5', 'Rank')\"}"
+      },
+      {
+        "input": "In the TV series The West Wing, how many episodes were in season 4?",
+        "output": "{\"In the TV series The West Wing, how many episodes were in season 4?\": [\"1. Which table contains season data for The West Wing?\", \"2. What is the episode count for season 4 in [1]?\"], \"1. Which table contains season data for The West Wing?\": \"Search('The West Wing season table')\", \"2. What is the episode count for season 4 in [1]?\": \"Filter([1], 'Season = 4', 'Episodes')\"}"
+      },
+      {
+        "input": "According to the text, what award did Donald Sutherland win in 2021?",
+        "output": "{\"According to the text, what award did Donald Sutherland win in 2021?\": [\"1. Which passage mentions Donald Sutherland's 2021 award?\", \"2. What award did he win in 2021 according to [1]?\"], \"1. Which passage mentions Donald Sutherland's 2021 award?\": \"Search('Donald Sutherland 2021 award')\", \"2. What award did he win in 2021 according to [1]?\": \"Filter([1], 'year = 2021', 'award')\"}"
+      },
+      {
+        "input": "According to the text, what was the production company for the TV series Hanna?",
+        "output": "{\"According to the text, what was the production company for the TV series Hanna?\": [\"1. Which passage mentions production companies for Hanna?\", \"2. What production company is mentioned in [1]?\"], \"1. Which passage mentions production companies for Hanna?\": \"Search('Hanna production companies')\", \"2. What production company is mentioned in [1]?\": \"Filter([1], 'production company')\"}"
+      },
+      {
+        "input": "Who is the performer of the character Captain Flint, and what is the date of birth of that performer?",
+        "output": "{\"Who is the performer of the character Captain Flint, and what is the date of birth of that performer?\": [\"1. Who is the performer of the character Captain Flint?\", \"2. What is the date of birth of [1]?\"], \"1. Who is the performer of the character Captain Flint?\": \"Relate('Captain Flint', 'performer')\", \"2. What is the date of birth of [1]?\": \"Relate([1], 'date of birth')\"}"
+      },
+      {
+        "input": "What is the genre of the TV series Star Trek: Enterprise, and what is the country of origin of that series?",
+        "output": "{\"What is the genre of the TV series Star Trek: Enterprise, and what is the country of origin of that series?\": [\"1. What is the genre of Star Trek: Enterprise?\", \"2. What is the country of origin of Star Trek: Enterprise?\"], \"1. What is the genre of Star Trek: Enterprise?\": \"Relate('Star Trek: Enterprise', 'genre')\", \"2. What is the country of origin of Star Trek: Enterprise?\": \"Relate('Star Trek: Enterprise', 'country of origin')\"}"
+      }
+    ],
+    "source_selection": [
+      {
+        "input": "Who created the character George Costanza?",
+        "output": "KG"
+      },
+      {
+        "input": "Which actor performed the role of Sebastian Blood?",
+        "output": "KG"
+      },
+      {
+        "input": "What was the season premiere date for season 5 of Everybody Loves Raymond?",
+        "output": "Table"
+      },
+      {
+        "input": "How many episodes were in season 2 of The West Wing?",
+        "output": "Table"
+      },
+      {
+        "input": "For which television film did Donald Sutherland win a Primetime Emmy Award?",
+        "output": "Text"
+      },
+      {
+        "input": "When did filming for season six of Community begin?",
+        "output": "Text"
+      },
+      {
+        "input": "What is the title of the list of episodes for The Walking Dead, and how many episodes are in the Reptar Returns! DVD?",
+        "output": "KG, Table"
+      },
+      {
+        "input": "Who played Sameen Shaw in Person of Interest, and which actor performed the role of Captain Flint?",
+        "output": "KG, Text"
+      }
+    ],
+    "direct_answer": [
+      {
+        "input": "Who published the comic book series 300?",
+        "output": "So the answer is: (1) Paraphrase Answer: The publisher of 300 is Dark Horse Comics. (2) Answer List: [\"Dark Horse Comics\"]"
+      },
+      {
+        "input": "Who created the character George Costanza?",
+        "output": "So the answer is: (1) Paraphrase Answer: George Costanza was created by Larry David. (2) Answer List: [\"Larry David\"]"
+      },
+      {
+        "input": "What is the list of episodes for the TV series Fringe?",
+        "output": "So the answer is: (1) Paraphrase Answer: The list of episodes for Fringe is the list of Fringe episodes. (2) Answer List: [\"list of Fringe episodes\"]"
+      },
+      {
+        "input": "In the TV series Everybody Loves Raymond, what was the rank of season 5 in its TV season?",
+        "output": "So the answer is: (1) Paraphrase Answer: Season 5 of Everybody Loves Raymond ranked #5 in the 2000-01 TV season. (2) Answer List: [\"#5\"]"
+      },
+      {
+        "input": "What was the viewership in millions for season 1 of The West Wing?",
+        "output": "So the answer is: (1) Paraphrase Answer: Season 1 of The West Wing had 13.0 million viewers. (2) Answer List: [\"13.0\"]"
+      },
+      {
+        "input": "What was the season premiere date for season 2 of House (TV series)?",
+        "output": "So the answer is: (1) Paraphrase Answer: The season premiere of season 2 of House was September 13, 2005. (2) Answer List: [\"September 13, 2005\"]"
+      },
+      {
+        "input": "For which television film did Donald Sutherland win a Primetime Emmy Award?",
+        "output": "So the answer is: (1) Paraphrase Answer: Donald Sutherland won a Primetime Emmy Award for his performance in Citizen X. (2) Answer List: [\"Citizen X\"]"
+      },
+      {
+        "input": "When did the series Community celebrate the milestone of 100 episodes?",
+        "output": "So the answer is: (1) Paraphrase Answer: Community celebrated its 100th episode on December 8, 2014. (2) Answer List: [\"December 8, 2014\"]"
+      }
+    ],
+    "direct_rag": [
+      {
+        "input": "Supporting knowledge: [{\"source\": \"KG\", \"relation_id\": \"P170\", \"relation_name\": \"creator\", \"sample_triples\": [\"List of Prison Break characters --creator--> Paul Scheuring\", \"George Costanza --creator--> Larry David\", \"Buffy the Vampire Slayer --creator--> Joss Whedon\", \"Will & Grace --creator--> Max Mutchnick\"]}] Question: Who created the character George Costanza?",
+        "output": "So the answer is: (1) Paraphrase Answer: The creator of George Costanza is Larry David.; (2) Answer List: [\"Larry David\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"KG\", \"relation_id\": \"P175\", \"relation_name\": \"performer\", \"sample_triples\": [\"Sebastian Blood --performer--> Kevin Alejandro\", \"Captain Flint --performer--> Donald Sutherland\", \"Watcher --performer--> Donald Sutherland\", \"2020 virtual read-through of Fast Times at Ridgemont High --performer--> Matthew McConaughey\"]}] Question: Which actor performed the role of Captain Flint?",
+        "output": "So the answer is: (1) Paraphrase Answer: The performer of Captain Flint is Donald Sutherland.; (2) Answer List: [\"Donald Sutherland\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"Table\", \"table_id\": \"T0216\", \"title\": \"Everybody Loves Raymond\", \"headers\": [\"Season\", \"Episodes\", \"Timeslot (EST)\", \"Season premiere\", \"Season finale\", \"TV season\", \"Rank\", \"Rating\"], \"sample_rows\": [[\"5\", \"25\", \"Monday 9:00 &nbsp; p.m.\", \"October 2, 2000\", \"May 21, 2001\", \"2000-01\", \"#5\", \"19.1\"], [\"2\", \"25\", \"Monday 8:30 &nbsp; p.m.\", \"September 22, 1997\", \"May 18, 1998\", \"1997-98\", \"#33\", \"13.3\"], [\"6\", \"24\", \"Monday 9:00 &nbsp; p.m.\", \"September 24, 2001\", \"May 13, 2002\", \"2001-02\", \"#4\", \"20.0\"]]}] Question: In the TV series Everybody Loves Raymond, what was the rank of season 5 in its TV season?",
+        "output": "So the answer is: (1) Paraphrase Answer: Season 5 of Everybody Loves Raymond ranked #5 in the 2000-01 TV season.; (2) Answer List: [\"#5\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"Table\", \"table_id\": \"T0832\", \"title\": \"The West Wing\", \"headers\": [\"Season\", \"Episodes\", \"Timeslot\", \"Season premiere\", \"Season finale\", \"TV season\", \"Ranking\", \"Viewers(in millions)\"], \"sample_rows\": [[\"4\", \"23\", \"Wednesday 9:00 pm\", \"September 25, 2002\", \"May 14, 2003\", \"2002–03\", \"#22\", \"13.5\"], [\"6\", \"22\", \"Wednesday 9:00 pm\", \"October 20, 2004\", \"April 6, 2005\", \"2004–05\", \"#35\", \"11.1\"], [\"2\", \"22\", \"Wednesday 9:00 pm\", \"October 4, 2000\", \"May 16, 2001\", \"2000–01\", \"#13\", \"17.0\"], [\"1\", \"22\", \"Wednesday 9:00 pm\", \"September 22, 1999\", \"May 17, 2000\", \"1999–2000\", \"#27\", \"13.0\"]]}] Question: What was the viewership in millions for season 2 of The West Wing?",
+        "output": "So the answer is: (1) Paraphrase Answer: Season 2 of The West Wing had 17.0 million viewers.; (2) Answer List: [\"17.0\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"Text\", \"title\": \"Donald Sutherland filmography\", \"sample_passages\": [\"Donald Sutherland filmography, An inductee of the Hollywood Walk of Fame and Canadian Walk of Fame, he also received a Canadian Academy Award for the drama film Threshold (1981).\", \"Donald Sutherland filmography, He was nominated for eight Golden Globe Awards, winning two for his performances in the television films Citizen X (1995) and Path to War (2002); the former also earned him a Primetime Emmy Award.\", \"Donald Sutherland filmography, In 2021, he won the Critics' Choice Television Award for Best Supporting Actor in a Movie/Miniseries for his work in the HBO miniseries The Undoing (2020).\", \"Donald Sutherland filmography, In 2017, he received an Academy Honorary Award for his contributions to cinema.\"]}] Question: For which television film did Donald Sutherland win a Primetime Emmy Award?",
+        "output": "So the answer is: (1) Paraphrase Answer: Donald Sutherland won a Primetime Emmy Award for his performance in the television film Citizen X.; (2) Answer List: [\"Citizen X\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"Text\", \"title\": \"Community (TV series)\", \"sample_passages\": [\"Community (TV series), Post-finale Since its final episode, Community has appeared on a number of lists determining the greatest television shows of all-time.\", \"Community (TV series), Throughout the series, Michael Haggins' song \\\"Daybreak\\\" can be heard.\", \"Community (TV series), Filming began for season six on November 17, 2014, and on December 8, 2014, the series celebrated the milestone of 100 episodes.\", \"Community (TV series), At the 2010 Teen Choice Awards, the series received a nomination for Breakout Show and Ken Jeong was nominated for Breakout Star Male.\"]}] Question: What song can be heard throughout the series Community?",
+        "output": "So the answer is: (1) Paraphrase Answer: The song 'Daybreak' by Michael Haggins can be heard throughout Community.; (2) Answer List: [\"Daybreak\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"KG\", \"relation_id\": \"P1811\", \"relation_name\": \"list of episodes\", \"sample_triples\": [\"Three's Company --list of episodes--> list of Three's Company episodes\", \"The Mary Tyler Moore Show --list of episodes--> list of The Mary Tyler Moore Show episodes\", \"The Walking Dead --list of episodes--> list of The Walking Dead episodes\", \"Fringe --list of episodes--> list of Fringe episodes\"]}, {\"source\": \"Table\", \"table_id\": \"T0676\", \"title\": \"Rugrats\", \"headers\": [\"Title\", \"Episode count\", \"Movie count\", \"Release date\", \"Episodes\"], \"sample_rows\": [[\"\", \"Nick Picks Vol. 1\", \"1\", \"0\", \"May 24, 2005\"], [\"\", \"Reptar Returns!\", \"3\", \"0\", \"July 8, 2014\"], [\"\", \"Nick Picks Vol. 2\", \"1\", \"0\", \"October 18, 2005\"], [\"\", \"The Trilogy Movie Collection\", \"0\", \"3\", \"March 15, 2011 (DVD) March 8, 2022 (Blu-ray)\"]]}] Question: What is the title of the first episode list for The Walking Dead, and what is the release date of the first DVD volume listed for Rugrats?",
+        "output": "So the answer is: (1) Paraphrase Answer: The list of episodes for The Walking Dead is 'list of The Walking Dead episodes', and the first DVD volume for Rugrats, 'Nick Picks Vol. 1', was released on May 24, 2005.; (2) Answer List: [\"list of The Walking Dead episodes\", \"May 24, 2005\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"KG\", \"relation_id\": \"P57\", \"relation_name\": \"director\", \"sample_triples\": [\"Yankee White --director--> Donald Bellisario\", \"The Nexus Event --director--> Kate Herron\", \"Chosen --director--> Winrich Kolbe\", \"The Chronicles of Riddick: Dark Fury --director--> Peter Chung\"]}, {\"source\": \"Text\", \"title\": \"Stranger Things (season 2)\", \"sample_passages\": [\"Stranger Things (season 2), On Metacritic, the second season has a normalized score of 78 out of 100, based on 33 critics, indicating \\\"generally favorable reviews\\\".\", \"Stranger Things (season 2), Other data The second season has been recognized by Parrot Analytics as the most in-demand digital original series of the world in 2017 and is included in the 2019 edition of Guinness World Records.\", \"Stranger Things (season 2), Filming for the season officially wrapped on June 3, 2017.\", \"Stranger Things (season 2), \\\"The Duffer Brothers felt that the second season should be treated more like a sequel rather than a continuation, and thus opted to call the second Stranger Things 2.\"]}] Question: Who directed the episode 'The Nexus Event' and what did the Duffer Brothers decide to call the second season of Stranger Things?",
+        "output": "So the answer is: (1) Paraphrase Answer: The director of 'The Nexus Event' is Kate Herron, and the Duffer Brothers decided to call the second season of Stranger Things 'Stranger Things 2'.; (2) Answer List: [\"Kate Herron\", \"Stranger Things 2\"]"
+      }
+    ],
+    "search": [
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P170\", \"relation_name\": \"creator\", \"sample_triples\": [\"List of Prison Break characters --creator--> Paul Scheuring\", \"George Costanza --creator--> Larry David\", \"Buffy the Vampire Slayer --creator--> Joss Whedon\", \"Will & Grace --creator--> Max Mutchnick\"]}] Question: Who created the character George Costanza?",
+        "output": "So the answer is: (1) Paraphrase Answer: Larry David; (2) Answer List: [\"Larry David\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P175\", \"relation_name\": \"performer\", \"sample_triples\": [\"Sebastian Blood --performer--> Kevin Alejandro\", \"Captain Flint --performer--> Donald Sutherland\", \"Watcher --performer--> Donald Sutherland\", \"2020 virtual read-through of Fast Times at Ridgemont High --performer--> Matthew McConaughey\"]}] Question: Which actor performed the role of Sebastian Blood?",
+        "output": "So the answer is: (1) Paraphrase Answer: Kevin Alejandro; (2) Answer List: [\"Kevin Alejandro\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P57\", \"relation_name\": \"director\", \"sample_triples\": [\"Yankee White --director--> Donald Bellisario\", \"The Nexus Event --director--> Kate Herron\", \"Chosen --director--> Winrich Kolbe\", \"The Chronicles of Riddick: Dark Fury --director--> Peter Chung\"]}] Question: Who directed the episode 'Chosen'?",
+        "output": "So the answer is: (1) Paraphrase Answer: Winrich Kolbe; (2) Answer List: [\"Winrich Kolbe\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0216\", \"title\": \"Everybody Loves Raymond\", \"headers\": [\"Season\", \"Episodes\", \"Timeslot (EST)\", \"Season premiere\", \"Season finale\", \"TV season\", \"Rank\", \"Rating\"], \"sample_rows\": [[\"5\", \"25\", \"Monday 9:00 &nbsp; p.m.\", \"October 2, 2000\", \"May 21, 2001\", \"2000-01\", \"#5\", \"19.1\"], [\"2\", \"25\", \"Monday 8:30 &nbsp; p.m.\", \"September 22, 1997\", \"May 18, 1998\", \"1997-98\", \"#33\", \"13.3\"], [\"6\", \"24\", \"Monday 9:00 &nbsp; p.m.\", \"September 24, 2001\", \"May 13, 2002\", \"2001-02\", \"#4\", \"20.0\"]]}] Question: In the TV series 'Everybody Loves Raymond', what was the rank of season 5?",
+        "output": "So the answer is: (1) Paraphrase Answer: #5; (2) Answer List: [\"#5\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0832\", \"title\": \"The West Wing\", \"headers\": [\"Season\", \"Episodes\", \"Timeslot\", \"Season premiere\", \"Season finale\", \"TV season\", \"Ranking\", \"Viewers(in millions)\"], \"sample_rows\": [[\"4\", \"23\", \"Wednesday 9:00 pm\", \"September 25, 2002\", \"May 14, 2003\", \"2002–03\", \"#22\", \"13.5\"], [\"6\", \"22\", \"Wednesday 9:00 pm\", \"October 20, 2004\", \"April 6, 2005\", \"2004–05\", \"#35\", \"11.1\"], [\"2\", \"22\", \"Wednesday 9:00 pm\", \"October 4, 2000\", \"May 16, 2001\", \"2000–01\", \"#13\", \"17.0\"], [\"1\", \"22\", \"Wednesday 9:00 pm\", \"September 22, 1999\", \"May 17, 2000\", \"1999–2000\", \"#27\", \"13.0\"]]}] Question: What was the season premiere date of season 1 of 'The West Wing'?",
+        "output": "So the answer is: (1) Paraphrase Answer: September 22, 1999; (2) Answer List: [\"September 22, 1999\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0284\", \"title\": \"House (TV series)\", \"headers\": [\"Season\", \"Episodes\", \"Timeslot (ET)\", \"Season premiere\", \"Season finale\", \"TV season\", \"Rank\", \"Viewers(millions)\"], \"sample_rows\": [[\"2\", \"24\", \"Tuesday 9:00 pm\", \"September 13, 2005\", \"May 23, 2006\", \"2005–2006\", \"#10\", \"17.35\"]]}] Question: How many episodes were in season 2 of 'House (TV series)'?",
+        "output": "So the answer is: (1) Paraphrase Answer: 24; (2) Answer List: [\"24\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"Donald Sutherland filmography\", \"sample_passages\": [\"Donald Sutherland filmography, An inductee of the Hollywood Walk of Fame and Canadian Walk of Fame, he also received a Canadian Academy Award for the drama film Threshold (1981).\", \"Donald Sutherland filmography, He was nominated for eight Golden Globe Awards, winning two for his performances in the television films Citizen X (1995) and Path to War (2002); the former also earned him a Primetime Emmy Award.\", \"Donald Sutherland filmography, In 2021, he won the Critics' Choice Television Award for Best Supporting Actor in a Movie/Miniseries for his work in the HBO miniseries The Undoing (2020).\", \"Donald Sutherland filmography, In 2017, he received an Academy Honorary Award for his contributions to cinema.\"]}] Question: For which television film did Donald Sutherland win a Primetime Emmy Award?",
+        "output": "So the answer is: (1) Paraphrase Answer: Citizen X; (2) Answer List: [\"Citizen X\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"Community (TV series)\", \"sample_passages\": [\"Community (TV series), Post-finale Since its final episode, Community has appeared on a number of lists determining the greatest television shows of all-time.\", \"Community (TV series), Throughout the series, Michael Haggins' song \\\"Daybreak\\\" can be heard.\", \"Community (TV series), Filming began for season six on November 17, 2014, and on December 8, 2014, the series celebrated the milestone of 100 episodes.\", \"Community (TV series), At the 2010 Teen Choice Awards, the series received a nomination for Breakout Show and Ken Jeong was nominated for Breakout Star Male.\"]}] Question: When did the series 'Community' celebrate its 100th episode?",
+        "output": "So the answer is: (1) Paraphrase Answer: December 8, 2014; (2) Answer List: [\"December 8, 2014\"]"
+      }
+    ],
+    "relate": [
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P123\", \"relation_name\": \"publisher\", \"sample_triples\": [\"Dark Horse Presents Volume 1 #102 --publisher--> Dark Horse Comics\", \"Aliens: Kidnapped --publisher--> Dark Horse Comics\", \"300 --publisher--> Dark Horse Comics\", \"My Hero Academia --publisher [language of work or name: Italian]--> Star Comics\"]}] Question: Who published Dark Horse Presents Volume 1 #102?",
+        "output": "So the answer is: (1) Paraphrase Answer: Dark Horse Comics; (2) Answer List: [\"Dark Horse Comics\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P170\", \"relation_name\": \"creator\", \"sample_triples\": [\"List of Prison Break characters --creator--> Paul Scheuring\", \"George Costanza --creator--> Larry David\", \"Buffy the Vampire Slayer --creator--> Joss Whedon\", \"Will & Grace --creator--> Max Mutchnick\"]}] Question: Who created George Costanza?",
+        "output": "So the answer is: (1) Paraphrase Answer: Larry David; (2) Answer List: [\"Larry David\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P175\", \"relation_name\": \"performer\", \"sample_triples\": [\"Sebastian Blood --performer--> Kevin Alejandro\", \"Captain Flint --performer--> Donald Sutherland\", \"Watcher --performer--> Donald Sutherland\", \"2020 virtual read-through of Fast Times at Ridgemont High --performer--> Matthew McConaughey\"]}] Question: Who performed the character Captain Flint?",
+        "output": "So the answer is: (1) Paraphrase Answer: Donald Sutherland; (2) Answer List: [\"Donald Sutherland\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0216\", \"title\": \"Everybody Loves Raymond\", \"headers\": [\"Season\", \"Episodes\", \"Timeslot (EST)\", \"Season premiere\", \"Season finale\", \"TV season\", \"Rank\", \"Rating\"], \"sample_rows\": [[\"5\", \"25\", \"Monday 9:00 &nbsp; p.m.\", \"October 2, 2000\", \"May 21, 2001\", \"2000-01\", \"#5\", \"19.1\"], [\"2\", \"25\", \"Monday 8:30 &nbsp; p.m.\", \"September 22, 1997\", \"May 18, 1998\", \"1997-98\", \"#33\", \"13.3\"], [\"6\", \"24\", \"Monday 9:00 &nbsp; p.m.\", \"September 24, 2001\", \"May 13, 2002\", \"2001-02\", \"#4\", \"20.0\"]]}] Question: What was the season premiere date for season 5 of Everybody Loves Raymond?",
+        "output": "So the answer is: (1) Paraphrase Answer: October 2, 2000; (2) Answer List: [\"October 2, 2000\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0832\", \"title\": \"The West Wing\", \"headers\": [\"Season\", \"Episodes\", \"Timeslot\", \"Season premiere\", \"Season finale\", \"TV season\", \"Ranking\", \"Viewers(in millions)\"], \"sample_rows\": [[\"4\", \"23\", \"Wednesday 9:00 pm\", \"September 25, 2002\", \"May 14, 2003\", \"2002–03\", \"#22\", \"13.5\"], [\"6\", \"22\", \"Wednesday 9:00 pm\", \"October 20, 2004\", \"April 6, 2005\", \"2004–05\", \"#35\", \"11.1\"], [\"2\", \"22\", \"Wednesday 9:00 pm\", \"October 4, 2000\", \"May 16, 2001\", \"2000–01\", \"#13\", \"17.0\"], [\"1\", \"22\", \"Wednesday 9:00 pm\", \"September 22, 1999\", \"May 17, 2000\", \"1999–2000\", \"#27\", \"13.0\"]]}] Question: How many episodes were in season 2 of The West Wing?",
+        "output": "So the answer is: (1) Paraphrase Answer: 22; (2) Answer List: [\"22\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0459\", \"title\": \"List of Downton Abbey characters\", \"headers\": [\"Series 1\", \"Series 2\", \"Series 3\", \"Series 4\", \"Series 5\", \"Series 6\", \"Downton Abbey\", \"A New Era\"], \"sample_rows\": [[\"Actor\", \"Character\", \"Robert Bathurst\", \"Sir Anthony Strallan\", \"\", \"\", \"Recurring\", \"colspan=\\\"6\\\"\"], [\"Brendan Patricks\", \"The Hon Evelyn Napier\", \"Recurring\", \"colspan=\\\"2\\\"\", \"Recurring\", \"\", \"Guest\", \"colspan=\\\"3\\\"\"], [\"Paul Copley\", \"Mr Mason\", \"\", \"colspan=\\\"2\\\" Recurring\", \"Guest\", \"colspan=\\\"2\\\" Recurring\", \"\", \"colspan=\\\"2\\\" Guest\"]]}] Question: In which series did Brendan Patricks appear as The Hon Evelyn Napier?",
+        "output": "So the answer is: (1) Paraphrase Answer: Series 1 and Series 2; (2) Answer List: [\"Series 1\", \"Series 2\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"Donald Sutherland filmography\", \"sample_passages\": [\"Donald Sutherland filmography, An inductee of the Hollywood Walk of Fame and Canadian Walk of Fame, he also received a Canadian Academy Award for the drama film Threshold (1981).\", \"Donald Sutherland filmography, He was nominated for eight Golden Globe Awards, winning two for his performances in the television films Citizen X (1995) and Path to War (2002); the former also earned him a Primetime Emmy Award.\", \"Donald Sutherland filmography, In 2021, he won the Critics' Choice Television Award for Best Supporting Actor in a Movie/Miniseries for his work in the HBO miniseries The Undoing (2020).\", \"Donald Sutherland filmography, In 2017, he received an Academy Honorary Award for his contributions to cinema.\"]}] Question: For which television film did Donald Sutherland win a Primetime Emmy Award?",
+        "output": "So the answer is: (1) Paraphrase Answer: Citizen X; (2) Answer List: [\"Citizen X\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"Community (TV series)\", \"sample_passages\": [\"Community (TV series), Post-finale Since its final episode, Community has appeared on a number of lists determining the greatest television shows of all-time.\", \"Community (TV series), Throughout the series, Michael Haggins' song \\\"Daybreak\\\" can be heard.\", \"Community (TV series), Filming began for season six on November 17, 2014, and on December 8, 2014, the series celebrated the milestone of 100 episodes.\", \"Community (TV series), At the 2010 Teen Choice Awards, the series received a nomination for Breakout Show and Ken Jeong was nominated for Breakout Star Male.\"]}] Question: When did Community celebrate its 100th episode?",
+        "output": "So the answer is: (1) Paraphrase Answer: December 8, 2014; (2) Answer List: [\"December 8, 2014\"]"
+      }
+    ],
+    "filter": [
+      {
+        "input": "Candidates: [\"George Costanza\", \"Cosmo Kramer\", \"Elaine Benes\", \"Jerry Seinfeld\"]. Condition: Which candidate was created by Larry David?",
+        "output": "So the answer is: (1) Paraphrase Answer: George Costanza; (2) Answer List: [\"George Costanza\"]"
+      },
+      {
+        "input": "Candidates: [\"Kevin Alejandro\", \"Donald Sutherland\", \"Matthew McConaughey\", \"Kate Herron\"]. Condition: Which candidate performed the character Captain Flint?",
+        "output": "So the answer is: (1) Paraphrase Answer: Donald Sutherland; (2) Answer List: [\"Donald Sutherland\"]"
+      },
+      {
+        "input": "Candidates: [\"Syfy\", \"Disney Channel\", \"KSA Network\", \"tvN\"]. Condition: Which candidate was the original broadcaster of White Collar?",
+        "output": "So the answer is: (1) Paraphrase Answer: KSA Network; (2) Answer List: [\"KSA Network\"]"
+      },
+      {
+        "input": "Candidates: [\"Season 2\", \"Season 5\", \"Season 6\"]. Condition: Which candidate season of Everybody Loves Raymond had 25 episodes and premiered on October 2, 2000?",
+        "output": "So the answer is: (1) Paraphrase Answer: Season 5; (2) Answer List: [\"Season 5\"]"
+      },
+      {
+        "input": "Candidates: [\"Season 1\", \"Season 2\", \"Season 4\", \"Season 6\"]. Condition: Which candidate season of The West Wing had 22 episodes and aired in the 2000–01 TV season?",
+        "output": "So the answer is: (1) Paraphrase Answer: Season 2; (2) Answer List: [\"Season 2\"]"
+      },
+      {
+        "input": "Candidates: [\"Robert Bathurst\", \"Brendan Patricks\", \"Paul Copley\"]. Condition: Which candidate actor played The Hon Evelyn Napier in Downton Abbey?",
+        "output": "So the answer is: (1) Paraphrase Answer: Brendan Patricks; (2) Answer List: [\"Brendan Patricks\"]"
+      },
+      {
+        "input": "Candidates: [\"Citizen X\", \"Path to War\", \"The Undoing\", \"Threshold\"]. Condition: Which candidate work earned Donald Sutherland a Primetime Emmy Award?",
+        "output": "So the answer is: (1) Paraphrase Answer: Citizen X; (2) Answer List: [\"Citizen X\"]"
+      },
+      {
+        "input": "Candidates: [\"2010 Teen Choice Awards\", \"2010 Emmy Awards\", \"2010 Golden Globe Awards\", \"2010 Critics' Choice Awards\"]. Condition: At which candidate awards did Community receive a nomination for Breakout Show?",
+        "output": "So the answer is: (1) Paraphrase Answer: 2010 Teen Choice Awards; (2) Answer List: [\"2010 Teen Choice Awards\"]"
+      }
+    ],
+    "answer_from_child_qa": [
+      {
+        "input": "Child QA 1: Who created the character George Costanza? Child QA 2: Which TV series features the character created by the person from Child QA 1? Final question: Name the TV series that features George Costanza.",
+        "output": "So the answer is: (1) Paraphrase Answer: The creator of George Costanza is Larry David. The TV series that features George Costanza is Seinfeld. (2) Answer List: [\"Seinfeld\"]"
+      },
+      {
+        "input": "Child QA 1: Who performed the character Sebastian Blood? Child QA 2: In which TV series does the performer from Child QA 1 appear as a character? Final question: Name the TV series where Kevin Alejandro plays Sebastian Blood.",
+        "output": "So the answer is: (1) Paraphrase Answer: Kevin Alejandro performed Sebastian Blood. The TV series is Arrow. (2) Answer List: [\"Arrow\"]"
+      },
+      {
+        "input": "Child QA 1: What was the season premiere date for season 5 of Everybody Loves Raymond? Child QA 2: In which TV season did the season with that premiere date air? Final question: What TV season did season 5 of Everybody Loves Raymond air in?",
+        "output": "So the answer is: (1) Paraphrase Answer: Season 5 of Everybody Loves Raymond premiered on October 2, 2000. That season aired in the 2000-01 TV season. (2) Answer List: [\"2000-01\"]"
+      },
+      {
+        "input": "Child QA 1: What was the season premiere date for season 2 of The West Wing? Child QA 2: How many episodes did the season with that premiere date have? Final question: How many episodes were in season 2 of The West Wing?",
+        "output": "So the answer is: (1) Paraphrase Answer: Season 2 of The West Wing premiered on October 4, 2000. That season had 22 episodes. (2) Answer List: [\"22\"]"
+      },
+      {
+        "input": "Child QA 1: What award did Donald Sutherland win for his performance in Citizen X? Child QA 2: For which TV film did he win that award? Final question: Name the TV film for which Donald Sutherland won a Primetime Emmy Award.",
+        "output": "So the answer is: (1) Paraphrase Answer: Donald Sutherland won a Primetime Emmy Award for his performance in Citizen X. The TV film is Citizen X. (2) Answer List: [\"Citizen X\"]"
+      },
+      {
+        "input": "Child QA 1: When did filming begin for season six of Community? Child QA 2: What milestone did the series celebrate on December 8, 2014? Final question: What milestone did Community celebrate on December 8, 2014?",
+        "output": "So the answer is: (1) Paraphrase Answer: Filming for season six began on November 17, 2014. On December 8, 2014, the series celebrated the milestone of 100 episodes. (2) Answer List: [\"100 episodes\"]"
+      },
+      {
+        "input": "Child QA 1: What is the list of episodes for The Walking Dead? Child QA 2: According to that list, what is the title of the first episode? Final question: What is the title of the first episode of The Walking Dead?",
+        "output": "So the answer is: (1) Paraphrase Answer: The list of episodes for The Walking Dead is 'list of The Walking Dead episodes'. The first episode is titled 'Days Gone Bye'. (2) Answer List: [\"Days Gone Bye\"]"
+      },
+      {
+        "input": "Child QA 1: What is the original broadcaster of White Collar? Child QA 2: In which country did that broadcaster premiere the series Person of Interest? Final question: In which country did the original broadcaster of White Collar premiere Person of Interest?",
+        "output": "So the answer is: (1) Paraphrase Answer: The original broadcaster of White Collar is KSA Network. Person of Interest premiered in the UK on Channel 5. (2) Answer List: [\"UK\"]"
+      }
+    ]
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_policy": "question_text_excluded_and_exact_gold_source_records_excluded",
+    "live_sources": [
+      "KG",
+      "Table",
+      "Text"
+    ]
+  }
+}

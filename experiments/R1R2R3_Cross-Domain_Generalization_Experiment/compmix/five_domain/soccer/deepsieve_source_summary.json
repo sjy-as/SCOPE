@@ -1,0 +1,63 @@
+{
+  "domain": "soccer",
+  "generated_from": "semantic_catalog_build_report.json",
+  "multi_source_patterns": [
+    "Player career statistics and match results are best retrieved from tables, which provide structured rows for each season, club, and competition.",
+    "Narrative descriptions of events, biographies, and contextual details are best found in documents, which offer prose explanations and background.",
+    "Explicit relationships between entities (e.g., player-club, player-position, club-league) are best queried from the knowledge graph, which encodes triples with qualifiers.",
+    "Cross-source queries often require combining table data (e.g., goals per season) with document context (e.g., career highlights) and KG relations (e.g., team membership)."
+  ],
+  "routing_boundary": "Use tables for precise, row-level facts and comparisons; use documents for narrative, explanatory, and subjective content; use the knowledge graph for direct entity-relation queries and disambiguation. Avoid using tables for open-ended questions, documents for exact numeric lookups, or KG for complex aggregations that require table joins.",
+  "sources": {
+    "doc": {
+      "data_shape": "Narrative passages with rich textual descriptions, often several paragraphs long, covering biographies, match reports, historical accounts, and contextual information. Information is embedded in prose, not structured fields.",
+      "summary": "Documents provide deep contextual and explanatory content, ideal for understanding the 'why' and 'how' behind events, player careers, and club histories.",
+      "best_for": [
+        "Biographical narratives and career overviews of players, coaches, and officials.",
+        "Match reports and game summaries that include tactical analysis, key moments, and player performances.",
+        "Historical accounts of tournaments, clubs, and rivalries, providing background and context.",
+        "Explanations of rules, regulations, and organizational structures (e.g., UEFA, FIFA)."
+      ],
+      "avoid_when": [
+        "When exact numerical data (e.g., goals scored, match dates) is required; tables are more reliable.",
+        "When a direct factual relationship (e.g., 'player X played for club Y') is needed; KG is more precise.",
+        "When comparing multiple entities across many attributes; tables allow easier side-by-side comparison."
+      ]
+    },
+    "kg": {
+      "data_shape": "Structured triples (subject, predicate, object) with optional qualifiers (e.g., start time, end time). Represents explicit relationships between entities, such as 'player - employer - club' or 'club - located in - city'. Contains a wide range of predicates, including some that are broad or distractor relations.",
+      "summary": "The knowledge graph offers precise, queryable relationships between entities, enabling exact fact retrieval and disambiguation. However, it may include noisy or irrelevant predicates, so entity and predicate compatibility is crucial.",
+      "best_for": [
+        "Direct factual queries: 'Who is the employer of X?' or 'What is the eye color of Y?'",
+        "Disambiguating entities with similar names by checking their relations (e.g., distinguishing between football clubs).",
+        "Temporal queries using qualifiers like 'start time' and 'end time' (e.g., 'When did player Z play for club W?').",
+        "Exploring entity connections, such as 'Which players are represented by agent A?'"
+      ],
+      "avoid_when": [
+        "When the answer requires narrative explanation or context; documents are better.",
+        "When the query involves aggregation or statistical analysis (e.g., total goals per season); tables are more efficient.",
+        "When the predicate is too broad or unrelated to the domain (e.g., 'GS1 country code' for a player), leading to irrelevant results."
+      ]
+    },
+    "table": {
+      "data_shape": "Structured rows and columns, often representing match results, player statistics, tournament standings, or squad lists. Each row typically corresponds to an entity (e.g., a player, a match, a team) with attributes as columns.",
+      "summary": "Tables provide clean, tabular data ideal for precise lookups, comparisons, and aggregations. They are the go-to source for quantitative facts and structured lists.",
+      "best_for": [
+        "Player career statistics: goals, appearances, assists per season or club.",
+        "Match results and scores, including dates, venues, and competitions.",
+        "Tournament standings and group tables (e.g., FIFA World Cup groups).",
+        "Squad lists and rosters for national teams or clubs."
+      ],
+      "avoid_when": [
+        "When the question requires narrative or explanatory content; documents are more suitable.",
+        "When the relationship is not tabulated (e.g., 'What is the motto of club X?'); KG may have it.",
+        "When the query is ambiguous and needs entity disambiguation; KG can help clarify."
+      ]
+    }
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_basis": "balanced_cluster_representatives"
+  }
+}

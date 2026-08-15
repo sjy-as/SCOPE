@@ -1,0 +1,39 @@
+{
+  "domain": "history",
+  "generated_from": "semantic_catalog/semantic_list_3sources.json",
+  "sources": {
+    "table": {
+      "summary": "The Table source is ideal for queries that require structured, columnar data. It provides lists of entities such as archaeological sites, battles, election candidates, historic sites, military honor recipients, and war memorials, with fields like names, dates, locations, ranks, results, and numeric values. Use Table when you need to filter, sort, or compare across multiple rows, or when the question asks for a specific attribute like a date, a count, a ranking, or a winner. The Table source is also best for identifying an entity or value from a list, such as finding the date of a battle, the party of a candidate, or the location of a historic site. Because execution sees the complete question-bound table, it can directly answer queries that involve exact matches, ranges, or aggregations. Avoid using Table for open-ended descriptions, narrative explanations, or contextual details that are not stored as discrete fields.",
+      "best_for": [
+        "Queries asking for specific dates, locations, names, or numeric values",
+        "Filtering or sorting entities by attributes like date, rank, or result",
+        "Identifying a single entity from a list (e.g., which battle occurred in 1066?)",
+        "Comparing multiple entities side-by-side (e.g., which site is older?)"
+      ],
+      "avoid_when": [
+        "Queries require narrative descriptions or explanations",
+        "Queries ask about relationships or context not present in columns",
+        "Queries need information about a linked entity's prose attributes"
+      ]
+    },
+    "doc": {
+      "summary": "The Doc source is best for queries that require rich, prose-based descriptions of entities such as archaeological sites, architectural styles, cities, counties, electoral districts, military units, or sovereign states. Each document contains a title and full text, and is linked to a specific table row via `linked_from_table_ids`. When a query involves a bound table, Doc candidates are filtered by title and first sentence before the full text is read, making it efficient for retrieving detailed facts like designation status, historical origins, architectural features, or biographical details. Use Doc when the question asks for attributes that are not in the table, such as why a site is significant, what style a building represents, or what a county is named after. Doc is also useful for verifying or enriching information found in the table. Avoid Doc for simple lookups that are already in the table, or when the query requires comparing multiple entities numerically.",
+      "best_for": [
+        "Queries asking for descriptive attributes like period, origin, significance, or status",
+        "Queries about a linked entity's prose facts (e.g., the architectural style of a historic site)",
+        "Queries that need context or narrative explanation beyond tabular data",
+        "Queries where the answer is a phrase or sentence, not a single value"
+      ],
+      "avoid_when": [
+        "Queries can be answered directly from table columns",
+        "Queries require sorting or ranking across many entities",
+        "Queries ask for a specific numeric value that is already in the table"
+      ]
+    }
+  },
+  "routing_boundary": "Use Table to identify an entity or value from structured columns, such as finding a site name, date, or rank. Then, if the query asks for a prose attribute of that entity (e.g., its historical significance, architectural style, or designation status), route to Doc to retrieve the linked document's full text. The bridge is: Table provides the key and Doc provides the narrative detail.",
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "domain": "music",
+  "routing_mode": "graph",
+  "knowledge_base": [
+    "kg",
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/music/qa_benchmark/questions_clean.jsonl",
+  "output_dir": "/root/autodl-tmp/BBB_CompMix/experiments/route_only/outputs/new_model/music",
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 108.60935087874532,
+  "semantic_catalog": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/music/semantic_list_3sources.json",
+  "atomr_prompts": null,
+  "deepsieve_source_summary": null,
+  "decomposition_counts": {
+    "1": 97,
+    "2": 3
+  },
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 58,
+    "route1.kg": 34,
+    "route1.table": 8,
+    "route2.doc": 2,
+    "route2.kg": 1
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "domain": "sports",
+  "description": "Leakage-aware, domain-specific AtomR demonstrations derived from non-evaluation table and linked-document facts.",
+  "minimum_examples_per_stage": 8,
+  "replace_base_examples": true,
+  "stage_guidance": {
+    "tree_generation": "Decompose sports questions into a table bridge lookup followed by a linked-document fact lookup when needed. Keep children executable and preserve [n] references exactly.",
+    "source_selection": "In sports HybridQA, Table is the complete bound table and Text is its linked documents. Use Table for row values, rankings, dates, names, categories, and comparisons; Text for descriptive or relational prose; both for bridge questions.",
+    "direct_answer": "Return only evidence-compatible sports entities, names, dates, counts, organizations, places, titles, or short phrases in the required Answer List format.",
+    "direct_rag": "Resolve the table candidate or bridge before extracting the final linked-document fact. Copy the final span faithfully and do not substitute unrelated prior knowledge.",
+    "search": "Identify only the requested current-hop entity or candidate from the supplied evidence; do not jump to a later-hop answer.",
+    "relate": "Return only the value connected to the named entity by the requested relation, preserving exact names, dates, quantities, and labels.",
+    "filter": "Apply every stated condition to the candidate set and return all and only matching entities.",
+    "answer_from_child_qa": "Fuse child answers in dependency order, resolve references, and exclude intermediate bridge entities unless the final question requests them."
+  },
+  "stages": {
+    "tree_generation": [
+      {
+        "input": "Which Austrian canoeist won a gold medal in the Men's K-1 1000m at the 1936 Summer Olympics?",
+        "output": "{\"Which Austrian canoeist won a gold medal in the Men's K-1 1000m at the 1936 Summer Olympics?\": [\"1. Find the Austrian canoeist who won a gold medal in the Men's K-1 1000m at the 1936 Summer Olympics.\", \"2. Identify the name of that canoeist.\"], \"1. Find the Austrian canoeist who won a gold medal in the Men's K-1 1000m at the 1936 Summer Olympics.\": \"Relate('Austria at the 1936 Summer Olympics', 'gold medalists in canoeing')\", \"2. Identify the name of that canoeist.\": \"Relate([1], 'athlete name')\"}"
+      },
+      {
+        "input": "Who is the grandson of Bobby Baun in the NHL family relations list?",
+        "output": "{\"Who is the grandson of Bobby Baun in the NHL family relations list?\": [\"1. Find the grandson of Bobby Baun in the NHL family relations list.\", \"2. Identify the name of that grandson.\"], \"1. Find the grandson of Bobby Baun in the NHL family relations list.\": \"Relate('List of family relations in the NHL', 'grandfather-grandson pairs')\", \"2. Identify the name of that grandson.\": \"Relate([1], 'grandson name')\"}"
+      },
+      {
+        "input": "What sport did the flag bearer for Haiti at the 2016 Summer Olympics compete in?",
+        "output": "{\"What sport did the flag bearer for Haiti at the 2016 Summer Olympics compete in?\": [\"1. Find the flag bearer for Haiti at the 2016 Summer Olympics.\", \"2. Identify the sport of that flag bearer.\"], \"1. Find the flag bearer for Haiti at the 2016 Summer Olympics.\": \"Relate('List of flag bearers for Haiti at the Olympics', 'flag bearer for 2016 Summer')\", \"2. Identify the sport of that flag bearer.\": \"Relate([1], 'sport')\"}"
+      },
+      {
+        "input": "Which city is the football club Almagro located in?",
+        "output": "{\"Which city is the football club Almagro located in?\": [\"1. Find the football club Almagro in the list of football clubs in Argentina.\", \"2. Identify the city of that club.\"], \"1. Find the football club Almagro in the list of football clubs in Argentina.\": \"Relate('List of football clubs in Argentina', 'club Almagro')\", \"2. Identify the city of that club.\": \"Relate([1], 'city')\"}"
+      },
+      {
+        "input": "Who won the Southeastern Conference Baseball Pitcher of the Year in 2007?",
+        "output": "{\"Who won the Southeastern Conference Baseball Pitcher of the Year in 2007?\": [\"1. Find the winner of the Southeastern Conference Baseball Pitcher of the Year in 2007.\", \"2. Identify the name of that pitcher.\"], \"1. Find the winner of the Southeastern Conference Baseball Pitcher of the Year in 2007.\": \"Relate('Southeastern Conference Baseball Pitcher of the Year', 'winner for 2007')\", \"2. Identify the name of that pitcher.\": \"Relate([1], 'pitcher name')\"}"
+      },
+      {
+        "input": "What was the time of the athlete who finished second in the men's race at the 1968 International Cross Country Championships?",
+        "output": "{\"What was the time of the athlete who finished second in the men's race at the 1968 International Cross Country Championships?\": [\"1. Find the athlete who finished second in the men's race at the 1968 International Cross Country Championships.\", \"2. Identify the time of that athlete.\"], \"1. Find the athlete who finished second in the men's race at the 1968 International Cross Country Championships.\": \"Relate('1968 International Cross Country Championships', 'men's race results')\", \"2. Identify the time of that athlete.\": \"Relate([1], 'time')\"}"
+      },
+      {
+        "input": "Which Swedish athlete won a silver medal in the men's double trap at the 2012 Summer Olympics?",
+        "output": "{\"Which Swedish athlete won a silver medal in the men's double trap at the 2012 Summer Olympics?\": [\"1. Find the Swedish athlete who won a silver medal in the men's double trap at the 2012 Summer Olympics.\", \"2. Identify the name of that athlete.\"], \"1. Find the Swedish athlete who won a silver medal in the men's double trap at the 2012 Summer Olympics.\": \"Relate('Sweden at the 2012 Summer Olympics', 'silver medalists in shooting')\", \"2. Identify the name of that athlete.\": \"Relate([1], 'athlete name')\"}"
+      },
+      {
+        "input": "Which player scored a hat-trick for Kaya against Team Socceroo on 23 January 2014?",
+        "output": "{\"Which player scored a hat-trick for Kaya against Team Socceroo on 23 January 2014?\": [\"1. Find the hat-trick record for Kaya against Team Socceroo on 23 January 2014.\", \"2. Identify the player who scored that hat-trick.\"], \"1. Find the hat-trick record for Kaya against Team Socceroo on 23 January 2014.\": \"Relate('2014 United Football League', 'hat-tricks')\", \"2. Identify the player who scored that hat-trick.\": \"Relate([1], 'player name')\"}"
+      }
+    ],
+    "source_selection": [
+      {
+        "input": "Which Austrian canoeist won gold in the Men's K-1 1000m at the 1936 Summer Olympics?",
+        "output": "Table"
+      },
+      {
+        "input": "Which NHL grandfather-grandson pair are both from Canada?",
+        "output": "Table"
+      },
+      {
+        "input": "Which Haitian flag bearer competed in wrestling at the 2016 Summer Olympics?",
+        "output": "Table"
+      },
+      {
+        "input": "What is the birth date of the Austrian canoeist who won gold in the Men's K-1 1000m at the 1936 Summer Olympics?",
+        "output": "Text"
+      },
+      {
+        "input": "What is the nationality of the athlete who won the 1968 International Cross Country Championships men's race?",
+        "output": "Text"
+      },
+      {
+        "input": "Which city is the home of the football club that plays at the Estadio Viaducto in the Primera B Nacional?",
+        "output": "Table, Text"
+      },
+      {
+        "input": "Which school did the pitcher who won the 2007 Southeastern Conference Baseball Pitcher of the Year award play for, and what is that school's baseball team nickname?",
+        "output": "Table, Text"
+      },
+      {
+        "input": "Which player scored a hat-trick for Kaya against Team Socceroo on 23 January 2014, and what is that player's full name?",
+        "output": "Table, Text"
+      }
+    ],
+    "direct_answer": [
+      {
+        "input": "Which Austrian canoeist won gold in the Men's K-1 1000m at the 1936 Summer Olympics?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Austrian canoeist who won gold in the Men's K-1 1000m at the 1936 Summer Olympics was Gregor Hradetzky.; (2) Answer List: [\"Gregor Hradetzky\"]"
+      },
+      {
+        "input": "In the list of family relations in the NHL, which grandfather-grandson pair is from Canada?",
+        "output": "So the answer is: (1) Paraphrase Answer: In the list of family relations in the NHL, the grandfather-grandson pair from Canada is Sid Abel and Brent Johnson.; (2) Answer List: [\"Sid Abel and Brent Johnson\"]"
+      },
+      {
+        "input": "Who was the flag bearer for Haiti at the 2016 Summer Olympics?",
+        "output": "So the answer is: (1) Paraphrase Answer: The flag bearer for Haiti at the 2016 Summer Olympics was Asnage Castelly.; (2) Answer List: [\"Asnage Castelly\"]"
+      },
+      {
+        "input": "Which football club in the Primera B Nacional (2019) is from the city of Rafaela?",
+        "output": "So the answer is: (1) Paraphrase Answer: The football club in the Primera B Nacional (2019) from the city of Rafaela is Atlético de Rafaela.; (2) Answer List: [\"Atlético de Rafaela\"]"
+      },
+      {
+        "input": "Who won the Southeastern Conference Baseball Pitcher of the Year in 2007?",
+        "output": "So the answer is: (1) Paraphrase Answer: The winner of the Southeastern Conference Baseball Pitcher of the Year in 2007 was David Price.; (2) Answer List: [\"David Price\"]"
+      },
+      {
+        "input": "What was the time of the athlete who finished first in the men's race at the 1968 International Cross Country Championships?",
+        "output": "So the answer is: (1) Paraphrase Answer: The time of the athlete who finished first in the men's race at the 1968 International Cross Country Championships was 35:25.4.; (2) Answer List: [\"35:25.4\"]"
+      },
+      {
+        "input": "Which Swedish athlete won a silver medal in equestrian at the 2012 Summer Olympics?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Swedish athlete who won a silver medal in equestrian at the 2012 Summer Olympics was Sara Algotsson Ostholt.; (2) Answer List: [\"Sara Algotsson Ostholt\"]"
+      },
+      {
+        "input": "Which player scored a hat-trick for Kaya against Team Socceroo on 23 January 2014?",
+        "output": "So the answer is: (1) Paraphrase Answer: The player who scored a hat-trick for Kaya against Team Socceroo on 23 January 2014 was Emmanuel Mbata.; (2) Answer List: [\"Emmanuel Mbata\"]"
+      }
+    ],
+    "direct_rag": [
+      {
+        "input": "Supporting knowledge: Table: Austria_at_the_1936_Summer_Olympics_0 | Medal | Name | Sport | Event | Gold | Gregor Hradetzky | Canoeing | Men 's Folding K-1 10000m | Gold | Gregor Hradetzky | Canoeing | Men 's K-1 1000m | Gold | Adolf Kainz Alfons Dorfner | Canoeing | Men 's K-2 1000m | Gold | Robert Fein | Weightlifting | Men 's Lightweight | Silver | Fritz Landertinger | Canoeing | Men 's K-1 10000m | Doc: Adolf Kainz ( 5 June 1903 , Linz - 12 July 1948 ) was an Austrian sprint canoeist who competed in the late 1930s . | Doc: Alfons Dorfner ( January 27 , 1911 - January 22 , 1982 ) was an Austrian canoeist who competed in the 1936 Summer Olympics . | Question: Which Austrian canoeist won a gold medal in the Men's K-2 1000m event at the 1936 Summer Olympics?",
+        "output": "So the answer is: (1) Paraphrase Answer: The gold medal in the Men's K-2 1000m event was won by Adolf Kainz and Alfons Dorfner, as shown in the table. (2) Answer List: [\"Adolf Kainz and Alfons Dorfner\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: List_of_family_relations_in_the_NHL_2 | Grandfather | Grandson | Country | Sid Abel | Brent Johnson | Canada | Bobby Baun | Kyle Baun | Canada | Dit Clapper | Greg Theberge | Canada | Glenn Hall | Grant Stevenson | Canada | Lou Jankowski | Mark Jankowski * | Canada | Doc: Bobby Baun ( born September 9 , 1936 ) is a Canadian former professional ice hockey defenceman who played in the National Hockey League for 17 seasons from 1956 to 1973 . | Question: Which grandson in the NHL family relations table is the grandson of Bobby Baun?",
+        "output": "So the answer is: (1) Paraphrase Answer: According to the table, Bobby Baun's grandson is Kyle Baun. (2) Answer List: [\"Kyle Baun\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: List_of_flag_bearers_for_Haiti_at_the_Olympics_0 | # | Event year | Season | Flag bearer | Sport | 10 | 2016 | Summer | Asnage Castelly | Wrestling | 9 | 2012 | Summer | Linouse Desravine | Judo | 8 | 2008 | Summer | Joel Brutus | Judo | 7 | 2004 | Summer | Tudor Sanon | Taekwondo | 6 | 2000 | Summer | Nadine Faustin-Parker | Athletics | Doc: Asnage Castelly ( born March 29 , 1978 ) is a Haitian-American wrestler who competed for Haiti at the 2016 Summer Olympics in the 74kg freestyle competition . | Question: Who was the flag bearer for Haiti at the 2016 Summer Olympics?",
+        "output": "So the answer is: (1) Paraphrase Answer: The flag bearer for Haiti at the 2016 Summer Olympics was Asnage Castelly, as listed in the table. (2) Answer List: [\"Asnage Castelly\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: List_of_football_clubs_in_Argentina_1 | Club | City | Province | Stadium | Agropecuario Argentino | Carlos Casares | Buenos Aires | Ofelia Rosenzuaig | Almagro | José Ingenieros | Buenos Aires | Tres de Febrero | Arsenal | Sarandí | Buenos Aires | Estadio Viaducto | Atlético de Rafaela | Rafaela | Santa Fe | Nuevo Monumental | Brown | Adrogué | Buenos Aires | Lorenzo Arandilla | Doc: Adrogué ( Spanish pronunciation : [ aðɾoˈɣe ] ) is a city in Greater Buenos Aires , Argentina , located 23 km south of Buenos Aires . | Question: Which football club in the Primera B Nacional is based in the city of Adrogué?",
+        "output": "So the answer is: (1) Paraphrase Answer: The club Brown is based in Adrogué, as shown in the table. (2) Answer List: [\"Brown\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: Southeastern_Conference_Baseball_Pitcher_of_the_Year_0 | Season | Pitcher | School | 2003 | David Marchbanks | South Carolina | 2004 | Justin Hoyman | Florida | 2005 | Luke Hochevar | Tennessee | 2006 | Nick Schmidt | Arkansas | 2007 | David Price | Vanderbilt | Doc: Aaron Nola ( nicknamed Nols ; born June 4 , 1993 ) is an American professional baseball pitcher for the Philadelphia Phillies of Major League Baseball ( MLB ) . | Question: Which school did the 2005 Southeastern Conference Baseball Pitcher of the Year represent?",
+        "output": "So the answer is: (1) Paraphrase Answer: The 2005 winner, Luke Hochevar, represented the University of Tennessee. (2) Answer List: [\"Tennessee\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: 1968_International_Cross_Country_Championships_0 | Rank | Athlete | Nationality | Time | | Mohamed Gammoudi | Tunisia | 35:25.4 | | Ron Hill | England | 35:26.8 | | Roy Fowler | England | 35:31.8 | 4 | Guy Texereau | France | 35:34.6 | 5 | Mike Freary | England | 35:40 | Doc: Ahmed Zammel ( born 12 October 1944 ) is a Tunisian long-distance runner . | Question: What was the time of the athlete who finished first in the men's race at the 1968 International Cross Country Championships?",
+        "output": "So the answer is: (1) Paraphrase Answer: The winner, Mohamed Gammoudi, had a time of 35:25.4. (2) Answer List: [\"35:25.4\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: Sweden_at_the_2012_Summer_Olympics_0 | Medal | Name | Sport | Event | Date | Gold | Fredrik Lööf Max Salminen | Sailing | Men 's star class | 5 August | Silver | Sara Algotsson Ostholt | Equestrian | Individual eventing | 31 July | Silver | Håkan Dahlby | Shooting | Men 's double trap | 2 August | Silver | Lisa Nordén | Triathlon | Women 's event | 4 August | Silver | Sweden men 's national handball team Kim Andersson Mattias Andersson Dalibor Doder Niclas Ekberg Kim Ekdahl du Rietz Mattias Gustafsson Johan Jakobsson Magnus Jernemyr Tobias Karlsson Jonas Källman Jonas Larholm Andreas Nilsson Fredrik Petersen Johan Sjöstrand Mattias Zachrisson | Handball | Men 's tournament | 12 August | Doc: Andreas Nilsson ( born 12 April 1990 ) is a Swedish handballer for MVM Veszprém KC and the Swedish national team . | Question: In which sport did Sweden win a gold medal at the 2012 Summer Olympics?",
+        "output": "So the answer is: (1) Paraphrase Answer: Sweden's gold medal at the 2012 Summer Olympics was in sailing, specifically the Men's star class. (2) Answer List: [\"Sailing\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: 2014_United_Football_League_(Philippines)_2 | Player | For | Against | Result | Date | Emmanuel Mbata | Kaya | Team Socceroo | 7-1 | 23 January 2014 | Jeffrey Christiaens | Global | Philippine Army | 9-1 | 1 February 2014 | Christian Pasilan | Green Archers United | Team Socceroo | 7-1 | 4 February 2014 | Mark Hartmann | Global | Team Socceroo | 9-0 | 11 February 2014 | OJ Porteria | Kaya | Philippine Army | 9-1 | 13 February 2014 | Doc: Christian Pasilan | Christian Floriano Tating Pasilan Jr. | Question: Which player scored a hat-trick for Green Archers United against Team Socceroo?",
+        "output": "So the answer is: (1) Paraphrase Answer: Christian Pasilan scored a hat-trick for Green Archers United against Team Socceroo, as shown in the table. (2) Answer List: [\"Christian Pasilan\"]"
+      }
+    ],
+    "search": [
+      {
+        "input": "Table: Austria_at_the_1936_Summer_Olympics_0 | Medal | Name | Sport | Event | Gold | Gregor Hradetzky | Canoeing | Men 's Folding K-1 10000m | Gold | Gregor Hradetzky | Canoeing | Men 's K-1 1000m | Gold | Adolf Kainz Alfons Dorfner | Canoeing | Men 's K-2 1000m | Gold | Robert Fein | Weightlifting | Men 's Lightweight | Silver | Fritz Landertinger | Canoeing | Men 's K-1 10000m\nQuestion: Who won the gold medal in the Men's K-1 1000m canoeing event?",
+        "output": "So the answer is: (1) Paraphrase Answer: Gregor Hradetzky; (2) Answer List: [\"Gregor Hradetzky\"]"
+      },
+      {
+        "input": "Table: List_of_family_relations_in_the_NHL_2 | Grandfather | Grandson | Country | Sid Abel | Brent Johnson | Canada | Bobby Baun | Kyle Baun | Canada | Dit Clapper | Greg Theberge | Canada | Glenn Hall | Grant Stevenson | Canada | Lou Jankowski | Mark Jankowski * | Canada\nQuestion: Who is the grandson of Bobby Baun?",
+        "output": "So the answer is: (1) Paraphrase Answer: Kyle Baun; (2) Answer List: [\"Kyle Baun\"]"
+      },
+      {
+        "input": "Table: List_of_flag_bearers_for_Haiti_at_the_Olympics_0 | # | Event year | Season | Flag bearer | Sport | 10 | 2016 | Summer | Asnage Castelly | Wrestling | 9 | 2012 | Summer | Linouse Desravine | Judo | 8 | 2008 | Summer | Joel Brutus | Judo | 7 | 2004 | Summer | Tudor Sanon | Taekwondo | 6 | 2000 | Summer | Nadine Faustin-Parker | Athletics\nQuestion: Who was the flag bearer for Haiti at the 2008 Summer Olympics?",
+        "output": "So the answer is: (1) Paraphrase Answer: Joel Brutus; (2) Answer List: [\"Joel Brutus\"]"
+      },
+      {
+        "input": "Table: List_of_football_clubs_in_Argentina_1 | Club | City | Province | Stadium | Agropecuario Argentino | Carlos Casares | Buenos Aires | Ofelia Rosenzuaig | Almagro | José Ingenieros | Buenos Aires | Tres de Febrero | Arsenal | Sarandí | Buenos Aires | Estadio Viaducto | Atlético de Rafaela | Rafaela | Santa Fe | Nuevo Monumental | Brown | Adrogué | Buenos Aires | Lorenzo Arandilla\nQuestion: Which club is based in the city of Rafaela?",
+        "output": "So the answer is: (1) Paraphrase Answer: Atlético de Rafaela; (2) Answer List: [\"Atlético de Rafaela\"]"
+      },
+      {
+        "input": "Table: Southeastern_Conference_Baseball_Pitcher_of_the_Year_0 | Season | Pitcher | School | 2003 | David Marchbanks | South Carolina | 2004 | Justin Hoyman | Florida | 2005 | Luke Hochevar | Tennessee | 2006 | Nick Schmidt | Arkansas | 2007 | David Price | Vanderbilt\nQuestion: Who was the SEC Baseball Pitcher of the Year in 2006?",
+        "output": "So the answer is: (1) Paraphrase Answer: Nick Schmidt; (2) Answer List: [\"Nick Schmidt\"]"
+      },
+      {
+        "input": "Table: 1968_International_Cross_Country_Championships_0 | Rank | Athlete | Nationality | Time |  | Mohamed Gammoudi | Tunisia | 35:25.4 |  | Ron Hill | England | 35:26.8 |  | Roy Fowler | England | 35:31.8 | 4 | Guy Texereau | France | 35:34.6 | 5 | Mike Freary | England | 35:40\nQuestion: Which athlete finished in 4th place in the men's race?",
+        "output": "So the answer is: (1) Paraphrase Answer: Guy Texereau; (2) Answer List: [\"Guy Texereau\"]"
+      },
+      {
+        "input": "Table: Sweden_at_the_2012_Summer_Olympics_0 | Medal | Name | Sport | Event | Date | Gold | Fredrik Lööf Max Salminen | Sailing | Men 's star class | 5 August | Silver | Sara Algotsson Ostholt | Equestrian | Individual eventing | 31 July | Silver | Håkan Dahlby | Shooting | Men 's double trap | 2 August | Silver | Lisa Nordén | Triathlon | Women 's event | 4 August | Silver | Sweden men 's national handball team Kim Andersson Mattias Andersson Dalibor Doder Niclas Ekberg Kim Ekdahl du Rietz Mattias Gustafsson Johan Jakobsson Magnus Jernemyr Tobias Karlsson Jonas Källman Jonas Larholm Andreas Nilsson Fredrik Petersen Johan Sjöstrand Mattias Zachrisson | Handball | Men 's tournament | 12 August\nQuestion: Who won the silver medal in the women's triathlon event?",
+        "output": "So the answer is: (1) Paraphrase Answer: Lisa Nordén; (2) Answer List: [\"Lisa Nordén\"]"
+      },
+      {
+        "input": "Table: 2014_United_Football_League_(Philippines)_2 | Player | For | Against | Result | Date | Emmanuel Mbata | Kaya | Team Socceroo | 7-1 | 23 January 2014 | Jeffrey Christiaens | Global | Philippine Army | 9-1 | 1 February 2014 | Christian Pasilan | Green Archers United | Team Socceroo | 7-1 | 4 February 2014 | Mark Hartmann | Global | Team Socceroo | 9-0 | 11 February 2014 | OJ Porteria | Kaya | Philippine Army | 9-1 | 13 February 2014\nQuestion: Which player scored a hat-trick for Global against Team Socceroo on 11 February 2014?",
+        "output": "So the answer is: (1) Paraphrase Answer: Mark Hartmann; (2) Answer List: [\"Mark Hartmann\"]"
+      }
+    ],
+    "relate": [
+      {
+        "input": "In the 1936 Summer Olympics, which event did Gregor Hradetzky win a gold medal in?",
+        "output": "So the answer is: (1) Paraphrase Answer: Gregor Hradetzky won a gold medal in the Men's Folding K-1 10000m event. (2) Answer List: [\"Men 's Folding K-1 10000m\"]"
+      },
+      {
+        "input": "In the list of family relations in the NHL, who is the grandson of Bobby Baun?",
+        "output": "So the answer is: (1) Paraphrase Answer: The grandson of Bobby Baun is Kyle Baun. (2) Answer List: [\"Kyle Baun\"]"
+      },
+      {
+        "input": "Who was the flag bearer for Haiti at the 2016 Summer Olympics?",
+        "output": "So the answer is: (1) Paraphrase Answer: The flag bearer for Haiti at the 2016 Summer Olympics was Asnage Castelly. (2) Answer List: [\"Asnage Castelly\"]"
+      },
+      {
+        "input": "Which stadium does the football club Almagro play at?",
+        "output": "So the answer is: (1) Paraphrase Answer: Almagro plays at the Tres de Febrero stadium. (2) Answer List: [\"Tres de Febrero\"]"
+      },
+      {
+        "input": "Who was the Southeastern Conference Baseball Pitcher of the Year in 2005?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Southeastern Conference Baseball Pitcher of the Year in 2005 was Luke Hochevar. (2) Answer List: [\"Luke Hochevar\"]"
+      },
+      {
+        "input": "What was the time of Mohamed Gammoudi in the 1968 International Cross Country Championships?",
+        "output": "So the answer is: (1) Paraphrase Answer: Mohamed Gammoudi's time was 35:25.4. (2) Answer List: [\"35:25.4\"]"
+      },
+      {
+        "input": "In the 2012 Summer Olympics, what event did Sara Algotsson Ostholt win a silver medal in?",
+        "output": "So the answer is: (1) Paraphrase Answer: Sara Algotsson Ostholt won a silver medal in the Individual eventing event. (2) Answer List: [\"Individual eventing\"]"
+      },
+      {
+        "input": "Which team did Emmanuel Mbata score a hat-trick for on 23 January 2014?",
+        "output": "So the answer is: (1) Paraphrase Answer: Emmanuel Mbata scored a hat-trick for Kaya. (2) Answer List: [\"Kaya\"]"
+      }
+    ],
+    "filter": [
+      {
+        "input": "Candidates: [Gregor Hradetzky, Adolf Kainz, Alfons Dorfner, Robert Fein, Fritz Landertinger]\nCondition: The athlete won a gold medal in Canoeing at the 1936 Summer Olympics.\nQuestion: Which of these athletes won a gold medal in Canoeing?",
+        "output": "So the answer is: (1) Paraphrase Answer: The athletes who won a gold medal in Canoeing are Gregor Hradetzky, Adolf Kainz, and Alfons Dorfner. (2) Answer List: [\"Gregor Hradetzky\", \"Adolf Kainz\", \"Alfons Dorfner\"]"
+      },
+      {
+        "input": "Candidates: [Brent Johnson, Kyle Baun, Greg Theberge, Grant Stevenson, Mark Jankowski]\nCondition: The grandson's grandfather is Bobby Baun.\nQuestion: Which of these NHL players has Bobby Baun as their grandfather?",
+        "output": "So the answer is: (1) Paraphrase Answer: The player whose grandfather is Bobby Baun is Kyle Baun. (2) Answer List: [\"Kyle Baun\"]"
+      },
+      {
+        "input": "Candidates: [Asnage Castelly, Linouse Desravine, Joel Brutus, Tudor Sanon, Nadine Faustin-Parker]\nCondition: The flag bearer competed in Judo at the Olympics.\nQuestion: Which of these Haitian flag bearers competed in Judo?",
+        "output": "So the answer is: (1) Paraphrase Answer: The flag bearers who competed in Judo are Linouse Desravine and Joel Brutus. (2) Answer List: [\"Linouse Desravine\", \"Joel Brutus\"]"
+      },
+      {
+        "input": "Candidates: [Agropecuario Argentino, Almagro, Arsenal, Atlético de Rafaela, Brown]\nCondition: The club is located in the province of Buenos Aires.\nQuestion: Which of these football clubs are in Buenos Aires province?",
+        "output": "So the answer is: (1) Paraphrase Answer: The clubs located in Buenos Aires province are Agropecuario Argentino, Almagro, Arsenal, and Brown. (2) Answer List: [\"Agropecuario Argentino\", \"Almagro\", \"Arsenal\", \"Brown\"]"
+      },
+      {
+        "input": "Candidates: [David Marchbanks, Justin Hoyman, Luke Hochevar, Nick Schmidt, David Price]\nCondition: The pitcher won the award in 2007.\nQuestion: Which pitcher won the SEC Baseball Pitcher of the Year in 2007?",
+        "output": "So the answer is: (1) Paraphrase Answer: The pitcher who won in 2007 is David Price. (2) Answer List: [\"David Price\"]"
+      },
+      {
+        "input": "Candidates: [Mohamed Gammoudi, Ron Hill, Roy Fowler, Guy Texereau, Mike Freary]\nCondition: The athlete's nationality is England.\nQuestion: Which of these athletes are from England?",
+        "output": "So the answer is: (1) Paraphrase Answer: The athletes from England are Ron Hill, Roy Fowler, and Mike Freary. (2) Answer List: [\"Ron Hill\", \"Roy Fowler\", \"Mike Freary\"]"
+      },
+      {
+        "input": "Candidates: [Fredrik Lööf, Max Salminen, Sara Algotsson Ostholt, Håkan Dahlby, Lisa Nordén]\nCondition: The athlete won a silver medal in Shooting.\nQuestion: Which of these Swedish athletes won a silver medal in Shooting?",
+        "output": "So the answer is: (1) Paraphrase Answer: The athlete who won a silver medal in Shooting is Håkan Dahlby. (2) Answer List: [\"Håkan Dahlby\"]"
+      },
+      {
+        "input": "Candidates: [Emmanuel Mbata, Jeffrey Christiaens, Christian Pasilan, Mark Hartmann, OJ Porteria]\nCondition: The player scored a hat-trick for Kaya.\nQuestion: Which players scored a hat-trick for Kaya?",
+        "output": "So the answer is: (1) Paraphrase Answer: The players who scored a hat-trick for Kaya are Emmanuel Mbata and OJ Porteria. (2) Answer List: [\"Emmanuel Mbata\", \"OJ Porteria\"]"
+      }
+    ],
+    "answer_from_child_qa": [
+      {
+        "input": "Child QA 1: Who won the gold medal in Men's K-1 1000m at the 1936 Summer Olympics? Answer: Gregor Hradetzky. Child QA 2: What sport did Gregor Hradetzky compete in? Answer: Canoeing. Final Question: In which sport did Gregor Hradetzky win his gold medal at the 1936 Summer Olympics?",
+        "output": "So the answer is: (1) Paraphrase Answer: Gregor Hradetzky won his gold medal in Canoeing at the 1936 Summer Olympics. (2) Answer List: [\"Canoeing\"]"
+      },
+      {
+        "input": "Child QA 1: Who is the grandson of Bobby Baun? Answer: Kyle Baun. Child QA 2: What country is Kyle Baun from? Answer: Canada. Final Question: What is the country of Bobby Baun's grandson?",
+        "output": "So the answer is: (1) Paraphrase Answer: Bobby Baun's grandson, Kyle Baun, is from Canada. (2) Answer List: [\"Canada\"]"
+      },
+      {
+        "input": "Child QA 1: Who was the flag bearer for Haiti at the 2016 Summer Olympics? Answer: Asnage Castelly. Child QA 2: What sport did Asnage Castelly compete in? Answer: Wrestling. Final Question: In which sport did Haiti's flag bearer at the 2016 Summer Olympics compete?",
+        "output": "So the answer is: (1) Paraphrase Answer: Haiti's flag bearer at the 2016 Summer Olympics, Asnage Castelly, competed in Wrestling. (2) Answer List: [\"Wrestling\"]"
+      },
+      {
+        "input": "Child QA 1: Which club is located in Adrogué? Answer: Brown. Child QA 2: What is the stadium of Brown? Answer: Lorenzo Arandilla. Final Question: What is the stadium of the football club located in Adrogué?",
+        "output": "So the answer is: (1) Paraphrase Answer: The football club located in Adrogué, Brown, has the stadium Lorenzo Arandilla. (2) Answer List: [\"Lorenzo Arandilla\"]"
+      },
+      {
+        "input": "Child QA 1: Who won the Southeastern Conference Baseball Pitcher of the Year in 2007? Answer: David Price. Child QA 2: What school did David Price represent? Answer: Vanderbilt. Final Question: Which school did the 2007 Southeastern Conference Baseball Pitcher of the Year represent?",
+        "output": "So the answer is: (1) Paraphrase Answer: The 2007 Southeastern Conference Baseball Pitcher of the Year, David Price, represented Vanderbilt. (2) Answer List: [\"Vanderbilt\"]"
+      },
+      {
+        "input": "Child QA 1: Who finished first in the men's race at the 1968 International Cross Country Championships? Answer: Mohamed Gammoudi. Child QA 2: What was Mohamed Gammoudi's nationality? Answer: Tunisia. Final Question: What was the nationality of the winner of the men's race at the 1968 International Cross Country Championships?",
+        "output": "So the answer is: (1) Paraphrase Answer: The winner of the men's race at the 1968 International Cross Country Championships, Mohamed Gammoudi, was from Tunisia. (2) Answer List: [\"Tunisia\"]"
+      },
+      {
+        "input": "Child QA 1: Who won the gold medal in the men's star class at the 2012 Summer Olympics for Sweden? Answer: Fredrik Lööf and Max Salminen. Child QA 2: What sport is the men's star class? Answer: Sailing. Final Question: In which sport did Fredrik Lööf and Max Salminen win their gold medal at the 2012 Summer Olympics?",
+        "output": "So the answer is: (1) Paraphrase Answer: Fredrik Lööf and Max Salminen won their gold medal in Sailing at the 2012 Summer Olympics. (2) Answer List: [\"Sailing\"]"
+      },
+      {
+        "input": "Child QA 1: Which player scored a hat-trick for Kaya against Team Socceroo on 23 January 2014? Answer: Emmanuel Mbata. Child QA 2: What was the result of that match? Answer: 7-1. Final Question: What was the result of the match in which Emmanuel Mbata scored a hat-trick for Kaya against Team Socceroo?",
+        "output": "So the answer is: (1) Paraphrase Answer: The match in which Emmanuel Mbata scored a hat-trick for Kaya against Team Socceroo ended with a result of 7-1. (2) Answer List: [\"7-1\"]"
+      }
+    ]
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_policy": "non_gold_tables_and_exclusive_docs_only"
+  }
+}

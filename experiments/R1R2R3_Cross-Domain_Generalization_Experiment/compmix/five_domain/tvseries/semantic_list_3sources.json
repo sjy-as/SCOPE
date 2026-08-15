@@ -1,0 +1,1137 @@
+{
+  "tv_series_character_actor_mapping": {
+    "concept": "tv_series_character_actor_mapping",
+    "overall_description": "Maps characters to actors and their appearances across TV series, seasons, and media franchises, including voice actors and character descriptions.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for maps characters to actors and their appearances across tv series, seasons, and media franchises, including voice actors and character descriptions.",
+        "elements": [
+          "actor_name",
+          "character_name",
+          "season_appearance",
+          "appearance_type",
+          "total_episodes",
+          "character",
+          "actor",
+          "season",
+          "appearance_status",
+          "season_appearance_status",
+          "seasons",
+          "voice_actor",
+          "language",
+          "dubbing_studio"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0011\", \"title\": \"24 (TV series)\", \"headers\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\", \"R\", \"S7\", \"S8\", \"LAD\", \"Total\"], \"sample_rows\": [[\"Carlos Bernard\", \"Tony Almeida\", \"Recurring\", \"colspan=\\\"2\\\" Main\", \"Recurring\", \"Main\", \"colspan=\\\"2\\\"\", \"Main\", \"\", \"Guest cast1 [a]\", \"115\"]]}",
+          "{\"table_id\": \"T0008\", \"title\": \"24 (TV series)\", \"headers\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\", \"R\", \"S7\"], \"sample_rows\": [[\"Kim Raver\", \"Audrey Raines Audrey Raines\", \"colspan=\\\"3\\\"\", \"colspan=\\\"2\\\" Main\", \"Recurring\", \"colspan=\\\"3\\\"\", \"Main\", \"64\"]]}",
+          "{\"table_id\": \"T0010\", \"title\": \"24 (TV series)\", \"headers\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\", \"R\", \"S7\", \"S8\", \"LAD\"], \"sample_rows\": [[\"Gregory Itzin\", \"Charles Logan Charles Logan (24 character)\", \"colspan=\\\"3\\\"\", \"Recurring\", \"Main\", \"Recurring\", \"colspan=\\\"2\\\"\", \"Recurring\", \"\", \"45\"]]}",
+          "{\"table_id\": \"T0139\", \"title\": \"Cheers\", \"headers\": [\"1\", \"2\", \"3\", \"4\", \"5\", \"6\"], \"sample_rows\": [[\"Lilith Sternin\", \"Bebe Neuwirth\", \"colspan=\\\"3\\\"\", \"colspan=\\\"1\\\"\", \"colspan=\\\"5\\\"\", \"colspan=\\\"2\\\"\"]]}",
+          "{\"table_id\": \"T0138\", \"title\": \"Cheers\", \"headers\": [\"1\", \"2\", \"3\", \"4\"], \"sample_rows\": [[\"Ernie \\\"Coach\\\" Pantusso\", \"Nicholas Colasanto\", \"colspan=\\\"3\\\"\", \"colspan=\\\"8\\\"\"]]}",
+          "{\"table_id\": \"T0281\", \"title\": \"House (TV series)\", \"headers\": [\"1\", \"2\", \"3\", \"4\", \"5\", \"6\"], \"sample_rows\": [[\"Dr. Lawrence Kutner\", \"Kal Penn\", \"Sports Medicine, Diagnostic Medicine\", \"colspan=\\\"3\\\"\", \"colspan=\\\"2\\\"\", \"colspan=\\\"2\\\", 7 is\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for maps characters to actors and their appearances across tv series, seasons, and media franchises, including voice actors and character descriptions.",
+        "elements": [
+          "character",
+          "actor",
+          "series",
+          "seasons",
+          "character_name",
+          "actor_name",
+          "series_title",
+          "season_number",
+          "appearance_status",
+          "tv_series",
+          "season",
+          "tv_series_title",
+          "event_description",
+          "event_date"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00128\", \"title\": \"How I Met Your Mother\", \"text\": \"How I Met Your Mother, Barney begins the season with the word, \\\"-dary!\\\"\"}",
+          "{\"doc_id\": \"D00801\", \"title\": \"Criminal Minds\", \"text\": \"Criminal Minds, Distraught by this turn of events, Cruz travels to Texas with Garcia to help the team investigate and apprehend the ring leader, Deputy Owen McGregor (Michael Trucco).\"}",
+          "{\"doc_id\": \"D01497\", \"title\": \"Robin Scherbatsky\", \"text\": \"Robin Scherbatsky, As an adult, Robin is embarrassed by her teenage stardom.\"}",
+          "{\"doc_id\": \"D00191\", \"title\": \"Stefan Salvatore\", \"text\": \"Stefan Salvatore, Stefan happens to be in the safe for 3 months where he keeps on hallucinating.\"}",
+          "{\"doc_id\": \"D00002\", \"title\": \"Damon Salvatore\", \"text\": \"Damon Salvatore, Elena and Stefan come across the injured Damon and Rebekah, Stefan stays while Elena rushes to find Jeremy.\"}",
+          "{\"doc_id\": \"D00161\", \"title\": \"Elena Gilbert\", \"text\": \"Elena Gilbert, In the television series's fourth season, Elena dies and became a vampire, then deals with the struggles that come with her change.\"}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for maps characters to actors and their appearances across tv series, seasons, and media franchises, including voice actors and character descriptions.",
+        "elements": [
+          "media_work",
+          "cast_member",
+          "character_role",
+          "qualifier_fields",
+          "performer",
+          "work",
+          "character",
+          "role_type",
+          "franchise"
+        ],
+        "data_examples": [
+          "Game of Thrones --cast member [character role: Renly Baratheon]--> Gethin Anthony",
+          "Netflix --member of--> CVE Numbering Authorities",
+          "Leena Gangopadhyay --member of political party--> All India Trinamool Congress",
+          "Sebastian Blood --performer--> Kevin Alejandro",
+          "Tiffani Thiessen --mass--> \"+128\"",
+          "Isaac Hayes --manner of death--> natural causes"
+        ]
+      }
+    }
+  },
+  "tv_series_judge_contestant_appearance": {
+    "concept": "tv_series_judge_contestant_appearance",
+    "overall_description": "Tracks judges, contestants, and competition outcomes across TV series seasons, including elimination schedules and team records.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for tracks judges, contestants, and competition outcomes across tv series seasons, including elimination schedules and team records.",
+        "elements": [
+          "judge_name",
+          "season_number",
+          "appearance_status",
+          "episode_count",
+          "contestant",
+          "week",
+          "status",
+          "elimination_episode",
+          "season",
+          "team_name",
+          "overall_record",
+          "subtitle",
+          "location",
+          "original_tribes"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0055\", \"title\": \"America's Next Top Model\", \"headers\": [\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\"], \"sample_rows\": [[\"Nolé Marin\", \"colspan=\\\"1\\\"\", \"colspan=\\\"1\\\"\", \"colspan=\\\"2\\\"\", \"colspan=\\\"7\\\"\", \"colspan=\\\"1\\\"\", \"colspan=\\\"12\\\"\"]]}",
+          "{\"table_id\": \"T0050\", \"title\": \"America's Next Top Model\", \"headers\": [\"1\"], \"sample_rows\": [[\"Runway coach\"]]}",
+          "{\"table_id\": \"T0056\", \"title\": \"America's Next Top Model\", \"headers\": [\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\"], \"sample_rows\": [[\"J. Alexander\", \"colspan=\\\"4\\\"\", \"colspan=\\\"9\\\"\", \"colspan=\\\"3\\\"\", \"colspan=\\\"2\\\"\", \"colspan=\\\"2\\\"\", \"colspan=\\\"2\\\" style=\\\"background:#bfffc0;\\\"\", \"colspan=\\\"2\\\"\"]]}",
+          "{\"table_id\": \"T0507\", \"title\": \"MasterChef Australia (series 12)\", \"headers\": [\"No.\", \"Week\", \"1\", \"2\", \"3\", \"4\"], \"sample_rows\": [[\"24\", \"Lynton\", \"IN\", \"''Top 3''\", \"''Elim''\", \"Eliminated (Ep 5)\"]]}",
+          "{\"table_id\": \"T0508\", \"title\": \"MasterChef Australia (series 12)\", \"headers\": [\"No.\", \"Week\", \"1\", \"2\", \"3\", \"4\", \"5\"], \"sample_rows\": [[\"23\", \"Courtney\", \"IN\", \"Team Lose\", \"Btm 5\", \"''Elim''\", \"Eliminated (Ep 7)\"]]}",
+          "{\"table_id\": \"T0506\", \"title\": \"MasterChef Australia (series 12)\", \"headers\": [\"Ep#/Wk-Ep#\"], \"sample_rows\": [[\"Week 2\"], [\"Week 15 (Grand Finale)\"], [\"Week 12\"]]}"
+        ]
+      }
+    }
+  },
+  "award_nomination_and_recipient": {
+    "concept": "award_nomination_and_recipient",
+    "overall_description": "Records award categories, nominees, recipients, and outcomes for TV series, actors, and other works.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records award categories, nominees, recipients, and outcomes for tv series, actors, and other works.",
+        "elements": [
+          "award",
+          "category",
+          "nominee",
+          "year",
+          "result",
+          "award_name",
+          "award_category",
+          "work",
+          "nominated_work",
+          "film",
+          "status",
+          "association",
+          "recipient",
+          "award_ceremony"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0015\", \"title\": \"A Few Good Men\", \"headers\": [\"Award\", \"Category\", \"Nominee(s)\"], \"sample_rows\": [[\"MTV Movie Awards\", \"Best Villain\", \"Jack Nicholson, Result is\"], [\"National Board of Review Awards\", \"Top Ten Films\", \"4th Place\"], [\"Awards Circuit Community Awards\", \"Best Film Editing\", \"Robert Leighton, Result is\"]]}",
+          "{\"table_id\": \"T0014\", \"title\": \"A Few Good Men\", \"headers\": [\"Award\", \"Category\"], \"sample_rows\": [[\"Awards Circuit Community Awards\", \"Best Cast Ensemble, Nominee(s) is\"], [\"Golden Globe Awards\", \"Best Motion Picture – Drama, Nominee(s) is\"], [\"MTV Movie Awards\", \"Best Movie, Nominee(s) is\"]]}",
+          "{\"table_id\": \"T0080\", \"title\": \"Anupamaa\", \"headers\": [\"Year\", \"Award\", \"Category\", \"Nominee\", \"Result\"], \"sample_rows\": [[\"2022\", \"21st Indian Television Academy Awards\", \"Best Actress Comedy\", \"Alpana Buch\", \"Ref. is\"], [\"2022\", \"21st Indian Television Academy Awards\", \"Best Show Popular\", \"Anupamaa\", \"Ref. is\"], [\"2023\", \"Indian Telly Awards\", \"Best Onscreen Couple\", \"Gaurav Khanna and Rupali Ganguly\", \"Ref. is\"]]}",
+          "{\"table_id\": \"T0485\", \"title\": \"Made in Heaven (TV series)\", \"headers\": [\"Year\", \"Award\", \"Category\", \"Nominee(s)\", \"Result\"], \"sample_rows\": [[\"2019\", \"iReel Awards\", \"Best Music\", \"Made In Heaven\", \"Ref. is\"], [\"2019\", \"iReel Awards\", \"Best Supporting Actress\", \"Shivani Raghuvanshi\", \"Ref. is\"], [\"2019\", \"iReel Awards\", \"Best Supporting Actor\", \"Jim Sarbh\", \"Ref. is\"]]}",
+          "{\"table_id\": \"T0079\", \"title\": \"Anupamaa\", \"headers\": [\"Year\", \"Award\", \"Category\", \"Nominee\"], \"sample_rows\": [[\"2023\", \"Gold Awards\", \"Best Actor in a Leading Role\", \"Sudhanshu Pandey, Ref. is\"], [\"2023\", \"Gold Awards\", \"Best Actress in a Supporting Role\", \"Nidhi Shah, Ref. is\"], [\"2023\", \"Gold Awards\", \"Best Actor in a Comic Role\", \"Shekhar Shukla, Ref. is\"]]}",
+          "{\"table_id\": \"T0095\", \"title\": \"Benedict Wong\", \"headers\": [\"Year\", \"Award\", \"Category\", \"Work\", \"Result\"], \"sample_rows\": [[\"2022\", \"Gold List\", \"Best Supporting Actor\", \"Nine Days\", \"Mention, Ref. is\"], [\"2021\", \"Independent Spirit Awards\", \"Best Supporting Male\", \"Nine Days\", \"Ref. is\"], [\"2022\", \"Saturn Awards\", \"Best Supporting Actor\", \"Doctor Strange in the Multiverse of Madness\", \"Ref. is\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records award categories, nominees, recipients, and outcomes for tv series, actors, and other works.",
+        "elements": [
+          "award_ceremony",
+          "category",
+          "recipient",
+          "outcome"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D05124\", \"title\": \"Emmy Awards\", \"text\": \"Emmy Awards, They agreed to share ownership of the Emmy statue and trademark, with each responsible for administering a specific set of award events.\"}",
+          "{\"doc_id\": \"D00623\", \"title\": \"Jim Parsons\", \"text\": \"Jim Parsons, After graduating from high school, Parsons earned a B.A. degree in Theater from the University of Houston.\"}",
+          "{\"doc_id\": \"D00803\", \"title\": \"Daytime Emmy Awards\", \"text\": \"Daytime Emmy Awards, Web television shows, must be available for downloading or streaming to more than 50 percent of the country, and like shows in syndication they can only enter in one of the national Emmy competitions.\"}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records award categories, nominees, recipients, and outcomes for tv series, actors, and other works.",
+        "elements": [
+          "award",
+          "winner",
+          "for_work",
+          "point_in_time"
+        ],
+        "data_examples": [
+          "Broadcast Film Critics Association Award for Best Cast --winner [for work: The Lord of the Rings: The Return of the King; point in time: \"2003]--> Sean Bean",
+          "David Mills --nominated for [point in time: \"1998; for work: ER]--> Primetime Emmy Award for Outstanding Drama Series",
+          "Danny Arnold --award received--> Emmy Award"
+        ]
+      }
+    }
+  },
+  "actor_filmography": {
+    "concept": "actor_filmography",
+    "overall_description": "Lists an individual's credits across film, television, stage, radio, voice, and other media, including roles and production details.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for lists an individual's credits across film, television, stage, radio, voice, and other media, including roles and production details.",
+        "elements": [
+          "year",
+          "title",
+          "role",
+          "notes",
+          "language",
+          "film_title",
+          "show_title",
+          "genre",
+          "episodes",
+          "role_or_notes",
+          "actor",
+          "director",
+          "writer",
+          "executive_producer"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0040\", \"title\": \"Alexis Bledel\", \"headers\": [\"Year\", \"Title\", \"Role\"], \"sample_rows\": [[\"2014\", \"Parts per Billion\", \"Sarah, Notes is\"], [\"2004\", \"Bride and Prejudice\", \"Georgina \\\"Georgie\\\" Darcy, Notes is\"], [\"2010\", \"Girl Walks into a Bar\", \"Kim, Notes is\"]]}",
+          "{\"table_id\": \"T0041\", \"title\": \"Alexis Bledel\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Date\"], \"sample_rows\": [[\"2012\", \"Regrets\", \"Chrissie Myers\", \"March 27 – April 29, 2012, Notes is\"]]}",
+          "{\"table_id\": \"T0042\", \"title\": \"Alexis Bledel\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Date\", \"Notes\"], \"sample_rows\": [[\"2016\", \"College Republicans\", \"Lee Atwater\", \"April 23, 2016\", \"Staged reading of screenplay\"]]}",
+          "{\"table_id\": \"T0073\", \"title\": \"Anna Faris\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Notes\"], \"sample_rows\": [[\"2017\", \"The Emoji Movie\", \"Jailbreak / Princess Linda\", \"Voice\"], [\"2021\", \"HouseBroken\", \"Lil' Bunny, Chartreuse\", \"Voice, 2 episodes\"], [\"2004\", \"Mad TV\", \"Herself\", \"2 episodes\"]]}",
+          "{\"table_id\": \"T0549\", \"title\": \"Michelle Dockery\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Notes\"], \"sample_rows\": [[\"2009\", \"Waking The Dead\", \"Gemma Morrison\", \"2 episodes\"], [\"2020–2022\", \"Amphibia\", \"Lady Olivia (voice)\", \"9 episodes\"], [\"2014\", \"Tough Justice\", \"Connie Tough\", \"Short film\"]]}",
+          "{\"table_id\": \"T0588\", \"title\": \"Nathan Fillion\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Notes\"], \"sample_rows\": [[\"2015–2017\", \"Con Man\", \"Jack Moore\", \"17 episodes Also executive producer\"], [\"2005–2006\", \"Justice League Unlimited\", \"Vigilante\", \"Voice, 3 episodes\"], [\"2013\", \"BriTANicK\", \"Himself/'Two Ugly Guys and a Dog'\", \"Episode: \\\"Sexy Pool Party\\\"\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for lists an individual's credits across film, television, stage, radio, voice, and other media, including roles and production details.",
+        "elements": [
+          "actor_name",
+          "release_year",
+          "title",
+          "role",
+          "production_title",
+          "production_year",
+          "notes",
+          "work_title",
+          "work_type",
+          "year",
+          "actor",
+          "project_title",
+          "project_type",
+          "tv_series_title"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00565\", \"title\": \"Tom Cruise\", \"text\": \"Tom Cruise, That same year he appeared in All the Right Moves and Risky Business, which has been described as \\\"A Generation X classic, and a career maker for Tom Cruise.\\\"\"}",
+          "{\"doc_id\": \"D04632\", \"title\": \"Tom Cruise filmography\", \"text\": \"Tom Cruise filmography, The following year he starred in the Steven Spielberg-directed Minority Report (2002).\"}",
+          "{\"doc_id\": \"D00049\", \"title\": \"Tom Welling\", \"text\": \"Tom Welling, Welling was named one of People magazine's \\\"Breakthrough Stars of 2001\\\", and also won the Teen Choice Award as \\\"Choice Breakout Star (Male)\\\" in 2002 for his role as Clark Kent.\"}",
+          "{\"doc_id\": \"D01864\", \"title\": \"Josh Radnor\", \"text\": \"Josh Radnor, Radnor was cast as the lead in The WB series Off Centre.\"}",
+          "{\"doc_id\": \"D02196\", \"title\": \"Josh Duhamel\", \"text\": \"Josh Duhamel, Duhamel was the official pace car driver for the 2009 Indianapolis 500, driving the 2010 Chevrolet Camaro pace car.\"}",
+          "{\"doc_id\": \"D00204\", \"title\": \"Happythankyoumoreplease\", \"text\": \"Happythankyoumoreplease, Sam subsequently tries to adopt the boy, but botches the application process in a fashion that ends in his brief arrest.\"}"
+        ]
+      }
+    }
+  },
+  "tv_series_season_ratings_and_schedule": {
+    "concept": "tv_series_season_ratings_and_schedule",
+    "overall_description": "Provides broadcast schedules, ratings, viewership, and DVD release information for TV series seasons and episodes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for provides broadcast schedules, ratings, viewership, and dvd release information for tv series seasons and episodes.",
+        "elements": [
+          "season",
+          "episodes",
+          "timeslot",
+          "season_premiere",
+          "season_finale",
+          "tv_season",
+          "rank",
+          "viewers",
+          "time_slot",
+          "episode_count",
+          "premiere_date",
+          "premiere_viewers",
+          "finale_date",
+          "finale_viewers"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0284\", \"title\": \"House (TV series)\", \"headers\": [\"Season\", \"Episodes\", \"Timeslot (ET)\", \"Season premiere\", \"Season finale\", \"TV season\", \"Rank\", \"Viewers(millions)\"], \"sample_rows\": [[\"2\", \"24\", \"Tuesday 9:00 pm\", \"September 13, 2005\", \"May 23, 2006\", \"2005–2006\", \"#10\", \"17.35\"]]}",
+          "{\"table_id\": \"T0768\", \"title\": \"That '70s Show\", \"headers\": [\"Season\", \"Episodes\", \"Timeslot\", \"Premiere\", \"Season finale\", \"Rank\", \"Viewers(in millions)\"], \"sample_rows\": [[\"4\", \"2001–2002\", \"27\", \"Tuesday 8:00\", \"September 25, 2001\", \"May 21, 2002\", \"67\"], [\"2\", \"1999–2000\", \"26\", \"Tuesday 8:30\", \"September 28, 1999\", \"May 22, 2000\", \"86\"], [\"6\", \"2003–2004\", \"25\", \"Wednesday 8:00\", \"October 29, 2003\", \"May 19, 2004\", \"49\"]]}",
+          "{\"table_id\": \"T0832\", \"title\": \"The West Wing\", \"headers\": [\"Season\", \"Episodes\", \"Timeslot\", \"Season premiere\", \"Season finale\", \"TV season\", \"Ranking\", \"Viewers(in millions)\"], \"sample_rows\": [[\"4\", \"23\", \"Wednesday 9:00 pm\", \"September 25, 2002\", \"May 14, 2003\", \"2002–03\", \"#22\", \"13.5\"], [\"6\", \"22\", \"Wednesday 9:00 pm\", \"October 20, 2004\", \"April 6, 2005\", \"2004–05\", \"#35\", \"11.1\"], [\"2\", \"22\", \"Wednesday 9:00 pm\", \"October 4, 2000\", \"May 16, 2001\", \"2000–01\", \"#13\", \"17.0\"]]}",
+          "{\"table_id\": \"T0627\", \"title\": \"Prison Break\", \"headers\": [\"Season\", \"Time slot (ET)\", \"Episodes\", \"Premiered\"], \"sample_rows\": [[\"Date\", \"Premiere viewers (in millions)\", \"Date\", \"Finale viewers (in millions)\"]]}",
+          "{\"table_id\": \"T0628\", \"title\": \"Prison Break\", \"headers\": [\"Season\", \"Time slot (ET)\", \"Episodes\", \"Premiered\", \"Ended\", \"Viewers(in millions)\", \"#Rank\"], \"sample_rows\": [[\"5\", \"Tuesday 9:00 &nbsp; p.m.\", \"9\", \"April 4, 2017\", \"3.83\", \"May 30, 2017\", \"2.3\"]]}",
+          "{\"table_id\": \"T0268\", \"title\": \"Hawaii Five-0 (2010 TV series)\", \"headers\": [\"Season\", \"Time slot (ET)\", \"Episodes\", \"Season premiere\"], \"sample_rows\": [[\"Date\", \"Viewers (in millions)\", \"Date\", \"Viewers (in millions)\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for provides broadcast schedules, ratings, viewership, and dvd release information for tv series seasons and episodes.",
+        "elements": [
+          "series_title",
+          "episode_title",
+          "production_cost",
+          "year"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00324\", \"title\": \"Star Trek: The Original Series\", \"text\": \"Star Trek: The Original Series, NBC ordered 16 episodes of Star Trek, besides \\\"Where No Man Has Gone Before\\\".\"}",
+          "{\"doc_id\": \"D00176\", \"title\": \"Science fiction on television\", \"text\": \"Science fiction on television, Gene Roddenberry, the creator of Star Trek, Star Trek: The Next Generation, Earth: Final Conflict, and Andromeda Rod Serling, creator of The Twilight Zone and Night Gallery.\"}",
+          "{\"doc_id\": \"D00456\", \"title\": \"Star Trek: The Next Generation\", \"text\": \"Star Trek: The Next Generation, The episode \\\"Datalore\\\" introduced Data's evil twin brother Lore, who made several more appearances. \\\"\"}"
+        ]
+      }
+    }
+  },
+  "tv_series_broadcast_and_production": {
+    "concept": "tv_series_broadcast_and_production",
+    "overall_description": "Documents the broadcast channels, networks, production companies, and platforms associated with TV series and other media works.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for documents the broadcast channels, networks, production companies, and platforms associated with tv series and other media works.",
+        "elements": [
+          "country",
+          "channel",
+          "local_name"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0724\", \"title\": \"Space: Above and Beyond\", \"headers\": [\"Country\", \"Channel\"], \"sample_rows\": [[\"India\", \"STAR World India\"], [\"Malaysia\", \"RTM2\"], [\"South Africa\", \"SABC\"]]}",
+          "{\"table_id\": \"T0725\", \"title\": \"Space: Above and Beyond\", \"headers\": [\"Country\", \"Channel\", \"Local name\"], \"sample_rows\": [[\"Spain\", \"Telecinco\", \"\\\"Space\\\"\"], [\"Germany\", \"VOX\", \"\\\"Space 2063\\\"\"], [\"Norway\", \"TV 2\", \"\\\"Skvadron 58\\\" (Squadron 58)\"]]}",
+          "{\"table_id\": \"T0142\", \"title\": \"Cherami Leigh\", \"headers\": [\"Year\", \"Title\", \"Country\", \"Dubbed from\", \"Role\", \"Live Actor\"], \"sample_rows\": [[\"2016\", \"Marseille\", \"France\", \"French\", \"Barbara\", \"Carolina Jurczak, Source is\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for documents the broadcast channels, networks, production companies, and platforms associated with tv series and other media works.",
+        "elements": [
+          "tv_series_title",
+          "country",
+          "broadcast_channel",
+          "broadcast_start_date",
+          "broadcast_end_date",
+          "network",
+          "affiliate_station",
+          "affiliation_type",
+          "start_date",
+          "end_date",
+          "notes",
+          "tv_series",
+          "production_company",
+          "broadcast_network"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00185\", \"title\": \"Prisoners of War (TV series)\", \"text\": \"Prisoners of War (TV series), First season episodes had a budget of $200,000 each.\"}",
+          "{\"doc_id\": \"D00090\", \"title\": \"The Twilight Zone (1959 TV series)\", \"text\": \"The Twilight Zone (1959 TV series), The season releases (The Definitive Collection and Blu-rays) also include the radio dramas and the \\\"Next Week\\\" promos (some of the promos on the season DVDs are audio only).\"}",
+          "{\"doc_id\": \"D01702\", \"title\": \"Hanna (TV series)\", \"text\": \"Hanna (TV series), The first episode was made available on Amazon Prime Video as a time-limited preview on February 3, 2019.\"}",
+          "{\"doc_id\": \"D00822\", \"title\": \"NBC\", \"text\": \"NBC, In some markets, these stations also maintain digital simulcasts on a subchannel of a co-owned/co-managed full-power television station.\"}",
+          "{\"doc_id\": \"D00492\", \"title\": \"The CW\", \"text\": \"The CW, In September 2020, the platform added over 300 hours of programming with additional seasons for existing shows, and new series such as 90210, Lost Girl, Nikita, and XIII: The Conspiracy.\"}",
+          "{\"doc_id\": \"D01759\", \"title\": \"Pat Weaver\", \"text\": \"Pat Weaver, For NBC he advocated for television spectaculars, live, 90-minute special programs with high production values and costs.\"}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for documents the broadcast channels, networks, production companies, and platforms associated with tv series and other media works.",
+        "elements": [
+          "media_work",
+          "broadcast_channel",
+          "start_time",
+          "production_company",
+          "production_role",
+          "platform",
+          "qualifier_fields"
+        ],
+        "data_examples": [
+          "Lost --broadcast by--> RTS 1",
+          "Flava --owned by--> Sony Pictures Television",
+          "KOYN --licensed to broadcast to--> Paris",
+          "The Suite Life on Deck --production company--> It's a Laugh Productions",
+          "Caretaker, Part I --production code--> \"101\"",
+          "Mare of Easttown --production date--> \"2019"
+        ]
+      }
+    }
+  },
+  "tv_series_creation_and_development": {
+    "concept": "tv_series_creation_and_development",
+    "overall_description": "Covers the creation, development, themes, adaptations, and continuity of TV series, including spin-offs and remakes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for covers the creation, development, themes, adaptations, and continuity of tv series, including spin-offs and remakes.",
+        "elements": [
+          "sketch_referenced",
+          "product",
+          "returning_actors",
+          "release_date",
+          "additional_notes"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0681\", \"title\": \"Saturday Night Live\", \"headers\": [\"Sketch Referenced\", \"Product\", \"Returning Actors\", \"Release Date\"], \"sample_rows\": [[\"Land Shark\", \"BMW\", \"N/A\", \"2003, Additional Notes is\"], [\"Mr. Bill\", \"MasterCard\", \"Walter Williams\", \"06/2008, Additional Notes is\"], [\"Bill Swerski's Superfans\", \"State Farm\", \"Robert Smigel , George Wendt\", \"09/2013, Additional Notes is\"]]}",
+          "{\"table_id\": \"T0682\", \"title\": \"Saturday Night Live\", \"headers\": [\"Sketch Referenced\", \"Product\", \"Returning Actors\", \"Release Date\", \"Additional Notes\"], \"sample_rows\": [[\"I Wish It Was Christmas Today\", \"Acura\", \"N/A\", \"11/2014\", \"Cover by Julian Casablancas\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for covers the creation, development, themes, adaptations, and continuity of tv series, including spin-offs and remakes.",
+        "elements": [
+          "creator",
+          "tv_series",
+          "development_status",
+          "network",
+          "year",
+          "note",
+          "series_title",
+          "season_number",
+          "episode_title",
+          "plot_summary",
+          "production_notes",
+          "critical_reception",
+          "music_notes",
+          "award_nominations"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D07967\", \"title\": \"Jason Rothenberg\", \"text\": \"Jason Rothenberg, However the show did not appear in the CW's fall schedule in early 2009 and on May 21, 2009, in an interview with Dawn Ostroff, the CW's CEO stated the show was still in consideration for midseason.\"}",
+          "{\"doc_id\": \"D00518\", \"title\": \"The 100 (TV series)\", \"text\": \"The 100 (TV series), The season ends with the deaths of most of the Primes, but also with the loss of Abby Griffin and Marcus Kane.\"}",
+          "{\"doc_id\": \"D00234\", \"title\": \"Gossip Girl\", \"text\": \"Gossip Girl, Connor Paolo as Eric van der Woodsen, Serena's younger brother.\"}",
+          "{\"doc_id\": \"D00037\", \"title\": \"Breaking Bad\", \"text\": \"Breaking Bad, Gus has totally allowed me that level of flexibility and relaxation – not because he has ultimate power and he knows he can take someone's life.\"}",
+          "{\"doc_id\": \"D06457\", \"title\": \"Breaking Bad (season 1)\", \"text\": \"Breaking Bad (season 1), It was released on Blu-ray in Region A on March 16, 2010.\"}",
+          "{\"doc_id\": \"D00226\", \"title\": \"Walter White (Breaking Bad)\", \"text\": \"Walter White (Breaking Bad), Walt rescues Jesse, who had been kept as a prisoner in the lab, and together they destroy all the evidence and torch the lab.\"}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for covers the creation, development, themes, adaptations, and continuity of tv series, including spin-offs and remakes.",
+        "elements": [
+          "original_series",
+          "spin_off_series",
+          "relation_type"
+        ],
+        "data_examples": [
+          "Kota Factory --TVFPlay series ID--> \"558\"",
+          "24 --series spin-off--> 24: Legacy",
+          "drama television series --Encyclopedia of China Online Database ID (Second Edition)--> \"199338\""
+        ]
+      }
+    }
+  },
+  "tv_series_critical_reception": {
+    "concept": "tv_series_critical_reception",
+    "overall_description": "Stores critical reviews, rankings, and reception details for TV series and films.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for stores critical reviews, rankings, and reception details for tv series and films.",
+        "elements": [
+          "tv_series",
+          "publication",
+          "accolade",
+          "year",
+          "rank",
+          "season",
+          "review_aggregator",
+          "rating_score",
+          "review_count",
+          "critical_consensus",
+          "score",
+          "score_scale",
+          "number_of_reviews",
+          "rating_category"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00438\", \"title\": \"ER (TV series)\", \"text\": \"ER (TV series), The screenplay went nowhere and Crichton turned to other topics.\"}",
+          "{\"doc_id\": \"D05589\", \"title\": \"Arcane (TV series)\", \"text\": \"Arcane (TV series), On November 6, 2021, for the global premiere, Riot Games streamed the first episode on Twitch.\"}",
+          "{\"doc_id\": \"D00092\", \"title\": \"Dark (TV series)\", \"text\": \"Dark (TV series), Dark received critical acclaim and has been listed by many publications as one of the best TV shows of the years 2017, 2019, and 2020, as well as of the 2010s, 21st century, and of all time.\"}",
+          "{\"doc_id\": \"D02060\", \"title\": \"The Newsroom (American TV series)\", \"text\": \"The Newsroom (American TV series), The third season tackles two controversial topics in news reporting.\"}",
+          "{\"doc_id\": \"D03800\", \"title\": \"Mars (American TV series)\", \"text\": \"Mars (American TV series), The lead actress, Jihae, confirmed via her official Instagram that the series was canceled after only two seasons.\"}",
+          "{\"doc_id\": \"D00628\", \"title\": \"Gotham (TV series)\", \"text\": \"Gotham (TV series), On Rotten Tomatoes, the season has a rating of 74% based on 15 reviews, with an average rating of 6.58/10.\"}"
+        ]
+      }
+    }
+  },
+  "media_work_identifier": {
+    "concept": "media_work_identifier",
+    "overall_description": "Maps media works, artists, and persons to their identifiers in external databases or catalogs.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for maps media works, artists, and persons to their identifiers in external databases or catalogs.",
+        "elements": [
+          "media_work",
+          "external_database",
+          "identifier",
+          "artist",
+          "person"
+        ],
+        "data_examples": [
+          "God of War --StopGame ID--> \"god_of_war_2016\"",
+          "Game of Thrones --Kallías ID--> \"AK01762133\"",
+          "God of War --Games@Mail.ru ID--> \"god_of_war_2018\"",
+          "South Park --Apple TV show ID--> \"umc.cmc.1n9fnkfiemhayikewq5xitzn6\"",
+          "Santa with Muscles --Apple TV movie ID--> \"umc.cmc.1dt1vp14w599zwfyfhkahrhne\"",
+          "Under the Dome --Vokrug.tv show ID--> \"pod_kupolom\""
+        ]
+      }
+    }
+  },
+  "geographic_entity_location": {
+    "concept": "geographic_entity_location",
+    "overall_description": "Associates entities, works, and organizations with their geographic locations, formation places, and publication places.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates entities, works, and organizations with their geographic locations, formation places, and publication places.",
+        "elements": [
+          "located_entity",
+          "location",
+          "administrative_territorial_entity",
+          "country",
+          "qualifier_fields",
+          "entity",
+          "formation_date",
+          "work",
+          "location_type",
+          "place_of_publication",
+          "publisher",
+          "qualifiers"
+        ],
+        "data_examples": [
+          "Los Gatos Opera House --located in the administrative territorial entity--> Los Gatos",
+          "United States of America --contains administrative territorial entity--> South Carolina",
+          "Robert W. Holley --place of death--> Los Gatos",
+          "PIAS Recordings --location of formation--> City of Brussels",
+          "Klasky Csupo --industry--> film industry",
+          "The Edge --distributed by--> Sony Pictures Television"
+        ]
+      }
+    }
+  },
+  "entity_category_membership": {
+    "concept": "entity_category_membership",
+    "overall_description": "Associates entities with categories, types, and templates, including qualifiers for role or context.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates entities with categories, types, and templates, including qualifiers for role or context.",
+        "elements": [
+          "entity",
+          "category",
+          "category_type",
+          "member",
+          "qualifier_role",
+          "qualifier_value",
+          "topic",
+          "template",
+          "type",
+          "exemplar"
+        ],
+        "data_examples": [
+          "Milwaukie, Oregon --category for people born here--> Q101996623",
+          "Paris --category of associated people--> Category:People from Paris, Texas",
+          "Alba August --Commons category--> \"Alba August\"",
+          "Category:Matthew Morrison songs --category contains [performer: Matthew Morrison]--> song",
+          "The Runner Stumbles --composer--> Ernest Gold",
+          "Ernest Gold --Classical Archives composer ID--> \"40825\""
+        ]
+      }
+    }
+  },
+  "fictional_universe_membership": {
+    "concept": "fictional_universe_membership",
+    "overall_description": "Associates works with the fictional universes they belong to or are set in.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates works with the fictional universes they belong to or are set in.",
+        "elements": [
+          "fictional_universe",
+          "work",
+          "membership_type"
+        ],
+        "data_examples": [
+          "Marvel Cinematic Universe --fictional universe described in--> Spider-Man: Far from Home",
+          "The Book of Boba Fett --takes place in fictional universe--> Star Wars universe",
+          "M'Baku --from narrative universe--> Marvel Cinematic Universe"
+        ]
+      }
+    }
+  },
+  "creator_work_relation": {
+    "concept": "creator_work_relation",
+    "overall_description": "Associates creators, authors, and contributors with the works they created or contributed to.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates creators, authors, and contributors with the works they created or contributed to.",
+        "elements": [
+          "creator",
+          "work",
+          "author",
+          "author_type",
+          "stated_as",
+          "contributor",
+          "creative_work",
+          "contribution_type"
+        ],
+        "data_examples": [
+          "List of Prison Break characters --creator--> Paul Scheuring",
+          "3rd Rock from the Sun --list of characters--> list of 3rd Rock from the Sun characters",
+          "John Cleese --Podchaser creator ID--> \"107ZzpwVVs\"",
+          "A traveler's companion to the 'verse --author of foreword--> Malcolm Reynolds",
+          "Simpsons World: The Ultimate Episode Guide: Seasons 1–20 --author--> Matt Groening",
+          "Orlando Bloom --SVKKL authority ID--> \"0400505-Bloom-Orlando-1977\""
+        ]
+      }
+    }
+  },
+  "work_publication_and_license": {
+    "concept": "work_publication_and_license",
+    "overall_description": "Records publication dates, licenses, languages, and main subjects of creative works.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records publication dates, licenses, languages, and main subjects of creative works.",
+        "elements": [
+          "work",
+          "publication_date",
+          "original_broadcaster",
+          "place_of_publication",
+          "license",
+          "license_type",
+          "language",
+          "qualifier_language_of_work_or_name",
+          "main_subject",
+          "subject"
+        ],
+        "data_examples": [
+          "Emily in Paris --publication date--> 2 October \"2020",
+          "Sand Serpents --original broadcaster--> Syfy",
+          "5-Headed Shark Attack --date of first performance [original broadcaster: Syfy]--> 30 July \"2017",
+          "God of War --copyright license--> proprietary license",
+          "Ricky Gervais --copyright representative--> reproduction right not represented by CISAC member",
+          "Lance Henriksen --copyright status as a creator [applies to jurisdiction: countries with 70 years pma or longer]--> works protected by copyrights"
+        ]
+      }
+    }
+  },
+  "media_work_statistics": {
+    "concept": "media_work_statistics",
+    "overall_description": "Provides quantitative statistics about media works and entities, such as counts and indicators over time.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for provides quantitative statistics about media works and entities, such as counts and indicators over time.",
+        "elements": [
+          "media_work",
+          "count_statistic",
+          "count_type",
+          "count_value",
+          "statistic_type",
+          "statistic_value",
+          "qualifier",
+          "entity",
+          "statistical_indicator",
+          "value",
+          "point_in_time",
+          "determination_method"
+        ],
+        "data_examples": [
+          "Arcane --number of seasons--> \"+1\"",
+          "University of Sussex --phone number--> \"+44-1273606755\"",
+          "Italian --number of speakers [applies to part: second language; point in time: \"2009]--> \"+3026000\"",
+          "God of War --data size--> \"+38.73\"",
+          "Rough Collie --litter size--> \"+5.2\"",
+          "United States of America --open data portal--> Data.gov"
+        ]
+      }
+    }
+  },
+  "person_biographical_event": {
+    "concept": "person_biographical_event",
+    "overall_description": "Records key biographical events, dates, and relationships in a person's life.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records key biographical events, dates, and relationships in a person's life.",
+        "elements": [
+          "actor_name",
+          "event_date",
+          "event_type",
+          "event_description",
+          "source",
+          "relationship_type",
+          "partner_name",
+          "start_date"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D01498\", \"title\": \"Emilio Estevez\", \"text\": \"Emilio Estevez, In 2008, he guest-starred on his brother's sitcom Two and a Half Men as an old friend of Charlie Sheen's character. (\"}",
+          "{\"doc_id\": \"D00014\", \"title\": \"Charlie Sheen\", \"text\": \"Charlie Sheen, On May 20, 1998, Sheen suffered a stroke after overdosing while using cocaine and was hospitalized.\"}",
+          "{\"doc_id\": \"D00795\", \"title\": \"Kiefer Sutherland\", \"text\": \"Kiefer Sutherland, He has appeared in a Brazilian TV commercials for Citroën C4 sedan and a voice-over for a commercial for Bank of America.\"}",
+          "{\"doc_id\": \"D01112\", \"title\": \"Kunal Khemu\", \"text\": \"Kunal Khemu, In 2010, he appeared in Golmaal 3 in which he played a supporting role as Laxman.\"}",
+          "{\"doc_id\": \"D01954\", \"title\": \"Sumeet Vyas\", \"text\": \"Sumeet Vyas, Later, he married TV actress Ekta Kaul on 15 September 2018.\"}",
+          "{\"doc_id\": \"D01993\", \"title\": \"Permanent Roommates\", \"text\": \"Permanent Roommates, Starring Sumeet Vyas and Nidhi Singh, this series revolves around a young couple, Tanya and Mikesh, who after being in a long distance relationship for three years, face the prospect of marriage.\"}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records key biographical events, dates, and relationships in a person's life.",
+        "elements": [
+          "person",
+          "event_type",
+          "date",
+          "place"
+        ],
+        "data_examples": [
+          "Robert Maxwell --date of birth--> 31 January \"1908",
+          "Richard Matheson --date of death--> 23 June \"2013",
+          "James T. Kirk --date of disappearance--> \"2293"
+        ]
+      }
+    }
+  },
+  "person_education_and_attributes": {
+    "concept": "person_education_and_attributes",
+    "overall_description": "Documents a person's educational qualifications and physical attributes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for documents a person's educational qualifications and physical attributes.",
+        "elements": [
+          "person",
+          "location",
+          "date",
+          "school",
+          "degree"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0293\", \"title\": \"Hugh Laurie\", \"headers\": [\"Location\", \"Date\", \"School\", \"Degree\"], \"sample_rows\": [[\"England\", \"1982\", \"Selwyn College, Cambridge\", \"Third Class Honours Bachelor of Arts (B.A.) in Archaeology and Anthropology\"]]}",
+          "{\"table_id\": \"T0288\", \"title\": \"Hugh Bonneville\", \"headers\": [\"Location\", \"Date\", \"School\", \"Degree\"], \"sample_rows\": [[\"England\", \"\", \"Corpus Christi College, Cambridge\", \"Lower Second Class Honours Bachelor of Arts (BA) in Theology\"]]}",
+          "{\"table_id\": \"T0287\", \"title\": \"Hugh Bonneville\", \"headers\": [\"Location\", \"Date\", \"School\"], \"sample_rows\": [[\"England\", \"\", \"Webber Douglas Academy of Dramatic Art, Degree is\"]]}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for documents a person's educational qualifications and physical attributes.",
+        "elements": [
+          "person",
+          "physical_attribute",
+          "attribute_value"
+        ],
+        "data_examples": [
+          "Mila Kunis --hair color--> dark brown hair",
+          "Tiffani Thiessen --eye color--> blue",
+          "Prisoners of War --color--> color"
+        ]
+      }
+    }
+  },
+  "office_holder_tenure": {
+    "concept": "office_holder_tenure",
+    "overall_description": "Records the tenure of individuals in corporate or organizational positions, including leadership changes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records the tenure of individuals in corporate or organizational positions, including leadership changes.",
+        "elements": [
+          "executive",
+          "term",
+          "position"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0580\", \"title\": \"NBC\", \"headers\": [\"Executive\", \"Term\", \"Position\"], \"sample_rows\": [[\"Jeff Shell\", \"2020–Present\", \"Shell is also the current CEO of NBCUniversal.\"]]}",
+          "{\"table_id\": \"T0219\", \"title\": \"Fox Broadcasting Company\", \"headers\": [\"Executive\", \"Term\", \"Position\"], \"sample_rows\": [[\"Peter Chernin\", \"1989–1992\", \"During Chernin's tenure as president of entertainment for the Fox Broadcasting Company, programming grew from two to seven nights a week.\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records the tenure of individuals in corporate or organizational positions, including leadership changes.",
+        "elements": [
+          "company",
+          "position",
+          "person",
+          "start_date",
+          "predecessor",
+          "successor"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00688\", \"title\": \"Turner Broadcasting System\", \"text\": \"Turner Broadcasting System, Burt Reinhardt, then executive vice president of CNN, hired most of the channel's first 200 employees and 25-member staff including Bernard Shaw, the network's first news anchor.\"}",
+          "{\"doc_id\": \"D00139\", \"title\": \"Fox Broadcasting Company\", \"text\": \"Fox Broadcasting Company, AMC president Charlie Collier succeeded Gary Newman as chairman and CEO of Fox on November 1, 2018.\"}",
+          "{\"doc_id\": \"D00262\", \"title\": \"Food Network\", \"text\": \"Food Network, Players can also try out the recipes featured on the game.\"}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the tenure of individuals in corporate or organizational positions, including leadership changes.",
+        "elements": [
+          "office_holder",
+          "office",
+          "start_time",
+          "end_time"
+        ],
+        "data_examples": [
+          "United States of America --head of government [end time: 4 March \"1797; start time: 30 April \"1789]--> George Washington",
+          "United States of America --central bank [start time: \"1791; end time: \"1811]--> First Bank of the United States",
+          "Emily in Paris --start time--> 2 October \"2020"
+        ]
+      }
+    }
+  },
+  "military_service_and_hierarchy": {
+    "concept": "military_service_and_hierarchy",
+    "overall_description": "Describes military unit hierarchies, commander appointment paths, and personnel ranks.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for describes military unit hierarchies, commander appointment paths, and personnel ranks.",
+        "elements": [
+          "unit_name",
+          "unit_type",
+          "parent_unit",
+          "commander_rank",
+          "commander_title",
+          "hebrew_name",
+          "english_name",
+          "commander",
+          "headquarters_location"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0311\", \"title\": \"Israel Defense Forces\", \"headers\": [\"Ground Forces\", \"Hebrew\", \"English\"], \"sample_rows\": [[\"חֻלְיָה Hulya\", \"Fire Team\", \"Mashak Hulya (\\\"Fire Team Leader\\\") Corporal or Sergeant\"], [\"לַהַק Lahak\", \"Air Force Command\", \"Colonel\"], [\"טַיֶּסֶת Tayeset\", \"Air Force Squadron\", \"Captain or Major\"]]}",
+          "{\"table_id\": \"T0310\", \"title\": \"Israel Defense Forces\", \"headers\": [\"Ground Forces\"], \"sample_rows\": [[\"Air Force\"], [\"Ground Forces\"]]}",
+          "{\"table_id\": \"T0312\", \"title\": \"Israel Defense Forces\", \"headers\": [\"Hebrew\", \"English\", \"Commander\"], \"sample_rows\": [[\"מַחְלָקָה Mahlaka\", \"Platoon\", \"Mefaked Mahlaka (\\\"Platoon Commander\\\") Lieutenant\"], [\"גַּיִס Gayis\", \"Army\", \"Major-General\"], [\"לַהַק Lahak\", \"Air Force Command\", \"Colonel\"]]}",
+          "{\"table_id\": \"T0883\", \"title\": \"United States Army\", \"headers\": [\"Branch\"], \"sample_rows\": [[\"Special branch insignias (for some unique duty assignments)\"]]}",
+          "{\"table_id\": \"T0882\", \"title\": \"United States Army\", \"headers\": [\"Army Commands\", \"Current commander\", \"Location of headquarters\"], \"sample_rows\": [[\"20px United States Army North (ARNORTH)/ Fifth Army\", \"LTG John R. Evans Jr.\", \"Joint Base San Antonio , Texas\"], [\"20px United States Army Special Operations Command (USASOC)\", \"LTG Jonathan P. Braga\", \"Fort Bragg, North Carolina\"], [\"20px Eighth Army (EUSA)\", \"LTG Willard M. Burleson III\", \"Camp Humphreys , South Korea\"]]}",
+          "{\"table_id\": \"T0885\", \"title\": \"United States Army\", \"headers\": [\"Direct reporting units\", \"Current commander\", \"Location of headquarters\"], \"sample_rows\": [[\"20px U.S. Army Air Traffic Services Command\", \"COL Jason T. Cook\", \"Fort Novosel , Alabama\"], [\"20px U.S. Army Reserve Command\", \"LTG Jody J. Daniels\", \"Fort Bragg, North Carolina\"], [\"20px V Corps\", \"LTG John S. Kolasheski\", \"Fort Knox , Kentucky\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for describes military unit hierarchies, commander appointment paths, and personnel ranks.",
+        "elements": [
+          "military_unit",
+          "commander",
+          "appointment_path",
+          "training_institution",
+          "commissioning_source"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00021\", \"title\": \"United States Army\", \"text\": \"United States Army, There are several paths to becoming a commissioned officer including the United States Military Academy, Reserve Officers' Training Corps, Officer Candidate School, and direct commissioning.\"}",
+          "{\"doc_id\": \"D00165\", \"title\": \"United States\", \"text\": \"United States, By the mid-1670s, the British had defeated and seized the territory of Dutch settlers in New Netherland, in the mid-Atlantic region.\"}",
+          "{\"doc_id\": \"D00806\", \"title\": \"Sean Maguire\", \"text\": \"Sean Maguire, He has also appeared in Holby City and Sunburn.\"}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for describes military unit hierarchies, commander appointment paths, and personnel ranks.",
+        "elements": [
+          "person",
+          "military_branch",
+          "military_rank"
+        ],
+        "data_examples": [
+          "James T. Kirk --military rank--> captain",
+          "Larry David --military branch--> United States Army",
+          "True as Steel --follows--> Hellbound"
+        ]
+      }
+    }
+  },
+  "music_chart_performance": {
+    "concept": "music_chart_performance",
+    "overall_description": "Tracks chart positions and release notations for music singles and albums.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for tracks chart positions and release notations for music singles and albums.",
+        "elements": [
+          "artist",
+          "single_title",
+          "release_year",
+          "peak_chart_position",
+          "album",
+          "title",
+          "release_date",
+          "label",
+          "format",
+          "album_title",
+          "record_label",
+          "chart_region",
+          "details",
+          "peak_chart_positions"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0298\", \"title\": \"Hugh Laurie\", \"headers\": [\"Title\", \"Year\", \"Peak chartpositions\", \"Album\"], \"sample_rows\": [[\"\\\" Stick It Out \\\" (Right Said Fred and Friends)\", \"1993\", \"4\", \"48\"], [\"\\\"If I Can't Have You\\\" ( Meat Loaf , featuring Kara DioGuardi & Hugh Laurie)\", \"2010\", \"—\", \"—\"]]}",
+          "{\"table_id\": \"T0297\", \"title\": \"Hugh Laurie\", \"headers\": [\"Title\", \"Year\", \"Peak chartpositions\"], \"sample_rows\": [[\"UK\", \"AUT\", \"BEL<br />(WA)\"]]}",
+          "{\"table_id\": \"T0525\", \"title\": \"Matthew Morrison\", \"headers\": [\"Year\", \"Single\", \"Peak chartpositions\", \"Album\"], \"sample_rows\": [[\"2011\", \"\\\" Still Got Tonight \\\"\", \"24\", \"—\"], [\"2011\", \"\\\" Summer Rain \\\"\", \"—\", \"16\"]]}",
+          "{\"table_id\": \"T0519\", \"title\": \"Matt Stone\", \"headers\": [\"Title\", \"Details\", \"Peak chart positions\"], \"sample_rows\": [[\"South Park: Bigger, Longer & Uncut\", \"Release date: June 15, 1999 Label: Atlantic Records Formats: CD, vinyl, digital download\", \"28\"]]}",
+          "{\"table_id\": \"T0360\", \"title\": \"Johan Renck\", \"headers\": [\"Year\", \"Title\", \"Peak chart positions\", \"Album\"], \"sample_rows\": [[\"1993\", \"\\\" Here We Go \\\"\", \"4\", \"6\"], [\"1992\", \"\\\"Numania 1\\\" (with E-Type)\", \"—\", \"—\"], [\"1993\", \"\\\"Down the Drain\\\"\", \"24\", \"27\"]]}",
+          "{\"table_id\": \"T0689\", \"title\": \"Scott Grimes\", \"headers\": [\"Year\", \"Single\", \"Chart Positions\", \"Album\"], \"sample_rows\": [[\"2005\", \"\\\"Livin' on the Run\\\"\", \"34\", \"Livin' on the Run\"]]}"
+        ]
+      }
+    }
+  },
+  "music_album_release": {
+    "concept": "music_album_release",
+    "overall_description": "Lists music albums with their release details and types.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for lists music albums with their release details and types.",
+        "elements": [
+          "artist",
+          "album_title",
+          "release_year",
+          "album_type",
+          "genre"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D06490\", \"title\": \"Hellbound (Warlock album)\", \"text\": \"Hellbound (Warlock album), Hellbound is the second studio album by German heavy Metal band Warlock, released in 1985.\"}",
+          "{\"doc_id\": \"D01034\", \"title\": \"Hellbound (TV series)\", \"text\": \"Hellbound (TV series), There seems to be no doubt that Hell will be the most talked about work this winter.\\\"\"}",
+          "{\"doc_id\": \"D00846\", \"title\": \"Seth MacFarlane\", \"text\": \"Seth MacFarlane, In 2014, he released his second studio album Holiday for Swing, a Christmas album including collaborations with Norah Jones and Sara Bareilles.\"}"
+        ]
+      }
+    }
+  },
+  "book_series_publication": {
+    "concept": "book_series_publication",
+    "overall_description": "Lists books in a series and an author's bibliography with publication details.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for lists books in a series and an author's bibliography with publication details.",
+        "elements": [
+          "book_series",
+          "book_title",
+          "publication_order",
+          "publication_date",
+          "isbn",
+          "page_count",
+          "audio_duration",
+          "title",
+          "year",
+          "type",
+          "note"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0793\", \"title\": \"The Expanse (novel series)\", \"headers\": [\"No.\", \"Title\", \"Pages\", \"Audio\", \"Publication date\", \"ISBN\"], \"sample_rows\": [[\"8\", \"Tiamat's Wrath\", \"544\", \"19h 8m\", \"2019-03-26\", \"978-0-316-33286-6\"], [\"6\", \"Babylon's Ashes\", \"608\", \"19h 58m\", \"2016-12-06\", \"978-0-316-33474-7\"], [\"9\", \"Leviathan Falls\", \"528\", \"19h 40m\", \"2021-11-30\", \"978-0-316-33291-0\"]]}",
+          "{\"table_id\": \"T0794\", \"title\": \"The Expanse (novel series)\", \"headers\": [\"No.\", \"Title\", \"Setting\", \"Pages\", \"Audio\", \"Publication date\", \"ISBN\"], \"sample_rows\": [[\"7.5\", \"Auberon\", \"Between Persepolis Rising and Tiamat’s Wrath\", \"63\", \"2h 25m\", \"2019-11-12\", \"978-0-316-43428-7\"], [\"6.5\", \"Strange Dogs\", \"Between Babylon's Ashes and Persepolis Rising\", \"64\", \"2h 29m\", \"2017-07-18\", \"978-0-316-21757-6\"], [\"9.5\", \"The Sins of Our Fathers\", \"After Leviathan Falls\", \"64\", \"2h 23m\", \"2022-03-15\", \"978-0-316-66907-8\"]]}",
+          "{\"table_id\": \"T0752\", \"title\": \"Supernatural (American TV series)\", \"headers\": [\"Title\", \"Author\", \"Published\", \"Publisher\", \"ISBN\"], \"sample_rows\": [[\"Children of Anubis\", \"Tim Waggoner\", \"April 30, 2019\", \"Titan Books\", \"9781785653261\"], [\"Nevermore\", \"Keith R.A. DeCandido\", \"July 31, 2007\", \"HarperEntertainment\", \"0-06-137090-8\"], [\"Heart of the Dragon\", \"Keith R.A. DeCandido\", \"February 16, 2010\", \"Titan Books\", \"1-84856-600-X\"]]}",
+          "{\"table_id\": \"T0240\", \"title\": \"George R. R. Martin\", \"headers\": [\"Title\", \"Year\", \"Type\", \"Note\"], \"sample_rows\": [[\"A Dream of Spring\", \"TBD\", \"Novel\", \"A Song of Ice and Fire\"], [\"\\\" The Ice Dragon \\\"\", \"1980\", \"Young adult fiction\", \"Illustrated by Alicia Austin as part of Dragons of Light , and Anne Yvonne Gilbert in 2006\"], [\"\\\"This Tower of Ashes\\\"\", \"1976\", \"Short story\", \"Analog Annual\"]]}",
+          "{\"table_id\": \"T0239\", \"title\": \"George R. R. Martin\", \"headers\": [\"Title\", \"Year\", \"Type\"], \"sample_rows\": [[\"Tuf Voyaging\", \"1986\", \"Fix-up novel, Note is\"], [\"Fevre Dream\", \"1982\", \"Novel, Note is\"], [\"GRRM: A RRetrospective\", \"2003\", \"Short story & essay collection, Note is\"]]}"
+        ]
+      }
+    }
+  },
+  "language_translation_phrasebook": {
+    "concept": "language_translation_phrasebook",
+    "overall_description": "Maps phrases or words between languages with pronunciation and register.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for maps phrases or words between languages with pronunciation and register.",
+        "elements": [
+          "source_language",
+          "target_language",
+          "source_phrase",
+          "target_phrase",
+          "pronunciation",
+          "register"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0314\", \"title\": \"Italian language\", \"headers\": [\"English\", \"Italian\", \"IPA\"], \"sample_rows\": [[\"which\", \"quale\", \"/ˈkwale/\"], [\"January\", \"gennaio\", \"/dʒenˈnajo/\"], [\"one trillion\", \"mille miliardi\", \"/ˈmilleˈmiˈljardi/\"]]}",
+          "{\"table_id\": \"T0315\", \"title\": \"Italian language\", \"headers\": [\"English ()\", \"Italian ()\"], \"sample_rows\": [[\"You are right/wrong!\", \"it (Tu) hai ragione/torto! (informal) / it (Lei) ha ragione/torto! (formal) / it (Voi) avete ragione/torto! (plural), Pronunciation is\"]]}",
+          "{\"table_id\": \"T0316\", \"title\": \"Italian language\", \"headers\": [\"English ()\", \"Italian ()\", \"Pronunciation\"], \"sample_rows\": [[\"Where is the bathroom?\", \"it Dov'è il bagno?\", \"( [//upload.wikimedia.org/wikipedia/commons/6/6e/It-dov%27%C3%A8_il_bagno.ogg listen] ) /doˌvɛ il ˈbaɲɲo/\"], [\"What time is it?\", \"it Che ora è? / it Che ore sono?\", \"/ke ˌora ˈɛ/ /ke ˌore ˈsono/\"], [\"Why / Because\", \"it Perché\", \"/perˈke/\"]]}"
+        ]
+      }
+    }
+  },
+  "demographic_statistics": {
+    "concept": "demographic_statistics",
+    "overall_description": "Presents demographic group counts and population changes for statistical areas.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for presents demographic group counts and population changes for statistical areas.",
+        "elements": [
+          "demographic_group",
+          "count",
+          "percentage",
+          "statistical_area_name",
+          "census_year",
+          "population",
+          "population_change",
+          "county_or_region"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0608\", \"title\": \"Paris\", \"headers\": [\"Race\", \"Number\"], \"sample_rows\": [[\"Total\", \"24476, Percentage is\"]]}",
+          "{\"table_id\": \"T0609\", \"title\": \"Paris\", \"headers\": [\"Race\", \"Number\", \"Percentage\"], \"sample_rows\": [[\"White (NH)\", \"13853\", \"56.6%\"], [\"Black or African American (NH)\", \"5643\", \"23.06%\"], [\"Asian (NH)\", \"347\", \"1.42%\"]]}",
+          "{\"table_id\": \"T0607\", \"title\": \"Paris\", \"headers\": [\"#\", \"Employer\", \"# of employees\"], \"sample_rows\": [[\"10\", \"We-Pack Logistics\", \"300\"], [\"8\", \"TCIM\", \"480\"], [\"1\", \"Essent-PRMC\", \"1000\"]]}",
+          "{\"table_id\": \"T0118\", \"title\": \"California\", \"headers\": [\"Combined statistical area\", \"2020 census\", \"2010 census\", \"Change\", \"Counties\"], \"sample_rows\": [[\"4\", \"45\", \"Fresno-Madera, CA Combined Statistical Area\", \"1317395\", \"1234297\"], [\"5\", \"125\", \"Redding-Red Bluff, CA Combined Statistical Area\", \"247984\", \"240686\"], [\"1\", \"2\", \"Los Angeles-Long Beach, CA Combined Statistical Area\", \"18644680\", \"17877006\"]]}",
+          "{\"table_id\": \"T0121\", \"title\": \"California\", \"headers\": [\"Metropolitan statistical area\", \"2020 census\", \"2010 census\", \"Change\", \"Counties\"], \"sample_rows\": [[\"9\", \"70\", \"Oxnard-Thousand Oaks-Ventura, CA MSA\", \"843843\", \"823318\"], [\"4\", \"17\", \"San Diego-Carlsbad, CA MSA\", \"3298634\", \"3095313\"], [\"8\", \"62\", \"Bakersfield, CA MSA\", \"909235\", \"839631\"]]}",
+          "{\"table_id\": \"T0119\", \"title\": \"California\", \"headers\": [\"Language\", \"Population()\"], \"sample_rows\": [[\"Spanish\", \"10,672,610 speakers\"], [\"Japanese\", \"139430\"], [\"Vietnamese\", \"559932\"]]}"
+        ]
+      }
+    }
+  },
+  "streaming_device_specification": {
+    "concept": "streaming_device_specification",
+    "overall_description": "Lists streaming devices or media players with manufacturer, product name, type, quality specifications, and notes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for lists streaming devices or media players with manufacturer, product name, type, quality specifications, and notes.",
+        "elements": [
+          "manufacturer",
+          "product",
+          "product_type",
+          "quality",
+          "notes"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0047\", \"title\": \"Amazon Prime Video\", \"headers\": [\"Manufacturer\", \"Product\", \"Type\", \"Quality\", \"Notes\"], \"sample_rows\": [[\"Amazon\", \"Kindle Fire\", \"Tablet\", \"1080p\", \"Up to Dolby Atmos support, Ref is\"], [\"Roku\", \"Roku 1\", \"Digital media player\", \"Up to 1080p\", \"HDMI out, Ref is\"], [\"Sony\", \"PlayStation 5\", \"Home video game console\", \"Up to 4K Ultra HD\", \"LCPM Dolby Digital Plus 7.1, Ref is\"]]}",
+          "{\"table_id\": \"T0048\", \"title\": \"Amazon Prime Video\", \"headers\": [\"Manufacturer\", \"Product\", \"Type\", \"Quality\", \"Notes\", \"Ref\"], \"sample_rows\": [[\"Nintendo\", \"Wii U\", \"Home video game console\", \"Up to 1080p\", \"5.1 Linear PCM\", \"Support discontinued on September 26, 2019\"], [\"Amazon\", \"Fire Phone\", \"Smartphone\", \"1080p\", \"\", \"Discontinued on Amazon website\"], [\"Nintendo\", \"Wii\", \"Home video game console\", \"Norway\", \"Analog stereo\", \"Support discontinued on January 31, 2019\"]]}",
+          "{\"table_id\": \"T0046\", \"title\": \"Amazon Prime Video\", \"headers\": [\"Country\", \"Amazon Video\", \"Prime Video\", \"Domain name\"], \"sample_rows\": [[\"Brazil, India\", \"Rent\", \"Streaming\", \"primevideo.com\"], [\"United States\", \"Buy/Rent\", \"Streaming\", \"amazon.com/primevideo\"]]}"
+        ]
+      }
+    }
+  },
+  "tv_series_episode_season_membership": {
+    "concept": "tv_series_episode_season_membership",
+    "overall_description": "Associates episodes with their seasons and series, including ordinal positions and related lists.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates episodes with their seasons and series, including ordinal positions and related lists.",
+        "elements": [
+          "episode",
+          "season",
+          "series_ordinal",
+          "follows",
+          "followed_by",
+          "media_work",
+          "list_item",
+          "list_type",
+          "list_relation"
+        ],
+        "data_examples": [
+          "Camp Redwood --season [followed by: Mr. Jingles; follows: Apocalypse Then; series ordinal: \"1\"]--> American Horror Story: 1984",
+          "Super Serious --part of the series [series ordinal: \"240\"]--> Kuroko's Basketball",
+          "Caretaker --has part or parts [series ordinal: \"1\"]--> Caretaker, Part I",
+          "The Simpsons --has list--> list of The Simpsons episodes (seasons 1–20)",
+          "list of Breaking Bad episodes --is a list of [part of the series: Breaking Bad]--> television series episode",
+          "Three's Company --list of episodes--> list of Three's Company episodes"
+        ]
+      }
+    }
+  },
+  "narrative_role_assignment": {
+    "concept": "narrative_role_assignment",
+    "overall_description": "Assigns narrative roles to characters within specific works.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for assigns narrative roles to characters within specific works.",
+        "elements": [
+          "character",
+          "work",
+          "narrative_role",
+          "role_type"
+        ],
+        "data_examples": [
+          "Marseille --narrative role [of: Money Heist]--> supporting character",
+          "Lisa Simpson --narrative age--> \"+8\"",
+          "Person of Interest --aspect ratio (W:H)--> 16:9"
+        ]
+      }
+    }
+  },
+  "family_membership_relation": {
+    "concept": "family_membership_relation",
+    "overall_description": "Associates a person with a family or family name, optionally specifying the type of relation.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates a person with a family or family name, optionally specifying the type of relation.",
+        "elements": [
+          "family_member",
+          "family",
+          "relation_type"
+        ],
+        "data_examples": [
+          "Lois Griffin --family--> Griffin family",
+          "Chi McBride --family name--> McBride",
+          "Sofía Vergara --second family name in Spanish name--> Vergara"
+        ]
+      }
+    }
+  },
+  "academic_advisor_student_relation": {
+    "concept": "academic_advisor_student_relation",
+    "overall_description": "Records academic advisor-student relationships with optional details about institution, field, degree, and duration.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records academic advisor-student relationships with optional details about institution, field, degree, and duration.",
+        "elements": [
+          "advisor",
+          "student",
+          "academic_institution",
+          "field_of_study",
+          "degree_type",
+          "start_date",
+          "end_date"
+        ],
+        "data_examples": [
+          "Anton Zlatopolsky --doctoral advisor--> Oleg Kutafin",
+          "Oleg Kutafin --doctoral student--> Anton Zlatopolsky",
+          "Russia-1 --chairperson--> Anton Zlatopolsky"
+        ]
+      }
+    }
+  },
+  "museum_collection_inventory": {
+    "concept": "museum_collection_inventory",
+    "overall_description": "Associates artworks with the museums that hold them and their inventory numbers.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates artworks with the museums that hold them and their inventory numbers.",
+        "elements": [
+          "artwork",
+          "museum",
+          "inventory_number"
+        ],
+        "data_examples": [
+          "(Untitled) The Blue Lady --collection--> Royal Ontario Museum",
+          "Nineteen plates of scale armour, Royal Ontario Museum, inv. 933.25.14 --inventory number [collection: Royal Ontario Museum]--> \"933.25.14\"",
+          "Hara Zaishō --has works in the collection--> Royal Ontario Museum"
+        ]
+      }
+    }
+  },
+  "media_work_rating_classification": {
+    "concept": "media_work_rating_classification",
+    "overall_description": "Maps media works to their ratings under various classification systems.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for maps media works to their ratings under various classification systems.",
+        "elements": [
+          "media_work",
+          "rating_system",
+          "rating_value",
+          "rating_category",
+          "rating_certificate_id",
+          "rating_authority"
+        ],
+        "data_examples": [
+          "A Few Good Men --FSK film rating--> FSK 12",
+          "Daredevil --JMK film rating--> free from 14 years",
+          "School for Scoundrels --CNC film rating (France)--> no age restriction",
+          "Merlin --Filmiroda rating [rating certificate ID: \"F/10757/J\"]--> Category II",
+          "Happythankyoumoreplease --NMHH film rating [rating certificate ID: \"NFT/0534/2012\"]--> Category III",
+          "God of War --ESRB rating [named as: \"God of War\"; content descriptor: Blood and Gore; content descriptor: Intense Violence; content descriptor: Strong Language; platform: PlayStation 4; rating certificate ID: \"35341\"]--> Mature 17+"
+        ]
+      }
+    }
+  },
+  "entity_symbol_representation": {
+    "concept": "entity_symbol_representation",
+    "overall_description": "Associates entities with symbols that represent them, optionally specifying the type of symbol.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates entities with symbols that represent them, optionally specifying the type of symbol.",
+        "elements": [
+          "entity",
+          "symbol",
+          "symbol_type"
+        ],
+        "data_examples": [
+          "15 --Unicode character [object has role: bracketed character]--> \"⒂\"",
+          "Moby --significant person [object has role: friend]--> Adam Schiff",
+          "Blue Origin NS-18 --crew member(s)--> William Shatner"
+        ]
+      }
+    }
+  },
+  "country_telephone_calling_code": {
+    "concept": "country_telephone_calling_code",
+    "overall_description": "Maps countries to their international telephone calling codes.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for maps countries to their international telephone calling codes.",
+        "elements": [
+          "country",
+          "calling_code"
+        ],
+        "data_examples": [
+          "United States of America --country calling code--> \"+1\"",
+          "United States of America --mobile country code--> \"313\"",
+          "Nickelodeon --country--> United States of America"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "domain": "books",
+  "description": "Leakage-aware books-domain AtomR demonstrations derived from non-evaluation Table, Doc, and KG facts and deterministically quality-audited.",
+  "minimum_examples_per_stage": 8,
+  "replace_base_examples": true,
+  "stage_guidance": {
+    "tree_generation": "Keep books questions executable: isolate author/work/series/award/publisher/character facts, and use a second child only when an earlier answer is a bridge entity.",
+    "source_selection": "Use KG for explicit entity-predicate-entity facts and qualifiers; Table for complete structured rows, chronology, rank, filters, and aggregation; Text for plot, theme, biography, explanation, reception, and contextual wording. Select multiple labels only when the answer truly crosses boundaries.",
+    "direct_answer": "Return short evidence-compatible titles, people, dates, counts, organizations, places, or phrases; never invent a book fact.",
+    "direct_rag": "Ground every hop in the supplied KG triples, table rows, or text passages, and distinguish an exact graph edge from prose context and row operations.",
+    "search": "Identify only the entity requested at the current hop from the supplied evidence.",
+    "relate": "Extract the requested relation value exactly, including series order, author, publisher, award, date, or character role.",
+    "filter": "Apply every condition to the candidate set; use Table for row filters and KG qualifiers when explicitly supplied.",
+    "answer_from_child_qa": "Resolve [n] dependencies in order and report only the final requested answer."
+  },
+  "stages": {
+    "tree_generation": [
+      {
+        "input": "Who published the novel 'The Tiger in the Well'?",
+        "output": "{\"Who published the novel 'The Tiger in the Well'?\": [\"1. Who published 'The Tiger in the Well'?\"], \"1. Who published 'The Tiger in the Well'?\": \"Relate('The Tiger in the Well', 'publisher')\"}"
+      },
+      {
+        "input": "Who created the character Vasily Denisov?",
+        "output": "{\"Who created the character Vasily Denisov?\": [\"1. Who created the character Vasily Denisov?\"], \"1. Who created the character Vasily Denisov?\": \"Relate('Vasily Denisov', 'creator')\"}"
+      },
+      {
+        "input": "In the Hugo Award for Best Novel table, which author wrote the novel 'Winged Man'?",
+        "output": "{\"In the Hugo Award for Best Novel table, which author wrote the novel 'Winged Man'?\": [\"1. In the Hugo Award for Best Novel table, what is the author of the novel 'Winged Man'?\"], \"1. In the Hugo Award for Best Novel table, what is the author of the novel 'Winged Man'?\": \"Search('Hugo Award for Best Novel table, novel Winged Man, author')\"}"
+      },
+      {
+        "input": "In the Left Behind table, what is the title of the book published in 2003 by Neesa Hart?",
+        "output": "{\"In the Left Behind table, what is the title of the book published in 2003 by Neesa Hart?\": [\"1. In the Left Behind table, what is the title of the book published in 2003 by Neesa Hart?\"], \"1. In the Left Behind table, what is the title of the book published in 2003 by Neesa Hart?\": \"Search('Left Behind table, author Neesa Hart, year 2003, title')\"}"
+      },
+      {
+        "input": "According to the text, what is the Hugo Award for Best Novel?",
+        "output": "{\"According to the text, what is the Hugo Award for Best Novel?\": [\"1. According to the text, what is the Hugo Award for Best Novel?\"], \"1. According to the text, what is the Hugo Award for Best Novel?\": \"Search('Hugo Award for Best Novel definition')\"}"
+      },
+      {
+        "input": "According to the text, what is the name of the protagonist in Dan Brown's novels?",
+        "output": "{\"According to the text, what is the name of the protagonist in Dan Brown's novels?\": [\"1. According to the text, what is the name of the protagonist in Dan Brown's novels?\"], \"1. According to the text, what is the name of the protagonist in Dan Brown's novels?\": \"Search('Dan Brown novels protagonist name')\"}"
+      },
+      {
+        "input": "What is the genre of the work that won the Pulitzer Prize for Fiction in 1961?",
+        "output": "{\"What is the genre of the work that won the Pulitzer Prize for Fiction in 1961?\": [\"1. Which work won the Pulitzer Prize for Fiction in 1961?\", \"2. What is the genre of [1]?\"], \"1. Which work won the Pulitzer Prize for Fiction in 1961?\": \"Search('Pulitzer Prize for Fiction table, year 1961, work')\", \"2. What is the genre of [1]?\": \"Relate([1], 'genre')\"}"
+      },
+      {
+        "input": "What kinds of stories are eligible for the award table that lists Winged Man by Edna Mayne Hull?",
+        "output": "{\"What kinds of stories are eligible for the award table that lists Winged Man by Edna Mayne Hull?\": [\"1. Which award table lists Winged Man by Edna Mayne Hull?\", \"2. What kinds of stories are eligible for [1]?\"], \"1. Which award table lists Winged Man by Edna Mayne Hull?\": \"Search('award table, Winged Man, Edna Mayne Hull')\", \"2. What kinds of stories are eligible for [1]?\": \"Relate([1], 'eligible story types')\"}"
+      }
+    ],
+    "source_selection": [
+      {
+        "input": "Which publisher published the book 'Homeland Elegies'?",
+        "output": "KG"
+      },
+      {
+        "input": "Who is the creator of the character 'Professor Challenger'?",
+        "output": "KG"
+      },
+      {
+        "input": "In the Hugo Award for Best Novel table, which novel was published in 1945 and awarded in 2020?",
+        "output": "Table"
+      },
+      {
+        "input": "According to the Pulitzer Prize for Fiction table, who won in 1961 for 'To Kill a Mockingbird'?",
+        "output": "Table"
+      },
+      {
+        "input": "Since when has the Hugo Award for Best Novel been awarded annually by the World Science Fiction Society?",
+        "output": "Text"
+      },
+      {
+        "input": "How many copies has the Robert Langdon book series sold?",
+        "output": "Text"
+      },
+      {
+        "input": "Which series does the 1949 Nobel Prize in Literature belong to, and which novel was published in 1945 and awarded in 2020 according to the Hugo Award table?",
+        "output": "KG, Table"
+      },
+      {
+        "input": "For which work did Arkady Martine receive the Hugo Award for Best Novel in 2020, and what is the Hugo Award for Best Novel given for?",
+        "output": "KG, Text"
+      }
+    ],
+    "direct_answer": [
+      {
+        "input": "Which publisher published the book 'Homeland Elegies'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The publisher of 'Homeland Elegies' is Little, Brown and Company. (2) Answer List: [\"Little, Brown and Company\"]"
+      },
+      {
+        "input": "Who created the character 'Professor Challenger'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The creator of Professor Challenger is Arthur Conan Doyle. (2) Answer List: [\"Arthur Conan Doyle\"]"
+      },
+      {
+        "input": "What is 'Purgatorio' a part of?",
+        "output": "So the answer is: (1) Paraphrase Answer: Purgatorio is part of The Divine Comedy. (2) Answer List: [\"The Divine Comedy\"]"
+      },
+      {
+        "input": "In the Hugo Award for Best Novel table, what novel was written by Edna Mayne Hull and published in 1945?",
+        "output": "So the answer is: (1) Paraphrase Answer: The novel by Edna Mayne Hull published in 1945 is 'Winged Man'. (2) Answer List: [\"Winged Man\"]"
+      },
+      {
+        "input": "According to the Pulitzer Prize for Fiction table, who won the award in 1961 for 'To Kill a Mockingbird'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The winner of the 1961 Pulitzer Prize for Fiction for 'To Kill a Mockingbird' is Harper Lee. (2) Answer List: [\"Harper Lee\"]"
+      },
+      {
+        "input": "In the Left Behind table, what is the title of the book by Mel Odom published in 2004?",
+        "output": "So the answer is: (1) Paraphrase Answer: The book by Mel Odom published in 2004 is 'Apocalypse Burning: The Battle Lines Are Drawn'. (2) Answer List: [\"Apocalypse Burning: The Battle Lines Are Drawn\"]"
+      },
+      {
+        "input": "What is the Hugo Award for Best Novel given for?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Hugo Award for Best Novel is given for science fiction or fantasy stories published in, or translated to, English during the previous calendar year. (2) Answer List: [\"science fiction or fantasy stories published in, or translated to, English during the previous calendar year\"]"
+      },
+      {
+        "input": "How many copies has the Robert Langdon book series sold?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Robert Langdon book series has sold over 120 million copies. (2) Answer List: [\"over 120 million copies\"]"
+      }
+    ],
+    "direct_rag": [
+      {
+        "input": "Supporting knowledge: KG Triples: Homeland Elegies --publisher--> Little, Brown and Company. Question: Who published the book 'Homeland Elegies'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The publisher of 'Homeland Elegies' is Little, Brown and Company. (2) Answer List: [\"Little, Brown and Company\"]"
+      },
+      {
+        "input": "Supporting knowledge: KG Triples: Professor Challenger --creator--> Arthur Conan Doyle. Question: Who created the character 'Professor Challenger'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The creator of 'Professor Challenger' is Arthur Conan Doyle. (2) Answer List: [\"Arthur Conan Doyle\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table Rows: Hugo Award for Best Novel | 1945 | Edna Mayne Hull | Winged Man. Question: In the Hugo Award for Best Novel table, what novel was written by Edna Mayne Hull in 1945?",
+        "output": "So the answer is: (1) Paraphrase Answer: The novel by Edna Mayne Hull in 1945 is 'Winged Man'. (2) Answer List: [\"Winged Man\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table Rows: Pulitzer Prize for Fiction | 1961 | Harper Lee | To Kill a Mockingbird. Question: According to the Pulitzer Prize for Fiction table, who won in 1961 for 'To Kill a Mockingbird'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The winner in 1961 for 'To Kill a Mockingbird' is Harper Lee. (2) Answer List: [\"Harper Lee\"]"
+      },
+      {
+        "input": "Supporting knowledge: Text Passages: The Hugo Award for Best Novel has been awarded annually since 1953. Question: Since when has the Hugo Award for Best Novel been awarded annually?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Hugo Award for Best Novel has been awarded annually since 1953. (2) Answer List: [\"1953\"]"
+      },
+      {
+        "input": "Supporting knowledge: Text Passages: The Robert Langdon book series has sold over 120 million copies. Question: How many copies has the Robert Langdon book series sold?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Robert Langdon book series has sold over 120 million copies. (2) Answer List: [\"over 120 million\"]"
+      },
+      {
+        "input": "Supporting knowledge: KG Triples: 1949 Nobel Prize in Literature --part of the series--> Nobel Prize in Literature. Table Rows: Hugo Award for Best Novel | Edna Mayne Hull | Winged Man. Question: The 1949 Nobel Prize in Literature is part of which series? Also, in the Hugo Award for Best Novel table, what is the title of the novel by Edna Mayne Hull?",
+        "output": "So the answer is: (1) Paraphrase Answer: The 1949 Nobel Prize in Literature is part of the Nobel Prize in Literature series, and the novel by Edna Mayne Hull is 'Winged Man'. (2) Answer List: [\"Nobel Prize in Literature\", \"Winged Man\"]"
+      },
+      {
+        "input": "Supporting knowledge: KG Triples: Arkady Martine --award received for A Memory Called Empire in 2020--> Hugo Award for Best Novel. Text Passages: The award is given for science fiction or fantasy stories published in, or translated to, English during the previous calendar year. Question: What award did Arkady Martine receive for 'A Memory Called Empire' in 2020? Also, what is the Hugo Award for Best Novel given for?",
+        "output": "So the answer is: (1) Paraphrase Answer: Arkady Martine received the Hugo Award for Best Novel for 'A Memory Called Empire' in 2020, and the Hugo Award for Best Novel is given for science fiction or fantasy stories published in English during the previous calendar year. (2) Answer List: [\"Hugo Award for Best Novel\", \"science fiction or fantasy stories\"]"
+      }
+    ],
+    "search": [
+      {
+        "input": "Retrieved KG: Homeland Elegies --publisher--> Little, Brown and Company. Question: Who published the novel 'Homeland Elegies'?",
+        "output": "So the answer is: (1) Paraphrase Answer: Little, Brown and Company; (2) Answer List: [\"Little, Brown and Company\"]"
+      },
+      {
+        "input": "Retrieved KG: Professor Challenger --creator--> Arthur Conan Doyle. Question: Who created the character 'Professor Challenger'?",
+        "output": "So the answer is: (1) Paraphrase Answer: Arthur Conan Doyle; (2) Answer List: [\"Arthur Conan Doyle\"]"
+      },
+      {
+        "input": "Retrieved KG: Pulitzer Prize for History --part of--> Pulitzer Prize. Question: What is the 'Pulitzer Prize for History' a part of?",
+        "output": "So the answer is: (1) Paraphrase Answer: Pulitzer Prize; (2) Answer List: [\"Pulitzer Prize\"]"
+      },
+      {
+        "input": "Retrieved Table: Hugo Award for Best Novel | 1945 | Edna Mayne Hull | Winged Man. Question: In the Hugo Award for Best Novel table, what novel was written by Edna Mayne Hull?",
+        "output": "So the answer is: (1) Paraphrase Answer: Winged Man; (2) Answer List: [\"Winged Man\"]"
+      },
+      {
+        "input": "Retrieved Table: Pulitzer Prize for Fiction | 1961 | Harper Lee | To Kill a Mockingbird. Question: According to the Pulitzer Prize for Fiction table, who won the prize in 1961?",
+        "output": "So the answer is: (1) Paraphrase Answer: Harper Lee; (2) Answer List: [\"Harper Lee\"]"
+      },
+      {
+        "input": "Retrieved Table: Left Behind | Mel Odom | Apocalypse Burning: The Battle Lines Are Drawn | 2004. Question: In the Left Behind table, what is the title of the book by Mel Odom published in 2004?",
+        "output": "So the answer is: (1) Paraphrase Answer: Apocalypse Burning: The Battle Lines Are Drawn; (2) Answer List: [\"Apocalypse Burning: The Battle Lines Are Drawn\"]"
+      },
+      {
+        "input": "Retrieved Text: The Hugo Award for Best Novel is given for science fiction or fantasy stories published in, or translated to, English during the previous calendar year. Question: What is the Hugo Award for Best Novel given for?",
+        "output": "So the answer is: (1) Paraphrase Answer: science fiction or fantasy stories published in, or translated to, English during the previous calendar year; (2) Answer List: [\"science fiction or fantasy stories published in, or translated to, English during the previous calendar year\"]"
+      },
+      {
+        "input": "Retrieved Text: The Robert Langdon book series has sold over 120 million copies. Question: How many copies has the Robert Langdon book series sold?",
+        "output": "So the answer is: (1) Paraphrase Answer: over 120 million copies; (2) Answer List: [\"over 120 million copies\"]"
+      }
+    ],
+    "relate": [
+      {
+        "input": "Retrieved KG: Homeland Elegies --publisher--> Little, Brown and Company. Question: Who published the book 'Homeland Elegies'?",
+        "output": "So the answer is: (1) Paraphrase Answer: Little, Brown and Company; (2) Answer List: [\"Little, Brown and Company\"]"
+      },
+      {
+        "input": "Retrieved KG: Professor Challenger --creator--> Arthur Conan Doyle. Question: Who created the character 'Professor Challenger'?",
+        "output": "So the answer is: (1) Paraphrase Answer: Arthur Conan Doyle; (2) Answer List: [\"Arthur Conan Doyle\"]"
+      },
+      {
+        "input": "Retrieved KG: Pulitzer Prize for History --part of--> Pulitzer Prize. Question: What is 'Purgatorio' a part of?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Divine Comedy; (2) Answer List: [\"The Divine Comedy\"]"
+      },
+      {
+        "input": "Retrieved Table: Hugo Award for Best Novel | 1945 | Edna Mayne Hull | Winged Man. Question: In the Hugo Award for Best Novel table, what novel by Edna Mayne Hull was awarded in 2020?",
+        "output": "So the answer is: (1) Paraphrase Answer: Winged Man \"The Winged Man\"; (2) Answer List: [\"Winged Man \\\"The Winged Man\\\"\"]"
+      },
+      {
+        "input": "Retrieved Table: Pulitzer Prize for Fiction | 1961 | Harper Lee | To Kill a Mockingbird. Question: According to the Pulitzer Prize for Fiction table, who won the 1961 prize for 'To Kill a Mockingbird'?",
+        "output": "So the answer is: (1) Paraphrase Answer: Harper Lee; (2) Answer List: [\"Harper Lee\"]"
+      },
+      {
+        "input": "Retrieved Table: Left Behind | Mel Odom | Apocalypse Burning: The Battle Lines Are Drawn | 2004. Question: In the Left Behind table, what is the title of the book by Neesa Hart published in 2003?",
+        "output": "So the answer is: (1) Paraphrase Answer: End of State: Now All the Rules Have Changed; (2) Answer List: [\"End of State: Now All the Rules Have Changed\"]"
+      },
+      {
+        "input": "Retrieved Text: The Hugo Award for Best Novel is given for science fiction or fantasy stories published in, or translated to, English during the previous calendar year. Question: What is the Hugo Award for Best Novel given for?",
+        "output": "So the answer is: (1) Paraphrase Answer: science fiction or fantasy stories published in, or translated to, English during the previous calendar year; (2) Answer List: [\"science fiction or fantasy stories published in, or translated to, English during the previous calendar year\"]"
+      },
+      {
+        "input": "Retrieved Text: The Robert Langdon book series has sold over 120 million copies. Question: How many copies has the Robert Langdon book series sold?",
+        "output": "So the answer is: (1) Paraphrase Answer: over 120 million copies; (2) Answer List: [\"over 120 million copies\"]"
+      }
+    ],
+    "filter": [
+      {
+        "input": "Candidates: Homeland Elegies; The Tiger in the Well; A House-Boat on the Styx. Condition: publisher is Little, Brown and Company. Evidence: Homeland Elegies --publisher--> Little, Brown and Company; The Tiger in the Well --publisher--> Alfred A. Knopf; A House-Boat on the Styx --publisher--> Harper. Which candidates match?",
+        "output": "So the answer is: (1) Paraphrase Answer: The matching work is Homeland Elegies.; (2) Answer List: [\"Homeland Elegies\"]"
+      },
+      {
+        "input": "Candidates: Clarisse McClellan; Professor Challenger; Vasily Denisov. Condition: creator is Arthur Conan Doyle. Evidence: Clarisse McClellan --creator--> Ray Bradbury; Professor Challenger --creator--> Arthur Conan Doyle; Vasily Denisov --creator--> Leo Tolstoy. Which candidates match?",
+        "output": "So the answer is: (1) Paraphrase Answer: The character created by Arthur Conan Doyle is Professor Challenger.; (2) Answer List: [\"Professor Challenger\"]"
+      },
+      {
+        "input": "Candidates: Pulitzer Prize for History; Purgatorio; Good Wives. Condition: is part of the Pulitzer Prize. Evidence: Pulitzer Prize for History --part of--> Pulitzer Prize; Purgatorio --part of--> The Divine Comedy; Good Wives --part of--> Little Women. Which candidates match?",
+        "output": "So the answer is: (1) Paraphrase Answer: The matching candidate is Pulitzer Prize for History.; (2) Answer List: [\"Pulitzer Prize for History\"]"
+      },
+      {
+        "input": "Candidates from the Hugo Award for Best Novel table: Winged Man; Conjure Wife; Beyond This Horizon. Condition: author is Edna Mayne Hull. Which candidates match?",
+        "output": "So the answer is: (1) Paraphrase Answer: The novel by Edna Mayne Hull is Winged Man.; (2) Answer List: [\"Winged Man\"]"
+      },
+      {
+        "input": "Candidates from the Pulitzer Prize for Fiction table: Gilead; Breathing Lessons; The Hours; American Pastoral. Condition: award year is 1999. Which candidates match?",
+        "output": "So the answer is: (1) Paraphrase Answer: The work listed for 1999 is The Hours.; (2) Answer List: [\"The Hours\"]"
+      },
+      {
+        "input": "Candidates from the Left Behind table: End of State; Apocalypse Burning; Impeachable Offense: The Conspiracy Grows; Necessary Evils. Condition: author is Neesa Hart and publication year is 2004. Which candidates match?",
+        "output": "So the answer is: (1) Paraphrase Answer: The matching title is Impeachable Offense: The Conspiracy Grows.; (2) Answer List: [\"Impeachable Offense: The Conspiracy Grows\"]"
+      },
+      {
+        "input": "Candidates: Hugo Award for Best Novel; Robert Langdon book series. Condition: the text describes an award given annually for English science-fiction or fantasy stories. Which candidate matches?",
+        "output": "So the answer is: (1) Paraphrase Answer: The matching candidate is the Hugo Award for Best Novel.; (2) Answer List: [\"Hugo Award for Best Novel\"]"
+      },
+      {
+        "input": "Candidates: Hugo Award for Best Novelette; Robert Langdon book series. Condition: the text says it has sold over 120 million copies. Which candidate matches?",
+        "output": "So the answer is: (1) Paraphrase Answer: The matching candidate is the Robert Langdon book series.; (2) Answer List: [\"Robert Langdon book series\"]"
+      }
+    ],
+    "answer_from_child_qa": [
+      {
+        "input": "Child QA 1: Q: Who published Homeland Elegies? A: Little, Brown and Company. Child QA 2: Q: Which work in the evidence is published by Little, Brown and Company? A: Homeland Elegies. Final question: Which work is published by the publisher of Homeland Elegies?",
+        "output": "So the answer is: (1) Paraphrase Answer: The work is Homeland Elegies.; (2) Answer List: [\"Homeland Elegies\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Who created Professor Challenger? A: Arthur Conan Doyle. Child QA 2: Q: Which listed character was created by Arthur Conan Doyle? A: Professor Challenger. Final question: Which character was created by the creator of Professor Challenger?",
+        "output": "So the answer is: (1) Paraphrase Answer: The character is Professor Challenger.; (2) Answer List: [\"Professor Challenger\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which work won the Pulitzer Prize for Fiction in 1961? A: To Kill a Mockingbird. Child QA 2: Q: Who wrote To Kill a Mockingbird? A: Harper Lee. Final question: Who wrote the work that won the Pulitzer Prize for Fiction in 1961?",
+        "output": "So the answer is: (1) Paraphrase Answer: Harper Lee wrote the 1961 winning work.; (2) Answer List: [\"Harper Lee\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which 2004 Left Behind title was written by Mel Odom? A: Apocalypse Burning: The Battle Lines Are Drawn. Child QA 2: Q: In what year was Apocalypse Burning: The Battle Lines Are Drawn published? A: 2004. Final question: When was the Mel Odom title in the Left Behind table published?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Mel Odom title was published in 2004.; (2) Answer List: [\"2004\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Who is the protagonist of Dan Brown's novels? A: Robert Langdon. Child QA 2: Q: Which book series is named after Robert Langdon? A: Robert Langdon book series. Final question: Which series is named after the protagonist of Dan Brown's novels?",
+        "output": "So the answer is: (1) Paraphrase Answer: The series is the Robert Langdon book series.; (2) Answer List: [\"Robert Langdon book series\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Who wrote the first three Millennium books? A: Stieg Larsson. Child QA 2: Q: What are the first three Millennium books written by Stieg Larsson collectively called? A: Millennium Trilogy. Final question: What are the first three books written by the original Millennium author called?",
+        "output": "So the answer is: (1) Paraphrase Answer: They are called the Millennium Trilogy.; (2) Answer List: [\"Millennium Trilogy\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which work won the Pulitzer Prize for Fiction in 1961? A: To Kill a Mockingbird. Child QA 2: Q: What genre is To Kill a Mockingbird in the KG? A: Bildungsroman. Final question: What is the genre of the work that won the Pulitzer Prize for Fiction in 1961?",
+        "output": "So the answer is: (1) Paraphrase Answer: The winning work's genre is Bildungsroman.; (2) Answer List: [\"Bildungsroman\"]"
+      },
+      {
+        "input": "Child QA 1: Q: What award did Arkady Martine receive for A Memory Called Empire in 2020? A: Hugo Award for Best Novel. Child QA 2: Q: What kinds of stories are eligible for the Hugo Award for Best Novel? A: Science-fiction or fantasy stories published in, or translated to, English during the previous calendar year. Final question: What kinds of stories are eligible for the award Arkady Martine received for A Memory Called Empire?",
+        "output": "So the answer is: (1) Paraphrase Answer: The eligible works are science-fiction or fantasy stories published in, or translated to, English during the previous calendar year.; (2) Answer List: [\"science-fiction or fantasy stories published in, or translated to, English during the previous calendar year\"]"
+      }
+    ]
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_policy": "question_text_excluded_and_exact_gold_source_records_excluded",
+    "live_sources": [
+      "KG",
+      "Table",
+      "Text"
+    ]
+  }
+}

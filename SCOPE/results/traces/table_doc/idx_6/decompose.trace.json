@@ -1,0 +1,31 @@
+{
+  "sub_q1": "Who won the Best Breakthrough Athlete ESPY Award in 2006?",
+  "sub_q2": "What off-court position has [1] held since August 2013?",
+  "rewrite_reasoning": "The question requires identifying the player who won the Best Breakthrough Athlete ESPY Award in 2006, then finding an off-court position held since August 2013. Thus, q1 extracts the player's name, and q2 uses that name to find the position.",
+  "match1": null,
+  "match2": null,
+  "route1": {
+    "matched_concept": "award",
+    "primary_source": "doc",
+    "fallback_source": "table",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: the award 'Best Breakthrough Athlete ESPY Award' (with year 2006). ASKED target: the winner of that award. Phase-1 rule: No relation concept qualifies because the query asks for the winner of a specific award, and the only relation concept involving awards is 'award_received', but its elements (Season, Player, School, Position, Class) do not match the award name or year, and it is not a general award-winner relation. The query is asking for an attribute (winner) of the known entity 'award', so the known-entity fallback rule fires, matching the 'award' concept. Source selection: The 'award' concept only exposes the doc source, which is LIKELY because its description and elements include 'winners' and it contains detailed textual descriptions of awards and their winners. The table source is RULED-OUT because no table source is associated with the 'award' concept, and no other table source plausibly contains award winner information for this specific award. Therefore, primary_source is doc, and fallback_source is table (the only other live source, even though ruled out, as no other live source exists)."
+  },
+  "route2": {
+    "matched_concept": "player",
+    "primary_source": "doc",
+    "fallback_source": "table",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: [1] (a person, likely a player or coach). ASKED target: an off-court position held since August 2013. No relation concept in the catalog links a person to an off-court position (e.g., broadcast_assignment links team to broadcaster, not person to position). Therefore, Phase-1 rule (c) known-entity fallback applies: match the concept of the KNOWN entity, which is 'player' (or possibly 'coach' or 'sports_broadcaster', but 'player' is the most general and likely to contain career details). Source selection: The 'player' concept has only a doc source, which is LIKELY because doc passages often describe a person's career roles and positions. The table source is RULED-OUT because no table element in any concept directly lists an off-court position; tables focus on game stats, rosters, and schedules. Thus primary = doc, fallback = table (though table is ruled out, it is the only other live source)."
+  },
+  "decompose_llm_calls": [
+    {
+      "stage": "step2.sq",
+      "ts": 1786685492.1129801,
+      "prompt": "You are a query decomposition assistant.\n\n        Your job is to transform ONE natural-language semantic query into EXACTLY two sub-questions.\n\n        Requirements:\n        1. The input is already a natural semantic query. Do NOT rewrite it into a different intent.\n        2. Output exactly two sub-questions: q1 and q2.\n        3. q1 should extract the first necessary piece of information.\n        4. q2 should depend on q1 and use [1] to refer to the answer of q1 when needed.\n        5. Do not do event judgment, schema routing, source selection, or query rewriting.\n        6. Keep the sub-questions faithful to the original meaning.\n        7. Return valid JSON only.\n\n        Return format:\n        {\n        \"reasoning\": \"brief explanation of the decomposition\",\n        \"subqueries\": [\n            {\n            \"id\": \"q1\",\n            \"query\": \"...\",\n            \"depends_on\": [],\n            \"variables\": []\n            },\n            {\n            \"id\": \"q2\",\n            \"query\": \"...\",\n            \"depends_on\": [\"q1\"],\n            \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n            }\n        ]\n        }\n\n        Question: For the player who won the Best Breakthrough Athlete ESPY Award in 2006, what off-court position has he held since August 2013?\n\n    ",
+      "response": "{\n  \"reasoning\": \"The question requires identifying the player who won the Best Breakthrough Athlete ESPY Award in 2006, then finding an off-court position held since August 2013. Thus, q1 extracts the player's name, and q2 uses that name to find the position.\",\n  \"subqueries\": [\n    {\n      \"id\": \"q1\",\n      \"query\": \"Who won the Best Breakthrough Athlete ESPY Award in 2006?\",\n      \"depends_on\": [],\n      \"variables\": []\n    },\n    {\n      \"id\": \"q2\",\n      \"query\": \"What off-court position has [1] held since August 2013?\",\n      \"depends_on\": [\"q1\"],\n      \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n    }\n  ]\n}",
+      "module": "step2.sq",
+      "model": "deepseek-chat"
+    }
+  ]
+}

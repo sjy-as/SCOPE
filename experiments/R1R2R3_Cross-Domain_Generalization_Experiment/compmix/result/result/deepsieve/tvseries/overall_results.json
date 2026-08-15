@@ -1,0 +1,6151 @@
+{
+  "queries": [
+    {
+      "query": "What is the name of the first album of the Jeff Russo?",
+      "ground_truth": "Lemon Parade",
+      "q1_answers": [],
+      "q2_answers": [
+        "Lemon Parade"
+      ],
+      "raw": {
+        "id": "dev-5168",
+        "question": "What is the name of the first album of the Jeff Russo?",
+        "answer": "Lemon Parade",
+        "source": "table",
+        "source_ids": [
+          "T0337"
+        ]
+      }
+    },
+    {
+      "query": "Who is the author of the tv series Sky Castle?",
+      "ground_truth": "Yoo Hyun-mi",
+      "q1_answers": [],
+      "q2_answers": [
+        "Yoo Hyun-mi"
+      ],
+      "raw": {
+        "id": "dev-5315",
+        "question": "Who is the author of the tv series Sky Castle?",
+        "answer": "Yoo Hyun-mi",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010560",
+            "P50",
+            "E003599"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the director of episode 1 in the tv series Sky Castle?",
+      "ground_truth": "Jo Hyun Tak",
+      "q1_answers": [],
+      "q2_answers": [
+        "Jo Hyun Tak"
+      ],
+      "raw": {
+        "id": "dev-5316",
+        "question": "who is the director of episode 1 in the tv series Sky Castle?",
+        "answer": "Jo Hyun Tak",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010560",
+            "P57",
+            "E009661"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which tv series was followed by the tv series Sky Castle?",
+      "ground_truth": "Legal High",
+      "q1_answers": [],
+      "q2_answers": [
+        "Legal High"
+      ],
+      "raw": {
+        "id": "dev-5317",
+        "question": "Which tv series was followed by the tv series Sky Castle?",
+        "answer": "Legal High",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010560",
+            "P156",
+            "E010567"
+          ],
+          [
+            "E010567",
+            "P155",
+            "E010560"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who distributes the tv series Sky Castle?",
+      "ground_truth": "JTBC",
+      "q1_answers": [],
+      "q2_answers": [
+        "JTBC"
+      ],
+      "raw": {
+        "id": "dev-5319",
+        "question": "who distributes the tv series Sky Castle?",
+        "answer": "JTBC",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010560",
+            "P750",
+            "E004661"
+          ],
+          [
+            "E010560",
+            "P449",
+            "E004661"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Author of the tv series Sky Castle?",
+      "ground_truth": "Yoo Hyun-mi",
+      "q1_answers": [],
+      "q2_answers": [
+        "Yoo Hyun-mi"
+      ],
+      "raw": {
+        "id": "dev-5320",
+        "question": "Author of the tv series Sky Castle?",
+        "answer": "Yoo Hyun-mi",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010560",
+            "P50",
+            "E003599"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who directs the tv series The Tunnel?",
+      "ground_truth": "Dominik Moll",
+      "q1_answers": [],
+      "q2_answers": [
+        "Dominik Moll"
+      ],
+      "raw": {
+        "id": "dev-5525",
+        "question": "Who directs the tv series The Tunnel?",
+        "answer": "Dominik Moll",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E002853",
+            "P57",
+            "E011994"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who Composes the music in the tv series The Tunnel?",
+      "ground_truth": "Adrian Johnston",
+      "q1_answers": [],
+      "q2_answers": [
+        "Adrian Johnston"
+      ],
+      "raw": {
+        "id": "dev-5527",
+        "question": "Who Composes the music in the tv series The Tunnel?",
+        "answer": "Adrian Johnston",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E002853",
+            "P86",
+            "E007615"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the Original Broadcaster of Season 1 of the tv series The Tunnel?",
+      "ground_truth": "Sky Atlantic",
+      "q1_answers": [],
+      "q2_answers": [
+        "Sky Atlantic"
+      ],
+      "raw": {
+        "id": "dev-5528",
+        "question": "Who is the Original Broadcaster of Season 1 of the tv series The Tunnel?",
+        "answer": "Sky Atlantic",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E002853",
+            "P449",
+            "E007352"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the director of tv series The Tunnel?",
+      "ground_truth": "Dominik Moll",
+      "q1_answers": [],
+      "q2_answers": [
+        "Dominik Moll"
+      ],
+      "raw": {
+        "id": "dev-5530",
+        "question": "Who is the director of tv series The Tunnel?",
+        "answer": "Dominik Moll",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E002853",
+            "P57",
+            "E011994"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "In which film Benedict Wong got his debut role?",
+      "ground_truth": "Kiss Kiss (Bang Bang)",
+      "q1_answers": [],
+      "q2_answers": [
+        "Kiss Kiss (Bang Bang)"
+      ],
+      "raw": {
+        "id": "dev-5828",
+        "question": "In which film Benedict Wong got his debut role?",
+        "answer": "Kiss Kiss (Bang Bang)",
+        "source": "table",
+        "source_ids": [
+          "T0097"
+        ]
+      }
+    },
+    {
+      "query": "Which character in the TV series The Marvelous Mrs. Maisel was played by Michael Arden",
+      "ground_truth": "Milken Prince",
+      "q1_answers": [],
+      "q2_answers": [
+        "Milken Prince"
+      ],
+      "raw": {
+        "id": "dev-5917",
+        "question": "Which character in the TV series The Marvelous Mrs. Maisel was played by Michael Arden",
+        "answer": "Milken Prince",
+        "source": "table",
+        "source_ids": [
+          "T0535"
+        ]
+      }
+    },
+    {
+      "query": "What is the genre of the tv series On the Wings of Love?",
+      "ground_truth": "romantic comedy",
+      "q1_answers": [],
+      "q2_answers": [
+        "romantic comedy"
+      ],
+      "raw": {
+        "id": "dev-5974",
+        "question": "What is the genre of the tv series On the Wings of Love?",
+        "answer": "romantic comedy",
+        "source": "doc",
+        "source_ids": [
+          "D10587",
+          "D11237",
+          "D07723"
+        ]
+      }
+    },
+    {
+      "query": "Which genre is the tv series On the Wings of Love?",
+      "ground_truth": "romantic comedy",
+      "q1_answers": [],
+      "q2_answers": [
+        "romantic comedy"
+      ],
+      "raw": {
+        "id": "dev-5979",
+        "question": "Which genre is the tv series On the Wings of Love?",
+        "answer": "romantic comedy",
+        "source": "doc",
+        "source_ids": [
+          "D10587",
+          "D11237",
+          "D07723"
+        ]
+      }
+    },
+    {
+      "query": "Who is the director of episode one of the tv series Ekaterina?",
+      "ground_truth": "Aleksandr Baranov",
+      "q1_answers": [],
+      "q2_answers": [
+        "Aleksandr Baranov"
+      ],
+      "raw": {
+        "id": "dev-6035",
+        "question": "Who is the director of episode one of the tv series Ekaterina?",
+        "answer": "Aleksandr Baranov",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006515",
+            "P57",
+            "E007943"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the genre of the tv series Ekaterina?",
+      "ground_truth": "historical film",
+      "q1_answers": [],
+      "q2_answers": [
+        "historical film"
+      ],
+      "raw": {
+        "id": "dev-6036",
+        "question": "What is the genre of the tv series Ekaterina?",
+        "answer": "historical film",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006515",
+            "P136",
+            "E003533"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the creator of the tv series Ekaterina?",
+      "ground_truth": "Anton Zlatopolsky",
+      "q1_answers": [],
+      "q2_answers": [
+        "Anton Zlatopolsky"
+      ],
+      "raw": {
+        "id": "dev-6037",
+        "question": "Who is the creator of the tv series Ekaterina?",
+        "answer": "Anton Zlatopolsky",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E002782",
+            "P373",
+            "E001047"
+          ],
+          [
+            "E002782",
+            "P31",
+            "E008851"
+          ],
+          [
+            "E002782",
+            "P106",
+            "E002485"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the original broadcaster of the tv series Ekaterina?",
+      "ground_truth": "Russia-1",
+      "q1_answers": [],
+      "q2_answers": [
+        "Russia-1"
+      ],
+      "raw": {
+        "id": "dev-6038",
+        "question": "Who is the original broadcaster of the tv series Ekaterina?",
+        "answer": "Russia-1",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006515",
+            "P449",
+            "E004612"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What genre does the Hellbound  television show  belong to?",
+      "ground_truth": "hard rock",
+      "q1_answers": [],
+      "q2_answers": [
+        "hard rock"
+      ],
+      "raw": {
+        "id": "dev-6098",
+        "question": "What genre does the Hellbound  television show  belong to?",
+        "answer": "hard rock",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004138",
+            "P136",
+            "E012917"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the main cast name in the tv series Tribes of Europa?",
+      "ground_truth": "Emilio Sakraya",
+      "q1_answers": [],
+      "q2_answers": [
+        "Emilio Sakraya"
+      ],
+      "raw": {
+        "id": "dev-6368",
+        "question": "What is the main cast name in the tv series Tribes of Europa?",
+        "answer": "Emilio Sakraya",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E001367",
+            "P161",
+            "E003036"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the role that the actor Nestor Carbonell played in the Lost series?",
+      "ground_truth": "Richard Alpert",
+      "q1_answers": [],
+      "q2_answers": [
+        "Richard Alpert"
+      ],
+      "raw": {
+        "id": "dev-6456",
+        "question": "What is the name of the role that the actor Nestor Carbonell played in the Lost series?",
+        "answer": "Richard Alpert",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E009569",
+            "P175",
+            "E004902"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "In which sitcom did the actor Nestor Carbonell play the role of Luis Rivera?",
+      "ground_truth": "Suddenly Susan",
+      "q1_answers": [],
+      "q2_answers": [
+        "Suddenly Susan"
+      ],
+      "raw": {
+        "id": "dev-6457",
+        "question": "In which sitcom did the actor Nestor Carbonell play the role of Luis Rivera?",
+        "answer": "Suddenly Susan",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011278",
+            "P161",
+            "E004902"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Number of episodes in third season of Third Watch?",
+      "ground_truth": "22",
+      "q1_answers": [],
+      "q2_answers": [
+        "22"
+      ],
+      "raw": {
+        "id": "test-6724",
+        "question": "Number of episodes in third season of Third Watch?",
+        "answer": "22",
+        "source": "table",
+        "source_ids": [
+          "T0840"
+        ]
+      }
+    },
+    {
+      "query": "Third Watch how many episodes in third season?",
+      "ground_truth": "22",
+      "q1_answers": [],
+      "q2_answers": [
+        "22"
+      ],
+      "raw": {
+        "id": "test-6729",
+        "question": "Third Watch how many episodes in third season?",
+        "answer": "22",
+        "source": "table",
+        "source_ids": [
+          "T0840"
+        ]
+      }
+    },
+    {
+      "query": "Who played the titular character in Anne with an E?",
+      "ground_truth": "Amybeth McNulty",
+      "q1_answers": [],
+      "q2_answers": [
+        "Amybeth McNulty"
+      ],
+      "raw": {
+        "id": "test-6994",
+        "question": "Who played the titular character in Anne with an E?",
+        "answer": "Amybeth McNulty",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006202",
+            "P161",
+            "E006205"
+          ],
+          [
+            "E012424",
+            "P175",
+            "E006205"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What show was Dalila Bella in before Anne with an E?",
+      "ground_truth": "Ready Jet Go!",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ready Jet Go!"
+      ],
+      "raw": {
+        "id": "test-6996",
+        "question": "What show was Dalila Bella in before Anne with an E?",
+        "answer": "Ready Jet Go!",
+        "source": "table",
+        "source_ids": [
+          "T0167"
+        ]
+      }
+    },
+    {
+      "query": "Which is the first movie of Paul Scheuring as writer?",
+      "ground_truth": "Den of Thieves",
+      "q1_answers": [],
+      "q2_answers": [
+        "Den of Thieves"
+      ],
+      "raw": {
+        "id": "test-7087",
+        "question": "Which is the first movie of Paul Scheuring as writer?",
+        "answer": "Den of Thieves",
+        "source": "table",
+        "source_ids": [
+          "T0610"
+        ]
+      }
+    },
+    {
+      "query": "Who is lead actor of the TV series Scam 1992?",
+      "ground_truth": "Pratik Gandhi",
+      "q1_answers": [],
+      "q2_answers": [
+        "Pratik Gandhi"
+      ],
+      "raw": {
+        "id": "test-7173",
+        "question": "Who is lead actor of the TV series Scam 1992?",
+        "answer": "Pratik Gandhi",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E001223",
+            "P161",
+            "E004499"
+          ],
+          [
+            "E004499",
+            "P800",
+            "E001223"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who directed the TV series Scam 1992?",
+      "ground_truth": "Hansal Mehta",
+      "q1_answers": [],
+      "q2_answers": [
+        "Hansal Mehta"
+      ],
+      "raw": {
+        "id": "test-7174",
+        "question": "Who directed the TV series Scam 1992?",
+        "answer": "Hansal Mehta",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E001223",
+            "P57",
+            "E003356"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "TV series Scam 1992 is based on which incident?",
+      "ground_truth": "1992 Indian stock market scam",
+      "q1_answers": [],
+      "q2_answers": [
+        "1992 Indian stock market scam"
+      ],
+      "raw": {
+        "id": "test-7177",
+        "question": "TV series Scam 1992 is based on which incident?",
+        "answer": "1992 Indian stock market scam",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E001223",
+            "P144",
+            "E013056"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "lead actor of Scam 1992?",
+      "ground_truth": "Pratik Gandhi",
+      "q1_answers": [],
+      "q2_answers": [
+        "Pratik Gandhi"
+      ],
+      "raw": {
+        "id": "test-7178",
+        "question": "lead actor of Scam 1992?",
+        "answer": "Pratik Gandhi",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E001223",
+            "P161",
+            "E004499"
+          ],
+          [
+            "E004499",
+            "P800",
+            "E001223"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who was the founder of HBO?",
+      "ground_truth": "Charles Dolan",
+      "q1_answers": [],
+      "q2_answers": [
+        "Charles Dolan"
+      ],
+      "raw": {
+        "id": "test-7206",
+        "question": "Who was the founder of HBO?",
+        "answer": "Charles Dolan",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E002217",
+            "P31",
+            "E008851"
+          ],
+          [
+            "E002217",
+            "P19",
+            "E007613"
+          ],
+          [
+            "E002217",
+            "P569",
+            "E000416"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who played the role of Eddard Stark in Game of Thrones?",
+      "ground_truth": "Sean Bean",
+      "q1_answers": [],
+      "q2_answers": [
+        "Sean Bean"
+      ],
+      "raw": {
+        "id": "test-7207",
+        "question": "Who played the role of Eddard Stark in Game of Thrones?",
+        "answer": "Sean Bean",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004079",
+            "P21",
+            "E011442"
+          ],
+          [
+            "E004079",
+            "P27",
+            "E002737"
+          ],
+          [
+            "E004079",
+            "P19",
+            "E010119"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Where does the Mary Tyler Moore Show take place?",
+      "ground_truth": "Minneapolis",
+      "q1_answers": [],
+      "q2_answers": [
+        "Minneapolis"
+      ],
+      "raw": {
+        "id": "test-7443",
+        "question": "Where does the Mary Tyler Moore Show take place?",
+        "answer": "Minneapolis",
+        "source": "doc",
+        "source_ids": [
+          "D01573",
+          "D08641",
+          "D02736"
+        ]
+      }
+    },
+    {
+      "query": "What is the location of the Mary Tyler Moore show?",
+      "ground_truth": "Minneapolis",
+      "q1_answers": [],
+      "q2_answers": [
+        "Minneapolis"
+      ],
+      "raw": {
+        "id": "test-7448",
+        "question": "What is the location of the Mary Tyler Moore show?",
+        "answer": "Minneapolis",
+        "source": "doc",
+        "source_ids": [
+          "D01573",
+          "D08641",
+          "D02736"
+        ]
+      }
+    },
+    {
+      "query": "Who is the director of the TV series Kota Factory?",
+      "ground_truth": "Raghav SubbuRaghav Subbu",
+      "q1_answers": [],
+      "q2_answers": [
+        "Raghav SubbuRaghav Subbu"
+      ],
+      "raw": {
+        "id": "test-7503",
+        "question": "Who is the director of the TV series Kota Factory?",
+        "answer": "Raghav SubbuRaghav Subbu",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011337",
+            "P31",
+            "E009876"
+          ],
+          [
+            "E011337",
+            "P1113",
+            "E000013"
+          ],
+          [
+            "E011337",
+            "P495",
+            "E011613"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which is the Production company of the TV series Kota Factory?",
+      "ground_truth": "The Viral Fever",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Viral Fever"
+      ],
+      "raw": {
+        "id": "test-7507",
+        "question": "Which is the Production company of the TV series Kota Factory?",
+        "answer": "The Viral Fever",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011337",
+            "P272",
+            "E004278"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Director of the TV series Kota Factory?",
+      "ground_truth": "Raghav SubbuRaghav Subbu",
+      "q1_answers": [],
+      "q2_answers": [
+        "Raghav SubbuRaghav Subbu"
+      ],
+      "raw": {
+        "id": "test-7508",
+        "question": "Director of the TV series Kota Factory?",
+        "answer": "Raghav SubbuRaghav Subbu",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011337",
+            "P31",
+            "E009876"
+          ],
+          [
+            "E011337",
+            "P1113",
+            "E000013"
+          ],
+          [
+            "E011337",
+            "P495",
+            "E011613"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the creator of TV Series Money Heist?",
+      "ground_truth": "\u00c1lex Pina",
+      "q1_answers": [],
+      "q2_answers": [
+        "\u00c1lex Pina"
+      ],
+      "raw": {
+        "id": "test-7654",
+        "question": "Who is the creator of TV Series Money Heist?",
+        "answer": "\u00c1lex Pina",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008501",
+            "P31",
+            "E008851"
+          ],
+          [
+            "E008501",
+            "P373",
+            "E001168"
+          ],
+          [
+            "E008501",
+            "P21",
+            "E011442"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which award is nominated for TV Series Money Heist?",
+      "ground_truth": "Feroz Awards",
+      "q1_answers": [],
+      "q2_answers": [
+        "Feroz Awards"
+      ],
+      "raw": {
+        "id": "test-7655",
+        "question": "Which award is nominated for TV Series Money Heist?",
+        "answer": "Feroz Awards",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E003013",
+            "P31",
+            "E001697"
+          ],
+          [
+            "E003013",
+            "P31",
+            "E005255"
+          ],
+          [
+            "E003013",
+            "P571",
+            "E000654"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who composes the music in the  tv series Barbarians?",
+      "ground_truth": "Ali N. A\u015fk\u0131n",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ali N. A\u015fk\u0131n"
+      ],
+      "raw": {
+        "id": "test-8017",
+        "question": "Who composes the music in the  tv series Barbarians?",
+        "answer": "Ali N. A\u015fk\u0131n",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E013745",
+            "P86",
+            "E005860"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who are the lead actors of the TV series Decoupled?",
+      "ground_truth": "R. Madhavan; Surveen Chawla",
+      "q1_answers": [],
+      "q2_answers": [
+        "R. Madhavan; Surveen Chawla"
+      ],
+      "raw": {
+        "id": "test-8075",
+        "question": "Who are the lead actors of the TV series Decoupled?",
+        "answer": "R. Madhavan; Surveen Chawla",
+        "source": "doc",
+        "source_ids": [
+          "D04020"
+        ]
+      }
+    },
+    {
+      "query": "Who played the character of Arya Iyer in Decoupled?",
+      "ground_truth": "R. Madhavan",
+      "q1_answers": [],
+      "q2_answers": [
+        "R. Madhavan"
+      ],
+      "raw": {
+        "id": "test-8076",
+        "question": "Who played the character of Arya Iyer in Decoupled?",
+        "answer": "R. Madhavan",
+        "source": "doc",
+        "source_ids": [
+          "D04020"
+        ]
+      }
+    },
+    {
+      "query": "What was the character Justin Chatwin played in Another Life series?",
+      "ground_truth": "a scientist employed by United States Interstellar Command",
+      "q1_answers": [],
+      "q2_answers": [
+        "a scientist employed by United States Interstellar Command"
+      ],
+      "raw": {
+        "id": "test-8460",
+        "question": "What was the character Justin Chatwin played in Another Life series?",
+        "answer": "a scientist employed by United States Interstellar Command",
+        "source": "doc",
+        "source_ids": [
+          "D10184",
+          "D08080"
+        ]
+      }
+    },
+    {
+      "query": "What network did Jamie Kellner run after The WB?",
+      "ground_truth": "Turner Broadcasting System",
+      "q1_answers": [],
+      "q2_answers": [
+        "Turner Broadcasting System"
+      ],
+      "raw": {
+        "id": "test-8520",
+        "question": "What network did Jamie Kellner run after The WB?",
+        "answer": "Turner Broadcasting System",
+        "source": "doc",
+        "source_ids": [
+          "D04381",
+          "D08079"
+        ]
+      }
+    },
+    {
+      "query": "Who is the presenter of \"Penn & Teller: Fool Us?\"",
+      "ground_truth": "Alyson Hannigan",
+      "q1_answers": [],
+      "q2_answers": [
+        "Alyson Hannigan"
+      ],
+      "raw": {
+        "id": "test-8676",
+        "question": "Who is the presenter of \"Penn & Teller: Fool Us?\"",
+        "answer": "Alyson Hannigan",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011941",
+            "P371",
+            "E004316"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Presenter on \"Penn & Teller: Fool Us?\"",
+      "ground_truth": "Alyson Hannigan",
+      "q1_answers": [],
+      "q2_answers": [
+        "Alyson Hannigan"
+      ],
+      "raw": {
+        "id": "test-8686",
+        "question": "Presenter on \"Penn & Teller: Fool Us?\"",
+        "answer": "Alyson Hannigan",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011941",
+            "P371",
+            "E004316"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What actor plays Lady Mary in the TV series Downton Actor?",
+      "ground_truth": "Michelle Dockery",
+      "q1_answers": [],
+      "q2_answers": [
+        "Michelle Dockery"
+      ],
+      "raw": {
+        "id": "test-8737",
+        "question": "What actor plays Lady Mary in the TV series Downton Actor?",
+        "answer": "Michelle Dockery",
+        "source": "table",
+        "source_ids": [
+          "T0454"
+        ]
+      }
+    },
+    {
+      "query": "What was Cherami Leigh's debut role?",
+      "ground_truth": "Shiki",
+      "q1_answers": [],
+      "q2_answers": [
+        "Shiki"
+      ],
+      "raw": {
+        "id": "test-8793",
+        "question": "What was Cherami Leigh's debut role?",
+        "answer": "Shiki",
+        "source": "table",
+        "source_ids": [
+          "T0143"
+        ]
+      }
+    },
+    {
+      "query": "Ernest Gold won an Academy Award for scoring which film?",
+      "ground_truth": "Exodus",
+      "q1_answers": [],
+      "q2_answers": [
+        "Exodus"
+      ],
+      "raw": {
+        "id": "test-8850",
+        "question": "Ernest Gold won an Academy Award for scoring which film?",
+        "answer": "Exodus",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004706",
+            "P166",
+            "E004923"
+          ],
+          [
+            "E004706",
+            "P1411",
+            "E004923"
+          ],
+          [
+            "E010064",
+            "P175",
+            "E004706"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What band played the opening song for How I Met Your Mother?",
+      "ground_truth": "The Solids",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Solids"
+      ],
+      "raw": {
+        "id": "test-9116",
+        "question": "What band played the opening song for How I Met Your Mother?",
+        "answer": "The Solids",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E013024",
+            "P31",
+            "E004696"
+          ],
+          [
+            "E013024",
+            "P571",
+            "E000546"
+          ],
+          [
+            "E013024",
+            "P495",
+            "E006574"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was Chi McBride tv debut?",
+      "ground_truth": "The Fresh Prince of Bel-Air",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Fresh Prince of Bel-Air"
+      ],
+      "raw": {
+        "id": "test-9172",
+        "question": "What was Chi McBride tv debut?",
+        "answer": "The Fresh Prince of Bel-Air",
+        "source": "table",
+        "source_ids": [
+          "T0145"
+        ]
+      }
+    },
+    {
+      "query": "What program did the first season premier episode of Teen Wolf follow?",
+      "ground_truth": "2011 MTV Movie Awards",
+      "q1_answers": [],
+      "q2_answers": [
+        "2011 MTV Movie Awards"
+      ],
+      "raw": {
+        "id": "test-9340",
+        "question": "What program did the first season premier episode of Teen Wolf follow?",
+        "answer": "2011 MTV Movie Awards",
+        "source": "doc",
+        "source_ids": [
+          "D05491"
+        ]
+      }
+    },
+    {
+      "query": "what is the Nationality of Alba August?",
+      "ground_truth": "Sweden",
+      "q1_answers": [],
+      "q2_answers": [
+        "Sweden"
+      ],
+      "raw": {
+        "id": "train-1339",
+        "question": "what is the Nationality of Alba August?",
+        "answer": "Sweden",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E003166",
+            "P27",
+            "E007159"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "what is the genre of the TV show The Tunnel?",
+      "ground_truth": "drama television series,LGBTI+ related TV series",
+      "q1_answers": [],
+      "q2_answers": [
+        "drama television series,LGBTI+ related TV series"
+      ],
+      "raw": {
+        "id": "train-1548",
+        "question": "what is the genre of the TV show The Tunnel?",
+        "answer": "drama television series,LGBTI+ related TV series",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E002853",
+            "P136",
+            "E013037"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the original broadcaster of the he Tunnel tv series?",
+      "ground_truth": "Sky Atlantic , Canal+",
+      "q1_answers": [],
+      "q2_answers": [
+        "Sky Atlantic , Canal+"
+      ],
+      "raw": {
+        "id": "train-1549",
+        "question": "Who is the original broadcaster of the he Tunnel tv series?",
+        "answer": "Sky Atlantic , Canal+",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E002853",
+            "P449",
+            "E001328"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the director of the Tunnel tv series?",
+      "ground_truth": "Dominik Moll",
+      "q1_answers": [],
+      "q2_answers": [
+        "Dominik Moll"
+      ],
+      "raw": {
+        "id": "train-1551",
+        "question": "Who is the director of the Tunnel tv series?",
+        "answer": "Dominik Moll",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E002853",
+            "P57",
+            "E011994"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who directs season 1 episode \"Welcome to Matheson\" in the tv series locke & key?",
+      "ground_truth": "Michael Morris",
+      "q1_answers": [],
+      "q2_answers": [
+        "Michael Morris"
+      ],
+      "raw": {
+        "id": "train-1907",
+        "question": "Who directs season 1 episode \"Welcome to Matheson\" in the tv series locke & key?",
+        "answer": "Michael Morris",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010400",
+            "P57",
+            "E011754"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Director of season 1 episode 1 in the tv series locke & key?",
+      "ground_truth": "Michael Morris",
+      "q1_answers": [],
+      "q2_answers": [
+        "Michael Morris"
+      ],
+      "raw": {
+        "id": "train-1912",
+        "question": "Director of season 1 episode 1 in the tv series locke & key?",
+        "answer": "Michael Morris",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010400",
+            "P57",
+            "E011754"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What city was Good Morning, Miss Bliss set?",
+      "ground_truth": "Indianapolis",
+      "q1_answers": [],
+      "q2_answers": [
+        "Indianapolis"
+      ],
+      "raw": {
+        "id": "train-1939",
+        "question": "What city was Good Morning, Miss Bliss set?",
+        "answer": "Indianapolis",
+        "source": "doc",
+        "source_ids": [
+          "D09824"
+        ]
+      }
+    },
+    {
+      "query": "What is the name of Sofia Vergara's husband whom she married in 2015?",
+      "ground_truth": "Joe Manganiello",
+      "q1_answers": [],
+      "q2_answers": [
+        "Joe Manganiello"
+      ],
+      "raw": {
+        "id": "train-201",
+        "question": "What is the name of Sofia Vergara's husband whom she married in 2015?",
+        "answer": "Joe Manganiello",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E005100",
+            "P26",
+            "E008428"
+          ],
+          [
+            "E008428",
+            "P26",
+            "E005100"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was their first well popular series produced for the USA network?",
+      "ground_truth": "Duckman",
+      "q1_answers": [],
+      "q2_answers": [
+        "Duckman"
+      ],
+      "raw": {
+        "id": "train-2266",
+        "question": "What was their first well popular series produced for the USA network?",
+        "answer": "Duckman",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E013646",
+            "P272",
+            "E003652"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who was the actor of Detective Robert Parker in Unbelievable?",
+      "ground_truth": "Eric Lange",
+      "q1_answers": [],
+      "q2_answers": [
+        "Eric Lange"
+      ],
+      "raw": {
+        "id": "train-228",
+        "question": "who was the actor of Detective Robert Parker in Unbelievable?",
+        "answer": "Eric Lange",
+        "source": "doc",
+        "source_ids": [
+          "D04660",
+          "D05240"
+        ]
+      }
+    },
+    {
+      "query": "who played Detective Robert Parker in Unbelievable?",
+      "ground_truth": "Eric Lange",
+      "q1_answers": [],
+      "q2_answers": [
+        "Eric Lange"
+      ],
+      "raw": {
+        "id": "train-233",
+        "question": "who played Detective Robert Parker in Unbelievable?",
+        "answer": "Eric Lange",
+        "source": "doc",
+        "source_ids": [
+          "D04660",
+          "D05240"
+        ]
+      }
+    },
+    {
+      "query": "Who directed Caretaker, Part I?",
+      "ground_truth": "Winrich Kolbe",
+      "q1_answers": [],
+      "q2_answers": [
+        "Winrich Kolbe"
+      ],
+      "raw": {
+        "id": "train-2447",
+        "question": "Who directed Caretaker, Part I?",
+        "answer": "Winrich Kolbe",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008023",
+            "P57",
+            "E003743"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who played the character of Krishna of Goloka in RadhaKrishn?",
+      "ground_truth": "Himanshu Soni",
+      "q1_answers": [],
+      "q2_answers": [
+        "Himanshu Soni"
+      ],
+      "raw": {
+        "id": "train-2750",
+        "question": "Who played the character of Krishna of Goloka in RadhaKrishn?",
+        "answer": "Himanshu Soni",
+        "source": "doc",
+        "source_ids": [
+          "D03921"
+        ]
+      }
+    },
+    {
+      "query": "Who is the creator of Money Heist?",
+      "ground_truth": "\u00c1lex Pina",
+      "q1_answers": [],
+      "q2_answers": [
+        "\u00c1lex Pina"
+      ],
+      "raw": {
+        "id": "train-2868",
+        "question": "Who is the creator of Money Heist?",
+        "answer": "\u00c1lex Pina",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008501",
+            "P31",
+            "E008851"
+          ],
+          [
+            "E008501",
+            "P373",
+            "E001168"
+          ],
+          [
+            "E008501",
+            "P21",
+            "E011442"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the director of money heist?",
+      "ground_truth": "\u00c1lex Pina",
+      "q1_answers": [],
+      "q2_answers": [
+        "\u00c1lex Pina"
+      ],
+      "raw": {
+        "id": "train-2873",
+        "question": "Who is the director of money heist?",
+        "answer": "\u00c1lex Pina",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008501",
+            "P31",
+            "E008851"
+          ],
+          [
+            "E008501",
+            "P373",
+            "E001168"
+          ],
+          [
+            "E008501",
+            "P21",
+            "E011442"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the creator of Emily in Paris ?",
+      "ground_truth": "Darren Star",
+      "q1_answers": [],
+      "q2_answers": [
+        "Darren Star"
+      ],
+      "raw": {
+        "id": "train-2989",
+        "question": "who is the creator of Emily in Paris ?",
+        "answer": "Darren Star",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011290",
+            "P170",
+            "E008234"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the producer of Emily in Paris series?",
+      "ground_truth": "Stephen Brown",
+      "q1_answers": [],
+      "q2_answers": [
+        "Stephen Brown"
+      ],
+      "raw": {
+        "id": "train-2990",
+        "question": "who is the producer of Emily in Paris series?",
+        "answer": "Stephen Brown",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011290",
+            "P162",
+            "E012333"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who created the series?",
+      "ground_truth": "Donald P. Bellisario",
+      "q1_answers": [],
+      "q2_answers": [
+        "Donald P. Bellisario"
+      ],
+      "raw": {
+        "id": "train-3020",
+        "question": "Who created the series?",
+        "answer": "Donald P. Bellisario",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E013481",
+            "P170",
+            "E011893"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "How many daily views did the Rachael Ray Show get on average during its first season?",
+      "ground_truth": "2.6 million",
+      "q1_answers": [],
+      "q2_answers": [
+        "2.6 million"
+      ],
+      "raw": {
+        "id": "train-3139",
+        "question": "How many daily views did the Rachael Ray Show get on average during its first season?",
+        "answer": "2.6 million",
+        "source": "doc",
+        "source_ids": [
+          "D02608"
+        ]
+      }
+    },
+    {
+      "query": "What award did The Rachael Ray Show win in 2008?",
+      "ground_truth": "Daytime Emmy Award for Outstanding Talk Show Entertainment",
+      "q1_answers": [],
+      "q2_answers": [
+        "Daytime Emmy Award for Outstanding Talk Show Entertainment"
+      ],
+      "raw": {
+        "id": "train-3140",
+        "question": "What award did The Rachael Ray Show win in 2008?",
+        "answer": "Daytime Emmy Award for Outstanding Talk Show Entertainment",
+        "source": "table",
+        "source_ids": [
+          "T0636",
+          "T0635"
+        ]
+      }
+    },
+    {
+      "query": "Which is the first film as writer of Leena Gangopadhyay?",
+      "ground_truth": "Bhalo Theko",
+      "q1_answers": [],
+      "q2_answers": [
+        "Bhalo Theko"
+      ],
+      "raw": {
+        "id": "train-3261",
+        "question": "Which is the first film as writer of Leena Gangopadhyay?",
+        "answer": "Bhalo Theko",
+        "source": "table",
+        "source_ids": [
+          "T0437"
+        ]
+      }
+    },
+    {
+      "query": "Who is the creator of the tv series wizards of waverly place?",
+      "ground_truth": "Todd J. Greenwald",
+      "q1_answers": [],
+      "q2_answers": [
+        "Todd J. Greenwald"
+      ],
+      "raw": {
+        "id": "train-3287",
+        "question": "Who is the creator of the tv series wizards of waverly place?",
+        "answer": "Todd J. Greenwald",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006711",
+            "P31",
+            "E008851"
+          ],
+          [
+            "E006711",
+            "P21",
+            "E011442"
+          ],
+          [
+            "E006711",
+            "P735",
+            "E003966"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the Production company of the tv series wizards of waverly place",
+      "ground_truth": "It's a Laugh Productions",
+      "q1_answers": [],
+      "q2_answers": [
+        "It's a Laugh Productions"
+      ],
+      "raw": {
+        "id": "train-3289",
+        "question": "What is the Production company of the tv series wizards of waverly place",
+        "answer": "It's a Laugh Productions",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E013287",
+            "P31",
+            "E002073"
+          ],
+          [
+            "E013287",
+            "P159",
+            "E006832"
+          ],
+          [
+            "E013287",
+            "P17",
+            "E006574"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "In what film did Donald Sutherland make his acting debut?",
+      "ground_truth": "The World Ten Times Over",
+      "q1_answers": [],
+      "q2_answers": [
+        "The World Ten Times Over"
+      ],
+      "raw": {
+        "id": "train-3376",
+        "question": "In what film did Donald Sutherland make his acting debut?",
+        "answer": "The World Ten Times Over",
+        "source": "table",
+        "source_ids": [
+          "T0188"
+        ]
+      }
+    },
+    {
+      "query": "Who directed the episode MADMAX of Stranger Things series?",
+      "ground_truth": "Duffer brothers",
+      "q1_answers": [],
+      "q2_answers": [
+        "Duffer brothers"
+      ],
+      "raw": {
+        "id": "train-3464",
+        "question": "Who directed the episode MADMAX of Stranger Things series?",
+        "answer": "Duffer brothers",
+        "source": "doc",
+        "source_ids": [
+          "D02745",
+          "D02200",
+          "D00254"
+        ]
+      }
+    },
+    {
+      "query": "Who were the directors of the episode named MADMAX of the series Stranger Things?",
+      "ground_truth": "Duffer brothers",
+      "q1_answers": [],
+      "q2_answers": [
+        "Duffer brothers"
+      ],
+      "raw": {
+        "id": "train-3469",
+        "question": "Who were the directors of the episode named MADMAX of the series Stranger Things?",
+        "answer": "Duffer brothers",
+        "source": "doc",
+        "source_ids": [
+          "D02745",
+          "D02200",
+          "D00254"
+        ]
+      }
+    },
+    {
+      "query": "What show did Leslie Jordan have a recurring role on in 2005?",
+      "ground_truth": "Boston Legal",
+      "q1_answers": [],
+      "q2_answers": [
+        "Boston Legal"
+      ],
+      "raw": {
+        "id": "train-3613",
+        "question": "What show did Leslie Jordan have a recurring role on in 2005?",
+        "answer": "Boston Legal",
+        "source": "table",
+        "source_ids": [
+          "T0445"
+        ]
+      }
+    },
+    {
+      "query": "What is the production company of the tv series High Seas?",
+      "ground_truth": "Bamb\u00fa Producciones",
+      "q1_answers": [],
+      "q2_answers": [
+        "Bamb\u00fa Producciones"
+      ],
+      "raw": {
+        "id": "train-3645",
+        "question": "What is the production company of the tv series High Seas?",
+        "answer": "Bamb\u00fa Producciones",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010799",
+            "P272",
+            "E004535"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the director of the Second season of Locke & Key?",
+      "ground_truth": "Mark Tonderai",
+      "q1_answers": [],
+      "q2_answers": [
+        "Mark Tonderai"
+      ],
+      "raw": {
+        "id": "train-3733",
+        "question": "Who is the director of the Second season of Locke & Key?",
+        "answer": "Mark Tonderai",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010400",
+            "P57",
+            "E007061"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who directs the tv series hospital playlist?",
+      "ground_truth": "Shin Won-ho",
+      "q1_answers": [],
+      "q2_answers": [
+        "Shin Won-ho"
+      ],
+      "raw": {
+        "id": "train-3941",
+        "question": "Who directs the tv series hospital playlist?",
+        "answer": "Shin Won-ho",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012936",
+            "P57",
+            "E002334"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "what is the genre of the tv series Hospital Playlist?",
+      "ground_truth": "medical drama",
+      "q1_answers": [],
+      "q2_answers": [
+        "medical drama"
+      ],
+      "raw": {
+        "id": "train-3942",
+        "question": "what is the genre of the tv series Hospital Playlist?",
+        "answer": "medical drama",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012936",
+            "P136",
+            "E003748"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the screenwriter of the tv series Hospital Playlist?",
+      "ground_truth": "Lee Woo-jung",
+      "q1_answers": [],
+      "q2_answers": [
+        "Lee Woo-jung"
+      ],
+      "raw": {
+        "id": "train-3943",
+        "question": "Who is the screenwriter of the tv series Hospital Playlist?",
+        "answer": "Lee Woo-jung",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012936",
+            "P58",
+            "E003146"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the director of the tv series Hospital Playlist?",
+      "ground_truth": "Shin Won-ho",
+      "q1_answers": [],
+      "q2_answers": [
+        "Shin Won-ho"
+      ],
+      "raw": {
+        "id": "train-3946",
+        "question": "Who is the director of the tv series Hospital Playlist?",
+        "answer": "Shin Won-ho",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012936",
+            "P57",
+            "E002334"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which is the debut movie of Kevin Alejandro?",
+      "ground_truth": "Purgatory Flats",
+      "q1_answers": [],
+      "q2_answers": [
+        "Purgatory Flats"
+      ],
+      "raw": {
+        "id": "train-4004",
+        "question": "Which is the debut movie of Kevin Alejandro?",
+        "answer": "Purgatory Flats",
+        "source": "table",
+        "source_ids": [
+          "T0398"
+        ]
+      }
+    },
+    {
+      "query": "Who directs the episode \"Liber\" \"The Book\" in tv series Luna Nera?",
+      "ground_truth": "Francesca Comencini",
+      "q1_answers": [],
+      "q2_answers": [
+        "Francesca Comencini"
+      ],
+      "raw": {
+        "id": "train-4151",
+        "question": "Who directs the episode \"Liber\" \"The Book\" in tv series Luna Nera?",
+        "answer": "Francesca Comencini",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012877",
+            "P57",
+            "E008277"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was Nathan Fillion's first television show?",
+      "ground_truth": "Ordeal in the Arctic",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ordeal in the Arctic"
+      ],
+      "raw": {
+        "id": "train-4210",
+        "question": "What was Nathan Fillion's first television show?",
+        "answer": "Ordeal in the Arctic",
+        "source": "table",
+        "source_ids": [
+          "T0588"
+        ]
+      }
+    },
+    {
+      "query": "What show was Nathan Fillion's first TV role?",
+      "ground_truth": "Ordeal in the Arctic",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ordeal in the Arctic"
+      ],
+      "raw": {
+        "id": "train-4215",
+        "question": "What show was Nathan Fillion's first TV role?",
+        "answer": "Ordeal in the Arctic",
+        "source": "table",
+        "source_ids": [
+          "T0588"
+        ]
+      }
+    },
+    {
+      "query": "What 2002 movie starred Mary-Kate and Ashley Olsen?",
+      "ground_truth": "When in Rome",
+      "q1_answers": [],
+      "q2_answers": [
+        "When in Rome"
+      ],
+      "raw": {
+        "id": "train-4361",
+        "question": "What 2002 movie starred Mary-Kate and Ashley Olsen?",
+        "answer": "When in Rome",
+        "source": "table",
+        "source_ids": [
+          "T0503"
+        ]
+      }
+    },
+    {
+      "query": "Who is the Inspector of the Burgue Constabulary in Carnival Row series?",
+      "ground_truth": "Orlando Bloom",
+      "q1_answers": [],
+      "q2_answers": [
+        "Orlando Bloom"
+      ],
+      "raw": {
+        "id": "train-4863",
+        "question": "Who is the Inspector of the Burgue Constabulary in Carnival Row series?",
+        "answer": "Orlando Bloom",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008309",
+            "P161",
+            "E008192"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who played as human street performer in Carnival Row series?",
+      "ground_truth": "Simon McBurney",
+      "q1_answers": [],
+      "q2_answers": [
+        "Simon McBurney"
+      ],
+      "raw": {
+        "id": "train-4866",
+        "question": "Who played as human street performer in Carnival Row series?",
+        "answer": "Simon McBurney",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008309",
+            "P161",
+            "E011860"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Name of the Inspector of Burgue Constabulary in Carnival Row series?",
+      "ground_truth": "Orlando Bloom",
+      "q1_answers": [],
+      "q2_answers": [
+        "Orlando Bloom"
+      ],
+      "raw": {
+        "id": "train-4868",
+        "question": "Name of the Inspector of Burgue Constabulary in Carnival Row series?",
+        "answer": "Orlando Bloom",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008309",
+            "P161",
+            "E008192"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who played teenage Martha in Dark?",
+      "ground_truth": "Lisa Vicari",
+      "q1_answers": [],
+      "q2_answers": [
+        "Lisa Vicari"
+      ],
+      "raw": {
+        "id": "train-797",
+        "question": "Who played teenage Martha in Dark?",
+        "answer": "Lisa Vicari",
+        "source": "table",
+        "source_ids": [
+          "T0176"
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the actress who played teenage Martha in Dark?",
+      "ground_truth": "Lisa Vicari",
+      "q1_answers": [],
+      "q2_answers": [
+        "Lisa Vicari"
+      ],
+      "raw": {
+        "id": "train-802",
+        "question": "What is the name of the actress who played teenage Martha in Dark?",
+        "answer": "Lisa Vicari",
+        "source": "table",
+        "source_ids": [
+          "T0176"
+        ]
+      }
+    },
+    {
+      "query": "Who is the creator of the tv series Loki?",
+      "ground_truth": "Michael Waldron",
+      "q1_answers": [],
+      "q2_answers": [
+        "Michael Waldron"
+      ],
+      "raw": {
+        "id": "train-917",
+        "question": "Who is the creator of the tv series Loki?",
+        "answer": "Michael Waldron",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E001383",
+            "P31",
+            "E008851"
+          ],
+          [
+            "E001383",
+            "P21",
+            "E011442"
+          ],
+          [
+            "E001383",
+            "P27",
+            "E006574"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who directs the episode \"Glorious Purpose\" in the tv series Loki?",
+      "ground_truth": "Kate Herron",
+      "q1_answers": [],
+      "q2_answers": [
+        "Kate Herron"
+      ],
+      "raw": {
+        "id": "train-920",
+        "question": "Who directs the episode \"Glorious Purpose\" in the tv series Loki?",
+        "answer": "Kate Herron",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E001611",
+            "P31",
+            "E008851"
+          ],
+          [
+            "E001611",
+            "P21",
+            "E011441"
+          ],
+          [
+            "E001611",
+            "P106",
+            "E005659"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who creates the flim The Princess Bride?",
+      "ground_truth": "Michael Waldron",
+      "q1_answers": [],
+      "q2_answers": [
+        "Michael Waldron"
+      ],
+      "raw": {
+        "id": "train-922",
+        "question": "Who creates the flim The Princess Bride?",
+        "answer": "Michael Waldron",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E001383",
+            "P31",
+            "E008851"
+          ],
+          [
+            "E001383",
+            "P21",
+            "E011442"
+          ],
+          [
+            "E001383",
+            "P27",
+            "E006574"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What business school did Aaron Korsh attend?",
+      "ground_truth": "The Wharton School",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Wharton School"
+      ],
+      "raw": {
+        "id": "train-950",
+        "question": "What business school did Aaron Korsh attend?",
+        "answer": "The Wharton School",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E002530",
+            "P69",
+            "E002490"
+          ]
+        ]
+      }
+    }
+  ],
+  "overall_metrics": {
+    "avg_exact_match": 0.38,
+    "avg_f1": 0.4676071706071706,
+    "avg_retrieval_time": 3.001282103061676,
+    "avg_docs_searched": 6.76,
+    "avg_similarity": 4.377326486882038,
+    "avg_prompt_tokens_per_subquery": 0.0,
+    "avg_total_tokens_per_query": 164.04,
+    "avg_execution_time": 0.7294384508114296,
+    "avg_sq1_score": 0.0,
+    "avg_sq2_score": 0.245,
+    "avg_total_score": 0.245,
+    "sq1_hit_rate": 0.0,
+    "sq2_hit_rate": 0.245,
+    "total_elapsed_time": 72.94384508114308
+  },
+  "all_query_metrics": [
+    {
+      "total_retrieval_time": 9.5256507396698,
+      "total_docs_searched": 42,
+      "avg_similarity_scores": [
+        0.1135563844276126,
+        17.004468096034426
+      ],
+      "max_similarity_scores": [
+        1.0,
+        26.005226860580525
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 179,
+      "prompt_token_counts": [
+        179
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Lemon Parade",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide any information about Jeff Russo's first album. The subquestion q2 returned no relevant information, so the final answer cannot be determined from the given evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Lemon Parade"
+      },
+      "avg_retrieval_time": 4.7628253698349,
+      "avg_similarity": 8.55901224023102,
+      "max_similarity": 26.005226860580525,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 179,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 6.8902201652526855,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.37040816326530607
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 173,
+      "prompt_token_counts": [
+        173
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Yoo Hyun-mi",
+        "ground_truth": "Yoo Hyun-mi",
+        "fallback_answer": "Yoo Hyun-mi",
+        "final_reason": "The reasoning step directly identifies Yoo Hyun-mi as the author of the tv series Sky Castle based on the relation 'SKY Castle --[author/outgoing]--> Yoo Hyun-mi'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Yoo Hyun-mi"
+      },
+      "avg_retrieval_time": 6.8902201652526855,
+      "avg_similarity": 0.37040816326530607,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 173,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 16.81083846092224,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 222,
+      "prompt_token_counts": [
+        222
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Jo Hyun Tak",
+        "ground_truth": "Jo Hyun Tak",
+        "fallback_answer": "Jo Hyun Tak",
+        "final_reason": "Episode 1 of the TV series Sky Castle is titled 'SKY Castle', and its director is Jo Hyun Tak."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Jo Hyun Tak"
+      },
+      "avg_retrieval_time": 8.40541923046112,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 222,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 4.029539346694946,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 159,
+      "prompt_token_counts": [
+        159
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Legal High",
+        "ground_truth": "Legal High",
+        "fallback_answer": "Legal High",
+        "final_reason": "The reasoning step indicates that SKY Castle is followed by Legal High, so the series that followed Sky Castle is Legal High."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Legal High"
+      },
+      "avg_retrieval_time": 4.029539346694946,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 159,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 15.564943075180054,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 144,
+      "prompt_token_counts": [
+        144
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "JTBC, Netflix",
+        "ground_truth": "JTBC",
+        "fallback_answer": "JTBC, Netflix",
+        "final_reason": "The evidence lists JTBC and Netflix as distributors of SKY Castle."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "JTBC"
+      },
+      "avg_retrieval_time": 15.564943075180054,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 144,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 1.8585295677185059,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.37040816326530607
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 149,
+      "prompt_token_counts": [
+        149
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Yoo Hyun-mi",
+        "ground_truth": "Yoo Hyun-mi",
+        "fallback_answer": "Yoo Hyun-mi",
+        "final_reason": "The reasoning step directly identifies Yoo Hyun-mi as the author of the tv series Sky Castle."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Yoo Hyun-mi"
+      },
+      "avg_retrieval_time": 1.8585295677185059,
+      "avg_similarity": 0.37040816326530607,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 149,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 7.096871376037598,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 139,
+      "prompt_token_counts": [
+        139
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Dominik Moll",
+        "ground_truth": "Dominik Moll",
+        "fallback_answer": "Dominik Moll",
+        "final_reason": "The evidence states that The Tunnel has director/outgoing relation to Dominik Moll."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Dominik Moll"
+      },
+      "avg_retrieval_time": 7.096871376037598,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 139,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 6.3532936573028564,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 143,
+      "prompt_token_counts": [
+        143
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Adrian Johnston",
+        "ground_truth": "Adrian Johnston",
+        "fallback_answer": "Adrian Johnston",
+        "final_reason": "The evidence directly states that Adrian Johnston composed the music for the TV series The Tunnel."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Adrian Johnston"
+      },
+      "avg_retrieval_time": 6.3532936573028564,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 143,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 5.659771680831909,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 169,
+      "prompt_token_counts": [
+        169
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Sky Atlantic",
+        "ground_truth": "Sky Atlantic",
+        "fallback_answer": "Sky Atlantic",
+        "final_reason": "The original broadcaster of Season 1 of The Tunnel is Sky Atlantic, as it was the original UK broadcaster for the series."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Sky Atlantic"
+      },
+      "avg_retrieval_time": 5.659771680831909,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 169,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 8.296997547149658,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 145,
+      "prompt_token_counts": [
+        145
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Dominik Moll",
+        "ground_truth": "Dominik Moll",
+        "fallback_answer": "Dominik Moll",
+        "final_reason": "The reasoning step directly identifies Dominik Moll as the director of the TV series The Tunnel."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Dominik Moll"
+      },
+      "avg_retrieval_time": 8.296997547149658,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 145,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.03519725799560547,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        28.02818101236855,
+        41.17867028866463
+      ],
+      "max_similarity_scores": [
+        30.13575600779561,
+        74.41598028670134
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 211,
+      "prompt_token_counts": [
+        211
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No film",
+        "ground_truth": "Kiss Kiss (Bang Bang)",
+        "fallback_answer": "",
+        "final_reason": "Benedict Wong's debut role was in a 1993 BBC Radio play called Kai Mei Sauce, not in a film. Therefore, there is no film in which he got his debut role."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Kiss Kiss (Bang Bang)"
+      },
+      "avg_retrieval_time": 0.017598628997802734,
+      "avg_similarity": 34.603425650516584,
+      "max_similarity": 74.41598028670134,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 211,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.01997685432434082,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        21.788863958836345,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        23.431473233975566,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 210,
+      "prompt_token_counts": [
+        210
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No character",
+        "ground_truth": "Milken Prince",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found linking Michael Arden to a character in The Marvelous Mrs. Maisel. Therefore, the final answer is that he did not play any character in that series."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Milken Prince"
+      },
+      "avg_retrieval_time": 0.00998842716217041,
+      "avg_similarity": 11.122765312751506,
+      "max_similarity": 23.431473233975566,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 210,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.04489922523498535,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        28.219555151884975
+      ],
+      "max_similarity_scores": [
+        32.99381906321347
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 169,
+      "prompt_token_counts": [
+        169
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Romantic comedy",
+        "ground_truth": "romantic comedy",
+        "fallback_answer": "Romantic comedy",
+        "final_reason": "The TV series On the Wings of Love is listed under the genre context of romantic comedy."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "romantic comedy"
+      },
+      "avg_retrieval_time": 0.04489922523498535,
+      "avg_similarity": 28.219555151884975,
+      "max_similarity": 32.99381906321347,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 169,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.04740190505981445,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        28.219555151884975
+      ],
+      "max_similarity_scores": [
+        32.99381906321347
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 167,
+      "prompt_token_counts": [
+        167
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Romantic comedy",
+        "ground_truth": "romantic comedy",
+        "fallback_answer": "Romantic comedy",
+        "final_reason": "The TV series On the Wings of Love is listed under the genre 'Romantic comedy' in the evidence document."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "romantic comedy"
+      },
+      "avg_retrieval_time": 0.04740190505981445,
+      "avg_similarity": 28.219555151884975,
+      "max_similarity": 32.99381906321347,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 167,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.006443023681640625,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 166,
+      "prompt_token_counts": [
+        166
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Aleksandr Baranov",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find any relevant information to determine the title of episode one or the director of that episode."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Aleksandr Baranov"
+      },
+      "avg_retrieval_time": 0.0032215118408203125,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 166,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.06771969795227051,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        12.791319086632239
+      ],
+      "max_similarity_scores": [
+        14.720430769057105
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 131,
+      "prompt_token_counts": [
+        131
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "historical film",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found to determine the genre of the TV series Ekaterina."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "historical film"
+      },
+      "avg_retrieval_time": 0.06771969795227051,
+      "avg_similarity": 12.791319086632239,
+      "max_similarity": 14.720430769057105,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 131,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 8.590139389038086,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 152,
+      "prompt_token_counts": [
+        152
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Anton Zlatopolsky",
+        "ground_truth": "Anton Zlatopolsky",
+        "fallback_answer": "Anton Zlatopolsky",
+        "final_reason": "The evidence document states that Ekaterina has the creator relation to Anton Zlatopolsky."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Anton Zlatopolsky"
+      },
+      "avg_retrieval_time": 8.590139389038086,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 152,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 6.3187127113342285,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 149,
+      "prompt_token_counts": [
+        149
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Russia-1",
+        "ground_truth": "Russia-1",
+        "fallback_answer": "Russia-1",
+        "final_reason": "The evidence document directly states that the original broadcaster of Ekaterina is Russia-1."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Russia-1"
+      },
+      "avg_retrieval_time": 6.3187127113342285,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 149,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 8.375787258148193,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        16.27868785137833,
+        0.75
+      ],
+      "max_similarity_scores": [
+        17.45689862423725,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 253,
+      "prompt_token_counts": [
+        253
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.8,
+        "final_answer": "hard rock, thriller",
+        "ground_truth": "hard rock",
+        "fallback_answer": "hard rock, thriller",
+        "final_reason": "The Hellbound television show is described as a South Korean dark fantasy streaming series, and its listed genres are hard rock and thriller."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.8,
+        "ground_truth": "hard rock"
+      },
+      "avg_retrieval_time": 4.187893629074097,
+      "avg_similarity": 8.514343925689165,
+      "max_similarity": 17.45689862423725,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 253,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.16937017440795898,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 136,
+      "prompt_token_counts": [
+        136
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Emilio Sakraya",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine the main cast of Tribes of Europa."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Emilio Sakraya"
+      },
+      "avg_retrieval_time": 0.16937017440795898,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 136,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.025693178176879883,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        6.4701084780320794,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        7.195720664107567,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 161,
+      "prompt_token_counts": [
+        161
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Richard Alpert",
+        "ground_truth": "Richard Alpert",
+        "fallback_answer": "",
+        "final_reason": "Nestor Carbonell is known for playing Richard Alpert in the television series Lost."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Richard Alpert"
+      },
+      "avg_retrieval_time": 0.012846589088439941,
+      "avg_similarity": 3.4633875723493732,
+      "max_similarity": 7.195720664107567,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 161,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.0019223690032958984,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 145,
+      "prompt_token_counts": [
+        145
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "The Golden Girls",
+        "ground_truth": "Suddenly Susan",
+        "fallback_answer": "",
+        "final_reason": "Nestor Carbonell played the role of Luis Rivera in the sitcom The Golden Girls."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Suddenly Susan"
+      },
+      "avg_retrieval_time": 0.0019223690032958984,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 145,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 8.173473358154297,
+      "total_docs_searched": 19,
+      "avg_similarity_scores": [
+        0.24462567347182732,
+        0.40833333333333327
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 195,
+      "prompt_token_counts": [
+        195
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "22",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found regarding the number of episodes in the third season of Third Watch."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "22"
+      },
+      "avg_retrieval_time": 4.086736679077148,
+      "avg_similarity": 0.3264795034025803,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 195,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 8.407816648483276,
+      "total_docs_searched": 19,
+      "avg_similarity_scores": [
+        0.24462567347182732,
+        0.40833333333333327
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 170,
+      "prompt_token_counts": [
+        170
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "22",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps confirm that the third season of Third Watch exists, but no information about the number of episodes in that season was found."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "22"
+      },
+      "avg_retrieval_time": 4.203908324241638,
+      "avg_similarity": 0.3264795034025803,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 170,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 3.9012539386749268,
+      "total_docs_searched": 9,
+      "avg_similarity_scores": [
+        0.31432980599647264
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 160,
+      "prompt_token_counts": [
+        160
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Amybeth McNulty",
+        "ground_truth": "Amybeth McNulty",
+        "fallback_answer": "Amybeth McNulty",
+        "final_reason": "The evidence lists Amybeth McNulty as a cast member with the character role 'Anne Shirley', which is the titular character of 'Anne with an E'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Amybeth McNulty"
+      },
+      "avg_retrieval_time": 3.9012539386749268,
+      "avg_similarity": 0.31432980599647264,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 160,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 12.29761290550232,
+      "total_docs_searched": 19,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.23225445189730906
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 444,
+      "prompt_token_counts": [
+        444
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Diary of a Wimpy Kid: Dog Days",
+        "ground_truth": "Ready Jet Go!",
+        "fallback_answer": "Diary of a Wimpy Kid: Dog Days",
+        "final_reason": "Based on the filmography, Dalila Bella appeared in 'Diary of a Wimpy Kid: Dog Days' before 'Anne with an E'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Ready Jet Go!"
+      },
+      "avg_retrieval_time": 6.14880645275116,
+      "avg_similarity": 0.3444605592819879,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 444,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.0046176910400390625,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 368,
+      "prompt_token_counts": [
+        368
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "36K",
+        "ground_truth": "Den of Thieves",
+        "fallback_answer": "36K",
+        "final_reason": "The chronological list of Paul Scheuring's writing credits begins with 36K from 2000, which is the earliest year, making it his first movie as writer."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Den of Thieves"
+      },
+      "avg_retrieval_time": 0.0023088455200195312,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 368,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.00188446044921875,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 136,
+      "prompt_token_counts": [
+        136
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Hansal Mehta",
+        "ground_truth": "Pratik Gandhi",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide the actor's name, but based on general knowledge, the lead actor of Scam 1992 is Pratik Gandhi. However, since the steps indicate no information found, I cannot confirm. To be accurate, the correct answer is Pratik Gandhi."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Pratik Gandhi"
+      },
+      "avg_retrieval_time": 0.00188446044921875,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 136,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.0019228458404541016,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Hansal Mehta",
+        "ground_truth": "Hansal Mehta",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide the answer, but based on general knowledge, the TV series Scam 1992 was directed by Hansal Mehta."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Hansal Mehta"
+      },
+      "avg_retrieval_time": 0.0019228458404541016,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 6.483992338180542,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.0,
+        1.0
+      ],
+      "max_similarity_scores": [
+        0.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 196,
+      "prompt_token_counts": [
+        196
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "1992 Indian stock market scam",
+        "ground_truth": "1992 Indian stock market scam",
+        "fallback_answer": "1992 Indian stock market scam",
+        "final_reason": "Scam 1992 is about the Harshad Mehta stock market scam, which is the 1992 Indian stock market scam."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "1992 Indian stock market scam"
+      },
+      "avg_retrieval_time": 3.241996169090271,
+      "avg_similarity": 0.5,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 196,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.0019562244415283203,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 131,
+      "prompt_token_counts": [
+        131
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Pratik Gandhi",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found to identify the lead actor of Scam 1992."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Pratik Gandhi"
+      },
+      "avg_retrieval_time": 0.0019562244415283203,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 131,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.006976604461669922,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        10.622731608710769
+      ],
+      "max_similarity_scores": [
+        10.685629433584698
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 118,
+      "prompt_token_counts": [
+        118
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Charles Dolan",
+        "ground_truth": "Charles Dolan",
+        "fallback_answer": "",
+        "final_reason": "HBO was founded by Charles Dolan in 1972, along with his partner Jerry Levin, but the primary founder is Charles Dolan."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Charles Dolan"
+      },
+      "avg_retrieval_time": 0.006976604461669922,
+      "avg_similarity": 10.622731608710769,
+      "max_similarity": 10.685629433584698,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 118,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 5.885470628738403,
+      "total_docs_searched": 51,
+      "avg_similarity_scores": [
+        0.08860418002875839
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 164,
+      "prompt_token_counts": [
+        164
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Sean Bean",
+        "ground_truth": "Sean Bean",
+        "fallback_answer": "Sean Bean",
+        "final_reason": "The evidence document contains the relation 'Eddard Stark --[performer/outgoing]--> Sean Bean', indicating Sean Bean performed as Eddard Stark."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Sean Bean"
+      },
+      "avg_retrieval_time": 5.885470628738403,
+      "avg_similarity": 0.08860418002875839,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 164,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 4.123942613601685,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 141,
+      "prompt_token_counts": [
+        141
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Minnesota",
+        "ground_truth": "Minneapolis",
+        "fallback_answer": "Minnesota",
+        "final_reason": "The evidence document states that the narrative location of The Mary Tyler Moore Show is Minnesota."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Minneapolis"
+      },
+      "avg_retrieval_time": 4.123942613601685,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 141,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 3.8811593055725098,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        29.959275690605004,
+        1.0
+      ],
+      "max_similarity_scores": [
+        30.744297299848505,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 194,
+      "prompt_token_counts": [
+        194
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Minnesota",
+        "ground_truth": "Minneapolis",
+        "fallback_answer": "Minnesota",
+        "final_reason": "The Mary Tyler Moore Show is a television show, and its narrative location is Minnesota."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Minneapolis"
+      },
+      "avg_retrieval_time": 1.9405796527862549,
+      "avg_similarity": 15.479637845302502,
+      "max_similarity": 30.744297299848505,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 194,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 3.5475552082061768,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        1.0,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 176,
+      "prompt_token_counts": [
+        176
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Raghav SubbuRaghav Subbu",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to determine the director of the TV series Kota Factory."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Raghav SubbuRaghav Subbu"
+      },
+      "avg_retrieval_time": 1.7737776041030884,
+      "avg_similarity": 0.7283333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 176,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 3.5980005264282227,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 149,
+      "prompt_token_counts": [
+        149
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Viral Fever",
+        "ground_truth": "The Viral Fever",
+        "fallback_answer": "The Viral Fever",
+        "final_reason": "The evidence document directly states that Kota Factory has a production company relation with The Viral Fever."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Viral Fever"
+      },
+      "avg_retrieval_time": 3.5980005264282227,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 149,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.002344846725463867,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 123,
+      "prompt_token_counts": [
+        123
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Raghav SubbuRaghav Subbu",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found to determine the director of the TV series Kota Factory."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Raghav SubbuRaghav Subbu"
+      },
+      "avg_retrieval_time": 0.002344846725463867,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 123,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 9.034566879272461,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 142,
+      "prompt_token_counts": [
+        142
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "final_answer": "Alex Pina",
+        "ground_truth": "\u00c1lex Pina",
+        "fallback_answer": "Alex Pina",
+        "final_reason": "The evidence document directly states that Money Heist has creator Alex Pina."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "ground_truth": "\u00c1lex Pina"
+      },
+      "avg_retrieval_time": 9.034566879272461,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 142,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 8.624890327453613,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.75,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 163,
+      "prompt_token_counts": [
+        163
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No relevant information found",
+        "ground_truth": "Feroz Awards",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that while Money Heist is identified as an action television series, no information was found about an award nomination for the series based on the provided evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Feroz Awards"
+      },
+      "avg_retrieval_time": 4.312445163726807,
+      "avg_similarity": 0.6033333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 163,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 2.7222275733947754,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 163,
+      "prompt_token_counts": [
+        163
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.7499999999999999,
+        "final_answer": "Maurus Ronner, Ali N. A\u015fk\u0131n",
+        "ground_truth": "Ali N. A\u015fk\u0131n",
+        "fallback_answer": "Maurus Ronner, Ali N. A\u015fk\u0131n",
+        "final_reason": "The evidence lists both Maurus Ronner and Ali N. A\u015fk\u0131n as composers for the TV series Barbarians."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.7499999999999999,
+        "ground_truth": "Ali N. A\u015fk\u0131n"
+      },
+      "avg_retrieval_time": 2.7222275733947754,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 163,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 4.072244882583618,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        17.159043823424792,
+        0.0
+      ],
+      "max_similarity_scores": [
+        18.33997446206111,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 294,
+      "prompt_token_counts": [
+        294
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.888888888888889,
+        "final_answer": "R. Madhavan and Surveen Chawla",
+        "ground_truth": "R. Madhavan; Surveen Chawla",
+        "fallback_answer": "R. Madhavan and Surveen Chawla",
+        "final_reason": "The TV series Decoupled is an Indian English-language comedy web series for Netflix starring R. Madhavan and Surveen Chawla, as confirmed by the reasoning steps."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.888888888888889,
+        "ground_truth": "R. Madhavan; Surveen Chawla"
+      },
+      "avg_retrieval_time": 2.036122441291809,
+      "avg_similarity": 8.579521911712396,
+      "max_similarity": 18.33997446206111,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 294,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.002690553665161133,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 138,
+      "prompt_token_counts": [
+        138
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "R. Madhavan",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to determine who played Arya Iyer in Decoupled."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "R. Madhavan"
+      },
+      "avg_retrieval_time": 0.002690553665161133,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 138,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.002393007278442383,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 138,
+      "prompt_token_counts": [
+        138
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "a scientist employed by United States Interstellar Command",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine the character Justin Chatwin played in Another Life."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "a scientist employed by United States Interstellar Command"
+      },
+      "avg_retrieval_time": 0.002393007278442383,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 138,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.03732705116271973,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        29.298586442304593
+      ],
+      "max_similarity_scores": [
+        36.261144852592764
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 131,
+      "prompt_token_counts": [
+        131
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.28571428571428575,
+        "final_answer": "Turner Network Television (TNT)",
+        "ground_truth": "Turner Broadcasting System",
+        "fallback_answer": "",
+        "final_reason": "Jamie Kellner, who co-founded The WB, later became the CEO of Turner Broadcasting System in 2001, which included overseeing TNT and other networks. Thus, after The WB, he ran Turner Network Television (TNT)."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Turner Broadcasting System"
+      },
+      "avg_retrieval_time": 0.03732705116271973,
+      "avg_similarity": 29.298586442304593,
+      "max_similarity": 36.261144852592764,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 131,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 2.7954001426696777,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 158,
+      "prompt_token_counts": [
+        158
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "Jonathan Ross, Alyson Hannigan",
+        "ground_truth": "Alyson Hannigan",
+        "fallback_answer": "Jonathan Ross, Alyson Hannigan",
+        "final_reason": "The evidence lists both Jonathan Ross and Alyson Hannigan as presenters of the show."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "Alyson Hannigan"
+      },
+      "avg_retrieval_time": 2.7954001426696777,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 158,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 2.9070212841033936,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 171,
+      "prompt_token_counts": [
+        171
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "Alyson Hannigan, Jonathan Ross",
+        "ground_truth": "Alyson Hannigan",
+        "fallback_answer": "Alyson Hannigan, Jonathan Ross",
+        "final_reason": "The evidence documents list both Alyson Hannigan and Jonathan Ross as presenters of 'Penn & Teller: Fool Us' via the 'presenter' relation."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "Alyson Hannigan"
+      },
+      "avg_retrieval_time": 2.9070212841033936,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 171,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.001924276351928711,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 175,
+      "prompt_token_counts": [
+        175
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Michelle Dockery",
+        "ground_truth": "Michelle Dockery",
+        "fallback_answer": "Michelle Dockery",
+        "final_reason": "Michelle Dockery is the actor who plays Lady Mary in the TV series Downton Abbey."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Michelle Dockery"
+      },
+      "avg_retrieval_time": 0.001924276351928711,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 175,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.022794723510742188,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        28.76390844844219
+      ],
+      "max_similarity_scores": [
+        30.85053664926695
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 125,
+      "prompt_token_counts": [
+        125
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Shiki",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found to determine Cherami Leigh's debut role."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Shiki"
+      },
+      "avg_retrieval_time": 0.022794723510742188,
+      "avg_similarity": 28.76390844844219,
+      "max_similarity": 30.85053664926695,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 125,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 3.5426409244537354,
+      "total_docs_searched": 48,
+      "avg_similarity_scores": [
+        0.09289160781383578
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 156,
+      "prompt_token_counts": [
+        156
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Exodus",
+        "ground_truth": "Exodus",
+        "fallback_answer": "Exodus",
+        "final_reason": "Ernest Gold won the Academy Award for Best Original Dramatic or Comedy Score for the film Exodus."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Exodus"
+      },
+      "avg_retrieval_time": 3.5426409244537354,
+      "avg_similarity": 0.09289160781383578,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 156,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.003658771514892578,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 172,
+      "prompt_token_counts": [
+        172
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "The Band Perry",
+        "ground_truth": "The Solids",
+        "fallback_answer": "",
+        "final_reason": "The opening song of How I Met Your Mother is 'Hey, Beautiful' by The Band Perry, which is a well-known fact. The reasoning steps provided were incomplete and did not find the answer, but the correct answer is The Band Perry."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The Solids"
+      },
+      "avg_retrieval_time": 0.001829385757446289,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 172,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.01879429817199707,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        27.215125317726212,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        30.771837806525276,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 216,
+      "prompt_token_counts": [
+        216
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Fresh Prince of Bel-Air",
+        "ground_truth": "The Fresh Prince of Bel-Air",
+        "fallback_answer": "The Fresh Prince of Bel-Air",
+        "final_reason": "Chi McBride's full name is Kenneth Chi McBride, and his first TV appearance was in The Fresh Prince of Bel-Air in 1992."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Fresh Prince of Bel-Air"
+      },
+      "avg_retrieval_time": 0.009397149085998535,
+      "avg_similarity": 13.83589599219644,
+      "max_similarity": 30.771837806525276,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 216,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.04350733757019043,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        9.615793745975063
+      ],
+      "max_similarity_scores": [
+        1.0,
+        12.149196891338008
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 154,
+      "prompt_token_counts": [
+        154
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "2011 MTV Movie Awards",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found to determine the title of the first season premier episode of Teen Wolf or the program it followed. Therefore, the final answer cannot be determined from the given information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "2011 MTV Movie Awards"
+      },
+      "avg_retrieval_time": 0.021753668785095215,
+      "avg_similarity": 5.036230206320865,
+      "max_similarity": 12.149196891338008,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 154,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.016597270965576172,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        7.138223102907941,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        7.532264744703558,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 141,
+      "prompt_token_counts": [
+        141
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Swedish",
+        "ground_truth": "Sweden",
+        "fallback_answer": "",
+        "final_reason": "Alba August is a Swedish actress, known for her roles in films and TV series. Her nationality is Swedish."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Sweden"
+      },
+      "avg_retrieval_time": 0.008298635482788086,
+      "avg_similarity": 3.797444884787304,
+      "max_similarity": 7.532264744703558,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 141,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 3.080120801925659,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 154,
+      "prompt_token_counts": [
+        154
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.7692307692307692,
+        "final_answer": "LGBTI+ related TV series, drama television series",
+        "ground_truth": "drama television series,LGBTI+ related TV series",
+        "fallback_answer": "LGBTI+ related TV series, drama television series",
+        "final_reason": "The evidence lists two genres for The Tunnel: LGBTI+ related TV series and drama television series."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.7692307692307692,
+        "ground_truth": "drama television series,LGBTI+ related TV series"
+      },
+      "avg_retrieval_time": 3.080120801925659,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 154,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 3.8828301429748535,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 154,
+      "prompt_token_counts": [
+        154
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Sky Atlantic; Canal+",
+        "ground_truth": "Sky Atlantic , Canal+",
+        "fallback_answer": "Sky Atlantic; Canal+",
+        "final_reason": "The original broadcaster of 'The Tunnel' is Sky Atlantic for the United Kingdom and Canal+ for France."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Sky Atlantic , Canal+"
+      },
+      "avg_retrieval_time": 3.8828301429748535,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 154,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 2.0014023780822754,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        0.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 146,
+      "prompt_token_counts": [
+        146
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Dominik Moll",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find any relevant information about the director of the Tunnel TV series."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Dominik Moll"
+      },
+      "avg_retrieval_time": 1.0007011890411377,
+      "avg_similarity": 0.22833333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 146,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.00405120849609375,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 174,
+      "prompt_token_counts": [
+        174
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Michael Morris",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find any relevant information to determine the director of the Locke & Key season 1 episode 'Welcome to Matheson'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Michael Morris"
+      },
+      "avg_retrieval_time": 0.002025604248046875,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 174,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.004933595657348633,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 176,
+      "prompt_token_counts": [
+        176
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Michael Morris",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find any relevant information to determine the episode ID or title of season 1 episode 1 of Locke & Key, nor the director of that episode. Therefore, the final answer cannot be determined from the provided information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Michael Morris"
+      },
+      "avg_retrieval_time": 0.0024667978286743164,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 176,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 2.1893393993377686,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        0.0
+      ],
+      "max_similarity_scores": [
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 131,
+      "prompt_token_counts": [
+        131
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Indianapolis",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found to determine the setting of Good Morning, Miss Bliss."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Indianapolis"
+      },
+      "avg_retrieval_time": 2.1893393993377686,
+      "avg_similarity": 0.0,
+      "max_similarity": 0.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 131,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 14.071006774902344,
+      "total_docs_searched": 4,
+      "avg_similarity_scores": [
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 164,
+      "prompt_token_counts": [
+        164
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Joe Manganiello",
+        "ground_truth": "Joe Manganiello",
+        "fallback_answer": "Joe Manganiello",
+        "final_reason": "Sofia Vergara married Joe Manganiello in 2015, as indicated by the reasoning step."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Joe Manganiello"
+      },
+      "avg_retrieval_time": 14.071006774902344,
+      "avg_similarity": 0.5208333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 164,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.0041196346282958984,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 171,
+      "prompt_token_counts": [
+        171
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Duckman",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not identify the subject entity or any information about the first well popular series produced for the USA network. Therefore, the answer cannot be determined from the given information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Duckman"
+      },
+      "avg_retrieval_time": 0.0020598173141479492,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 171,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.0027396678924560547,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 133,
+      "prompt_token_counts": [
+        133
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Eric Lange",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to identify the actor who played Detective Robert Parker in Unbelievable."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Eric Lange"
+      },
+      "avg_retrieval_time": 0.0027396678924560547,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 133,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.00252532958984375,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 130,
+      "prompt_token_counts": [
+        130
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Eric Lange",
+        "ground_truth": "Eric Lange",
+        "fallback_answer": "",
+        "final_reason": "Eric Lange is credited with the role of Detective Robert Parker in the Netflix series Unbelievable."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Eric Lange"
+      },
+      "avg_retrieval_time": 0.00252532958984375,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 130,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.0061113834381103516,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 149,
+      "prompt_token_counts": [
+        149
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Winrich Kolbe",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find any relevant information about the director of 'Caretaker, Part I'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Winrich Kolbe"
+      },
+      "avg_retrieval_time": 0.0030556917190551758,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 149,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.0018563270568847656,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 143,
+      "prompt_token_counts": [
+        143
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Sumedh Mudgalkar",
+        "ground_truth": "Himanshu Soni",
+        "fallback_answer": "",
+        "final_reason": "Sumedh Mudgalkar is widely known for portraying the role of Krishna in the Indian television series RadhaKrishn, which aired on Star Bharat."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Himanshu Soni"
+      },
+      "avg_retrieval_time": 0.0018563270568847656,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 143,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 3.285849094390869,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 144,
+      "prompt_token_counts": [
+        144
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "final_answer": "Alex Pina",
+        "ground_truth": "\u00c1lex Pina",
+        "fallback_answer": "Alex Pina",
+        "final_reason": "The reasoning step confirms that the creator of Money Heist is Alex Pina."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "ground_truth": "\u00c1lex Pina"
+      },
+      "avg_retrieval_time": 3.285849094390869,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 144,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.00708770751953125,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 128,
+      "prompt_token_counts": [
+        128
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "\u00c1lex Pina",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide any relevant information to identify the director of Money Heist."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "\u00c1lex Pina"
+      },
+      "avg_retrieval_time": 0.00708770751953125,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 128,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 4.079111576080322,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 142,
+      "prompt_token_counts": [
+        142
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Darren Star",
+        "ground_truth": "Darren Star",
+        "fallback_answer": "Darren Star",
+        "final_reason": "The reasoning step confirms that Darren Star is the creator of Emily in Paris."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Darren Star"
+      },
+      "avg_retrieval_time": 4.079111576080322,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 142,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.0015168190002441406,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Not found",
+        "ground_truth": "Stephen Brown",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to determine the producer of Emily in Paris."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Stephen Brown"
+      },
+      "avg_retrieval_time": 0.0015168190002441406,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.9778804779052734,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        0.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 139,
+      "prompt_token_counts": [
+        139
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Donald P. Bellisario",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to identify the series or its creator."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Donald P. Bellisario"
+      },
+      "avg_retrieval_time": 0.4889402389526367,
+      "avg_similarity": 0.22833333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 139,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 2.6743617057800293,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.0
+      ],
+      "max_similarity_scores": [
+        1.0,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 164,
+      "prompt_token_counts": [
+        164
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "2.6 million",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find any relevant information about the first season of the Rachael Ray Show or its average daily views during that period."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "2.6 million"
+      },
+      "avg_retrieval_time": 1.3371808528900146,
+      "avg_similarity": 0.22833333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 164,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.03397822380065918,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        26.873504167078096,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        27.260755244113742,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 215,
+      "prompt_token_counts": [
+        215
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5454545454545454,
+        "final_answer": "Daytime Emmy Award",
+        "ground_truth": "Daytime Emmy Award for Outstanding Talk Show Entertainment",
+        "fallback_answer": "Daytime Emmy Award",
+        "final_reason": "The Rachael Ray Show won a Daytime Emmy Award in 2008 for Outstanding Talk Show/Entertainment, as listed in the evidence table."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5454545454545454,
+        "ground_truth": "Daytime Emmy Award for Outstanding Talk Show Entertainment"
+      },
+      "avg_retrieval_time": 0.01698911190032959,
+      "avg_similarity": 13.665085416872381,
+      "max_similarity": 27.260755244113742,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 215,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 12.661014556884766,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.75,
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 231,
+      "prompt_token_counts": [
+        231
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Sanjhbati",
+        "ground_truth": "Bhalo Theko",
+        "fallback_answer": "Sanjhbati",
+        "final_reason": "Leena Gangopadhyay's only listed film as a writer is Sanjhbati, so it is also the first released among her written films."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Bhalo Theko"
+      },
+      "avg_retrieval_time": 6.330507278442383,
+      "avg_similarity": 0.875,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 231,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.001493215560913086,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 137,
+      "prompt_token_counts": [
+        137
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Todd J. Greenwald",
+        "ground_truth": "Todd J. Greenwald",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide the answer, but based on general knowledge, the creator of Wizards of Waverly Place is Todd J. Greenwald."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Todd J. Greenwald"
+      },
+      "avg_retrieval_time": 0.001493215560913086,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 137,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 2.7519407272338867,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 161,
+      "prompt_token_counts": [
+        161
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "It's a Laugh Productions",
+        "ground_truth": "It's a Laugh Productions",
+        "fallback_answer": "It's a Laugh Productions",
+        "final_reason": "The evidence document directly states the production company of Wizards of Waverly Place is It's a Laugh Productions."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "It's a Laugh Productions"
+      },
+      "avg_retrieval_time": 2.7519407272338867,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 161,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.06310653686523438,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        25.902070858743922
+      ],
+      "max_similarity_scores": [
+        26.592828659698007
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 159,
+      "prompt_token_counts": [
+        159
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "The Castle of the Living Dead",
+        "ground_truth": "The World Ten Times Over",
+        "fallback_answer": "The Castle of the Living Dead",
+        "final_reason": "Donald Sutherland's first film appearance was in the 1964 horror film 'The Castle of the Living Dead'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The World Ten Times Over"
+      },
+      "avg_retrieval_time": 0.06310653686523438,
+      "avg_similarity": 25.902070858743922,
+      "max_similarity": 26.592828659698007,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 159,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.0031554698944091797,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 179,
+      "prompt_token_counts": [
+        179
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Duffer Brothers",
+        "ground_truth": "Duffer brothers",
+        "fallback_answer": "",
+        "final_reason": "The episode 'MADMAX' is the first episode of Stranger Things season 2, and it was directed by the Duffer Brothers."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Duffer brothers"
+      },
+      "avg_retrieval_time": 0.0015777349472045898,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 179,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 6.419801235198975,
+      "total_docs_searched": 15,
+      "avg_similarity_scores": [
+        0.2928968253968254,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 209,
+      "prompt_token_counts": [
+        209
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.4,
+        "final_answer": "The directors of the episode 'Chapter One: MADMAX' are the Duffer Brothers.",
+        "ground_truth": "Duffer brothers",
+        "fallback_answer": "",
+        "final_reason": "The episode 'Chapter One: MADMAX' is the first episode of the second season of Stranger Things, and it is directed by the Duffer Brothers."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Duffer brothers"
+      },
+      "avg_retrieval_time": 3.2099006175994873,
+      "avg_similarity": 0.374781746031746,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 209,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.02854442596435547,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        23.344642207935284
+      ],
+      "max_similarity_scores": [
+        24.305787373029183
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 134,
+      "prompt_token_counts": [
+        134
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Boston Legal",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found to determine the show."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Boston Legal"
+      },
+      "avg_retrieval_time": 0.02854442596435547,
+      "avg_similarity": 23.344642207935284,
+      "max_similarity": 24.305787373029183,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 134,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 3.924290180206299,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 148,
+      "prompt_token_counts": [
+        148
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Bamb\u00fa Producciones",
+        "ground_truth": "Bamb\u00fa Producciones",
+        "fallback_answer": "Bamb\u00fa Producciones",
+        "final_reason": "The reasoning step directly identifies Bamb\u00fa Producciones as the production company of the TV series High Seas."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Bamb\u00fa Producciones"
+      },
+      "avg_retrieval_time": 3.924290180206299,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 148,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.002200603485107422,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 133,
+      "prompt_token_counts": [
+        133
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Mark Tonderai",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine the director of the second season of Locke & Key."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Mark Tonderai"
+      },
+      "avg_retrieval_time": 0.002200603485107422,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 133,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 3.072524070739746,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 137,
+      "prompt_token_counts": [
+        137
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Shin Won-ho",
+        "ground_truth": "Shin Won-ho",
+        "fallback_answer": "Shin Won-ho",
+        "final_reason": "The evidence document directly states that Hospital Playlist has director Shin Won-ho."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Shin Won-ho"
+      },
+      "avg_retrieval_time": 3.072524070739746,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 137,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 3.4669055938720703,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 149,
+      "prompt_token_counts": [
+        149
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5714285714285715,
+        "final_answer": "medical drama, comedy, Korean drama",
+        "ground_truth": "medical drama",
+        "fallback_answer": "medical drama, comedy, Korean drama",
+        "final_reason": "The evidence lists three genres for Hospital Playlist: medical drama, comedy, and Korean drama."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5714285714285715,
+        "ground_truth": "medical drama"
+      },
+      "avg_retrieval_time": 3.4669055938720703,
+      "avg_similarity": 0.611111111111111,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 149,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 7.688274621963501,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 149,
+      "prompt_token_counts": [
+        149
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Lee Woo-jung",
+        "ground_truth": "Lee Woo-jung",
+        "fallback_answer": "Lee Woo-jung",
+        "final_reason": "The evidence document directly states that Hospital Playlist has a screenwriter relation with Lee Woo-jung."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Lee Woo-jung"
+      },
+      "avg_retrieval_time": 7.688274621963501,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 149,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.001989126205444336,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Shin Won-ho",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine the director of Hospital Playlist."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Shin Won-ho"
+      },
+      "avg_retrieval_time": 0.001989126205444336,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.04463815689086914,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        25.676227410595594
+      ],
+      "max_similarity_scores": [
+        28.262791021498145
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 153,
+      "prompt_token_counts": [
+        153
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Crossing Over",
+        "ground_truth": "Purgatory Flats",
+        "fallback_answer": "Crossing Over",
+        "final_reason": "The reasoning steps indicate that Kevin Alejandro's debut movie is Crossing Over, as it is the earliest film mentioned in the evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Purgatory Flats"
+      },
+      "avg_retrieval_time": 0.04463815689086914,
+      "avg_similarity": 25.676227410595594,
+      "max_similarity": 28.262791021498145,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 153,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 8.014909982681274,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 191,
+      "prompt_token_counts": [
+        191
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Francesca Comencini",
+        "ground_truth": "Francesca Comencini",
+        "fallback_answer": "Francesca Comencini",
+        "final_reason": "The reasoning steps indicate that the episode 'Liber' 'The Book' in Luna Nera was directed by Francesca Comencini, as the evidence document states that Luna Nera has a director relation to Francesca Comencini."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Francesca Comencini"
+      },
+      "avg_retrieval_time": 4.007454991340637,
+      "avg_similarity": 0.7283333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 191,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.0018770694732666016,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 191,
+      "prompt_token_counts": [
+        191
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "One Life to Live",
+        "ground_truth": "Ordeal in the Arctic",
+        "fallback_answer": "One Life to Live",
+        "final_reason": "The evidence table T0587 lists 'One Life to Live' with years 1994\u20131997, 2007, which is earlier than any other television show listed in the tables (e.g., Spin City in 1996, Total Security in 1997). Thus, it is his first television show."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Ordeal in the Arctic"
+      },
+      "avg_retrieval_time": 0.0018770694732666016,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 191,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.036042213439941406,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        25.122770954475808
+      ],
+      "max_similarity_scores": [
+        26.343944615902863
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 128,
+      "prompt_token_counts": [
+        128
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Ordeal in the Arctic",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found to determine Nathan Fillion's first TV role."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Ordeal in the Arctic"
+      },
+      "avg_retrieval_time": 0.036042213439941406,
+      "avg_similarity": 25.122770954475808,
+      "max_similarity": 26.343944615902863,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 128,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.0009963512420654297,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 168,
+      "prompt_token_counts": [
+        168
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.7499999999999999,
+        "final_answer": "Getting There, When in Rome",
+        "ground_truth": "When in Rome",
+        "fallback_answer": "Getting There, When in Rome",
+        "final_reason": "The filmography table lists both 'Getting There' and 'When in Rome' as 2002 movies starring Mary-Kate and Ashley Olsen."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.7499999999999999,
+        "ground_truth": "When in Rome"
+      },
+      "avg_retrieval_time": 0.0009963512420654297,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 168,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.05461573600769043,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        11.538173046497562
+      ],
+      "max_similarity_scores": [
+        11.979494730832947
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 140,
+      "prompt_token_counts": [
+        140
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No relevant information found",
+        "ground_truth": "Orlando Bloom",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found to answer the question."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Orlando Bloom"
+      },
+      "avg_retrieval_time": 0.05461573600769043,
+      "avg_similarity": 11.538173046497562,
+      "max_similarity": 11.979494730832947,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 140,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.0014615058898925781,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Simon McBurney",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to identify the actor who played a human street performer in Carnival Row."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Simon McBurney"
+      },
+      "avg_retrieval_time": 0.0014615058898925781,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.054205894470214844,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        11.039745680575246
+      ],
+      "max_similarity_scores": [
+        11.563146886958263
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 138,
+      "prompt_token_counts": [
+        138
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Not found",
+        "ground_truth": "Orlando Bloom",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine the Inspector of Burgue Constabulary in Carnival Row."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Orlando Bloom"
+      },
+      "avg_retrieval_time": 0.054205894470214844,
+      "avg_similarity": 11.039745680575246,
+      "max_similarity": 11.563146886958263,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 138,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.002190113067626953,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 158,
+      "prompt_token_counts": [
+        158
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Lisa Vicari",
+        "ground_truth": "Lisa Vicari",
+        "fallback_answer": "Lisa Vicari",
+        "final_reason": "In the Dark (TV series) table T0176, row 13 lists 'Martha Nielsen' with life stage '2 Teen' and actor 'Lisa Vicari'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Lisa Vicari"
+      },
+      "avg_retrieval_time": 0.002190113067626953,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 158,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.002682924270629883,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 165,
+      "prompt_token_counts": [
+        165
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Lisa Vicari",
+        "ground_truth": "Lisa Vicari",
+        "fallback_answer": "Lisa Vicari",
+        "final_reason": "The reasoning step states that Lisa Vicari played teenage Martha in Dark."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Lisa Vicari"
+      },
+      "avg_retrieval_time": 0.002682924270629883,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 165,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 5.106724262237549,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 142,
+      "prompt_token_counts": [
+        142
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Michael Waldron",
+        "ground_truth": "Michael Waldron",
+        "fallback_answer": "Michael Waldron",
+        "final_reason": "The reasoning step directly identifies Michael Waldron as the creator of the TV series Loki."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Michael Waldron"
+      },
+      "avg_retrieval_time": 5.106724262237549,
+      "avg_similarity": 0.611111111111111,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 142,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 6.754130840301514,
+      "total_docs_searched": 4,
+      "avg_similarity_scores": [
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 163,
+      "prompt_token_counts": [
+        163
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Kate Herron",
+        "ground_truth": "Kate Herron",
+        "fallback_answer": "Kate Herron",
+        "final_reason": "The reasoning step confirms that Kate Herron directed the episode 'Glorious Purpose' in the TV series Loki."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Kate Herron"
+      },
+      "avg_retrieval_time": 6.754130840301514,
+      "avg_similarity": 0.5208333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 163,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 0.02386617660522461,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        11.731092452161175
+      ],
+      "max_similarity_scores": [
+        1.0,
+        15.094434572456924
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 144,
+      "prompt_token_counts": [
+        144
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Michael Waldron",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found for either the director or the creator of the film The Princess Bride, so the answer cannot be determined from the provided information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Michael Waldron"
+      },
+      "avg_retrieval_time": 0.011933088302612305,
+      "avg_similarity": 6.093879559413921,
+      "max_similarity": 15.094434572456924,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 144,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 0.7294384508114308
+    },
+    {
+      "total_retrieval_time": 3.6752283573150635,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 150,
+      "prompt_token_counts": [
+        150
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Wharton School",
+        "ground_truth": "The Wharton School",
+        "fallback_answer": "The Wharton School",
+        "final_reason": "Aaron Korsh was educated at The Wharton School, which is a business school."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Wharton School"
+      },
+      "avg_retrieval_time": 3.6752283573150635,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 150,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 0.7294384508114308
+    }
+  ]
+}

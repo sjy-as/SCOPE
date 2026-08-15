@@ -1,0 +1,27 @@
+{
+  "domain": "transportation",
+  "routing_mode": "graph",
+  "knowledge_base": [
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/transportation/questions.json",
+  "output_dir": "/root/autodl-tmp/BBB_hybridQA/experiments/route_only/outputs/new_model/transportation",
+  "semantic_catalog": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/transportation/semantic_catalog/semantic_list_3sources.json",
+  "atomr_prompts": null,
+  "deepsieve_source_summary": null,
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 54.47333717998117,
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 45,
+    "route1.table": 55,
+    "route2.doc": 52,
+    "route2.table": 48
+  }
+}

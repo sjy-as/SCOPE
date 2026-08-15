@@ -1,0 +1,62 @@
+{
+  "domain": "tvseries",
+  "generated_from": "semantic_catalog_build_report.json",
+  "multi_source_patterns": [
+    "A question may require combining a TV series' cast list (from a table) with a specific actor's birth date (from KG) to answer a temporal query.",
+    "A question may ask for the production company of a series, which is explicitly in KG, but the series' episode count is only in a table, requiring cross-source lookup.",
+    "A question may reference a character's role in a series, which is in a doc's narrative, but the actor's other works are in a table, needing both sources."
+  ],
+  "routing_boundary": "Doc sources provide narrative context, character descriptions, and plot summaries; KG sources provide explicit factual relationships (e.g., cast member, creator, production company) with high precision; Table sources provide structured lists (e.g., episode lists, cast tables, awards) that are best for enumerative queries. Use Doc for understanding context, KG for exact entity-relation facts, and Table for structured comparisons or aggregations.",
+  "sources": {
+    "doc": {
+      "data_shape": "Narrative passages describing TV series, characters, and events, often with rich contextual details but lacking structured fields.",
+      "summary": "Doc sources are ideal for questions requiring narrative understanding, such as character motivations, plot twists, or thematic elements. They provide context that is not available in structured sources.",
+      "best_for": [
+        "Questions about character development or relationships that are described in prose.",
+        "Queries asking for plot summaries or episode recaps.",
+        "Questions about the tone, genre, or critical reception of a series.",
+        "Queries that require understanding the sequence of events or cause-effect relationships in a storyline."
+      ],
+      "avoid_when": [
+        "Questions that need exact dates, numbers, or factual data (e.g., 'How many episodes?') are better answered by tables or KG.",
+        "Queries that require comparing multiple series on specific attributes (e.g., 'Which series has more seasons?') are more efficiently handled by structured sources.",
+        "Questions about specific entity relationships (e.g., 'Who directed episode 5?') are better answered by KG triples."
+      ]
+    },
+    "kg": {
+      "data_shape": "Explicit entity-relation-entity triples (e.g., 'series - cast member - actor') with possible qualifiers like dates or roles. Contains broad safe distractor relations, so predicate/entity compatibility is critical.",
+      "summary": "KG sources provide precise, structured facts about entities and their relationships. They are ideal for queries that require exact answers, such as 'Who created series X?' or 'What is the publication date of Y?'",
+      "best_for": [
+        "Questions asking for specific factual relationships (e.g., 'Who is the creator of Breaking Bad?')",
+        "Queries that require filtering by relation type (e.g., 'List all series with a specific production company.')",
+        "Questions about entity attributes like dates, locations, or identifiers (e.g., 'When was the series first broadcast?')",
+        "Queries that need to traverse multiple hops (e.g., 'Find actors who starred in a series produced by company Z.')"
+      ],
+      "avoid_when": [
+        "Questions that require narrative context or subjective interpretation (e.g., 'Why did a character act that way?') are better answered by docs.",
+        "Queries that need a list of all episodes or cast members in a specific order are better handled by tables.",
+        "Questions that involve ambiguous predicates or require disambiguation (e.g., 'winner' could refer to awards or competitions) may need careful filtering."
+      ]
+    },
+    "table": {
+      "data_shape": "Structured rows and columns, often representing episode lists, cast tables, or award lists. Each row is a record with multiple fields.",
+      "summary": "Table sources are excellent for enumerative queries, comparisons, and aggregations. They provide clean, tabular data that is easy to query for counts, rankings, or specific field values.",
+      "best_for": [
+        "Questions that require counting (e.g., 'How many seasons does series X have?')",
+        "Queries that need to compare attributes across multiple entities (e.g., 'Which series has more episodes: X or Y?')",
+        "Questions that ask for lists (e.g., 'List all cast members of series X.')",
+        "Queries that require sorting or ranking (e.g., 'What is the highest-rated episode?')"
+      ],
+      "avoid_when": [
+        "Questions that need narrative explanation or context (e.g., 'What is the significance of a particular episode?') are better answered by docs.",
+        "Queries that involve complex relationships not captured in a single table (e.g., 'Who is the director of the pilot episode?') may require KG.",
+        "Questions that require understanding of the plot or character arcs (e.g., 'How does the protagonist evolve?') are not suitable for tables."
+      ]
+    }
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_basis": "balanced_cluster_representatives"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "input": "/root/autodl-tmp/new_model/qa_bench/table-doc-1120.jsonl",
+  "output_dir": "/root/autodl-tmp/route_result_new/table_doc/graph",
+  "routing_mode": "graph",
+  "knowledge_base": [
+    "kg",
+    "table",
+    "doc"
+  ],
+  "prompt_version": "v2",
+  "resume": true,
+  "skipped_existing_success": 731,
+  "processed_this_run": 389,
+  "profiles_path": "/root/autodl-tmp/new_model/data_sources/source_profiles.json",
+  "total": 1120,
+  "succeeded": 1120,
+  "failed": 0,
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 139,
+    "route1.kg": 538,
+    "route1.table": 443,
+    "route2.doc": 226,
+    "route2.kg": 233,
+    "route2.table": 661
+  },
+  "fallback_source_counts": {
+    "route1.doc": 632,
+    "route1.kg": 165,
+    "route1.table": 323,
+    "route2.doc": 713,
+    "route2.kg": 230,
+    "route2.table": 177
+  },
+  "routing_layer_counts": {}
+}

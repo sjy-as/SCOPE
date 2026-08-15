@@ -1,0 +1,300 @@
+{
+  "domain": "movies",
+  "description": "Leakage-aware movies-domain AtomR demonstrations derived from non-evaluation Table, Doc, and KG facts and quality-audited.",
+  "minimum_examples_per_stage": 8,
+  "replace_base_examples": true,
+  "stage_guidance": {
+    "tree_generation": "Keep movies questions executable: isolate facts about films, directors, actors, characters, production roles, release dates, franchises, genres, box office, and film awards; add a later child only when it genuinely depends on an earlier bridge answer.",
+    "source_selection": "Use KG for explicit entity-predicate-entity facts and qualifiers; Table for complete structured rows, chronology, rank, filters, comparisons, and aggregation; Text for narrative context, explanation, biography, plot, reception, and contextual wording. Select multiple labels only when the answer truly crosses boundaries.",
+    "direct_answer": "Return short evidence-compatible entities, dates, counts, organizations, places, or phrases about films, directors, actors, characters, production roles, release dates, franchises, genres, box office, and film awards; never invent a fact.",
+    "direct_rag": "Ground every hop in supplied KG triples, table rows, or text passages, distinguishing exact graph edges from prose context and row operations.",
+    "search": "Identify only the entity requested at the current hop from the supplied evidence.",
+    "relate": "Extract the requested relation value exactly for the demonstrated movies fact.",
+    "filter": "Apply every condition to the candidate set; use Table rows and KG qualifiers only when explicitly supplied.",
+    "answer_from_child_qa": "Resolve child dependencies in order and report only the final requested answer."
+  },
+  "stages": {
+    "tree_generation": [
+      {
+        "input": "Who performed the role of Jean Grey in Dark Phoenix?",
+        "output": "{\"Who performed the role of Jean Grey in Dark Phoenix?\": [\"1. Which work features Jean Grey as a character?\", \"2. Who performed Jean Grey in [1]?\"], \"1. Which work features Jean Grey as a character?\": \"Relate('Jean Grey', 'performer')\", \"2. Who performed Jean Grey in [1]?\": \"Relate([1], 'performer')\"}"
+      },
+      {
+        "input": "Who directed the film Titanic?",
+        "output": "{\"Who directed the film Titanic?\": [\"1. Which film is Titanic?\", \"2. Who directed [1]?\"], \"1. Which film is Titanic?\": \"Relate('Titanic', 'director')\", \"2. Who directed [1]?\": \"Relate([1], 'director')\"}"
+      },
+      {
+        "input": "How many Academy Award nominations did E.T. the Extra-Terrestrial receive?",
+        "output": "{\"How many Academy Award nominations did E.T. the Extra-Terrestrial receive?\": [\"1. What is the Academy Award nominations count for E.T. the Extra-Terrestrial?\", \"2. What is the value of [1]?\"], \"1. What is the Academy Award nominations count for E.T. the Extra-Terrestrial?\": \"Filter('E.T. the Extra-Terrestrial', 'Academy Awards Nominations')\", \"2. What is the value of [1]?\": \"Relate([1], 'value')\"}"
+      },
+      {
+        "input": "How many BAFTA Awards did Titanic win?",
+        "output": "{\"How many BAFTA Awards did Titanic win?\": [\"1. What is the BAFTA Awards wins count for Titanic?\", \"2. What is the value of [1]?\"], \"1. What is the BAFTA Awards wins count for Titanic?\": \"Filter('Titanic', 'BAFTA Awards Wins')\", \"2. What is the value of [1]?\": \"Relate([1], 'value')\"}"
+      },
+      {
+        "input": "In which film does a LEGO version of General Zod appear?",
+        "output": "{\"In which film does a LEGO version of General Zod appear?\": [\"1. Which film features a LEGO version of General Zod?\", \"2. What is the title of [1]?\"], \"1. Which film features a LEGO version of General Zod?\": \"Search('LEGO version of General Zod appears')\", \"2. What is the title of [1]?\": \"Relate([1], 'title')\"}"
+      },
+      {
+        "input": "What is the runtime of The Hobbit film series?",
+        "output": "{\"What is the runtime of The Hobbit film series?\": [\"1. What is the runtime of The Hobbit film series?\", \"2. What is the value of [1]?\"], \"1. What is the runtime of The Hobbit film series?\": \"Search('runtime of The Hobbit film series')\", \"2. What is the value of [1]?\": \"Relate([1], 'value')\"}"
+      },
+      {
+        "input": "Who played Spider-Man in the Marvel Cinematic Universe films?",
+        "output": "{\"Who played Spider-Man in the Marvel Cinematic Universe films?\": [\"1. Which actor portrayed Spider-Man in the Marvel Cinematic Universe?\", \"2. Who is the performer of Spider-Man in [1]?\"], \"1. Which actor portrayed Spider-Man in the Marvel Cinematic Universe?\": \"Filter('Spider-Man', 'Marvel Cinematic Universe')\", \"2. Who is the performer of Spider-Man in [1]?\": \"Relate([1], 'performer')\"}"
+      },
+      {
+        "input": "Who directed the film that won 11 BAFTA Awards?",
+        "output": "{\"Who directed the film that won 11 BAFTA Awards?\": [\"1. Which film won 11 BAFTA Awards?\", \"2. Who directed [1]?\"], \"1. Which film won 11 BAFTA Awards?\": \"Filter('BAFTA Awards', '11 wins')\", \"2. Who directed [1]?\": \"Relate([1], 'director')\"}"
+      }
+    ],
+    "source_selection": [
+      {
+        "input": "Who performed the role of Jean Grey in Dark Phoenix?",
+        "output": "KG"
+      },
+      {
+        "input": "Who directed the film Titanic?",
+        "output": "KG"
+      },
+      {
+        "input": "How many Academy Award nominations did E.T. the Extra-Terrestrial receive?",
+        "output": "Table"
+      },
+      {
+        "input": "Which film by James Cameron received 14 Academy Award nominations?",
+        "output": "Table"
+      },
+      {
+        "input": "In which movie does a LEGO version of General Zod appear?",
+        "output": "Text"
+      },
+      {
+        "input": "Who said he was a fan of the X-Men film series, particularly Singer's films?",
+        "output": "Text"
+      },
+      {
+        "input": "Who played Spider-Man in the Marvel Cinematic Universe and also performed the role of Jean Grey in Dark Phoenix?",
+        "output": "KG, Table"
+      },
+      {
+        "input": "Who directed Titanic and also returned as director for the feature-length film in The Godfather series?",
+        "output": "KG, Text"
+      }
+    ],
+    "direct_answer": [
+      {
+        "input": "Who published the comic book series featuring Batman and Superman?",
+        "output": "So the answer is: (1) Paraphrase Answer: The publisher of the comic book series featuring Batman and Superman is DC Comics.; (2) Answer List: [\"DC Comics\"]"
+      },
+      {
+        "input": "Which actress portrayed Jean Grey in the films Dark Phoenix and X-Men: Apocalypse?",
+        "output": "So the answer is: (1) Paraphrase Answer: The actress who portrayed Jean Grey in Dark Phoenix and X-Men: Apocalypse is Sophia Turner.; (2) Answer List: [\"Sophia Turner\"]"
+      },
+      {
+        "input": "Who directed the film Titanic?",
+        "output": "So the answer is: (1) Paraphrase Answer: The director of Titanic is James Cameron.; (2) Answer List: [\"James Cameron\"]"
+      },
+      {
+        "input": "How many Academy Award nominations did the film E.T. the Extra-Terrestrial receive?",
+        "output": "So the answer is: (1) Paraphrase Answer: The film E.T. the Extra-Terrestrial received 9 Academy Award nominations.; (2) Answer List: [\"9\"]"
+      },
+      {
+        "input": "Which actor portrayed Peter Parker in the feature films of the Marvel Cinematic Universe?",
+        "output": "So the answer is: (1) Paraphrase Answer: The actor who portrayed Peter Parker in the feature films of the Marvel Cinematic Universe is Tom Holland.; (2) Answer List: [\"Tom Holland\"]"
+      },
+      {
+        "input": "How many BAFTA Awards did the film Titanic win?",
+        "output": "So the answer is: (1) Paraphrase Answer: The film Titanic won 11 BAFTA Awards.; (2) Answer List: [\"11\"]"
+      },
+      {
+        "input": "In which film does a LEGO version of General Zod appear?",
+        "output": "So the answer is: (1) Paraphrase Answer: A LEGO version of General Zod appears in The Lego Batman Movie.; (2) Answer List: [\"The Lego Batman Movie\"]"
+      },
+      {
+        "input": "Who returned as director for the feature-length film in The Godfather series?",
+        "output": "So the answer is: (1) Paraphrase Answer: Francis Ford Coppola returned as director for the feature-length film in The Godfather series.; (2) Answer List: [\"Francis Ford Coppola\"]"
+      }
+    ],
+    "direct_rag": [
+      {
+        "input": "Supporting knowledge: [{\"source\": \"KG\", \"relation_id\": \"P175\", \"relation_name\": \"performer\", \"sample_triples\": [\"Jean Grey --performer [of: Dark Phoenix; of: X-Men: Apocalypse]--> Sophia Turner\", \"Brian Crown --performer [object has role: voice actor; of: Scoob!]--> Mark Wahlberg\", \"Where Do Broken Hearts Go --performer--> Whitney Houston\", \"Pray for Me Brother --performer--> A. R. Rahman\"]}] Question: Who performed the role of Jean Grey in Dark Phoenix?",
+        "output": "So the answer is: (1) Paraphrase Answer: Sophia Turner performed the role of Jean Grey in Dark Phoenix. (2) Answer List: [\"Sophia Turner\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"KG\", \"relation_id\": \"P57\", \"relation_name\": \"director\", \"sample_triples\": [\"Doctor of Doom --director--> Tim Burton\", \"Titanic --director--> James Cameron\", \"What Did Jack Do? --director--> David Lynch\", \"Mimi --director--> Laxman Utekar\"]}] Question: Who directed the film Titanic?",
+        "output": "So the answer is: (1) Paraphrase Answer: James Cameron directed the film Titanic. (2) Answer List: [\"James Cameron\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"Table\", \"table_id\": \"T0672\", \"title\": \"Steven Spielberg\", \"headers\": [\"Year\", \"Title\", \"Academy Awards\", \"BAFTA Awards\", \"Golden Globe Awards\"], \"sample_rows\": [[\"1982\", \"E.T. the Extra-Terrestrial\", \"9\", \"4\", \"12\"], [\"2008\", \"Indiana Jones and the Kingdom of the Crystal Skull\", \"\", \"\", \"1\"], [\"2015\", \"Bridge of Spies\", \"6\", \"1\", \"9\"], [\"Nominations\", \"Wins\", \"Nominations\", \"Wins\", \"Nominations\"]]}] Question: How many Academy Award nominations did E.T. the Extra-Terrestrial receive?",
+        "output": "So the answer is: (1) Paraphrase Answer: E.T. the Extra-Terrestrial received 9 Academy Award nominations. (2) Answer List: [\"9\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"Table\", \"table_id\": \"T0302\", \"title\": \"James Cameron\", \"headers\": [\"Year\", \"Title\", \"Academy Awards\", \"BAFTA Awards\", \"Golden Globe Awards\"], \"sample_rows\": [[\"1997\", \"Titanic\", \"14\", \"11\", \"10\"], [\"Nominations\", \"Wins\", \"Nominations\", \"Wins\", \"Nominations\"]]}] Question: How many BAFTA Awards did Titanic win?",
+        "output": "So the answer is: (1) Paraphrase Answer: Titanic won 11 BAFTA Awards. (2) Answer List: [\"11\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"Text\", \"title\": \"General Zod (1978 film series character)\", \"sample_passages\": [\"General Zod (1978 film series character), In 2006, the Superman comics themselves adapted elements from the Superman movies, specifically the ice-like look of Krypton, and Jor-El banishing the criminals to the Phantom Zone.\", \"General Zod (1978 film series character), They appear to be transferred into the two-dimensional space on the mirror's surface, which is then flung into deep space.\", \"General Zod (1978 film series character), A LEGO version of Zod briefly appears in The Lego Batman Movie, being blasted into the Phantom Zone by Superman during a new report.\", \"General Zod (1978 film series character), British cinema magazine Total Film named Terence Stamp's version of General Zod No.\"]}] Question: In which movie does a LEGO version of General Zod appear?",
+        "output": "So the answer is: (1) Paraphrase Answer: A LEGO version of General Zod appears in The Lego Batman Movie. (2) Answer List: [\"The Lego Batman Movie\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"Text\", \"title\": \"The Hobbit (film series)\", \"sample_passages\": [\"The Hobbit (film series), He had earlier turned the role down because of scheduling conflicts with the BBC television series Sherlock.\", \"The Hobbit (film series), The films were filmed in 3D using Red Epic cameras.\", \"The Hobbit (film series), The events of the game take place directly after Sauron fled to Mordor, escaping The White Council, which was shown at the beginning of the film.\", \"The Hobbit (film series), It has a runtime of 169 minutes (2 hours and 49 minutes).\"]}] Question: What is the runtime of the film The Hobbit?",
+        "output": "So the answer is: (1) Paraphrase Answer: The runtime of The Hobbit is 169 minutes. (2) Answer List: [\"169 minutes\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"KG\", \"relation_id\": \"P175\", \"relation_name\": \"performer\", \"sample_triples\": [\"Jean Grey --performer [of: Dark Phoenix; of: X-Men: Apocalypse]--> Sophia Turner\", \"Brian Crown --performer [object has role: voice actor; of: Scoob!]--> Mark Wahlberg\", \"Where Do Broken Hearts Go --performer--> Whitney Houston\", \"Pray for Me Brother --performer--> A. R. Rahman\"]}, {\"source\": \"Table\", \"table_id\": \"T0445\", \"title\": \"Marvel Cinematic Universe\", \"headers\": [\"Character\", \"Feature films\", \"Television series\", \"Short films\", \"Digital series\"], \"sample_rows\": [[\"Peter Parker<br />{{small|Spider-Man}}\", \"Tom Holland\", \"colspan=\\\"2\\\"\", \"Tom Holland\", \"Hudson Thames\"], [\"Bruce Banner<br />{{small|Hulk}}\", \"Edward Norton Lou Ferrigno voice V Mark Ruffalo\", \"Mark Ruffalo\", \"\", \"Mark Ruffalo\"], [\"Howard Stark\", \"Gerard Sanders photo P John Slattery Dominic Cooper\", \"Dominic Cooper\", \"\", \"Dominic Cooper\"]]}] Question: Who played Spider-Man in the Marvel Cinematic Universe films, and who performed the role of Jean Grey in Dark Phoenix?",
+        "output": "So the answer is: (1) Paraphrase Answer: Tom Holland played Spider-Man in the Marvel Cinematic Universe films, and Sophia Turner performed the role of Jean Grey in Dark Phoenix. (2) Answer List: [\"Tom Holland\", \"Sophia Turner\"]"
+      },
+      {
+        "input": "Supporting knowledge: [{\"source\": \"KG\", \"relation_id\": \"P57\", \"relation_name\": \"director\", \"sample_triples\": [\"Doctor of Doom --director--> Tim Burton\", \"Titanic --director--> James Cameron\", \"What Did Jack Do? --director--> David Lynch\", \"Mimi --director--> Laxman Utekar\"]}, {\"source\": \"Text\", \"title\": \"The Godfather (film series)\", \"sample_passages\": [\"The Godfather (film series), García has since claimed the film's script was nearly produced, but following Puzo's death on 2 July, Coppola decided to retire the film series indefinitely.\", \"The Godfather (film series), Francis Ford Coppola returned as director for the feature-length film, while also writing the screenplay with the help of the author Mario Puzo.\", \"The Godfather (film series), Now resolved, Paramount has gained the rights to make more Godfather films.\", \"The Godfather (film series), The Independent ranked it at No.\"]}] Question: Who directed Titanic, and who returned as director for the feature-length film in The Godfather series?",
+        "output": "So the answer is: (1) Paraphrase Answer: James Cameron directed Titanic, and Francis Ford Coppola returned as director for the feature-length film in The Godfather series. (2) Answer List: [\"James Cameron\", \"Francis Ford Coppola\"]"
+      }
+    ],
+    "search": [
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P123\", \"relation_name\": \"publisher\", \"sample_triples\": [\"Source --publisher--> DC Comics\", \"Batman vs Superman --publisher--> DC Comics\", \"George Klein --publisher--> DC Comics\", \"The BFG Project Profile --publisher--> Walt Disney Pictures\"]}] Question: Which publisher published the comic book series featuring the character Batman?",
+        "output": "So the answer is: (1) Paraphrase Answer: The publisher of the comic book series featuring Batman is DC Comics.; (2) Answer List: [\"DC Comics\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P175\", \"relation_name\": \"performer\", \"sample_triples\": [\"Jean Grey --performer [of: Dark Phoenix; of: X-Men: Apocalypse]--> Sophia Turner\", \"Brian Crown --performer [object has role: voice actor; of: Scoob!]--> Mark Wahlberg\", \"Where Do Broken Hearts Go --performer--> Whitney Houston\", \"Pray for Me Brother --performer--> A. R. Rahman\"]}] Question: Who performed the role of Jean Grey in the films Dark Phoenix and X-Men: Apocalypse?",
+        "output": "So the answer is: (1) Paraphrase Answer: The performer of Jean Grey in those films is Sophia Turner.; (2) Answer List: [\"Sophia Turner\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P57\", \"relation_name\": \"director\", \"sample_triples\": [\"Doctor of Doom --director--> Tim Burton\", \"Titanic --director--> James Cameron\", \"What Did Jack Do? --director--> David Lynch\", \"Mimi --director--> Laxman Utekar\"]}] Question: Who directed the film Titanic?",
+        "output": "So the answer is: (1) Paraphrase Answer: The director of Titanic is James Cameron.; (2) Answer List: [\"James Cameron\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0672\", \"title\": \"Steven Spielberg\", \"headers\": [\"Year\", \"Title\", \"Academy Awards\", \"BAFTA Awards\", \"Golden Globe Awards\"], \"sample_rows\": [[\"1982\", \"E.T. the Extra-Terrestrial\", \"9\", \"4\", \"12\"], [\"2008\", \"Indiana Jones and the Kingdom of the Crystal Skull\", \"\", \"\", \"1\"], [\"2015\", \"Bridge of Spies\", \"6\", \"1\", \"9\"], [\"Nominations\", \"Wins\", \"Nominations\", \"Wins\", \"Nominations\"]]}] Question: In which year was the film E.T. the Extra-Terrestrial released?",
+        "output": "So the answer is: (1) Paraphrase Answer: The film E.T. the Extra-Terrestrial was released in 1982.; (2) Answer List: [\"1982\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0445\", \"title\": \"Marvel Cinematic Universe\", \"headers\": [\"Character\", \"Feature films\", \"Television series\", \"Short films\", \"Digital series\"], \"sample_rows\": [[\"Peter Parker<br />{{small|Spider-Man}}\", \"Tom Holland\", \"colspan=\\\"2\\\"\", \"Tom Holland\", \"Hudson Thames\"], [\"Bruce Banner<br />{{small|Hulk}}\", \"Edward Norton Lou Ferrigno voice V Mark Ruffalo\", \"Mark Ruffalo\", \"\", \"Mark Ruffalo\"], [\"Howard Stark\", \"Gerard Sanders photo P John Slattery Dominic Cooper\", \"Dominic Cooper\", \"\", \"Dominic Cooper\"]]}] Question: Who played the character Peter Parker in the feature films of the Marvel Cinematic Universe?",
+        "output": "So the answer is: (1) Paraphrase Answer: The actor who played Peter Parker in the feature films is Tom Holland.; (2) Answer List: [\"Tom Holland\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0302\", \"title\": \"James Cameron\", \"headers\": [\"Year\", \"Title\", \"Academy Awards\", \"BAFTA Awards\", \"Golden Globe Awards\"], \"sample_rows\": [[\"1997\", \"Titanic\", \"14\", \"11\", \"10\"], [\"Nominations\", \"Wins\", \"Nominations\", \"Wins\", \"Nominations\"]]}] Question: How many Academy Award nominations did the film Titanic receive?",
+        "output": "So the answer is: (1) Paraphrase Answer: Titanic received 14 Academy Award nominations.; (2) Answer List: [\"14\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"General Zod (1978 film series character)\", \"sample_passages\": [\"General Zod (1978 film series character), In 2006, the Superman comics themselves adapted elements from the Superman movies, specifically the ice-like look of Krypton, and Jor-El banishing the criminals to the Phantom Zone.\", \"General Zod (1978 film series character), They appear to be transferred into the two-dimensional space on the mirror's surface, which is then flung into deep space.\", \"General Zod (1978 film series character), A LEGO version of Zod briefly appears in The Lego Batman Movie, being blasted into the Phantom Zone by Superman during a new report.\", \"General Zod (1978 film series character), British cinema magazine Total Film named Terence Stamp's version of General Zod No.\"]}] Question: In which film does a LEGO version of General Zod appear?",
+        "output": "So the answer is: (1) Paraphrase Answer: A LEGO version of General Zod appears in The Lego Batman Movie.; (2) Answer List: [\"The Lego Batman Movie\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"The Hobbit (film series)\", \"sample_passages\": [\"The Hobbit (film series), He had earlier turned the role down because of scheduling conflicts with the BBC television series Sherlock.\", \"The Hobbit (film series), The films were filmed in 3D using Red Epic cameras.\", \"The Hobbit (film series), The events of the game take place directly after Sauron fled to Mordor, escaping The White Council, which was shown at the beginning of the film.\", \"The Hobbit (film series), It has a runtime of 169 minutes (2 hours and 49 minutes).\"]}] Question: What type of cameras were used to film The Hobbit film series?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Hobbit films were filmed using Red Epic cameras.; (2) Answer List: [\"Red Epic cameras\"]"
+      }
+    ],
+    "relate": [
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P123\", \"relation_name\": \"publisher\", \"sample_triples\": [\"Source --publisher--> DC Comics\", \"Batman vs Superman --publisher--> DC Comics\", \"George Klein --publisher--> DC Comics\", \"The BFG Project Profile --publisher--> Walt Disney Pictures\"]}] Question: Who published the comic book series featuring Batman and Superman together?",
+        "output": "So the answer is: (1) Paraphrase Answer: The publisher of the comic book series featuring Batman and Superman together is DC Comics.; (2) Answer List: [\"DC Comics\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P175\", \"relation_name\": \"performer\", \"sample_triples\": [\"Jean Grey --performer [of: Dark Phoenix; of: X-Men: Apocalypse]--> Sophia Turner\", \"Brian Crown --performer [object has role: voice actor; of: Scoob!]--> Mark Wahlberg\", \"Where Do Broken Hearts Go --performer--> Whitney Houston\", \"Pray for Me Brother --performer--> A. R. Rahman\"]}] Question: Who performed the role of Jean Grey in the films Dark Phoenix and X-Men: Apocalypse?",
+        "output": "So the answer is: (1) Paraphrase Answer: The performer of Jean Grey in Dark Phoenix and X-Men: Apocalypse is Sophia Turner.; (2) Answer List: [\"Sophia Turner\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P57\", \"relation_name\": \"director\", \"sample_triples\": [\"Doctor of Doom --director--> Tim Burton\", \"Titanic --director--> James Cameron\", \"What Did Jack Do? --director--> David Lynch\", \"Mimi --director--> Laxman Utekar\"]}] Question: Who directed the film Titanic?",
+        "output": "So the answer is: (1) Paraphrase Answer: The director of Titanic is James Cameron.; (2) Answer List: [\"James Cameron\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0672\", \"title\": \"Steven Spielberg\", \"headers\": [\"Year\", \"Title\", \"Academy Awards\", \"BAFTA Awards\", \"Golden Globe Awards\"], \"sample_rows\": [[\"1982\", \"E.T. the Extra-Terrestrial\", \"9\", \"4\", \"12\"], [\"2008\", \"Indiana Jones and the Kingdom of the Crystal Skull\", \"\", \"\", \"1\"], [\"2015\", \"Bridge of Spies\", \"6\", \"1\", \"9\"], [\"Nominations\", \"Wins\", \"Nominations\", \"Wins\", \"Nominations\"]]}] Question: In 1982, which film directed by Steven Spielberg received 9 Academy Award nominations?",
+        "output": "So the answer is: (1) Paraphrase Answer: The film directed by Steven Spielberg in 1982 with 9 Academy Award nominations is E.T. the Extra-Terrestrial.; (2) Answer List: [\"E.T. the Extra-Terrestrial\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0445\", \"title\": \"Marvel Cinematic Universe\", \"headers\": [\"Character\", \"Feature films\", \"Television series\", \"Short films\", \"Digital series\"], \"sample_rows\": [[\"Peter Parker<br />{{small|Spider-Man}}\", \"Tom Holland\", \"colspan=\\\"2\\\"\", \"Tom Holland\", \"Hudson Thames\"], [\"Bruce Banner<br />{{small|Hulk}}\", \"Edward Norton Lou Ferrigno voice V Mark Ruffalo\", \"Mark Ruffalo\", \"\", \"Mark Ruffalo\"], [\"Howard Stark\", \"Gerard Sanders photo P John Slattery Dominic Cooper\", \"Dominic Cooper\", \"\", \"Dominic Cooper\"]]}] Question: In the Marvel Cinematic Universe, which actor portrayed Peter Parker in feature films?",
+        "output": "So the answer is: (1) Paraphrase Answer: The actor who portrayed Peter Parker in feature films in the Marvel Cinematic Universe is Tom Holland.; (2) Answer List: [\"Tom Holland\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0302\", \"title\": \"James Cameron\", \"headers\": [\"Year\", \"Title\", \"Academy Awards\", \"BAFTA Awards\", \"Golden Globe Awards\"], \"sample_rows\": [[\"1997\", \"Titanic\", \"14\", \"11\", \"10\"], [\"Nominations\", \"Wins\", \"Nominations\", \"Wins\", \"Nominations\"]]}] Question: In 1997, which film directed by James Cameron received 14 Academy Award nominations?",
+        "output": "So the answer is: (1) Paraphrase Answer: The film directed by James Cameron in 1997 with 14 Academy Award nominations is Titanic.; (2) Answer List: [\"Titanic\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"General Zod (1978 film series character)\", \"sample_passages\": [\"General Zod (1978 film series character), In 2006, the Superman comics themselves adapted elements from the Superman movies, specifically the ice-like look of Krypton, and Jor-El banishing the criminals to the Phantom Zone.\", \"General Zod (1978 film series character), They appear to be transferred into the two-dimensional space on the mirror's surface, which is then flung into deep space.\", \"General Zod (1978 film series character), A LEGO version of Zod briefly appears in The Lego Batman Movie, being blasted into the Phantom Zone by Superman during a new report.\", \"General Zod (1978 film series character), British cinema magazine Total Film named Terence Stamp's version of General Zod No.\"]}] Question: In which film does a LEGO version of General Zod appear, being blasted into the Phantom Zone by Superman?",
+        "output": "So the answer is: (1) Paraphrase Answer: The film in which a LEGO version of General Zod appears is The Lego Batman Movie.; (2) Answer List: [\"The Lego Batman Movie\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"The Hobbit (film series)\", \"sample_passages\": [\"The Hobbit (film series), He had earlier turned the role down because of scheduling conflicts with the BBC television series Sherlock.\", \"The Hobbit (film series), The films were filmed in 3D using Red Epic cameras.\", \"The Hobbit (film series), The events of the game take place directly after Sauron fled to Mordor, escaping The White Council, which was shown at the beginning of the film.\", \"The Hobbit (film series), It has a runtime of 169 minutes (2 hours and 49 minutes).\"]}] Question: What is the runtime of the film in The Hobbit series that is mentioned in the passage?",
+        "output": "So the answer is: (1) Paraphrase Answer: The runtime of the film in The Hobbit series is 169 minutes (2 hours and 49 minutes).; (2) Answer List: [\"169 minutes (2 hours and 49 minutes)\"]"
+      }
+    ],
+    "filter": [
+      {
+        "input": "Candidates: [DC Comics, Marvel Comics, Dark Horse Comics, Image Comics]. Condition: Which of these is the publisher of Source?",
+        "output": "So the answer is: (1) Paraphrase Answer: DC Comics is the publisher of Source. (2) Answer List: [\"DC Comics\"]"
+      },
+      {
+        "input": "Candidates: [Stephen King, David Simon, J.K. Rowling, George R.R. Martin]. Condition: Who is the creator of The Eyes of Texas?",
+        "output": "So the answer is: (1) Paraphrase Answer: Stephen King is the creator of The Eyes of Texas. (2) Answer List: [\"Stephen King\"]"
+      },
+      {
+        "input": "Candidates: [Sophia Turner, Mark Wahlberg, Whitney Houston, A. R. Rahman]. Condition: Who performed the role of Jean Grey in Dark Phoenix and X-Men: Apocalypse?",
+        "output": "So the answer is: (1) Paraphrase Answer: Sophia Turner performed the role of Jean Grey in Dark Phoenix and X-Men: Apocalypse. (2) Answer List: [\"Sophia Turner\"]"
+      },
+      {
+        "input": "Candidates: [E.T. the Extra-Terrestrial, Indiana Jones and the Kingdom of the Crystal Skull, Bridge of Spies]. Condition: Which film from the table received 9 Academy Award nominations?",
+        "output": "So the answer is: (1) Paraphrase Answer: E.T. the Extra-Terrestrial received 9 Academy Award nominations. (2) Answer List: [\"E.T. the Extra-Terrestrial\"]"
+      },
+      {
+        "input": "Candidates: [Tom Holland, Edward Norton, Mark Ruffalo, Hudson Thames]. Condition: Who played Peter Parker in the feature films of the Marvel Cinematic Universe?",
+        "output": "So the answer is: (1) Paraphrase Answer: Tom Holland played Peter Parker in the feature films of the Marvel Cinematic Universe. (2) Answer List: [\"Tom Holland\"]"
+      },
+      {
+        "input": "Candidates: [Titanic, Avatar, The Terminator, Aliens]. Condition: Which film in the table received 14 Academy Award nominations?",
+        "output": "So the answer is: (1) Paraphrase Answer: Titanic received 14 Academy Award nominations. (2) Answer List: [\"Titanic\"]"
+      },
+      {
+        "input": "Candidates: [The Lego Batman Movie, Superman, Batman v Superman, Justice League]. Condition: In which film does a LEGO version of Zod briefly appear?",
+        "output": "So the answer is: (1) Paraphrase Answer: A LEGO version of Zod briefly appears in The Lego Batman Movie. (2) Answer List: [\"The Lego Batman Movie\"]"
+      },
+      {
+        "input": "Candidates: [Sam Raimi, Bryan Singer, Tim Miller, James Cameron]. Condition: Which director said he was a fan of the X-Men film series, particularly Singer's films?",
+        "output": "So the answer is: (1) Paraphrase Answer: Sam Raimi said he was a fan of the X-Men film series, particularly Singer's films. (2) Answer List: [\"Sam Raimi\"]"
+      }
+    ],
+    "answer_from_child_qa": [
+      {
+        "input": "Child QA 1: Who performed the character Jean Grey in the film Dark Phoenix? Child QA 2: In which film did Sophia Turner perform the character Jean Grey? Final question: What is the name of the actress who performed Jean Grey in Dark Phoenix?",
+        "output": "So the answer is: (1) Paraphrase Answer: Sophia Turner performed Jean Grey in Dark Phoenix. (2) Answer List: [\"Sophia Turner\"]"
+      },
+      {
+        "input": "Child QA 1: Who directed the film Titanic? Child QA 2: Which film was directed by James Cameron? Final question: Who is the director of Titanic?",
+        "output": "So the answer is: (1) Paraphrase Answer: James Cameron directed Titanic. (2) Answer List: [\"James Cameron\"]"
+      },
+      {
+        "input": "Child QA 1: How many Academy Award nominations did the film E.T. the Extra-Terrestrial receive? Child QA 2: Which film received 9 Academy Award nominations in 1982? Final question: What is the number of Academy Award nominations for E.T. the Extra-Terrestrial?",
+        "output": "So the answer is: (1) Paraphrase Answer: E.T. the Extra-Terrestrial received 9 Academy Award nominations. (2) Answer List: [\"9\"]"
+      },
+      {
+        "input": "Child QA 1: How many BAFTA nominations did the film Titanic receive? Child QA 2: Which film received 11 BAFTA nominations in 1997? Final question: What is the number of BAFTA nominations for Titanic?",
+        "output": "So the answer is: (1) Paraphrase Answer: Titanic received 11 BAFTA nominations. (2) Answer List: [\"11\"]"
+      },
+      {
+        "input": "Child QA 1: In which film does a LEGO version of General Zod appear? Child QA 2: What happens to the LEGO version of General Zod in that film? Final question: In which film does a LEGO version of General Zod appear?",
+        "output": "So the answer is: (1) Paraphrase Answer: A LEGO version of General Zod appears in The Lego Batman Movie. (2) Answer List: [\"The Lego Batman Movie\"]"
+      },
+      {
+        "input": "Child QA 1: What is the runtime of the film The Hobbit? Child QA 2: How many minutes is the runtime of The Hobbit? Final question: What is the runtime of The Hobbit?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Hobbit has a runtime of 169 minutes. (2) Answer List: [\"169 minutes\"]"
+      },
+      {
+        "input": "Child QA 1: Who performed the character Jean Grey in the film Dark Phoenix? Child QA 2: In the Marvel Cinematic Universe table, which actor is listed for the character Peter Parker? Final question: Who performed Jean Grey in Dark Phoenix?",
+        "output": "So the answer is: (1) Paraphrase Answer: Sophia Turner performed Jean Grey in Dark Phoenix. (2) Answer List: [\"Sophia Turner\"]"
+      },
+      {
+        "input": "Child QA 1: Who directed the film Titanic? Child QA 2: In the James Cameron table, what is the title of the film from 1997? Final question: Who directed the film Titanic?",
+        "output": "So the answer is: (1) Paraphrase Answer: James Cameron directed Titanic. (2) Answer List: [\"James Cameron\"]"
+      }
+    ]
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_policy": "question_text_excluded_and_exact_gold_source_records_excluded",
+    "live_sources": [
+      "KG",
+      "Table",
+      "Text"
+    ]
+  }
+}

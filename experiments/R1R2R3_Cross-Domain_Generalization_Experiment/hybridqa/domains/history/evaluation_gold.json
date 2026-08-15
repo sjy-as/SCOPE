@@ -1,0 +1,4121 @@
+[
+  {
+    "question_id": "088a9f4c1bf798c1",
+    "answer": "2007-12-11",
+    "gold_table_id": "List_of_bridges_on_the_National_Register_of_Historic_Places_in_Oklahoma_0",
+    "answer_node": [
+      [
+        "2007-12-11",
+        [
+          2,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "105caa6a130f33aa",
+    "answer": "The North Causeway and the South Causeway",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Georgetown_County,_South_Carolina_0",
+    "answer_node": [
+      [
+        "Pawleys Island, South Carolina",
+        [
+          0,
+          4
+        ],
+        "/wiki/Pawleys_Island,_South_Carolina",
+        "passage"
+      ],
+      [
+        "Pawleys Island, South Carolina",
+        [
+          9,
+          4
+        ],
+        "/wiki/Pawleys_Island,_South_Carolina",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "116272374e07aeea",
+    "answer": "Dominic LeBlanc",
+    "gold_table_id": "List_of_House_members_of_the_40th_Parliament_of_Canada_3",
+    "answer_node": [
+      [
+        "Dominic LeBlanc",
+        [
+          1,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "12d788cb8dc887eb",
+    "answer": "Joseph Raymond Sarnoski",
+    "gold_table_id": "List_of_Medal_of_Honor_recipients_for_World_War_II_16",
+    "answer_node": [
+      [
+        "Joseph R. Sarnoski",
+        [
+          3,
+          0
+        ],
+        "/wiki/Joseph_R._Sarnoski",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "139da67262bb6fc7",
+    "answer": "US 20",
+    "gold_table_id": "List_of_New_York_State_Historic_Markers_in_Erie_County,_New_York_0",
+    "answer_node": [
+      [
+        "Main Street (Amherst, New York)",
+        [
+          0,
+          1
+        ],
+        "/wiki/Main_Street_(Amherst,_New_York)",
+        "passage"
+      ],
+      [
+        "New York State Route 5",
+        [
+          1,
+          2
+        ],
+        "/wiki/New_York_State_Route_5",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1550e7d56a778e6a",
+    "answer": "than twenty Brahmanas",
+    "gold_table_id": "List_of_historic_Indian_texts_1",
+    "answer_node": [
+      [
+        "Brahmana",
+        [
+          7,
+          3
+        ],
+        "/wiki/Brahmana",
+        "passage"
+      ],
+      [
+        "Brahmana",
+        [
+          8,
+          3
+        ],
+        "/wiki/Brahmana",
+        "passage"
+      ],
+      [
+        "Brahmana",
+        [
+          10,
+          3
+        ],
+        "/wiki/Brahmana",
+        "passage"
+      ],
+      [
+        "Brahmana",
+        [
+          11,
+          3
+        ],
+        "/wiki/Brahmana",
+        "passage"
+      ],
+      [
+        "Brahmana",
+        [
+          12,
+          3
+        ],
+        "/wiki/Brahmana",
+        "passage"
+      ],
+      [
+        "Brahmana",
+        [
+          13,
+          3
+        ],
+        "/wiki/Brahmana",
+        "passage"
+      ],
+      [
+        "Brahmana",
+        [
+          14,
+          3
+        ],
+        "/wiki/Brahmana",
+        "passage"
+      ],
+      [
+        "Brahmana",
+        [
+          15,
+          3
+        ],
+        "/wiki/Brahmana",
+        "passage"
+      ],
+      [
+        "Kaushitaki Brahmana",
+        [
+          9,
+          0
+        ],
+        "/wiki/Kaushitaki_Brahmana",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "174f991d704c85a5",
+    "answer": "Frank Gran Farmstead",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Itasca_County,_Minnesota_0",
+    "answer_node": [
+      [
+        "Frank Gran Farmstead",
+        [
+          9,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "County Highway 10 47°12′22″N 93°18′21″W / 47.206111°N 93.305833°W / 47.206111 ; -93.305833 ( Frank Gran Farmstead )",
+        [
+          9,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1a9da4f8c088b0ae",
+    "answer": "Chris Willott",
+    "gold_table_id": "New_Democratic_Party_candidates,_2008_Canadian_federal_election_8",
+    "answer_node": [
+      [
+        "Chris Willott",
+        [
+          5,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1a9dfbe67122470f",
+    "answer": "strawberries , apples , lettuce",
+    "gold_table_id": "California_Historical_Landmarks_in_Santa_Cruz_County,_California_0",
+    "answer_node": [
+      [
+        "Watsonville, California",
+        [
+          1,
+          3
+        ],
+        "/wiki/Watsonville,_California",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1c85ef57aef5f3b4",
+    "answer": "3,674",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Wyandot_County,_Ohio_0",
+    "answer_node": [
+      [
+        "Crawford Township, Wyandot County, Ohio",
+        [
+          1,
+          4
+        ],
+        "/wiki/Crawford_Township,_Wyandot_County,_Ohio",
+        "passage"
+      ],
+      [
+        "Carey, Ohio",
+        [
+          7,
+          4
+        ],
+        "/wiki/Carey,_Ohio",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1c95b268b15c5687",
+    "answer": "French",
+    "gold_table_id": "List_of_National_Historic_Landmarks_in_Alabama_0",
+    "answer_node": [
+      [
+        "Fort Toulouse served as the easternmost outpost of colonial French Louisiana . It was established in 1717 at the confluence of the Coosa and Tallapoosa rivers , and was abandoned in 1763 , after the Treaty of Paris . Andrew Jackson reestablished a fort here in 1814 following his defeat of the Creek Nation at the Battle of Horseshoe Bend",
+        [
+          15,
+          5
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mobile, Alabama",
+        [
+          0,
+          3
+        ],
+        "/wiki/Mobile,_Alabama",
+        "passage"
+      ],
+      [
+        "Mobile, Alabama",
+        [
+          6,
+          3
+        ],
+        "/wiki/Mobile,_Alabama",
+        "passage"
+      ],
+      [
+        "Mobile, Alabama",
+        [
+          6,
+          5
+        ],
+        "/wiki/Mobile,_Alabama",
+        "passage"
+      ],
+      [
+        "Mobile, Alabama",
+        [
+          10,
+          3
+        ],
+        "/wiki/Mobile,_Alabama",
+        "passage"
+      ],
+      [
+        "Mobile, Alabama",
+        [
+          18,
+          3
+        ],
+        "/wiki/Mobile,_Alabama",
+        "passage"
+      ],
+      [
+        "Southern United States",
+        [
+          8,
+          5
+        ],
+        "/wiki/Southern_United_States",
+        "passage"
+      ],
+      [
+        "Southern United States",
+        [
+          11,
+          5
+        ],
+        "/wiki/Southern_United_States",
+        "passage"
+      ],
+      [
+        "Fort Toulouse",
+        [
+          15,
+          1
+        ],
+        "/wiki/Fort_Toulouse",
+        "passage"
+      ],
+      [
+        "Wetumpka, Alabama",
+        [
+          15,
+          3
+        ],
+        "/wiki/Wetumpka,_Alabama",
+        "passage"
+      ],
+      [
+        "National Guard of the United States",
+        [
+          16,
+          5
+        ],
+        "/wiki/National_Guard_of_the_United_States",
+        "passage"
+      ],
+      [
+        "Demopolis, Alabama",
+        [
+          17,
+          3
+        ],
+        "/wiki/Demopolis,_Alabama",
+        "passage"
+      ],
+      [
+        "Marengo County, Alabama",
+        [
+          17,
+          4
+        ],
+        "/wiki/Marengo_County,_Alabama",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "2104ef6ef485d809",
+    "answer": "40",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Menominee_County,_Michigan_0",
+    "answer_node": [
+      [
+        "The First Street Historic District , also known as the Main Street Historic District or the Historic Waterfront Downtown , encompasses Menominee 's commercial downtown area . The district contains over 40 commercial buildings and civic structures , as well as several private houses , spread over a 29 acres ( 12 ha ) area . Most of these buildings date to Menominee 's prosperous era which began around 1890 , and are in substantially original condition or have only minor alterations",
+        [
+          2,
+          5
+        ],
+        null,
+        "table"
+      ],
+      [
+        "First Street Historic District",
+        [
+          2,
+          1
+        ],
+        "/wiki/First_Street_Historic_District",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "219d98046337484b",
+    "answer": "Henry Fry",
+    "gold_table_id": "5th_Legislative_Assembly_of_British_Columbia_1",
+    "answer_node": [
+      [
+        "Henry Fry",
+        [
+          1,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "25cdc3560aacd549",
+    "answer": "March 2017",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Day_County,_South_Dakota_0",
+    "answer_node": [
+      [
+        "Lily, South Dakota",
+        [
+          0,
+          4
+        ],
+        "/wiki/Lily,_South_Dakota",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "289de27327c03591",
+    "answer": "The Gateway to the North",
+    "gold_table_id": "Liberal_Party_of_Canada_candidates,_2011_Canadian_federal_election_8",
+    "answer_node": [
+      [
+        "Edmonton",
+        [
+          10,
+          3
+        ],
+        "/wiki/Edmonton",
+        "passage"
+      ],
+      [
+        "Edmonton",
+        [
+          11,
+          3
+        ],
+        "/wiki/Edmonton",
+        "passage"
+      ],
+      [
+        "Edmonton",
+        [
+          12,
+          3
+        ],
+        "/wiki/Edmonton",
+        "passage"
+      ],
+      [
+        "Edmonton",
+        [
+          13,
+          3
+        ],
+        "/wiki/Edmonton",
+        "passage"
+      ],
+      [
+        "Edmonton",
+        [
+          14,
+          3
+        ],
+        "/wiki/Edmonton",
+        "passage"
+      ],
+      [
+        "Edmonton",
+        [
+          15,
+          3
+        ],
+        "/wiki/Edmonton",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "2bcebb189bb07b99",
+    "answer": "Midland County Courthouse",
+    "gold_table_id": "List_of_Michigan_State_Historic_Sites_13",
+    "answer_node": [
+      [
+        "Midland County Courthouse †",
+        [
+          4,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "2e84d2747a66af11",
+    "answer": "Antrim County Courthouse",
+    "gold_table_id": "List_of_Michigan_State_Historic_Sites_1",
+    "answer_node": [
+      [
+        "Antrim County Courthouse †",
+        [
+          0,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Bellaire, Michigan",
+        [
+          0,
+          2
+        ],
+        "/wiki/Bellaire,_Michigan",
+        "passage"
+      ],
+      [
+        "Bellaire, Michigan",
+        [
+          6,
+          2
+        ],
+        "/wiki/Bellaire,_Michigan",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "337e706c344f4243",
+    "answer": "Entire establishment",
+    "gold_table_id": "List_of_ancient_watermills_3",
+    "answer_node": [
+      [
+        "Entire establishment",
+        [
+          7,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "33a0615d2589e527",
+    "answer": "Latakia",
+    "gold_table_id": "List_of_castles_in_Syria_0",
+    "answer_node": [
+      [
+        "Latakia",
+        [
+          19,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Citadel of Salah Ed-Din",
+        [
+          17,
+          4
+        ],
+        "/wiki/Citadel_of_Salah_Ed-Din",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "367175a67875eb83",
+    "answer": "$ 30,689",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Lac_qui_Parle_County,_Minnesota_0",
+    "answer_node": [
+      [
+        "Lac Qui Parle County Courthouse",
+        [
+          4,
+          1
+        ],
+        "/wiki/Lac_Qui_Parle_County_Courthouse",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "36a8e8e025fe7c19",
+    "answer": "# 70000667",
+    "gold_table_id": "List_of_National_Historic_Landmarks_in_West_Virginia_0",
+    "answer_node": [
+      [
+        "October 5 , 1992 ( # 70000667 )",
+        [
+          0,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "36bf905fb790d00e",
+    "answer": "three",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Talladega_County,_Alabama_0",
+    "answer_node": [
+      [
+        "Benjamin H. Averiett House",
+        [
+          0,
+          1
+        ],
+        "/wiki/Benjamin_H._Averiett_House",
+        "passage"
+      ],
+      [
+        "William Averiett House",
+        [
+          1,
+          1
+        ],
+        "/wiki/William_Averiett_House",
+        "passage"
+      ],
+      [
+        "B. B. Comer Memorial Library",
+        [
+          4,
+          1
+        ],
+        "/wiki/B._B._Comer_Memorial_Library",
+        "passage"
+      ],
+      [
+        "Goodwin-Hamilton House",
+        [
+          8,
+          1
+        ],
+        "/wiki/Goodwin-Hamilton_House",
+        "passage"
+      ],
+      [
+        "Dudley Snow House",
+        [
+          15,
+          1
+        ],
+        "/wiki/Dudley_Snow_House",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "37c8afff3fd003de",
+    "answer": "Madeline Island",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Ashland_County,_Wisconsin_0",
+    "answer_node": [
+      [
+        "La Pointe, Wisconsin",
+        [
+          0,
+          4
+        ],
+        "/wiki/La_Pointe,_Wisconsin",
+        "passage"
+      ],
+      [
+        "La Pointe, Wisconsin",
+        [
+          4,
+          4
+        ],
+        "/wiki/La_Pointe,_Wisconsin",
+        "passage"
+      ],
+      [
+        "La Pointe, Wisconsin",
+        [
+          6,
+          4
+        ],
+        "/wiki/La_Pointe,_Wisconsin",
+        "passage"
+      ],
+      [
+        "La Pointe, Wisconsin",
+        [
+          8,
+          4
+        ],
+        "/wiki/La_Pointe,_Wisconsin",
+        "passage"
+      ],
+      [
+        "La Pointe, Wisconsin",
+        [
+          12,
+          4
+        ],
+        "/wiki/La_Pointe,_Wisconsin",
+        "passage"
+      ],
+      [
+        "La Pointe, Wisconsin",
+        [
+          13,
+          4
+        ],
+        "/wiki/La_Pointe,_Wisconsin",
+        "passage"
+      ],
+      [
+        "La Pointe, Wisconsin",
+        [
+          15,
+          4
+        ],
+        "/wiki/La_Pointe,_Wisconsin",
+        "passage"
+      ],
+      [
+        "La Pointe, Wisconsin",
+        [
+          17,
+          4
+        ],
+        "/wiki/La_Pointe,_Wisconsin",
+        "passage"
+      ],
+      [
+        "La Pointe, Wisconsin",
+        [
+          19,
+          4
+        ],
+        "/wiki/La_Pointe,_Wisconsin",
+        "passage"
+      ],
+      [
+        "Big Bay sloop (shipwreck)",
+        [
+          6,
+          1
+        ],
+        "/wiki/Big_Bay_sloop_(shipwreck)",
+        "passage"
+      ],
+      [
+        "Big Bay State Park",
+        [
+          6,
+          3
+        ],
+        "/wiki/Big_Bay_State_Park",
+        "passage"
+      ],
+      [
+        "Coole Park Manor",
+        [
+          8,
+          1
+        ],
+        "/wiki/Coole_Park_Manor",
+        "passage"
+      ],
+      [
+        "La Pointe Indian Cemetery",
+        [
+          13,
+          1
+        ],
+        "/wiki/La_Pointe_Indian_Cemetery",
+        "passage"
+      ],
+      [
+        "Michel Cadotte",
+        [
+          13,
+          5
+        ],
+        "/wiki/Michel_Cadotte",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "3a690214b15bd819",
+    "answer": "Petersburg",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Pendleton_County,_West_Virginia_0",
+    "answer_node": [
+      [
+        "10 miles south of Petersburg on U.S. Route 220 38°52′00″N 79°13′07″W / 38.866667°N 79.218611°W / 38.866667 ; -79.218611 ( Old Judy Church )",
+        [
+          7,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Petersburg",
+        [
+          7,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Old Judy Church",
+        [
+          7,
+          1
+        ],
+        "/wiki/Old_Judy_Church",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "3d740378fa17d9b7",
+    "answer": "Bogotá",
+    "gold_table_id": "List_of_wars_and_anthropogenic_disasters_by_death_toll_0",
+    "answer_node": [
+      [
+        "Colombia",
+        [
+          1,
+          2
+        ],
+        "/wiki/Colombia",
+        "passage"
+      ],
+      [
+        "Colombia",
+        [
+          18,
+          2
+        ],
+        "/wiki/Colombia",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "3f7a12f8f017aac9",
+    "answer": "New Democracy",
+    "gold_table_id": "Greek_local_elections,_2010_1",
+    "answer_node": [
+      [
+        "New Democracy",
+        [
+          1,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Panhellenic Socialist Movement",
+        [
+          0,
+          1
+        ],
+        "/wiki/Panhellenic_Socialist_Movement",
+        "passage"
+      ],
+      [
+        "Drasi",
+        [
+          0,
+          1
+        ],
+        "/wiki/Drasi",
+        "passage"
+      ],
+      [
+        "Popular Orthodox Rally",
+        [
+          5,
+          1
+        ],
+        "/wiki/Popular_Orthodox_Rally",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "42b79c5c85ac307f",
+    "answer": "56 square miles",
+    "gold_table_id": "List_of_Woman's_Clubhouses_in_Florida_on_the_National_Register_of_Historic_Places_0",
+    "answer_node": [
+      [
+        "Miami, Florida",
+        [
+          4,
+          2
+        ],
+        "/wiki/Miami,_Florida",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "42c80d558887db58",
+    "answer": "George Mower House",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Newberry_County,_South_Carolina_0",
+    "answer_node": [
+      [
+        "George Mower House",
+        [
+          17,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "1526 Boundary St. 34°16′25″N 81°35′38″W / 34.273611°N 81.593889°W / 34.273611 ; -81.593889 ( George Mower House )",
+        [
+          17,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "433b568607417c53",
+    "answer": "36,474",
+    "gold_table_id": "War_memorials_(Oise)_0",
+    "answer_node": [
+      [
+        "Chantilly, Oise",
+        [
+          8,
+          1
+        ],
+        "/wiki/Chantilly,_Oise",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "44f7f1959e1ea2c0",
+    "answer": "1927",
+    "gold_table_id": "Canadian_war_memorials_6",
+    "answer_node": [
+      [
+        "Menin Gate",
+        [
+          10,
+          0
+        ],
+        "/wiki/Menin_Gate",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "45cac6380fd2866a",
+    "answer": "27",
+    "gold_table_id": "Liberal_Party_of_Canada_candidates,_2008_Canadian_federal_election_9",
+    "answer_node": [],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "47e7d8726bbe5c6a",
+    "answer": "French , British and U.S. forces",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Knox_County,_Indiana_0",
+    "answer_node": [
+      [
+        "Forts of Vincennes, Indiana",
+        [
+          2,
+          1
+        ],
+        "/wiki/Forts_of_Vincennes,_Indiana",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "480d8e720f66f472",
+    "answer": "John Tester",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_North_Dakota_3",
+    "answer_node": [
+      [
+        "Billings County Courthouse",
+        [
+          0,
+          1
+        ],
+        "/wiki/Billings_County_Courthouse",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "4cf0738b16e1aa0e",
+    "answer": "Edward Wilkins",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Knox_County,_Indiana_0",
+    "answer_node": [
+      [
+        "Edwardsport, Indiana",
+        [
+          16,
+          4
+        ],
+        "/wiki/Edwardsport,_Indiana",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "4f854aeb4f98dcfd",
+    "answer": "Ernest Edwin Evans",
+    "gold_table_id": "List_of_Medal_of_Honor_recipients_for_World_War_II_4",
+    "answer_node": [
+      [
+        "Ernest E. Evans",
+        [
+          7,
+          0
+        ],
+        "/wiki/Ernest_E._Evans",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "53ee9536e617a11d",
+    "answer": "24,000",
+    "gold_table_id": "List_of_National_Historic_Landmarks_in_New_Mexico_1",
+    "answer_node": [
+      [
+        "Petroglyph National Monument",
+        [
+          7,
+          1
+        ],
+        "/wiki/Petroglyph_National_Monument",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "596fef9191775769",
+    "answer": "Giordano Orsini",
+    "gold_table_id": "Papal_election,_1285_0",
+    "answer_node": [
+      [
+        "Giordano Orsini",
+        [
+          12,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "5b2570424b98ee28",
+    "answer": "New Concord",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Calloway_County,_Kentucky_0",
+    "answer_node": [
+      [
+        "1.6 miles southeast of New Concord off Fort Heiman Rd . 36°30′00″N 88°03′23″W / 36.5°N 88.056389°W / 36.5 ; -88.056389 ( Fort Heiman Site )",
+        [
+          6,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "New Concord",
+        [
+          6,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Kentucky Route 121",
+        [
+          2,
+          3
+        ],
+        "/wiki/Kentucky_Route_121",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "5b75b20de499cd08",
+    "answer": "1832",
+    "gold_table_id": "Records_of_members_of_parliament_of_the_United_Kingdom_6",
+    "answer_node": [
+      [
+        "Cornwall (UK Parliament constituency)",
+        [
+          0,
+          4
+        ],
+        "/wiki/Cornwall_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Nottinghamshire (UK Parliament constituency)",
+        [
+          1,
+          4
+        ],
+        "/wiki/Nottinghamshire_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Launceston (UK Parliament constituency)",
+        [
+          2,
+          4
+        ],
+        "/wiki/Launceston_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Launceston (UK Parliament constituency)",
+        [
+          5,
+          4
+        ],
+        "/wiki/Launceston_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Saltash (UK Parliament constituency)",
+        [
+          3,
+          4
+        ],
+        "/wiki/Saltash_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Queenborough (UK Parliament constituency)",
+        [
+          4,
+          4
+        ],
+        "/wiki/Queenborough_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "St Germans (UK Parliament constituency)",
+        [
+          5,
+          4
+        ],
+        "/wiki/St_Germans_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Westbury (UK Parliament constituency)",
+        [
+          10,
+          4
+        ],
+        "/wiki/Westbury_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Boroughbridge (UK Parliament constituency)",
+        [
+          13,
+          4
+        ],
+        "/wiki/Boroughbridge_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Yorkshire (UK Parliament constituency)",
+        [
+          13,
+          4
+        ],
+        "/wiki/Yorkshire_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Surrey (UK Parliament constituency)",
+        [
+          14,
+          4
+        ],
+        "/wiki/Surrey_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Helston (UK Parliament constituency)",
+        [
+          15,
+          4
+        ],
+        "/wiki/Helston_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Berkshire (UK Parliament constituency)",
+        [
+          17,
+          4
+        ],
+        "/wiki/Berkshire_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Gloucestershire (UK Parliament constituency)",
+        [
+          19,
+          4
+        ],
+        "/wiki/Gloucestershire_(UK_Parliament_constituency)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "5dd270da02cf564f",
+    "answer": "awa ( milkfish , Chanos chanos )",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Hawaii_7",
+    "answer_node": [
+      [
+        "Kalepolepo Fishpond",
+        [
+          18,
+          1
+        ],
+        "/wiki/Kalepolepo_Fishpond",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6083a24bc007a937",
+    "answer": "6,211",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Colfax_County,_Nebraska_0",
+    "answer_node": [
+      [
+        "Schuyler, Nebraska",
+        [
+          0,
+          4
+        ],
+        "/wiki/Schuyler,_Nebraska",
+        "passage"
+      ],
+      [
+        "Schuyler, Nebraska",
+        [
+          1,
+          4
+        ],
+        "/wiki/Schuyler,_Nebraska",
+        "passage"
+      ],
+      [
+        "Schuyler, Nebraska",
+        [
+          2,
+          4
+        ],
+        "/wiki/Schuyler,_Nebraska",
+        "passage"
+      ],
+      [
+        "Schuyler, Nebraska",
+        [
+          3,
+          4
+        ],
+        "/wiki/Schuyler,_Nebraska",
+        "passage"
+      ],
+      [
+        "Schuyler, Nebraska",
+        [
+          4,
+          4
+        ],
+        "/wiki/Schuyler,_Nebraska",
+        "passage"
+      ],
+      [
+        "Schuyler, Nebraska",
+        [
+          5,
+          4
+        ],
+        "/wiki/Schuyler,_Nebraska",
+        "passage"
+      ],
+      [
+        "Schuyler, Nebraska",
+        [
+          6,
+          4
+        ],
+        "/wiki/Schuyler,_Nebraska",
+        "passage"
+      ],
+      [
+        "Schuyler, Nebraska",
+        [
+          7,
+          4
+        ],
+        "/wiki/Schuyler,_Nebraska",
+        "passage"
+      ],
+      [
+        "Schuyler, Nebraska",
+        [
+          8,
+          4
+        ],
+        "/wiki/Schuyler,_Nebraska",
+        "passage"
+      ],
+      [
+        "Schuyler, Nebraska",
+        [
+          9,
+          4
+        ],
+        "/wiki/Schuyler,_Nebraska",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "680545cc25b01832",
+    "answer": "Androscoggin Swinging Bridge",
+    "gold_table_id": "List_of_bridges_on_the_National_Register_of_Historic_Places_in_Maine_0",
+    "answer_node": [
+      [
+        "Androscoggin Swinging Bridge",
+        [
+          0,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Brunswick 43°55′6″N 69°58′26″W / 43.91833°N 69.97389°W / 43.91833 ; -69.97389 ( Androscoggin Swinging Bridge )",
+        [
+          0,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6a559d012841253a",
+    "answer": "Air War Plans",
+    "gold_table_id": "List_of_Medal_of_Honor_recipients_for_World_War_II_19",
+    "answer_node": [
+      [
+        "Kenneth Walker",
+        [
+          3,
+          0
+        ],
+        "/wiki/Kenneth_Walker",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6b6cface13337672",
+    "answer": "Bonanza Creek Road",
+    "gold_table_id": "List_of_National_Historic_Sites_of_Canada_in_Yukon_0",
+    "answer_node": [
+      [
+        "Dredge No. 4",
+        [
+          3,
+          0
+        ],
+        "/wiki/Dredge_No._4",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6c164eb418d88e42",
+    "answer": "El-Tarif",
+    "gold_table_id": "List_of_ancient_Egyptians_7",
+    "answer_node": [
+      [
+        "Intef I",
+        [
+          14,
+          0
+        ],
+        "/wiki/Intef_I",
+        "passage"
+      ],
+      [
+        "Intef II",
+        [
+          15,
+          0
+        ],
+        "/wiki/Intef_II",
+        "passage"
+      ],
+      [
+        "Intef III",
+        [
+          16,
+          0
+        ],
+        "/wiki/Intef_III",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6c2223709b6b74e8",
+    "answer": "Madras North",
+    "gold_table_id": "Indian_general_election_in_Madras,_1957_0",
+    "answer_node": [
+      [
+        "Madras North",
+        [
+          0,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6fffda4af8e29a5e",
+    "answer": "Indian Wars",
+    "gold_table_id": "List_of_American_Civil_War_Generals_(Union)_14",
+    "answer_node": [
+      [
+        "Edward Ord",
+        [
+          3,
+          0
+        ],
+        "/wiki/Edward_Ord",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "71e9a064c1e72df3",
+    "answer": "The Ku Klux Klan",
+    "gold_table_id": "List_of_Arkansas_Civil_War_Confederate_units_1",
+    "answer_node": [
+      [
+        "Robert G. Shaver",
+        [
+          12,
+          2
+        ],
+        "/wiki/Robert_G._Shaver",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "71f98e66f68df7d5",
+    "answer": "1985",
+    "gold_table_id": "List_of_castles_and_manor_houses_in_Sweden_5",
+    "answer_node": [
+      [
+        "Rånäs Manor",
+        [
+          1,
+          0
+        ],
+        "/wiki/Rånäs_Manor",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "754c8ac4faa9af70",
+    "answer": "U.S . Routes 20 and 169",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Webster_County,_Iowa_0",
+    "answer_node": [
+      [
+        "Fort Dodge, Iowa",
+        [
+          0,
+          4
+        ],
+        "/wiki/Fort_Dodge,_Iowa",
+        "passage"
+      ],
+      [
+        "Fort Dodge, Iowa",
+        [
+          1,
+          4
+        ],
+        "/wiki/Fort_Dodge,_Iowa",
+        "passage"
+      ],
+      [
+        "Fort Dodge, Iowa",
+        [
+          4,
+          4
+        ],
+        "/wiki/Fort_Dodge,_Iowa",
+        "passage"
+      ],
+      [
+        "Fort Dodge, Iowa",
+        [
+          5,
+          4
+        ],
+        "/wiki/Fort_Dodge,_Iowa",
+        "passage"
+      ],
+      [
+        "Fort Dodge, Iowa",
+        [
+          6,
+          4
+        ],
+        "/wiki/Fort_Dodge,_Iowa",
+        "passage"
+      ],
+      [
+        "Fort Dodge, Iowa",
+        [
+          7,
+          4
+        ],
+        "/wiki/Fort_Dodge,_Iowa",
+        "passage"
+      ],
+      [
+        "Fort Dodge, Iowa",
+        [
+          8,
+          4
+        ],
+        "/wiki/Fort_Dodge,_Iowa",
+        "passage"
+      ],
+      [
+        "Fort Dodge, Iowa",
+        [
+          9,
+          4
+        ],
+        "/wiki/Fort_Dodge,_Iowa",
+        "passage"
+      ],
+      [
+        "Fort Dodge, Iowa",
+        [
+          10,
+          4
+        ],
+        "/wiki/Fort_Dodge,_Iowa",
+        "passage"
+      ],
+      [
+        "Fort Dodge, Iowa",
+        [
+          11,
+          4
+        ],
+        "/wiki/Fort_Dodge,_Iowa",
+        "passage"
+      ],
+      [
+        "Fort Dodge, Iowa",
+        [
+          12,
+          4
+        ],
+        "/wiki/Fort_Dodge,_Iowa",
+        "passage"
+      ],
+      [
+        "Fort Dodge, Iowa",
+        [
+          13,
+          4
+        ],
+        "/wiki/Fort_Dodge,_Iowa",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "7afd532e53fbf841",
+    "answer": "38°03′25″N 83°56′26″W / 38.056944°N 83.940556°W / 38.056944 ; -83.940556 ( Methodist Episcopal Church South )",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Montgomery_County,_Kentucky_0",
+    "answer_node": [
+      [
+        "Junction of E. Main and N. Wilson Sts . 38°03′25″N 83°56′26″W / 38.056944°N 83.940556°W / 38.056944 ; -83.940556 ( Methodist Episcopal Church South )",
+        [
+          11,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "7be9cbb36fd96c3f",
+    "answer": "The Leona",
+    "gold_table_id": "List_of_Michigan_State_Historic_Sites_in_Bay_County,_Michigan_0",
+    "answer_node": [
+      [
+        "The Leona",
+        [
+          15,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "7c31342f054a76c1",
+    "answer": "Queensbury",
+    "gold_table_id": "List_of_New_York_State_Historic_Markers_in_Warren_County,_New_York_0",
+    "answer_node": [
+      [
+        "Queensbury , New York",
+        [
+          6,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Queensbury , New York",
+        [
+          7,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Queensbury , New York",
+        [
+          8,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Glens Falls, New York",
+        [
+          1,
+          3
+        ],
+        "/wiki/Glens_Falls,_New_York",
+        "passage"
+      ],
+      [
+        "Glens Falls, New York",
+        [
+          10,
+          3
+        ],
+        "/wiki/Glens_Falls,_New_York",
+        "passage"
+      ],
+      [
+        "Lake George (village), New York",
+        [
+          3,
+          3
+        ],
+        "/wiki/Lake_George_(village),_New_York",
+        "passage"
+      ],
+      [
+        "Lake George (village), New York",
+        [
+          4,
+          3
+        ],
+        "/wiki/Lake_George_(village),_New_York",
+        "passage"
+      ],
+      [
+        "Lake George (village), New York",
+        [
+          5,
+          3
+        ],
+        "/wiki/Lake_George_(village),_New_York",
+        "passage"
+      ],
+      [
+        "Glens Falls",
+        [
+          7,
+          2
+        ],
+        "/wiki/Glens_Falls",
+        "passage"
+      ],
+      [
+        "Oneida Corners, New York",
+        [
+          8,
+          1
+        ],
+        "/wiki/Oneida_Corners,_New_York",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "7dfd4600bafbee87",
+    "answer": "Wabash Valley Correctional Facility",
+    "gold_table_id": "List_of_Indiana_state_historical_markers_in_Sullivan_County_0",
+    "answer_node": [
+      [
+        "Carlisle, Indiana",
+        [
+          1,
+          2
+        ],
+        "/wiki/Carlisle,_Indiana",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "7e5380245f4883c4",
+    "answer": "11 miles",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Carlton_County,_Minnesota_0",
+    "answer_node": [
+      [
+        "Sawyer, Minnesota",
+        [
+          1,
+          4
+        ],
+        "/wiki/Sawyer,_Minnesota",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "818b46f2a2290c1d",
+    "answer": "# 76001760",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Anderson_County,_Tennessee_0",
+    "answer_node": [
+      [
+        "March 16 , 1976 ( # 76001760 )",
+        [
+          0,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "8540428fe7b387db",
+    "answer": "Beinecke Library , Yale University",
+    "gold_table_id": "Physical_history_of_the_United_States_Declaration_of_Independence_0",
+    "answer_node": [
+      [
+        "Beinecke Library , Yale University",
+        [
+          0,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "8c3d26499cca5d79",
+    "answer": "1938",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Henrico_County,_Virginia_0",
+    "answer_node": [
+      [
+        "Henrico Theatre",
+        [
+          12,
+          1
+        ],
+        "/wiki/Henrico_Theatre",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "90f313b8d9f4c145",
+    "answer": "7th century AD",
+    "gold_table_id": "Major_National_Historical_and_Cultural_Sites_(Chongqing)_0",
+    "answer_node": [
+      [
+        "Dazu Rock Carvings",
+        [
+          1,
+          0
+        ],
+        "/wiki/Dazu_Rock_Carvings",
+        "passage"
+      ],
+      [
+        "Dazu Rock Carvings",
+        [
+          2,
+          0
+        ],
+        "/wiki/Dazu_Rock_Carvings",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "91b43d56f8475e79",
+    "answer": "3,776.24 m",
+    "gold_table_id": "List_of_Historic_Sites_of_Japan_(Yamanashi)_0",
+    "answer_node": [
+      [
+        "Mount Fuji",
+        [
+          14,
+          0
+        ],
+        "/wiki/Mount_Fuji",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "94542f6a95936149",
+    "answer": "51 feet long",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Queen_Anne's_County,_Maryland_0",
+    "answer_node": [
+      [
+        "Bloomingdale (Queenstown, Maryland)",
+        [
+          2,
+          1
+        ],
+        "/wiki/Bloomingdale_(Queenstown,_Maryland)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "95fa0a827b08e9f7",
+    "answer": "Hardin County Home Historic District",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Hardin_County,_Iowa_0",
+    "answer_node": [
+      [
+        "Hardin County Home Historic District",
+        [
+          13,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "28483 County Road D41 42°23′25″N 93°08′18″W / 42.390158°N 93.138206°W / 42.390158 ; -93.138206 ( Hardin County Home Historic District )",
+        [
+          13,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "989a0e368ea33ca5",
+    "answer": "Gaillard-Colclough House",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Sumter_County,_South_Carolina_0",
+    "answer_node": [
+      [
+        "Orange Grove (Dalzell, South Carolina)",
+        [
+          15,
+          1
+        ],
+        "/wiki/Orange_Grove_(Dalzell,_South_Carolina)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "99eb0e5af0316fbf",
+    "answer": "Edna Work Hall",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Dawes_County,_Nebraska_0",
+    "answer_node": [
+      [
+        "Edna Work Hall",
+        [
+          14,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "10th and Main Sts . 42°49′14″N 103°00′07″W / 42.820556°N 103.001944°W / 42.820556 ; -103.001944 ( Edna Work Hall )",
+        [
+          14,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Sparks Hall",
+        [
+          11,
+          1
+        ],
+        "/wiki/Sparks_Hall",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9fd6e3312660b0c1",
+    "answer": "250 feet",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Douglas_County,_Nevada_0",
+    "answer_node": [
+      [
+        "De'ek wadapush (Cave Rock) Traditional Cultural Property",
+        [
+          2,
+          1
+        ],
+        "/wiki/De'ek_wadapush_(Cave_Rock)_Traditional_Cultural_Property",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a0cb2effd429a40c",
+    "answer": "1864",
+    "gold_table_id": "California_Historical_Landmarks_in_Amador_County,_California_0",
+    "answer_node": [
+      [
+        "Kirkwood Inn & Saloon",
+        [
+          12,
+          1
+        ],
+        "/wiki/Kirkwood_Inn_&_Saloon",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a1b0c95f119b18e9",
+    "answer": "1840",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Dorchester_County,_South_Carolina_0",
+    "answer_node": [
+      [
+        "Appleby's Methodist Church",
+        [
+          0,
+          1
+        ],
+        "/wiki/Appleby's_Methodist_Church",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a5acecb7cac28eed",
+    "answer": "Ducktown",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Polk_County,_Tennessee_0",
+    "answer_node": [
+      [
+        "Ducktown",
+        [
+          0,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Ducktown",
+        [
+          1,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Ducktown",
+        [
+          3,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Ducktown Historic District",
+        [
+          6,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Roughly bounded by State Route 68 and an alley 2 blocks northwest of Main St. 35°02′13″N 84°22′55″W / 35.036944°N 84.381944°W / 35.036944 ; -84.381944 ( Ducktown Historic District )",
+        [
+          6,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Ducktown",
+        [
+          6,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Ducktown",
+        [
+          8,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Burra Burra Mine (Ducktown, Tennessee)",
+        [
+          0,
+          1
+        ],
+        "/wiki/Burra_Burra_Mine_(Ducktown,_Tennessee)",
+        "passage"
+      ],
+      [
+        "Kimsey Junior College",
+        [
+          8,
+          1
+        ],
+        "/wiki/Kimsey_Junior_College",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a658664b7c075f2e",
+    "answer": "37",
+    "gold_table_id": "2nd_New_Zealand_Parliament_0",
+    "answer_node": [],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a91aa882574713c0",
+    "answer": "Noda Pit Dwelling Sites",
+    "gold_table_id": "List_of_Historic_Sites_of_Japan_(Iwate)_1",
+    "answer_node": [
+      [
+        "Noda Pit Dwelling Sites 野田竪穴住居跡群 Noda tateana jūkyo seki-gun",
+        [
+          0,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "aa8e5922577f6442",
+    "answer": "35,938",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Berkeley_County,_South_Carolina_0",
+    "answer_node": [
+      [
+        "Goose Creek, South Carolina",
+        [
+          12,
+          4
+        ],
+        "/wiki/Goose_Creek,_South_Carolina",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "af46d2cb4fe258b1",
+    "answer": "1928",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Vilas_County,_Wisconsin_0",
+    "answer_node": [
+      [
+        "Two-story wet boathouse on Plum Lake , built in Craftsman style in 1928 . Ben worked in various lumber companies in Wausau and Ladysmith",
+        [
+          13,
+          5
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Chicago gambler Mont Tennes had his estate on Catfish Lake built in French Normandy style in 1928",
+        [
+          15,
+          5
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Ben and Margaret Stone Boathouse",
+        [
+          13,
+          1
+        ],
+        "/wiki/Ben_and_Margaret_Stone_Boathouse",
+        "passage"
+      ],
+      [
+        "Sunset Point (Eagle River, Wisconsin)",
+        [
+          15,
+          1
+        ],
+        "/wiki/Sunset_Point_(Eagle_River,_Wisconsin)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b072556991b9a328",
+    "answer": "70",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Marion_County,_Florida_0",
+    "answer_node": [
+      [
+        "Dunnellon Boomtown Historic District",
+        [
+          8,
+          1
+        ],
+        "/wiki/Dunnellon_Boomtown_Historic_District",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b111613d5a94c4e2",
+    "answer": "Athabasca",
+    "gold_table_id": "Legislative_Assembly_of_Saskatchewan_0",
+    "answer_node": [
+      [
+        "Athabasca",
+        [
+          2,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Buckley Belanger",
+        [
+          2,
+          0
+        ],
+        "/wiki/Buckley_Belanger",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b1bb9316bd356b9c",
+    "answer": "Natchitoches Parish",
+    "gold_table_id": "List_of_Louisiana_state_historic_sites_0",
+    "answer_node": [
+      [
+        "Natchitoches Parish",
+        [
+          4,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Natchitoches Parish",
+        [
+          8,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Natchitoches Parish",
+        [
+          14,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Sabine Parish, Louisiana",
+        [
+          2,
+          1
+        ],
+        "/wiki/Sabine_Parish,_Louisiana",
+        "passage"
+      ],
+      [
+        "Los Adaes State Historic Site",
+        [
+          8,
+          0
+        ],
+        "/wiki/Los_Adaes_State_Historic_Site",
+        "passage"
+      ],
+      [
+        "Rebel State Historic Site",
+        [
+          14,
+          0
+        ],
+        "/wiki/Rebel_State_Historic_Site",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b1eb73bc03b88f1a",
+    "answer": "1955",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Nelson_County,_Virginia_0",
+    "answer_node": [
+      [
+        "Edgewood (Wingina, Virginia)",
+        [
+          2,
+          1
+        ],
+        "/wiki/Edgewood_(Wingina,_Virginia)",
+        "passage"
+      ],
+      [
+        "Elk Hill (Nellysford, Virginia)",
+        [
+          3,
+          1
+        ],
+        "/wiki/Elk_Hill_(Nellysford,_Virginia)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b3c8f8e21a55d111",
+    "answer": "12",
+    "gold_table_id": "Battle_of_the_Blades_(season_1)_0",
+    "answer_node": [
+      [
+        "Eliminated 2nd on October 12 , 2009",
+        [
+          1,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Ron Duguay",
+        [
+          2,
+          0
+        ],
+        "/wiki/Ron_Duguay",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b6dcc7a5b6742d9f",
+    "answer": "38.245",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Taylor_County,_Kentucky_0",
+    "answer_node": [
+      [
+        "Kentucky Route 210",
+        [
+          6,
+          3
+        ],
+        "/wiki/Kentucky_Route_210",
+        "passage"
+      ],
+      [
+        "Kentucky Route 210",
+        [
+          9,
+          3
+        ],
+        "/wiki/Kentucky_Route_210",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b6e61772817a7468",
+    "answer": "7,289",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Otoe_County,_Nebraska_0",
+    "answer_node": [
+      [
+        "Nebraska City, Nebraska",
+        [
+          0,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          1,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          2,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          4,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          5,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          6,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          7,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          8,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          9,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          12,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          13,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          14,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          15,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          16,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          17,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          18,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ],
+      [
+        "Nebraska City, Nebraska",
+        [
+          19,
+          4
+        ],
+        "/wiki/Nebraska_City,_Nebraska",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b835988929291756",
+    "answer": "1902",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Faribault_County,_Minnesota_0",
+    "answer_node": [
+      [
+        "Peter Kremer House",
+        [
+          8,
+          1
+        ],
+        "/wiki/Peter_Kremer_House",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "be3e9aba547c6d2a",
+    "answer": "1,081",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Custer_County,_Idaho_0",
+    "answer_node": [
+      [
+        "Challis, Idaho",
+        [
+          0,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          1,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          2,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          3,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          4,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          5,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          6,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          7,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          8,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          9,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          10,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          11,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          12,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          13,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          14,
+          3
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          17,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          18,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ],
+      [
+        "Challis, Idaho",
+        [
+          19,
+          4
+        ],
+        "/wiki/Challis,_Idaho",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "be6d4de381af0ab5",
+    "answer": "41°49′51″N 90°50′20″W / 41.830833°N 90.838889°W / 41.830833 ; -90.838889 ( City Hotel )",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Clinton_County,_Iowa_0",
+    "answer_node": [
+      [
+        "214 S. Main St. 41°49′51″N 90°50′20″W / 41.830833°N 90.838889°W / 41.830833 ; -90.838889 ( City Hotel )",
+        [
+          6,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "bfe721d779a4512d",
+    "answer": "Petrovaradin Fortress",
+    "gold_table_id": "Spatial_Cultural-Historical_Units_of_Great_Importance_(Serbia)_0",
+    "answer_node": [
+      [
+        "Petrovaradin Fortress",
+        [
+          0,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Novi Sad",
+        [
+          0,
+          1
+        ],
+        "/wiki/Novi_Sad",
+        "passage"
+      ],
+      [
+        "Novi Sad",
+        [
+          2,
+          1
+        ],
+        "/wiki/Novi_Sad",
+        "passage"
+      ],
+      [
+        "Novi Sad",
+        [
+          2,
+          2
+        ],
+        "/wiki/Novi_Sad",
+        "passage"
+      ],
+      [
+        "Novi Sad",
+        [
+          8,
+          1
+        ],
+        "/wiki/Novi_Sad",
+        "passage"
+      ],
+      [
+        "Novi Sad",
+        [
+          8,
+          2
+        ],
+        "/wiki/Novi_Sad",
+        "passage"
+      ],
+      [
+        "Novi Sad",
+        [
+          13,
+          1
+        ],
+        "/wiki/Novi_Sad",
+        "passage"
+      ],
+      [
+        "Novi Sad",
+        [
+          14,
+          1
+        ],
+        "/wiki/Novi_Sad",
+        "passage"
+      ],
+      [
+        "Novi Sad",
+        [
+          14,
+          2
+        ],
+        "/wiki/Novi_Sad",
+        "passage"
+      ],
+      [
+        "Petrovaradin",
+        [
+          0,
+          2
+        ],
+        "/wiki/Petrovaradin",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "c05b9b5a87cda216",
+    "answer": "Chile",
+    "gold_table_id": "List_of_wars_involving_Chile_0",
+    "answer_node": [
+      [
+        "Independentists : Chile Gran Colombia United Provinces of the Río de la Plata Mexico Peru Bolivia Paraguay Banda Oriental Native Americans pro-independent",
+        [
+          0,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Chile United Provinces of the Río de la Plata Pampas and Mapuche allies",
+        [
+          1,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Chile & allies victory End of the montoneras of Pincheira and relocation in Chile of the families that lived in the Pincheira camps . The Chilean government pardoned José Antonio , the last leader of the Pincheira . Rural banditry persists for several years but to a lesser extent . Argentine campaign on the Desert ( 1833-34 ) . Surveillance and military confrontation between Chile and the Mapuche tribes on the Biobío River line ( 1835-1859 )",
+        [
+          1,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Surveillance and military confrontation between Chile and the Mapuche tribes in « La Frontera » ( 1835-1859 )",
+        [
+          3,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Chile",
+        [
+          3,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Inconclusive Chilean elites call for the incorporation the Araucanía to the Republic of Chile to end the Mapuche malones and prevent the Chilean dissidents from taking refuge in that territory",
+        [
+          3,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Chile Peruvian dissidents Peruvian exiles ( 1836-1837 ) Government of La Fuente ( 1837 ) Peruvian exiles ( 1837-1838 ) Government of Gamarra ( 1838-1839 ) Argentine Confederation",
+        [
+          4,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Chile & Peruvian dissidents victory Dissolution of the Peru-Bolivian Confederation . The orbegosista government is defeated during the course of the war . Restoration of the republics of Peru ( unification of the North and South States of Peru ) and Bolivia . Exile of Andrés de Santa Cruz . Chile obtains international prestige and the commercial hegemony of Valparaíso in the Pacific . Military tension between Peru and Bolivia . Argentina , after the dissolution of the Peru-Bolivian Confederation , negotiated with Bolivia the recovery of the territory it had lost during the war",
+        [
+          4,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Peru Chile",
+        [
+          6,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Peru & Chile victory Signature of the Treaty of Yanallay in which the Iquichanos submit to the Republic of Peru . Isolation of the caudillo Antonio Huachaca",
+        [
+          6,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Government victory Temporary survival of the conservative government . Exile of the liberal Pedro León Gallo until 1863 . Presidential candidacy of José Joaquín Pérez , who was elected and started the Liberal Republic in 1861 . The Radical Party of Chile emerged in 1863 from the seed of the revolution",
+        [
+          8,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Chile",
+        [
+          9,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Chilean victory Incorporation of Araucanía into Chile . The Mapuche tribes are concentrated in land reductions . Entry of Chileans and European immigrants into the territory . Infrastructure build-up in the territory . Violence and lawlessness in the areas for decades are generated",
+        [
+          9,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Chile Peru Nominal participation : Ecuador Bolivia",
+        [
+          10,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Indecisive , both sides claimed victory Spanish withdrawal from the Chincha Islands . Decline of the Chilean merchant fleet . Increase in the naval power of Chile . The state of war is maintained between the belligerent parties until the signing of an indefinite armistice in 1871 . Subsequently , Spain and the South American allies signed peace treaties separately : Peru ( 1879 ) , Bolivia ( 1879 ) , Chile ( 1883 ) and Ecuador ( 1885 )",
+        [
+          10,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Chile",
+        [
+          11,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Chilean victory Signing of the Treaty of Ancón between Chile and Peru in 1883 . Signing of the Treaty of Valparaiso between Chile and Bolivia in 1884 . Bolivia becomes de facto and de jure landlocked . Peruvian civil war of 1884-1885 . Saltpeter becomes Chile 's main source of wealth for several years . Emergence of the military and political influence of Chile in South America . Tension between Chile and Argentina due to the dispute over the Puna de Atacama . Rivalry between Chile and the United States",
+        [
+          11,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Congressist victory Suicide of President José Manuel Balmaceda . Ascent of Jorge Montt to the presidency . Beginning of the Parliamentary period . Decline of the military and political influence of Chile in South America . The tensions between Chile and the United States during the war lead to the Baltimore crisis",
+        [
+          12,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Peru",
+        [
+          11,
+          2
+        ],
+        "/wiki/Peru",
+        "passage"
+      ],
+      [
+        "Bolivia",
+        [
+          11,
+          2
+        ],
+        "/wiki/Bolivia",
+        "passage"
+      ],
+      [
+        "Pincheira brothers",
+        [
+          1,
+          0
+        ],
+        "/wiki/Pincheira_brothers",
+        "passage"
+      ],
+      [
+        "Mapuche",
+        [
+          3,
+          2
+        ],
+        "/wiki/Mapuche",
+        "passage"
+      ],
+      [
+        "Mapuche",
+        [
+          9,
+          2
+        ],
+        "/wiki/Mapuche",
+        "passage"
+      ],
+      [
+        "Chilean Civil War of 1829–1830",
+        [
+          2,
+          0
+        ],
+        "/wiki/Chilean_Civil_War_of_1829–1830",
+        "passage"
+      ],
+      [
+        "Diego Portales",
+        [
+          2,
+          3
+        ],
+        "/wiki/Diego_Portales",
+        "passage"
+      ],
+      [
+        "War of the Confederation",
+        [
+          4,
+          0
+        ],
+        "/wiki/War_of_the_Confederation",
+        "passage"
+      ],
+      [
+        "Peru–Bolivian Confederation",
+        [
+          4,
+          2
+        ],
+        "/wiki/Peru–Bolivian_Confederation",
+        "passage"
+      ],
+      [
+        "Liberal Party (Chile, 1849–1966)",
+        [
+          7,
+          2
+        ],
+        "/wiki/Liberal_Party_(Chile,_1849–1966)",
+        "passage"
+      ],
+      [
+        "Liberal Party (Chile, 1849–1966)",
+        [
+          8,
+          2
+        ],
+        "/wiki/Liberal_Party_(Chile,_1849–1966)",
+        "passage"
+      ],
+      [
+        "Chincha Islands War",
+        [
+          10,
+          0
+        ],
+        "/wiki/Chincha_Islands_War",
+        "passage"
+      ],
+      [
+        "War of the Pacific",
+        [
+          11,
+          0
+        ],
+        "/wiki/War_of_the_Pacific",
+        "passage"
+      ],
+      [
+        "Chilean Civil War of 1891",
+        [
+          12,
+          0
+        ],
+        "/wiki/Chilean_Civil_War_of_1891",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "c1aae1590ea30268",
+    "answer": "Iron Mountain",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Michigan_11",
+    "answer_node": [
+      [
+        "Iron Mountain",
+        [
+          0,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Iron Mountain",
+        [
+          1,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Iron Mountain",
+        [
+          2,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Iron Mountain",
+        [
+          4,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "The Immaculate Conception Church is an Italian Renaissance Revival church built in 1902 by Italian Catholics living on the north side of Iron Mountain . It was designed by parish priest Father Giovanni Sinopoli di Giunta , who also oversaw the construction of the building",
+        [
+          4,
+          5
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Iron Mountain Central Historic District",
+        [
+          5,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Broadly Fleshiem to C St. & Iron Mountain to Stockbridge Ave. 45°49′10″N 88°04′01″W / 45.819439°N 88.066946°W / 45.819439 ; -88.066946 ( Iron Mountain Central Historic District )",
+        [
+          5,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Iron Mountain",
+        [
+          5,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Ardis Furnace",
+        [
+          0,
+          1
+        ],
+        "/wiki/Ardis_Furnace",
+        "passage"
+      ],
+      [
+        "Chapin Mine Steam Pump Engine",
+        [
+          1,
+          1
+        ],
+        "/wiki/Chapin_Mine_Steam_Pump_Engine",
+        "passage"
+      ],
+      [
+        "Dickinson County Courthouse and Jail",
+        [
+          2,
+          1
+        ],
+        "/wiki/Dickinson_County_Courthouse_and_Jail",
+        "passage"
+      ],
+      [
+        "Kingsford, Michigan",
+        [
+          3,
+          4
+        ],
+        "/wiki/Kingsford,_Michigan",
+        "passage"
+      ],
+      [
+        "Kingsford, Michigan",
+        [
+          6,
+          4
+        ],
+        "/wiki/Kingsford,_Michigan",
+        "passage"
+      ],
+      [
+        "Kingsford, Michigan",
+        [
+          7,
+          4
+        ],
+        "/wiki/Kingsford,_Michigan",
+        "passage"
+      ],
+      [
+        "Immaculate Conception Church (Iron Mountain, Michigan)",
+        [
+          4,
+          1
+        ],
+        "/wiki/Immaculate_Conception_Church_(Iron_Mountain,_Michigan)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "cf81ca6627a283ec",
+    "answer": "110",
+    "gold_table_id": "List_of_Michigan_State_Historic_Sites_in_Cass_County,_Michigan_0",
+    "answer_node": [
+      [
+        "110 North Broadway Street",
+        [
+          0,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mason District No. 5 Schoolhouse",
+        [
+          12,
+          0
+        ],
+        "/wiki/Mason_District_No._5_Schoolhouse",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d3b4eb577b3fba78",
+    "answer": "three years",
+    "gold_table_id": "Stance_of_Marjas_on_the_2009_Presidential_Election_in_Iran_0",
+    "answer_node": [
+      [
+        "Ali Hosseini Khamenei",
+        [
+          1,
+          1
+        ],
+        "/wiki/Ali_Hosseini_Khamenei",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d60152d2efc9bec5",
+    "answer": "3,933",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Calumet_County,_Wisconsin_0",
+    "answer_node": [
+      [
+        "Chilton, Wisconsin",
+        [
+          0,
+          4
+        ],
+        "/wiki/Chilton,_Wisconsin",
+        "passage"
+      ],
+      [
+        "Chilton, Wisconsin",
+        [
+          1,
+          4
+        ],
+        "/wiki/Chilton,_Wisconsin",
+        "passage"
+      ],
+      [
+        "Chilton, Wisconsin",
+        [
+          3,
+          4
+        ],
+        "/wiki/Chilton,_Wisconsin",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d953726f2b153212",
+    "answer": "Liberal",
+    "gold_table_id": "14th_Legislative_Assembly_of_British_Columbia_0",
+    "answer_node": [
+      [
+        "Liberal",
+        [
+          0,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          1,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          2,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          3,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          4,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          5,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          7,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          9,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          11,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          13,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          14,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          15,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          16,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          17,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Liberal",
+        [
+          19,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Frank Harry Mobley",
+        [
+          1,
+          0
+        ],
+        "/wiki/Frank_Harry_Mobley",
+        "passage"
+      ],
+      [
+        "John MacKay Yorston",
+        [
+          2,
+          0
+        ],
+        "/wiki/John_MacKay_Yorston",
+        "passage"
+      ],
+      [
+        "Edward Dodsley Barrow",
+        [
+          3,
+          0
+        ],
+        "/wiki/Edward_Dodsley_Barrow",
+        "passage"
+      ],
+      [
+        "John Andrew Buckham",
+        [
+          4,
+          0
+        ],
+        "/wiki/John_Andrew_Buckham",
+        "passage"
+      ],
+      [
+        "Hugh Stewart (Canadian politician)",
+        [
+          5,
+          0
+        ],
+        "/wiki/Hugh_Stewart_(Canadian_politician)",
+        "passage"
+      ],
+      [
+        "James Horace King",
+        [
+          7,
+          0
+        ],
+        "/wiki/James_Horace_King",
+        "passage"
+      ],
+      [
+        "British Columbia Conservative Party",
+        [
+          8,
+          2
+        ],
+        "/wiki/British_Columbia_Conservative_Party",
+        "passage"
+      ],
+      [
+        "British Columbia Conservative Party",
+        [
+          10,
+          2
+        ],
+        "/wiki/British_Columbia_Conservative_Party",
+        "passage"
+      ],
+      [
+        "British Columbia Conservative Party",
+        [
+          12,
+          2
+        ],
+        "/wiki/British_Columbia_Conservative_Party",
+        "passage"
+      ],
+      [
+        "British Columbia Conservative Party",
+        [
+          18,
+          2
+        ],
+        "/wiki/British_Columbia_Conservative_Party",
+        "passage"
+      ],
+      [
+        "John Oliver (British Columbia politician)",
+        [
+          9,
+          0
+        ],
+        "/wiki/John_Oliver_(British_Columbia_politician)",
+        "passage"
+      ],
+      [
+        "Alexander Ingram Fisher",
+        [
+          11,
+          0
+        ],
+        "/wiki/Alexander_Ingram_Fisher",
+        "passage"
+      ],
+      [
+        "James Edwin Wallace Thompson",
+        [
+          13,
+          0
+        ],
+        "/wiki/James_Edwin_Wallace_Thompson",
+        "passage"
+      ],
+      [
+        "John Duncan MacLean",
+        [
+          14,
+          0
+        ],
+        "/wiki/John_Duncan_MacLean",
+        "passage"
+      ],
+      [
+        "Malcolm Bruce Jackson",
+        [
+          15,
+          0
+        ],
+        "/wiki/Malcolm_Bruce_Jackson",
+        "passage"
+      ],
+      [
+        "Frederick William Anderson",
+        [
+          16,
+          0
+        ],
+        "/wiki/Frederick_William_Anderson",
+        "passage"
+      ],
+      [
+        "John Keen (politician)",
+        [
+          17,
+          0
+        ],
+        "/wiki/John_Keen_(politician)",
+        "passage"
+      ],
+      [
+        "William Sloan (politician)",
+        [
+          19,
+          0
+        ],
+        "/wiki/William_Sloan_(politician)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "da85a646aba54f98",
+    "answer": "3",
+    "gold_table_id": "List_of_Historic_Sites_of_Japan_(Ishikawa)_0",
+    "answer_node": [
+      [
+        "3",
+        [
+          15,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "3",
+        [
+          19,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "dc9724283a674dd0",
+    "answer": "476,179",
+    "gold_table_id": "Historic_House_Trust_0",
+    "answer_node": [
+      [
+        "Staten Island",
+        [
+          0,
+          2
+        ],
+        "/wiki/Staten_Island",
+        "passage"
+      ],
+      [
+        "Staten Island",
+        [
+          2,
+          2
+        ],
+        "/wiki/Staten_Island",
+        "passage"
+      ],
+      [
+        "Staten Island",
+        [
+          5,
+          2
+        ],
+        "/wiki/Staten_Island",
+        "passage"
+      ],
+      [
+        "Staten Island",
+        [
+          17,
+          2
+        ],
+        "/wiki/Staten_Island",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e3de28d0182003ab",
+    "answer": "16,686",
+    "gold_table_id": "List_of_Historic_Sites_of_Japan_(Wakayama)_0",
+    "answer_node": [
+      [
+        "Katsuragi, Wakayama",
+        [
+          8,
+          1
+        ],
+        "/wiki/Katsuragi,_Wakayama",
+        "passage"
+      ],
+      [
+        "Katsuragi, Wakayama",
+        [
+          16,
+          1
+        ],
+        "/wiki/Katsuragi,_Wakayama",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e580a468435c998c",
+    "answer": "1390",
+    "gold_table_id": "Major_National_Historical_and_Cultural_Sites_(Tibet)_0",
+    "answer_node": [
+      [
+        "Gyantse Dzong",
+        [
+          0,
+          0
+        ],
+        "/wiki/Gyantse_Dzong",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e5dcc7d62dc2d060",
+    "answer": "Hetephernebti",
+    "gold_table_id": "List_of_ancient_Egyptians_7",
+    "answer_node": [
+      [
+        "She was the only known child of Pharaoh Djoser and Queen Hetephernebti",
+        [
+          10,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Inetkawes",
+        [
+          10,
+          0
+        ],
+        "/wiki/Inetkawes",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "eb8fa203c96b71d0",
+    "answer": "Samuel Glenn Fuqua",
+    "gold_table_id": "List_of_Medal_of_Honor_recipients_for_World_War_II_5",
+    "answer_node": [
+      [
+        "Samuel G. Fuqua",
+        [
+          15,
+          0
+        ],
+        "/wiki/Samuel_G._Fuqua",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ee399f2d2ebcdcac",
+    "answer": "Bald eagles",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Ashland_County,_Wisconsin_0",
+    "answer_node": [
+      [
+        "Big Bay State Park",
+        [
+          6,
+          3
+        ],
+        "/wiki/Big_Bay_State_Park",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f21699a6e863e259",
+    "answer": "Private residence",
+    "gold_table_id": "List_of_castles_and_manor_houses_in_Sweden_3",
+    "answer_node": [
+      [
+        "Private residence",
+        [
+          2,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Private residence",
+        [
+          3,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Private residence",
+        [
+          8,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Private residence",
+        [
+          9,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Private residence",
+        [
+          10,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Private residence",
+        [
+          11,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Private residence",
+        [
+          12,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Private residence",
+        [
+          13,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Private residence",
+        [
+          14,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Private residence",
+        [
+          15,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Private residence",
+        [
+          17,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Private residence",
+        [
+          18,
+          4
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f5e41123f135a7e9",
+    "answer": "American Civil War",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Talladega_County,_Alabama_0",
+    "answer_node": [
+      [
+        "Kymulga Mill & Covered Bridge",
+        [
+          12,
+          1
+        ],
+        "/wiki/Kymulga_Mill_&_Covered_Bridge",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f67b8b120b82c0c4",
+    "answer": "wood",
+    "gold_table_id": "List_of_Historic_Sites_of_Japan_(Saga)_0",
+    "answer_node": [
+      [
+        "Yayoi settlement discovered in 1971 during works to remedy environmental damage caused by mining ; evidence uncovered of houses ( some now reconstructed ) , storage pits , and wells , along with the first mould for a yari ganna ( spear-plane ) , tools of stone and wood , and ceramics",
+        [
+          19,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Sluice gates",
+        [
+          3,
+          2
+        ],
+        "/wiki/Sluice_gates",
+        "passage"
+      ],
+      [
+        "Anagama kiln",
+        [
+          6,
+          2
+        ],
+        "/wiki/Anagama_kiln",
+        "passage"
+      ],
+      [
+        "Nabeshima ware",
+        [
+          15,
+          2
+        ],
+        "/wiki/Nabeshima_ware",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ff8f76c43aca39d9",
+    "answer": "Lena Road School",
+    "gold_table_id": "National_Register_of_Historic_Places_listings_in_Marinette_County,_Wisconsin_0",
+    "answer_node": [
+      [
+        "Lena Road School",
+        [
+          6,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "N2155 US 141 45°02′19″N 88°02′42″W / 45.038611°N 88.045°W / 45.038611 ; -88.045 ( Lena Road School )",
+        [
+          6,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "expected_samples": 3421,
+  "annotators": {
+    "A": {
+      "records": 3421,
+      "issues": [],
+      "ok": true
+    },
+    "B": {
+      "records": 3421,
+      "issues": [],
+      "ok": true
+    },
+    "C": {
+      "records": 3421,
+      "issues": [],
+      "ok": true
+    }
+  },
+  "ok": true
+}

@@ -1,0 +1,23 @@
+{
+  "graph": {
+    "n": 1154,
+    "r1_primary_acc": 0.720103986135182,
+    "r2_primary_acc": 0.7625649913344887,
+    "joint_primary_acc": 0.5077989601386482,
+    "avg_primary_acc": 0.7413344887348354
+  },
+  "atomr": {
+    "n": 1154,
+    "r1_primary_acc": 0.5554592720970537,
+    "r2_primary_acc": 0.744367417677643,
+    "joint_primary_acc": 0.3214904679376083,
+    "avg_primary_acc": 0.6499133448873484
+  },
+  "deepsieve": {
+    "n": 1154,
+    "r1_primary_acc": 0.5337954939341422,
+    "r2_primary_acc": 0.6221837088388215,
+    "joint_primary_acc": 0.21143847487001732,
+    "avg_primary_acc": 0.5779896013864818
+  }
+}

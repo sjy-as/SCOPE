@@ -1,0 +1,3055 @@
+[
+  {
+    "question_id": "00ad8c3df9fa9da0",
+    "answer": "Gulf of Aden",
+    "gold_table_id": "List_of_Somali_cities_by_population_0",
+    "answer_node": [
+      [
+        "Bosaso",
+        [
+          2,
+          1
+        ],
+        "/wiki/Bosaso",
+        "passage"
+      ],
+      [
+        "Awdal",
+        [
+          5,
+          2
+        ],
+        "/wiki/Awdal",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "085a388b8bd8c4da",
+    "answer": "monastery",
+    "gold_table_id": "List_of_highest_cities_in_the_world_1",
+    "answer_node": [
+      [
+        "Kibber",
+        [
+          11,
+          1
+        ],
+        "/wiki/Kibber",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "0bd8464e1d76e0de",
+    "answer": "1.1",
+    "gold_table_id": "List_of_U.S._cities_with_significant_Chinese-American_populations_0",
+    "answer_node": [
+      [
+        "1.1",
+        [
+          5,
+          4
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "0d04c7e6d403a63d",
+    "answer": "Winston Churchill",
+    "gold_table_id": "List_of_demolished_churches_in_the_City_of_London_0",
+    "answer_node": [
+      [
+        "St Mary Aldermanbury",
+        [
+          4,
+          4
+        ],
+        "/wiki/St_Mary_Aldermanbury",
+        "passage"
+      ],
+      [
+        "St Mary Aldermanbury",
+        [
+          15,
+          0
+        ],
+        "/wiki/St_Mary_Aldermanbury",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "0fa4e054315a96e3",
+    "answer": "Richard Óg de Burgh , 2nd Earl of Ulster",
+    "gold_table_id": "List_of_National_Monuments_in_County_Sligo_0",
+    "answer_node": [
+      [
+        "Ballymote Castle",
+        [
+          7,
+          1
+        ],
+        "/wiki/Ballymote_Castle",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "101d5078ac7fbaf6",
+    "answer": "Social Democratic Party of Germany",
+    "gold_table_id": "Hamburg_Altona_(electoral_district)_0",
+    "answer_node": [
+      [
+        "Social Democratic Party of Germany",
+        [
+          0,
+          2
+        ],
+        "/wiki/Social_Democratic_Party_of_Germany",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "12afddb24655ce36",
+    "answer": "Territory of Kansas",
+    "gold_table_id": "List_of_counties_in_Colorado_2",
+    "answer_node": [
+      [
+        "Territory of Kansas",
+        [
+          7,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Territory of Kansas",
+        [
+          9,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Territory of Kansas",
+        [
+          10,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Territory of Kansas",
+        [
+          11,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Territory of Kansas",
+        [
+          12,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Territory of Kansas",
+        [
+          13,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Territory of Kansas",
+        [
+          14,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Broderick County, Kansas Territory",
+        [
+          9,
+          0
+        ],
+        "/wiki/Broderick_County,_Kansas_Territory",
+        "passage"
+      ],
+      [
+        "El Paso County, Kansas Territory",
+        [
+          10,
+          0
+        ],
+        "/wiki/El_Paso_County,_Kansas_Territory",
+        "passage"
+      ],
+      [
+        "Fremont County, Kansas Territory",
+        [
+          11,
+          0
+        ],
+        "/wiki/Fremont_County,_Kansas_Territory",
+        "passage"
+      ],
+      [
+        "Montana County, Kansas Territory",
+        [
+          12,
+          0
+        ],
+        "/wiki/Montana_County,_Kansas_Territory",
+        "passage"
+      ],
+      [
+        "Oro County, Kansas Territory",
+        [
+          13,
+          0
+        ],
+        "/wiki/Oro_County,_Kansas_Territory",
+        "passage"
+      ],
+      [
+        "Peketon County, Kansas Territory",
+        [
+          14,
+          0
+        ],
+        "/wiki/Peketon_County,_Kansas_Territory",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "14b566086eb8c466",
+    "answer": "21,397,000",
+    "gold_table_id": "Member_states_of_the_Community_of_Portuguese_Language_Countries_0",
+    "answer_node": [
+      [
+        "21,397,000",
+        [
+          3,
+          5
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "18ca752a3cf9a21b",
+    "answer": "Casey Durdines",
+    "gold_table_id": "Washington_County_History_&_Landmarks_Foundation_3",
+    "answer_node": [
+      [
+        "California, Pennsylvania",
+        [
+          8,
+          2
+        ],
+        "/wiki/California,_Pennsylvania",
+        "passage"
+      ],
+      [
+        "California, Pennsylvania",
+        [
+          12,
+          2
+        ],
+        "/wiki/California,_Pennsylvania",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1cee444316de7bf6",
+    "answer": "36",
+    "gold_table_id": "Municipalities_of_Switzerland_0",
+    "answer_node": [
+      [
+        "Bern",
+        [
+          4,
+          1
+        ],
+        "/wiki/Bern",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "269cb4fcd0cb7875",
+    "answer": "1-2",
+    "gold_table_id": "Bangor_City_F.C._0",
+    "answer_node": [
+      [
+        "1-2",
+        [
+          1,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "1-2",
+        [
+          5,
+          4
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "292f8f56adae2793",
+    "answer": "November 17 , 1932",
+    "gold_table_id": "Morona-Santiago_Province_0",
+    "answer_node": [
+      [
+        "General Leonidas Plaza Gutiérrez",
+        [
+          2,
+          3
+        ],
+        "/wiki/General_Leonidas_Plaza_Gutiérrez",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "29e4b61cd021b7ac",
+    "answer": "15,941,000",
+    "gold_table_id": "Member_states_of_the_Community_of_Portuguese_Language_Countries_0",
+    "answer_node": [
+      [
+        "15,941,000",
+        [
+          2,
+          5
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "2d00503b684b274c",
+    "answer": "River Stour",
+    "gold_table_id": "Civil_parishes_in_the_West_Midlands_(county)_0",
+    "answer_node": [
+      [
+        "Stourbridge",
+        [
+          9,
+          0
+        ],
+        "/wiki/Stourbridge",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "2f8484f7e3324d0e",
+    "answer": "Italian",
+    "gold_table_id": "Municipalities_of_Switzerland_1",
+    "answer_node": [
+      [
+        "Canton of Ticino",
+        [
+          0,
+          2
+        ],
+        "/wiki/Canton_of_Ticino",
+        "passage"
+      ],
+      [
+        "Canton of Ticino",
+        [
+          7,
+          2
+        ],
+        "/wiki/Canton_of_Ticino",
+        "passage"
+      ],
+      [
+        "Canton of Valais",
+        [
+          1,
+          2
+        ],
+        "/wiki/Canton_of_Valais",
+        "passage"
+      ],
+      [
+        "Canton of Valais",
+        [
+          4,
+          2
+        ],
+        "/wiki/Canton_of_Valais",
+        "passage"
+      ],
+      [
+        "Canton of Graubünden",
+        [
+          2,
+          2
+        ],
+        "/wiki/Canton_of_Graubünden",
+        "passage"
+      ],
+      [
+        "Canton of Graubünden",
+        [
+          3,
+          2
+        ],
+        "/wiki/Canton_of_Graubünden",
+        "passage"
+      ],
+      [
+        "Canton of Graubünden",
+        [
+          5,
+          2
+        ],
+        "/wiki/Canton_of_Graubünden",
+        "passage"
+      ],
+      [
+        "Canton of Graubünden",
+        [
+          6,
+          2
+        ],
+        "/wiki/Canton_of_Graubünden",
+        "passage"
+      ],
+      [
+        "Canton of Graubünden",
+        [
+          8,
+          2
+        ],
+        "/wiki/Canton_of_Graubünden",
+        "passage"
+      ],
+      [
+        "Selma, Switzerland",
+        [
+          6,
+          1
+        ],
+        "/wiki/Selma,_Switzerland",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "30cb7c98c59e6551",
+    "answer": "1661",
+    "gold_table_id": "List_of_museums_and_cultural_institutions_in_New_York_City_19",
+    "answer_node": [
+      [
+        "Old Town, Staten Island",
+        [
+          1,
+          1
+        ],
+        "/wiki/Old_Town,_Staten_Island",
+        "passage"
+      ],
+      [
+        "John Bowne House",
+        [
+          2,
+          0
+        ],
+        "/wiki/John_Bowne_House",
+        "passage"
+      ],
+      [
+        "Vander Ende-Onderdonk House",
+        [
+          18,
+          0
+        ],
+        "/wiki/Vander_Ende-Onderdonk_House",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "32cdbb29efc454ff",
+    "answer": "1859",
+    "gold_table_id": "List_of_museums_and_cultural_institutions_in_New_York_City_24",
+    "answer_node": [
+      [
+        "Cooper Union",
+        [
+          1,
+          0
+        ],
+        "/wiki/Cooper_Union",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "339527a6ec8bfa47",
+    "answer": "3.1 million hectares",
+    "gold_table_id": "Cities_and_towns_of_the_South_Island_by_population_2",
+    "answer_node": [
+      [
+        "Southland, New Zealand",
+        [
+          4,
+          2
+        ],
+        "/wiki/Southland,_New_Zealand",
+        "passage"
+      ],
+      [
+        "Southland, New Zealand",
+        [
+          10,
+          2
+        ],
+        "/wiki/Southland,_New_Zealand",
+        "passage"
+      ],
+      [
+        "Southland, New Zealand",
+        [
+          18,
+          2
+        ],
+        "/wiki/Southland,_New_Zealand",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "33cdbbe28ebe063d",
+    "answer": "handmade leather products and ornate rugs",
+    "gold_table_id": "Chimborazo_Province_0",
+    "answer_node": [
+      [
+        "Guano, Ecuador",
+        [
+          6,
+          3
+        ],
+        "/wiki/Guano,_Ecuador",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "368d3534d0980601",
+    "answer": "March 14 , 2013",
+    "gold_table_id": "2013_Sporting_Kansas_City_season_3",
+    "answer_node": [
+      [
+        "March 14 , 2013",
+        [
+          1,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "March 14 , 2013",
+        [
+          2,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "March 14 , 2013",
+        [
+          3,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "March 14 , 2013",
+        [
+          4,
+          4
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "39e20d29e80a2a1f",
+    "answer": "Hospital",
+    "gold_table_id": "List_of_museums_and_cultural_institutions_in_New_York_City_11",
+    "answer_node": [
+      [
+        "Chelsea, Manhattan",
+        [
+          5,
+          1
+        ],
+        "/wiki/Chelsea,_Manhattan",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "3c7073d6918aa32a",
+    "answer": "1944",
+    "gold_table_id": "RAF_Thorney_Island_0",
+    "answer_node": [
+      [
+        "18 June 1944",
+        [
+          0,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "1 April 1944",
+        [
+          5,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "11 April 1944",
+        [
+          5,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "22 April 1944",
+        [
+          6,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "18 June 1944",
+        [
+          6,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "16 March 1944",
+        [
+          7,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "6 April 1944",
+        [
+          7,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "14 April 1944",
+        [
+          12,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "20 October 1944",
+        [
+          12,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "18 June 1944",
+        [
+          13,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "18 June 1944",
+        [
+          14,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "A detachment moved to B.87 in France in December 1944",
+        [
+          14,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "1 April 1944",
+        [
+          15,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "22 April 1944",
+        [
+          15,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "30 April 1944",
+        [
+          16,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "18 June 1944",
+        [
+          16,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "No. 21 Squadron RAF",
+        [
+          0,
+          0
+        ],
+        "/wiki/No._21_Squadron_RAF",
+        "passage"
+      ],
+      [
+        "De Havilland Mosquito",
+        [
+          0,
+          3
+        ],
+        "/wiki/De_Havilland_Mosquito",
+        "passage"
+      ],
+      [
+        "De Havilland Mosquito",
+        [
+          13,
+          3
+        ],
+        "/wiki/De_Havilland_Mosquito",
+        "passage"
+      ],
+      [
+        "De Havilland Mosquito",
+        [
+          14,
+          3
+        ],
+        "/wiki/De_Havilland_Mosquito",
+        "passage"
+      ],
+      [
+        "Boeing B-17 Flying Fortress",
+        [
+          9,
+          3
+        ],
+        "/wiki/Boeing_B-17_Flying_Fortress",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "3e3ee2738532b98f",
+    "answer": "47,774",
+    "gold_table_id": "List_of_cities_and_towns_in_India_11",
+    "answer_node": [],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "4b0da81d93498c99",
+    "answer": "Neo-Aramaic",
+    "gold_table_id": "Assyrian_population_by_country_0",
+    "answer_node": [
+      [
+        "Assyrians in Iran",
+        [
+          6,
+          2
+        ],
+        "/wiki/Assyrians_in_Iran",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "50803a7e7bcd6d8a",
+    "answer": "558,797",
+    "gold_table_id": "Provinces_of_South_Africa_2",
+    "answer_node": [
+      [
+        "558,797",
+        [
+          14,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "512614a13ab75049",
+    "answer": "10 April 2016",
+    "gold_table_id": "Municipalities_of_Switzerland_1",
+    "answer_node": [
+      [
+        "Gresso",
+        [
+          7,
+          1
+        ],
+        "/wiki/Gresso",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6015e916b08748a7",
+    "answer": "Kane County Cougars",
+    "gold_table_id": "Quad_Cities_River_Bandits_0",
+    "answer_node": [
+      [
+        "Wausau Mets",
+        [
+          6,
+          3
+        ],
+        "/wiki/Wausau_Mets",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "60a3bee01d06417a",
+    "answer": "Central Sumatra ( Sumatera Tengah )",
+    "gold_table_id": "Provinces_of_Indonesia_1",
+    "answer_node": [
+      [
+        "Central Sumatra ( Sumatera Tengah )",
+        [
+          4,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "61be8a8d94483bdb",
+    "answer": "roughly 400",
+    "gold_table_id": "List_of_National_Monuments_in_County_Kilkenny_0",
+    "answer_node": [
+      [
+        "Ogham",
+        [
+          1,
+          2
+        ],
+        "/wiki/Ogham",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "68d71f4901034c6c",
+    "answer": "72,465",
+    "gold_table_id": "List_of_cities_and_towns_in_India_19",
+    "answer_node": [
+      [
+        "72,465",
+        [
+          5,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "68e81d3681b85ac7",
+    "answer": "Forster",
+    "gold_table_id": "List_of_schools_in_Northern_Rivers_and_Mid_North_Coast_1",
+    "answer_node": [
+      [
+        "Great Lakes College ( Forster Campus )",
+        [
+          17,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Forster",
+        [
+          17,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Great Lakes College",
+        [
+          18,
+          0
+        ],
+        "/wiki/Great_Lakes_College",
+        "passage"
+      ],
+      [
+        "Great Lakes College",
+        [
+          19,
+          0
+        ],
+        "/wiki/Great_Lakes_College",
+        "passage"
+      ],
+      [
+        "Tuncurry, New South Wales",
+        [
+          18,
+          1
+        ],
+        "/wiki/Tuncurry,_New_South_Wales",
+        "passage"
+      ],
+      [
+        "Tuncurry, New South Wales",
+        [
+          19,
+          1
+        ],
+        "/wiki/Tuncurry,_New_South_Wales",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6cef8ff9e50ea1f4",
+    "answer": "230 square kilometres",
+    "gold_table_id": "List_of_islands_of_the_Marshall_Islands_1",
+    "answer_node": [
+      [
+        "Erikub Atoll",
+        [
+          4,
+          0
+        ],
+        "/wiki/Erikub_Atoll",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6f9f05c231b09f45",
+    "answer": "Two miles",
+    "gold_table_id": "List_of_places_of_worship_in_Sevenoaks_(district)_1",
+    "answer_node": [
+      [
+        "Four Elms",
+        [
+          7,
+          1
+        ],
+        "/wiki/Four_Elms",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "734a0527b35e3863",
+    "answer": "84,298",
+    "gold_table_id": "List_of_districts_of_Himachal_Pradesh_0",
+    "answer_node": [
+      [
+        "84,298",
+        [
+          4,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "78c2a81a6d3c3e67",
+    "answer": "310",
+    "gold_table_id": "List_of_National_Monuments_in_County_Dublin_0",
+    "answer_node": [
+      [
+        "310",
+        [
+          0,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "795319cf6f8c322c",
+    "answer": "April 1843",
+    "gold_table_id": "Mayor_of_Jersey_City_0",
+    "answer_node": [
+      [
+        "April 1843",
+        [
+          3,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "April 1843",
+        [
+          4,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Thomas A. Alexander",
+        [
+          3,
+          1
+        ],
+        "/wiki/Thomas_A._Alexander",
+        "passage"
+      ],
+      [
+        "Peter Bentley (mayor)",
+        [
+          4,
+          1
+        ],
+        "/wiki/Peter_Bentley_(mayor)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "7ed27e43d3f3d1a7",
+    "answer": "Russia",
+    "gold_table_id": "The_District!_0",
+    "answer_node": [
+      [
+        "Russia",
+        [
+          4,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "KROK International Animated Films Festival",
+        [
+          4,
+          2
+        ],
+        "/wiki/KROK_International_Animated_Films_Festival",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "7edb2051615e0598",
+    "answer": "Honolulu",
+    "gold_table_id": "List_of_U.S._cities_with_large_Japanese-American_populations_3",
+    "answer_node": [
+      [
+        "Aiea, Hawaii",
+        [
+          0,
+          1
+        ],
+        "/wiki/Aiea,_Hawaii",
+        "passage"
+      ],
+      [
+        "Hawaii",
+        [
+          0,
+          2
+        ],
+        "/wiki/Hawaii",
+        "passage"
+      ],
+      [
+        "Hawaii",
+        [
+          1,
+          2
+        ],
+        "/wiki/Hawaii",
+        "passage"
+      ],
+      [
+        "Hawaii",
+        [
+          2,
+          2
+        ],
+        "/wiki/Hawaii",
+        "passage"
+      ],
+      [
+        "Hawaii",
+        [
+          3,
+          2
+        ],
+        "/wiki/Hawaii",
+        "passage"
+      ],
+      [
+        "Hawaii",
+        [
+          4,
+          2
+        ],
+        "/wiki/Hawaii",
+        "passage"
+      ],
+      [
+        "Hawaii",
+        [
+          5,
+          2
+        ],
+        "/wiki/Hawaii",
+        "passage"
+      ],
+      [
+        "Hawaii",
+        [
+          6,
+          2
+        ],
+        "/wiki/Hawaii",
+        "passage"
+      ],
+      [
+        "Hawaii",
+        [
+          7,
+          2
+        ],
+        "/wiki/Hawaii",
+        "passage"
+      ],
+      [
+        "Hawaii",
+        [
+          8,
+          2
+        ],
+        "/wiki/Hawaii",
+        "passage"
+      ],
+      [
+        "Hawaii",
+        [
+          9,
+          2
+        ],
+        "/wiki/Hawaii",
+        "passage"
+      ],
+      [
+        "Hawaii",
+        [
+          10,
+          2
+        ],
+        "/wiki/Hawaii",
+        "passage"
+      ],
+      [
+        "Hawaii",
+        [
+          11,
+          2
+        ],
+        "/wiki/Hawaii",
+        "passage"
+      ],
+      [
+        "Pearl City, Hawaii",
+        [
+          1,
+          1
+        ],
+        "/wiki/Pearl_City,_Hawaii",
+        "passage"
+      ],
+      [
+        "Waimalu, Hawaii",
+        [
+          2,
+          1
+        ],
+        "/wiki/Waimalu,_Hawaii",
+        "passage"
+      ],
+      [
+        "Mililani Town, Hawaii",
+        [
+          4,
+          1
+        ],
+        "/wiki/Mililani_Town,_Hawaii",
+        "passage"
+      ],
+      [
+        "Kaneohe, Hawaii",
+        [
+          5,
+          1
+        ],
+        "/wiki/Kaneohe,_Hawaii",
+        "passage"
+      ],
+      [
+        "Waipio, Hawaii",
+        [
+          6,
+          1
+        ],
+        "/wiki/Waipio,_Hawaii",
+        "passage"
+      ],
+      [
+        "Wahiawa, Hawaii",
+        [
+          8,
+          1
+        ],
+        "/wiki/Wahiawa,_Hawaii",
+        "passage"
+      ],
+      [
+        "Halawa, Hawaii",
+        [
+          9,
+          1
+        ],
+        "/wiki/Halawa,_Hawaii",
+        "passage"
+      ],
+      [
+        "Waipahu, Hawaii",
+        [
+          10,
+          1
+        ],
+        "/wiki/Waipahu,_Hawaii",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "7fdab26324baf99b",
+    "answer": "2,317,105",
+    "gold_table_id": "List_of_big_cities_in_North_East_India_0",
+    "answer_node": [
+      [
+        "2,317,105",
+        [
+          13,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "80743146a51160e5",
+    "answer": "Kanjangad",
+    "gold_table_id": "List_of_populated_places_in_Adilabad_district_10",
+    "answer_node": [
+      [
+        "Kanhangad",
+        [
+          11,
+          0
+        ],
+        "/wiki/Kanhangad",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "80ef438776a08b12",
+    "answer": "40",
+    "gold_table_id": "List_of_Cardiff_City_F.C._records_and_statistics_2",
+    "answer_node": [
+      [
+        "Sean Morrison (footballer)",
+        [
+          8,
+          1
+        ],
+        "/wiki/Sean_Morrison_(footballer)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "82128e02c8ccfdd4",
+    "answer": "3",
+    "gold_table_id": "List_of_places_of_worship_in_Horsham_(district)_0",
+    "answer_node": [
+      [
+        "Ashington, West Sussex",
+        [
+          1,
+          1
+        ],
+        "/wiki/Ashington,_West_Sussex",
+        "passage"
+      ],
+      [
+        "Broadbridge Heath",
+        [
+          9,
+          1
+        ],
+        "/wiki/Broadbridge_Heath",
+        "passage"
+      ],
+      [
+        "Broadbridge Heath",
+        [
+          10,
+          1
+        ],
+        "/wiki/Broadbridge_Heath",
+        "passage"
+      ],
+      [
+        "Greatham, West Sussex",
+        [
+          19,
+          1
+        ],
+        "/wiki/Greatham,_West_Sussex",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "8a2800728ad52f0b",
+    "answer": "82,418",
+    "gold_table_id": "Municipalities_of_Switzerland_2",
+    "answer_node": [
+      [
+        "82,418",
+        [
+          6,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "8c2437d17bddaac1",
+    "answer": "760",
+    "gold_table_id": "List_of_lakes_in_China_0",
+    "answer_node": [
+      [
+        "760",
+        [
+          6,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "94f4b879743ea879",
+    "answer": "Afro-Ecuadorian",
+    "gold_table_id": "Provinces_of_Ecuador_0",
+    "answer_node": [
+      [
+        "Esmeraldas Province",
+        [
+          7,
+          1
+        ],
+        "/wiki/Esmeraldas_Province",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "96551046ac83465f",
+    "answer": "Jimmy Nielsen",
+    "gold_table_id": "2012_Sporting_Kansas_City_season_0",
+    "answer_node": [
+      [
+        "Jimmy Nielsen ( Captain )",
+        [
+          0,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "967524ff2c251c1a",
+    "answer": "Baptist",
+    "gold_table_id": "List_of_places_of_worship_in_Sevenoaks_(district)_1",
+    "answer_node": [
+      [
+        "Brasted Baptist Chapel",
+        [
+          0,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Brasted 51°16′31″N 0°06′16″E / 51.2754°N 0.1045°E / 51.2754 ; 0.1045 ( Brasted Baptist Chapel ( former ) , Brasted )",
+        [
+          0,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Baptist",
+        [
+          0,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "John Wills designed this in 1886 , adopting the Gothic Revival style and using unusual fenestration . R. Durtnell & Sons was the builder of the red- and white-brick chapel , which cost £750 and superseded a Baptist school and lecture hall . It fell out of religious use by 2003",
+        [
+          0,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "John Tyler founded this weatherboarded chapel in central Edenbridge in 1808 as a meeting place for Independent Calvinists . Various pastors served it , and it later became a Strict Baptist chapel aligned to the Gospel Standard movement . It is now a community centre and café",
+        [
+          6,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Baptist Mission Chapel",
+        [
+          9,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Goathurst Common , Ide Hill 51°15′01″N 0°08′33″E / 51.2504°N 0.1424°E / 51.2504 ; 0.1424 ( Baptist Mission Chapel ( former ) , Goathurst Common , Ide Hill )",
+        [
+          9,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Baptist",
+        [
+          9,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Designed in the Renaissance Revival style in 1881 and provided for the Bible Christian Church , this was in use by a group called the Seal Baptist Mission by 1984 but is now a house . The walls are predominantly yellow-brick with some red brickwork",
+        [
+          16,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Evangelicalism",
+        [
+          12,
+          2
+        ],
+        "/wiki/Evangelicalism",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "96daa68247fbab60",
+    "answer": "Mexicali",
+    "gold_table_id": "List_of_Baja_California_cities_0",
+    "answer_node": [
+      [
+        "Mexicali",
+        [
+          1,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mexicali",
+        [
+          1,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mexicali",
+        [
+          5,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mexicali",
+        [
+          7,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mexicali",
+        [
+          8,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mexicali",
+        [
+          10,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mexicali",
+        [
+          12,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mexicali",
+        [
+          14,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mexicali",
+        [
+          15,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mexicali",
+        [
+          16,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mexicali",
+        [
+          17,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mexicali",
+        [
+          18,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Santa Isabel, Baja California",
+        [
+          5,
+          1
+        ],
+        "/wiki/Santa_Isabel,_Baja_California",
+        "passage"
+      ],
+      [
+        "Guadalupe Victoria, Baja California",
+        [
+          7,
+          1
+        ],
+        "/wiki/Guadalupe_Victoria,_Baja_California",
+        "passage"
+      ],
+      [
+        "San Felipe, Baja California",
+        [
+          8,
+          1
+        ],
+        "/wiki/San_Felipe,_Baja_California",
+        "passage"
+      ],
+      [
+        "Puebla, Baja California",
+        [
+          10,
+          1
+        ],
+        "/wiki/Puebla,_Baja_California",
+        "passage"
+      ],
+      [
+        "Lomas de Santa Anita, Baja California",
+        [
+          11,
+          1
+        ],
+        "/wiki/Lomas_de_Santa_Anita,_Baja_California",
+        "passage"
+      ],
+      [
+        "Progreso, Baja California",
+        [
+          18,
+          1
+        ],
+        "/wiki/Progreso,_Baja_California",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9857b6ed61169e8f",
+    "answer": "60",
+    "gold_table_id": "List_of_freshwater_islands_in_Scotland_3",
+    "answer_node": [
+      [
+        "River Deveron",
+        [
+          0,
+          1
+        ],
+        "/wiki/River_Deveron",
+        "passage"
+      ],
+      [
+        "River Deveron",
+        [
+          1,
+          1
+        ],
+        "/wiki/River_Deveron",
+        "passage"
+      ],
+      [
+        "River Ythan",
+        [
+          2,
+          1
+        ],
+        "/wiki/River_Ythan",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9a40a980f92b47af",
+    "answer": "Saint Peter Basseterre",
+    "gold_table_id": "List_of_cities_and_towns_in_Saint_Kitts_and_Nevis_0",
+    "answer_node": [
+      [
+        "Saint Peter Basseterre . Saint Kitts",
+        [
+          13,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9c83922f4b2c9d6c",
+    "answer": "between 18 and 24° C",
+    "gold_table_id": "Loja_Province_0",
+    "answer_node": [
+      [
+        "Chaguarpamba Canton",
+        [
+          3,
+          0
+        ],
+        "/wiki/Chaguarpamba_Canton",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9eabe5f0f2b51f1c",
+    "answer": "Greenland",
+    "gold_table_id": "List_of_islands_by_population_0",
+    "answer_node": [
+      [
+        "Americas",
+        [
+          1,
+          1
+        ],
+        "/wiki/Americas",
+        "passage"
+      ],
+      [
+        "New Guinea",
+        [
+          17,
+          1
+        ],
+        "/wiki/New_Guinea",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a164effe134511cc",
+    "answer": "979",
+    "gold_table_id": "List_of_cities,_towns_and_villages_in_the_Solomon_Islands_0",
+    "answer_node": [
+      [
+        "979",
+        [
+          5,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a1b334baae32ca2f",
+    "answer": "10 miles",
+    "gold_table_id": "El_Oro_Province_0",
+    "answer_node": [
+      [
+        "Santa Rosa, El Oro",
+        [
+          12,
+          3
+        ],
+        "/wiki/Santa_Rosa,_El_Oro",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a251b7c2adb7bbf2",
+    "answer": "FB",
+    "gold_table_id": "2010_Kansas_City_Chiefs_season_0",
+    "answer_node": [
+      [
+        "FB",
+        [
+          5,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a2641cfc0ef10f84",
+    "answer": "New York City",
+    "gold_table_id": "Federal_Correctional_Institution,_Terminal_Island_0",
+    "answer_node": [
+      [
+        "Consigliere for the Bonanno crime family in New York City in the 1960s and son of former boss Joseph Bonanno",
+        [
+          2,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Former associate of the Lucchese crime family in New York City ; portrayed by Ray Liotta in the 1990 film Goodfellas",
+        [
+          5,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Al Capone",
+        [
+          4,
+          0
+        ],
+        "/wiki/Al_Capone",
+        "passage"
+      ],
+      [
+        "Rum-running",
+        [
+          4,
+          3
+        ],
+        "/wiki/Rum-running",
+        "passage"
+      ],
+      [
+        "Henry Hill",
+        [
+          5,
+          0
+        ],
+        "/wiki/Henry_Hill",
+        "passage"
+      ],
+      [
+        "Gambino crime family",
+        [
+          10,
+          3
+        ],
+        "/wiki/Gambino_crime_family",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a27d073353eb0d5c",
+    "answer": "2,193",
+    "gold_table_id": "Osijek-Baranja_County_0",
+    "answer_node": [],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a29ac176fc7eef97",
+    "answer": "Departement van de Rijn",
+    "gold_table_id": "Provinces_of_the_Netherlands_1",
+    "answer_node": [
+      [
+        "Departement van de Rijn",
+        [
+          2,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a2cb0ccdb51b4e09",
+    "answer": "512358",
+    "gold_table_id": "List_of_cities_and_towns_in_India_22",
+    "answer_node": [],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a58088728d79b68d",
+    "answer": "Mr. Antonio Zamperla",
+    "gold_table_id": "Darien_Lake_0",
+    "answer_node": [
+      [
+        "Zamperla",
+        [
+          3,
+          2
+        ],
+        "/wiki/Zamperla",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a861c1bbdd77c931",
+    "answer": "Sarab Khanate",
+    "gold_table_id": "List_of_East_Azarbaijan_cities_and_towns_by_population_0",
+    "answer_node": [
+      [
+        "Sarab, East Azerbaijan",
+        [
+          6,
+          1
+        ],
+        "/wiki/Sarab,_East_Azerbaijan",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "aa7e19c550a44a53",
+    "answer": "26,700",
+    "gold_table_id": "Ghazni_Province_0",
+    "answer_node": [
+      [
+        "26,700",
+        [
+          0,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b1710071e7cf628a",
+    "answer": "6 to 8 May 2016",
+    "gold_table_id": "Tour_of_Chongming_Island_0",
+    "answer_node": [
+      [
+        "2016 Tour of Chongming Island",
+        [
+          9,
+          0
+        ],
+        "/wiki/2016_Tour_of_Chongming_Island",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b67153306405118f",
+    "answer": "the Clutha River",
+    "gold_table_id": "Cities_and_towns_of_the_South_Island_by_population_2",
+    "answer_node": [
+      [
+        "Alexandra, New Zealand",
+        [
+          0,
+          0
+        ],
+        "/wiki/Alexandra,_New_Zealand",
+        "passage"
+      ],
+      [
+        "Balclutha, New Zealand",
+        [
+          3,
+          0
+        ],
+        "/wiki/Balclutha,_New_Zealand",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b6c9a4e6b0dab5b3",
+    "answer": "the Chenab River",
+    "gold_table_id": "List_of_Pakistani_provinces_by_gross_domestic_product_2",
+    "answer_node": [
+      [
+        "Multan",
+        [
+          5,
+          1
+        ],
+        "/wiki/Multan",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b78f2582d1fa3057",
+    "answer": "619",
+    "gold_table_id": "River_island_1",
+    "answer_node": [
+      [
+        "619",
+        [
+          0,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Salsette Island",
+        [
+          0,
+          0
+        ],
+        "/wiki/Salsette_Island",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "bba9cefb5bf3338e",
+    "answer": "Linton E. Allen Memorial Fountain",
+    "gold_table_id": "List_of_urbanized_areas_in_Florida_(by_population)_0",
+    "answer_node": [
+      [
+        "Orlando, Florida",
+        [
+          2,
+          1
+        ],
+        "/wiki/Orlando,_Florida",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "bd7011cbd28f2aa2",
+    "answer": "7",
+    "gold_table_id": "List_of_lakes_in_New_Zealand_2",
+    "answer_node": [],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "be6ebff950e35063",
+    "answer": "mainland China",
+    "gold_table_id": "List_of_islands_by_population_density_1",
+    "answer_node": [
+      [
+        "Kinmen",
+        [
+          0,
+          0
+        ],
+        "/wiki/Kinmen",
+        "passage"
+      ],
+      [
+        "Taiwan (island)",
+        [
+          3,
+          0
+        ],
+        "/wiki/Taiwan_(island)",
+        "passage"
+      ],
+      [
+        "Hong Kong",
+        [
+          9,
+          1
+        ],
+        "/wiki/Hong_Kong",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "bf2231fbbfc34dfe",
+    "answer": "1973",
+    "gold_table_id": "List_of_Cardiff_City_F.C._records_and_statistics_2",
+    "answer_node": [
+      [
+        "Sunderland A.F.C.",
+        [
+          7,
+          3
+        ],
+        "/wiki/Sunderland_A.F.C.",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "c01d56a2b520b4c8",
+    "answer": "4",
+    "gold_table_id": "RAF_Thorney_Island_0",
+    "answer_node": [],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "c060dbca14da54d8",
+    "answer": "New Netherland",
+    "gold_table_id": "List_of_museums_and_cultural_institutions_in_New_York_City_1",
+    "answer_node": [
+      [
+        "Flushing, Queens",
+        [
+          6,
+          1
+        ],
+        "/wiki/Flushing,_Queens",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "c12e6b3d6ed936be",
+    "answer": "117 mi",
+    "gold_table_id": "List_of_cities_and_towns_in_India_6",
+    "answer_node": [
+      [
+        "Gadwal",
+        [
+          1,
+          0
+        ],
+        "/wiki/Gadwal",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "c3b363ef7891801f",
+    "answer": "$ 1887/-",
+    "gold_table_id": "List_of_Pakistani_provinces_by_gross_domestic_product_2",
+    "answer_node": [
+      [
+        "$ 1887/-",
+        [
+          8,
+          4
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "c49662ed4ff861a5",
+    "answer": "Deer Park Monastery",
+    "gold_table_id": "List_of_sanghas_in_San_Diego_County,_California_0",
+    "answer_node": [
+      [
+        "Deer Park Monastery",
+        [
+          7,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Deer Park Monastery",
+        [
+          18,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "c5906c5b7dfff09c",
+    "answer": "Historical Society",
+    "gold_table_id": "Washington_County_History_&_Landmarks_Foundation_3",
+    "answer_node": [
+      [
+        "Jennings-Gallagher House",
+        [
+          12,
+          0
+        ],
+        "/wiki/Jennings-Gallagher_House",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "c65d9f3e457a8e60",
+    "answer": "1,521",
+    "gold_table_id": "County_of_Churchill,_Queensland_0",
+    "answer_node": [
+      [
+        "Hatton Vale, Queensland",
+        [
+          15,
+          2
+        ],
+        "/wiki/Hatton_Vale,_Queensland",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "cd85f9fe906591a5",
+    "answer": "1825",
+    "gold_table_id": "List_of_county_courthouses_in_Washington_(state)_0",
+    "answer_node": [
+      [
+        "Vancouver, Washington",
+        [
+          5,
+          3
+        ],
+        "/wiki/Vancouver,_Washington",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d0f10aa6129a568c",
+    "answer": "1,174,209",
+    "gold_table_id": "Cities_of_East_Asia_2",
+    "answer_node": [
+      [
+        "1,174,209",
+        [
+          10,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d0f264fa0c1e002a",
+    "answer": "Territory of New Mexico",
+    "gold_table_id": "List_of_counties_in_Colorado_2",
+    "answer_node": [
+      [
+        "Territory of New Mexico",
+        [
+          0,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Originally one of the seven partidos of the Spanish , and later Mexican , province of Santa Fe de Nuevo México . One of the nine original counties created by the Territory of New Mexico in 1852 . Excluded from the new Territory of Colorado in 1861",
+        [
+          0,
+          4
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d25fb67c3ef630dc",
+    "answer": "The Independent State of Croatia",
+    "gold_table_id": "Turkish_population_2",
+    "answer_node": [
+      [
+        "Croatia",
+        [
+          2,
+          0
+        ],
+        "/wiki/Croatia",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d39108dc04639a09",
+    "answer": "8",
+    "gold_table_id": "Municipalities_of_Switzerland_3",
+    "answer_node": [
+      [
+        "8",
+        [
+          7,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "db8d81dc9c2c2aaa",
+    "answer": "Mamajuda Island",
+    "gold_table_id": "List_of_islands_of_Michigan_4",
+    "answer_node": [
+      [
+        "Mamajuda Island",
+        [
+          12,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "dcc00aa6352f6f8f",
+    "answer": "Hudson",
+    "gold_table_id": "List_of_U.S._cities_with_significant_Korean-American_populations_3",
+    "answer_node": [
+      [
+        "Koreatown, Palisades Park",
+        [
+          0,
+          1
+        ],
+        "/wiki/Koreatown,_Palisades_Park",
+        "passage"
+      ],
+      [
+        "Bergen County, New Jersey",
+        [
+          0,
+          2
+        ],
+        "/wiki/Bergen_County,_New_Jersey",
+        "passage"
+      ],
+      [
+        "Bergen County, New Jersey",
+        [
+          1,
+          2
+        ],
+        "/wiki/Bergen_County,_New_Jersey",
+        "passage"
+      ],
+      [
+        "Bergen County, New Jersey",
+        [
+          2,
+          2
+        ],
+        "/wiki/Bergen_County,_New_Jersey",
+        "passage"
+      ],
+      [
+        "Bergen County, New Jersey",
+        [
+          3,
+          2
+        ],
+        "/wiki/Bergen_County,_New_Jersey",
+        "passage"
+      ],
+      [
+        "Bergen County, New Jersey",
+        [
+          4,
+          2
+        ],
+        "/wiki/Bergen_County,_New_Jersey",
+        "passage"
+      ],
+      [
+        "Bergen County, New Jersey",
+        [
+          5,
+          2
+        ],
+        "/wiki/Bergen_County,_New_Jersey",
+        "passage"
+      ],
+      [
+        "Bergen County, New Jersey",
+        [
+          6,
+          2
+        ],
+        "/wiki/Bergen_County,_New_Jersey",
+        "passage"
+      ],
+      [
+        "Bergen County, New Jersey",
+        [
+          7,
+          2
+        ],
+        "/wiki/Bergen_County,_New_Jersey",
+        "passage"
+      ],
+      [
+        "Bergen County, New Jersey",
+        [
+          8,
+          2
+        ],
+        "/wiki/Bergen_County,_New_Jersey",
+        "passage"
+      ],
+      [
+        "Bergen County, New Jersey",
+        [
+          9,
+          2
+        ],
+        "/wiki/Bergen_County,_New_Jersey",
+        "passage"
+      ],
+      [
+        "Edgewater, New Jersey",
+        [
+          7,
+          1
+        ],
+        "/wiki/Edgewater,_New_Jersey",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "dea6326bc98861ff",
+    "answer": "$ 675,000",
+    "gold_table_id": "Multnomah_County_Library_0",
+    "answer_node": [
+      [
+        "Hollywood Library",
+        [
+          8,
+          0
+        ],
+        "/wiki/Hollywood_Library",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e1d41c4b15f3187e",
+    "answer": "Malanda",
+    "gold_table_id": "County_of_Nares_0",
+    "answer_node": [
+      [
+        "Malanda",
+        [
+          17,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Malanda",
+        [
+          17,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e29375137846ee0e",
+    "answer": "Karnataka",
+    "gold_table_id": "List_of_populated_places_in_Adilabad_district_10",
+    "answer_node": [
+      [
+        "Andhra Pradesh",
+        [
+          1,
+          1
+        ],
+        "/wiki/Andhra_Pradesh",
+        "passage"
+      ],
+      [
+        "Andhra Pradesh",
+        [
+          9,
+          1
+        ],
+        "/wiki/Andhra_Pradesh",
+        "passage"
+      ],
+      [
+        "Andhra Pradesh",
+        [
+          10,
+          1
+        ],
+        "/wiki/Andhra_Pradesh",
+        "passage"
+      ],
+      [
+        "Telangana",
+        [
+          2,
+          1
+        ],
+        "/wiki/Telangana",
+        "passage"
+      ],
+      [
+        "Telangana",
+        [
+          8,
+          1
+        ],
+        "/wiki/Telangana",
+        "passage"
+      ],
+      [
+        "Tamil Nadu",
+        [
+          5,
+          1
+        ],
+        "/wiki/Tamil_Nadu",
+        "passage"
+      ],
+      [
+        "Tamil Nadu",
+        [
+          19,
+          1
+        ],
+        "/wiki/Tamil_Nadu",
+        "passage"
+      ],
+      [
+        "Kerala",
+        [
+          11,
+          1
+        ],
+        "/wiki/Kerala",
+        "passage"
+      ],
+      [
+        "Kerala",
+        [
+          12,
+          1
+        ],
+        "/wiki/Kerala",
+        "passage"
+      ],
+      [
+        "Kerala",
+        [
+          18,
+          1
+        ],
+        "/wiki/Kerala",
+        "passage"
+      ],
+      [
+        "Maharashtra",
+        [
+          16,
+          1
+        ],
+        "/wiki/Maharashtra",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e2958b5a8eccc251",
+    "answer": "5579 sq mi",
+    "gold_table_id": "List_of_cities_and_towns_in_India_12",
+    "answer_node": [],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e56b72cae74d106e",
+    "answer": "1,961,269",
+    "gold_table_id": "Provinces_of_Zambia_0",
+    "answer_node": [
+      [
+        "1,961,269",
+        [
+          2,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e7abcb3506389497",
+    "answer": "2015",
+    "gold_table_id": "List_of_Huddersfield_Town_F.C._managers_1",
+    "answer_node": [
+      [
+        "David Wagner (soccer)",
+        [
+          13,
+          0
+        ],
+        "/wiki/David_Wagner_(soccer)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e88dd74713743768",
+    "answer": "749",
+    "gold_table_id": "List_of_rivers_of_Croatia_0",
+    "answer_node": [
+      [
+        "749",
+        [
+          1,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e977b50b006e6675",
+    "answer": "885,287",
+    "gold_table_id": "List_of_cities_in_Burma_0",
+    "answer_node": [
+      [
+        "885,287",
+        [
+          1,
+          4
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ea7b4e1aa3a77671",
+    "answer": "50 km",
+    "gold_table_id": "Cities_and_towns_of_the_South_Island_by_population_2",
+    "answer_node": [
+      [
+        "Amberley, New Zealand",
+        [
+          1,
+          0
+        ],
+        "/wiki/Amberley,_New_Zealand",
+        "passage"
+      ],
+      [
+        "Cromwell, New Zealand",
+        [
+          6,
+          0
+        ],
+        "/wiki/Cromwell,_New_Zealand",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ee976fee5ca6ac07",
+    "answer": "William III",
+    "gold_table_id": "List_of_cities_in_the_Bahamas_0",
+    "answer_node": [
+      [
+        "Nassau, Bahamas",
+        [
+          0,
+          0
+        ],
+        "/wiki/Nassau,_Bahamas",
+        "passage"
+      ],
+      [
+        "New Providence",
+        [
+          0,
+          3
+        ],
+        "/wiki/New_Providence",
+        "passage"
+      ],
+      [
+        "New Providence",
+        [
+          5,
+          3
+        ],
+        "/wiki/New_Providence",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "eefd905a8ba3f3c6",
+    "answer": "1949",
+    "gold_table_id": "List_of_cities_and_towns_in_India_3",
+    "answer_node": [
+      [
+        "Rajasthan",
+        [
+          2,
+          1
+        ],
+        "/wiki/Rajasthan",
+        "passage"
+      ],
+      [
+        "Tripura",
+        [
+          6,
+          1
+        ],
+        "/wiki/Tripura",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f2370aae0fa0cf6e",
+    "answer": "242",
+    "gold_table_id": "Hamburg_Altona_(electoral_district)_0",
+    "answer_node": [
+      [
+        "1972 West German federal election",
+        [
+          10,
+          0
+        ],
+        "/wiki/1972_West_German_federal_election",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f2606121632413f7",
+    "answer": "Ruy López de Villalobos",
+    "gold_table_id": "List_of_islands_of_Palau_0",
+    "answer_node": [
+      [
+        "Angaur",
+        [
+          0,
+          0
+        ],
+        "/wiki/Angaur",
+        "passage"
+      ],
+      [
+        "Angaur",
+        [
+          0,
+          3
+        ],
+        "/wiki/Angaur",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f30703672c705f53",
+    "answer": "2,238,537",
+    "gold_table_id": "Administrative_divisions_of_Yemen_0",
+    "answer_node": [
+      [
+        "2,238,537",
+        [
+          13,
+          4
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f8b396d59395baad",
+    "answer": "Bloc vote system",
+    "gold_table_id": "List_of_counties_and_boroughs_of_the_Unreformed_House_of_Commons_at_1800_0",
+    "answer_node": [
+      [
+        "Cornwall (UK Parliament constituency)",
+        [
+          5,
+          0
+        ],
+        "/wiki/Cornwall_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Devon (UK Parliament constituency)",
+        [
+          8,
+          0
+        ],
+        "/wiki/Devon_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Dorset (UK Parliament constituency)",
+        [
+          9,
+          0
+        ],
+        "/wiki/Dorset_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Hertfordshire (UK Parliament constituency)",
+        [
+          15,
+          0
+        ],
+        "/wiki/Hertfordshire_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Huntingdonshire (UK Parliament constituency)",
+        [
+          16,
+          0
+        ],
+        "/wiki/Huntingdonshire_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Kent (UK Parliament constituency)",
+        [
+          17,
+          0
+        ],
+        "/wiki/Kent_(UK_Parliament_constituency)",
+        "passage"
+      ],
+      [
+        "Leicestershire (UK Parliament constituency)",
+        [
+          19,
+          0
+        ],
+        "/wiki/Leicestershire_(UK_Parliament_constituency)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "fc1136f50df971f6",
+    "answer": "first Anglo-Sikh",
+    "gold_table_id": "List_of_populated_places_in_Adilabad_district_9",
+    "answer_node": [
+      [
+        "Jalandhar Cantt.",
+        [
+          3,
+          0
+        ],
+        "/wiki/Jalandhar_Cantt.",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  }
+]

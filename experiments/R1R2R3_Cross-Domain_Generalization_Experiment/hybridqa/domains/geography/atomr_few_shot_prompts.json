@@ -1,0 +1,295 @@
+{
+  "domain": "geography",
+  "description": "Leakage-aware, domain-specific AtomR demonstrations derived from non-evaluation table and linked-document facts.",
+  "minimum_examples_per_stage": 8,
+  "replace_base_examples": true,
+  "stage_guidance": {
+    "tree_generation": "Decompose geography questions into a table bridge lookup followed by a linked-document fact lookup when needed. Keep children executable and preserve [n] references exactly.",
+    "source_selection": "In geography HybridQA, Table is the complete bound table and Text is its linked documents. Use Table for row values, rankings, dates, names, categories, and comparisons; Text for descriptive or relational prose; both for bridge questions.",
+    "direct_answer": "Return only evidence-compatible geography entities, names, dates, counts, organizations, places, titles, or short phrases in the required Answer List format.",
+    "direct_rag": "Resolve the table candidate or bridge before extracting the final linked-document fact. Copy the final span faithfully and do not substitute unrelated prior knowledge.",
+    "search": "Identify only the requested current-hop entity or candidate from the supplied evidence; do not jump to a later-hop answer.",
+    "relate": "Return only the value connected to the named entity by the requested relation, preserving exact names, dates, quantities, and labels.",
+    "filter": "Apply every stated condition to the candidate set and return all and only matching entities.",
+    "answer_from_child_qa": "Fuse child answers in dependency order, resolve references, and exclude intermediate bridge entities unless the final question requests them."
+  },
+  "stages": {
+    "tree_generation": [
+      {
+        "input": "Which city in British Columbia has a name of Irish origin?",
+        "output": "{\"Which city in British Columbia has a name of Irish origin?\": [\"1. Find the city in British Columbia with Irish origin.\", \"2. Identify the city name.\"], \"1. Find the city in British Columbia with Irish origin.\": \"Relate('British Columbia', 'city with Irish origin')\", \"2. Identify the city name.\": \"Relate([1], 'city name')\"}"
+      },
+      {
+        "input": "What is the population of the special city in Kanagawa Prefecture that was designated in 2002?",
+        "output": "{\"What is the population of the special city in Kanagawa Prefecture that was designated in 2002?\": [\"1. Find the special city in Kanagawa Prefecture designated in 2002.\", \"2. Get its population.\"], \"1. Find the special city in Kanagawa Prefecture designated in 2002.\": \"Relate('Kanagawa Prefecture', 'special city designated in 2002')\", \"2. Get its population.\": \"Relate([1], 'population')\"}"
+      },
+      {
+        "input": "Which island in the St. Marys River is in Sugar Island Township?",
+        "output": "{\"Which island in the St. Marys River is in Sugar Island Township?\": [\"1. Find the island in the St. Marys River in Sugar Island Township.\", \"2. Identify the island name.\"], \"1. Find the island in the St. Marys River in Sugar Island Township.\": \"Relate('St. Marys River', 'island in Sugar Island Township')\", \"2. Identify the island name.\": \"Relate([1], 'island name')\"}"
+      },
+      {
+        "input": "Which federal state in Germany has the highest average number of inhabitants?",
+        "output": "{\"Which federal state in Germany has the highest average number of inhabitants?\": [\"1. Find the federal state with the highest average number of inhabitants.\", \"2. Identify the federal state.\"], \"1. Find the federal state with the highest average number of inhabitants.\": \"Relate('Germany', 'federal state with highest average inhabitants')\", \"2. Identify the federal state.\": \"Relate([1], 'federal state name')\"}"
+      },
+      {
+        "input": "What is the municipal seat of the municipality with INEGI code 23005?",
+        "output": "{\"What is the municipal seat of the municipality with INEGI code 23005?\": [\"1. Find the municipality with INEGI code 23005.\", \"2. Get its municipal seat.\"], \"1. Find the municipality with INEGI code 23005.\": \"Relate('INEGI code 23005', 'municipality')\", \"2. Get its municipal seat.\": \"Relate([1], 'municipal seat')\"}"
+      },
+      {
+        "input": "Which town in Rajasthan has a population of 26,411?",
+        "output": "{\"Which town in Rajasthan has a population of 26,411?\": [\"1. Find the town in Rajasthan with population 26,411.\", \"2. Identify the town name.\"], \"1. Find the town in Rajasthan with population 26,411.\": \"Relate('Rajasthan', 'town with population 26,411')\", \"2. Identify the town name.\": \"Relate([1], 'town name')\"}"
+      },
+      {
+        "input": "What is the language of origin for the city named after a lake in Alberta?",
+        "output": "{\"What is the language of origin for the city named after a lake in Alberta?\": [\"1. Find the city in Alberta named after a lake.\", \"2. Get its language of origin.\"], \"1. Find the city in Alberta named after a lake.\": \"Relate('Alberta', 'city named after a lake')\", \"2. Get its language of origin.\": \"Relate([1], 'language of origin')\"}"
+      },
+      {
+        "input": "Which island in the Faroe Islands has the highest population density?",
+        "output": "{\"Which island in the Faroe Islands has the highest population density?\": [\"1. Find the island with the highest population density.\", \"2. Identify the island name.\"], \"1. Find the island with the highest population density.\": \"Relate('Faroe Islands', 'island with highest population density')\", \"2. Identify the island name.\": \"Relate([1], 'island name')\"}"
+      }
+    ],
+    "source_selection": [
+      {
+        "input": "Which city in British Columbia has an etymology that is disputed?",
+        "output": "Table"
+      },
+      {
+        "input": "What is the population of Atsugi as of 2012?",
+        "output": "Table"
+      },
+      {
+        "input": "Which island in the St. Marys River is in Sugar Island Township?",
+        "output": "Table"
+      },
+      {
+        "input": "What is the first sentence of the Wikipedia article for Abbotsford, British Columbia?",
+        "output": "Text"
+      },
+      {
+        "input": "What is the capital of Baden-Württemberg?",
+        "output": "Text"
+      },
+      {
+        "input": "What is the population of the municipality of Benito Juárez in Quintana Roo?",
+        "output": "Table, Text"
+      },
+      {
+        "input": "Which town in Rajasthan has a population of 26,411 and what is its type?",
+        "output": "Table, Text"
+      },
+      {
+        "input": "What is the area of the island of Streymoy and what is its main place?",
+        "output": "Table, Text"
+      }
+    ],
+    "direct_answer": [
+      {
+        "input": "Which city in British Columbia was named after a London banker who helped finance a railway?",
+        "output": "So the answer is: (1) Paraphrase Answer: The city in British Columbia named after a London banker who helped finance a railway is Armstrong. (2) Answer List: [\"Armstrong\"]"
+      },
+      {
+        "input": "What is the population of Atsugi as of 2012?",
+        "output": "So the answer is: (1) Paraphrase Answer: The population of Atsugi in 2012 was 224,181. (2) Answer List: [\"224,181\"]"
+      },
+      {
+        "input": "Which island in the St. Marys River is in Sugar Island Township?",
+        "output": "So the answer is: (1) Paraphrase Answer: The islands in the St. Marys River that are in Sugar Island Township are Advance Island, Cook Island, and Duck Island. (2) Answer List: [\"Advance Island\", \"Cook Island\", \"Duck Island\"]"
+      },
+      {
+        "input": "Which federal state in Germany has the highest average number of inhabitants per municipality?",
+        "output": "So the answer is: (1) Paraphrase Answer: The federal state with the highest average number of inhabitants per municipality is Berlin, with an average of 3,416,255. (2) Answer List: [\"Berlin\"]"
+      },
+      {
+        "input": "What is the municipal seat of the municipality with INEGI code 23005?",
+        "output": "So the answer is: (1) Paraphrase Answer: The municipal seat of the municipality with INEGI code 23005 is Cancún. (2) Answer List: [\"Cancún\"]"
+      },
+      {
+        "input": "Which town in Rajasthan has a population of 26,411 according to the 2011 census?",
+        "output": "So the answer is: (1) Paraphrase Answer: The town in Rajasthan with a population of 26,411 in 2011 is Nadbai. (2) Answer List: [\"Nadbai\"]"
+      },
+      {
+        "input": "Which city in Alberta was named after a place in Scotland?",
+        "output": "So the answer is: (1) Paraphrase Answer: The cities in Alberta named after places in Scotland are Airdrie and Calgary. (2) Answer List: [\"Airdrie\", \"Calgary\"]"
+      },
+      {
+        "input": "Which island in the Faroe Islands has the highest population density?",
+        "output": "So the answer is: (1) Paraphrase Answer: The island with the highest population density is Streymoy, with 57.4 people per km². (2) Answer List: [\"Streymoy\"]"
+      }
+    ],
+    "direct_rag": [
+      {
+        "input": "Supporting knowledge: Table: City | Language of origin | Explanation. Rows: Abbotsford | English | ...; Armstrong | English | ...; Burnaby | English | ...; Campbell River | English | ...; Castlegar | Irish | ... . Doc: Abbotsford is a city located in British Columbia, adjacent to the Canada-United States border, Greater Vancouver and the Fraser River. Question: Which city in British Columbia, according to the table, has a name of Irish origin, and what is its location according to the document?",
+        "output": "So the answer is: (1) Paraphrase Answer: The city with an Irish name origin is Castlegar, and according to the document, it is located in British Columbia, Canada. (2) Answer List: [\"Castlegar\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: Name | Japanese | Population (2012) | Date of designation | Region | Prefecture. Rows: Atsugi | 厚木市 | 224,181 | 2002-04-01 | Kantō | Kanagawa; Hiratsuka | 平塚市 | 260,061 | 2001-04-01 | Kantō | Kanagawa; Ibaraki | 茨木市 | 276,474 | 2001-04-01 | Kansai | Osaka; Isesaki | 伊勢崎市 | 207,253 | 2007-04-01 | Kantō | Gunma; Jōetsu | 上越市 | 202,366 | 2007-04-01 | Chūbu | Niigata. Doc: Atsugi is a city located in Kanagawa Prefecture, Japan. Question: Which city in the table has the highest population, and what is its prefecture?",
+        "output": "So the answer is: (1) Paraphrase Answer: The city with the highest population is Ibaraki, with a population of 276,474, and its prefecture is Osaka. (2) Answer List: [\"Ibaraki\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: Island | Municipality | County. Rows: Advance Island | Sugar Island Township | Chippewa; Bass Reef Island | Raber Township | Chippewa; Chicken Islands | Soo Township | Chippewa; Cook Island | Sugar Island Township | Chippewa; Duck Island | Sugar Island Township | Chippewa. Doc: Chippewa County is a county in the Upper Peninsula of the U.S. state of Michigan. Question: Which island in the table is in Raber Township, and what county is it in?",
+        "output": "So the answer is: (1) Paraphrase Answer: The island in Raber Township is Bass Reef Island, and it is in Chippewa County. (2) Answer List: [\"Bass Reef Island\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: Federal state | Municipalities | Municipalities that are urban districts | Average no. of inhabitants | Average area (km²) | List. Rows: Baden-Württemberg | 1,101 | 9 | 9,764 | 32.41 | C, T, M; Bavaria | 2,056 | 25 | 6,090 | 33.03 | C, T, M; Berlin | 1 | 1 | 3,416,255 | 891.02 | Berlin; Brandenburg | 419 | 4 | 6,052 | 70.36 | C, T, M; Bremen | 2 | 2 | 331,541 | 202.14 | Bremen, Bremerhaven. Doc: Berlin is the capital and largest city of Germany by both area and population. Question: Which federal state has the highest average number of inhabitants, and what is its capital according to the document?",
+        "output": "So the answer is: (1) Paraphrase Answer: The federal state with the highest average number of inhabitants is Berlin, with an average of 3,416,255, and its capital is Berlin. (2) Answer List: [\"Berlin\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: INEGI code | Municipality | Municipal seat | Population (2010). Rows: 23001 | Cozumel | San Miguel de Cozumel | 79,535; 23002 | Felipe Carrillo Puerto | Felipe Carrillo Puerto | 75,026; 23003 | Isla Mujeres | Isla Mujeres | 16,203; 23004 | Othón P. Blanco | Chetumal | 244,553; 23005 | Benito Juárez | Cancún | 645,451. Doc: Cancún is a city in southeast Mexico on the northeast coast of the Yucatán Peninsula in the Mexican state of Quintana Roo. Question: Which municipality has the highest population, and what is its municipal seat according to the table?",
+        "output": "So the answer is: (1) Paraphrase Answer: The municipality with the highest population is Benito Juárez, with a population of 645,451, and its municipal seat is Cancún. (2) Answer List: [\"Benito Juárez\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: Name of Town | State | Type | Population (2011). Rows: Nabarangapur | Odisha | M | 29,960; Nabha | Punjab | M.Cl | 67,972; Nadbai | Rajasthan | M | 26,411; Nagar | Rajasthan | M | 25,572; Nagari | Andhra Pradesh | M | 62,253. Doc: Nabarangpur, also known as Nabarangapur or Nowrangpur, is a town and a municipality in Nabarangapur district in the Indian state of Odisha. Question: Which town in the table has the highest population, and what is its state?",
+        "output": "So the answer is: (1) Paraphrase Answer: The town with the highest population is Nabha, with a population of 67,972, and its state is Punjab. (2) Answer List: [\"Nabha\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: City | Language of origin | Explanation. Rows: Airdrie | Scottish Gaelic | Named for Airdrie, North Lanarkshire, in Scotland. Possibly originally from Gaelic An Àrd Ruigh meaning a level height or high pasture; Brooks | English | Named for Noel Edgell Brooks, a Canadian Pacific Railway Divisional Engineer from Calgary. Brooks' name was chosen through a contest in 1904; Calgary | Scottish Gaelic | Named for Calgary, Mull, which originated from the Scottish Gaelic Cala ghearraidh, meaning beach of the meadow (pasture). The name was suggested by Colonel James Macleod, Commissioner of the North-West Mounted Police, who had stayed at Calgary Castle; Camrose | English | There is no factual evidence to explain why the city was named Camrose. It is suspected that it is named after the village of Camrose in Pembrokeshire, South Wales; Chestermere | English | Named after Chestermere Lake, a man-made reservoir built in 1880. Doc: Airdrie is a city in Alberta, Canada within the Calgary Region. Question: Which city in the table has a name of Scottish Gaelic origin, and what is its location according to the document?",
+        "output": "So the answer is: (1) Paraphrase Answer: The city with a Scottish Gaelic origin is Airdrie, and according to the document, it is located in Alberta, Canada within the Calgary Region. (2) Answer List: [\"Airdrie\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: Name | Area | Inhabitants | People per km² | Main places | Regions. Rows: Streymoy | 373.5 | 21,717 | 57.4 | Tórshavn and Vestmanna | Tórshavn and rest of Streymoy; Eysturoy | 286.3 | 10,738 | 37.5 | Fuglafjørður and Runavík | North Eysturoy and South Eysturoy; Vágar | 177.6 | 2,856 | 15.7 | Míðvágur and Sørvágur | Vágar; Suðuroy | 166 | 5,074 | 30.9 | Tvøroyri and Vágur | Suðuroy; Sandoy | 112.1 | 1,428 | 12.4 | Sandur and Skopun | Sandoy. Doc: Eysturoy is a region and the second-largest of the Faroe Islands in the North Atlantic, both in size and population. Question: Which island has the highest population density, and what is its main place according to the table?",
+        "output": "So the answer is: (1) Paraphrase Answer: The island with the highest population density is Streymoy, with 57.4 people per km², and its main places are Tórshavn and Vestmanna. (2) Answer List: [\"Streymoy\"]"
+      }
+    ],
+    "search": [
+      {
+        "input": "Table: Origins_of_names_of_cities_in_Canada_1 | Question: Which city in British Columbia was named after a river that was named after Samuel Campbell?",
+        "output": "So the answer is: (1) Paraphrase Answer: Campbell River; (2) Answer List: [\"Campbell River\"]"
+      },
+      {
+        "input": "Table: Special_cities_of_Japan_0 | Question: Which special city in Kanagawa Prefecture has a population of 224,181?",
+        "output": "So the answer is: (1) Paraphrase Answer: Atsugi; (2) Answer List: [\"Atsugi\"]"
+      },
+      {
+        "input": "Table: List_of_islands_of_Michigan_5 | Question: Which island in St. Marys River is in Sugar Island Township?",
+        "output": "So the answer is: (1) Paraphrase Answer: Advance Island; (2) Answer List: [\"Advance Island\"]"
+      },
+      {
+        "input": "Table: Municipalities_of_Germany_0 | Question: Which federal state has the highest average number of inhabitants per municipality?",
+        "output": "So the answer is: (1) Paraphrase Answer: Berlin; (2) Answer List: [\"Berlin\"]"
+      },
+      {
+        "input": "Table: Municipalities_of_Quintana_Roo_0 | Question: Which municipality has the municipal seat of Cancún?",
+        "output": "So the answer is: (1) Paraphrase Answer: Benito Juárez; (2) Answer List: [\"Benito Juárez\"]"
+      },
+      {
+        "input": "Table: List_of_populated_places_in_Adilabad_district_13 | Question: Which town in Rajasthan has a population of 26,411?",
+        "output": "So the answer is: (1) Paraphrase Answer: Nadbai; (2) Answer List: [\"Nadbai\"]"
+      },
+      {
+        "input": "Table: Origins_of_names_of_cities_in_Canada_0 | Question: Which city in Alberta was named after a lake?",
+        "output": "So the answer is: (1) Paraphrase Answer: Chestermere; (2) Answer List: [\"Chestermere\"]"
+      },
+      {
+        "input": "Table: Demographics_of_the_Faroe_Islands_0 | Question: Which island has the highest population density?",
+        "output": "So the answer is: (1) Paraphrase Answer: Streymoy; (2) Answer List: [\"Streymoy\"]"
+      }
+    ],
+    "relate": [
+      {
+        "input": "What is the language of origin for the city of Burnaby in British Columbia?",
+        "output": "So the answer is: (1) Paraphrase Answer: The language of origin for Burnaby is English. (2) Answer List: [\"English\"]"
+      },
+      {
+        "input": "Which prefecture is the special city of Atsugi located in?",
+        "output": "So the answer is: (1) Paraphrase Answer: Atsugi is located in Kanagawa Prefecture. (2) Answer List: [\"Kanagawa\"]"
+      },
+      {
+        "input": "What county is Duck Island in?",
+        "output": "So the answer is: (1) Paraphrase Answer: Duck Island is in Chippewa County. (2) Answer List: [\"Chippewa\"]"
+      },
+      {
+        "input": "What is the average area of municipalities in Bavaria?",
+        "output": "So the answer is: (1) Paraphrase Answer: The average area of municipalities in Bavaria is 33.03 km². (2) Answer List: [\"33.03\"]"
+      },
+      {
+        "input": "What is the municipal seat of the municipality of Benito Juárez?",
+        "output": "So the answer is: (1) Paraphrase Answer: The municipal seat of Benito Juárez is Cancún. (2) Answer List: [\"Cancún\"]"
+      },
+      {
+        "input": "What is the population of the town of Nabha?",
+        "output": "So the answer is: (1) Paraphrase Answer: The population of Nabha is 67,972. (2) Answer List: [\"67,972\"]"
+      },
+      {
+        "input": "What is the language of origin for the city of Calgary?",
+        "output": "So the answer is: (1) Paraphrase Answer: The language of origin for Calgary is Scottish Gaelic. (2) Answer List: [\"Scottish Gaelic\"]"
+      },
+      {
+        "input": "What is the main place on the island of Streymoy?",
+        "output": "So the answer is: (1) Paraphrase Answer: The main place on Streymoy is Tórshavn and Vestmanna. (2) Answer List: [\"Tórshavn and Vestmanna\"]"
+      }
+    ],
+    "filter": [
+      {
+        "input": "Candidates: [Abbotsford, Armstrong, Burnaby, Campbell River, Castlegar]\\nCondition: The city is named after a person who was a surgeon on board HMS Plumper.\\nQuestion: Which city is named after the surgeon on HMS Plumper?",
+        "output": "So the answer is: (1) Paraphrase Answer: The city named after the surgeon on HMS Plumper is Campbell River. (2) Answer List: [\"Campbell River\"]"
+      },
+      {
+        "input": "Candidates: [Atsugi, Hiratsuka, Ibaraki, Isesaki, Jōetsu]\\nCondition: The city is in the Kantō region and has a population greater than 250,000.\\nQuestion: Which city in the Kantō region has a population over 250,000?",
+        "output": "So the answer is: (1) Paraphrase Answer: The city in the Kantō region with a population over 250,000 is Hiratsuka. (2) Answer List: [\"Hiratsuka\"]"
+      },
+      {
+        "input": "Candidates: [Advance Island, Bass Reef Island, Chicken Islands, Cook Island, Duck Island]\\nCondition: The island is in Sugar Island Township.\\nQuestion: Which islands are in Sugar Island Township?",
+        "output": "So the answer is: (1) Paraphrase Answer: The islands in Sugar Island Township are Advance Island, Cook Island, and Duck Island. (2) Answer List: [\"Advance Island\", \"Cook Island\", \"Duck Island\"]"
+      },
+      {
+        "input": "Candidates: [Baden-Württemberg, Bavaria, Berlin, Brandenburg, Bremen]\\nCondition: The federal state has more than 1,000 municipalities.\\nQuestion: Which federal states have more than 1,000 municipalities?",
+        "output": "So the answer is: (1) Paraphrase Answer: The federal states with more than 1,000 municipalities are Baden-Württemberg and Bavaria. (2) Answer List: [\"Baden-Württemberg\", \"Bavaria\"]"
+      },
+      {
+        "input": "Candidates: [Cozumel, Felipe Carrillo Puerto, Isla Mujeres, Othón P. Blanco, Benito Juárez]\\nCondition: The municipality has a population less than 100,000.\\nQuestion: Which municipalities have a population less than 100,000?",
+        "output": "So the answer is: (1) Paraphrase Answer: The municipalities with a population less than 100,000 are Cozumel, Felipe Carrillo Puerto, and Isla Mujeres. (2) Answer List: [\"Cozumel\", \"Felipe Carrillo Puerto\", \"Isla Mujeres\"]"
+      },
+      {
+        "input": "Candidates: [Nabarangapur, Nabha, Nadbai, Nagar, Nagari]\\nCondition: The town is in Rajasthan.\\nQuestion: Which towns are in Rajasthan?",
+        "output": "So the answer is: (1) Paraphrase Answer: The towns in Rajasthan are Nadbai and Nagar. (2) Answer List: [\"Nadbai\", \"Nagar\"]"
+      },
+      {
+        "input": "Candidates: [Airdrie, Brooks, Calgary, Camrose, Chestermere]\\nCondition: The city is named after a place in Scotland.\\nQuestion: Which cities are named after places in Scotland?",
+        "output": "So the answer is: (1) Paraphrase Answer: The cities named after places in Scotland are Airdrie and Calgary. (2) Answer List: [\"Airdrie\", \"Calgary\"]"
+      },
+      {
+        "input": "Candidates: [Streymoy, Eysturoy, Vágar, Suðuroy, Sandoy]\\nCondition: The island has more than 5,000 inhabitants.\\nQuestion: Which islands have more than 5,000 inhabitants?",
+        "output": "So the answer is: (1) Paraphrase Answer: The islands with more than 5,000 inhabitants are Streymoy, Eysturoy, and Suðuroy. (2) Answer List: [\"Streymoy\", \"Eysturoy\", \"Suðuroy\"]"
+      }
+    ],
+    "answer_from_child_qa": [
+      {
+        "input": "Child QA 1: What is the language of origin for the city of Abbotsford in British Columbia? Answer: English. Child QA 2: What is the explanation for the name Abbotsford? Answer: There is some controversy over the origin of the Abbotsford name. The most commonly cited origin is that John Cunningham Maclure named the land Abbotsford after family friend Henry Braithwaite Abbott, the western superintendent of the Canadian Pacific Railway. Final Question: What is the language of origin for the city of Abbotsford?",
+        "output": "So the answer is: (1) Paraphrase Answer: The language of origin for Abbotsford is English. (2) Answer List: [\"English\"]"
+      },
+      {
+        "input": "Child QA 1: What is the population of Atsugi in 2012? Answer: 224,181. Child QA 2: What is the prefecture of Atsugi? Answer: Kanagawa. Final Question: What is the population of Atsugi, a city in Kanagawa Prefecture?",
+        "output": "So the answer is: (1) Paraphrase Answer: The population of Atsugi is 224,181. (2) Answer List: [\"224,181\"]"
+      },
+      {
+        "input": "Child QA 1: Which county is Advance Island located in? Answer: Chippewa. Child QA 2: What is the municipality of Advance Island? Answer: Sugar Island Township. Final Question: In which county is Advance Island, which is in Sugar Island Township, located?",
+        "output": "So the answer is: (1) Paraphrase Answer: Advance Island is located in Chippewa County. (2) Answer List: [\"Chippewa\"]"
+      },
+      {
+        "input": "Child QA 1: How many municipalities does Baden-Württemberg have? Answer: 1,101. Child QA 2: What is the average area of municipalities in Baden-Württemberg? Answer: 32.41 km². Final Question: What is the average area of municipalities in the state with 1,101 municipalities?",
+        "output": "So the answer is: (1) Paraphrase Answer: The average area of municipalities in Baden-Württemberg is 32.41 km². (2) Answer List: [\"32.41 km²\"]"
+      },
+      {
+        "input": "Child QA 1: What is the municipal seat of Cozumel? Answer: San Miguel de Cozumel. Child QA 2: What is the population of Cozumel in 2010? Answer: 79,535. Final Question: What is the population of the municipality whose seat is San Miguel de Cozumel?",
+        "output": "So the answer is: (1) Paraphrase Answer: The population of Cozumel is 79,535. (2) Answer List: [\"79,535\"]"
+      },
+      {
+        "input": "Child QA 1: What is the type of Nabarangapur? Answer: M. Child QA 2: What is the population of Nabarangapur in 2011? Answer: 29,960. Final Question: What is the population of Nabarangapur, which is a municipality?",
+        "output": "So the answer is: (1) Paraphrase Answer: The population of Nabarangapur is 29,960. (2) Answer List: [\"29,960\"]"
+      },
+      {
+        "input": "Child QA 1: What is the language of origin for the city of Airdrie in Alberta? Answer: Scottish Gaelic. Child QA 2: What is the explanation for the name Airdrie? Answer: Named for Airdrie, North Lanarkshire, in Scotland. Possibly originally from Gaelic An Àrd Ruigh meaning a level height or high pasture. Final Question: What is the language of origin for the city of Airdrie?",
+        "output": "So the answer is: (1) Paraphrase Answer: The language of origin for Airdrie is Scottish Gaelic. (2) Answer List: [\"Scottish Gaelic\"]"
+      },
+      {
+        "input": "Child QA 1: What is the area of Streymoy? Answer: 373.5. Child QA 2: What is the number of inhabitants on Streymoy? Answer: 21,717. Final Question: What is the population density of Streymoy?",
+        "output": "So the answer is: (1) Paraphrase Answer: The population density of Streymoy is 57.4 people per km². (2) Answer List: [\"57.4\"]"
+      }
+    ]
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_policy": "non_gold_tables_and_exclusive_docs_only"
+  }
+}

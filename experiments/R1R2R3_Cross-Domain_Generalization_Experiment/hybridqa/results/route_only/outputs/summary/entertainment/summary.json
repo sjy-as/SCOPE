@@ -1,0 +1,27 @@
+{
+  "domain": "entertainment",
+  "routing_mode": "deepsieve",
+  "knowledge_base": [
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/entertainment/questions.json",
+  "output_dir": "/root/autodl-tmp/BBB_hybridQA/experiments/route_only/outputs/deepsieve/entertainment",
+  "semantic_catalog": null,
+  "atomr_prompts": null,
+  "deepsieve_source_summary": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/entertainment/deepsieve_source_summary.json",
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 31.267027916386724,
+  "parse_failed_counts": {
+    "route1": 1,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 22,
+    "route1.table": 78,
+    "route2.doc": 47,
+    "route2.table": 53
+  }
+}

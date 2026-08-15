@@ -1,0 +1,1186 @@
+{
+  "literary_award": {
+    "concept": "literary_award",
+    "overall_description": "Records recipients, nominations, and historical events of literary and film awards.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records recipients, nominations, and historical events of literary and film awards.",
+        "elements": [
+          "year",
+          "award_name",
+          "award_category",
+          "work_title",
+          "recipient_author",
+          "award_year",
+          "awarded_year",
+          "author",
+          "publisher",
+          "award_recipient",
+          "award_work",
+          "publication_year",
+          "award_result",
+          "recipient"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0001\", \"title\": \"Alfred A. Knopf\", \"headers\": [\"Year\", \"Award\", \"Category\", \"Title\", \"Author\"], \"sample_rows\": [[\"1944\", \"Nobel Prize\", \"Literature\", \"Nobel Prize in Literature\", \"Johannes V. Jensen\"], [\"1957\", \"Nobel Prize\", \"Literature\", \"Nobel Prize in Literature\", \"Albert Camus\"], [\"2001\", \"Pulitzer Prize\", \"History\", \"Founding Brothers\", \"Joseph J. Ellis\"]]}",
+          "{\"table_id\": \"T0065\", \"title\": \"Khaled Hosseini\", \"headers\": [\"Year\", \"Text\", \"Award\", \"Result\"], \"sample_rows\": [[\"2015\", \"And the Mountains Echoed\", \"DSC Prize for South Asian Literature\", \"Longlist, Ref. is\"]]}",
+          "{\"table_id\": \"T0069\", \"title\": \"Lee Child\", \"headers\": [\"Year\", \"Award\"], \"sample_rows\": [[\"2019\", \"Author of the Year, lifetime achievement, British Book Awards\"], [\"2013\", \"Cartier Diamond Dagger , lifetime achievement by the Crime Writers' Association\"]]}",
+          "{\"table_id\": \"T0051\", \"title\": \"Hugo Award for Best Novel\", \"headers\": [\"Year\", \"Year awarded\", \"Author(s)\", \"Novel\", \"Publisher or publication\"], \"sample_rows\": [[\"1945\", \"2020\", \"Edna Mayne Hull\", \"Winged Man \\\"The Winged Man\\\"\", \"Astounding Science-Fiction, Ref. is\"], [\"1944\", \"2019\", \"Fritz Leiber *\", \"Conjure Wife\", \"Unknown Worlds, Ref. is\"], [\"1939\", \"2014\", \"Jack Williamson\", \"Legion of Time ''[[The Legion of Time]]''\", \"Astounding Science-Fiction, Ref. is\"]]}",
+          "{\"table_id\": \"T0053\", \"title\": \"Hugo Award for Best Novelette\", \"headers\": [\"Year\", \"Year awarded\", \"Author(s)\", \"Novelette\", \"Publisher or publication\"], \"sample_rows\": [[\"1941\", \"2016\", \"Robert A. Heinlein *\", \"\\\"Roads Must Roll\\\" \\\"[[The Roads Must Roll]]\\\"\", \"Astounding Science Fiction, Ref. is\"], [\"1939\", \"2014\", \"Robert E. Howard\", \"\\\" Pigeons from Hell \\\"\", \"Weird Tales, Ref. is\"], [\"1943\", \"2018\", \"C. L. Moore\", \"\\\"There Shall Be Darkness\\\"\", \"Astounding Science Fiction, Ref. is\"]]}",
+          "{\"table_id\": \"T0052\", \"title\": \"Hugo Award for Best Novelette\", \"headers\": [\"Year\", \"Author(s)\", \"Novelette\", \"Publisher or publication\"], \"sample_rows\": [[\"1959\", \"Rog Phillips\", \"\\\"Rat in the Skull\\\"\", \"If, Ref. is\"], [\"2001\", \"Kristine Kathryn Rusch *\", \"\\\" Millennium Babies \\\"\", \"Asimov's Science Fiction, Ref. is\"], [\"1994\", \"Charles Sheffield *\", \"\\\" Georgia on My Mind \\\"\", \"Analog Science Fiction and Fact, Ref. is\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records recipients, nominations, and historical events of literary and film awards.",
+        "elements": [
+          "award_name",
+          "year",
+          "recipient",
+          "work_title",
+          "category",
+          "event_type",
+          "notes",
+          "recipient_work",
+          "recipient_author"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00194\", \"title\": \"Pulitzer Prize\", \"text\": \"Pulitzer Prize, Courlander, an anthropologist and novelist, charged that Roots was copied largely from his novel The African (1967).\"}",
+          "{\"doc_id\": \"D01575\", \"title\": \"Pulitzer Prize for Fiction\", \"text\": \"Pulitzer Prize for Fiction, In 1927, the advisory board quietly instituted Pulitzer's word choice, replacing wholesome with whole.\"}",
+          "{\"doc_id\": \"D02810\", \"title\": \"Pulitzer Prize Special Citations and Awards\", \"text\": \"Pulitzer Prize Special Citations and Awards, On 11 June 2021, Darnella Frazier was announced as the recipient of a Pulitzer Special Citation.\"}",
+          "{\"doc_id\": \"D00889\", \"title\": \"Hugo Award for Best Novel\", \"text\": \"Hugo Award for Best Novel, The Hugo Award for Best Novel is one of the Hugo Awards given each year for science fiction or fantasy stories published in, or translated to, English during the previous calendar year.\"}",
+          "{\"doc_id\": \"D01573\", \"title\": \"Hugo Award for Best Novelette\", \"text\": \"Hugo Award for Best Novelette, The Hugo Awards have been described as \\\"a fine showcase for speculative fiction\\\" and \\\"the best known literary award for science fiction writing\\\".\"}",
+          "{\"doc_id\": \"D00412\", \"title\": \"Hugo Award\", \"text\": \"Hugo Award, The nickname was accepted as an official alternative name in 1958, and since the 1992 awards the nickname has been adopted as the official name of the award.\"}"
+        ]
+      }
+    }
+  },
+  "filmography": {
+    "concept": "filmography",
+    "overall_description": "Records an individual's involvement in film or television and adaptations of literary works into other media.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records an individual's involvement in film or television and adaptations of literary works into other media.",
+        "elements": [
+          "year",
+          "title",
+          "role",
+          "notes"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0005\", \"title\": \"Bryce Dallas Howard\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Notes\"], \"sample_rows\": [[\"2014\", \"HitRecord on TV\", \"Various\", \"2 episodes\"], [\"2000\", \"How the Grinch Stole Christmas\", \"Surprised Who\", \"Credited as Bryce Howard\"], [\"2008\", \"Good Dick\", \"Kissing Woman\", \"Cameo\"]]}",
+          "{\"table_id\": \"T0004\", \"title\": \"Bryce Dallas Howard\", \"headers\": [\"Year\", \"Title\", \"Role\"], \"sample_rows\": [[\"2016\", \"Pete's Dragon\", \"Grace Meacham, Notes is\"], [\"2006\", \"As You Like It\", \"Rosalind, Notes is\"], [\"2007\", \"Spider-Man 3\", \"Gwen Stacy, Notes is\"]]}",
+          "{\"table_id\": \"T0006\", \"title\": \"Bryce Dallas Howard\", \"headers\": [\"Year\", \"Title\", \"Voice role\"], \"sample_rows\": [[\"2021\", \"Jurassic World Evolution 2\", \"Claire Dearing\"], [\"2015\", \"Lego Jurassic World\", \"Claire Dearing\"], [\"2015\", \"Lego Dimensions\", \"Claire Dearing\"]]}",
+          "{\"table_id\": \"T0103\", \"title\": \"Sissy Spacek\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Notes\"], \"sample_rows\": [[\"1983\", \"The Man with Two Brains\", \"Anne Uumellmahaye (voice)\", \"Uncredited\"]]}",
+          "{\"table_id\": \"T0102\", \"title\": \"Sissy Spacek\", \"headers\": [\"Year\", \"Title\", \"Role\"], \"sample_rows\": [[\"1977\", \"3 Women\", \"Pinky Rose, Notes is\"], [\"2005\", \"An American Haunting\", \"Lucy Bell, Notes is\"], [\"1995\", \"The Grass Harp\", \"Verena Talbo, Notes is\"]]}",
+          "{\"table_id\": \"T0101\", \"title\": \"Sissy Spacek\", \"headers\": [\"Year\", \"Title\", \"Notes\"], \"sample_rows\": [[\"2002\", \"Last Call\", \"Television film\"], [\"2010\", \"Gimme Shelter\", \"Pilot\"], [\"1994\", \"A Place for Annie\", \"Television film\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records an individual's involvement in film or television and adaptations of literary works into other media.",
+        "elements": [
+          "source_literary_work",
+          "adapted_film_title",
+          "release_year",
+          "director",
+          "award_nominations",
+          "work_title",
+          "adaptation_type",
+          "adaptation_year",
+          "adaptation_notes",
+          "original_work",
+          "adaptation_title",
+          "year",
+          "notes",
+          "adapted_work"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00135\", \"title\": \"The Shawshank Redemption\", \"text\": \"The Shawshank Redemption, It was in the top 15% of movies among adults between the ages of 18 and 49 on the Spike, Up, Sundance TV, and Lifetime channels.\"}",
+          "{\"doc_id\": \"D02404\", \"title\": \"Rita Hayworth and Shawshank Redemption\", \"text\": \"Rita Hayworth and Shawshank Redemption, In 1947, in Maine, Andy Dufresne, a banker, is tried and convicted of the double murder of his wife and her lover, despite his claims of innocence.\"}",
+          "{\"doc_id\": \"D11994\", \"title\": \"Different Seasons\", \"text\": \"Different Seasons, In it, he explains why he had not previously submitted the novellas (each written at a different time) for publication.\"}",
+          "{\"doc_id\": \"D00387\", \"title\": \"Black Beauty\", \"text\": \"Black Beauty, The three ladies: Beauty's final home, where he spends the rest of his days very well treated.\"}",
+          "{\"doc_id\": \"D00891\", \"title\": \"Black Beauty (1921 film)\", \"text\": \"Black Beauty (1921 film), Several years pass and Harry tries to elope with Jessie, but is foiled.\"}",
+          "{\"doc_id\": \"D00685\", \"title\": \"Sirius Black\", \"text\": \"Sirius Black, Lupin and Molly Weasley express disapproval for Sirius's behaviour around Harry, stating that Sirius treats his godson as if he is James, Harry's father, and that this is inappropriate.\"}"
+        ]
+      }
+    }
+  },
+  "character_name": {
+    "concept": "character_name",
+    "overall_description": "Stores the components of a character's name in a literary work.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for stores the components of a character's name in a literary work.",
+        "elements": [
+          "nickname",
+          "patronymic",
+          "family_name"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0013\", \"title\": \"Crime and Punishment\", \"headers\": [\"nickname\", \"Patronymic\"], \"sample_rows\": [[\"Алёна Alyóna\", \"Ива́новна Ivánovna, Family name is\"], [\"Лизаве́та Lizavéta\", \"Ива́новна Ivánovna, Family name is\"], [\"Порфи́рий Porfíriy\", \"Петро́вич Petróvich, Family name is\"]]}",
+          "{\"table_id\": \"T0014\", \"title\": \"Crime and Punishment\", \"headers\": [\"nickname\", \"Patronymic\", \"Family name\"], \"sample_rows\": [[\"Пульхери́я Pulkhería\", \"Алексáндровна Aleksándrovna\", \"Раско́льникова Raskól'nikova <!-- presumably has same accent as masculine form -->\"], [\"Родиóн Rodión\", \"Ромáнович Románovich\", \"Раскóльников Raskól'nikov\"], [\"Андре́й Andréy\", \"Семёнович Semyónovich\", \"Лебезя́тников Lebezyátnikov <!-- Accent placement may be incorrect. -->\"]]}",
+          "{\"table_id\": \"T0112\", \"title\": \"The Brothers Karamazov\", \"headers\": [\"nickname\", \"Patronymic\"], \"sample_rows\": [[\"ru ста́рец Зо́сима stárets Zósima\", \"Family name is\"]]}"
+        ]
+      }
+    }
+  },
+  "language_phonology": {
+    "concept": "language_phonology",
+    "overall_description": "Stores phonological and grammatical features of a language.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for stores phonological and grammatical features of a language.",
+        "elements": [
+          "vowel_quality",
+          "frontness",
+          "backness",
+          "roundedness",
+          "nasality",
+          "phoneme",
+          "language"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0031\", \"title\": \"French language\", \"headers\": [\"Front\", \"Central\", \"Back\"], \"sample_rows\": [[\"\", \"\", \"ɑ̃\"], [\"e\", \"ø\", \"( ə )\"], [\"ɛ̃\", \"( œ̃ )\", \"ɔ̃\"]]}",
+          "{\"table_id\": \"T0030\", \"title\": \"French language\", \"headers\": [\"Front\", \"Central\"], \"sample_rows\": [[\"[[Roundedness|rounded]]\", \"Central\"], [\"i\", \"y, Back is\"]]}",
+          "{\"table_id\": \"T0029\", \"title\": \"French language\", \"headers\": [\"Conditionnel\"], \"sample_rows\": [[\"1st Person\"]]}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for stores phonological and grammatical features of a language.",
+        "elements": [
+          "language",
+          "grammatical_feature",
+          "feature_value"
+        ],
+        "data_examples": [
+          "Italian --has grammatical mood--> conditional",
+          "Danish --has grammatical gender--> common gender",
+          "Azkaban --has use--> prison"
+        ]
+      }
+    }
+  },
+  "publication_record": {
+    "concept": "publication_record",
+    "overall_description": "Records the publication of literary works, including series and bibliographic details.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records the publication of literary works, including series and bibliographic details.",
+        "elements": [
+          "work_title",
+          "publication_year",
+          "work_type",
+          "author_name",
+          "title",
+          "publisher",
+          "publication_date",
+          "description",
+          "year",
+          "isbn",
+          "notes",
+          "series_title",
+          "volume_number",
+          "volume_title"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0038\", \"title\": \"George R. R. Martin\", \"headers\": [\"Title\", \"Year\", \"Type\"], \"sample_rows\": [[\"Songs the Dead Men Sing\", \"1983\", \"Short story collection, Note is\"], [\"Songs of Stars and Shadows\", \"1977\", \"Short story collection, Note is\"], [\"The Armageddon Rag\", \"1983\", \"Novel, Note is\"]]}",
+          "{\"table_id\": \"T0039\", \"title\": \"George R. R. Martin\", \"headers\": [\"Title\", \"Year\", \"Type\", \"Note\"], \"sample_rows\": [[\"\\\" The Ice Dragon \\\"\", \"1980\", \"Young adult fiction\", \"Illustrated by Alicia Austin as part of Dragons of Light , and Anne Yvonne Gilbert in 2006\"], [\"The Mystery Knight\", \"2010\", \"Novella\", \"Tales of Dunk and Egg ( A Song of Ice and Fire prequel)\"], [\"\\\"The Lonely Songs of Laren Dorr\\\"\", \"1976\", \"Short story\", \"Fantastic Stories\"]]}",
+          "{\"table_id\": \"T0084\", \"title\": \"Paulo Coelho\", \"headers\": [\"Year\", \"Portuguese title\"], \"sample_rows\": [[\"2011\", \"Fábulas, English title is\"]]}",
+          "{\"table_id\": \"T0089\", \"title\": \"Premchand\", \"headers\": [\"Title\", \"Publisher\", \"Date\"], \"sample_rows\": [[\"\\\"Updesh\\\"\", \"\", \"1917, Description is\"], [\"\\\"Hinsa Parmo Dharma\\\"\", \"Madhuri\", \"1926 (December), Description is\"], [\"\\\"Beton Wali Vidhwa\\\"\", \"Sarasvati\", \"1920 (July), Description is\"]]}",
+          "{\"table_id\": \"T0090\", \"title\": \"Premchand\", \"headers\": [\"Title\", \"Publisher\", \"Date\", \"Description\"], \"sample_rows\": [[\"\\\" Boodhi Kaki \\\"\", \"Hans\", \"1921\", \"The title means \\\"The Old Aunt\\\". A story of an old woman who craves for love from her family.\"], [\"\\\"Maa\\\"\", \"Sarasvati\", \"1921 (November)\", \"The title means \\\" Mother \\\".\"], [\"\\\"Cricket Match\\\"\", \"Zamana\", \"1937\", \"Published posthumously.\"]]}",
+          "{\"table_id\": \"T0087\", \"title\": \"Premchand\", \"headers\": [\"Hindi title\", \"Urdu title\", \"Publisher\", \"Date\", \"Length (pages)\"], \"sample_rows\": [[\"Karmabhoomi\", \"Maidan-e-Amal\", \"Maktaba Jamia, Delhi\", \"1932\", \"340, Description is\"], [\"Premashram\", \"Gosha-e-Afiyat\", \"\", \"1922\", \"Description is\"], [\"Kaayakalp\", \"Parda-i-Majaz\", \"Lajpat Rai & Sons, Lahore (Urdu)\", \"1926 (Hindi), 1934 (Urdu)\", \"440, Description is\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records the publication of literary works, including series and bibliographic details.",
+        "elements": [
+          "work_title",
+          "author",
+          "publication_year",
+          "publisher",
+          "publication_type",
+          "publication_status",
+          "volume_count",
+          "author_name",
+          "work_type",
+          "award_or_nomination",
+          "publication_venue",
+          "novel_title",
+          "series_name",
+          "series_volume"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00004\", \"title\": \"Moby-Dick\", \"text\": \"Moby-Dick, Nashville: Vanderbilt University Press.\"}",
+          "{\"doc_id\": \"D02208\", \"title\": \"Pequod (Moby-Dick)\", \"text\": \"Pequod (Moby-Dick), The name also evokes Biblical meanings.\"}",
+          "{\"doc_id\": \"D00375\", \"title\": \"United States\", \"text\": \"United States, Many movie and television stars have gotten their big break working in New York productions.\"}",
+          "{\"doc_id\": \"D00046\", \"title\": \"Sense and Sensibility\", \"text\": \"Sense and Sensibility, They have the opportunity to rent a modest home, Barton Cottage, on the property of a distant relative, Sir John Middleton.\"}",
+          "{\"doc_id\": \"D00278\", \"title\": \"Sense and Sensibility (film)\", \"text\": \"Sense and Sensibility (film), He barely acknowledges their acquaintance, and they learn he is engaged to the extremely wealthy Miss Grey.\"}",
+          "{\"doc_id\": \"D00006\", \"title\": \"Jane Austen\", \"text\": \"Jane Austen, The scant biographical information about Austen comes from her few surviving letters and sketches her family members wrote about her.\"}"
+        ]
+      }
+    }
+  },
+  "administrative_division": {
+    "concept": "administrative_division",
+    "overall_description": "Statistical data for administrative divisions including area, population, and demographics.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for statistical data for administrative divisions including area, population, and demographics.",
+        "elements": [
+          "division_name",
+          "area_km2",
+          "population",
+          "population_density",
+          "subdivision_count",
+          "population_group",
+          "count",
+          "percentage",
+          "geographic_scope",
+          "time_period"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0045\", \"title\": \"Hanoi\", \"headers\": [\"Name\", \"Area (km2)\", \"Population (2022)\", \"Population density\", \"Subdivisions\"], \"sample_rows\": [[\"Nam Từ Liêm district\", \"32.19\", \"282444\", \"\", \"10 wards\"], [\"Đông Anh district\", \"185.68\", \"409916\", \"\", \"1 commune-level town, 23 communes\"], [\"Subtotal\", \"2934.6\", \"4445055\", \"\", \"377 communes và 21 commune-level towns\"]]}",
+          "{\"table_id\": \"T0042\", \"title\": \"Haiphong\", \"headers\": [\"District\", \"Number of wards(communes and towns)\", \"Area (km2)(2019)\", \"Population(2019)\", \"Density(people/km2)\"], \"sample_rows\": [[\"Cát Hải\", \"2 towns + 10 communes\", \"327.66\", \"32.09\", \"98\"], [\"Sub-Total (Urban Districts)\", \"66 wards\", \"243.99\", \"841520\", \"3449\"], [\"Kiến An\", \"10 wards\", \"26.7\", \"118047\", \"4421\"]]}",
+          "{\"table_id\": \"T0075\", \"title\": \"Martinique\", \"headers\": [\"Name\", \"Area (km2)\", \"Population (2019)\", \"Arrondissement\", \"Map\"], \"sample_rows\": [[\"Les Trois-Îlets\", \"28.6\", \"7242\", \"Le Marin\", \"frameless|50x50px\"], [\"Les Anses-d'Arlet\", \"25.92\", \"3494\", \"Le Marin\", \"frameless|50x50px\"], [\"Sainte-Marie\", \"44.55\", \"15487\", \"La Trinité\", \"frameless|50x50px\"]]}",
+          "{\"table_id\": \"T0097\", \"title\": \"Russian Empire\", \"headers\": [\"Religion\", \"Count of believers\", \"%\"], \"sample_rows\": [[\"Reformed\", \"85400\", \"0.1%\"], [\"Russian Orthodox\", \"87123604\", \"69.3%\"], [\"Old Believers\", \"2204596\", \"1.8%\"]]}",
+          "{\"table_id\": \"T0098\", \"title\": \"Russian Empire\", \"headers\": [\"Ural Region\", \"Southern Region\", \"Caucasus\", \"Siberia\", \"Kingdom of Poland\"], \"sample_rows\": [[\"36%\", \"–\", \"24.3%\", \"29.3%\", \"–\"], [\"3.4%\", \"67.3%\", \"–\", \"5.8%\", \"22.3%\"], [\"–\", \"–\", \"25.2%\", \"–\", \"74.8%\"]]}",
+          "{\"table_id\": \"T0099\", \"title\": \"Russian Empire\", \"headers\": [\"Year\", \"A Map History of Russia (1974) p 25.\", \"Notes\"], \"sample_rows\": [[\"1812, Population of Russia (millions)Brian Catchpole\", \"42.8\", \"includes Finland\"], [\"1914, Population of Russia (millions)Brian Catchpole\", \"164.0\", \"includes new Asian territories\"]]}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for statistical data for administrative divisions including area, population, and demographics.",
+        "elements": [
+          "subject_population",
+          "population_count",
+          "point_in_time",
+          "determination_method",
+          "gender",
+          "subject",
+          "area_type",
+          "value"
+        ],
+        "data_examples": [
+          "Bihar --literate population [point in time: \"2011; female population: \"+20896530\"; male population: \"+31608023\"]--> \"+52504553\"",
+          "Alcalá de Henares --male population [point in time: \"2019; determination method: census]--> \"+95234\"",
+          "Alcalá de Henares --female population [point in time: \"2019; determination method: census]--> \"+100415\"",
+          "Forks --water as percent of area [point in time: 1 April \"2010]--> \"+0\"",
+          "Wilkinsburg --water area--> \"+0\"",
+          "Forks --area [point in time: 1 April \"2010]--> \"+9.452942\""
+        ]
+      }
+    }
+  },
+  "author_biography": {
+    "concept": "author_biography",
+    "overall_description": "Biographical records of authors, including personal details and notable works.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for biographical records of authors, including personal details and notable works.",
+        "elements": [
+          "author_name",
+          "birth_date",
+          "death_date",
+          "nationality",
+          "genre",
+          "notable_works",
+          "biographical_summary",
+          "biographical_events",
+          "birth_place",
+          "residence",
+          "education",
+          "career_events",
+          "occupation",
+          "biographical_notes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00043\", \"title\": \"Terry Pratchett\", \"text\": \"Terry Pratchett, An April 2023 episode of Imaginary Worlds, titled 'Entering Discworld Population' was released to honor the 75th anniversary of Pratchett's birth.\"}",
+          "{\"doc_id\": \"D00441\", \"title\": \"Discworld\", \"text\": \"Discworld, Abridged versions are read by Tony Robinson.\"}",
+          "{\"doc_id\": \"D06730\", \"title\": \"Rhianna Pratchett\", \"text\": \"Rhianna Pratchett, Pratchett wrote the comic Tomb Raider: The Beginning with Dark Horse and the Mirror's Edge miniseries with DC Comics, along with several of her own short stories.\"}",
+          "{\"doc_id\": \"D00583\", \"title\": \"William Faulkner\", \"text\": \"William Faulkner, His short story \\\"A Rose for Emily\\\" was his first story published in a major magazine, the Forum, but received little attention from the public.\"}",
+          "{\"doc_id\": \"D02018\", \"title\": \"William Golding\", \"text\": \"William Golding, John Carey, the emeritus professor of English literature at Oxford university, was eventually given 'unprecedented access to Golding's unpublished papers and journals by the Golding estate'.\"}",
+          "{\"doc_id\": \"D00332\", \"title\": \"William Penn\", \"text\": \"William Penn, Hannah Penn (1703–1706) Margaret Penn (7 November 1704–February 1751), married Thomas Freame (1701/02-1746) nephew of John Freame, founder of Barclays Bank Richard Penn Sr. (\"}"
+        ]
+      }
+    }
+  },
+  "literary_controversy": {
+    "concept": "literary_controversy",
+    "overall_description": "Records controversies, criticisms, or legal issues associated with a literary work.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records controversies, criticisms, or legal issues associated with a literary work.",
+        "elements": [
+          "work",
+          "controversy_type",
+          "year",
+          "entity",
+          "description"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00170\", \"title\": \"Catch-22\", \"text\": \"Catch-22, In 1998, some critics raised the possibility that Heller's book had questionable similarities to Louis Falstein's 1950 novel, Face of a Hero.\"}",
+          "{\"doc_id\": \"D00845\", \"title\": \"Catch-22 (miniseries)\", \"text\": \"Catch-22 (miniseries), On April 3, 2018, it was announced that Hugh Laurie had joined the main cast in the role of Major de Coverley.\"}",
+          "{\"doc_id\": \"D00807\", \"title\": \"The White Tiger (Adiga novel)\", \"text\": \"The White Tiger (Adiga novel), In his letter, Balram explains how he, the son of a rickshaw puller, escaped a life of servitude to become a successful businessman, describing himself as an entrepreneur.\"}"
+        ]
+      }
+    }
+  },
+  "newspaper_history": {
+    "concept": "newspaper_history",
+    "overall_description": "Records events and changes in the publication history of a newspaper.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records events and changes in the publication history of a newspaper.",
+        "elements": [
+          "newspaper_name",
+          "publication_date",
+          "event_description",
+          "owner",
+          "editor",
+          "format_change",
+          "paywall_status"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00453\", \"title\": \"The Independent\", \"text\": \"The Independent, On 23 September 2008, the main newspaper became full-colour, and \\\"Extra\\\" was replaced by an \\\"Independent Life Supplement\\\" focusing on different themes each day.\"}",
+          "{\"doc_id\": \"D00669\", \"title\": \"Veronica Roth\", \"text\": \"Veronica Roth, It could either be purchased independently or included as an extra with a Carve the Mark pre-order.\"}",
+          "{\"doc_id\": \"D00636\", \"title\": \"The Thorn Birds\", \"text\": \"The Thorn Birds, Paddy has a wealthy sister, Mary Carson, a widow who lives in New South Wales, Australia, on Drogheda, an enormous sheep station.\"}"
+        ]
+      }
+    }
+  },
+  "street_event": {
+    "concept": "street_event",
+    "overall_description": "Records events and venues associated with a specific street or public area.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records events and venues associated with a specific street or public area.",
+        "elements": [
+          "street_name",
+          "event_name",
+          "event_type",
+          "venue_description",
+          "location_description"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00672\", \"title\": \"Franklin Street (Chapel Hill)\", \"text\": \"Franklin Street (Chapel Hill), The event is not town-sponsored and the town actually discourages out-of-towners from attending; yet, an influx of non-residents descend on the town each year despite the town's suggestion.\"}",
+          "{\"doc_id\": \"D00192\", \"title\": \"Benjamin Franklin\", \"text\": \"Benjamin Franklin, It took many years for British sea captains to adopt Franklin's advice on navigating the current; once they did, they were able to trim two weeks from their sailing time.\"}",
+          "{\"doc_id\": \"D01958\", \"title\": \"George Roy Hill\", \"text\": \"George Roy Hill, Around that time he said in an interview: \\\"Just as I play nothing but Bach for pleasure, so do I read nothing but history for pleasure.\"}"
+        ]
+      }
+    }
+  },
+  "character_relationship": {
+    "concept": "character_relationship",
+    "overall_description": "Records relationships between characters in a literary work.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records relationships between characters in a literary work.",
+        "elements": [
+          "character_name",
+          "related_character_name",
+          "relationship_type",
+          "work_title",
+          "description"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00697\", \"title\": \"Matilda (novel)\", \"text\": \"Matilda (novel), Miss Honey also tries to talk to Mr and Mrs Wormwood about their daughter's intelligence, but they ignore her, with the mother contending \\\"brainy-ness\\\" is an undesirable trait in a little girl.\"}",
+          "{\"doc_id\": \"D05813\", \"title\": \"Miss Trunchbull\", \"text\": \"Miss Trunchbull, Jennifer admits she became Agatha's slave, doing the chores and housework.\"}",
+          "{\"doc_id\": \"D00042\", \"title\": \"Roald Dahl\", \"text\": \"Roald Dahl, For example, the village library was the inspiration for Mrs Phelps' library in Matilda, where the title character devours classic literature by the age of four.\"}"
+        ]
+      }
+    }
+  },
+  "publisher_acquisition": {
+    "concept": "publisher_acquisition",
+    "overall_description": "Records the acquisition of one publishing company by another.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records the acquisition of one publishing company by another.",
+        "elements": [
+          "publisher",
+          "acquired_publisher",
+          "acquisition_year",
+          "notes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D01171\", \"title\": \"Random House\", \"text\": \"Random House, Random House is one of the largest English language publishers, and part of a group of publishers once known as the \\\"Big 6\\\" and now known as the \\\"Big Five\\\".\"}",
+          "{\"doc_id\": \"D00527\", \"title\": \"To the Lighthouse\", \"text\": \"To the Lighthouse, Mrs. Ramsay dies, as do two of her children – Prue dies from complications of childbirth, and Andrew is killed in the war.\"}",
+          "{\"doc_id\": \"D00089\", \"title\": \"The Cat in the Hat\", \"text\": \"The Cat in the Hat, \\\"Geisel variously stated that the book took between nine and 18 months to create.\"}"
+        ]
+      }
+    }
+  },
+  "publication_contract": {
+    "concept": "publication_contract",
+    "overall_description": "Records contractual agreements between publishers and authors for literary works.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records contractual agreements between publishers and authors for literary works.",
+        "elements": [
+          "publisher",
+          "author",
+          "work_title",
+          "publication_year",
+          "contract_terms",
+          "location"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D02059\", \"title\": \"Francisco de Robles\", \"text\": \"Francisco de Robles, Before moving to Madrid, his father, Blas de Robles, had published Cervantes' La Galatea in 1585 in nearby Alcalá de Henares, after paying Cervantes 336 reales for its copyright (privilegio).\"}",
+          "{\"doc_id\": \"D00144\", \"title\": \"Miguel de Cervantes\", \"text\": \"Miguel de Cervantes, However, Don Quixote has been translated into all major languages, in 700 editions.\"}",
+          "{\"doc_id\": \"D00711\", \"title\": \"Robert Langdon\", \"text\": \"Robert Langdon, one that will answer two of the fundamental questions of human existence.\"}"
+        ]
+      }
+    }
+  },
+  "book_sales": {
+    "concept": "book_sales",
+    "overall_description": "Records sales figures of books, including copies sold and year of reporting.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records sales figures of books, including copies sold and year of reporting.",
+        "elements": [
+          "book_title",
+          "author",
+          "publication_year",
+          "publisher",
+          "copies_sold",
+          "sales_year"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D03874\", \"title\": \"The Monk Who Sold His Ferrari\", \"text\": \"The Monk Who Sold His Ferrari, The Monk Who Sold His Ferrari was published in 1999 by Harper Collins Publishers, and has sold more than three million copies as of 2013.\"}",
+          "{\"doc_id\": \"D01521\", \"title\": \"Robin Sharma\", \"text\": \"Robin Sharma, He has a Master's degree in law.\"}",
+          "{\"doc_id\": \"D00213\", \"title\": \"Robin Hobb\", \"text\": \"Robin Hobb, In a similar view, Library Journal described the Elderlings series as \\\"masterworks of character-based epic fantasy\\\".\"}"
+        ]
+      }
+    }
+  },
+  "external_identifier": {
+    "concept": "external_identifier",
+    "overall_description": "Maps entities to external identifiers in specific databases or archives.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for maps entities to external identifiers in specific databases or archives.",
+        "elements": [
+          "subject_entity",
+          "external_identifier",
+          "language_of_identifier",
+          "identifier_value",
+          "subject",
+          "identifier_scheme",
+          "person",
+          "author",
+          "subject_author",
+          "external_identifier_value",
+          "encyclopedia_name",
+          "identifier",
+          "entry_title",
+          "publication_date"
+        ],
+        "data_examples": [
+          "United Kingdom --Der Spiegel topic ID [language of work or name: German]--> \"grossbritannien\"",
+          "Italian --Postimees topic ID [language of work or name: Estonian; named as: \"itaalia keel\"]--> \"596434\"",
+          "The White Tiger --language of work or name--> English",
+          "Honoré de Balzac --Price One Penny author ID--> \"245\"",
+          "The Hunchback of Notre Dame --Price One Penny work ID--> \"302\"",
+          "Dante Alighieri --Olschki author ID--> \"39\""
+        ]
+      }
+    }
+  },
+  "language_usage": {
+    "concept": "language_usage",
+    "overall_description": "Records the language used by an entity for a specific purpose.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the language used by an entity for a specific purpose.",
+        "elements": [
+          "subject",
+          "language",
+          "usage_type"
+        ],
+        "data_examples": [
+          "Sissy Spacek --native language--> English",
+          "Italian --UNESCO language status--> 1 safe",
+          "Tom Clancy --writing language--> English"
+        ]
+      }
+    }
+  },
+  "burial_place": {
+    "concept": "burial_place",
+    "overall_description": "Records the burial location of a deceased person.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the burial location of a deceased person.",
+        "elements": [
+          "deceased_person",
+          "burial_location",
+          "burial_place"
+        ],
+        "data_examples": [
+          "Véra Nabokov --place of burial--> Q105013817",
+          "Lucius Malfoy --place of detention--> Azkaban",
+          "Dunning R. McNair --place of birth--> Wilkinsburg"
+        ]
+      }
+    }
+  },
+  "portal_topic": {
+    "concept": "portal_topic",
+    "overall_description": "Associates a Wikimedia portal with its primary subject or topic.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates a wikimedia portal with its primary subject or topic.",
+        "elements": [
+          "portal",
+          "main_topic"
+        ],
+        "data_examples": [
+          "Portal:Discworld --Wikimedia portal's main topic--> Discworld books",
+          "Children's literature --topic's main Wikimedia portal--> Portal:Children's literature",
+          "Hugo Award for Best Novel --topic's main category--> Category:Hugo Award for Best Novel-winning works"
+        ]
+      }
+    }
+  },
+  "ownership": {
+    "concept": "ownership",
+    "overall_description": "Records the ownership of an entity by an owner, optionally with a point in time.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the ownership of an entity by an owner, optionally with a point in time.",
+        "elements": [
+          "owner",
+          "owned_entity",
+          "ownership_start_time"
+        ],
+        "data_examples": [
+          "Kadriorg Palace --owned by--> Peter the Great",
+          "Amazon --developer--> Michael Crichton",
+          "Homeland Elegies --publisher--> Little, Brown and Company"
+        ]
+      }
+    }
+  },
+  "concept_overlap": {
+    "concept": "concept_overlap",
+    "overall_description": "Records partial or complete overlap between two concepts or entities.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records partial or complete overlap between two concepts or entities.",
+        "elements": [
+          "subject_entity",
+          "object_entity",
+          "overlap_type"
+        ],
+        "data_examples": [
+          "fairy tale --partially coincident with--> traditional story",
+          "fairy tale --union of [of: Folktale; of: literary fairy tale]--> list values as qualifiers"
+        ]
+      }
+    }
+  },
+  "creator_attribution": {
+    "concept": "creator_attribution",
+    "overall_description": "Records the creator of a work and optionally links to a creator page identifier.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the creator of a work and optionally links to a creator page identifier.",
+        "elements": [
+          "creator",
+          "work",
+          "creator_page_identifier",
+          "creative_work",
+          "creator_role"
+        ],
+        "data_examples": [
+          "Benjamin Franklin --Commons Creator page--> \"Benjamin Franklin\"",
+          "Clarisse McClellan --creator--> Ray Bradbury",
+          "To the Lighthouse --Modernist Commons ID--> \"11\"",
+          "Escape --author--> John Galsworthy",
+          "Category:Novels by Louisa May Alcott --category contains [author: Louisa May Alcott]--> literary work",
+          "A Place So Foreign and Eight More --author of foreword--> Bruce Sterling"
+        ]
+      }
+    }
+  },
+  "geographic_extreme": {
+    "concept": "geographic_extreme",
+    "overall_description": "Records the highest or lowest point of a geographic entity.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the highest or lowest point of a geographic entity.",
+        "elements": [
+          "location",
+          "extreme_point_type",
+          "elevation",
+          "start_time"
+        ],
+        "data_examples": [
+          "United Kingdom --lowest point [elevation above sea level: \"-4\"]--> The Fens",
+          "London --elevation above sea level--> \"+36\"",
+          "Martinique --highest point--> Mount Pelée"
+        ]
+      }
+    }
+  },
+  "series_membership": {
+    "concept": "series_membership",
+    "overall_description": "Records membership of an item in a series, including ordering and connections.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records membership of an item in a series, including ordering and connections.",
+        "elements": [
+          "literary_work",
+          "series",
+          "connection_type",
+          "notes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D02798\", \"title\": \"Robots and Empire\", \"text\": \"Robots and Empire, While the Earth is much more populous than all of the Spacer planets combined, its people are looked down upon and treated almost as sub-human by the Spacers.\"}",
+          "{\"doc_id\": \"D00492\", \"title\": \"I, Robot\", \"text\": \"I, Robot, Several of the stories feature the character of Dr. Calvin, chief robopsychologist at U.S. Robots and Mechanical Men, Inc., the major manufacturer of robots.\"}",
+          "{\"doc_id\": \"D12633\", \"title\": \"Empire of the Moghul\", \"text\": \"Empire of the Moghul, The first season debuted on August 27, 2021 on Disney+ Hotstar and Hotstar globally.\"}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records membership of an item in a series, including ordering and connections.",
+        "elements": [
+          "series",
+          "series_member",
+          "series_ordinal",
+          "follows",
+          "followed_by"
+        ],
+        "data_examples": [
+          "1949 Nobel Prize in Literature --part of the series--> Nobel Prize in Literature",
+          "The Dark Tower --has part or parts [series ordinal: \"4\"]--> The Dark Tower IV: Wizard and Glass",
+          "Oscar Wilde --given name [series ordinal: \"4\"]--> Wills"
+        ]
+      }
+    }
+  },
+  "place_people_category": {
+    "concept": "place_people_category",
+    "overall_description": "Associates a place with a category of people linked to that place.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates a place with a category of people linked to that place.",
+        "elements": [
+          "place",
+          "associated_people_category"
+        ],
+        "data_examples": [
+          "Philadelphia --category of associated people--> Category:People from Philadelphia",
+          "Saint Petersburg --category for people born here--> Q18664885",
+          "Bihar --category for people who died here--> Q17480804"
+        ]
+      }
+    }
+  },
+  "academic_advisor": {
+    "concept": "academic_advisor",
+    "overall_description": "Records the supervisory relationship between an academic advisor and their doctoral student.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the supervisory relationship between an academic advisor and their doctoral student.",
+        "elements": [
+          "advisor",
+          "student",
+          "field",
+          "institution",
+          "start_time",
+          "end_time"
+        ],
+        "data_examples": [
+          "Carl Sagan --doctoral student--> Steven Soter",
+          "James B. Pollack --doctoral advisor--> Carl Sagan",
+          "Monument To Daniel Defoe, Central Broadwalk --commemorates--> Daniel Defoe"
+        ]
+      }
+    }
+  },
+  "physical_attribute": {
+    "concept": "physical_attribute",
+    "overall_description": "Records the value of a physical attribute for an entity.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the value of a physical attribute for an entity.",
+        "elements": [
+          "entity",
+          "attribute",
+          "value"
+        ],
+        "data_examples": [
+          "Bryce Dallas Howard --hair color--> red hair",
+          "Slaughterhouse-Five --producer--> Paul Monash",
+          "The Dark Tower --executive producer--> Stephen King"
+        ]
+      }
+    }
+  },
+  "office_held": {
+    "concept": "office_held",
+    "overall_description": "Records the office or position held by the head of an organization, government, or state.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the office or position held by the head of an organization, government, or state.",
+        "elements": [
+          "head_of_entity",
+          "office_held",
+          "entity_type"
+        ],
+        "data_examples": [
+          "Russian Empire --office held by head of state--> Emperor of all Russia",
+          "Legion of Honour --office held by head of the organization--> Grand Chancellor of the Legion of Honour",
+          "United Kingdom --office held by head of government--> Prime Minister of the United Kingdom"
+        ]
+      }
+    }
+  },
+  "temporal_period": {
+    "concept": "temporal_period",
+    "overall_description": "Records temporal periods or qualifiers associated with an entity.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records temporal periods or qualifiers associated with an entity.",
+        "elements": [
+          "subject_entity",
+          "temporal_period",
+          "period_type",
+          "subject",
+          "relation",
+          "object",
+          "start_time",
+          "end_time"
+        ],
+        "data_examples": [
+          "George Orwell --work period (end)--> \"1949",
+          "J. R. R. Tolkien --work period (start)--> \"1937",
+          "1920s clothing --time period--> Jazz Age",
+          "Maus --start time--> \"1977",
+          "United States of America --head of government [start time: 4 March \"1877; end time: 4 March \"1881]--> Rutherford B. Hayes",
+          "Kabul --capital of [end time: 19 June \"2002; start time: 24 April \"1992; reason for deprecated rank: former entity]--> Islamic State of Afghanistan"
+        ]
+      }
+    }
+  },
+  "list_membership": {
+    "concept": "list_membership",
+    "overall_description": "Relates an entity to a list that contains it or related items.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relates an entity to a list that contains it or related items.",
+        "elements": [
+          "list_subject",
+          "list_item",
+          "list_type"
+        ],
+        "data_examples": [
+          "massively multiplayer online role-playing game --has list--> list of massively multiplayer online role-playing games",
+          "massively multiplayer online role-playing game --subclass of--> massively multiplayer online game",
+          "Acclaim Games --product or material produced--> massively multiplayer online role-playing game"
+        ]
+      }
+    }
+  },
+  "subject_study": {
+    "concept": "subject_study",
+    "overall_description": "Records the relationship between a subject and an academic field that studies it.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the relationship between a subject and an academic field that studies it.",
+        "elements": [
+          "subject",
+          "field_of_study",
+          "direction"
+        ],
+        "data_examples": [
+          "Tolstoy studies --studies--> Leo Tolstoy",
+          "Danish --studied by--> Scandinavian studies",
+          "Alexandra Tolstaya --father--> Leo Tolstoy"
+        ]
+      }
+    }
+  },
+  "media_rating": {
+    "concept": "media_rating",
+    "overall_description": "Records the classification of a media work by a rating authority.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the classification of a media work by a rating authority.",
+        "elements": [
+          "work",
+          "rating_system",
+          "rating_value",
+          "certificate_id",
+          "content_descriptor",
+          "media_work",
+          "rating_authority",
+          "assigned_rating"
+        ],
+        "data_examples": [
+          "The Hobbit: An Unexpected Journey --BBFC rating [rating certificate ID: \"AZF286454\"]--> 12 certificate",
+          "The Hobbit: An Unexpected Journey --FPB rating [content descriptor: V]--> 10-12 PG",
+          "The Martian --RCQ classification [rating certificate ID: \"394651\"]--> G",
+          "The Martian --EIRIN film rating [rating certificate ID: \"46541\"]--> G",
+          "The Hobbit: An Unexpected Journey --RTC film rating [rating certificate ID: \"14090\"]--> B",
+          "The Martian --NMHH film rating [rating certificate ID: \"NFT/23134/2015\"]--> Category III"
+        ]
+      }
+    }
+  },
+  "topic_geography_history": {
+    "concept": "topic_geography_history",
+    "overall_description": "Relates a geographic or administrative entity to its descriptive aspects such as geography, history, demographics, and legislative body.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relates a geographic or administrative entity to its descriptive aspects such as geography, history, demographics, and legislative body.",
+        "elements": [
+          "topic",
+          "geography",
+          "history",
+          "demographics",
+          "legislative_body"
+        ],
+        "data_examples": [
+          "Saint Petersburg --geography of topic--> geography of Saint Petersburg",
+          "Martinique --demographics of topic--> demographics of Martinique",
+          "England --history of topic--> history of England"
+        ]
+      }
+    }
+  },
+  "portrait_subject": {
+    "concept": "portrait_subject",
+    "overall_description": "Relates a person to their portrait or depiction in a visual work.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relates a person to their portrait or depiction in a visual work.",
+        "elements": [
+          "subject",
+          "portrait_depiction"
+        ],
+        "data_examples": [
+          "Mark Twain --sitter--> Mark Twain",
+          "New York City --Armeniapedia ID--> \"3882\"",
+          "Shelley --fictional analog of--> Percy Bysshe Shelley"
+        ]
+      }
+    }
+  },
+  "work_part_count": {
+    "concept": "work_part_count",
+    "overall_description": "Records the number of parts or sections into which a creative work is divided.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the number of parts or sections into which a creative work is divided.",
+        "elements": [
+          "work",
+          "part_count"
+        ],
+        "data_examples": [
+          "War and Peace --number of parts of this work--> \"+4\"",
+          "Carl Sagan --Erdős number--> \"+4\"",
+          "execution of the Romanov family --number of deaths--> \"+11\""
+        ]
+      }
+    }
+  },
+  "production_company": {
+    "concept": "production_company",
+    "overall_description": "Associates a creative work with the company that produced it.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates a creative work with the company that produced it.",
+        "elements": [
+          "work",
+          "production_company"
+        ],
+        "data_examples": [
+          "The Shawshank Redemption --production company--> Castle Rock Entertainment",
+          "Scholastic Corporation --Levels.fyi company ID--> \"Scholastic\"",
+          "The Shawshank Redemption --box office [valid in place: worldwide]--> \"+28817291\""
+        ]
+      }
+    }
+  },
+  "geographic_location": {
+    "concept": "geographic_location",
+    "overall_description": "Associates an entity with a geographic location where it is situated, occurs, or is based, including containment.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates an entity with a geographic location where it is situated, occurs, or is based, including containment.",
+        "elements": [
+          "located_entity",
+          "location",
+          "qualifier_direction",
+          "container_entity",
+          "contained_entity",
+          "relation_type"
+        ],
+        "data_examples": [
+          "Fábrica de harinas La Esperanza --location--> Alcalá de Henares",
+          "AH14 --terminus location--> Haiphong",
+          "David Garcia --work location--> Chapel Hill",
+          "England --patron saint--> Saint George",
+          "Saint Petersburg --contains administrative territorial entity--> Ulyanka Municipal Okrug",
+          "Saint Petersburg --located in or next to body of water--> Kronverksky Strait"
+        ]
+      }
+    }
+  },
+  "role_in_work": {
+    "concept": "role_in_work",
+    "overall_description": "Records the role of an entity in a creative work.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the role of an entity in a creative work.",
+        "elements": [
+          "subject",
+          "role",
+          "creative_work",
+          "qualifier_fields"
+        ],
+        "data_examples": [
+          "Aslan --subject has role--> demiurge",
+          "John Updike --contributed to creative work [subject has role: Writer; start time: \"1954; end time: \"2009]--> The New Yorker",
+          "Wilkinsburg --separated from [subject has role: borough of Pennsylvania]--> Sterrett Township"
+        ]
+      }
+    }
+  },
+  "country_code": {
+    "concept": "country_code",
+    "overall_description": "Associates a subject with a standardized country code.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates a subject with a standardized country code.",
+        "elements": [
+          "subject",
+          "country_code_type",
+          "code_value"
+        ],
+        "data_examples": [
+          "United Kingdom --GS1 country code--> \"500-509\"",
+          "United States of America --country calling code--> \"+1\"",
+          "United Kingdom --mobile country code--> \"234\""
+        ]
+      }
+    }
+  },
+  "age_threshold": {
+    "concept": "age_threshold",
+    "overall_description": "Records a legal or policy age threshold for an entity.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records a legal or policy age threshold for an entity.",
+        "elements": [
+          "subject_entity",
+          "age_threshold_type",
+          "age_value",
+          "qualifiers"
+        ],
+        "data_examples": [
+          "United Kingdom --compulsory education (maximum age)--> \"+18\"",
+          "United Kingdom --compulsory education (minimum age)--> \"+5\"",
+          "United Kingdom --age of majority--> \"+18\""
+        ]
+      }
+    }
+  },
+  "organization_membership": {
+    "concept": "organization_membership",
+    "overall_description": "Records the membership of an entity in an organization.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the membership of an entity in an organization.",
+        "elements": [
+          "member",
+          "organization"
+        ],
+        "data_examples": [
+          "George Orwell --member of--> Workers' Party of Marxist Unification",
+          "Pulitzer Prize for History --part of--> Pulitzer Prize",
+          "President of the American Library Association --organization directed by the office or position--> American Library Association"
+        ]
+      }
+    }
+  },
+  "honorific_prefix": {
+    "concept": "honorific_prefix",
+    "overall_description": "Records the honorific prefix or style used to address a person.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the honorific prefix or style used to address a person.",
+        "elements": [
+          "person",
+          "honorific_prefix",
+          "honorific_style"
+        ],
+        "data_examples": [
+          "Emperor of all Russia --honorific prefix--> Imperial Majesty",
+          "Peter the Great --noble title--> Emperor of all Russia",
+          "Council of Ministers of Russia --appointed by--> Emperor of all Russia"
+        ]
+      }
+    }
+  },
+  "family_membership": {
+    "concept": "family_membership",
+    "overall_description": "Records the family or family name associated with a person or character.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the family or family name associated with a person or character.",
+        "elements": [
+          "subject",
+          "family",
+          "family_name"
+        ],
+        "data_examples": [
+          "Antoine de Saint-Exupéry --family--> Saint-Exupéry family",
+          "De eerste droom van Saint-Exupéry --dedicated to--> Antoine de Saint-Exupéry",
+          "Oliver Twist --family name--> Twist"
+        ]
+      }
+    }
+  },
+  "life_event_date": {
+    "concept": "life_event_date",
+    "overall_description": "Records the date of a significant life event for a person.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the date of a significant life event for a person.",
+        "elements": [
+          "person",
+          "life_event",
+          "date"
+        ],
+        "data_examples": [
+          "Marcel Proust --date of death--> 18 November \"1922",
+          "Crime and punishment --date depicted--> 1 July \"1865",
+          "Patrick Rothfuss --date of birth--> 6 June \"1973"
+        ]
+      }
+    }
+  },
+  "spacecraft_mission": {
+    "concept": "spacecraft_mission",
+    "overall_description": "Records temporal and locational events in a spacecraft mission.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records temporal and locational events in a spacecraft mission.",
+        "elements": [
+          "spacecraft",
+          "event_type",
+          "event_time",
+          "event_location"
+        ],
+        "data_examples": [
+          "Soyuz TMA-13 --time of spacecraft landing--> 8 April \"2009",
+          "Soyuz TMA-13 --UTC date of spacecraft launch--> 12 October \"2008",
+          "Soyuz TMA-13 --location of landing--> Kazakhstan"
+        ]
+      }
+    }
+  },
+  "copyright_status": {
+    "concept": "copyright_status",
+    "overall_description": "Records the copyright status of a creative work within a specific jurisdiction.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the copyright status of a creative work within a specific jurisdiction.",
+        "elements": [
+          "work",
+          "copyright_status",
+          "jurisdiction",
+          "determination_method"
+        ],
+        "data_examples": [
+          "The Marvelous Land of Oz --copyright status [applies to jurisdiction: countries with 70 years pma or shorter; determination method: 70 years after author's death]--> public domain",
+          "Martinique --currency--> Euro",
+          "The Little Prince --public domain date [applies to jurisdiction: United States of America; determination method: published more than 95 years ago]--> \"2039"
+        ]
+      }
+    }
+  },
+  "career_statistics": {
+    "concept": "career_statistics",
+    "overall_description": "Records quantitative career statistics for a person in a specific league.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records quantitative career statistics for a person in a specific league.",
+        "elements": [
+          "subject",
+          "statistic_type",
+          "statistic_value",
+          "league",
+          "start_time",
+          "end_time"
+        ],
+        "data_examples": [
+          "Jaromír Jágr --total goals in career [end time: 9 November \"2017; of: National Hockey League; start time: 7 October \"1990]--> \"+766\"",
+          "Jaromír Jágr --total points in career [of: National Hockey League]--> \"+1921\"",
+          "Jaromír Jágr --total assists in career [of: National Hockey League]--> \"+1155\""
+        ]
+      }
+    }
+  },
+  "work_edition": {
+    "concept": "work_edition",
+    "overall_description": "Relates a literary work to its specific editions or translations.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relates a literary work to its specific editions or translations.",
+        "elements": [
+          "original_work",
+          "edition_or_translation",
+          "language",
+          "publication_date",
+          "dewey_classification"
+        ],
+        "data_examples": [
+          "The Merchant of Venice --has edition or translation [language of work or name: English; publication date: \"1923]--> The Merchant of Venice",
+          "Hamlet, królewic duński --edition or translation of--> Hamlet",
+          "The Thorn Birds --publication date--> 1 April \"1977"
+        ]
+      }
+    }
+  },
+  "statement_subject": {
+    "concept": "statement_subject",
+    "overall_description": "Relates a subject to a statement about it.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relates a subject to a statement about it.",
+        "elements": [
+          "subject",
+          "statement",
+          "object"
+        ],
+        "data_examples": [
+          "Almanzo Wilder --statement is subject of--> Farmer Boy",
+          "United Kingdom --VAT-rate [statement is subject of: reduced VAT rate]--> \"+5\"",
+          "United Kingdom --diplomatic relation [statement is subject of: Grenada–United Kingdom relations]--> Grenada"
+        ]
+      }
+    }
+  },
+  "index_value": {
+    "concept": "index_value",
+    "overall_description": "Records a quantitative index or indicator value for an entity at a specific point in time.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records a quantitative index or indicator value for an entity at a specific point in time.",
+        "elements": [
+          "subject",
+          "index_type",
+          "value",
+          "point_in_time"
+        ],
+        "data_examples": [
+          "United States of America --Democracy Index [point in time: \"2015]--> \"+8.05\"",
+          "Antoine de Saint-Exupéry --point in time--> 30 December \"1935",
+          "United States of America --Human Development Index [point in time: \"1990]--> \"+0.860\""
+        ]
+      }
+    }
+  }
+}

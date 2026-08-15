@@ -1,0 +1,176 @@
+{
+  "enabled": true,
+  "revision": 23,
+  "updated_at": 1786694731.8502128,
+  "source": "reflection_consolidation_llm",
+  "items": [
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a player's height, birthplace, or school, and the player is identified by a draft context (team, round, pick, or college).",
+      "action": "Route the first sub-question to the 'draft' table source with the draft year and team/college context; route the second sub-question to the 'player' KG source with the player reference.",
+      "lesson": "The draft table source is the only source with draft-specific attributes (round, pick, college); the player KG source has player attributes (height, birthplace, schools_attended) but lacks draft context.",
+      "evidence": "Records 1104, 1121, 1137, 1140, 1139, 1142: sq1 succeeded with draft table; sq2 succeeded with player KG when player reference was used; failures (1121, 1137) occurred when sq2 used player KG but returned no answers."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for the teams a player later played for, and the player is identified by a draft context.",
+      "action": "Route the first sub-question to the 'draft' table source; route the second sub-question to the 'contract' table source with the player reference and a roster/team-history context.",
+      "lesson": "The contract table source is the correct source for player-team history; the draft table source only provides the drafting team, not later teams.",
+      "evidence": "Records 1105, 1118, 1122, 1133, 1141: sq1 succeeded with draft table; sq2 failed when routed to contract table with just player reference, returning no answers or game-log pages instead of team names."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent or game outcome on a specific date during a season or playoffs.",
+      "action": "Route to the 'teamgame', 'teamgame_basic', or 'monthly_schedule' table source, and ensure the search entity includes the team reference and the season/date context (e.g., '${ref_1} 1989-90 playoffs May 5').",
+      "lesson": "KG schema is too closed for game-level data (opponents, scores, dates); the table sources are the only ones with game logs.",
+      "evidence": "Records 1108, 1109, 1112, 1113, 1116, 1123, 1125, 1128, 1130, 1132, 1143, 1144, 1147: sq1 succeeded when routed to table source with team+season/date; failures (1123, 1147) occurred when search entity lacked season/date context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's coach, owner, division, or home venue, and the team is identified by a game context (opponent, date, score).",
+      "action": "Route the first sub-question to the 'teamgame' or 'monthly_schedule' table source; route the second sub-question to the KG source (coaching_assignment, team, division_membership, home_venue_assignment) with the team reference.",
+      "lesson": "KG sources are the only ones with team attributes (coach, owner, division, venue); table sources only provide game-level data.",
+      "evidence": "Records 1107, 1110, 1111, 1114, 1115, 1117, 1124, 1125, 1126, 1127, 1129, 1130, 1131, 1144, 1145, 1146: sq1 succeeded with table source; sq2 succeeded with KG source when team reference was used; failures (1107) occurred when sq2 used KG but returned no answers."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a player's position, and the player is identified by a draft context.",
+      "action": "Route the first sub-question to the 'draft' table source; route the second sub-question to the 'position_assignment' KG source with the player reference.",
+      "lesson": "The position_assignment KG concept directly links player to position; the draft table source has position data but only for the draft year, not the player's career position.",
+      "evidence": "Records 1119, 1134, 1138: sq1 succeeded with draft table; sq2 succeeded with position_assignment KG when player reference was used; failures (1119) occurred when sq1 returned no answers."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a player's school or college, and the player is identified by a draft context.",
+      "action": "Route the first sub-question to the 'draft' table source; route the second sub-question to the 'player' KG source with the player reference.",
+      "lesson": "The player KG source has 'schools_attended' attribute; the draft table source has college data but only for the draft year, not all schools attended.",
+      "evidence": "Records 1120, 1135, 1136, 1142: sq1 succeeded with draft table; sq2 succeeded with player KG when player reference was used; failures (1120, 1135, 1136) occurred when sq2 used player KG but returned no answers."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's inception year, and the team is identified by a game context (opponent, date, score).",
+      "action": "Route the first sub-question to the 'teamgame' or 'monthly_schedule' table source; route the second sub-question to the 'team' KG source with the team reference.",
+      "lesson": "The team KG source has 'inception' attribute; table sources do not provide team inception years.",
+      "evidence": "Records 1101, 1108, 1113, 1116, 1123, 1128, 1132, 1143: sq1 succeeded with table source; sq2 succeeded with team KG when team reference was used; failures (1123, 1143) occurred when sq1 returned no answers."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a player's award, and the player is identified by a draft context.",
+      "action": "Route the first sub-question to the 'draft' table source; route the second sub-question to the 'award_received' KG source with the player reference.",
+      "lesson": "The award_received KG concept directly links player to awards; table sources do not provide award data.",
+      "evidence": "Record 1106: sq1 succeeded with draft table; sq2 succeeded with award_received KG when player reference was used."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a playoff series, and the team is identified by a season context.",
+      "action": "Route to the 'teamgame' or 'teamgame_basic' table source, and ensure the search entity includes the team reference and the playoff season context (e.g., '${ref_1} 1989-90 playoffs').",
+      "lesson": "The table sources are the only ones with playoff game logs; KG lacks game-level data.",
+      "evidence": "Records 1143, 1144, 1145, 1146, 1147: sq1 succeeded when routed to table source with team+playoff context; failures (1147) occurred when search entity lacked playoff context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent on a specific date, and the team is identified by a season context.",
+      "action": "Route to the 'monthly_schedule' or 'teamgame_basic' table source, and ensure the search entity includes the team reference and the season/date context (e.g., '${ref_1} 1970-71 season December 11').",
+      "lesson": "The monthly_schedule table source is the most direct for date-specific opponents; KG lacks game-level data.",
+      "evidence": "Records 1108, 1112, 1123, 1124, 1125, 1126: sq1 succeeded when routed to monthly_schedule with team+season/date; failures (1123) occurred when search entity lacked season/date context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and score.",
+      "action": "Route to the 'teamgame' or 'teamgame_basic' table source, and ensure the search entity includes the team reference and the date/score context (e.g., '${ref_1} December 27 114-101').",
+      "lesson": "The teamgame table sources are the only ones with game logs including scores; KG lacks game-level data.",
+      "evidence": "Records 1096, 1117, 1127, 1131, 1147: sq1 succeeded when routed to teamgame with team+date/score; failures (1147) occurred when search entity lacked date/score context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and overtime status.",
+      "action": "Route to the 'teamgame_basic' table source, and ensure the search entity includes the team reference and the date/overtime context (e.g., '${ref_1} May 15 2OT').",
+      "lesson": "The teamgame_basic table source is the only one with overtime status in game logs; KG lacks game-level data.",
+      "evidence": "Record 1145: sq1 succeeded when routed to teamgame_basic with team+date/overtime; failures occurred when search entity lacked overtime context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and home/away status.",
+      "action": "Route to the 'monthly_schedule' or 'teamgame_basic' table source, and ensure the search entity includes the team reference and the date/home-away context (e.g., '${ref_1} December 11 away').",
+      "lesson": "The monthly_schedule table source has home/away status in game logs; KG lacks game-level data.",
+      "evidence": "Record 1124: sq1 succeeded when routed to monthly_schedule with team+date/home-away; failures occurred when search entity lacked home-away context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and win/loss status.",
+      "action": "Route to the 'teamgame_basic' or 'teamgame' table source, and ensure the search entity includes the team reference and the date/win-loss context (e.g., '${ref_1} December 3 loss').",
+      "lesson": "The teamgame table sources are the only ones with win/loss status in game logs; KG lacks game-level data.",
+      "evidence": "Records 1114, 1116, 1128, 1129, 1132: sq1 succeeded when routed to teamgame with team+date/win-loss; failures occurred when search entity lacked win-loss context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and point margin.",
+      "action": "Route to the 'teamgame_basic' table source, and ensure the search entity includes the team reference and the date/point-margin context (e.g., '${ref_1} December 17 2 points').",
+      "lesson": "The teamgame_basic table source is the only one with point margins in game logs; KG lacks game-level data.",
+      "evidence": "Record 1115: sq1 succeeded when routed to teamgame_basic with team+date/point-margin; failures occurred when search entity lacked point-margin context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and leading scorer.",
+      "action": "Route to the 'teamgame' table source, and ensure the search entity includes the team reference and the date/leading-scorer context (e.g., '${ref_1} December 21 2002 leading scorer').",
+      "lesson": "The teamgame table source is the only one with high-points data in game logs; KG lacks game-level data.",
+      "evidence": "Record 1096: sq1 succeeded when routed to teamgame with team+date/leading-scorer; failures occurred when search entity lacked leading-scorer context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and opponent score.",
+      "action": "Route to the 'teamgame' or 'teamgame_basic' table source, and ensure the search entity includes the team reference and the date/opponent-score context (e.g., '${ref_1} October 26 122 points').",
+      "lesson": "The teamgame table sources are the only ones with opponent scores in game logs; KG lacks game-level data.",
+      "evidence": "Records 1117, 1131: sq1 succeeded when routed to teamgame with team+date/opponent-score; failures occurred when search entity lacked opponent-score context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and consecutive games.",
+      "action": "Route to the 'monthly_schedule' table source, and ensure the search entity includes the team reference and the date/consecutive-games context (e.g., '${ref_1} December 15 and December 16').",
+      "lesson": "The monthly_schedule table source is the only one with consecutive game data; KG lacks game-level data.",
+      "evidence": "Record 1126: sq1 succeeded when routed to monthly_schedule with team+date/consecutive-games; failures occurred when search entity lacked consecutive-games context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and playoff series.",
+      "action": "Route to the 'teamgame' or 'teamgame_basic' table source, and ensure the search entity includes the team reference and the playoff series context (e.g., '${ref_1} 1989-90 playoffs May 10').",
+      "lesson": "The teamgame table sources are the only ones with playoff game logs; KG lacks game-level data.",
+      "evidence": "Records 1143, 1144, 1145, 1146, 1147: sq1 succeeded when routed to teamgame with team+playoff series; failures (1147) occurred when search entity lacked playoff series context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and season.",
+      "action": "Route to the 'teamgame', 'teamgame_basic', or 'monthly_schedule' table source, and ensure the search entity includes the team reference and the season/date context (e.g., '${ref_1} 1965-66 season December 8').",
+      "lesson": "The table sources are the only ones with game logs; KG lacks game-level data.",
+      "evidence": "Records 1108, 1109, 1112, 1113, 1116, 1123, 1125, 1128, 1130, 1132, 1143, 1144, 1147: sq1 succeeded when routed to table source with team+season/date; failures (1123, 1147) occurred when search entity lacked season/date context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and venue type (home/away).",
+      "action": "Route to the 'teamgame' or 'teamgame_basic' table source, and ensure the search entity includes the team reference and the date/venue-type context (e.g., '${ref_1} October 23 home').",
+      "lesson": "The teamgame table sources are the only ones with venue type in game logs; KG lacks game-level data.",
+      "evidence": "Records 1128, 1129, 1130, 1132: sq1 succeeded when routed to teamgame with team+date/venue-type; failures occurred when search entity lacked venue-type context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and opponent team.",
+      "action": "Route to the 'teamgame' or 'teamgame_basic' table source, and ensure the search entity includes the team reference and the date/opponent context (e.g., '${ref_1} December 21 2002 Wizards').",
+      "lesson": "The teamgame table sources are the only ones with opponent data in game logs; KG lacks game-level data.",
+      "evidence": "Records 1096, 1108, 1109, 1112, 1113, 1116, 1123, 1125, 1128, 1130, 1132, 1143, 1144, 1147: sq1 succeeded when routed to table source with team+date/opponent; failures (1123, 1147) occurred when search entity lacked opponent context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and score.",
+      "action": "Route to the 'teamgame' or 'teamgame_basic' table source, and ensure the search entity includes the team reference and the date/score context (e.g., '${ref_1} December 27 114-101').",
+      "lesson": "The teamgame table sources are the only ones with scores in game logs; KG lacks game-level data.",
+      "evidence": "Records 1096, 1117, 1127, 1131, 1147: sq1 succeeded when routed to teamgame with team+date/score; failures (1147) occurred when search entity lacked score context."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's opponent in a specific game, and the team is identified by a date and result (win/loss).",
+      "action": "Route to the 'teamgame' or 'teamgame_basic' table source, and ensure the search entity includes the team reference and the date/result context (e.g., '${ref_1} December 3 loss').",
+      "lesson": "The teamgame table sources are the only ones with results in game logs; KG lacks game-level data.",
+      "evidence": "Records 1114, 1116, 1128, 1129, 1132: sq1 succeeded when routed to teamgame with team+date/result; failures occurred when search entity lacked result context."
+    }
+  ]
+}

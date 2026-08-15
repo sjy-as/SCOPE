@@ -1,0 +1,6112 @@
+{
+  "queries": [
+    {
+      "query": "What year was Catcher in the Rye published?",
+      "ground_truth": "1951",
+      "q1_answers": [],
+      "q2_answers": [
+        "1951"
+      ],
+      "raw": {
+        "id": "dev-5118",
+        "question": "What year was Catcher in the Rye published?",
+        "answer": "1951",
+        "source": "doc",
+        "source_ids": [
+          "D12715"
+        ]
+      }
+    },
+    {
+      "query": "Which prize was won by Roberto Bola\u00f1o in 1999?",
+      "ground_truth": "R\u00f3mulo Gallegos Prize",
+      "q1_answers": [],
+      "q2_answers": [
+        "R\u00f3mulo Gallegos Prize"
+      ],
+      "raw": {
+        "id": "dev-5451",
+        "question": "Which prize was won by Roberto Bola\u00f1o in 1999?",
+        "answer": "R\u00f3mulo Gallegos Prize",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E013564",
+            "P166",
+            "E004458"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the theme of the book \"Adventures of Huckleberry Finn\"?",
+      "ground_truth": "Race and identity",
+      "q1_answers": [],
+      "q2_answers": [
+        "Race and identity"
+      ],
+      "raw": {
+        "id": "dev-5481",
+        "question": "What was the theme of the book \"Adventures of Huckleberry Finn\"?",
+        "answer": "Race and identity",
+        "source": "doc",
+        "source_ids": [
+          "D10165"
+        ]
+      }
+    },
+    {
+      "query": "What is the genre of the book The God of Small Things?",
+      "ground_truth": "magic realist fiction",
+      "q1_answers": [],
+      "q2_answers": [
+        "magic realist fiction"
+      ],
+      "raw": {
+        "id": "dev-5509",
+        "question": "What is the genre of the book The God of Small Things?",
+        "answer": "magic realist fiction",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E003064",
+            "P31",
+            "E004361"
+          ],
+          [
+            "E003064",
+            "P279",
+            "E026353"
+          ],
+          [
+            "E003064",
+            "P135",
+            "E011694"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "In what year was Mary Tuffley born?",
+      "ground_truth": "1659",
+      "q1_answers": [],
+      "q2_answers": [
+        "1659"
+      ],
+      "raw": {
+        "id": "dev-5599",
+        "question": "In what year was Mary Tuffley born?",
+        "answer": "1659",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010915",
+            "P569",
+            "E000814"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the publisher of the book Disgrace?",
+      "ground_truth": "Harvill Secker",
+      "q1_answers": [],
+      "q2_answers": [
+        "Harvill Secker"
+      ],
+      "raw": {
+        "id": "dev-5630",
+        "question": "Who is the publisher of the book Disgrace?",
+        "answer": "Harvill Secker",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E027761",
+            "P123",
+            "E020651"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which is the first book of Paulo Coelho?",
+      "ground_truth": "Teatro da Educa\u00e7\u00e3o",
+      "q1_answers": [],
+      "q2_answers": [
+        "Teatro da Educa\u00e7\u00e3o"
+      ],
+      "raw": {
+        "id": "dev-5808",
+        "question": "Which is the first book of Paulo Coelho?",
+        "answer": "Teatro da Educa\u00e7\u00e3o",
+        "source": "table",
+        "source_ids": [
+          "T0085"
+        ]
+      }
+    },
+    {
+      "query": "Who was the main character of the novel \"The Outsiders\"?",
+      "ground_truth": "Ponyboy Curtis",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ponyboy Curtis"
+      ],
+      "raw": {
+        "id": "dev-5869",
+        "question": "Who was the main character of the novel \"The Outsiders\"?",
+        "answer": "Ponyboy Curtis",
+        "source": "doc",
+        "source_ids": [
+          "D25587",
+          "D22390",
+          "D05458"
+        ]
+      }
+    },
+    {
+      "query": "What is the second book of Francisco de Robles?",
+      "ground_truth": "Don Quixote de la Mancha",
+      "q1_answers": [],
+      "q2_answers": [
+        "Don Quixote de la Mancha"
+      ],
+      "raw": {
+        "id": "dev-5897",
+        "question": "What is the second book of Francisco de Robles?",
+        "answer": "Don Quixote de la Mancha",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E020606",
+            "P98",
+            "E008984"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who wrote the Francisco de Robles?",
+      "ground_truth": "Miguel de Cervantes",
+      "q1_answers": [],
+      "q2_answers": [
+        "Miguel de Cervantes"
+      ],
+      "raw": {
+        "id": "dev-5898",
+        "question": "Who wrote the Francisco de Robles?",
+        "answer": "Miguel de Cervantes",
+        "source": "doc",
+        "source_ids": [
+          "D06034"
+        ]
+      }
+    },
+    {
+      "query": "Who is the former governor of Ardsmuir Prison?",
+      "ground_truth": "Lord John Grey",
+      "q1_answers": [],
+      "q2_answers": [
+        "Lord John Grey"
+      ],
+      "raw": {
+        "id": "dev-5930",
+        "question": "Who is the former governor of Ardsmuir Prison?",
+        "answer": "Lord John Grey",
+        "source": "doc",
+        "source_ids": [
+          "D25991",
+          "D17184",
+          "D10856"
+        ]
+      }
+    },
+    {
+      "query": "What is the third book in the Incarnations of Immortality series?",
+      "ground_truth": "With a Tangled Skein",
+      "q1_answers": [],
+      "q2_answers": [
+        "With a Tangled Skein"
+      ],
+      "raw": {
+        "id": "dev-5990",
+        "question": "What is the third book in the Incarnations of Immortality series?",
+        "answer": "With a Tangled Skein",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E026131",
+            "P179",
+            "E021380"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What religion inspired the author?",
+      "ground_truth": "Mormonism",
+      "q1_answers": [],
+      "q2_answers": [
+        "Mormonism"
+      ],
+      "raw": {
+        "id": "dev-6229",
+        "question": "What religion inspired the author?",
+        "answer": "Mormonism",
+        "source": "doc",
+        "source_ids": [
+          "D17164",
+          "D27076",
+          "D31058"
+        ]
+      }
+    },
+    {
+      "query": "Under what pseudonym was The Hardy Boys books written?",
+      "ground_truth": "Franklin W. Dixon",
+      "q1_answers": [],
+      "q2_answers": [
+        "Franklin W. Dixon"
+      ],
+      "raw": {
+        "id": "dev-6436",
+        "question": "Under what pseudonym was The Hardy Boys books written?",
+        "answer": "Franklin W. Dixon",
+        "source": "doc",
+        "source_ids": [
+          "D13033",
+          "D16081"
+        ]
+      }
+    },
+    {
+      "query": "What year did The Hardy Boys book series first debut?",
+      "ground_truth": "1927",
+      "q1_answers": [],
+      "q2_answers": [
+        "1927"
+      ],
+      "raw": {
+        "id": "dev-6439",
+        "question": "What year did The Hardy Boys book series first debut?",
+        "answer": "1927",
+        "source": "doc",
+        "source_ids": [
+          "D06132",
+          "D13491",
+          "D06878"
+        ]
+      }
+    },
+    {
+      "query": "What is the pseudonym with which The Hardy Boys was written?",
+      "ground_truth": "Franklin W. Dixon",
+      "q1_answers": [],
+      "q2_answers": [
+        "Franklin W. Dixon"
+      ],
+      "raw": {
+        "id": "dev-6441",
+        "question": "What is the pseudonym with which The Hardy Boys was written?",
+        "answer": "Franklin W. Dixon",
+        "source": "doc",
+        "source_ids": [
+          "D13033",
+          "D16081"
+        ]
+      }
+    },
+    {
+      "query": "How many copies of Sense and Sensibility were printed at first?",
+      "ground_truth": "750",
+      "q1_answers": [],
+      "q2_answers": [
+        "750"
+      ],
+      "raw": {
+        "id": "dev-6467",
+        "question": "How many copies of Sense and Sensibility were printed at first?",
+        "answer": "750",
+        "source": "doc",
+        "source_ids": [
+          "D23782"
+        ]
+      }
+    },
+    {
+      "query": "In the first edition of Charlie and the Chocolate Factory what were the Oompa-Loompas?",
+      "ground_truth": "African Pygmies",
+      "q1_answers": [],
+      "q2_answers": [
+        "African Pygmies"
+      ],
+      "raw": {
+        "id": "test-6977",
+        "question": "In the first edition of Charlie and the Chocolate Factory what were the Oompa-Loompas?",
+        "answer": "African Pygmies",
+        "source": "doc",
+        "source_ids": [
+          "D23009"
+        ]
+      }
+    },
+    {
+      "query": "Who were the main characters featured in the Hardy Boys?",
+      "ground_truth": "Frank Hardy;Joe Hardy",
+      "q1_answers": [],
+      "q2_answers": [
+        "Frank Hardy;Joe Hardy"
+      ],
+      "raw": {
+        "id": "test-7037",
+        "question": "Who were the main characters featured in the Hardy Boys?",
+        "answer": "Frank Hardy;Joe Hardy",
+        "source": "doc",
+        "source_ids": [
+          "D30705",
+          "D22369",
+          "D13669"
+        ]
+      }
+    },
+    {
+      "query": "What is the profession of Balram in the novel The White Tiger?",
+      "ground_truth": "Halwai",
+      "q1_answers": [],
+      "q2_answers": [
+        "Halwai"
+      ],
+      "raw": {
+        "id": "test-7067",
+        "question": "What is the profession of Balram in the novel The White Tiger?",
+        "answer": "Halwai",
+        "source": "doc",
+        "source_ids": [
+          "D22574",
+          "D16763"
+        ]
+      }
+    },
+    {
+      "query": "Who was the author of the first book published in the Dune series?",
+      "ground_truth": "Frank Herbert",
+      "q1_answers": [],
+      "q2_answers": [
+        "Frank Herbert"
+      ],
+      "raw": {
+        "id": "test-7125",
+        "question": "Who was the author of the first book published in the Dune series?",
+        "answer": "Frank Herbert",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008434",
+            "P138",
+            "E008989"
+          ],
+          [
+            "E008434",
+            "P8345",
+            "E008438"
+          ],
+          [
+            "E008438",
+            "P527",
+            "E008434"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the last book in the Dune series written by Frank Herbert?",
+      "ground_truth": "Chapterhouse: Dune",
+      "q1_answers": [],
+      "q2_answers": [
+        "Chapterhouse: Dune"
+      ],
+      "raw": {
+        "id": "test-7128",
+        "question": "What was the last book in the Dune series written by Frank Herbert?",
+        "answer": "Chapterhouse: Dune",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E021679",
+            "P527",
+            "E013074"
+          ],
+          [
+            "E013074",
+            "P179",
+            "E021679"
+          ],
+          [
+            "E017290",
+            "P179",
+            "E021679"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Author of first published Dune book?",
+      "ground_truth": "Frank Herbert",
+      "q1_answers": [],
+      "q2_answers": [
+        "Frank Herbert"
+      ],
+      "raw": {
+        "id": "test-7130",
+        "question": "Author of first published Dune book?",
+        "answer": "Frank Herbert",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008434",
+            "P138",
+            "E008989"
+          ],
+          [
+            "E008434",
+            "P8345",
+            "E008438"
+          ],
+          [
+            "E008438",
+            "P527",
+            "E008434"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What noble title was conferred on Leo Tolstoy?",
+      "ground_truth": "graf",
+      "q1_answers": [],
+      "q2_answers": [
+        "graf"
+      ],
+      "raw": {
+        "id": "test-7337",
+        "question": "What noble title was conferred on Leo Tolstoy?",
+        "answer": "graf",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E023749",
+            "P97",
+            "E013386"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Where does The Shining take place?",
+      "ground_truth": "the Southern Rocky Mountains",
+      "q1_answers": [],
+      "q2_answers": [
+        "the Southern Rocky Mountains"
+      ],
+      "raw": {
+        "id": "test-7428",
+        "question": "Where does The Shining take place?",
+        "answer": "the Southern Rocky Mountains",
+        "source": "doc",
+        "source_ids": [
+          "D01103",
+          "D09473",
+          "D11350"
+        ]
+      }
+    },
+    {
+      "query": "The author of the Book \"The Power of Habit\" Charles Duhigg is residing in which city?",
+      "ground_truth": "Santa Cruz, California",
+      "q1_answers": [],
+      "q2_answers": [
+        "Santa Cruz, California"
+      ],
+      "raw": {
+        "id": "test-7489",
+        "question": "The author of the Book \"The Power of Habit\" Charles Duhigg is residing in which city?",
+        "answer": "Santa Cruz, California",
+        "source": "doc",
+        "source_ids": [
+          "D26673"
+        ]
+      }
+    },
+    {
+      "query": "What is the main subject of the book The Origin of Species?",
+      "ground_truth": "theory of evolution",
+      "q1_answers": [],
+      "q2_answers": [
+        "theory of evolution"
+      ],
+      "raw": {
+        "id": "test-7635",
+        "question": "What is the main subject of the book The Origin of Species?",
+        "answer": "theory of evolution",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010786",
+            "P921",
+            "E005086"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the author name of the book The Origin of Species?",
+      "ground_truth": "Charles Darwin",
+      "q1_answers": [],
+      "q2_answers": [
+        "Charles Darwin"
+      ],
+      "raw": {
+        "id": "test-7636",
+        "question": "Who is the author name of the book The Origin of Species?",
+        "answer": "Charles Darwin",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010786",
+            "P50",
+            "E003160"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "The Origin of Species books main subject?",
+      "ground_truth": "theory of evolution",
+      "q1_answers": [],
+      "q2_answers": [
+        "theory of evolution"
+      ],
+      "raw": {
+        "id": "test-7640",
+        "question": "The Origin of Species books main subject?",
+        "answer": "theory of evolution",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010786",
+            "P921",
+            "E005086"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the last book of the series The Famous Five?",
+      "ground_truth": "Five Are Together Again",
+      "q1_answers": [],
+      "q2_answers": [
+        "Five Are Together Again"
+      ],
+      "raw": {
+        "id": "test-7756",
+        "question": "What is the last book of the series The Famous Five?",
+        "answer": "Five Are Together Again",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E019881",
+            "P179",
+            "E004924"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What book was the final one in the Little Women series?",
+      "ground_truth": "Jo's Boys",
+      "q1_answers": [],
+      "q2_answers": [
+        "Jo's Boys"
+      ],
+      "raw": {
+        "id": "test-7909",
+        "question": "What book was the final one in the Little Women series?",
+        "answer": "Jo's Boys",
+        "source": "doc",
+        "source_ids": [
+          "D27346",
+          "D07825"
+        ]
+      }
+    },
+    {
+      "query": "Who wrote the Alfred A. Knopf Inc series?",
+      "ground_truth": "Toni Morrison",
+      "q1_answers": [],
+      "q2_answers": [
+        "Toni Morrison"
+      ],
+      "raw": {
+        "id": "test-7967",
+        "question": "Who wrote the Alfred A. Knopf Inc series?",
+        "answer": "Toni Morrison",
+        "source": "table",
+        "source_ids": [
+          "T0001"
+        ]
+      }
+    },
+    {
+      "query": "Who was the bookshop owner that Little, Brown and Company traces its roots to?",
+      "ground_truth": "Ebenezer Battelle",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ebenezer Battelle"
+      ],
+      "raw": {
+        "id": "test-8028",
+        "question": "Who was the bookshop owner that Little, Brown and Company traces its roots to?",
+        "answer": "Ebenezer Battelle",
+        "source": "doc",
+        "source_ids": [
+          "D18135"
+        ]
+      }
+    },
+    {
+      "query": "Which movies are based on the novel Five Point Someone?",
+      "ground_truth": "3 Idiots;Nanban",
+      "q1_answers": [],
+      "q2_answers": [
+        "3 Idiots;Nanban"
+      ],
+      "raw": {
+        "id": "test-8059",
+        "question": "Which movies are based on the novel Five Point Someone?",
+        "answer": "3 Idiots;Nanban",
+        "source": "doc",
+        "source_ids": [
+          "D04246",
+          "D27071",
+          "D31822"
+        ]
+      }
+    },
+    {
+      "query": "How many day did Piscine survive in sea in the book Life of Pi?",
+      "ground_truth": "227 days",
+      "q1_answers": [],
+      "q2_answers": [
+        "227 days"
+      ],
+      "raw": {
+        "id": "test-8288",
+        "question": "How many day did Piscine survive in sea in the book Life of Pi?",
+        "answer": "227 days",
+        "source": "doc",
+        "source_ids": [
+          "D16617"
+        ]
+      }
+    },
+    {
+      "query": "When was The Wind Through the Keyhole book published?",
+      "ground_truth": "February 2012",
+      "q1_answers": [],
+      "q2_answers": [
+        "February 2012"
+      ],
+      "raw": {
+        "id": "test-8428",
+        "question": "When was The Wind Through the Keyhole book published?",
+        "answer": "February 2012",
+        "source": "doc",
+        "source_ids": [
+          "D02326"
+        ]
+      }
+    },
+    {
+      "query": "Who is the main character of the Wolf Hall book series?",
+      "ground_truth": "Thomas Cromwell",
+      "q1_answers": [],
+      "q2_answers": [
+        "Thomas Cromwell"
+      ],
+      "raw": {
+        "id": "test-8701",
+        "question": "Who is the main character of the Wolf Hall book series?",
+        "answer": "Thomas Cromwell",
+        "source": "doc",
+        "source_ids": [
+          "D25693",
+          "D04691"
+        ]
+      }
+    },
+    {
+      "query": "What is the first name of the Cardinal that Thomas Cromwell advises Wolf Hall book series?",
+      "ground_truth": "Thomas Wolsey",
+      "q1_answers": [],
+      "q2_answers": [
+        "Thomas Wolsey"
+      ],
+      "raw": {
+        "id": "test-8702",
+        "question": "What is the first name of the Cardinal that Thomas Cromwell advises Wolf Hall book series?",
+        "answer": "Thomas Wolsey",
+        "source": "doc",
+        "source_ids": [
+          "D00564"
+        ]
+      }
+    },
+    {
+      "query": "Which book preceded Kingdom Come in the Left Behind series?",
+      "ground_truth": "Glorious Appearing",
+      "q1_answers": [],
+      "q2_answers": [
+        "Glorious Appearing"
+      ],
+      "raw": {
+        "id": "test-8762",
+        "question": "Which book preceded Kingdom Come in the Left Behind series?",
+        "answer": "Glorious Appearing",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E022329",
+            "P155",
+            "E020295"
+          ],
+          [
+            "E020295",
+            "P156",
+            "E022329"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who first published The Lady Astronaut of Mars?",
+      "ground_truth": "Audible",
+      "q1_answers": [],
+      "q2_answers": [
+        "Audible"
+      ],
+      "raw": {
+        "id": "test-9304",
+        "question": "Who first published The Lady Astronaut of Mars?",
+        "answer": "Audible",
+        "source": "doc",
+        "source_ids": [
+          "D28809"
+        ]
+      }
+    },
+    {
+      "query": "Mary Robinette Kowal was president of which organization for professional writers between 2019 and 2021?",
+      "ground_truth": "Science Fiction and Fantasy Writers of America",
+      "q1_answers": [],
+      "q2_answers": [
+        "Science Fiction and Fantasy Writers of America"
+      ],
+      "raw": {
+        "id": "test-9307",
+        "question": "Mary Robinette Kowal was president of which organization for professional writers between 2019 and 2021?",
+        "answer": "Science Fiction and Fantasy Writers of America",
+        "source": "doc",
+        "source_ids": [
+          "D01309",
+          "D20959",
+          "D30023"
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the school that was the basis of Malory Towers?",
+      "ground_truth": "Benenden School",
+      "q1_answers": [],
+      "q2_answers": [
+        "Benenden School"
+      ],
+      "raw": {
+        "id": "test-9356",
+        "question": "What is the name of the school that was the basis of Malory Towers?",
+        "answer": "Benenden School",
+        "source": "doc",
+        "source_ids": [
+          "D11764",
+          "D13773"
+        ]
+      }
+    },
+    {
+      "query": "Name the fifth book in Malory Towers series.",
+      "ground_truth": "In the Fifth at Malory Towers",
+      "q1_answers": [],
+      "q2_answers": [
+        "In the Fifth at Malory Towers"
+      ],
+      "raw": {
+        "id": "test-9358",
+        "question": "Name the fifth book in Malory Towers series.",
+        "answer": "In the Fifth at Malory Towers",
+        "source": "doc",
+        "source_ids": [
+          "D25438",
+          "D30955",
+          "D18969"
+        ]
+      }
+    },
+    {
+      "query": "Who is the author of the The Last Thing he told me book?",
+      "ground_truth": "Laura Dave",
+      "q1_answers": [],
+      "q2_answers": [
+        "Laura Dave"
+      ],
+      "raw": {
+        "id": "train-1111",
+        "question": "Who is the author of the The Last Thing he told me book?",
+        "answer": "Laura Dave",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E003934",
+            "P50",
+            "E022499"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What novel did the Three Laws of Robotics appear in?",
+      "ground_truth": "I, Robot",
+      "q1_answers": [],
+      "q2_answers": [
+        "I, Robot"
+      ],
+      "raw": {
+        "id": "train-1140",
+        "question": "What novel did the Three Laws of Robotics appear in?",
+        "answer": "I, Robot",
+        "source": "doc",
+        "source_ids": [
+          "D18545",
+          "D16299"
+        ]
+      }
+    },
+    {
+      "query": "When was the zeroth law of Robotics given a name?",
+      "ground_truth": "Robots and Empire",
+      "q1_answers": [],
+      "q2_answers": [
+        "Robots and Empire"
+      ],
+      "raw": {
+        "id": "train-1142",
+        "question": "When was the zeroth law of Robotics given a name?",
+        "answer": "Robots and Empire",
+        "source": "doc",
+        "source_ids": [
+          "D08163",
+          "D15498",
+          "D07612"
+        ]
+      }
+    },
+    {
+      "query": "In which novel did the Three Laws of Robotics first appear?",
+      "ground_truth": "I, Robot",
+      "q1_answers": [],
+      "q2_answers": [
+        "I, Robot"
+      ],
+      "raw": {
+        "id": "train-1145",
+        "question": "In which novel did the Three Laws of Robotics first appear?",
+        "answer": "I, Robot",
+        "source": "doc",
+        "source_ids": [
+          "D18545",
+          "D16299"
+        ]
+      }
+    },
+    {
+      "query": "What year did the first feature film adaptation of the novel Nineteen Eighty-Four come out?",
+      "ground_truth": "1956",
+      "q1_answers": [],
+      "q2_answers": [
+        "1956"
+      ],
+      "raw": {
+        "id": "train-1230",
+        "question": "What year did the first feature film adaptation of the novel Nineteen Eighty-Four come out?",
+        "answer": "1956",
+        "source": "doc",
+        "source_ids": [
+          "D00344"
+        ]
+      }
+    },
+    {
+      "query": "Who honored George Orwell as one of \"The 50 greatest British writers since 1945\"?",
+      "ground_truth": "The Times",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Times"
+      ],
+      "raw": {
+        "id": "train-1233",
+        "question": "Who honored George Orwell as one of \"The 50 greatest British writers since 1945\"?",
+        "answer": "The Times",
+        "source": "doc",
+        "source_ids": [
+          "D16089",
+          "D27254",
+          "D12542"
+        ]
+      }
+    },
+    {
+      "query": "The novel Nineteen Eighty-Four's first feature film adaptation came out in what year?",
+      "ground_truth": "1956",
+      "q1_answers": [],
+      "q2_answers": [
+        "1956"
+      ],
+      "raw": {
+        "id": "train-1235",
+        "question": "The novel Nineteen Eighty-Four's first feature film adaptation came out in what year?",
+        "answer": "1956",
+        "source": "doc",
+        "source_ids": [
+          "D00344"
+        ]
+      }
+    },
+    {
+      "query": "Who is the author of The Chosen?",
+      "ground_truth": "Chaim Potok",
+      "q1_answers": [],
+      "q2_answers": [
+        "Chaim Potok"
+      ],
+      "raw": {
+        "id": "train-1290",
+        "question": "Who is the author of The Chosen?",
+        "answer": "Chaim Potok",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012806",
+            "P50",
+            "E020409"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who wrote the novel The Chosen?",
+      "ground_truth": "Chaim Potok",
+      "q1_answers": [],
+      "q2_answers": [
+        "Chaim Potok"
+      ],
+      "raw": {
+        "id": "train-1295",
+        "question": "Who wrote the novel The Chosen?",
+        "answer": "Chaim Potok",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012806",
+            "P50",
+            "E020409"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Where did Jean Valjean go to prison in Les Mis\u00e9rables?",
+      "ground_truth": "Bagne of Toulon",
+      "q1_answers": [],
+      "q2_answers": [
+        "Bagne of Toulon"
+      ],
+      "raw": {
+        "id": "train-1412",
+        "question": "Where did Jean Valjean go to prison in Les Mis\u00e9rables?",
+        "answer": "Bagne of Toulon",
+        "source": "doc",
+        "source_ids": [
+          "D17235"
+        ]
+      }
+    },
+    {
+      "query": "Which novelist's mother was Anne-Charlotte-Laure Sallambier and also won the L\u00e9gion d'honneur?",
+      "ground_truth": "Honor\u00e9 de Balzac",
+      "q1_answers": [],
+      "q2_answers": [
+        "Honor\u00e9 de Balzac"
+      ],
+      "raw": {
+        "id": "train-1439",
+        "question": "Which novelist's mother was Anne-Charlotte-Laure Sallambier and also won the L\u00e9gion d'honneur?",
+        "answer": "Honor\u00e9 de Balzac",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E009154",
+            "P40",
+            "E027955"
+          ],
+          [
+            "E027955",
+            "P25",
+            "E009154"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which book of Honor\u00e9 de Balzac is third to feature the character called Rastignac?",
+      "ground_truth": "Les Secrets de la princesse de Cadignan",
+      "q1_answers": [],
+      "q2_answers": [
+        "Les Secrets de la princesse de Cadignan"
+      ],
+      "raw": {
+        "id": "train-1441",
+        "question": "Which book of Honor\u00e9 de Balzac is third to feature the character called Rastignac?",
+        "answer": "Les Secrets de la princesse de Cadignan",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E014560",
+            "P50",
+            "E027955"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the wife of the writer Honor\u00e9 de Balzac?",
+      "ground_truth": "Ewelina Ha\u0144ska",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ewelina Ha\u0144ska"
+      ],
+      "raw": {
+        "id": "train-1443",
+        "question": "What is the name of the wife of the writer Honor\u00e9 de Balzac?",
+        "answer": "Ewelina Ha\u0144ska",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E027955",
+            "P26",
+            "E012434"
+          ],
+          [
+            "E012434",
+            "P26",
+            "E027955"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which writer's mother was named Anne-Charlotte-Laure Sallambier and was also conferred upon with L\u00e9gion d'honneur?",
+      "ground_truth": "Honor\u00e9 de Balzac",
+      "q1_answers": [],
+      "q2_answers": [
+        "Honor\u00e9 de Balzac"
+      ],
+      "raw": {
+        "id": "train-1444",
+        "question": "Which writer's mother was named Anne-Charlotte-Laure Sallambier and was also conferred upon with L\u00e9gion d'honneur?",
+        "answer": "Honor\u00e9 de Balzac",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E009154",
+            "P40",
+            "E027955"
+          ],
+          [
+            "E027955",
+            "P25",
+            "E009154"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "How many copies of The Hunger Games were sold by February, 2010?",
+      "ground_truth": "800,000",
+      "q1_answers": [],
+      "q2_answers": [
+        "800,000"
+      ],
+      "raw": {
+        "id": "train-1473",
+        "question": "How many copies of The Hunger Games were sold by February, 2010?",
+        "answer": "800,000",
+        "source": "doc",
+        "source_ids": [
+          "D10302",
+          "D06344"
+        ]
+      }
+    },
+    {
+      "query": "What is the Daily mean temperature of Kabul in jan?",
+      "ground_truth": "\u22122.3",
+      "q1_answers": [],
+      "q2_answers": [
+        "\u22122.3"
+      ],
+      "raw": {
+        "id": "train-1623",
+        "question": "What is the Daily mean temperature of Kabul in jan?",
+        "answer": "\u22122.3",
+        "source": "doc",
+        "source_ids": [
+          "D29202"
+        ]
+      }
+    },
+    {
+      "query": "What was the final publication written by Ian Fleming?",
+      "ground_truth": "Octopussy and The Living Daylights",
+      "q1_answers": [],
+      "q2_answers": [
+        "Octopussy and The Living Daylights"
+      ],
+      "raw": {
+        "id": "train-1743",
+        "question": "What was the final publication written by Ian Fleming?",
+        "answer": "Octopussy and The Living Daylights",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006822",
+            "P31",
+            "E005776"
+          ],
+          [
+            "E006822",
+            "P179",
+            "E026565"
+          ],
+          [
+            "E006822",
+            "P50",
+            "E026324"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What type of bomber did the main character Captain John Yossarian fly in the novel Catch-22?",
+      "ground_truth": "North American B-25 Mitchell",
+      "q1_answers": [],
+      "q2_answers": [
+        "North American B-25 Mitchell"
+      ],
+      "raw": {
+        "id": "train-1833",
+        "question": "What type of bomber did the main character Captain John Yossarian fly in the novel Catch-22?",
+        "answer": "North American B-25 Mitchell",
+        "source": "doc",
+        "source_ids": [
+          "D30683"
+        ]
+      }
+    },
+    {
+      "query": "What book did the character of D'Artagnan die?",
+      "ground_truth": "The Vicomte of Bragelonne: Ten Years Later",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Vicomte of Bragelonne: Ten Years Later"
+      ],
+      "raw": {
+        "id": "train-1860",
+        "question": "What book did the character of D'Artagnan die?",
+        "answer": "The Vicomte of Bragelonne: Ten Years Later",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E005552",
+            "P1441",
+            "E024609"
+          ],
+          [
+            "E024609",
+            "P674",
+            "E005552"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Where is Frodo heading in The Two Towers?",
+      "ground_truth": "Mordor",
+      "q1_answers": [],
+      "q2_answers": [
+        "Mordor"
+      ],
+      "raw": {
+        "id": "train-1922",
+        "question": "Where is Frodo heading in The Two Towers?",
+        "answer": "Mordor",
+        "source": "doc",
+        "source_ids": [
+          "D11887",
+          "D16196",
+          "D11281"
+        ]
+      }
+    },
+    {
+      "query": "What was the flat number of Sherlock Holmes in the novel A Study in Scarlet?",
+      "ground_truth": "221B",
+      "q1_answers": [],
+      "q2_answers": [
+        "221B"
+      ],
+      "raw": {
+        "id": "train-1953",
+        "question": "What was the flat number of Sherlock Holmes in the novel A Study in Scarlet?",
+        "answer": "221B",
+        "source": "doc",
+        "source_ids": [
+          "D16159"
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the last Percy Jackson & the Olympians book?",
+      "ground_truth": "The Last Olympian",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Last Olympian"
+      ],
+      "raw": {
+        "id": "train-2100",
+        "question": "What is the name of the last Percy Jackson & the Olympians book?",
+        "answer": "The Last Olympian",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010525",
+            "P527",
+            "E010182"
+          ],
+          [
+            "E010182",
+            "P179",
+            "E010525"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "what is the second book of The Kent Family Chronicles?",
+      "ground_truth": "The Rebels",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Rebels"
+      ],
+      "raw": {
+        "id": "train-211",
+        "question": "what is the second book of The Kent Family Chronicles?",
+        "answer": "The Rebels",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E025316",
+            "P179",
+            "E022382"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who wrote the The Kent Family Chronicles series?",
+      "ground_truth": "John Jakes",
+      "q1_answers": [],
+      "q2_answers": [
+        "John Jakes"
+      ],
+      "raw": {
+        "id": "train-212",
+        "question": "who wrote the The Kent Family Chronicles series?",
+        "answer": "John Jakes",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E022382",
+            "P50",
+            "E005693"
+          ],
+          [
+            "E005693",
+            "P800",
+            "E022382"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who made this genre name popular?",
+      "ground_truth": "Richard Garriott",
+      "q1_answers": [],
+      "q2_answers": [
+        "Richard Garriott"
+      ],
+      "raw": {
+        "id": "train-2250",
+        "question": "Who made this genre name popular?",
+        "answer": "Richard Garriott",
+        "source": "doc",
+        "source_ids": [
+          "D19523"
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the first novel of Percy Jackson and the Olympians?",
+      "ground_truth": "The Lightning Thief",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Lightning Thief"
+      ],
+      "raw": {
+        "id": "train-2278",
+        "question": "What is the name of the first novel of Percy Jackson and the Olympians?",
+        "answer": "The Lightning Thief",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010525",
+            "P527",
+            "E018803"
+          ],
+          [
+            "E018803",
+            "P179",
+            "E010525"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the second book in the series Percy Jackson and the Olympians?",
+      "ground_truth": "The Sea of Monsters",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Sea of Monsters"
+      ],
+      "raw": {
+        "id": "train-2279",
+        "question": "What is the name of the second book in the series Percy Jackson and the Olympians?",
+        "answer": "The Sea of Monsters",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010525",
+            "P527",
+            "E027265"
+          ],
+          [
+            "E027265",
+            "P179",
+            "E010525"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of Percy Jackson's mother?",
+      "ground_truth": "Sally Jackson",
+      "q1_answers": [],
+      "q2_answers": [
+        "Sally Jackson"
+      ],
+      "raw": {
+        "id": "train-2280",
+        "question": "What is the name of Percy Jackson's mother?",
+        "answer": "Sally Jackson",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E003176",
+            "P1441",
+            "E010525"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who was the main character in A Tale of Two Cities?",
+      "ground_truth": "Alexandre Manette",
+      "q1_answers": [],
+      "q2_answers": [
+        "Alexandre Manette"
+      ],
+      "raw": {
+        "id": "train-2612",
+        "question": "Who was the main character in A Tale of Two Cities?",
+        "answer": "Alexandre Manette",
+        "source": "doc",
+        "source_ids": [
+          "D11644",
+          "D23448"
+        ]
+      }
+    },
+    {
+      "query": "What is the full meaning of the novel title \"Moby-Dick\"?",
+      "ground_truth": "Different problem",
+      "q1_answers": [],
+      "q2_answers": [
+        "Different problem"
+      ],
+      "raw": {
+        "id": "train-2703",
+        "question": "What is the full meaning of the novel title \"Moby-Dick\"?",
+        "answer": "Different problem",
+        "source": "doc",
+        "source_ids": [
+          "D20981"
+        ]
+      }
+    },
+    {
+      "query": "who is the publisher of The Scarlet Letter?",
+      "ground_truth": "Ticknor, Reed & Fields",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ticknor, Reed & Fields"
+      ],
+      "raw": {
+        "id": "train-2970",
+        "question": "who is the publisher of The Scarlet Letter?",
+        "answer": "Ticknor, Reed & Fields",
+        "source": "doc",
+        "source_ids": [
+          "D26995"
+        ]
+      }
+    },
+    {
+      "query": "Who originally illustrated the cover?",
+      "ground_truth": "Tim Jacobus",
+      "q1_answers": [],
+      "q2_answers": [
+        "Tim Jacobus"
+      ],
+      "raw": {
+        "id": "train-3000",
+        "question": "Who originally illustrated the cover?",
+        "answer": "Tim Jacobus",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E014379",
+            "P736",
+            "E016467"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What city was it founded in?",
+      "ground_truth": "Wilkinsburg, PA",
+      "q1_answers": [],
+      "q2_answers": [
+        "Wilkinsburg, PA"
+      ],
+      "raw": {
+        "id": "train-3002",
+        "question": "What city was it founded in?",
+        "answer": "Wilkinsburg, PA",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E005055",
+            "P740",
+            "E005227"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who was the city named after?",
+      "ground_truth": "John Wilkins Jr.",
+      "q1_answers": [],
+      "q2_answers": [
+        "John Wilkins Jr."
+      ],
+      "raw": {
+        "id": "train-3003",
+        "question": "Who was the city named after?",
+        "answer": "John Wilkins Jr.",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E005227",
+            "P138",
+            "E022011"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "If Beale Street Could Talk is by who?",
+      "ground_truth": "James Baldwin",
+      "q1_answers": [],
+      "q2_answers": [
+        "James Baldwin"
+      ],
+      "raw": {
+        "id": "train-3089",
+        "question": "If Beale Street Could Talk is by who?",
+        "answer": "James Baldwin",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E021456",
+            "P50",
+            "E012733"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who created the book If Beale Street Could Talk?",
+      "ground_truth": "James Baldwin",
+      "q1_answers": [],
+      "q2_answers": [
+        "James Baldwin"
+      ],
+      "raw": {
+        "id": "train-3094",
+        "question": "Who created the book If Beale Street Could Talk?",
+        "answer": "James Baldwin",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E021456",
+            "P50",
+            "E012733"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What years does The Thorn Birds span?",
+      "ground_truth": "1915 to 1969",
+      "q1_answers": [],
+      "q2_answers": [
+        "1915 to 1969"
+      ],
+      "raw": {
+        "id": "train-3121",
+        "question": "What years does The Thorn Birds span?",
+        "answer": "1915 to 1969",
+        "source": "doc",
+        "source_ids": [
+          "D05934"
+        ]
+      }
+    },
+    {
+      "query": "Where does most of the action in The Thorn Birds take place?",
+      "ground_truth": "The Australian Outback",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Australian Outback"
+      ],
+      "raw": {
+        "id": "train-3122",
+        "question": "Where does most of the action in The Thorn Birds take place?",
+        "answer": "The Australian Outback",
+        "source": "doc",
+        "source_ids": [
+          "D05934"
+        ]
+      }
+    },
+    {
+      "query": "What was the name of the first Hercule Poirot novel?",
+      "ground_truth": "The Mysterious Affair at Styles",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Mysterious Affair at Styles"
+      ],
+      "raw": {
+        "id": "train-3182",
+        "question": "What was the name of the first Hercule Poirot novel?",
+        "answer": "The Mysterious Affair at Styles",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E018042",
+            "P674",
+            "E007949"
+          ],
+          [
+            "E018042",
+            "P31",
+            "E024806"
+          ],
+          [
+            "E018042",
+            "P50",
+            "E015290"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who wrote the Writers & Lovers novel?",
+      "ground_truth": "Lily King",
+      "q1_answers": [],
+      "q2_answers": [
+        "Lily King"
+      ],
+      "raw": {
+        "id": "train-32",
+        "question": "who wrote the Writers & Lovers novel?",
+        "answer": "Lily King",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E027858",
+            "P50",
+            "E022623"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the publisher of the book the Tale of peter Rabbit?",
+      "ground_truth": "Frederick Warne & Co",
+      "q1_answers": [],
+      "q2_answers": [
+        "Frederick Warne & Co"
+      ],
+      "raw": {
+        "id": "train-331",
+        "question": "who is the publisher of the book the Tale of peter Rabbit?",
+        "answer": "Frederick Warne & Co",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010572",
+            "P800",
+            "E020927"
+          ],
+          [
+            "E020927",
+            "P50",
+            "E010572"
+          ],
+          [
+            "E020927",
+            "P110",
+            "E010572"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the second book in the Oz series?",
+      "ground_truth": "The Marvelous Land of Oz",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Marvelous Land of Oz"
+      ],
+      "raw": {
+        "id": "train-3417",
+        "question": "What is the name of the second book in the Oz series?",
+        "answer": "The Marvelous Land of Oz",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E007560",
+            "P50",
+            "E010175"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What company published this book?",
+      "ground_truth": "Reilly & Lee",
+      "q1_answers": [],
+      "q2_answers": [
+        "Reilly & Lee"
+      ],
+      "raw": {
+        "id": "train-3420",
+        "question": "What company published this book?",
+        "answer": "Reilly & Lee",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E025588",
+            "P123",
+            "E023873"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the first book of the series The Farseer Trilogy?",
+      "ground_truth": "Assassin's Apprentice",
+      "q1_answers": [],
+      "q2_answers": [
+        "Assassin's Apprentice"
+      ],
+      "raw": {
+        "id": "train-4072",
+        "question": "What is the name of the first book of the series The Farseer Trilogy?",
+        "answer": "Assassin's Apprentice",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012033",
+            "P527",
+            "E011999"
+          ],
+          [
+            "E004642",
+            "P179",
+            "E012033"
+          ],
+          [
+            "E011999",
+            "P179",
+            "E012033"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the second book of The Farseer Trilogy?",
+      "ground_truth": "Assassin's Quest",
+      "q1_answers": [],
+      "q2_answers": [
+        "Assassin's Quest"
+      ],
+      "raw": {
+        "id": "train-4073",
+        "question": "What is the second book of The Farseer Trilogy?",
+        "answer": "Assassin's Quest",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012033",
+            "P527",
+            "E012007"
+          ],
+          [
+            "E012007",
+            "P179",
+            "E012033"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Name of the first book of the series The Farseer Trilogy?",
+      "ground_truth": "Assassin's Apprentice",
+      "q1_answers": [],
+      "q2_answers": [
+        "Assassin's Apprentice"
+      ],
+      "raw": {
+        "id": "train-4077",
+        "question": "Name of the first book of the series The Farseer Trilogy?",
+        "answer": "Assassin's Apprentice",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012033",
+            "P527",
+            "E011999"
+          ],
+          [
+            "E004642",
+            "P179",
+            "E012033"
+          ],
+          [
+            "E011999",
+            "P179",
+            "E012033"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the first novel adaptation movie that Matt Damon acted in?",
+      "ground_truth": "The Good Mother",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Good Mother"
+      ],
+      "raw": {
+        "id": "train-4105",
+        "question": "What is the first novel adaptation movie that Matt Damon acted in?",
+        "answer": "The Good Mother",
+        "source": "table",
+        "source_ids": [
+          "T0078"
+        ]
+      }
+    },
+    {
+      "query": "What is the total number of novels that feature Perry Mason?",
+      "ground_truth": "82",
+      "q1_answers": [],
+      "q2_answers": [
+        "82"
+      ],
+      "raw": {
+        "id": "train-4164",
+        "question": "What is the total number of novels that feature Perry Mason?",
+        "answer": "82",
+        "source": "doc",
+        "source_ids": [
+          "D28859"
+        ]
+      }
+    },
+    {
+      "query": "Where did Exodus take place?",
+      "ground_truth": "Cyprus internment camp",
+      "q1_answers": [],
+      "q2_answers": [
+        "Cyprus internment camp"
+      ],
+      "raw": {
+        "id": "train-4759",
+        "question": "Where did Exodus take place?",
+        "answer": "Cyprus internment camp",
+        "source": "doc",
+        "source_ids": [
+          "D17464"
+        ]
+      }
+    },
+    {
+      "query": "What was the last series title of Empire of the Moghul?",
+      "ground_truth": "Traitors in the Shadows",
+      "q1_answers": [],
+      "q2_answers": [
+        "Traitors in the Shadows"
+      ],
+      "raw": {
+        "id": "train-4818",
+        "question": "What was the last series title of Empire of the Moghul?",
+        "answer": "Traitors in the Shadows",
+        "source": "table",
+        "source_ids": [
+          "T0026"
+        ]
+      }
+    },
+    {
+      "query": "What was the name of the third series in Empire of the Moghul?",
+      "ground_truth": "Ruler of the World",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ruler of the World"
+      ],
+      "raw": {
+        "id": "train-4819",
+        "question": "What was the name of the third series in Empire of the Moghul?",
+        "answer": "Ruler of the World",
+        "source": "table",
+        "source_ids": [
+          "T0026"
+        ]
+      }
+    },
+    {
+      "query": "Who director of Little Women?",
+      "ground_truth": "Greta Gerwig",
+      "q1_answers": [],
+      "q2_answers": [
+        "Greta Gerwig"
+      ],
+      "raw": {
+        "id": "train-512",
+        "question": "Who director of Little Women?",
+        "answer": "Greta Gerwig",
+        "source": "doc",
+        "source_ids": [
+          "D01187"
+        ]
+      }
+    },
+    {
+      "query": "Who are the founders Rupa Publications?",
+      "ground_truth": "D. Mehra and R. K. Mehra",
+      "q1_answers": [],
+      "q2_answers": [
+        "D. Mehra and R. K. Mehra"
+      ],
+      "raw": {
+        "id": "train-543",
+        "question": "Who are the founders Rupa Publications?",
+        "answer": "D. Mehra and R. K. Mehra",
+        "source": "doc",
+        "source_ids": [
+          "D24708"
+        ]
+      }
+    },
+    {
+      "query": "Who wrote the book series The Folk of the Air?",
+      "ground_truth": "Holly Black",
+      "q1_answers": [],
+      "q2_answers": [
+        "Holly Black"
+      ],
+      "raw": {
+        "id": "train-719",
+        "question": "Who wrote the book series The Folk of the Air?",
+        "answer": "Holly Black",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E017967",
+            "P50",
+            "E012502"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the author of The Folk of the Air book series?",
+      "ground_truth": "Holly Black",
+      "q1_answers": [],
+      "q2_answers": [
+        "Holly Black"
+      ],
+      "raw": {
+        "id": "train-724",
+        "question": "Who is the author of The Folk of the Air book series?",
+        "answer": "Holly Black",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E017967",
+            "P50",
+            "E012502"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the name of Becky Chambers' first published book?",
+      "ground_truth": "The Long Way to a Small, Angry Planet",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Long Way to a Small, Angry Planet"
+      ],
+      "raw": {
+        "id": "train-751",
+        "question": "What was the name of Becky Chambers' first published book?",
+        "answer": "The Long Way to a Small, Angry Planet",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012084",
+            "P800",
+            "E016875"
+          ],
+          [
+            "E012084",
+            "P1411",
+            "E007702"
+          ],
+          [
+            "E016875",
+            "P50",
+            "E012084"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the book written by Charlotte Bront\u00eb in 1833?",
+      "ground_truth": "The Green Dwarf, A Tale of the Perfect Tense",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Green Dwarf, A Tale of the Perfect Tense"
+      ],
+      "raw": {
+        "id": "train-93",
+        "question": "What is the name of the book written by Charlotte Bront\u00eb in 1833?",
+        "answer": "The Green Dwarf, A Tale of the Perfect Tense",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E007559",
+            "P50",
+            "E005745"
+          ]
+        ]
+      }
+    }
+  ],
+  "overall_metrics": {
+    "avg_exact_match": 0.54,
+    "avg_f1": 0.5782380952380953,
+    "avg_retrieval_time": 5.729117434024811,
+    "avg_docs_searched": 8.97,
+    "avg_similarity": 13.908593460720803,
+    "avg_prompt_tokens_per_subquery": 0.0,
+    "avg_total_tokens_per_query": 195.33,
+    "avg_execution_time": 1.0539613855257637,
+    "avg_sq1_score": 0.0,
+    "avg_sq2_score": 0.29,
+    "avg_total_score": 0.29,
+    "sq1_hit_rate": 0.0,
+    "sq2_hit_rate": 0.29,
+    "total_elapsed_time": 105.3961385525763
+  },
+  "all_query_metrics": [
+    {
+      "total_retrieval_time": 34.122013568878174,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 157,
+      "prompt_token_counts": [
+        157
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "1969",
+        "ground_truth": "1951",
+        "fallback_answer": "1969",
+        "final_reason": "The evidence document states the publication date of 'The Catcher in the Rye' as 4 July 1969."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "1951"
+      },
+      "avg_retrieval_time": 34.122013568878174,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 157,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 31.357260942459106,
+      "total_docs_searched": 4,
+      "avg_similarity_scores": [
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 158,
+      "prompt_token_counts": [
+        158
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "R\u00f3mulo Gallegos Prize",
+        "ground_truth": "R\u00f3mulo Gallegos Prize",
+        "fallback_answer": "R\u00f3mulo Gallegos Prize",
+        "final_reason": "The reasoning step directly states that Roberto Bola\u00f1o won the R\u00f3mulo Gallegos Prize in 1999."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "R\u00f3mulo Gallegos Prize"
+      },
+      "avg_retrieval_time": 31.357260942459106,
+      "avg_similarity": 0.5208333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 158,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 24.106024980545044,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 175,
+      "prompt_token_counts": [
+        175
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Slavery in the United States",
+        "ground_truth": "Race and identity",
+        "fallback_answer": "Slavery in the United States",
+        "final_reason": "The reasoning step indicates that the theme of 'Adventures of Huckleberry Finn' is Slavery in the United States."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Race and identity"
+      },
+      "avg_retrieval_time": 24.106024980545044,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 175,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 30.91105556488037,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 151,
+      "prompt_token_counts": [
+        151
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "magic realist fiction",
+        "ground_truth": "magic realist fiction",
+        "fallback_answer": "magic realist fiction",
+        "final_reason": "The evidence document directly states the genre of The God of Small Things as magic realist fiction."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "magic realist fiction"
+      },
+      "avg_retrieval_time": 30.91105556488037,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 151,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.14791345596313477,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        13.005302086352662,
+        26.19005793662845
+      ],
+      "max_similarity_scores": [
+        16.736882916045488,
+        27.220659536670397
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 166,
+      "prompt_token_counts": [
+        166
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "1659",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found about Mary Tuffley's birth year."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "1659"
+      },
+      "avg_retrieval_time": 0.07395672798156738,
+      "avg_similarity": 19.597680011490556,
+      "max_similarity": 27.220659536670397,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 166,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 33.43024134635925,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 148,
+      "prompt_token_counts": [
+        148
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Harvill Secker",
+        "ground_truth": "Harvill Secker",
+        "fallback_answer": "Harvill Secker",
+        "final_reason": "The reasoning step directly identifies Harvill Secker as the publisher of Disgrace."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Harvill Secker"
+      },
+      "avg_retrieval_time": 33.43024134635925,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 148,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.21989083290100098,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        29.44850077934286
+      ],
+      "max_similarity_scores": [
+        32.131871413365616
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 143,
+      "prompt_token_counts": [
+        143
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Hell Archives",
+        "ground_truth": "Teatro da Educa\u00e7\u00e3o",
+        "fallback_answer": "Hell Archives",
+        "final_reason": "The evidence states that in 1982, Coelho published his first book, Hell Archives."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Teatro da Educa\u00e7\u00e3o"
+      },
+      "avg_retrieval_time": 0.21989083290100098,
+      "avg_similarity": 29.44850077934286,
+      "max_similarity": 32.131871413365616,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 143,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.17540884017944336,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        20.4374166961195
+      ],
+      "max_similarity_scores": [
+        21.80687498996896
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 170,
+      "prompt_token_counts": [
+        170
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Ponyboy Curtis",
+        "ground_truth": "Ponyboy Curtis",
+        "fallback_answer": "Ponyboy Curtis",
+        "final_reason": "The reasoning step identifies Ponyboy Curtis as the main character of 'The Outsiders' because the novel follows his perspective as a fourteen-year-old greaser."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Ponyboy Curtis"
+      },
+      "avg_retrieval_time": 0.17540884017944336,
+      "avg_similarity": 20.4374166961195,
+      "max_similarity": 21.80687498996896,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 170,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.27773261070251465,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        38.04965646039901,
+        52.90549373921183
+      ],
+      "max_similarity_scores": [
+        40.86903752576258,
+        67.42205286008354
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 264,
+      "prompt_token_counts": [
+        264
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Don Quixote de la Mancha",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps confirm that Francisco de Robles was a bookseller and publisher, not an author. There is no evidence of any book written by him, let alone a second book. Therefore, the question cannot be answered based on the provided information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Don Quixote de la Mancha"
+      },
+      "avg_retrieval_time": 0.13886630535125732,
+      "avg_similarity": 45.47757509980542,
+      "max_similarity": 67.42205286008354,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 264,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.1880335807800293,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        38.258169054557,
+        13.078060228787862
+      ],
+      "max_similarity_scores": [
+        40.86903752576258,
+        19.206986734605213
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 197,
+      "prompt_token_counts": [
+        197
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.3333333333333333,
+        "final_answer": "Francisco de Robles",
+        "ground_truth": "Miguel de Cervantes",
+        "fallback_answer": "Francisco de Robles",
+        "final_reason": "The question asks who wrote the Francisco de Robles, but the reasoning steps clarify that Francisco de Robles was a bookseller and publisher, not a written work. Therefore, the entity itself is Francisco de Robles."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.3333333333333333,
+        "ground_truth": "Miguel de Cervantes"
+      },
+      "avg_retrieval_time": 0.09401679039001465,
+      "avg_similarity": 25.66811464167243,
+      "max_similarity": 40.86903752576258,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 197,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.18693137168884277,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        16.46832902687294
+      ],
+      "max_similarity_scores": [
+        24.678710732371307
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 128,
+      "prompt_token_counts": [
+        128
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Lord John Grey",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found to identify the former governor of Ardsmuir Prison."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Lord John Grey"
+      },
+      "avg_retrieval_time": 0.18693137168884277,
+      "avg_similarity": 16.46832902687294,
+      "max_similarity": 24.678710732371307,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 128,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 14.283278703689575,
+      "total_docs_searched": 19,
+      "avg_similarity_scores": [
+        31.2454921081062,
+        0.31432980599647264,
+        34.48683306507628
+      ],
+      "max_similarity_scores": [
+        33.251594089684005,
+        1.0,
+        48.45324907637112
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 388,
+      "prompt_token_counts": [
+        388
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "With a Tangled Skein",
+        "ground_truth": "With a Tangled Skein",
+        "fallback_answer": "With a Tangled Skein",
+        "final_reason": "The Incarnations of Immortality series is an eight-book fantasy series by Piers Anthony. The books in order are: On a Pale Horse, Bearing an Hourglass, With a Tangled Skein, Wielding a Red Sword, Being a Green Mother, For Love of Evil, And Eternity, Under a Velvet Cloak. Therefore, the third book is With a Tangled Skein."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "With a Tangled Skein"
+      },
+      "avg_retrieval_time": 4.761092901229858,
+      "avg_similarity": 22.015551659726317,
+      "max_similarity": 48.45324907637112,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 388,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.18528294563293457,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        13.531163964974471,
+        8.893029419227227
+      ],
+      "max_similarity_scores": [
+        15.576930612083137,
+        9.822966276939646
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 139,
+      "prompt_token_counts": [
+        139
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Mormonism",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not identify the author or any religion associated with them, so the answer cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Mormonism"
+      },
+      "avg_retrieval_time": 0.09264147281646729,
+      "avg_similarity": 11.21209669210085,
+      "max_similarity": 15.576930612083137,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 139,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 33.367502212524414,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        0.611111111111111,
+        33.44491789170551
+      ],
+      "max_similarity_scores": [
+        1.0,
+        34.205273921243666
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 212,
+      "prompt_token_counts": [
+        212
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Franklin W. Dixon",
+        "ground_truth": "Franklin W. Dixon",
+        "fallback_answer": "Franklin W. Dixon",
+        "final_reason": "The Hardy Boys books were created by Edward Stratemeyer, but the books were written by ghostwriters under the collective pseudonym Franklin W. Dixon."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Franklin W. Dixon"
+      },
+      "avg_retrieval_time": 16.683751106262207,
+      "avg_similarity": 17.02801450140831,
+      "max_similarity": 34.205273921243666,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 212,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.0010433197021484375,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 128,
+      "prompt_token_counts": [
+        128
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "1927",
+        "ground_truth": "1927",
+        "fallback_answer": "",
+        "final_reason": "The Hardy Boys book series first debuted in 1927, as the first book, 'The Tower Treasure', was published in that year."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "1927"
+      },
+      "avg_retrieval_time": 0.0010433197021484375,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 128,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 35.60263228416443,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        0.611111111111111,
+        31.816849529694974
+      ],
+      "max_similarity_scores": [
+        1.0,
+        33.70902069943681
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 176,
+      "prompt_token_counts": [
+        176
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Franklin W. Dixon",
+        "ground_truth": "Franklin W. Dixon",
+        "fallback_answer": "",
+        "final_reason": "The Hardy Boys was written under the pseudonym Franklin W. Dixon, which was used by Edward Stratemeyer and other ghostwriters for the series."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Franklin W. Dixon"
+      },
+      "avg_retrieval_time": 17.801316142082214,
+      "avg_similarity": 16.213980320403042,
+      "max_similarity": 33.70902069943681,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 176,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 1.1987175941467285,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        26.20351632403085
+      ],
+      "max_similarity_scores": [
+        32.25670397110224
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 160,
+      "prompt_token_counts": [
+        160
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "750",
+        "ground_truth": "750",
+        "fallback_answer": "750",
+        "final_reason": "The first edition of Sense and Sensibility had a print run of 750 copies, as indicated by the evidence that all 750 printed copies were sold by July 1813."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "750"
+      },
+      "avg_retrieval_time": 1.1987175941467285,
+      "avg_similarity": 26.20351632403085,
+      "max_similarity": 32.25670397110224,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 160,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 1.3056285381317139,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        51.33871511221421
+      ],
+      "max_similarity_scores": [
+        63.61156171883641
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 175,
+      "prompt_token_counts": [
+        175
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "African pygmies",
+        "ground_truth": "African Pygmies",
+        "fallback_answer": "African pygmies",
+        "final_reason": "The first edition of Charlie and the Chocolate Factory described the Oompa-Loompas as African pygmies."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "African Pygmies"
+      },
+      "avg_retrieval_time": 1.3056285381317139,
+      "avg_similarity": 51.33871511221421,
+      "max_similarity": 63.61156171883641,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 175,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 34.92257833480835,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.75,
+        28.111093978084163
+      ],
+      "max_similarity_scores": [
+        1.0,
+        30.97225903692508
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 182,
+      "prompt_token_counts": [
+        182
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5714285714285715,
+        "final_answer": "Frank and Joe Hardy",
+        "ground_truth": "Frank Hardy;Joe Hardy",
+        "fallback_answer": "Frank and Joe Hardy",
+        "final_reason": "The Hardy Boys book series features brothers Frank and Joe Hardy as the main characters."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5714285714285715,
+        "ground_truth": "Frank Hardy;Joe Hardy"
+      },
+      "avg_retrieval_time": 17.461289167404175,
+      "avg_similarity": 14.430546989042082,
+      "max_similarity": 30.97225903692508,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 182,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 1.2709455490112305,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        31.954601686991357,
+        29.12770547422815
+      ],
+      "max_similarity_scores": [
+        33.08822459768059,
+        32.333514476939
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 200,
+      "prompt_token_counts": [
+        200
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "not specified",
+        "ground_truth": "Halwai",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that Balram is the protagonist and narrator, but the evidence does not specify his profession."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Halwai"
+      },
+      "avg_retrieval_time": 0.6354727745056152,
+      "avg_similarity": 30.541153580609752,
+      "max_similarity": 33.08822459768059,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 200,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.22607779502868652,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        11.683655043778728
+      ],
+      "max_similarity_scores": [
+        1.0,
+        13.578870145209644
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 152,
+      "prompt_token_counts": [
+        152
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Frank Herbert",
+        "ground_truth": "Frank Herbert",
+        "fallback_answer": "",
+        "final_reason": "The first book published in the Dune series is 'Dune' (1965), and its author is Frank Herbert."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Frank Herbert"
+      },
+      "avg_retrieval_time": 0.11303889751434326,
+      "avg_similarity": 6.0701608552226975,
+      "max_similarity": 13.578870145209644,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 152,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 11.475409030914307,
+      "total_docs_searched": 40,
+      "avg_similarity_scores": [
+        0.10906520612657374,
+        0.0
+      ],
+      "max_similarity_scores": [
+        1.0,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 217,
+      "prompt_token_counts": [
+        217
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Chapterhouse: Dune",
+        "ground_truth": "Chapterhouse: Dune",
+        "fallback_answer": "",
+        "final_reason": "The six Dune novels written by Frank Herbert are Dune, Dune Messiah, Children of Dune, God Emperor of Dune, Heretics of Dune, and Chapterhouse: Dune. Among these, Chapterhouse: Dune was published last, in 1985."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Chapterhouse: Dune"
+      },
+      "avg_retrieval_time": 5.737704515457153,
+      "avg_similarity": 0.05453260306328687,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 217,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 4.960871458053589,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.75,
+        10.511287445755292
+      ],
+      "max_similarity_scores": [
+        1.0,
+        11.841084285424333
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 168,
+      "prompt_token_counts": [
+        168
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Frank Herbert",
+        "ground_truth": "Frank Herbert",
+        "fallback_answer": "",
+        "final_reason": "The first published Dune book is 'Dune', and its author is Frank Herbert, a well-known fact. Although the reasoning steps did not find explicit evidence for the author, the answer is based on general knowledge."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Frank Herbert"
+      },
+      "avg_retrieval_time": 2.4804357290267944,
+      "avg_similarity": 5.630643722877646,
+      "max_similarity": 11.841084285424333,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 168,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 7.470810890197754,
+      "total_docs_searched": 16,
+      "avg_similarity_scores": [
+        0.2745343040797586,
+        19.722835896405513
+      ],
+      "max_similarity_scores": [
+        1.0,
+        27.815465789812386
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 252,
+      "prompt_token_counts": [
+        252
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Count",
+        "ground_truth": "graf",
+        "fallback_answer": "Count",
+        "final_reason": "The reasoning steps indicate that Leo Tolstoy's full name and title was Count Lev Nikolayevich Tolstoy, and the title 'Count' was conferred on him as a hereditary noble title."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "graf"
+      },
+      "avg_retrieval_time": 3.735405445098877,
+      "avg_similarity": 9.998685100242636,
+      "max_similarity": 27.815465789812386,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 252,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.14605093002319336,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        20.868588121475682
+      ],
+      "max_similarity_scores": [
+        22.268794272652727
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 158,
+      "prompt_token_counts": [
+        158
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "The Stanley Hotel",
+        "ground_truth": "the Southern Rocky Mountains",
+        "fallback_answer": "The Stanley Hotel",
+        "final_reason": "The primary setting of The Shining is The Stanley Hotel, as it was influenced by King's visit there in 1974."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "the Southern Rocky Mountains"
+      },
+      "avg_retrieval_time": 0.14605093002319336,
+      "avg_similarity": 20.868588121475682,
+      "max_similarity": 22.268794272652727,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 158,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 3.2920641899108887,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        1.0,
+        24.893889829391036
+      ],
+      "max_similarity_scores": [
+        1.0,
+        25.951999842938953
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 200,
+      "prompt_token_counts": [
+        200
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Santa Cruz, California",
+        "ground_truth": "Santa Cruz, California",
+        "fallback_answer": "Santa Cruz, California",
+        "final_reason": "Charles Duhigg, the author of 'The Power of Habit', resides in Santa Cruz, California."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Santa Cruz, California"
+      },
+      "avg_retrieval_time": 1.6460320949554443,
+      "avg_similarity": 12.946944914695518,
+      "max_similarity": 25.951999842938953,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 200,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 2.5756075382232666,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        0.0
+      ],
+      "max_similarity_scores": [
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 155,
+      "prompt_token_counts": [
+        155
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.28571428571428575,
+        "final_answer": "evolution by natural selection",
+        "ground_truth": "theory of evolution",
+        "fallback_answer": "evolution by natural selection",
+        "final_reason": "The Origin of Species is widely known to be about evolution by natural selection, as stated in the question's context."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.28571428571428575,
+        "ground_truth": "theory of evolution"
+      },
+      "avg_retrieval_time": 2.5756075382232666,
+      "avg_similarity": 0.0,
+      "max_similarity": 0.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 155,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.10620522499084473,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        15.417258855822809
+      ],
+      "max_similarity_scores": [
+        17.845504716456038
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 132,
+      "prompt_token_counts": [
+        132
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Charles Darwin",
+        "ground_truth": "Charles Darwin",
+        "fallback_answer": "",
+        "final_reason": "The Origin of Species is a well-known scientific work, and its author is Charles Darwin. Although the provided reasoning step did not find relevant information, this is a widely established fact."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Charles Darwin"
+      },
+      "avg_retrieval_time": 0.10620522499084473,
+      "avg_similarity": 15.417258855822809,
+      "max_similarity": 17.845504716456038,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 132,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.12408614158630371,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        14.626679360990996
+      ],
+      "max_similarity_scores": [
+        16.712703737534394
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 154,
+      "prompt_token_counts": [
+        154
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "final_answer": "evolution",
+        "ground_truth": "theory of evolution",
+        "fallback_answer": "evolution",
+        "final_reason": "The reasoning step indicates that the main subject of 'The Origin of Species' is evolution, as evidenced by Terry Pratchett's reaction to the book."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "ground_truth": "theory of evolution"
+      },
+      "avg_retrieval_time": 0.12408614158630371,
+      "avg_similarity": 14.626679360990996,
+      "max_similarity": 16.712703737534394,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 154,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 5.378838062286377,
+      "total_docs_searched": 27,
+      "avg_similarity_scores": [
+        0.14412802789822526
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 165,
+      "prompt_token_counts": [
+        165
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Five Are Together Again",
+        "ground_truth": "Five Are Together Again",
+        "fallback_answer": "Five Are Together Again",
+        "final_reason": "The last book in the series The Famous Five is 'Five Are Together Again', as it has the highest series ordinal (21) among the books in the series."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Five Are Together Again"
+      },
+      "avg_retrieval_time": 5.378838062286377,
+      "avg_similarity": 0.14412802789822526,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 165,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 5.144005060195923,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.75,
+        22.616141849208937
+      ],
+      "max_similarity_scores": [
+        1.0,
+        25.421736324758083
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 203,
+      "prompt_token_counts": [
+        203
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Jo's Boys",
+        "ground_truth": "Jo's Boys",
+        "fallback_answer": "Jo's Boys",
+        "final_reason": "The final book in the Little Women series is 'Jo's Boys', which features Josie as a teenager."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Jo's Boys"
+      },
+      "avg_retrieval_time": 2.5720025300979614,
+      "avg_similarity": 11.683070924604468,
+      "max_similarity": 25.421736324758083,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 203,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.16467952728271484,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        29.16869319155922,
+        16.86103943147206
+      ],
+      "max_similarity_scores": [
+        34.61958532409474,
+        20.511035977910442
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 189,
+      "prompt_token_counts": [
+        189
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No relevant information found",
+        "ground_truth": "Toni Morrison",
+        "fallback_answer": "",
+        "final_reason": "The Alfred A. Knopf Inc series is identified as Everyman's Library, but no information is available about who wrote it, as it is a series of classic works by various authors, not a single author."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Toni Morrison"
+      },
+      "avg_retrieval_time": 0.08233976364135742,
+      "avg_similarity": 23.01486631151564,
+      "max_similarity": 34.61958532409474,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 189,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.4215719699859619,
+      "total_docs_searched": 15,
+      "avg_similarity_scores": [
+        29.751504468615234,
+        25.394672092735266,
+        26.550734867986723
+      ],
+      "max_similarity_scores": [
+        30.30105142266744,
+        29.95127371867399,
+        31.742334039147416
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 282,
+      "prompt_token_counts": [
+        282
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Ebenezer Battelle",
+        "ground_truth": "Ebenezer Battelle",
+        "fallback_answer": "Ebenezer Battelle",
+        "final_reason": "Little, Brown and Company traces its roots to a bookshop owned by Ebenezer Battelle, and the company was founded by Charles Little and James Brown, who were associated with that bookshop."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Ebenezer Battelle"
+      },
+      "avg_retrieval_time": 0.14052398999532065,
+      "avg_similarity": 27.232303809779072,
+      "max_similarity": 31.742334039147416,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 282,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.19117140769958496,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        32.56766010683799,
+        34.912438116742464
+      ],
+      "max_similarity_scores": [
+        36.20907242576895,
+        39.17334007132545
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 235,
+      "prompt_token_counts": [
+        235
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "final_answer": "3 Idiots",
+        "ground_truth": "3 Idiots;Nanban",
+        "fallback_answer": "3 Idiots",
+        "final_reason": "The novel Five Point Someone is a 2004 novel by Chetan Bhagat, and the film 3 Idiots (2009) is based on this novel."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "ground_truth": "3 Idiots;Nanban"
+      },
+      "avg_retrieval_time": 0.09558570384979248,
+      "avg_similarity": 33.74004911179023,
+      "max_similarity": 39.17334007132545,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 235,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.16608667373657227,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        39.82203161617104
+      ],
+      "max_similarity_scores": [
+        46.622968195470705
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 172,
+      "prompt_token_counts": [
+        172
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "227 days",
+        "ground_truth": "227 days",
+        "fallback_answer": "227",
+        "final_reason": "Pi survives 227 days at sea after the shipwreck, as stated in the reasoning steps."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "227 days"
+      },
+      "avg_retrieval_time": 0.16608667373657227,
+      "avg_similarity": 39.82203161617104,
+      "max_similarity": 46.622968195470705,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 172,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 4.231811761856079,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 164,
+      "prompt_token_counts": [
+        164
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.8,
+        "final_answer": "1 February 2012",
+        "ground_truth": "February 2012",
+        "fallback_answer": "1 February 2012",
+        "final_reason": "The evidence document directly states the publication date of 'The Dark Tower: The Wind Through the Keyhole' as 1 February 2012."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.8,
+        "ground_truth": "February 2012"
+      },
+      "avg_retrieval_time": 4.231811761856079,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 164,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.11065316200256348,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        26.796327591128897
+      ],
+      "max_similarity_scores": [
+        27.469978214980387
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 151,
+      "prompt_token_counts": [
+        151
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Thomas Cromwell",
+        "ground_truth": "Thomas Cromwell",
+        "fallback_answer": "Thomas Cromwell",
+        "final_reason": "The evidence documents describe the Wolf Hall trilogy as covering Cromwell's life, indicating he is the main character."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Thomas Cromwell"
+      },
+      "avg_retrieval_time": 0.11065316200256348,
+      "avg_similarity": 26.796327591128897,
+      "max_similarity": 27.469978214980387,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 151,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.2048795223236084,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        36.7663747670121,
+        20.363263420332125
+      ],
+      "max_similarity_scores": [
+        38.01699096041365,
+        24.223106670127756
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 218,
+      "prompt_token_counts": [
+        218
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "Thomas",
+        "ground_truth": "Thomas Wolsey",
+        "fallback_answer": "Thomas",
+        "final_reason": "The Cardinal that Thomas Cromwell advises in the Wolf Hall book series is Cardinal Thomas Wolsey, whose first name is Thomas."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "Thomas Wolsey"
+      },
+      "avg_retrieval_time": 0.1024397611618042,
+      "avg_similarity": 28.564819093672114,
+      "max_similarity": 38.01699096041365,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 218,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 14.015921831130981,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.75,
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 182,
+      "prompt_token_counts": [
+        182
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Glorious Appearing",
+        "ground_truth": "Glorious Appearing",
+        "fallback_answer": "Glorious Appearing",
+        "final_reason": "Kingdom Come follows Glorious Appearing in the publication order of the Left Behind series, so Glorious Appearing is the book that immediately precedes it."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Glorious Appearing"
+      },
+      "avg_retrieval_time": 7.007960915565491,
+      "avg_similarity": 0.6354166666666666,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 182,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 9.315183401107788,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        1.0,
+        0.37040816326530607
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 226,
+      "prompt_token_counts": [
+        226
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Tor.com",
+        "ground_truth": "Audible",
+        "fallback_answer": "Tor.com",
+        "final_reason": "The author of The Lady Astronaut of Mars is Mary Robinette Kowal, and the work was first published by Tor.com."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Audible"
+      },
+      "avg_retrieval_time": 4.657591700553894,
+      "avg_similarity": 0.685204081632653,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 226,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.11442899703979492,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        36.29262660902341,
+        23.517674385943074
+      ],
+      "max_similarity_scores": [
+        38.46070966763162,
+        26.352142990841237
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 226,
+      "prompt_token_counts": [
+        226
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Science Fiction and Fantasy Writers of America",
+        "ground_truth": "Science Fiction and Fantasy Writers of America",
+        "fallback_answer": "Science Fiction and Fantasy Writers of America",
+        "final_reason": "Mary Robinette Kowal served as president of the Science Fiction and Fantasy Writers of America from 2019 to 2021."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Science Fiction and Fantasy Writers of America"
+      },
+      "avg_retrieval_time": 0.05721449851989746,
+      "avg_similarity": 29.90515049748324,
+      "max_similarity": 38.46070966763162,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 226,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.4869701862335205,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        27.556011408460613
+      ],
+      "max_similarity_scores": [
+        28.803530810079558
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 163,
+      "prompt_token_counts": [
+        163
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Benenden School",
+        "ground_truth": "Benenden School",
+        "fallback_answer": "Benenden School",
+        "final_reason": "The evidence states that the series is based on a girls' boarding school that Blyton's daughter attended, Benenden School."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Benenden School"
+      },
+      "avg_retrieval_time": 0.4869701862335205,
+      "avg_similarity": 27.556011408460613,
+      "max_similarity": 28.803530810079558,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 163,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 5.244108438491821,
+      "total_docs_searched": 12,
+      "avg_similarity_scores": [
+        23.16103846860029,
+        0.75,
+        37.30177370092182
+      ],
+      "max_similarity_scores": [
+        24.650817748296173,
+        1.0,
+        48.97503939504368
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 216,
+      "prompt_token_counts": [
+        216
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "In the Fifth at Malory Towers",
+        "ground_truth": "In the Fifth at Malory Towers",
+        "fallback_answer": "",
+        "final_reason": "The Malory Towers series consists of six novels by Enid Blyton. The fifth book in the series is 'In the Fifth at Malory Towers'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "In the Fifth at Malory Towers"
+      },
+      "avg_retrieval_time": 1.7480361461639404,
+      "avg_similarity": 20.404270723174037,
+      "max_similarity": 48.97503939504368,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 216,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 3.537308931350708,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 155,
+      "prompt_token_counts": [
+        155
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Laura Dave",
+        "ground_truth": "Laura Dave",
+        "fallback_answer": "Laura Dave",
+        "final_reason": "The reasoning step confirms that the author of 'The Last Thing He Told Me' is Laura Dave."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Laura Dave"
+      },
+      "avg_retrieval_time": 3.537308931350708,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 155,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 11.069221258163452,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        1.0,
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 205,
+      "prompt_token_counts": [
+        205
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Runaround",
+        "ground_truth": "I, Robot",
+        "fallback_answer": "Runaround",
+        "final_reason": "Isaac Asimov introduced the Three Laws of Robotics, and they appear in his work 'Runaround'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "I, Robot"
+      },
+      "avg_retrieval_time": 5.534610629081726,
+      "avg_similarity": 0.875,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 205,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.21004199981689453,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        25.07053327680189,
+        28.68852981522515
+      ],
+      "max_similarity_scores": [
+        28.962791769665493,
+        32.37004409745185
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 194,
+      "prompt_token_counts": [
+        194
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Robots and Empire",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps identify Asimov as the coiner of the term, but no source provides the specific year when he first introduced or named the Zeroth Law. Therefore, the answer cannot be determined from the given information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Robots and Empire"
+      },
+      "avg_retrieval_time": 0.10502099990844727,
+      "avg_similarity": 26.879531546013517,
+      "max_similarity": 32.37004409745185,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 194,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 7.494185924530029,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        1.0,
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 203,
+      "prompt_token_counts": [
+        203
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Runaround",
+        "ground_truth": "I, Robot",
+        "fallback_answer": "Runaround",
+        "final_reason": "Isaac Asimov introduced the Three Laws of Robotics, and they first appeared in his work 'Runaround'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "I, Robot"
+      },
+      "avg_retrieval_time": 3.7470929622650146,
+      "avg_similarity": 0.875,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 203,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.2044534683227539,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        37.25084126278224,
+        16.975389543954144
+      ],
+      "max_similarity_scores": [
+        45.46835866349191,
+        18.958400128836196
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 212,
+      "prompt_token_counts": [
+        212
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "1956",
+        "ground_truth": "1956",
+        "fallback_answer": "1956",
+        "final_reason": "The first feature film adaptation of Nineteen Eighty-Four is titled 1984, and it was released in 1956."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "1956"
+      },
+      "avg_retrieval_time": 0.10222673416137695,
+      "avg_similarity": 27.11311540336819,
+      "max_similarity": 45.46835866349191,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 212,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 5.188256740570068,
+      "total_docs_searched": 45,
+      "avg_similarity_scores": [
+        0.11847946911476746,
+        34.15197136229501,
+        26.739740161696478
+      ],
+      "max_similarity_scores": [
+        1.0,
+        54.42031754461931,
+        37.332769691502904
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 325,
+      "prompt_token_counts": [
+        325
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Times",
+        "ground_truth": "The Times",
+        "fallback_answer": "The Times",
+        "final_reason": "The Times ranked George Orwell second among 'The 50 greatest British writers since 1945' in 2008."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Times"
+      },
+      "avg_retrieval_time": 1.7294189135233562,
+      "avg_similarity": 20.336730331035415,
+      "max_similarity": 54.42031754461931,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 325,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.23433923721313477,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        36.03652558539853,
+        24.27709430466528
+      ],
+      "max_similarity_scores": [
+        45.13621874632557,
+        34.67165439658192
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 220,
+      "prompt_token_counts": [
+        220
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "1956",
+        "ground_truth": "1956",
+        "fallback_answer": "1956",
+        "final_reason": "The first feature film adaptation of Nineteen Eighty-Four is titled 1984, and it was released in 1956."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "1956"
+      },
+      "avg_retrieval_time": 0.11716961860656738,
+      "avg_similarity": 30.156809945031902,
+      "max_similarity": 45.13621874632557,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 220,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 5.325306415557861,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 144,
+      "prompt_token_counts": [
+        144
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Chaim Potok",
+        "ground_truth": "Chaim Potok",
+        "fallback_answer": "Chaim Potok",
+        "final_reason": "The evidence document directly states that The Chosen has an outgoing author relation to Chaim Potok."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Chaim Potok"
+      },
+      "avg_retrieval_time": 5.325306415557861,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 144,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 4.867290019989014,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 140,
+      "prompt_token_counts": [
+        140
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Chaim Potok",
+        "ground_truth": "Chaim Potok",
+        "fallback_answer": "Chaim Potok",
+        "final_reason": "The reasoning step directly identifies Chaim Potok as the author of The Chosen."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Chaim Potok"
+      },
+      "avg_retrieval_time": 4.867290019989014,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 140,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.08248496055603027,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        33.0421669776439
+      ],
+      "max_similarity_scores": [
+        40.5056083381683
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 167,
+      "prompt_token_counts": [
+        167
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Bagne of Toulon",
+        "ground_truth": "Bagne of Toulon",
+        "fallback_answer": "Bagne of Toulon",
+        "final_reason": "Jean Valjean was sent to the Bagne of Toulon, the Toulon prison, as stated in the evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Bagne of Toulon"
+      },
+      "avg_retrieval_time": 0.08248496055603027,
+      "avg_similarity": 33.0421669776439,
+      "max_similarity": 40.5056083381683,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 167,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 12.680600643157959,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        0.5208333333333333,
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 238,
+      "prompt_token_counts": [
+        238
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Honor\u00e9 de Balzac",
+        "ground_truth": "Honor\u00e9 de Balzac",
+        "fallback_answer": "yes",
+        "final_reason": "Anne-Charlotte-Laure Sallambier is the mother of Honor\u00e9 de Balzac, and he was awarded the L\u00e9gion d'honneur in 1845."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Honor\u00e9 de Balzac"
+      },
+      "avg_retrieval_time": 6.3403003215789795,
+      "avg_similarity": 0.5208333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 238,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 15.74409294128418,
+      "total_docs_searched": 106,
+      "avg_similarity_scores": [
+        0.05187377517639621,
+        0.40833333333333327
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 246,
+      "prompt_token_counts": [
+        246
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Les Secrets de la princesse de Cadignan",
+        "fallback_answer": "",
+        "final_reason": "The provided reasoning steps indicate that the evidence does not specify which individual books feature Rastignac or their publication order, so the third book cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Les Secrets de la princesse de Cadignan"
+      },
+      "avg_retrieval_time": 7.87204647064209,
+      "avg_similarity": 0.23010355425486473,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 246,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 6.544143199920654,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 159,
+      "prompt_token_counts": [
+        159
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Ewelina Ha\u0144ska",
+        "ground_truth": "Ewelina Ha\u0144ska",
+        "fallback_answer": "Ewelina Ha\u0144ska",
+        "final_reason": "The reasoning step identifies Ewelina Ha\u0144ska as the wife of Honor\u00e9 de Balzac."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Ewelina Ha\u0144ska"
+      },
+      "avg_retrieval_time": 6.544143199920654,
+      "avg_similarity": 0.611111111111111,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 159,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.1428086757659912,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        18.58584096581455,
+        23.61595452516294
+      ],
+      "max_similarity_scores": [
+        21.750169576509585,
+        24.72193900941943
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 180,
+      "prompt_token_counts": [
+        180
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Honor\u00e9 de Balzac",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find any relevant information to identify the writer or confirm the L\u00e9gion d'honneur award for the mother."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Honor\u00e9 de Balzac"
+      },
+      "avg_retrieval_time": 0.0714043378829956,
+      "avg_similarity": 21.100897745488744,
+      "max_similarity": 24.72193900941943,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 180,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 6.78634238243103,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 139,
+      "prompt_token_counts": [
+        139
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "800,000",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to determine the number of copies sold by February 2010."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "800,000"
+      },
+      "avg_retrieval_time": 6.78634238243103,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 139,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 4.599440574645996,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "\u22122.3",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to determine the daily mean temperature of Kabul in January."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "\u22122.3"
+      },
+      "avg_retrieval_time": 4.599440574645996,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 7.3022847175598145,
+      "total_docs_searched": 13,
+      "avg_similarity_scores": [
+        0.0,
+        0.25860088985088986
+      ],
+      "max_similarity_scores": [
+        0.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 178,
+      "prompt_token_counts": [
+        178
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Octopussy and The Living Daylights",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found to list Ian Fleming's publications in order, and the final publication cannot be determined from the available evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Octopussy and The Living Daylights"
+      },
+      "avg_retrieval_time": 3.6511423587799072,
+      "avg_similarity": 0.12930044492544493,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 178,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.1795823574066162,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        30.69870521946179
+      ],
+      "max_similarity_scores": [
+        34.909110697169226
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 172,
+      "prompt_token_counts": [
+        172
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.3333333333333333,
+        "final_answer": "B-25 bombardier",
+        "ground_truth": "North American B-25 Mitchell",
+        "fallback_answer": "B-25 bombardier",
+        "final_reason": "The reasoning step indicates that Captain John Yossarian is a U.S. Army Air Forces B-25 bombardier."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.3333333333333333,
+        "ground_truth": "North American B-25 Mitchell"
+      },
+      "avg_retrieval_time": 0.1795823574066162,
+      "avg_similarity": 30.69870521946179,
+      "max_similarity": 34.909110697169226,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 172,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 14.900851488113403,
+      "total_docs_searched": 31,
+      "avg_similarity_scores": [
+        0.22121526621526624,
+        0.2112955620768121
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 296,
+      "prompt_token_counts": [
+        296
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Vicomte of Bragelonne: Ten Years Later",
+        "ground_truth": "The Vicomte of Bragelonne: Ten Years Later",
+        "fallback_answer": "The Vicomte of Bragelonne: Ten Years Later",
+        "final_reason": "D'Artagnan appears in the D'Artagnan Romances series, and the final novel in that series, The Vicomte of Bragelonne: Ten Years Later, is where he dies."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Vicomte of Bragelonne: Ten Years Later"
+      },
+      "avg_retrieval_time": 7.450425744056702,
+      "avg_similarity": 0.21625541414603916,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 296,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.1567370891571045,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        25.764465301286936
+      ],
+      "max_similarity_scores": [
+        29.75135721437674
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 152,
+      "prompt_token_counts": [
+        152
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Mordor",
+        "ground_truth": "Mordor",
+        "fallback_answer": "Mordor",
+        "final_reason": "Frodo is heading to Mordor in The Two Towers, as stated in the reasoning step."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Mordor"
+      },
+      "avg_retrieval_time": 0.1567370891571045,
+      "avg_similarity": 25.764465301286936,
+      "max_similarity": 29.75135721437674,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 152,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.26706433296203613,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        34.27444019730786,
+        20.39478671494917
+      ],
+      "max_similarity_scores": [
+        34.8394769573405,
+        28.807181504050593
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 199,
+      "prompt_token_counts": [
+        199
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "221B",
+        "ground_truth": "221B",
+        "fallback_answer": "",
+        "final_reason": "The address 221B Baker Street includes the flat number 'B', which is the flat number of Sherlock Holmes's residence in the novel A Study in Scarlet."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "221B"
+      },
+      "avg_retrieval_time": 0.13353216648101807,
+      "avg_similarity": 27.334613456128515,
+      "max_similarity": 34.8394769573405,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 199,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 4.721907615661621,
+      "total_docs_searched": 19,
+      "avg_similarity_scores": [
+        30.232442787269342,
+        0.23225445189730906
+      ],
+      "max_similarity_scores": [
+        37.3156807534726,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 208,
+      "prompt_token_counts": [
+        208
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Last Olympian",
+        "ground_truth": "The Last Olympian",
+        "fallback_answer": "The Last Olympian",
+        "final_reason": "The series ordinal of 'The Last Olympian' is 5, and it follows 'The Battle of the Labyrinth', making it the last book in the Percy Jackson & the Olympians series."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Last Olympian"
+      },
+      "avg_retrieval_time": 2.3609538078308105,
+      "avg_similarity": 15.232348619583325,
+      "max_similarity": 37.3156807534726,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 208,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 12.69617223739624,
+      "total_docs_searched": 11,
+      "avg_similarity_scores": [
+        0.3397321428571428,
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 229,
+      "prompt_token_counts": [
+        229
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Rebels",
+        "ground_truth": "The Rebels",
+        "fallback_answer": "The Rebels",
+        "final_reason": "The first book is The Bastard, and the second book in the series is The Rebels, as it follows The Bastard."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Rebels"
+      },
+      "avg_retrieval_time": 6.34808611869812,
+      "avg_similarity": 0.47542162698412693,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 229,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 3.9297432899475098,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 141,
+      "prompt_token_counts": [
+        141
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "John Jakes",
+        "ground_truth": "John Jakes",
+        "fallback_answer": "John Jakes",
+        "final_reason": "The evidence documents directly state that The Kent Family Chronicles has author John Jakes."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "John Jakes"
+      },
+      "avg_retrieval_time": 3.9297432899475098,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 141,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 3.696000576019287,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.0,
+        0.0
+      ],
+      "max_similarity_scores": [
+        0.0,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 146,
+      "prompt_token_counts": [
+        146
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Richard Garriott",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not identify the genre name or the person who popularized it, so the final answer cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Richard Garriott"
+      },
+      "avg_retrieval_time": 1.8480002880096436,
+      "avg_similarity": 0.0,
+      "max_similarity": 0.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 146,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.17606282234191895,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        29.650091337519985
+      ],
+      "max_similarity_scores": [
+        37.349930149186086
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 205,
+      "prompt_token_counts": [
+        205
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Lightning Thief",
+        "ground_truth": "The Lightning Thief",
+        "fallback_answer": "The Lightning Thief",
+        "final_reason": "The first novel in the Percy Jackson and the Olympians series is widely known to be 'The Lightning Thief', as inferred from general knowledge."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Lightning Thief"
+      },
+      "avg_retrieval_time": 0.17606282234191895,
+      "avg_similarity": 29.650091337519985,
+      "max_similarity": 37.349930149186086,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 205,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.4233582019805908,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        28.551276581350955,
+        37.07748013301183
+      ],
+      "max_similarity_scores": [
+        36.927558318107295,
+        40.77433733496309
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 207,
+      "prompt_token_counts": [
+        207
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Sea of Monsters",
+        "ground_truth": "The Sea of Monsters",
+        "fallback_answer": "",
+        "final_reason": "The second book in the Percy Jackson and the Olympians series by Rick Riordan is 'The Sea of Monsters'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The Sea of Monsters"
+      },
+      "avg_retrieval_time": 0.2116791009902954,
+      "avg_similarity": 32.8143783571814,
+      "max_similarity": 40.77433733496309,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 207,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.03630661964416504,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        24.492897415337882
+      ],
+      "max_similarity_scores": [
+        25.201459209010082
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 175,
+      "prompt_token_counts": [
+        175
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Sally Jackson",
+        "ground_truth": "Sally Jackson",
+        "fallback_answer": "Sally Jackson",
+        "final_reason": "Although the provided evidence does not explicitly state Percy Jackson's mother's name, it is a well-known fact from the Percy Jackson series that his mother is Sally Jackson."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Sally Jackson"
+      },
+      "avg_retrieval_time": 0.03630661964416504,
+      "avg_similarity": 24.492897415337882,
+      "max_similarity": 25.201459209010082,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 175,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.1643967628479004,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        28.916827683718076
+      ],
+      "max_similarity_scores": [
+        31.21198535869483
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 131,
+      "prompt_token_counts": [
+        131
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Charles Darnay",
+        "ground_truth": "Alexandre Manette",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide a definitive answer, but based on common literary knowledge, the main character in A Tale of Two Cities is often considered to be Charles Darnay, though Sydney Carton is also a central figure. Since the steps yielded no information, I rely on the most commonly cited protagonist."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Alexandre Manette"
+      },
+      "avg_retrieval_time": 0.1643967628479004,
+      "avg_similarity": 28.916827683718076,
+      "max_similarity": 31.21198535869483,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 131,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 15.51325511932373,
+      "total_docs_searched": 4,
+      "avg_similarity_scores": [
+        0.75,
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 179,
+      "prompt_token_counts": [
+        179
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "The title 'Moby-Dick' refers to the white whale, which symbolizes the inscrutable and powerful forces of nature, as well as the object of Captain Ahab's obsessive quest for revenge. The full meaning encompasses themes of obsession, the struggle between man and nature, and the search for meaning in an indifferent universe.",
+        "ground_truth": "Different problem",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide specific information, so the answer is based on general literary knowledge about Herman Melville's novel. The title 'Moby-Dick' is the name of the whale, and its symbolic significance is widely discussed in literary criticism, representing the sublime, the unknowable, and the destructive nature of obsession."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Different problem"
+      },
+      "avg_retrieval_time": 7.756627559661865,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 179,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.21637725830078125,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        23.49774237373748,
+        21.154309362449503
+      ],
+      "max_similarity_scores": [
+        25.334723111130803,
+        24.412089259526002
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 179,
+      "prompt_token_counts": [
+        179
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Ticknor, Reed & Fields",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps identified Nathaniel Hawthorne as the author of The Scarlet Letter, but no information was found about the publisher. Therefore, the publisher cannot be determined from the given evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Ticknor, Reed & Fields"
+      },
+      "avg_retrieval_time": 0.10818862915039062,
+      "avg_similarity": 22.32602586809349,
+      "max_similarity": 25.334723111130803,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 179,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 1.3604695796966553,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        11.16004689858188
+      ],
+      "max_similarity_scores": [
+        0.0,
+        11.828564575049796
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 148,
+      "prompt_token_counts": [
+        148
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Tim Jacobus",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found to identify the book or publication, and therefore the original illustrator of the cover cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Tim Jacobus"
+      },
+      "avg_retrieval_time": 0.6802347898483276,
+      "avg_similarity": 5.58002344929094,
+      "max_similarity": 11.828564575049796,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 148,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.23114824295043945,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        12.113457236376295,
+        15.009018490468048
+      ],
+      "max_similarity_scores": [
+        16.481362084194668,
+        16.275989299617304
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 173,
+      "prompt_token_counts": [
+        173
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Wilkinsburg, PA",
+        "fallback_answer": "",
+        "final_reason": "The original question lacks a clear subject, so it is impossible to determine which city was founded. The reasoning steps indicate no relevant information was found to identify the entity or the city."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Wilkinsburg, PA"
+      },
+      "avg_retrieval_time": 0.11557412147521973,
+      "avg_similarity": 13.561237863422171,
+      "max_similarity": 16.481362084194668,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 173,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.298065185546875,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        15.242543278995338,
+        18.219810838360726
+      ],
+      "max_similarity_scores": [
+        16.081925543000757,
+        19.163947595529738
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 204,
+      "prompt_token_counts": [
+        204
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Kabul",
+        "ground_truth": "John Wilkins Jr.",
+        "fallback_answer": "Kabul",
+        "final_reason": "The city referred to is Kabul, and according to the evidence, it was named after a tribe called Kabul."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "John Wilkins Jr."
+      },
+      "avg_retrieval_time": 0.1490325927734375,
+      "avg_similarity": 16.731177058678032,
+      "max_similarity": 19.163947595529738,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 204,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 5.103532314300537,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 150,
+      "prompt_token_counts": [
+        150
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "James Baldwin",
+        "ground_truth": "James Baldwin",
+        "fallback_answer": "James Baldwin",
+        "final_reason": "The evidence states that the author of 'If Beale Street Could Talk' is James Baldwin."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "James Baldwin"
+      },
+      "avg_retrieval_time": 5.103532314300537,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 150,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 6.471360206604004,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 150,
+      "prompt_token_counts": [
+        150
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "James Baldwin",
+        "ground_truth": "James Baldwin",
+        "fallback_answer": "James Baldwin",
+        "final_reason": "The evidence documents explicitly state that the author of 'If Beale Street Could Talk' is James Baldwin."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "James Baldwin"
+      },
+      "avg_retrieval_time": 6.471360206604004,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 150,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 6.020901203155518,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 126,
+      "prompt_token_counts": [
+        126
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "1915 to 1969",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine the time period covered in The Thorn Birds."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "1915 to 1969"
+      },
+      "avg_retrieval_time": 6.020901203155518,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 126,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.24489378929138184,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        25.071290659529353,
+        25.53716592685776
+      ],
+      "max_similarity_scores": [
+        26.327374138279456,
+        26.34733285319287
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 226,
+      "prompt_token_counts": [
+        226
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Drogheda",
+        "ground_truth": "The Australian Outback",
+        "fallback_answer": "Drogheda",
+        "final_reason": "The primary setting of The Thorn Birds is Australia, but the specific location where most of the action takes place is Drogheda, as indicated by the evidence that it is the setting where most events occur."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The Australian Outback"
+      },
+      "avg_retrieval_time": 0.12244689464569092,
+      "avg_similarity": 25.304228293193557,
+      "max_similarity": 26.34733285319287,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 226,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.13117551803588867,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        26.132081953022475
+      ],
+      "max_similarity_scores": [
+        28.12869070396728
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 136,
+      "prompt_token_counts": [
+        136
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Mysterious Affair at Styles",
+        "ground_truth": "The Mysterious Affair at Styles",
+        "fallback_answer": "",
+        "final_reason": "The first novel featuring Hercule Poirot is Agatha Christie's 'The Mysterious Affair at Styles', published in 1920."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The Mysterious Affair at Styles"
+      },
+      "avg_retrieval_time": 0.13117551803588867,
+      "avg_similarity": 26.132081953022475,
+      "max_similarity": 28.12869070396728,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 136,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 3.4956932067871094,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 147,
+      "prompt_token_counts": [
+        147
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Lily King",
+        "ground_truth": "Lily King",
+        "fallback_answer": "Lily King",
+        "final_reason": "The evidence document directly states that the author of 'Writers & Lovers' is Lily King."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Lily King"
+      },
+      "avg_retrieval_time": 3.4956932067871094,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 147,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.2616689205169678,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        17.127939655231327,
+        18.17025068706933
+      ],
+      "max_similarity_scores": [
+        17.463072243770068,
+        19.160993036033
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 159,
+      "prompt_token_counts": [
+        159
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Frederick Warne & Co",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find relevant information about the author or publisher of The Tale of Peter Rabbit. Therefore, the publisher cannot be determined from the given information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Frederick Warne & Co"
+      },
+      "avg_retrieval_time": 0.1308344602584839,
+      "avg_similarity": 17.64909517115033,
+      "max_similarity": 19.160993036033,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 159,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 11.105704069137573,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.611111111111111,
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 223,
+      "prompt_token_counts": [
+        223
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Marvelous Land of Oz",
+        "ground_truth": "The Marvelous Land of Oz",
+        "fallback_answer": "The Marvelous Land of Oz",
+        "final_reason": "The first book in the Oz series is The Wonderful Wizard of Oz, and the evidence indicates that the next book, which is the second in the series, is The Marvelous Land of Oz."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Marvelous Land of Oz"
+      },
+      "avg_retrieval_time": 5.552852034568787,
+      "avg_similarity": 0.6805555555555556,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 223,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 1.0299367904663086,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        12.833605904682468
+      ],
+      "max_similarity_scores": [
+        0.0,
+        13.558926196551273
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 139,
+      "prompt_token_counts": [
+        139
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Reilly & Lee",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not identify the book or its publisher, so the answer cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Reilly & Lee"
+      },
+      "avg_retrieval_time": 0.5149683952331543,
+      "avg_similarity": 6.416802952341234,
+      "max_similarity": 13.558926196551273,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 139,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.14026308059692383,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        18.80734755154405
+      ],
+      "max_similarity_scores": [
+        20.364878085737626
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 138,
+      "prompt_token_counts": [
+        138
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Assassin's Apprentice",
+        "ground_truth": "Assassin's Apprentice",
+        "fallback_answer": "",
+        "final_reason": "The Farseer Trilogy is a well-known fantasy series by Robin Hobb, and its first book is Assassin's Apprentice."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Assassin's Apprentice"
+      },
+      "avg_retrieval_time": 0.14026308059692383,
+      "avg_similarity": 18.80734755154405,
+      "max_similarity": 20.364878085737626,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 138,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 8.591804504394531,
+      "total_docs_searched": 24,
+      "avg_similarity_scores": [
+        0.25860088985088986,
+        0.25860088985088986
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 214,
+      "prompt_token_counts": [
+        214
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Royal Assassin",
+        "ground_truth": "Assassin's Quest",
+        "fallback_answer": "Royal Assassin",
+        "final_reason": "The evidence shows 'The Farseer Trilogy' has 'Royal Assassin' as a part with series ordinal '2', indicating it is the second book."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Assassin's Quest"
+      },
+      "avg_retrieval_time": 4.295902252197266,
+      "avg_similarity": 0.25860088985088986,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 214,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.09789752960205078,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        18.80734755154405
+      ],
+      "max_similarity_scores": [
+        20.364878085737626
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 135,
+      "prompt_token_counts": [
+        135
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Assassin's Apprentice",
+        "ground_truth": "Assassin's Apprentice",
+        "fallback_answer": "",
+        "final_reason": "The Farseer Trilogy is a well-known fantasy series by Robin Hobb, and its first book is Assassin's Apprentice."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Assassin's Apprentice"
+      },
+      "avg_retrieval_time": 0.09789752960205078,
+      "avg_similarity": 18.80734755154405,
+      "max_similarity": 20.364878085737626,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 135,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 4.16147780418396,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.0,
+        0.0
+      ],
+      "max_similarity_scores": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 1513,
+      "prompt_token_counts": [
+        1513
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Good Mother",
+        "ground_truth": "The Good Mother",
+        "fallback_answer": "",
+        "final_reason": "The first novel adaptation movie that Matt Damon acted in is 'The Good Mother' (1988), based on the novel by Sue Miller. This is determined by identifying the earliest film in his filmography that is an adaptation of a novel."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The Good Mother"
+      },
+      "avg_retrieval_time": 1.38715926806132,
+      "avg_similarity": 0.15222222222222223,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 1513,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 11.285912990570068,
+      "total_docs_searched": 18,
+      "avg_similarity_scores": [
+        0.611111111111111,
+        0.22121526621526624
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 205,
+      "prompt_token_counts": [
+        205
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "82",
+        "fallback_answer": "",
+        "final_reason": "The evidence does not provide a complete count of all Perry Mason novels by Erle Stanley Gardner, and some entries are duplicates or unidentified, so the total number cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "82"
+      },
+      "avg_retrieval_time": 5.642956495285034,
+      "avg_similarity": 0.41616318866318863,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 205,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 5.347379207611084,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.75,
+        14.202140150297428
+      ],
+      "max_similarity_scores": [
+        1.0,
+        15.612181907555334
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 152,
+      "prompt_token_counts": [
+        152
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Egypt",
+        "ground_truth": "Cyprus internment camp",
+        "fallback_answer": "",
+        "final_reason": "The Exodus is the biblical event where the Israelites, led by Moses, departed from Egypt, as described in the Book of Exodus. Thus, it took place in Egypt."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Cyprus internment camp"
+      },
+      "avg_retrieval_time": 2.673689603805542,
+      "avg_similarity": 7.476070075148714,
+      "max_similarity": 15.612181907555334,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 152,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 5.038283824920654,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        29.55086808525557,
+        0.0
+      ],
+      "max_similarity_scores": [
+        30.949130223536333,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 260,
+      "prompt_token_counts": [
+        260
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "The Last Moghul",
+        "ground_truth": "Traitors in the Shadows",
+        "fallback_answer": "",
+        "final_reason": "The series 'Empire of the Moghul' consists of six volumes, and the last volume is titled 'The Last Moghul'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Traitors in the Shadows"
+      },
+      "avg_retrieval_time": 2.519141912460327,
+      "avg_similarity": 14.775434042627785,
+      "max_similarity": 30.949130223536333,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 260,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.0019845962524414062,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 243,
+      "prompt_token_counts": [
+        243
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Brothers at War",
+        "ground_truth": "Ruler of the World",
+        "fallback_answer": "",
+        "final_reason": "The third series in the list of Empire of the Moghul books is Brothers at War, as the list is ordered: The Serpent's Tooth, Raiders from the North, Brothers at War, The Tainted Throne, Ruler of the World, Traitors in the Shadows."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Ruler of the World"
+      },
+      "avg_retrieval_time": 0.0009922981262207031,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 243,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.0672311782836914,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        21.39835796433493
+      ],
+      "max_similarity_scores": [
+        24.435677642862846
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 151,
+      "prompt_token_counts": [
+        151
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Mervyn LeRoy",
+        "ground_truth": "Greta Gerwig",
+        "fallback_answer": "Mervyn LeRoy",
+        "final_reason": "The 1949 film adaptation of Little Women was directed by Mervyn LeRoy, as indicated in the reasoning steps."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Greta Gerwig"
+      },
+      "avg_retrieval_time": 0.0672311782836914,
+      "avg_similarity": 21.39835796433493,
+      "max_similarity": 24.435677642862846,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 151,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.1019895076751709,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        29.472290949044996
+      ],
+      "max_similarity_scores": [
+        32.008511491719446
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 156,
+      "prompt_token_counts": [
+        156
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 0.8333333333333334,
+        "final_answer": "D. Mehra and R. K. Mehra",
+        "ground_truth": "D. Mehra and R. K. Mehra",
+        "fallback_answer": "D. Mehra and R. K. Mehra",
+        "final_reason": "The evidence states that Rupa Publications was founded in 1936 by D. Mehra and R. K. Mehra."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 0.8333333333333334,
+        "ground_truth": "D. Mehra and R. K. Mehra"
+      },
+      "avg_retrieval_time": 0.1019895076751709,
+      "avg_similarity": 29.472290949044996,
+      "max_similarity": 32.008511491719446,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 156,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.1828000545501709,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        18.491046505069995
+      ],
+      "max_similarity_scores": [
+        20.115043263626568
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 132,
+      "prompt_token_counts": [
+        132
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Holly Black",
+        "ground_truth": "Holly Black",
+        "fallback_answer": "",
+        "final_reason": "The Folk of the Air is a young adult fantasy book series written by Holly Black. The series includes The Cruel Prince, The Wicked King, and The Queen of Nothing."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Holly Black"
+      },
+      "avg_retrieval_time": 0.1828000545501709,
+      "avg_similarity": 18.491046505069995,
+      "max_similarity": 20.115043263626568,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 132,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.11407899856567383,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        18.15610953610906
+      ],
+      "max_similarity_scores": [
+        19.92793380340568
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 133,
+      "prompt_token_counts": [
+        133
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Holly Black",
+        "ground_truth": "Holly Black",
+        "fallback_answer": "",
+        "final_reason": "The Folk of the Air is a young adult fantasy book series written by Holly Black."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Holly Black"
+      },
+      "avg_retrieval_time": 0.11407899856567383,
+      "avg_similarity": 18.15610953610906,
+      "max_similarity": 19.92793380340568,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 133,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.10687017440795898,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        13.717187774411371
+      ],
+      "max_similarity_scores": [
+        15.010778850954553
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 131,
+      "prompt_token_counts": [
+        131
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Long Way to a Small, Angry Planet",
+        "ground_truth": "The Long Way to a Small, Angry Planet",
+        "fallback_answer": "",
+        "final_reason": "Becky Chambers' first published book is 'The Long Way to a Small, Angry Planet', which was published in 2014."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The Long Way to a Small, Angry Planet"
+      },
+      "avg_retrieval_time": 0.10687017440795898,
+      "avg_similarity": 13.717187774411371,
+      "max_similarity": 15.010778850954553,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 131,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.053961385525763
+    },
+    {
+      "total_retrieval_time": 0.0011932849884033203,
+      "total_docs_searched": 4,
+      "avg_similarity_scores": [
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 139,
+      "prompt_token_counts": [
+        139
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "The Green Dwarf, A Tale of the Perfect Tense",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found about any book written by Charlotte Bront\u00eb in 1833."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The Green Dwarf, A Tale of the Perfect Tense"
+      },
+      "avg_retrieval_time": 0.0011932849884033203,
+      "avg_similarity": 0.5208333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 139,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.053961385525763
+    }
+  ]
+}

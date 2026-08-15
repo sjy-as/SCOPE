@@ -1,0 +1,33 @@
+{
+  "domain": "music",
+  "routing_mode": "atomr",
+  "knowledge_base": [
+    "kg",
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/music/qa_benchmark/questions_clean.jsonl",
+  "output_dir": "/root/autodl-tmp/BBB_CompMix/experiments/route_only/outputs/atomr/music",
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 18.666841449216008,
+  "semantic_catalog": null,
+  "atomr_prompts": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/music/atomr_few_shot_prompts.json",
+  "deepsieve_source_summary": null,
+  "decomposition_counts": {
+    "1": 96,
+    "2": 4
+  },
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 33,
+    "route1.kg": 58,
+    "route1.table": 9,
+    "route2.doc": 1,
+    "route2.kg": 3
+  }
+}

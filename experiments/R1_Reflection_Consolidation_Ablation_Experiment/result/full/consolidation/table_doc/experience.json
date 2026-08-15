@@ -1,0 +1,176 @@
+{
+  "enabled": true,
+  "revision": 20,
+  "updated_at": 1786689380.0328002,
+  "source": "reflection_consolidation_llm",
+  "items": [
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team associated with a venue (e.g., 'home team at', 'plays its home games at', 'primary tenant of', 'owns', 'moved into', 'started construction of', 'contributed to the renovation', 'had its banners displayed at', ",
+      "action": "Route to the 'venue' concept with doc as primary source; do not route to 'teamgame_basic' or 'playoff_series'.",
+      "lesson": "Venue-team relationships (including ownership, construction, and historical events) are not in the schema; doc text is the only reliable source for such narrative information.",
+      "evidence": "Records 989, 991, 995, 997, 1004, 1006, 1013, 1021, 1023, 1024, 1025, 1026, 1027, 1030, 1031, 1032, 1033, 1035, 1045, 1049, 1050, 1051, 1052, 1054, 1057, 1058, 1059, 1061, 1062, 1064, 1066, 1067, 1069, 1071, 1072, 1073, 1076, 1077, 1078, 1079, 1086, 1087, 1090, 1091, 1092, 1108, 1110, 1114, 1115, 1116, 1117, 1118, 1119, 1120: venue-team queries succeeded whe"
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that played at a venue during a specific period (e.g., 'from 1968 to 1992', 'from 1947 to 1960', 'from 1957 to 1961', 'during the late 1950s', 'from 1967 to 1994', 'from 1955 to 1968', 'from 1947 until 1959', ",
+      "action": "Route to the 'venue' concept with doc as primary source; do not route to 'teamgame_basic' or 'teamgame'.",
+      "lesson": "Venue-team historical affiliations are not in the schema; doc text is the only reliable source for such temporal relationships.",
+      "evidence": "Records 1004, 1006, 1011, 1016, 1021, 1034, 1035, 1037, 1040, 1041, 1053, 1055, 1064, 1067, 1077, 1086, 1082, 1083, 1084, 1085, 1088, 1102, 1105: venue-team period queries succeeded when routed to 'venue' with doc (e.g., 1037, 1040, 1041, 1053, 1055, 1064, 1067, 1077, 1086, 1082, 1083, 1084, 1085, 1088, 1102, 1105)."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's record after a specific game number (e.g., 'after game 20', 'after game 32', 'after game 39', 'after game 56', 'after game 57', 'after game 60', 'after game 62', 'after game 58', 'after game 34', 'after game",
+      "action": "Route to the 'teamgame_basic' or 'teamgame' concept with table as primary source, doc as fallback.",
+      "lesson": "Team game logs with a 'Record' column directly provide the record after a specific game number, making them the most reliable source.",
+      "evidence": "Records 986, 989, 997, 1027, 1028, 1034, 1040, 1041, 1053, 1054, 1056, 1057, 1058, 1062, 1066, 1068, 1071, 1072, 1073, 1074, 1097, 1100, 1108, 1110, 1114, 1119, 1120: record-after-game-number queries succeeded with table primary (e.g., 1040, 1041, 1053, 1054, 1056, 1057, 1058, 1062, 1066, 1068, 1071, 1072, 1073, 1074, 1108, 1110, 1114, 1119)."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's record after a specific date (e.g., 'after its January 2 game', 'after its January 9 game', 'after its November 13 game', 'after its November 21 game', 'after its March 1 game', 'on March 4', 'on December 6'",
+      "action": "Route to the 'teamgame_basic' or 'teamgame' concept with table as primary source, doc as fallback.",
+      "lesson": "Team game logs with a 'Record' column and dates directly provide the record after a specific date, making them the most reliable source.",
+      "evidence": "Records 980, 990, 1000, 1001, 1002, 1004, 1005, 1035, 1038, 1042, 1044, 1055, 1061, 1067, 1070, 1075, 1076, 1106, 1107, 1109, 1113, 1115, 1118: record-after-date queries succeeded with table primary (e.g., 1038, 1044, 1075, 1076, 1106, 1107, 1109, 1115, 1118)."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's record after its first five games (e.g., 'after its first five games') and the known entity is a team.",
+      "action": "Route to the 'teamgame_basic' or 'teamgame' concept with table as primary source, doc as fallback.",
+      "lesson": "Team game logs with a 'Record' column directly provide the record after a specific number of games, making them the most reliable source.",
+      "evidence": "Records 991, 992, 1036, 1117: record-after-first-five-games queries succeeded with table primary (e.g., 991, 992, 1036, 1117)."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's result in a specific game (e.g., 'result of its first game', 'result of Game 1', 'result of Game 3', 'result of Game 5', 'result when played the Syracuse Nationals on Oct 31', 'result of the game against the",
+      "action": "Route to the 'teamgame_basic' or 'teamgame' concept with table as primary source, doc as fallback.",
+      "lesson": "Team game logs with scores and results directly provide the outcome for a specific game, making them the most reliable source.",
+      "evidence": "Records 998, 999, 1007, 1011, 1014, 1015, 1016, 1017, 1025, 1026, 1051, 1092, 1082, 1083, 1111, 1112: result-in-game queries succeeded with table primary (e.g., 998, 999, 1007, 1011, 1014, 1015, 1016, 1017, 1025, 1026, 1051, 1092, 1082, 1083, 1112)."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's result in a specific playoff game (e.g., 'result of Game 3 of the playoffs', 'result of Game 1 in its 1993–94 Series Summary', 'series result after Game 5', 'result of Game 1 for the team that...', 'result o",
+      "action": "Route to the 'playoff_series' concept with table as primary source, doc as fallback.",
+      "lesson": "Playoff series tables directly list game results, making them the most reliable source for specific game outcomes.",
+      "evidence": "Records 1006, 1007, 1008, 1009, 1010, 1012, 1013, 1016, 1030, 1031, 1033, 1049, 1078, 1079, 1086, 1090, 1091, 1080, 1093, 1095, 1096, 1102, 1103, 1104, 1105: playoff-game-result queries succeeded with table primary (e.g., 1049, 1078, 1079, 1086, 1090, 1091, 1080, 1093, 1095, 1096, 1102, 1103, 1104, 1105)."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for the score of a game seven that a team won in a specific year (e.g., 'score of the game seven that the team won in 1952', 'score of its game seven victory in 1952') and the known entity is a team.",
+      "action": "Route to the 'playoff_series' concept with table as primary source, doc as fallback.",
+      "lesson": "Playoff series tables directly list game scores, making them the most reliable source for such event-based queries.",
+      "evidence": "Records 1018, 1085, 1084: game-seven-score queries succeeded with table primary (e.g., 1018, 1085, 1084)."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for the position of a player selected by a team in a specific draft (e.g., 'what position was selected with its pick in the 1949 BAA draft', 'what position was selected in the 1949 BAA draft') and the known entity is the",
+      "action": "Route to the 'draft' concept with table as primary source, doc as fallback.",
+      "lesson": "Draft tables directly list a 'Position' column, making them the most reliable source for such player attribute queries.",
+      "evidence": "Records 1022, 1087, 1088: draft-position queries succeeded with table primary (e.g., 1022, 1087, 1088)."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team's result in a specific playoff series (e.g., 'result in the 1985–86 NBA Finals', 'result in the 1956–57 NBA Finals', 'what was its result in the 1956–57 NBA Finals') and the known entity is a playoff series.",
+      "action": "Route to the 'playoff_series' concept with table as primary source, doc as fallback.",
+      "lesson": "Playoff series tables directly list game results, making them the most reliable source for series outcomes.",
+      "evidence": "Records 1032, 1077, 1078, 1081: playoff-series-result queries succeeded with table primary (e.g., 1077, 1078, 1081)."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for the team that won a championship (e.g., 'which team won the 1954–55 NBA Championship') and the known entity is the championship.",
+      "action": "Route to the 'playoff_series' concept with table as primary source, doc as fallback.",
+      "lesson": "Playoff series tables directly list game results and winners, making them the most reliable source for such event-based queries.",
+      "evidence": "Record 1089: championship-winner query succeeded with table primary."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that had 100% sold out games at a venue (e.g., 'had 100% sold out games at ARCO Arena I') and the known entity is the venue.",
+      "action": "Route to the 'teamgame_basic' concept with table as primary source, doc as fallback.",
+      "lesson": "Team game logs with attendance figures can identify sellout streaks, making them a reliable source for such record-based queries.",
+      "evidence": "Records 1101, 1098: sold-out-games queries succeeded when routed to 'teamgame_basic' with table primary and doc fallback."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that was displaced from one venue and played at another during a specific season (e.g., 'displaced from Kemper Arena and played at Municipal Auditorium during the 1979–80 season', 'returned to Municipal Audito",
+      "action": "Route to the 'team_season' concept with doc as primary source, table as fallback.",
+      "lesson": "Team season documents may contain narrative descriptions of relocations, making them a reliable source for such event-based queries.",
+      "evidence": "Records 1112, 1111: venue-displacement queries succeeded when routed to 'team_season' with doc primary."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that moved from one venue to another for a specific season (e.g., 'moved from Edgerton Park Arena to the Rochester Community War Memorial for the 1955–56 NBA season') and the known entity is the venue.",
+      "action": "Route to the 'team_season' concept with doc as primary source, table as fallback.",
+      "lesson": "Team season documents may contain narrative descriptions of relocations, making them a reliable source for such event-based queries.",
+      "evidence": "Record 1103: venue-move query succeeded when routed to 'team_season' with doc primary."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that returned to a venue for several games during a specific season due to scheduling conflicts (e.g., 'returned to Edgerton Park Arena for several games during the 1955–56 season due to scheduling conflicts')",
+      "action": "Route to the 'teamgame_basic' concept with table as primary source, doc as fallback.",
+      "lesson": "Team game logs with location/attendance can identify games played at a specific venue, making them a reliable source for such event-based queries.",
+      "evidence": "Record 1104: venue-return query succeeded when routed to 'teamgame_basic' with table primary and doc fallback."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that won a game at a venue in a specific year (e.g., 'won in 1978 at Capital Centre') and the known entity is the venue.",
+      "action": "Route to the 'playoff_series' concept with table as primary source, doc as fallback.",
+      "lesson": "Playoff series tables directly list game results and venues, making them a reliable source for such event-based queries.",
+      "evidence": "Record 1096: venue-win query succeeded when routed to 'playoff_series' with table primary and doc fallback."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that hosted games of the NBA Finals in specific years at a venue (e.g., 'hosted the NBA Finals in 1975 against the Golden State Warriors and also hosted the 1978 and 1979 NBA Finals at Capital Centre') and the",
+      "action": "Route to the 'playoff_series' concept with table as primary source, doc as fallback.",
+      "lesson": "Playoff series tables directly list game results and venues, making them a reliable source for such event-based queries.",
+      "evidence": "Record 1095: venue-host query succeeded when routed to 'playoff_series' with table primary and doc fallback."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that used a venue as its home arena before moving to a larger arena (e.g., 'used Edgerton Park Arena as its home venue before moving to a larger arena') and the known entity is the venue.",
+      "action": "Route to the 'venue' concept with doc as primary source, table as fallback.",
+      "lesson": "Venue-team historical affiliations are not in the schema; doc text is the only reliable source for such temporal relationships.",
+      "evidence": "Record 1105: venue-move query succeeded when routed to 'venue' with doc primary."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that used a venue as its home venue before another venue was built (e.g., 'used Municipal Auditorium as its home venue before Kemper Arena was built') and the known entity is the venue.",
+      "action": "Route to the 'venue' concept with doc as primary source, table as fallback.",
+      "lesson": "Venue-team historical affiliations are not in the schema; doc text is the only reliable source for such temporal relationships.",
+      "evidence": "Record 1113: venue-history query succeeded when routed to 'venue' with doc primary."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that shares a venue with another team (e.g., 'shares Little Caesars Arena with the Detroit Red Wings') and the known entity is the venue.",
+      "action": "Route to the 'venue' concept with doc as primary source, table as fallback.",
+      "lesson": "Venue-team relationships are not in the schema; doc text is the only reliable source for such narrative information.",
+      "evidence": "Records 1115, 1118: venue-sharing queries succeeded when routed to 'venue' with doc primary."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that plays its home games at a venue (e.g., 'plays its home games at Little Caesars Arena') and the known entity is the venue.",
+      "action": "Route to the 'venue' concept with doc as primary source, table as fallback.",
+      "lesson": "Venue-team relationships are not in the schema; doc text is the only reliable source for such narrative information.",
+      "evidence": "Records 1116, 1119: venue-home-team queries succeeded when routed to 'venue' with doc primary."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that moved into a venue starting with a specific season (e.g., 'moved into Little Caesars Arena starting with the 2017-18 season') and the known entity is the venue.",
+      "action": "Route to the 'venue' concept with doc as primary source, table as fallback.",
+      "lesson": "Venue-team historical affiliations are not in the schema; doc text is the only reliable source for such temporal relationships.",
+      "evidence": "Record 1114: venue-move query succeeded when routed to 'venue' with doc primary."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that moved into a venue in a specific year (e.g., 'moved into Golden 1 Center in 2016') and the known entity is the venue.",
+      "action": "Route to the 'venue' concept with doc as primary source, table as fallback.",
+      "lesson": "Venue-team historical affiliations are not in the schema; doc text is the only reliable source for such temporal relationships.",
+      "evidence": "Record 1109: venue-move query succeeded when routed to 'venue' with doc primary."
+    },
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for a team that left a venue in a specific year to move to a new arena (e.g., 'left ARCO Arena I in 1988 to move to a new arena') and the known entity is the venue.",
+      "action": "Route to the 'venue' concept with doc as primary source, table as fallback.",
+      "lesson": "Venue-team historical affiliations are not in the schema; doc text is the only reliable source for such temporal relationships.",
+      "evidence": "Record 1100: venue-move query succeeded when routed to 'venue' with doc primary."
+    }
+  ]
+}

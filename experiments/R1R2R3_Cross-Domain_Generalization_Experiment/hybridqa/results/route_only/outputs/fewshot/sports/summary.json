@@ -1,0 +1,27 @@
+{
+  "domain": "sports",
+  "routing_mode": "atomr",
+  "knowledge_base": [
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/sports/questions.json",
+  "output_dir": "/root/autodl-tmp/BBB_hybridQA/experiments/route_only/outputs/atomr/sports",
+  "semantic_catalog": null,
+  "atomr_prompts": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/sports/atomr_few_shot_prompts.json",
+  "deepsieve_source_summary": null,
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 24.08311658166349,
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 7,
+    "route1.table": 93,
+    "route2.doc": 22,
+    "route2.table": 78
+  }
+}

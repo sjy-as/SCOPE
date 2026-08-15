@@ -1,0 +1,100 @@
+{"index": 18, "question": "where was Chloé Zhao born?", "predicted": "Beijing, China", "gold": ["Beijing"], "retrieval_counts": {"doc": 2}}
+{"index": 15, "question": "Who was the director of the film \"The Night House\"?", "predicted": "David Bruckner", "gold": ["David Bruckner"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 17, "question": "Spouse of Kevin Zegers?", "predicted": "Jaime Feld", "gold": ["Jaime Feld"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 12, "question": "what is the main subject of this movie?", "predicted": "Joker (2019 film)", "gold": ["terrorism"], "retrieval_counts": {"table": 1, "kg": 1, "doc": 2}}
+{"index": 6, "question": "Which is the Debut movie as director of Ericson Core?", "predicted": "Invincible", "gold": ["Invincible"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 16, "question": "Director of the film The Night House?", "predicted": "David Bruckner", "gold": ["David Bruckner"], "retrieval_counts": {"kg": 2}}
+{"index": 19, "question": "Who is the past spouse of Peyton Reed?", "predicted": "Beth LaMure", "gold": ["Beth LaMure"], "retrieval_counts": {"doc": 2, "kg": 1}}
+{"index": 4, "question": "Who is the director of Wish Dragon?", "predicted": "Amy Heckerling, Chris Appelhans", "gold": ["Chris Appelhans"], "retrieval_counts": {"kg": 2}}
+{"index": 7, "question": "Which is the Debut movie as Cinematographer of Ericson Core?", "predicted": "Exit in Red", "gold": ["Exit in Red"], "retrieval_counts": {"doc": 2, "kg": 1}}
+{"index": 3, "question": "Who is the composer of the flim the Wish Dragon?", "predicted": "Jon Fratelli", "gold": ["Jon Fratelli"], "retrieval_counts": {"kg": 2}}
+{"index": 1, "question": "Who directs the flim the Wish Dragon?", "predicted": "Amy Heckerling, Chris Appelhans", "gold": ["Chris Appelhans"], "retrieval_counts": {"kg": 2}}
+{"index": 13, "question": "Who won the Oscars for the best actress in 1952?", "predicted": "Vivien Leigh", "gold": ["Vivien Leigh"], "retrieval_counts": {"table": 1, "kg": 2}}
+{"index": 11, "question": "What is the main subject of The Dark Knight?", "predicted": "Batman", "gold": ["terrorism"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 2, "question": "Who is the producer of the flim the Wish Dragon?", "predicted": "Aron Warner, Qi Jianhong, Jackie Chan, Chris Bremble", "gold": ["Aron Warner"], "retrieval_counts": {"kg": 2}}
+{"index": 0, "question": "Which is the last movie directed by James Wan?", "predicted": "Aquaman and the Lost Kingdom", "gold": ["Malignant"], "retrieval_counts": {"doc": 1, "kg": 1, "table": 15}}
+{"index": 5, "question": "What character does Helena Bonham Carter play in The King's Speech?", "predicted": "Queen Elizabeth", "gold": ["Queen Elizabeth"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 9, "question": "who played Dominic Toretto in The Fast and Furious?", "predicted": "Vin Diesel", "gold": ["Vin Diesel"], "retrieval_counts": {"kg": 2}}
+{"index": 22, "question": "highest grossing film in 1994?", "predicted": "Forrest Gump", "gold": ["The Lion King"], "retrieval_counts": {"table": 10}}
+{"index": 24, "question": "What was David Simon's job before he became a full time writer?", "predicted": "Baltimore Sun", "gold": ["Journalist"], "retrieval_counts": {"doc": 2}}
+{"index": 23, "question": "Which is the highest grossing movie of the year 1994?", "predicted": "Forrest Gump", "gold": ["The Lion King"], "retrieval_counts": {"table": 10}}
+{"index": 8, "question": "Who played  the  Brian O'Conner in The Fast and Furious?", "predicted": "Paul Walker", "gold": ["Paul Walker"], "retrieval_counts": {"doc": 1, "kg": 2}}
+{"index": 21, "question": "What is the BBFC rating of the movie Eternals?", "predicted": "12A", "gold": ["12A certificate"], "retrieval_counts": {"kg": 1}}
+{"index": 32, "question": "Which branch of military did James Hong serve in?", "predicted": "United States Army", "gold": ["United States Army"], "retrieval_counts": {"doc": 2}}
+{"index": 20, "question": "Who is the current spouse of Peyton Reed?", "predicted": "Beth Wooke", "gold": ["Sheila Naghshineh"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 14, "question": "Which actress won the Academy Awards for the best actress in the year 1952?", "predicted": "Vivien Leigh", "gold": ["Vivien Leigh"], "retrieval_counts": {"kg": 2}}
+{"index": 28, "question": "What is the genre of the movie Alive?", "predicted": "Survival drama", "gold": ["zombie film"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 36, "question": "gross collection of Jurassic World: Fallen Kingdom?", "predicted": "$1.3 billion", "gold": ["$1.3 billion"], "retrieval_counts": {"table": 1, "doc": 1}}
+{"index": 31, "question": "Who distributed the movie Leviathan?", "predicted": "Sony Pictures Classics", "gold": ["Cirko Film"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 26, "question": "Which is debut film of Aanand L. Rai as Producer?", "predicted": "Strangers", "gold": ["Nil Battey Sannata"], "retrieval_counts": {"doc": 1, "table": 1, "kg": 1}}
+{"index": 33, "question": "Where was Ana de Armas born?", "predicted": "Havana, Cuba", "gold": ["Santa Cruz del Norte"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 38, "question": "Due to which incident, was Indo-Pakistani War of 1971 sparked by?", "predicted": "Bangladesh Liberation War", "gold": ["Bangladesh Liberation War"], "retrieval_counts": {"doc": 2}}
+{"index": 30, "question": "What's the time period of the 2019 adaptation of Little Women?", "predicted": "19th century, Civil War era", "gold": ["19th century"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 29, "question": "Genre of the movie Alive?", "predicted": "horror, thriller", "gold": ["zombie film"], "retrieval_counts": {"kg": 2}}
+{"index": 34, "question": "What is the name of Hugh Jackman's wife?", "predicted": "Deborra-Lee", "gold": ["Deborah-Lee"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 35, "question": "who did wrongful cloning in the Jurassic World: Fallen Kingdom?", "predicted": "John Hammond", "gold": ["John Hammond"], "retrieval_counts": {"doc": 4}}
+{"index": 10, "question": "Actor behind the Brian O'Conner in The Fast and Furious 1?", "predicted": "Paul Walker", "gold": ["Paul Walker"], "retrieval_counts": {"kg": 3}}
+{"index": 37, "question": "Which actor played the role of Andy Dufresne?", "predicted": "Tim Robbins", "gold": ["Tim Robbins"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 44, "question": "What was Garry Marshall's first movie acting role?", "predicted": "director", "gold": ["The Phony American"], "retrieval_counts": {"doc": 2}}
+{"index": 39, "question": "What is the BBFC rating of the movie Smurfs: The Lost Village?", "predicted": "U certificate", "gold": ["U certificate"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 25, "question": "What is the BBFC rating of the movie The Addams Family?", "predicted": "PG certificate", "gold": ["PG certificate"], "retrieval_counts": {"kg": 2}}
+{"index": 27, "question": "Who designed the costumes in Gilda?", "predicted": "Jean Louis", "gold": ["Jean Louis"], "retrieval_counts": {"kg": 2}}
+{"index": 41, "question": "Where is the film set of the movie The Ring?", "predicted": "California", "gold": ["fictional island"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 43, "question": "What is the name of the street that the University of Television and Film Munich is found on?", "predicted": "Bernd-Eichinger-Platz", "gold": ["Bernd-Eichinger-Platz"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 47, "question": "Which movie is the sequel to Terms of Endearment?", "predicted": "The Evening Star", "gold": ["The Evening Star"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 48, "question": "What was the name of the film directed by Sam Wood for his first assignment as director?", "predicted": "Raffles", "gold": ["Double Speed"], "retrieval_counts": {"doc": 1, "table": 1, "kg": 1}}
+{"index": 42, "question": "Who distributed the movie The Ring?", "predicted": "UIP-Dunafilm, Netflix, FandangoNow", "gold": ["UIP-Dunafilm"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 40, "question": "What is the  EIRIN film rating for the movie The Ring?", "predicted": "PG12", "gold": ["PG12"], "retrieval_counts": {"kg": 2, "table": 1, "doc": 1}}
+{"index": 58, "question": "What maritime museum in located there?", "predicted": "San Francisco Maritime National Historical Park", "gold": ["Columbia River Maritime Museum"], "retrieval_counts": {"doc": 2}}
+{"index": 46, "question": "What was the first movie Sean Marshall was in?", "predicted": "Pete's Dragon", "gold": ["The Deadly Trackers"], "retrieval_counts": {"doc": 1, "table": 4, "kg": 1}}
+{"index": 45, "question": "Which is the first movie produced by Nitesh Tiwari?", "predicted": "Chhichhore", "gold": ["Break Point"], "retrieval_counts": {"doc": 1, "kg": 1, "table": 2}}
+{"index": 49, "question": "Film in which Wallace Reid played the role of Walter Jarvis?", "predicted": "The Birth of a Nation", "gold": ["The Ghost Breaker"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 60, "question": "What architect designed it?", "predicted": "Nawabs of Awadh", "gold": ["Emil Schacht"], "retrieval_counts": {"doc": 2}}
+{"index": 51, "question": "How did WetaFX created apes for Rise of the Planet of the Apes movie?", "predicted": "performance capture, CGI", "gold": ["Motion capture"], "retrieval_counts": {"doc": 3}}
+{"index": 59, "question": "What building was originally reused for it?", "predicted": "Colonial Building", "gold": ["Old Astoria City Hall"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 50, "question": "Which is the first film as director?", "predicted": "The first film as director", "gold": ["Yahaan"], "retrieval_counts": {"kg": 2}}
+{"index": 52, "question": "Who is the executive producer of the film Smallfoot?", "predicted": "Jared Stern", "gold": ["Jared Stern"], "retrieval_counts": {"kg": 2}}
+{"index": 55, "question": "who played Captain McKenna in 21 bridges?", "predicted": "J. K. Simmons", "gold": ["J.K. Simmons"], "retrieval_counts": {"kg": 2}}
+{"index": 70, "question": "Who did he first marry?", "predicted": "Marilou York", "gold": ["Naomi Chance"], "retrieval_counts": {"doc": 2}}
+{"index": 61, "question": "What awards did A Wrinkle in Time win?", "predicted": "Saturn Award for Best Fantasy Film", "gold": ["St. Louis Film Critics Awards"], "retrieval_counts": {"doc": 2, "kg": 1}}
+{"index": 57, "question": "Who is the spouse of the Hardik Mehta?", "predicted": "Not specified", "gold": ["Akanksha Tewari"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 69, "question": "What was main subject of the movie \"The Dark Knight\"?", "predicted": "Batman", "gold": ["terrorism"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 53, "question": "executive producer of the film Smallfoot?", "predicted": "Jared Stern", "gold": ["Jared Stern"], "retrieval_counts": {"kg": 2}}
+{"index": 67, "question": "Who is the director of the movie Chehre?", "predicted": "Rumi Jaffery", "gold": ["Rumy Jafry"], "retrieval_counts": {"kg": 2}}
+{"index": 71, "question": "What is the name of the actor who played Raheem in Juice?", "predicted": "Omar Epps", "gold": ["Khalil Kain"], "retrieval_counts": {"kg": 2}}
+{"index": 62, "question": "Who played Scott Calvin's son Charlie in The Santa Clause?", "predicted": "Eric Lloyd", "gold": ["Eric Lloyd"], "retrieval_counts": {"kg": 2}}
+{"index": 68, "question": "Who directed the movie Chehre?", "predicted": "Rumi Jaffery", "gold": ["Rumy Jafry"], "retrieval_counts": {"kg": 2}}
+{"index": 63, "question": "What is the name of the sequel to The Santa Clause?", "predicted": "The Santa Clause 2", "gold": ["The Santa Clause 2"], "retrieval_counts": {"kg": 2}}
+{"index": 72, "question": "Which actor in Juice was a rapper?", "predicted": "Tupac Shakur", "gold": ["Tupac Shakur"], "retrieval_counts": {"table": 1, "kg": 1, "doc": 4}}
+{"index": 54, "question": "who played the andre davis in 21 bridges?", "predicted": "Chadwick Boseman", "gold": ["Chadwick Boseman"], "retrieval_counts": {"kg": 3}}
+{"index": 64, "question": "Who is the coustume designer of The Witches?", "predicted": "Joanna Johnston", "gold": ["Joanna Johnston"], "retrieval_counts": {"kg": 2}}
+{"index": 65, "question": "who is the production producer of The Witches movie?", "predicted": "Robert Zemeckis, Jack Rapke, Guillermo del Toro, Alfonso Cuarón", "gold": ["Gary Freeman"], "retrieval_counts": {"kg": 2}}
+{"index": 56, "question": "Actor behind the andre davis in 21 bridges?", "predicted": "Chadwick Boseman", "gold": ["Chadwick Boseman"], "retrieval_counts": {"kg": 3}}
+{"index": 76, "question": "What's the name of the producer of the movie?", "predicted": "Joel Silver", "gold": ["Sean S. Cunningham"], "retrieval_counts": {"kg": 2}}
+{"index": 66, "question": "who is the costume designer of The Witches movie?", "predicted": "Joanna Johnston", "gold": ["Joanna Johnston"], "retrieval_counts": {"kg": 2}}
+{"index": 84, "question": "What was the main subject of the movie \"Encanto\"?", "predicted": "The Madrigal family and their magical home in Colombia", "gold": ["self-discovery"], "retrieval_counts": {"doc": 2}}
+{"index": 83, "question": "Who wrote the story of film Beta?", "predicted": "Charles B. Griffith", "gold": ["Kamlesh Pandey"], "retrieval_counts": {"doc": 2}}
+{"index": 81, "question": "Notable work of Sebastián Cordero?", "predicted": "Ratas, ratones, rateros, Cronicas", "gold": ["Ratas, Ratones, Rateros"], "retrieval_counts": {"doc": 2}}
+{"index": 75, "question": "who is the composer of the flim tom and jerry?", "predicted": "Christophe Beck", "gold": ["Christophe Beck"], "retrieval_counts": {"kg": 2}}
+{"index": 73, "question": "What is the name of the director of Man of Steel?", "predicted": "Zack Snyder", "gold": ["Zack Snyder"], "retrieval_counts": {"kg": 2}}
+{"index": 77, "question": "What's the name of the first film that he was the producer of?", "predicted": "Homefront", "gold": ["The Art of Marriage"], "retrieval_counts": {"doc": 1, "table": 3, "kg": 1}}
+{"index": 82, "question": "What was his first screenplay writing credit?", "predicted": "Billy Madison, Breakthrough", "gold": ["Anna of Brooklyn"], "retrieval_counts": {"doc": 4}}
+{"index": 80, "question": "Who played his younger part Alan Parrish in Jumanji?", "predicted": "Adam Hann-Byrd", "gold": ["Adam Hann-Byrd"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 74, "question": "Who produces the film Black Beauty?", "predicted": "Robert Kulzer, Jeremy Bolt", "gold": ["Jeremy Bolt"], "retrieval_counts": {"kg": 2}}
+{"index": 78, "question": "which award win the Best Supporting Actor role Birds of Prey movie?", "predicted": "Golden Globe Award for Best Actor in a Limited Series or Motion Picture Made for Television", "gold": ["Hollywood Critics Association Midseason Awards"], "retrieval_counts": {"doc": 1, "kg": 2}}
+{"index": 92, "question": "Who reveals the Vers is Carol Danvers in Captain Marvel?", "predicted": "Supreme Intelligence", "gold": ["Rambeau and her daughter Monica"], "retrieval_counts": {"doc": 2}}
+{"index": 89, "question": "Who is the spouse of the Cars movie director John Lasseter?", "predicted": "Nancy Lasseter", "gold": ["Nancy Lasseter"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 90, "question": "At which Academy Awards was he nominated for Best Film Editing?", "predicted": "Titanic", "gold": ["66th Academy Awards"], "retrieval_counts": {"doc": 1, "table": 1, "kg": 1}}
+{"index": 94, "question": "What religion does the main character belong to in Signs, the 2002 movie?", "predicted": "Episcopal", "gold": ["Episcopal Church"], "retrieval_counts": {"doc": 3}}
+{"index": 85, "question": "What was the character name of Stephanie Beatriz in the movie \"Encanto\"?", "predicted": "Mirabel Madrigal", "gold": ["Mirabel Madrigal"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 93, "question": "Which is the first short movie directed by Hardik Mehta?", "predicted": "Skin Deep", "gold": ["Chal Meri Luna"], "retrieval_counts": {"doc": 4, "table": 1, "kg": 1}}
+{"index": 79, "question": "which awards win Favorite Movie Actor\tin Dolittle  movie?", "predicted": "Robert Downey Jr.", "gold": ["Kids' Choice Awards"], "retrieval_counts": {"kg": 2, "table": 1}}
+{"index": 91, "question": "Who was the winner of best film editing that year?", "predicted": "The winner of best film editing that year was [Winner's Name].", "gold": ["Michael Kahn"], "retrieval_counts": {"table": 1, "kg": 2, "doc": 1}}
+{"index": 88, "question": "In the film Kramer vs. Kramer, what is the profession of Ted Kramer?", "predicted": "advertising executive", "gold": ["Advertising"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 86, "question": "Main subject of the movie Encanto?", "predicted": "Madrigal family", "gold": ["self-discovery"], "retrieval_counts": {"doc": 1, "kg": 2}}
+{"index": 99, "question": "What is the name of the Shutter Island movie production designer?", "predicted": "Dante Ferretti", "gold": ["Dante Ferretti"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 95, "question": "What was the character role of Thomas Anderson/Neo in the movie \"The Matrix\"?", "predicted": "Neo", "gold": ["A computer programmer"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 98, "question": "Who directs the flim The Princess Bride?", "predicted": "Rob Reiner", "gold": ["Rob Reiner"], "retrieval_counts": {"kg": 2}}
+{"index": 97, "question": "Who is the director of the flim The Princess Bride?", "predicted": "Rob Reiner", "gold": ["Rob Reiner"], "retrieval_counts": {"kg": 2}}
+{"index": 96, "question": "Which is the first movie created by Stephen Sommers?", "predicted": "Tom and Huck", "gold": ["Perfect Alibi"], "retrieval_counts": {"doc": 1, "table": 23, "kg": 1}}
+{"index": 87, "question": "What was the next feature film Robert Zemeckis directed after Back to the Future?", "predicted": "Who Framed Roger Rabbit", "gold": ["Who Framed Roger Rabbit"], "retrieval_counts": {"doc": 1, "table": 25, "kg": 1}}

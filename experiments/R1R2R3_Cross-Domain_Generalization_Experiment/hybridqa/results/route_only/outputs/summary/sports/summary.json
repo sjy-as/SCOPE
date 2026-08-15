@@ -1,0 +1,27 @@
+{
+  "domain": "sports",
+  "routing_mode": "deepsieve",
+  "knowledge_base": [
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/sports/questions.json",
+  "output_dir": "/root/autodl-tmp/BBB_hybridQA/experiments/route_only/outputs/deepsieve/sports",
+  "semantic_catalog": null,
+  "atomr_prompts": null,
+  "deepsieve_source_summary": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/sports/deepsieve_source_summary.json",
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 26.029514038935304,
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 42,
+    "route1.table": 58,
+    "route2.doc": 53,
+    "route2.table": 47
+  }
+}

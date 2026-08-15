@@ -1,0 +1,31 @@
+{
+  "sub_q1": "Who received NBA All-Rookie Team in 1996?",
+  "sub_q2": "In the December games of the 2007–08 San Antonio Spurs season, how many times did [1] lead the team in scoring?",
+  "rewrite_reasoning": "The question requires identifying a specific player (the 1996 NBA All-Rookie Team member) and then finding a statistic about that player's performance in December 2007 for the Spurs. The first sub-query identifies the player, and the second uses that player to find the required count.",
+  "match1": null,
+  "match2": null,
+  "route1": {
+    "matched_concept": "award_received",
+    "primary_source": "kg",
+    "fallback_source": "table",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: NBA All-Rookie Team (an award). ASKED target: the players who received this award in 1996. Phase-1 rule: relation-first. The relation concept 'award_received' links player, award, and time, exactly matching the known entity (award) and asked target (player). Source selection: KG is LIKELY because its elements include 'player', 'award', and 'time', which can directly answer the query. Table is LIKELY because it documents award recipients with season and player, though it may not specifically cover NBA All-Rookie Team. Since KG directly names the target and has the structured fact, primary is kg, fallback is table."
+  },
+  "route2": {
+    "matched_concept": "teamgame",
+    "primary_source": "table",
+    "fallback_source": "kg",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: San Antonio Spurs (team) in the 2007–08 season. ASKED target: count of games in December where [1] (a player reference) led the team in scoring. Phase-1 rule: No relation concept links a team to a player's scoring leadership in specific games. The query asks for an attribute/neighbor of the KNOWN entity (the team's game log), so match the KNOWN entity concept `teamgame` (which describes team game logs with per-game details). Source selection: table is LIKELY because its elements (Game, Date, Opponent, Score, etc.) and examples show per-game logs for team seasons, which would include December games and scoring leaders. kg is RULED-OUT because its elements (team_id, name, enwiki_title, inception, owners) do not include game-level scoring data. Primary source: table (only LIKELY source). Fallback: kg (only other live source, though ruled out)."
+  },
+  "decompose_llm_calls": [
+    {
+      "stage": "step2.sq",
+      "ts": 1786685492.8567553,
+      "prompt": "You are a query decomposition assistant.\n\n        Your job is to transform ONE natural-language semantic query into EXACTLY two sub-questions.\n\n        Requirements:\n        1. The input is already a natural semantic query. Do NOT rewrite it into a different intent.\n        2. Output exactly two sub-questions: q1 and q2.\n        3. q1 should extract the first necessary piece of information.\n        4. q2 should depend on q1 and use [1] to refer to the answer of q1 when needed.\n        5. Do not do event judgment, schema routing, source selection, or query rewriting.\n        6. Keep the sub-questions faithful to the original meaning.\n        7. Return valid JSON only.\n\n        Return format:\n        {\n        \"reasoning\": \"brief explanation of the decomposition\",\n        \"subqueries\": [\n            {\n            \"id\": \"q1\",\n            \"query\": \"...\",\n            \"depends_on\": [],\n            \"variables\": []\n            },\n            {\n            \"id\": \"q2\",\n            \"query\": \"...\",\n            \"depends_on\": [\"q1\"],\n            \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n            }\n        ]\n        }\n\n        Question: For the player who received NBA All-Rookie Team in 1996, how many times did he lead his team in scoring during the December games of the 2007–08 San Antonio Spurs season?\n\n    ",
+      "response": "{\n  \"reasoning\": \"The question requires identifying a specific player (the 1996 NBA All-Rookie Team member) and then finding a statistic about that player's performance in December 2007 for the Spurs. The first sub-query identifies the player, and the second uses that player to find the required count.\",\n  \"subqueries\": [\n    {\n      \"id\": \"q1\",\n      \"query\": \"Who received NBA All-Rookie Team in 1996?\",\n      \"depends_on\": [],\n      \"variables\": []\n    },\n    {\n      \"id\": \"q2\",\n      \"query\": \"In the December games of the 2007–08 San Antonio Spurs season, how many times did [1] lead the team in scoring?\",\n      \"depends_on\": [\"q1\"],\n      \"variables\": [\n        {\n          \"name\": \"ref_1\",\n          \"source_query\": \"q1\"\n        }\n      ]\n    }\n  ]\n}",
+      "module": "step2.sq",
+      "model": "deepseek-chat"
+    }
+  ]
+}

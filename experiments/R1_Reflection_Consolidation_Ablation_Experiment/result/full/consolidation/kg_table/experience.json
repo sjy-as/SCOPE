@@ -1,0 +1,29 @@
+{
+  "enabled": true,
+  "revision": 22,
+  "updated_at": 1786690002.4325545,
+  "source": "reflection_consolidation_llm",
+  "items": [
+    {
+      "stage": "routing",
+      "when": "A sub-question asks for the teams a player later played for after being drafted",
+      "action": "Route to the KG as primary source; use table only as fallback if KG returns no answer.",
+      "lesson": "The KG has player-team relations (e.g., member of sports team) that can list all teams; the competition table only covers specific games and may miss teams from other seasons.",
+      "evidence": "Record 1133: sq2 routed to teamgame_basic but returned empty; fallback to KG succeeded with all four teams."
+    },
+    {
+      "stage": "semantic",
+      "when": "A sub-question asks for the teams a player later played for",
+      "action": "Parse the relation as 'member of sports team' and the return type as 'team'.",
+      "lesson": "The KG's member_of_sports_team relation directly lists all teams a player has been associated with, whereas the competition table only provides game-specific team assignments.",
+      "evidence": "Record 1133: sq2 semantic parse used 'play for' but routed to table; KG fallback provided correct teams."
+    },
+    {
+      "stage": "planning",
+      "when": "Planning a sub-question that asks for the teams a player later played for after being drafted",
+      "action": "Search for the player entity in the KG and retrieve the member_of_sports_team relation.",
+      "lesson": "The KG provides a comprehensive list of teams for a player, avoiding the need to aggregate multiple game records from the competition table.",
+      "evidence": "Record 1133: sq2 plan used teamgame_basic and failed; KG fallback succeeded."
+    }
+  ]
+}

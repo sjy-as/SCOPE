@@ -1,0 +1,1658 @@
+{
+  "film_person_death_records": {
+    "concept": "film_person_death_records",
+    "overall_description": "Records of individuals' deaths with date, age, nationality, profession, and notable works.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of individuals' deaths with date, age, nationality, profession, and notable works.",
+        "elements": [
+          "month",
+          "day",
+          "person_name",
+          "age_at_death",
+          "nationality",
+          "profession",
+          "notable_works"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0004\", \"title\": \"1994 in film\", \"headers\": [\"Month\", \"Date\", \"Name\", \"Age\", \"Nationality\", \"Profession\", \"Notable films\"], \"sample_rows\": [[\"April\", \"16\", \"John McLiam\", \"76\", \"Canada\", \"Actor\", \"''[[Cool Hand Luke]]'' ''[[The Missouri Breaks]]''\"], [\"August\", \"7\", \"Larry Martyn\", \"60\", \"UK\", \"Actor\", \"''[[Carry On at Your Convenience]]'' ''[[Carry On Behind]]''\"], [\"March\", \"29\", \"John Dee\", \"80\", \"US\", \"Actor\", \"''[[Adventures in Babysitting]]'' ''[[Mrs. Soffel]]''\"]]}",
+          "{\"table_id\": \"T0003\", \"title\": \"1994 in film\", \"headers\": [\"Month\", \"Date\", \"Name\", \"Age\", \"Nationality\", \"Profession\"], \"sample_rows\": [[\"April\", \"3\", \"Frank Wells\", \"62\", \"US\", \"Studio Executive, Notable films is\"], [\"November\", \"21\", \"Arthur B. Krim\", \"84\", \"US\", \"Studio Executive, Notable films is\"]]}",
+          "{\"table_id\": \"T0259\", \"title\": \"Gwalior\", \"headers\": [\"University\", \"Type\", \"Location\"], \"sample_rows\": [[\"Amity University, Gwalior\", \"Private\", \"Airport Road, Maharajpura\"], [\"Lakshmibai National University of Physical Education\", \"Government\", \"Racecourse Road\"]]}"
+        ]
+      }
+    }
+  },
+  "film_award_records": {
+    "concept": "film_award_records",
+    "overall_description": "Records of films or individuals receiving awards or nominations, including award name, category, recipient, ceremony, and result.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of films or individuals receiving awards or nominations, including award name, category, recipient, ceremony, and result.",
+        "elements": [
+          "year_of_film_release",
+          "film_title",
+          "award_category",
+          "award_ceremony_year",
+          "nominee_or_winner",
+          "producer_or_studio",
+          "award_name",
+          "nominee",
+          "result",
+          "reference_note",
+          "nominee_subject",
+          "year",
+          "nominated_work",
+          "title"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0025\", \"title\": \"Academy Award for Best Picture\", \"headers\": [\"Year of Film Release\"], \"sample_rows\": [[\"1981 [[54th Academy Awards|(54th)]]\"], [\"2019 [[92nd Academy Awards|(92nd)]]\"], [\"1957 [[30th Academy Awards|(30th)]]\"]]}",
+          "{\"table_id\": \"T0027\", \"title\": \"Academy Award for Best Picture\", \"headers\": [\"Year of Film Release\", \"Film\", \"Film Studio/Producer(s)\"], \"sample_rows\": [[\"1951 [[24th Academy Awards|(24th)]]\", \"A Place in the Sun\", \"George Stevens\"], [\"1959 [[32nd Academy Awards|(32nd)]]\", \"The Diary of Anne Frank\", \"George Stevens\"], [\"1958 [[31st Academy Awards|(31st)]]\", \"Auntie Mame\", \"Jack L. Warner\"]]}",
+          "{\"table_id\": \"T0026\", \"title\": \"Academy Award for Best Picture\", \"headers\": [\"Year of Film Release\", \"Film\", \"Film Studio\"], \"sample_rows\": [[\"1938 [[11th Academy Awards|(11th)]]\", \"Jezebel\", \"Warner Bros.\"], [\"1935 [[8th Academy Awards|(8th)]] The Academy also announced that ''The Informer'' came in second, and ''Captain Blood'' third.\", \"Top Hat\", \"RKO Radio\"], [\"1931/32 [[5th Academy Awards|(5th)]]\", \"The Champ\", \"Metro-Goldwyn-Mayer\"]]}",
+          "{\"table_id\": \"T0035\", \"title\": \"Airport (1970 film)\", \"headers\": [\"Award\", \"Category\", \"Nominee(s)\", \"Result\", \"Ref.\"], \"sample_rows\": [[\"Golden Globe Awards\", \"Best Supporting Actress – Motion Picture\", \"Maureen Stapleton\", \"\", \"Tied with [[Karen Black]] for ''[[Five Easy Pieces]]''.\"]]}",
+          "{\"table_id\": \"T0798\", \"title\": \"The Wiz (film)\", \"headers\": [\"Award\", \"Category\", \"Nominee(s)\", \"Result\"], \"sample_rows\": [[\"Saturn Awards\", \"Best Special Effects\", \"Albert Whitlock\", \"Ref. is\"], [\"Saturn Awards\", \"Best Make-up\", \"Stan Winston\", \"Ref. is\"], [\"Saturn Awards\", \"Best Supporting Actress\", \"Mabel King\", \"Ref. is\"]]}",
+          "{\"table_id\": \"T0034\", \"title\": \"Airport (1970 film)\", \"headers\": [\"Award\", \"Category\", \"Nominee(s)\", \"Result\"], \"sample_rows\": [[\"Laurel Awards\", \"Top Male Supporting Performance\", \"George Kennedy\", \"Ref. is\"], [\"Laurel Awards\", \"Top Female Supporting Performance\", \"Helen Hayes\", \"Ref. is\"], [\"Academy Awards\", \"Best Cinematography\", \"Ernest Laszlo\", \"Ref. is\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records of films or individuals receiving awards or nominations, including award name, category, recipient, ceremony, and result.",
+        "elements": [
+          "award_name",
+          "category",
+          "recipient",
+          "result",
+          "year",
+          "film_title",
+          "award_year"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D02537\", \"title\": \"Academy Award for Best Actor\", \"text\": \"Academy Award for Best Actor, At 29, Adrien Brody of The Pianist (2002) is the youngest winner, and Anthony Hopkins, 83, is the oldest, for playing Anthony in The Father (2020).\"}",
+          "{\"doc_id\": \"D04498\", \"title\": \"Academy Award for Best Picture\", \"text\": \"Academy Award for Best Picture, The Best Picture category is traditionally the final award of the night and is widely considered as the most prestigious honor of the ceremony.\"}",
+          "{\"doc_id\": \"D00143\", \"title\": \"Academy Awards\", \"text\": \"Academy Awards, In 2010, the Academy contemplated moving the ceremony even further back into January, citing TV viewers' fatigue with the film industry's long awards season.\"}",
+          "{\"doc_id\": \"D01149\", \"title\": \"Amdavad Ma Famous\", \"text\": \"Amdavad Ma Famous, The film received the National Film Award for Best Non-Feature Film at 63rd National Film Awards for 2015.\"}",
+          "{\"doc_id\": \"D00312\", \"title\": \"Hardik Mehta\", \"text\": \"Hardik Mehta, Kaamyaab released theatrically on March 6, 2020 to rave reviews and is now available on Netflix worldwide.\"}",
+          "{\"doc_id\": \"D08208\", \"title\": \"Sudhir Mishra\", \"text\": \"Sudhir Mishra, 1984) and with Vidhu Vinod Chopra in Khamosh (1985).\"}"
+        ]
+      }
+    }
+  },
+  "music_chart_records": {
+    "concept": "music_chart_records",
+    "overall_description": "Records of songs or albums with their peak chart positions and certifications.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of songs or albums with their peak chart positions and certifications.",
+        "elements": [
+          "song_title",
+          "release_year",
+          "peak_chart_position",
+          "certification",
+          "album",
+          "year",
+          "title",
+          "chart",
+          "chart_country",
+          "chart_name",
+          "chart_year",
+          "peak_position",
+          "album_title",
+          "artist"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0033\", \"title\": \"Adam Sandler\", \"headers\": [\"Title\", \"Year\", \"Peak chart positions\", \"Certifications\", \"Album\"], \"sample_rows\": [[\"\\\" The Thanksgiving Song \\\"\", \"1993\", \"—\", \"40\", \"29\"], [\"\\\" Like a Hurricane \\\"\", \"2008\", \"—\", \"—\", \"—\"]]}",
+          "{\"table_id\": \"T0031\", \"title\": \"Adam Sandler\", \"headers\": [\"Title\", \"Album details\", \"Peak chart positions\", \"Certifications\"], \"sample_rows\": [[\"Shhh...Don't Tell\", \"Released: July 13, 2004 Label: Warner Bros. Format: LP, digital download\", \"47\", \"11\"]]}",
+          "{\"table_id\": \"T0032\", \"title\": \"Adam Sandler\", \"headers\": [\"Title\", \"Year\", \"Peak chart positions\"], \"sample_rows\": [[\"US\", \"USAdult Pop\", \"USMod. Rock\"]]}",
+          "{\"table_id\": \"T0351\", \"title\": \"John Travolta\", \"headers\": [\"Year\"], \"sample_rows\": [[\"US\"]]}",
+          "{\"table_id\": \"T0354\", \"title\": \"John Travolta\", \"headers\": [\"Year\", \"Title\", \"Peak chart positions\"], \"sample_rows\": [[\"1978\", \"\\\" Greased Lightnin' \\\"\", \"47\"], [\"1976\", \"\\\"Whenever I'm Away from You\\\"\", \"38\"], [\"1977\", \"\\\"All Strung Out on You\\\"\", \"34\"]]}",
+          "{\"table_id\": \"T0353\", \"title\": \"John Travolta\", \"headers\": [\"Year\", \"Title\"], \"sample_rows\": [[\"1976\", \"\\\" Right Time of the Night \\\", Peak chart positions is\"], [\"1976\", \"\\\"Big Trouble\\\", Peak chart positions is\"], [\"1997\", \"\\\" Two Sleepy People \\\" (with Carly Simon ), Peak chart positions is\"]]}"
+        ]
+      }
+    }
+  },
+  "filmography_credit_records": {
+    "concept": "filmography_credit_records",
+    "overall_description": "Records of an individual's filmography with year, title, credited role, and notes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of an individual's filmography with year, title, credited role, and notes.",
+        "elements": [
+          "year",
+          "title",
+          "credited_as",
+          "notes",
+          "film_title",
+          "credited_role",
+          "role",
+          "screenwriter",
+          "director",
+          "producer",
+          "credit",
+          "note",
+          "work_title",
+          "language"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0037\", \"title\": \"Alfred Hitchcock filmography\", \"headers\": [\"Year\", \"Title\", \"Credited as\", \"Notes\"], \"sample_rows\": [[\"1958\", \"Vertigo\", \"\", \"is Norway\"], [\"1932\", \"Lord Camber's Ladies\", \"\", \"Norway, is Norway\"], [\"1928\", \"Champagne\", \"\", \"Norway, is\"]]}",
+          "{\"table_id\": \"T0038\", \"title\": \"Alfred Hitchcock filmography\", \"headers\": [\"Year(s)\", \"Title\", \"Role\", \"Notes\"], \"sample_rows\": [[\"1962\", \"Alcoa Premiere\", \"—\", \"Episode: \\\"The Jail\\\" (executive producer), is\"]]}",
+          "{\"table_id\": \"T0060\", \"title\": \"Ana de Armas\", \"headers\": [\"Year\", \"Title\", \"Role\"], \"sample_rows\": [[\"2007\", \"Madrigal\", \"Stella Maris, Notes is\"], [\"2017\", \"Overdrive\", \"Stephanie, Notes is\"], [\"2016\", \"Hands of Stone\", \"Felicidad Iglesias, Notes is\"]]}",
+          "{\"table_id\": \"T0543\", \"title\": \"Rachel Weisz\", \"headers\": [\"Year\", \"Title\", \"Role\"], \"sample_rows\": [[\"2016\", \"The Light Between Oceans\", \"Hannah Roennfeldt, Notes is\"], [\"1997\", \"Bent\", \"Prostitute, Notes is\"], [\"2016\", \"Complete Unknown\", \"Alice Manning, Notes is\"]]}",
+          "{\"table_id\": \"T0433\", \"title\": \"Mandy Moore\", \"headers\": [\"Year\", \"Title\", \"Role\"], \"sample_rows\": [[\"2019\", \"Midway\", \"Anne Best, Notes is\"], [\"2005\", \"Romance & Cigarettes\", \"Baby Murder, Notes is\"], [\"2007\", \"Because I Said So\", \"Milly Wilder, Notes is\"]]}",
+          "{\"table_id\": \"T0148\", \"title\": \"Christopher Guest\", \"headers\": [\"Year\", \"Title\", \"Actor\", \"Screenwriter\", \"Director\", \"Producer\", \"Role\"], \"sample_rows\": [[\"1986\", \"Little Shop of Horrors\", \"\", \"Norway\", \"Norway\", \"Norway\", \"The First Customer, Notes is\"], [\"2009\", \"Night at the Museum: Battle of the Smithsonian\", \"\", \"Norway\", \"Norway\", \"Norway\", \"Ivan the Terrible, Notes is\"], [\"1992\", \"A Few Good Men\", \"\", \"Norway\", \"Norway\", \"Norway\", \"Dr. Stone, Notes is\"]]}"
+        ]
+      }
+    }
+  },
+  "music_video_appearance_records": {
+    "concept": "music_video_appearance_records",
+    "overall_description": "Records of individuals appearing in music videos with year, song title, artist, and role.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of individuals appearing in music videos with year, song title, artist, and role.",
+        "elements": [
+          "year",
+          "song_title",
+          "artist",
+          "role"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0041\", \"title\": \"Alicia Silverstone\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Artist\"], \"sample_rows\": [[\"1993\", \"\\\" Amazing \\\"\", \"Girl\", \"Aerosmith\"], [\"1994\", \"\\\" Crazy \\\"\", \"Girl #1\", \"Aerosmith\"], [\"2011\", \"\\\" Fight for Your Right Revisited \\\"\", \"Café patron\", \"Beastie Boys\"]]}",
+          "{\"table_id\": \"T0385\", \"title\": \"Kevin Zegers\", \"headers\": [\"Year\", \"Title\", \"Artist\"], \"sample_rows\": [[\"2010\", \"\\\" The Big Bang \\\"\", \"Rock Mafia\"]]}",
+          "{\"table_id\": \"T0499\", \"title\": \"Patricia Arquette\", \"headers\": [\"Year\", \"Title\", \"Artist\", \"Role\"], \"sample_rows\": [[\"2022\", \"\\\"Taste so Good (The Cann Song)\\\"\", \"Weedmaps x Cann\", \"Herself, is\"], [\"2014\", \"\\\" Imagine \\\" ([[UNICEF]]: World version)\", \"Various\", \"Herself, is\"]]}"
+        ]
+      }
+    }
+  },
+  "film_series_character_portrayal_records": {
+    "concept": "film_series_character_portrayal_records",
+    "overall_description": "Records of characters and the actors who portrayed them in films or series.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of characters and the actors who portrayed them in films or series.",
+        "elements": [
+          "film_series",
+          "character_name",
+          "actor_name",
+          "film_title",
+          "notes",
+          "character",
+          "actor",
+          "role",
+          "film",
+          "medium",
+          "portrayal_notes",
+          "portrayal",
+          "portrayal_role",
+          "series_name"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0044\", \"title\": \"Alien (franchise)\", \"headers\": [\"Alien\", \"Aliens\", \"Alien 3\", \"Alien Resurrection\", \"Prometheus\"], \"sample_rows\": [[\"Elizabeth M. Shaw\", \"colspan=\\\"4\\\"\", \"Noomi Rapace Lucy Hutchinson young Y\", \"Noomi Rapace photo P\", \"colspan=\\\"6\\\"\"]]}",
+          "{\"table_id\": \"T0047\", \"title\": \"Alien (franchise)\", \"headers\": [\"Award\", \"Alien\", \"Aliens\", \"Alien 3\", \"Alien Resurrection\", \"Prometheus\"], \"sample_rows\": [[\"Sound Effects Editing\", \"\", \"\", \"\", \"\", \"Alien: Covenant is\"], [\"Art Direction\", \"\", \"\", \"\", \"\", \"Alien: Covenant is\"]]}",
+          "{\"table_id\": \"T0045\", \"title\": \"Alien (franchise)\", \"headers\": [\"Alien\", \"Aliens\", \"Alien 3\", \"Alien Resurrection\", \"Prometheus\", \"Covenant\"], \"sample_rows\": [[\"Anne Jorden\", \"\", \"Holly De Jong\", \"colspan=\\\"7\\\"\", \"Anna Friel\", \"colspan=\\\"2\\\"\"], [\"Dwayne Hicks\", \"\", \"Michael Biehn\", \"Michael Biehn photo P\", \"colspan=\\\"8\\\"\", \"Michael Biehn\"]]}",
+          "{\"table_id\": \"T0280\", \"title\": \"Home Alone (franchise)\", \"headers\": [\"Home Alone\", \"Home Alone 2: Lost in New York\", \"Home Alone 3\"], \"sample_rows\": [[\"Heather McCallister\", \"Kristin Minter\", \"colspan=\\\"6\\\"\"], [\"Tracy McCallister\", \"Senta Moses\", \"colspan=\\\"5\\\"\"], [\"Jeff McKenzie\", \"colspan=\\\"5\\\"\", \"Rob Delaney, Home Alone 4 is\"]]}",
+          "{\"table_id\": \"T0281\", \"title\": \"Home Alone (franchise)\", \"headers\": [\"Home Alone\", \"Home Alone 2: Lost in New York\", \"Home Alone 3\", \"Home Alone 4\"], \"sample_rows\": [[\"E.F. Duncan\", \"\", \"Eddie Bracken\", \"colspan=\\\"5\\\"\"], [\"Mr. Prescott\", \"colspan=\\\"3\\\"\", \"Erick Avari\", \"colspan=\\\"3\\\"\"], [\"Alexis Baxter\", \"colspan=\\\"4\\\"\", \"Jodelle Ferland\", \"colspan=\\\"2\\\"\"]]}",
+          "{\"table_id\": \"T0284\", \"title\": \"Home Alone (franchise)\", \"headers\": [\"Total\", \"$\", \"$ million\"], \"sample_rows\": [[\"Film\", \"Box office revenue, is Budget\", \"Reference\"], [\"Home Alone 2: Lost in New York\", \"$185,409,334, is $28 million\", \"#151\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records of characters and the actors who portrayed them in films or series.",
+        "elements": [
+          "film_series_title",
+          "character_name",
+          "actor_name",
+          "portrayal_details"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00300\", \"title\": \"The Lord of the Rings\", \"text\": \"The Lord of the Rings, Authorized editions followed from Ballantine Books and Houghton Mifflin to tremendous commercial success.\"}",
+          "{\"doc_id\": \"D00132\", \"title\": \"The Lord of the Rings: The Fellowship of the Ring\", \"text\": \"The Lord of the Rings: The Fellowship of the Ring, Meanwhile, Saruman creates an army of Uruk-hai in Isengard to find and kill the Fellowship.\"}",
+          "{\"doc_id\": \"D00279\", \"title\": \"Peter Jackson\", \"text\": \"Peter Jackson, She won three Academy Awards in 2003, for Best Picture, Best Adapted Screenplay and Best Original Song, all for The Lord of the Rings: The Return of the King.\"}"
+        ]
+      }
+    }
+  },
+  "film_release_records": {
+    "concept": "film_release_records",
+    "overall_description": "Records of films with their release dates, distributing companies, and key crew members.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of films with their release dates, distributing companies, and key crew members.",
+        "elements": [
+          "film_title",
+          "release_date",
+          "director",
+          "screenwriter",
+          "producer",
+          "release_year",
+          "distributor"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0052\", \"title\": \"Alien (franchise)\", \"headers\": [\"Film\", \"U.S. release date\", \"Director(s)\", \"Screenwriter(s)\", \"Producer(s)\"], \"sample_rows\": [[\"Alien: Harvest\", \"2019 04 26\", \"Benjamin Howdeshell\", \"Tongal Studios\", \"Craig Dewey\"]]}",
+          "{\"table_id\": \"T0051\", \"title\": \"Alien (franchise)\", \"headers\": [\"Film\", \"U.S. release date\", \"Director(s)\", \"Screenwriter(s)\"], \"sample_rows\": [[\"Alien: Specimen\", \"2019 04 05\", \"Kelsey Taylor\", \"Tongal Studios\"], [\"Alien: Containment\", \"2019 03 29\", \"Chris Reading\", \"Tongal Studios\"], [\"Alien: Ore\", \"2019 04 19\", \"Kailey & Sam Spear\", \"Tongal Studios\"]]}",
+          "{\"table_id\": \"T0050\", \"title\": \"Alien (franchise)\", \"headers\": [\"Film\", \"U.S. release date\", \"Director(s)\"], \"sample_rows\": [[\"Alien: Covenant — Prologue: The Crossing\", \"2017 04 26\", \"Ridley Scott\"], [\"Alien: Covenant — Meet Walter\", \"2017 03 10\", \"Ridley Scott\"]]}",
+          "{\"table_id\": \"T0303\", \"title\": \"James Cameron\", \"headers\": [\"Year\", \"Title\", \"Distributor\"], \"sample_rows\": [[\"1997\", \"Titanic\", \"Paramount Pictures / 20th Century Fox\"], [\"1989\", \"The Abyss\", \"20th Century Fox\"]]}",
+          "{\"table_id\": \"T0179\", \"title\": \"David Fincher\", \"headers\": [\"Year\", \"Title\", \"Distributor\"], \"sample_rows\": [[\"2014\", \"Gone Girl\", \"20th Century Fox\"]]}",
+          "{\"table_id\": \"T0555\", \"title\": \"Ridley Scott\", \"headers\": [\"Year\", \"Title\", \"Distributor\"], \"sample_rows\": [[\"1991\", \"Thelma & Louise\", \"Metro-Goldwyn-Mayer\"], [\"2003\", \"Matchstick Men\", \"Warner Bros. Pictures\"], [\"1985\", \"Legend\", \"Universal Pictures / 20th Century Fox\"]]}"
+        ]
+      }
+    }
+  },
+  "music_album_release_records": {
+    "concept": "music_album_release_records",
+    "overall_description": "Records of music album releases with year, title, label, and artist.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of music album releases with year, title, label, and artist.",
+        "elements": [
+          "release_year",
+          "album_title",
+          "label",
+          "artist"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0141\", \"title\": \"Carl Anderson (singer)\", \"headers\": [\"Year\", \"Title\"], \"sample_rows\": [[\"1982\", \"Absence With Out Love Released: 1982 Label: Epic\"], [\"1985\", \"Protocol Released: 1985 Label: Epic\"]]}",
+          "{\"table_id\": \"T0140\", \"title\": \"Carl Anderson (singer)\", \"headers\": [\"Year\", \"Artist\", \"Title\", \"Contribution\"], \"sample_rows\": [[\"1997\", \"Original Broadway Cast\", \"Play On! Released: 1997 Label: Varèse\", \"The Duke\"], [\"1987\", \"Nancy Wilson\", \"Forbidden Lover Released: 1987 Label: Epic\", \"Vocals (\\\"Forbidden Lover\\\")\"], [\"1986\", \"Joe Zawinul\", \"Di•a•lects Released: 1986 Label: Columbia\", \"Ensemble Voice\"]]}",
+          "{\"table_id\": \"T0142\", \"title\": \"Carl Anderson (singer)\", \"headers\": [\"Year\", \"Title\", \"Role\"], \"sample_rows\": [[\"1998\", \"Jesus Christ Superstar (Rubicon Theatre Company)\", \"Judas Iscariot (with Ted Neeley as Jesus)\"], [\"1973\", \"Jesus Christ Superstar\", \"Judas Iscariot, Notes is\"], [\"1999-2000\", \"Jesus Christ Superstar (Italian tour)\", \"Judas Iscariot (also artistic director)\"]]}"
+        ]
+      }
+    }
+  },
+  "film_series_release_records": {
+    "concept": "film_series_release_records",
+    "overall_description": "Records of film series with their release date ranges and number of films.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of film series with their release date ranges and number of films.",
+        "elements": [
+          "title",
+          "release_date_range",
+          "number_of_films",
+          "notes"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0151\", \"title\": \"Columbia Pictures\", \"headers\": [\"Title\", \"Release date\", \"No. Films\"], \"sample_rows\": [[\"Blondie\", \"1938–50\", \"28, Notes is\"], [\"Gene Autry\", \"1947–53\", \"33, Notes is\"], [\"Crime Doctor\", \"1943–49\", \"10, Notes is\"]]}",
+          "{\"table_id\": \"T0152\", \"title\": \"Columbia Pictures\", \"headers\": [\"Title\", \"Release date\", \"No. Films\", \"Notes\"], \"sample_rows\": [[\"My Girl\", \"1991–94\", \"2\", \"co-production with Imagine Entertainment\"], [\"Terminator\", \"2003–09\", \"2\", \"co-production with Warner Bros. Pictures\"], [\"''Cantinflas'' films\", \"1942–82\", \"34\", \"(from Los tres mosqueteros to El barrendero )\"]]}",
+          "{\"table_id\": \"T0447\", \"title\": \"Marvel Cinematic Universe\", \"headers\": [\"Title\", \"U.S. release date\", \"Publisher\", \"Developer\"], \"sample_rows\": [[\"Iron Man 3: The Official Game\", \"2013 4 25\", \"Gameloft\", \"iOS, Android\"]]}"
+        ]
+      }
+    }
+  },
+  "stage_performance_records": {
+    "concept": "stage_performance_records",
+    "overall_description": "Records of stage performances with year, production title, role, and venue.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of stage performances with year, production title, role, and venue.",
+        "elements": [
+          "year",
+          "production_title",
+          "role",
+          "venue",
+          "theatre_venue"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0172\", \"title\": \"Danny Aiello\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Venue\"], \"sample_rows\": [[\"2011\", \"The Shoemaker\", \"Performer\", \"Acorn Theatre , Off-Broadway\"], [\"1986\", \"The House of Blue Leaves\", \"Billy Einhorn\", \"Plymouth Theatre , Broadway\"], [\"1944\", \"Follow the Girls\", \"Dancing Boy\", \"New Century Theatre , Broadway\"]]}",
+          "{\"table_id\": \"T0170\", \"title\": \"Danny Aiello\", \"headers\": [\"Year\", \"Title\", \"Role\"], \"sample_rows\": [[\"1987\", \"Man on Fire\", \"Conti, Notes is\"], [\"1995\", \"Power of Attorney\", \"Joseph Scassi, Notes is\"], [\"2010\", \"Stiffs\", \"Frank Tramontana, Notes is\"]]}",
+          "{\"table_id\": \"T0243\", \"title\": \"Geoffrey Rush\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Venue\"], \"sample_rows\": [[\"2009\", \"Exit the King\", \"King Berenger\", \"Ethel Barrymore Theatre , Broadway, Ref. is\"], [\"2011–12\", \"The Importance of Being Earnest\", \"Lady Augusta Bracknell\", \"Sumner Theatre, Australia, Ref. is\"], [\"2007\", \"Exit the King\", \"King Berenger\", \"Malthouse Theatre , Australia, Ref. is\"]]}",
+          "{\"table_id\": \"T0454\", \"title\": \"Matthew Broderick\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Theatre Venue\"], \"sample_rows\": [[\"2015\", \"Sylvia\", \"Greg\", \"Cort Theatre , Broadway, Ref. is\"], [\"2002\", \"Short Talks on the Universe\", \"Lucifer\", \"Longacre Theatre , Broadway, Ref. is\"], [\"2009\", \"The Philanthropist\", \"Phillip\", \"American Airlines Theatre , Broadway, Ref. is\"]]}",
+          "{\"table_id\": \"T0830\", \"title\": \"Warren Beatty\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Venue\"], \"sample_rows\": [[\"1959\", \"A Loss of Roses\", \"Kenny\", \"Eugene O'Neill Theatre , Broadway, Ref. is\"]]}",
+          "{\"table_id\": \"T0329\", \"title\": \"Jesse Eisenberg\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Theatre\"], \"sample_rows\": [[\"2007\", \"Scarcity\", \"Billy\", \"Linda Gross Theater, Notes is\"]]}"
+        ]
+      }
+    }
+  },
+  "tv_series_production_records": {
+    "concept": "tv_series_production_records",
+    "overall_description": "Records of television series production credits including year, show title, role, and notes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of television series production credits including year, show title, role, and notes.",
+        "elements": [
+          "year",
+          "show_title",
+          "role",
+          "notes",
+          "series_title",
+          "director",
+          "writer"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0182\", \"title\": \"David Simon\", \"headers\": [\"Year\", \"Show\", \"Role\", \"Notes\"], \"sample_rows\": [[\"2000\", \"The Corner\", \"Executive producer, showrunner, writer\", \"Miniseries\"], [\"2012\", \"Treme\", \"Executive producer, showrunner, writer\", \"Season 3\"], [\"2017\", \"The Deuce\", \"Executive producer, showrunner, writer\", \"Season 1\"]]}",
+          "{\"table_id\": \"T0544\", \"title\": \"Rachel Weisz\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Notes\"], \"sample_rows\": [[\"1993\", \"Tropical Heat\", \"Joey\", \"Episode: \\\"His Pal Joey\\\"\"], [\"2000\", \"This is not an Exit: The Fictional World of Bret Easton Ellis\", \"Lauren Hynde\", \"Television Program\"], [\"2023\", \"Dead Ringers\", \"Elliot and Beverly Mantle\", \"Lead role; also executive producer\"]]}",
+          "{\"table_id\": \"T0262\", \"title\": \"Harold Ramis\", \"headers\": [\"Year\", \"Title\", \"Director\", \"Writer\", \"Notes\"], \"sample_rows\": [[\"1979\", \"Delta House\", \"Norway\", \"\", \"Pilot episode\"], [\"2006–2010\", \"The Office\", \"\", \"Norway\", \"4 episodes\"]]}",
+          "{\"table_id\": \"T0263\", \"title\": \"Harold Ramis\", \"headers\": [\"Year\", \"Title\", \"Director\", \"Writer\", \"Producer\"], \"sample_rows\": [[\"2000\", \"Bedazzled\", \"\", \"\", \"Notes is\"], [\"2002\", \"Analyze That\", \"\", \"\", \"Norway, Notes is\"], [\"1999\", \"Analyze This\", \"\", \"\", \"Norway, Notes is\"]]}"
+        ]
+      }
+    }
+  },
+  "film_series_crew_records": {
+    "concept": "film_series_crew_records",
+    "overall_description": "Records of crew members and their roles for films or series.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of crew members and their roles for films or series.",
+        "elements": [
+          "film_series",
+          "film_title",
+          "crew_role",
+          "crew_member",
+          "release_date",
+          "director",
+          "screenwriter",
+          "story_by",
+          "release_year",
+          "writer",
+          "producer",
+          "notes",
+          "year",
+          "dialogue_writer"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0192\", \"title\": \"Die Hard (film series)\", \"headers\": [\"Die Hard\", \"Die Hard 2\", \"Die Hard with a Vengeance\", \"Live Free or Die Hard\", \"A Good Day to Die Hard\"], \"sample_rows\": [[\"Cinematographer\", \"Jan de Bont\", \"Oliver Wood\", \"Peter Menzies, Jr.\", \"Simon Duggan\"]]}",
+          "{\"table_id\": \"T0191\", \"title\": \"Die Hard (film series)\", \"headers\": [\"Die Hard\", \"Die Hard 2\", \"Die Hard with a Vengeance\", \"Live Free or Die Hard\"], \"sample_rows\": [[\"Marvin\", \"\", \"Tom Bower\", \"colspan=\\\"4\\\"\"], [\"Col. William Stuart\", \"\", \"William Sadler\", \"colspan=\\\"4\\\"\"], [\"Mai Linh\", \"colspan=\\\"3\\\"\", \"Maggie Q\", \"colspan=\\\"2\\\"\"]]}",
+          "{\"table_id\": \"T0190\", \"title\": \"Die Hard (film series)\", \"headers\": [\"Die Hard\", \"Die Hard 2\", \"Die Hard with a Vengeance\"], \"sample_rows\": [[\"Al Powell\", \"Reginald VelJohnson\", \"colspan=\\\"4\\\"\"], [\"Yuri Komarov\", \"colspan=\\\"4\\\"\", \"Sebastian Koch, Live Free or Die Hard is\"], [\"Mike Collins\", \"colspan=\\\"4\\\"\", \"Cole Hauser, Live Free or Die Hard is\"]]}",
+          "{\"table_id\": \"T0573\", \"title\": \"Rocky (franchise)\", \"headers\": [\"Film\", \"U.S. release date\", \"Director\", \"Screenwriter(s)\", \"Story by\"], \"sample_rows\": [[\"Rocky V\", \"1990 11 16\", \"John G. Avildsen\", \"Sylvester Stallone\", \"Irwin Winkler and Robert Chartoff\"]]}",
+          "{\"table_id\": \"T0709\", \"title\": \"Terminator (franchise)\", \"headers\": [\"Film\", \"U.S. release date\", \"Director(s)\", \"Screenwriter(s)\", \"Story by\"], \"sample_rows\": [[\"Terminator Genisys\", \"2015 7 1\", \"Alan Taylor\", \"Patrick Lussier & Laeta Kalogridis\", \"Dana Goldberg & David Ellison\"]]}",
+          "{\"table_id\": \"T0122\", \"title\": \"Bourne (franchise)\", \"headers\": [\"Film\", \"U.S. release date\", \"Director\", \"Screenwriter(s)\", \"Story by\"], \"sample_rows\": [[\"''The Bourne Supremacy''\", \"2004 07 23\", \"Paul Greengrass\", \"Tony Gilroy\", \"Frank Marshall , Patrick Crowley & Paul L. Sandberg\"]]}"
+        ]
+      }
+    }
+  },
+  "film_critical_reception_records": {
+    "concept": "film_critical_reception_records",
+    "overall_description": "Records of films' critical reception scores from review aggregators and audience grading.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of films' critical reception scores from review aggregators and audience grading.",
+        "elements": [
+          "film_title",
+          "rotten_tomatoes_score",
+          "metacritic_score",
+          "cinemascore_grade",
+          "critical_score",
+          "public_score",
+          "review_aggregator",
+          "cinemascore",
+          "year",
+          "film",
+          "cinema_score",
+          "budget",
+          "box_office"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0193\", \"title\": \"Die Hard (film series)\", \"headers\": [\"Film\", \"Rotten Tomatoes\", \"Metacritic\", \"CinemaScore\"], \"sample_rows\": [[\"Die Hard with a Vengeance\", \"59% (76 reviews)\", \"58 (19 reviews)\", \"A−\"]]}",
+          "{\"table_id\": \"T0121\", \"title\": \"Bourne (franchise)\", \"headers\": [\"Film\", \"Rotten Tomatoes\", \"Metacritic\", \"CinemaScore\"], \"sample_rows\": [[\"The Bourne Supremacy\", \"82% (195 reviews)\", \"73 (39 reviews)\", \"A-\"], [\"Jason Bourne\", \"54% (317 reviews)\", \"58 (50 reviews)\", \"A-\"]]}",
+          "{\"table_id\": \"T0724\", \"title\": \"The Chronicles of Narnia (film series)\", \"headers\": [\"Film\", \"Rotten Tomatoes\", \"Metacritic\", \"CinemaScore\"], \"sample_rows\": [[\"The Voyage of the Dawn Treader\", \"50% (167 reviews)\", \"53 (33 reviews)\", \"A-\"]]}",
+          "{\"table_id\": \"T0292\", \"title\": \"Indiana Jones\", \"headers\": [\"Film\", \"Critical\", \"Public\"], \"sample_rows\": [[\"Indiana Jones and the Temple of Doom\", \"table edit\", \"57 (14 reviews)\"], [\"Rotten Tomatoes\", \"Metacritic\", \"CinemaScore\"]]}",
+          "{\"table_id\": \"T0132\", \"title\": \"Bridget Jones (film series)\", \"headers\": [\"Bridget Jones's Diary\", \"Bridget Jones:The Edge of Reason\", \"Bridget Jones's Baby\", \"Bridget Jones:Mad About the Boy\"], \"sample_rows\": [[\"Characters\", \"'''2001'''\", \"'''2004'''\", \"'''2016'''\"]]}",
+          "{\"table_id\": \"T0131\", \"title\": \"Bridget Jones (film series)\", \"headers\": [\"Bridget Jones's Diary\", \"Bridget Jones:The Edge of Reason\", \"Bridget Jones's Baby\"], \"sample_rows\": [[\"Jed\", \"&nbsp;\", \"Paul Nicholls, Bridget Jones:Mad About the Boy is\"], [\"Dr. Rawling\", \"\", \"Emma Thompson\"], [\"Magda\", \"Claire Skinner\", \"Jessica Hynes\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records of films' critical reception scores from review aggregators and audience grading.",
+        "elements": [
+          "film_title",
+          "release_year",
+          "critic_score",
+          "score_source",
+          "review_count",
+          "reception_category",
+          "critic_name",
+          "publication",
+          "rating",
+          "review_excerpt",
+          "review_aggregator",
+          "approval_rating",
+          "average_rating",
+          "critical_consensus"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00140\", \"title\": \"The American (2010 film)\", \"text\": \"The American (2010 film), On Metacritic, the film has a weighted average score of 61 out of 100, based on 36 critics, indicating \\\"generally favorable reviews\\\".\"}",
+          "{\"doc_id\": \"D01766\", \"title\": \"The Untouchables (film)\", \"text\": \"The Untouchables (film), On Metacritic, the film has a weighted average score of 79 out of 100, based on 16 critics, indicating \\\"generally favorable reviews\\\".\"}",
+          "{\"doc_id\": \"D00008\", \"title\": \"Eternals (film)\", \"text\": \"Eternals (film), On Metacritic, the film has a weighted average score of 52 out of 100, based on 62 critics, indicating \\\"mixed or average reviews\\\".\"}",
+          "{\"doc_id\": \"D00451\", \"title\": \"Tenet (film)\", \"text\": \"Tenet (film), Mike McCahill of IndieWire gave the film a \\\"C−\\\" grade and called it \\\"a humorless disappointment\\\".\"}",
+          "{\"doc_id\": \"D09117\", \"title\": \"Guilty (2020 film)\", \"text\": \"Guilty (2020 film), Soon after, Nanki gains the courage to share her own experience with sexual abuse/ rape, when she was 13 years old and encouraged by a relieved Tanu.\"}",
+          "{\"doc_id\": \"D00023\", \"title\": \"Birds of Prey (2020 film)\", \"text\": \"Birds of Prey (2020 film), In December of that same year, NME named it the 12th best song of 2020. \\\"\"}"
+        ]
+      }
+    }
+  },
+  "author_writing_publication_records": {
+    "concept": "author_writing_publication_records",
+    "overall_description": "Records of written works by an author, including title, publication date, medium, and venue.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of written works by an author, including title, publication date, medium, and venue.",
+        "elements": [
+          "author",
+          "title",
+          "publication_date",
+          "publication_medium",
+          "publication_venue",
+          "publication_year",
+          "work_title",
+          "publisher",
+          "isbn",
+          "page_count",
+          "notes"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0324\", \"title\": \"Jesse Eisenberg\", \"headers\": [\"Title\", \"Date of publication\", \"Department\", \"Medium\"], \"sample_rows\": [[\"\\\"I Didn't Win Any Pulitzer Prizes This Year\\\"\", \"April 17, 2013\", \"Daily Shouts\", \"Web\"], [\"\\\"My N.B.A. Knowledge Comes In Handy\\\"\", \"May 14, 2018\", \"Shouts & Murmurs\", \"Print\"], [\"\\\"A Bully Does His Research\\\"\", \"September 9, 2013\", \"Daily Shouts\", \"Web\"]]}",
+          "{\"table_id\": \"T0325\", \"title\": \"Jesse Eisenberg\", \"headers\": [\"Title\", \"Date of publication\", \"Medium\"], \"sample_rows\": [[\"\\\"A Post Gender Normative Woman Tries to Pick Up a Man at a Bar\\\"\", \"October 2, 2013\", \"Web\"], [\"\\\"Bream Gives Me Hiccups: Restaurant Reviews from a Privileged Nine-Year-Old: The Whiskey Blue Bar at the W Hotel\\\"\", \"July 9, 2012\", \"Web\"], [\"\\\"A Post Gender Normative Man Tries to Pick Up a Woman at a Bar\\\"\", \"December 28, 2011\", \"Web\"]]}",
+          "{\"table_id\": \"T0326\", \"title\": \"Jesse Eisenberg\", \"headers\": [\"Title\", \"Year of publication\", \"Publisher\"], \"sample_rows\": [[\"A Little Part of All of Us\", \"2015\", \"Playing On Air\"], [\"The Spoils\", \"2015\", \"Grove Press , New York\"]]}",
+          "{\"table_id\": \"T0663\", \"title\": \"Stephen King bibliography\", \"headers\": [\"Year\", \"Title\", \"Publisher\", \"ISBN\", \"Pages\"], \"sample_rows\": [[\"2023\", \"Holly\", \"Scribner\", \"978-1-66801-613-8\", \"449, Notes is\"], [\"2018\", \"Elevation\", \"Scribner\", \"978-1-98210-231-9\", \"144, Notes is\"], [\"2024\", \"You Like It Darker\", \"Scribner\", \"978-1-668-03771-3\", \"502, Notes is\"]]}",
+          "{\"table_id\": \"T0664\", \"title\": \"Stephen King bibliography\", \"headers\": [\"Year\", \"Title\", \"Publisher\", \"ISBN\", \"Pages\", \"Notes\"], \"sample_rows\": [[\"1992\", \"Dolores Claiborne\", \"Viking\", \"978-0-670-84452-4\", \"305\", \"Runner-up (14th place), Locus Award for Best Horror/Dark Fantasy Novel , 1993\"], [\"1988\", \"Nightmares in the Sky\", \"Viking Studio Books\", \"978-0-670-82307-9\", \"128\", \"Illustrated by f-stop Fitzgerald\"], [\"2007\", \"Blaze\", \"Scribner\", \"978-1-416-55484-4\", \"304\", \"Published under pseudonym Richard Bachman\"]]}",
+          "{\"table_id\": \"T0661\", \"title\": \"Stephen King bibliography\", \"headers\": [\"Year\", \"Title\", \"Notes\"], \"sample_rows\": [[\"1989\", \"''Pet Sematary''\", \"A horror film based on King's novel of the same name\"], [\"1991\", \"''Golden Years''\", \"An original television science fiction thriller limited series created by King, and cowritten with Josef Anderson\"], [\"1992\", \"''Sleepwalkers''\", \"An original horror film\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records of written works by an author, including title, publication date, medium, and venue.",
+        "elements": [
+          "author_name",
+          "work_title",
+          "publication_date",
+          "medium",
+          "publication_venue"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00364\", \"title\": \"Stephen King\", \"text\": \"Stephen King, In April 2008, King spoke out against HB 1423, a bill pending in the Massachusetts state legislature that would restrict or ban the sale of violent vdeo games to anyone under the age of 18.\"}",
+          "{\"doc_id\": \"D01211\", \"title\": \"Richard Bachman\", \"text\": \"Richard Bachman, In the fifth book, Wolves of the Calla, the sinister children's book Charlie the Choo Choo is revealed to be written by \\\"Claudia y Inez Bachman\\\".\"}",
+          "{\"doc_id\": \"D02089\", \"title\": \"Stephen Chow\", \"text\": \"Stephen Chow, The following decade, he appeared in more than 40 films.\"}"
+        ]
+      }
+    }
+  },
+  "film_series_box_office_records": {
+    "concept": "film_series_box_office_records",
+    "overall_description": "Records of films' box office revenues, rankings, budgets, and performance details.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of films' box office revenues, rankings, budgets, and performance details.",
+        "elements": [
+          "film_title",
+          "release_date",
+          "box_office_revenue",
+          "box_office_ranking",
+          "budget",
+          "box_office_gross",
+          "ranking",
+          "rank",
+          "release_year"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0400\", \"title\": \"Lethal Weapon (franchise)\", \"headers\": [\"Film\", \"Release date\", \"Box office revenue\", \"Box office ranking\", \"Budget\"], \"sample_rows\": [[\"North America\", \"Other territories\", \"Worldwide\", \"All time domestic\", \"All time worldwide\"]]}",
+          "{\"table_id\": \"T0048\", \"title\": \"Alien (franchise)\", \"headers\": [\"Film\", \"Release date\", \"Box office revenue\"], \"sample_rows\": [[\"North America\", \"Foreign\", \"Worldwide\"]]}",
+          "{\"table_id\": \"T0605\", \"title\": \"Scream (franchise)\", \"headers\": [\"Film\", \"Release date(United States)\", \"Budget\", \"Box office revenue\"], \"sample_rows\": [[\"United States\", \"International 1\", \"Worldwide\", \"All time worldwide\"]]}",
+          "{\"table_id\": \"T0766\", \"title\": \"The Lord of the Rings (film series)\", \"headers\": [\"Film\", \"U.S. release date\", \"Box office gross\", \"All-time ranking\", \"Budget\"], \"sample_rows\": [[\"Total\", \"$\", \"$\", \"$\", \"is $281 &nbsp; million\"], [\"U.S. and Canada\", \"Other territories\", \"Worldwide\", \"U.S. and Canada\", \"Worldwide\"]]}",
+          "{\"table_id\": \"T0646\", \"title\": \"Spy Kids\", \"headers\": [\"Film\", \"Release date\", \"Box office gross\"], \"sample_rows\": [[\"North America\", \"Other territories\", \"Worldwide\"]]}",
+          "{\"table_id\": \"T0647\", \"title\": \"Spy Kids\", \"headers\": [\"Film\", \"Release date\", \"Box office gross\", \"Budget\"], \"sample_rows\": [[\"Spy Kids: All the Time in the World\", \"August 18, 2011\", \"$38,538,188\", \"$47,026,122, is $85,564,310\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records of films' box office revenues, rankings, budgets, and performance details.",
+        "elements": [
+          "film_title",
+          "release_year",
+          "box_office_gross",
+          "budget",
+          "series_name",
+          "release_date",
+          "opening_weekend_gross",
+          "international_markets",
+          "total_gross",
+          "ranking"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D01260\", \"title\": \"Spy Kids 3-D: Game Over\", \"text\": \"Spy Kids 3-D: Game Over, He is also informed that his sister was last seen on Level 4.\"}",
+          "{\"doc_id\": \"D01625\", \"title\": \"Spy Kids\", \"text\": \"Spy Kids, Eventually, Donnagon is fired and Gary is suspended, and the transmooker is destroyed.\"}",
+          "{\"doc_id\": \"D00818\", \"title\": \"True Lies\", \"text\": \"True Lies, Gib and other Omega agents pick up Harry.\"}",
+          "{\"doc_id\": \"D00320\", \"title\": \"The Notebook\", \"text\": \"The Notebook, It is the 15th highest-grossing romantic drama film of all-time.\"}",
+          "{\"doc_id\": \"D00062\", \"title\": \"Minions (film)\", \"text\": \"Minions (film), Pierre Coffin became director again with newcomer Kyle Balda as the co-director, marking the first film in the franchise where Chris Renaud is not a director.\"}",
+          "{\"doc_id\": \"D01520\", \"title\": \"Bombshell (2019 film)\", \"text\": \"Bombshell (2019 film), At one point [he] actually said to me, 'No more female empowerment stuff!'.\\\"\"}"
+        ]
+      }
+    }
+  },
+  "film_soundtrack_release_records": {
+    "concept": "film_soundtrack_release_records",
+    "overall_description": "Records of film soundtrack album releases with title, release date, length, composer, and label.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of film soundtrack album releases with title, release date, length, composer, and label.",
+        "elements": [
+          "soundtrack_title",
+          "release_date",
+          "length",
+          "composer",
+          "label",
+          "release_year",
+          "film_title",
+          "director",
+          "studio",
+          "soundtrack_notes"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0742\", \"title\": \"The Expendables (franchise)\", \"headers\": [\"Title\", \"U.S. release date\", \"Length\", \"Composer\", \"Label\"], \"sample_rows\": [[\"The Expendables 3: Original Motion Picture Soundtrack\", \"August 12, 2014\", \"60:09\", \"Brian Tyler\", \"La-La Land Records\"]]}",
+          "{\"table_id\": \"T0054\", \"title\": \"Alien (franchise)\", \"headers\": [\"Title\", \"U.S. release date\", \"Length\", \"Composer(s)\", \"Label\"], \"sample_rows\": [[\"Aliens: Original Motion Picture Soundtrack\", \"October 25, 1987\", \"39:57\", \"James Horner\", \"Varèse Sarabande\"], [\"Alien: Original Motion Picture Soundtrack\", \"1979\", \"33:37\", \"Jerry Goldsmith\", \"20th Century Records\"]]}",
+          "{\"table_id\": \"T0770\", \"title\": \"The Lord of the Rings (film series)\", \"headers\": [\"Title\", \"U.S. release date\", \"Length\", \"Composer\", \"Label\"], \"sample_rows\": [[\"The Return of the King: Original Motion Picture Soundtrack\", \"2003 11 25\", \"72:05\", \"Howard Shore\", \"Reprise Records\"]]}",
+          "{\"table_id\": \"T0802\", \"title\": \"Thomas Newman\", \"headers\": [\"Year\", \"Title\", \"Director(s)\", \"Studio(s)\", \"Notes\"], \"sample_rows\": [[\"1987\", \"Light of Day\", \"Paul Schrader\", \"TriStar Pictures\", \"Song album with one Newman track\"], [\"1999\", \"The Green Mile\", \"Frank Darabont\", \"Castle Rock Entertainment Warner Bros.\", \"Soundtrack released by Warner Bros. Records .\"], [\"1994\", \"The Shawshank Redemption\", \"Frank Darabont\", \"Castle Rock Entertainment Columbia Pictures\", \"Soundtrack released by Epic Soundtrax\"]]}",
+          "{\"table_id\": \"T0801\", \"title\": \"Thomas Newman\", \"headers\": [\"Year\", \"Title\", \"Director(s)\", \"Studio(s)\"], \"sample_rows\": [[\"2015\", \"The Second Best Exotic Marigold Hotel\", \"John Madden\", \"Participant Media Blueprint Pictures Fox Searchlight Pictures, Notes is\"], [\"1991\", \"Naked Tango\", \"Leonard Schrader\", \"New Line Cinema, Notes is\"], [\"1990\", \"Men Don't Leave\", \"Paul Brickman\", \"Geffen Pictures Warner Bros., Notes is\"]]}",
+          "{\"table_id\": \"T0826\", \"title\": \"Walt Disney Pictures\", \"headers\": [\"Titles\", \"Release dates\", \"Notes\"], \"sample_rows\": [[\"Indiana Jones\", \"2023–present\", \"Co-production with Lucasfilm\"], [\"The Hunchback of Notre Dame\", \"1996–present\", \"Co-production with Walt Disney Animation Studios and Disney Television Animation\"], [\"Honey, I Shrunk the Kids\", \"1989–present\", \"Co-production with Silver Screen Partners and Touchwood Pacific Partners\"]]}"
+        ]
+      }
+    }
+  },
+  "film_series_runtime_records": {
+    "concept": "film_series_runtime_records",
+    "overall_description": "Records of films with their theatrical and extended edition runtimes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of films with their theatrical and extended edition runtimes.",
+        "elements": [
+          "film_title",
+          "theatrical_runtime",
+          "extended_runtime"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0757\", \"title\": \"The Hobbit (film series)\", \"headers\": [\"Film\", \"Theatrical edition length\", \"Extended edition length\"], \"sample_rows\": [[\"The Hobbit: An Unexpected Journey\", \"169 mins (2 hr, 49 min)\", \"182 mins (3 hr, 2 min)\"]]}",
+          "{\"table_id\": \"T0755\", \"title\": \"The Hobbit (film series)\", \"headers\": [\"An Unexpected Journey\", \"The Desolation of Smaug\"], \"sample_rows\": [[\"Fíli\", \"Dean O'Gorman\"], [\"Bombur\", \"Stephen Hunter\"], [\"Dori\", \"Mark Hadlow\"]]}",
+          "{\"table_id\": \"T0756\", \"title\": \"The Hobbit (film series)\", \"headers\": [\"An Unexpected Journey\", \"The Desolation of Smaug\", \"The Battle of the Five Armies\"], \"sample_rows\": [[\"Gollum\", \"Andy Serkis\", \"&nbsp;\"], [\"Bard the Bowman\", \"&nbsp;\", \"Luke Evans\"], [\"Lindir\", \"Bret McKenzie\", \"&nbsp;\"]]}"
+        ]
+      }
+    }
+  },
+  "film_director_biographical_records": {
+    "concept": "film_director_biographical_records",
+    "overall_description": "Biographical records of individuals in the film industry, including personal details, education, career milestones, and awards.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for biographical records of individuals in the film industry, including personal details, education, career milestones, and awards.",
+        "elements": [
+          "person_name",
+          "birth_date",
+          "death_date",
+          "nationality",
+          "occupation",
+          "notable_works",
+          "career_events",
+          "career_highlights",
+          "personal_experiences",
+          "critical_reception",
+          "director_name",
+          "filmography",
+          "awards",
+          "production_techniques"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00006\", \"title\": \"Quentin Tarantino\", \"text\": \"Quentin Tarantino, Lucio Fulci), and Curdled (1996, dir.\"}",
+          "{\"doc_id\": \"D00090\", \"title\": \"Alfred Hitchcock\", \"text\": \"Alfred Hitchcock, He had wanted Vera Miles to play the lead, but she was pregnant.\"}",
+          "{\"doc_id\": \"D02664\", \"title\": \"Alfred Hitchcock filmography\", \"text\": \"Alfred Hitchcock filmography, In 1980, Hitchcock received a knighthood.\"}",
+          "{\"doc_id\": \"D00096\", \"title\": \"David Lynch\", \"text\": \"David Lynch, His work led to him being labeled \\\"the first populist surrealist\\\" by film critic Pauline Kael.:\"}",
+          "{\"doc_id\": \"D04557\", \"title\": \"David Callaham\", \"text\": \"David Callaham, David Callaham at IMDb\"}",
+          "{\"doc_id\": \"D00127\", \"title\": \"David Simon\", \"text\": \"David Simon, For season five he was the show's story editor and continued to contribute teleplays writing the episodes \\\"Bad Medicine\\\" and \\\"Wu's on First?\\\" (\"}"
+        ]
+      }
+    }
+  },
+  "film_genre_overview_records": {
+    "concept": "film_genre_overview_records",
+    "overall_description": "Records providing an overview of a film genre, including its definition, characteristics, and examples.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records providing an overview of a film genre, including its definition, characteristics, and examples.",
+        "elements": [
+          "genre_name",
+          "genre_description",
+          "example_films",
+          "subgenre_notes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00028\", \"title\": \"Science fiction film\", \"text\": \"Science fiction film, Often enough, these films could just as well pass as Westerns or World War II films if the science fiction props were removed.\"}",
+          "{\"doc_id\": \"D00061\", \"title\": \"Comedy film\", \"text\": \"Comedy film, Some of these stars, as well as acts such as Laurel and Hardy and the Three Stooges, also found success incorporating slapstick comedy into sound films.\"}",
+          "{\"doc_id\": \"D01061\", \"title\": \"Men in Black 3\", \"text\": \"Men in Black 3, Griffin, who can see all possible future timelines and outcomes, senses Boris' coming attack on The Factory, but tells J and K where to meet him so he can give them the ArcNet before he flees.\"}"
+        ]
+      }
+    }
+  },
+  "film_production_records": {
+    "concept": "film_production_records",
+    "overall_description": "Records of film production details including locations, music, and behind-the-scenes aspects.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records of film production details including locations, music, and behind-the-scenes aspects.",
+        "elements": [
+          "film_title",
+          "production_aspect",
+          "details",
+          "source",
+          "film_series",
+          "production_phase",
+          "production_details",
+          "crew_member",
+          "role"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00067\", \"title\": \"Moonraker (film)\", \"text\": \"Moonraker (film), The Jaws character, played by Richard Kiel, makes a return, although in Moonraker the role is played more for comedic effect than in The Spy Who Loved Me.\"}",
+          "{\"doc_id\": \"D00659\", \"title\": \"Production of the James Bond films\", \"text\": \"Production of the James Bond films, After a prolonged lawsuit, Sony backed down, and McClory eventually exhausted all legal avenues to pursue.\"}",
+          "{\"doc_id\": \"D00326\", \"title\": \"2001: A Space Odyssey (film)\", \"text\": \"2001: A Space Odyssey (film), But a few months into the release, they realised a lot of people were watching it while smoking funny cigarettes.\"}",
+          "{\"doc_id\": \"D00619\", \"title\": \"The Lord of the Rings (film series)\", \"text\": \"The Lord of the Rings (film series), The release of the films saw a surge of interest in The Lord of the Rings and Tolkien's other works, vastly increasing his impact on popular culture.\"}",
+          "{\"doc_id\": \"D00407\", \"title\": \"Harry Potter (film series)\", \"text\": \"Harry Potter (film series), Chris Columbus was an executive producer on the first two films alongside Mark Radcliffe and Michael Barnathan, but he became a producer on the third film alongside Heyman and Radcliffe.\"}",
+          "{\"doc_id\": \"D00065\", \"title\": \"Production of The Lord of the Rings film series\", \"text\": \"Production of The Lord of the Rings film series, Peter Jackson's interpretation of The Lord of the Rings The Hobbit (film series) The Lord of the Rings (TV prequel series)\"}"
+        ]
+      }
+    }
+  },
+  "geographic_region_overview_records": {
+    "concept": "geographic_region_overview_records",
+    "overall_description": "Comprehensive overviews of geographic regions including history, culture, demographics, and notable figures.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for comprehensive overviews of geographic regions including history, culture, demographics, and notable figures.",
+        "elements": [
+          "region_name",
+          "location",
+          "history",
+          "culture",
+          "demographics",
+          "infrastructure",
+          "notable_persons"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00079\", \"title\": \"Germany\", \"text\": \"Germany, The motorway (Autobahn) is widely known for having no general federally mandated speed limit for some classes of vehicles.\"}",
+          "{\"doc_id\": \"D00027\", \"title\": \"Gwalior\", \"text\": \"Gwalior, The Tansen Sangeet Samaroh is organised by the government of Madhya Pradesh, in association with the Academy of the Department of Culture.\"}",
+          "{\"doc_id\": \"D01207\", \"title\": \"Ludwig van Beethoven\", \"text\": \"Ludwig van Beethoven, Beethoven's remains were exhumed for study in 1863, and moved in 1888 to Vienna's Zentralfriedhof where they were reinterred in a grave adjacent to that of Schubert.\"}"
+        ]
+      }
+    }
+  },
+  "film_score_composition_records": {
+    "concept": "film_score_composition_records",
+    "overall_description": "Records of composers and the film scores they composed, including release year and associated notes.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records of composers and the film scores they composed, including release year and associated notes.",
+        "elements": [
+          "composer",
+          "film_title",
+          "release_year",
+          "score_type",
+          "notes",
+          "score_notes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00126\", \"title\": \"John Williams\", \"text\": \"John Williams, In July 2018, Williams composed the main musical theme for Disneyland and Disney's Hollywood Studios theme park attraction Star Wars: Galaxy's Edge.\"}",
+          "{\"doc_id\": \"D00770\", \"title\": \"John Travolta\", \"text\": \"John Travolta, The film was a dream project for Travolta since the book's release in 1982, when Hubbard wrote to him to try to help make a film adaptation.\"}",
+          "{\"doc_id\": \"D03895\", \"title\": \"Dead Poets Society\", \"text\": \"Dead Poets Society, The film's global receipts were the fifth highest for 1989, and the highest for dramas.\"}",
+          "{\"doc_id\": \"D03202\", \"title\": \"The Bourne Identity (2002 film)\", \"text\": \"The Bourne Identity (2002 film), The score for The Bourne Identity was composed by John Powell.\"}",
+          "{\"doc_id\": \"D00403\", \"title\": \"Signs (2002 film)\", \"text\": \"Signs (2002 film), The attic door and the third story: The longest deleted scene, it starts with Merrill finding out about the not-boarded attic door.\"}",
+          "{\"doc_id\": \"D00259\", \"title\": \"The Ring (2002 film)\", \"text\": \"The Ring (2002 film), The soundtrack contains a few themes associated with the characters, moods and locations, including multiple uses of the Dies irae theme.\"}"
+        ]
+      }
+    }
+  },
+  "film_series_development_records": {
+    "concept": "film_series_development_records",
+    "overall_description": "Records of development aspects of a film series, including plot changes, production decisions, and behind-the-scenes details.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records of development aspects of a film series, including plot changes, production decisions, and behind-the-scenes details.",
+        "elements": [
+          "film_series",
+          "development_aspect",
+          "detail",
+          "source"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00134\", \"title\": \"Star Wars\", \"text\": \"Star Wars, Many of the cards have become highly collectible with some very rare \\\"promos\\\", such as the 1993 Galaxy Series II \\\"floating Yoda\\\" P3 card often commanding US$1,000 or more.\"}",
+          "{\"doc_id\": \"D03835\", \"title\": \"Star Wars prequel trilogy\", \"text\": \"Star Wars prequel trilogy, In writing The Empire Strikes Back, Lucas initially considered that Lando Calrissian was a clone from a planet of clones which caused the Clone Wars mentioned in A New Hope.\"}",
+          "{\"doc_id\": \"D00761\", \"title\": \"Star Wars: The Last Jedi\", \"text\": \"Star Wars: The Last Jedi, Additional filming took place in Mexico.\"}"
+        ]
+      }
+    }
+  },
+  "film_director_filmography_records": {
+    "concept": "film_director_filmography_records",
+    "overall_description": "Records of films directed by a specific director, including release year and notable details.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records of films directed by a specific director, including release year and notable details.",
+        "elements": [
+          "director",
+          "film_title",
+          "release_year",
+          "role",
+          "notes",
+          "director_name",
+          "awards",
+          "production_notes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00156\", \"title\": \"Paul Thomas Anderson\", \"text\": \"Paul Thomas Anderson, Anderson's ninth feature film, Licorice Pizza, received a wide release on December 25, 2021.\"}",
+          "{\"doc_id\": \"D01358\", \"title\": \"Boogie Nights\", \"text\": \"Boogie Nights, Later, Anderson wanted Reynolds to star in his next film, Magnolia, but Reynolds declined.\"}",
+          "{\"doc_id\": \"D00229\", \"title\": \"Mark Wahlberg\", \"text\": \"Mark Wahlberg, Trinh released a public statement forgiving Wahlberg.\"}",
+          "{\"doc_id\": \"D05497\", \"title\": \"Rain Man\", \"text\": \"Rain Man, Returning to Los Angeles, Charlie meets with Bruner, who offers him $250,000 to walk away from Raymond.\"}",
+          "{\"doc_id\": \"D13442\", \"title\": \"Barry Levinson\", \"text\": \"Barry Levinson, Levinson also directed Rock the Kasbah (2015), written by Mitch Glazer.\"}",
+          "{\"doc_id\": \"D00219\", \"title\": \"Iron Man (2008 film)\", \"text\": \"Iron Man (2008 film), Director Jon Favreau plays Harold \\\"Happy\\\" Hogan, Stark's bodyguard and chauffeur, and Samuel L. Jackson makes a cameo appearance as Nick Fury, director of S.H.I.E.L.D., in a post-credits scene.\"}"
+        ]
+      }
+    }
+  },
+  "film_series_character_development_records": {
+    "concept": "film_series_character_development_records",
+    "overall_description": "Records of character development and plot events within a film series, including actor portrayals and narrative arcs.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records of character development and plot events within a film series, including actor portrayals and narrative arcs.",
+        "elements": [
+          "character_name",
+          "actor_name",
+          "series_title",
+          "development_notes",
+          "plot_events",
+          "film_series",
+          "development_details",
+          "actor_portrayal",
+          "narrative_arc"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00176\", \"title\": \"Marvel Cinematic Universe\", \"text\": \"Marvel Cinematic Universe, I Am Groot is a series of photorealistic animated short films for Disney+ starring Baby Groot going on adventures with new and unusual characters.\"}",
+          "{\"doc_id\": \"D00172\", \"title\": \"Thor (Marvel Cinematic Universe)\", \"text\": \"Thor (Marvel Cinematic Universe), While returning the crown to Asgard, he finds Loki still alive and posing as Odin.\"}",
+          "{\"doc_id\": \"D00251\", \"title\": \"Loki (Marvel Cinematic Universe)\", \"text\": \"Loki (Marvel Cinematic Universe), A variant of Loki dubbed \\\"President Loki\\\" (portrayed by Tom Hiddleston) created a Nexus event by becoming a president in his timeline.\"}",
+          "{\"doc_id\": \"D00569\", \"title\": \"Indiana Jones (character)\", \"text\": \"Indiana Jones (character), Written by Steve Perry Indiana Jones and the Army of the Dead, September 2009.\"}",
+          "{\"doc_id\": \"D00535\", \"title\": \"Indiana Jones\", \"text\": \"Indiana Jones, His script, titled Indiana Jones and the City of Gods, was set in the 1950s, with ex-Nazis pursuing Jones.\"}",
+          "{\"doc_id\": \"D03146\", \"title\": \"Bridget Jones: The Edge of Reason\", \"text\": \"Bridget Jones: The Edge of Reason, Bridget Jones (Renée Zellweger) is ecstatic about her new relationship with Mark Darcy (Colin Firth).\"}"
+        ]
+      }
+    }
+  },
+  "film_actor_role_records": {
+    "concept": "film_actor_role_records",
+    "overall_description": "Records of actors and the roles they played in films, including production and performance details.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records of actors and the roles they played in films, including production and performance details.",
+        "elements": [
+          "actor_name",
+          "film_title",
+          "role_description",
+          "production_notes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00216\", \"title\": \"Kramer vs. Kramer\", \"text\": \"Kramer vs. Kramer, The part was offered to Faye Dunaway, Jane Fonda and Ali MacGraw, before Meryl Streep was cast.\"}",
+          "{\"doc_id\": \"D00452\", \"title\": \"Meryl Streep\", \"text\": \"Meryl Streep, The film was released to a lukewarm reaction from critics, who called it \\\"beautifully filmed, but decidedly dull [and] a colossal waste of a talented cast\\\".\"}",
+          "{\"doc_id\": \"D00032\", \"title\": \"Godzilla vs. Kong\", \"text\": \"Godzilla vs. Kong, Filming locations in Australia included Miami State High School and parts of Brisbane such as the Newstead suburb, the Chinatown Mall in Fortitude Valley, and the Wickham Terrace Car Park.\"}"
+        ]
+      }
+    }
+  },
+  "film_production_injury_records": {
+    "concept": "film_production_injury_records",
+    "overall_description": "Records of injuries sustained by actors or crew during film production, including details of the incident and resulting harm.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records of injuries sustained by actors or crew during film production, including details of the incident and resulting harm.",
+        "elements": [
+          "film_title",
+          "release_year",
+          "actor_name",
+          "injury_description",
+          "injury_circumstances"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00252\", \"title\": \"Matilda (1996 film)\", \"text\": \"Matilda (1996 film), She returns to Trunchbull's house and attempts to scare her out of it but Trunchbull becomes aware of Matilda's visiting upon finding her red hair ribbon in her garden.\"}",
+          "{\"doc_id\": \"D00810\", \"title\": \"101 Dalmatians (1996 film)\", \"text\": \"101 Dalmatians (1996 film), They steal her hat, drop a pig on her, cause her to fall into a vat of molasses and finally get flung into a pigpen, defeating her.\"}",
+          "{\"doc_id\": \"D00093\", \"title\": \"Hamlet (1996 film)\", \"text\": \"Hamlet (1996 film), Gertrude interrupts to report that Ophelia has drowned, though it is unclear whether it was suicide or an accident caused by her madness.\"}"
+        ]
+      }
+    }
+  },
+  "war_film_depiction_records": {
+    "concept": "war_film_depiction_records",
+    "overall_description": "Records of films depicting specific wars or conflicts, including details about their portrayal and reception.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records of films depicting specific wars or conflicts, including details about their portrayal and reception.",
+        "elements": [
+          "film_title",
+          "release_year",
+          "war_conflict",
+          "depiction_details",
+          "reception_notes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00267\", \"title\": \"Indo-Pakistani War of 1971\", \"text\": \"Indo-Pakistani War of 1971, It disagreed with Pakistani President Yahya Khan's consideration of military options, and criticised East Pakistan Awami League politicians' ties with India.\"}",
+          "{\"doc_id\": \"D00694\", \"title\": \"Border (1997 film)\", \"text\": \"Border (1997 film), Javed Akhtar won Filmfare Award for Best Lyricist, while Anu Malik was nominated for the Filmfare award for his work in composing the music of this movie.\"}",
+          "{\"doc_id\": \"D00091\", \"title\": \"War film\", \"text\": \"War film, It was watched by some 20 million people in Britain in its six weeks of exhibition, making it what the critic Francine Stock called \\\"one of the most successful films of all time\\\".\"}"
+        ]
+      }
+    }
+  },
+  "film_adaptation_records": {
+    "concept": "film_adaptation_records",
+    "overall_description": "Records of film adaptations of literary works, including source material, release details, and narrative alterations.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records of film adaptations of literary works, including source material, release details, and narrative alterations.",
+        "elements": [
+          "source_work",
+          "adaptation_title",
+          "release_year",
+          "director",
+          "plot_changes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00642\", \"title\": \"Little Women (2019 film)\", \"text\": \"Little Women (2019 film), Little Women is a 2019 American coming-of-age period drama film written and directed by Greta Gerwig.\"}",
+          "{\"doc_id\": \"D00146\", \"title\": \"Little Women\", \"text\": \"Little Women, Alcott used Friedrich to \\\"subvert adolescent romantic ideals\\\" because he was much older and seemingly unsuited for Jo.:\"}",
+          "{\"doc_id\": \"D00561\", \"title\": \"Little Shop of Horrors (film)\", \"text\": \"Little Shop of Horrors (film), As originally filmed, it detailed through a dream sequence Seymour's rising success and the need to keep the plant fed and impress Audrey.\"}"
+        ]
+      }
+    }
+  },
+  "film_series_overview_records": {
+    "concept": "film_series_overview_records",
+    "overall_description": "Records providing an overview of a film series, including individual film details, plot summaries, box office figures, awards, and production notes.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records providing an overview of a film series, including individual film details, plot summaries, box office figures, awards, and production notes.",
+        "elements": [
+          "series_title",
+          "film_title",
+          "release_year",
+          "plot_summary",
+          "box_office",
+          "awards",
+          "production_notes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00882\", \"title\": \"Mad Max\", \"text\": \"Mad Max, In 2016, Fury Road became the first film of the Mad Max franchise to receive Academy Award recognition, winning six of its ten nominations.\"}",
+          "{\"doc_id\": \"D00184\", \"title\": \"Mad Max 2\", \"text\": \"Mad Max 2, He, too, decides to throw in his lot with the settlers and help defend their compound.\"}",
+          "{\"doc_id\": \"D00098\", \"title\": \"Mad Max Beyond Thunderdome\", \"text\": \"Mad Max Beyond Thunderdome, There is a title card at the end of film before the credits roll that reads: \\\"...for Byron\\\".\"}"
+        ]
+      }
+    }
+  },
+  "film_series_plot_records": {
+    "concept": "film_series_plot_records",
+    "overall_description": "Records of plot events and narrative details for films within a series.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records of plot events and narrative details for films within a series.",
+        "elements": [
+          "film_series",
+          "film_title",
+          "plot_event",
+          "character",
+          "location",
+          "release_year"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D03081\", \"title\": \"John Wick: Chapter 4\", \"text\": \"John Wick: Chapter 4, \\\"A potential fifth film was no longer on the table by the time the film was released, in part due to Wick's death in Chapter 4.\"}",
+          "{\"doc_id\": \"D00475\", \"title\": \"John Wick: Chapter 2\", \"text\": \"John Wick: Chapter 2, John flees to the catacombs, where he is double-crossed by Ares and Santino's henchmen, who intend to tie up \\\"loose ends\\\" by killing him.\"}",
+          "{\"doc_id\": \"D02816\", \"title\": \"John Wick\", \"text\": \"John Wick, She later clarified that she personally is interested in seeing a spin-off featuring the character become a reality.\"}"
+        ]
+      }
+    }
+  },
+  "film_external_identifier_records": {
+    "concept": "film_external_identifier_records",
+    "overall_description": "Records of films, persons, music artists, or characters with identifiers from external databases.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of films, persons, music artists, or characters with identifiers from external databases.",
+        "elements": [
+          "film",
+          "external_identifier",
+          "identifier_value",
+          "external_database",
+          "identifier",
+          "person",
+          "artist",
+          "external_music_database",
+          "subject_character",
+          "identifier_scheme"
+        ],
+        "data_examples": [
+          "The Godfather Part III --Vokrug.tv show ID--> \"the_godfather_part_iii\"",
+          "Helena Bonham Carter --Vokrug.tv person ID--> \"helena_bonham_carter\"",
+          "A Night at the Opera --NRK TV ID--> \"program/KOIF42003803\"",
+          "Gilda --Kinofilms.ua film ID--> \"movie/9132\"",
+          "The Godfather Part III --oKino.ua film ID--> \"9072\"",
+          "Gilda --Kinobaza.com.ua film ID--> \"gilda\""
+        ]
+      }
+    }
+  },
+  "language_usage_records": {
+    "concept": "language_usage_records",
+    "overall_description": "Records of languages associated with individuals or works, including native, official, or writing language.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of languages associated with individuals or works, including native, official, or writing language.",
+        "elements": [
+          "subject",
+          "language",
+          "usage_context",
+          "work",
+          "language_variant",
+          "qualifier_language"
+        ],
+        "data_examples": [
+          "Patrick Stewart --native language--> British English",
+          "Sam Wood --writing language--> English",
+          "Lucknow --official language--> Hindi",
+          "The Mummy --language of work or name--> English",
+          "The Lord of the Rings --translator [language of work or name: Esperanto]--> William Auld",
+          "Germany --Der Spiegel topic ID--> \"deutschland\""
+        ]
+      }
+    }
+  },
+  "topic_category_portal_linkage_records": {
+    "concept": "topic_category_portal_linkage_records",
+    "overall_description": "Records linking topics to their main categories and Wikimedia portals, and vice versa.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records linking topics to their main categories and wikimedia portals, and vice versa.",
+        "elements": [
+          "topic",
+          "main_category",
+          "main_wikimedia_portal",
+          "portal_main_topic",
+          "category_main_topic"
+        ],
+        "data_examples": [
+          "Germany --topic's main Wikimedia portal--> Portal:Germany",
+          "Portal:Narnia --Wikimedia portal's main topic--> The Chronicles of Narnia",
+          "Mandy Moore --topic's main category--> Category:Mandy Moore"
+        ]
+      }
+    }
+  },
+  "government_office_tenure_records": {
+    "concept": "government_office_tenure_records",
+    "overall_description": "Records of individuals holding government offices with temporal and political context.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of individuals holding government offices with temporal and political context.",
+        "elements": [
+          "office_holder",
+          "office",
+          "jurisdiction",
+          "start_time",
+          "end_time",
+          "political_party",
+          "predecessor",
+          "successor",
+          "series_ordinal"
+        ],
+        "data_examples": [
+          "Chicago --office held by head of government--> Mayor of Chicago",
+          "Germany --office held by head of state--> president of Germany",
+          "Chicago --head of government [member of political party: Democratic Party; start time: \"1889; end time: \"1891; series ordinal: \"31\"]--> DeWitt Clinton Cregier"
+        ]
+      }
+    }
+  },
+  "capital_relation_records": {
+    "concept": "capital_relation_records",
+    "overall_description": "Records of capital city relationships between administrative entities, including temporal qualifiers.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of capital city relationships between administrative entities, including temporal qualifiers.",
+        "elements": [
+          "capital",
+          "capital_of",
+          "location",
+          "administrative_entity",
+          "start_time",
+          "end_time"
+        ],
+        "data_examples": [
+          "Kassel --capital of [end time: \"1803; start time: \"1567]--> Landgraviate of Hesse-Kassel",
+          "Lucknow district --capital--> Lucknow",
+          "Montreal --associated electoral district--> Lac-Saint-Louis"
+        ]
+      }
+    }
+  },
+  "award_nomination_records": {
+    "concept": "award_nomination_records",
+    "overall_description": "Records of individuals or works being nominated for awards, including the award, associated work, ceremony, and time.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of individuals or works being nominated for awards, including the award, associated work, ceremony, and time.",
+        "elements": [
+          "nominee",
+          "award",
+          "work",
+          "ceremony",
+          "point_in_time",
+          "result"
+        ],
+        "data_examples": [
+          "Robin Williams --nominated for [point in time: \"1993; for work: Mrs. Doubtfire]--> Golden Globe Award for Best Motion Picture – Musical or Comedy",
+          "Academy Awards --category for recipients of this award--> Category:Academy Award winners",
+          "NXT Year-End Award --conferred by--> WWE"
+        ]
+      }
+    }
+  },
+  "character_appearance_in_work_records": {
+    "concept": "character_appearance_in_work_records",
+    "overall_description": "Records of characters appearing in specific works, optionally with the performer and role qualifiers.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of characters appearing in specific works, optionally with the performer and role qualifiers.",
+        "elements": [
+          "character",
+          "work",
+          "performer",
+          "role"
+        ],
+        "data_examples": [
+          "Lisbeth Salander --present in work--> The Girl with the Dragon Tattoo",
+          "Hitler Rants Parodies --has use [present in work: Inglourious Basterds; present in work: Downfall]--> footage",
+          "Pavel Chekov --member of the crew of [present in work: Star Trek II: The Wrath of Khan; subject has role: executive officer]--> USS Reliant"
+        ]
+      }
+    }
+  },
+  "fictional_universe_work_membership_records": {
+    "concept": "fictional_universe_work_membership_records",
+    "overall_description": "Records of works or entities belonging to a fictional universe.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of works or entities belonging to a fictional universe.",
+        "elements": [
+          "fictional_universe",
+          "work",
+          "membership_relation"
+        ],
+        "data_examples": [
+          "Marvel Cinematic Universe --fictional universe described in--> Shang-Chi and the Legend of the Ten Rings",
+          "Captain America: The First Avenger --takes place in fictional universe--> Marvel Cinematic Universe",
+          "Centaurian --from narrative universe--> Marvel Cinematic Universe"
+        ]
+      }
+    }
+  },
+  "person_origin_category_records": {
+    "concept": "person_origin_category_records",
+    "overall_description": "Records linking a place to a category of people associated with that place by birth, death, burial, or other association.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records linking a place to a category of people associated with that place by birth, death, burial, or other association.",
+        "elements": [
+          "place",
+          "person_category",
+          "relation_type"
+        ],
+        "data_examples": [
+          "Chicago --category for people born here--> Category:Births in Chicago",
+          "Uttar Pradesh --category for people who died here--> Category:Deaths in Uttar Pradesh",
+          "Kassel --category of people buried here--> Q7976240"
+        ]
+      }
+    }
+  },
+  "administrative_entity_containment_records": {
+    "concept": "administrative_entity_containment_records",
+    "overall_description": "Records of administrative territorial entities containing other administrative territorial entities.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of administrative territorial entities containing other administrative territorial entities.",
+        "elements": [
+          "containing_entity",
+          "contained_entity",
+          "administrative_territorial_entity"
+        ],
+        "data_examples": [
+          "Germany --contains administrative territorial entity--> North Rhine-Westphalia",
+          "University of Lucknow --located in the administrative territorial entity--> Lucknow",
+          "Montreal --twinned administrative body--> Casablanca"
+        ]
+      }
+    }
+  },
+  "country_association_records": {
+    "concept": "country_association_records",
+    "overall_description": "Records associating an entity with a country through various types of relationships such as origin, citizenship, or affiliation.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records associating an entity with a country through various types of relationships such as origin, citizenship, or affiliation.",
+        "elements": [
+          "subject",
+          "country",
+          "association_type",
+          "start_time",
+          "end_time"
+        ],
+        "data_examples": [
+          "Paul Walker --country for sport--> United States of America",
+          "The Bourne Ultimatum --country of origin--> United States of America",
+          "Warner Home Video --country--> United States of America"
+        ]
+      }
+    }
+  },
+  "entity_usage_attribution_records": {
+    "concept": "entity_usage_attribution_records",
+    "overall_description": "Records of entities being used by or associated with other entities, including qualifiers such as time and role.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of entities being used by or associated with other entities, including qualifiers such as time and role.",
+        "elements": [
+          "used_by",
+          "has_quality",
+          "subject_has_role",
+          "vehicle_normally_used",
+          "point_in_time"
+        ],
+        "data_examples": [
+          "Elon Musk's Tesla Roadster --used by [point in time: 9 June \"2010]--> Kevin Zegers",
+          "Find Yourself --has quality [used by: Cars]--> film song",
+          "Ellen DeGeneres --subject has role--> news"
+        ]
+      }
+    }
+  },
+  "category_list_linkage_records": {
+    "concept": "category_list_linkage_records",
+    "overall_description": "Records linking entities to related categories or lists, often with contextual qualifiers.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records linking entities to related categories or lists, often with contextual qualifiers.",
+        "elements": [
+          "subject_entity",
+          "related_category",
+          "list_item",
+          "qualifier_context"
+        ],
+        "data_examples": [
+          "Antonio Banderas filmography --category related to list--> Category:Films starring Antonio Banderas",
+          "Category:1994 in film --list related to category--> 1994 in film",
+          "Jared Stern --related category [of: film, directed by this person]--> Category:Films directed by Jared Stern"
+        ]
+      }
+    }
+  },
+  "family_relation_records": {
+    "concept": "family_relation_records",
+    "overall_description": "Records of familial relationships between individuals, such as parent, child, or sibling.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of familial relationships between individuals, such as parent, child, or sibling.",
+        "elements": [
+          "subject_person",
+          "relation_type",
+          "related_person"
+        ],
+        "data_examples": [
+          "Jack McClane --father--> John McClane",
+          "John Travolta --child--> Jett Travolta",
+          "Mandy Moore --discography--> Mandy Moore discography"
+        ]
+      }
+    }
+  },
+  "work_setting_time_period_records": {
+    "concept": "work_setting_time_period_records",
+    "overall_description": "Records of the historical or temporal period in which a creative work is set, optionally with qualifiers for specific parts.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of the historical or temporal period in which a creative work is set, optionally with qualifiers for specific parts.",
+        "elements": [
+          "work",
+          "setting_time_period",
+          "time_period",
+          "applies_to_part"
+        ],
+        "data_examples": [
+          "Titanic --set in period [applies to part: frame story]--> 1990s",
+          "Arnold Schwarzenegger --work period (start)--> \"1969",
+          "Joel Schumacher --work period (end)--> \"2017"
+        ]
+      }
+    }
+  },
+  "population_count_records": {
+    "concept": "population_count_records",
+    "overall_description": "Records of population counts for entities at specific times, optionally with the method used to determine the count.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of population counts for entities at specific times, optionally with the method used to determine the count.",
+        "elements": [
+          "subject_entity",
+          "population_count",
+          "point_in_time",
+          "determination_method"
+        ],
+        "data_examples": [
+          "Australia --number of out-of-school children [point in time: \"2003; determination method: UIS estimation]--> \"+181823\"",
+          "Lucknow --male population [point in time: \"2011; determination method: census]--> \"+1470133\"",
+          "Malta --population [point in time: \"1989]--> \"+350722\""
+        ]
+      }
+    }
+  },
+  "film_rating_records": {
+    "concept": "film_rating_records",
+    "overall_description": "Records of films with their age or content ratings from various national rating systems.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of films with their age or content ratings from various national rating systems.",
+        "elements": [
+          "film",
+          "rating_system",
+          "rating",
+          "rating_certificate_id",
+          "content_descriptor",
+          "applies_to_part"
+        ],
+        "data_examples": [
+          "Passengers --RARS rating--> 16+",
+          "John Wick --ClassInd rating--> 16",
+          "Eternals --IMDA rating--> M18",
+          "A Wrinkle in Time --RTC film rating [rating certificate ID: \"17180\"]--> A",
+          "Jaws --EIRIN film rating [rating certificate ID: \"S-3925\"]--> PG12",
+          "The Matrix --MPAA film rating [rating certificate ID: \"36569\"]--> R"
+        ]
+      }
+    }
+  },
+  "film_production_company_records": {
+    "concept": "film_production_company_records",
+    "overall_description": "Records of films and their associated production companies, including production codes and designers.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of films and their associated production companies, including production codes and designers.",
+        "elements": [
+          "film",
+          "production_company",
+          "product_or_material_produced",
+          "production_code",
+          "production_designer"
+        ],
+        "data_examples": [
+          "15 Minutes --production company--> New Line Cinema",
+          "Pete's Dragon --production code--> \"0157\"",
+          "The Godfather --production designer--> Dean Tavoularis"
+        ]
+      }
+    }
+  },
+  "work_citation_records": {
+    "concept": "work_citation_records",
+    "overall_description": "Records of creative or scholarly works citing other works as sources or references.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of creative or scholarly works citing other works as sources or references.",
+        "elements": [
+          "citing_work",
+          "cited_work",
+          "citation_context"
+        ],
+        "data_examples": [
+          "FU: The Freeform/Universal RPG --cites work--> Raiders of the Lost Ark",
+          "Old Astoria City Hall --architectural style--> Colonial Revival architecture",
+          "Old Astoria City Hall --architect--> Emil Schacht"
+        ]
+      }
+    }
+  },
+  "publication_place_records": {
+    "concept": "publication_place_records",
+    "overall_description": "Records of creative works and their places of publication, optionally with publication dates and additional place qualifiers.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of creative works and their places of publication, optionally with publication dates and additional place qualifiers.",
+        "elements": [
+          "work",
+          "publication_place",
+          "publication_date",
+          "qualifier_place"
+        ],
+        "data_examples": [
+          "Toveri --place of publication--> Astoria",
+          "Tom & Jerry --publication date [place of publication: Germany]--> 12 August \"2021",
+          "Mirza Salaamat Ali Dabeer --place of death--> Lucknow"
+        ]
+      }
+    }
+  },
+  "country_telecommunication_code_records": {
+    "concept": "country_telecommunication_code_records",
+    "overall_description": "Records of telecommunication codes assigned to countries, including mobile country codes, calling codes, postal codes, and GS1 country codes.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of telecommunication codes assigned to countries, including mobile country codes, calling codes, postal codes, and gs1 country codes.",
+        "elements": [
+          "country",
+          "telecommunication_code_type",
+          "code_value"
+        ],
+        "data_examples": [
+          "Australia --GS1 country code--> \"939\"",
+          "Malta --mobile country code--> \"278\"",
+          "Germany --country calling code--> \"+49\""
+        ]
+      }
+    }
+  },
+  "entity_role_qualifier_records": {
+    "concept": "entity_role_qualifier_records",
+    "overall_description": "Records of relationships between entities where the object's role is specified as a qualifier.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of relationships between entities where the object's role is specified as a qualifier.",
+        "elements": [
+          "subject_entity",
+          "relation_type",
+          "object_entity",
+          "role_qualifier"
+        ],
+        "data_examples": [
+          "Happy Madison Productions --significant person [object has role: chief executive officer; object has role: organizational founder]--> Adam Sandler",
+          "A Wrinkle in Time --film crew member [object has role: visual effects supervisor]--> Richard McBride",
+          "Lewis and Clark National and State Historical Parks --significant place [object has role: gateway city]--> Astoria"
+        ]
+      }
+    }
+  },
+  "work_location_records": {
+    "concept": "work_location_records",
+    "overall_description": "Records of creative or intellectual works associated with a specific location, such as the location of creation, first performance, or work location.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of creative or intellectual works associated with a specific location, such as the location of creation, first performance, or work location.",
+        "elements": [
+          "work",
+          "location",
+          "work_type",
+          "location_type",
+          "time_period"
+        ],
+        "data_examples": [
+          "Waiting for Godot --location of first performance--> Theatre de Babylone",
+          "Johann Zoffany --work location--> Lucknow",
+          "Khwaja Moinuddin Chishti Urdu, Arabi-Farsi University, Lucknow --location--> Lucknow"
+        ]
+      }
+    }
+  },
+  "sports_team_membership_records": {
+    "concept": "sports_team_membership_records",
+    "overall_description": "Records of individuals' membership in sports teams, including their position and tenure.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of individuals' membership in sports teams, including their position and tenure.",
+        "elements": [
+          "member",
+          "sports_team",
+          "position_played",
+          "start_time",
+          "end_time"
+        ],
+        "data_examples": [
+          "Mike Myers --member of sports team--> Hollywood United F.C.",
+          "Ron Weasley --position played on team / speciality--> keeper",
+          "Daniel Craig --supported sports team--> Liverpool F.C."
+        ]
+      }
+    }
+  },
+  "memorialization_records": {
+    "concept": "memorialization_records",
+    "overall_description": "Records of memorials, commemorations, and dedications honoring individuals or events.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of memorials, commemorations, and dedications honoring individuals or events.",
+        "elements": [
+          "memorialized_entity",
+          "memorial",
+          "memorial_type",
+          "memorial_location",
+          "memorial_date"
+        ],
+        "data_examples": [
+          "Beethoven monument, Vienna --commemorates--> Ludwig van Beethoven",
+          "Ludwig van Beethoven --archives at--> Staatsbibliothek Berlin",
+          "Beethovenstraße --named after--> Ludwig van Beethoven"
+        ]
+      }
+    }
+  },
+  "temporal_interval_records": {
+    "concept": "temporal_interval_records",
+    "overall_description": "Records of events or states with their start and end times.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of events or states with their start and end times.",
+        "elements": [
+          "subject",
+          "event_type",
+          "start_time",
+          "end_time"
+        ],
+        "data_examples": [
+          "Star Wars prequel trilogy --start time--> \"1999",
+          "Luke Hawker --employer [start time: 1 September \"1999]--> WetaFX",
+          "Indo-Pakistani War of 1971 --end time--> 16 December \"1971"
+        ]
+      }
+    }
+  },
+  "narrative_role_records": {
+    "concept": "narrative_role_records",
+    "overall_description": "Records of characters or entities and their narrative roles within specific works, with qualifiers indicating the work.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of characters or entities and their narrative roles within specific works, with qualifiers indicating the work.",
+        "elements": [
+          "subject",
+          "narrative_role",
+          "work",
+          "role_type"
+        ],
+        "data_examples": [
+          "Lightning McQueen --narrative role [of: Cars; of: Cars 3]--> protagonist",
+          "Tiago Klimeck --character role [narrative location: Itararé; point in time: 6 April \"2012]--> Judas Iscariot",
+          "Pete's Dragon --narrative location--> Maine"
+        ]
+      }
+    }
+  },
+  "temporal_metric_records": {
+    "concept": "temporal_metric_records",
+    "overall_description": "Records of quantitative metrics or indices associated with an entity at a specific point in time.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of quantitative metrics or indices associated with an entity at a specific point in time.",
+        "elements": [
+          "subject",
+          "metric",
+          "value",
+          "point_in_time"
+        ],
+        "data_examples": [
+          "93rd Academy Awards --point in time--> 25 April \"2021",
+          "Germany --Democracy Index [point in time: \"2018]--> \"+8.68\"",
+          "Mel Gibson --net worth [point in time: \"2011]--> \"+425000000\""
+        ]
+      }
+    }
+  },
+  "model_item_exemplar_records": {
+    "concept": "model_item_exemplar_records",
+    "overall_description": "Records of a category or class having a representative or model item that exemplifies it.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of a category or class having a representative or model item that exemplifies it.",
+        "elements": [
+          "category",
+          "model_item",
+          "exemplar"
+        ],
+        "data_examples": [
+          "film --model item--> Iron Man",
+          "Malta --category for the view of the item--> Category:Views of Malta",
+          "Kassel --permanent duplicated item--> Q15793971"
+        ]
+      }
+    }
+  },
+  "work_edition_translation_records": {
+    "concept": "work_edition_translation_records",
+    "overall_description": "Records of creative works and their editions or translations, including language and edition number qualifiers.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of creative works and their editions or translations, including language and edition number qualifiers.",
+        "elements": [
+          "original_work",
+          "edition_or_translation",
+          "language_of_work_or_name",
+          "edition_number"
+        ],
+        "data_examples": [
+          "Q78628207 --edition or translation of--> Little Women",
+          "Tangled --has edition or translation--> Rapunzel - Neu verföhnt",
+          "24th Academy Awards --edition number--> \"24\""
+        ]
+      }
+    }
+  },
+  "work_tracklist_records": {
+    "concept": "work_tracklist_records",
+    "overall_description": "Records of works containing tracks or segments, with track order and performers.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of works containing tracks or segments, with track order and performers.",
+        "elements": [
+          "work",
+          "track",
+          "track_number",
+          "performer",
+          "additional_participant"
+        ],
+        "data_examples": [
+          "Grease – The Original Soundtrack from the Motion Picture --tracklist [together with: Olivia Newton-John; performer: John Travolta; series ordinal: \"4\"]--> You’re the One That I Want",
+          "Bridget Jones --has part or parts [series ordinal: \"1\"]--> Bridget Jones's Diary",
+          "Edward Norton --given name--> Edward"
+        ]
+      }
+    }
+  },
+  "location_street_address_records": {
+    "concept": "location_street_address_records",
+    "overall_description": "Records of entities located on a specific street, optionally with a street number qualifier.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of entities located on a specific street, optionally with a street number qualifier.",
+        "elements": [
+          "located_entity",
+          "street",
+          "street_number"
+        ],
+        "data_examples": [
+          "University of Television and Film Munich --located on street [street number: \"1\"]--> Bernd-Eichinger-Platz",
+          "Max Färberböck --educated at--> University of Television and Film Munich",
+          "Kassel --located in/on physical feature--> West Hesse Depression"
+        ]
+      }
+    }
+  },
+  "creative_work_form_records": {
+    "concept": "creative_work_form_records",
+    "overall_description": "Records of creative works and their specific forms or genres.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of creative works and their specific forms or genres.",
+        "elements": [
+          "creative_work",
+          "form_of_creative_work"
+        ],
+        "data_examples": [
+          "Waiting for Godot --form of creative work--> play",
+          "Honey Irani --contributed to creative work [nature of statement: disputed]--> Dilwale Dulhania Le Jayenge",
+          "Meet Me in St. Louis, Louis --contributor to the creative work or subject [object has role: lead vocalist]--> Judy Garland"
+        ]
+      }
+    }
+  },
+  "event_causation_records": {
+    "concept": "event_causation_records",
+    "overall_description": "Records of events or actions causing specific outcomes, including conflicts and their effects.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of events or actions causing specific outcomes, including conflicts and their effects.",
+        "elements": [
+          "cause",
+          "effect",
+          "event",
+          "conflict",
+          "outcome"
+        ],
+        "data_examples": [
+          "Instrument of Surrender --has cause--> Indo-Pakistani War of 1971",
+          "Indo-Pakistani War of 1971 --has effect--> Instrument of Surrender",
+          "Abbas Ali Khan --conflict--> Indo-Pakistani War of 1971"
+        ]
+      }
+    }
+  },
+  "religion_or_worldview_records": {
+    "concept": "religion_or_worldview_records",
+    "overall_description": "Records of an individual's religion or worldview, optionally with a temporal qualifier.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of an individual's religion or worldview, optionally with a temporal qualifier.",
+        "elements": [
+          "subject",
+          "religion_or_worldview",
+          "point_in_time"
+        ],
+        "data_examples": [
+          "Elliot Page --religion or world view (OBSOLETE) [point in time: 16 March \"2021]--> atheism",
+          "Mark Wahlberg --religion or worldview--> Protestantism",
+          "General Zod --home world--> Krypton"
+        ]
+      }
+    }
+  },
+  "external_media_topic_identifier_records": {
+    "concept": "external_media_topic_identifier_records",
+    "overall_description": "Records of entities associated with topic identifiers from external media outlets, including language-specific variants.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of entities associated with topic identifiers from external media outlets, including language-specific variants.",
+        "elements": [
+          "subject_entity",
+          "media_outlet",
+          "topic_identifier",
+          "language_variant"
+        ],
+        "data_examples": [
+          "Germany --Ávvir topic ID--> \"duiska\"",
+          "Angelina Jolie --France24 topic ID (English)--> \"angelina-jolie\"",
+          "Angelina Jolie --France24 topic ID (French)--> \"angelina-jolie\""
+        ]
+      }
+    }
+  },
+  "editor_credit_records": {
+    "concept": "editor_credit_records",
+    "overall_description": "Records of individuals serving as editors for creative or published works.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of individuals serving as editors for creative or published works.",
+        "elements": [
+          "publication_or_work",
+          "editor",
+          "editorial_role"
+        ],
+        "data_examples": [
+          "Flex --editor--> Arnold Schwarzenegger",
+          "Arnold Schwarzenegger --Podchaser creator ID--> \"107ZzkEbll\"",
+          "Germany --Armeniapedia ID--> \"4099\""
+        ]
+      }
+    }
+  }
+}

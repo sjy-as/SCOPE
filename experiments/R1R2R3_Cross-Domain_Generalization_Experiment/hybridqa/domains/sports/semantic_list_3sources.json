@@ -1,0 +1,2596 @@
+{
+  "all_star_game_roster": {
+    "concept": "all_star_game_roster",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of players selected to participate in an all-star game, including their team affiliation and number of all-star appearances.",
+    "routing_guide": "Use Table when the query requires specific roster details such as player names, teams, or counts of all-star appearances for a particular game or league. Use Doc if the query involves narrative context or additional information not captured in the table. For most roster-related queries, Table is preferred.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "player",
+        "team",
+        "game_edition"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on all-star game rosters, with fields for player name, team, all-star games count, league, and game edition. Includes examples such as the 2013 MLB All-Star Game American League roster.",
+        "elements": [
+          "player",
+          "team",
+          "all_star_games_count",
+          "league",
+          "game_edition",
+          "All-Star Games"
+        ],
+        "data_examples": [
+          "page_title: 2013 Major League Baseball All-Star Game, section_title: American League, header: [Player, Team, All-Star Games], sample_row: [Grant Balfour, Athletics, 1]"
+        ]
+      }
+    }
+  },
+  "athlete": {
+    "concept": "athlete",
+    "semantic_type": "entity",
+    "overall_description": "An individual who participates in sports, including personal details such as name, birth date, nationality, and career information like team affiliations, positions, and achievements.",
+    "routing_guide": "Choose Doc when the query involves detailed biographical information, career history, or achievements of an athlete. For queries requiring structured data like filtering by team or position, Doc can be used if the information is present in the text. If the query needs aggregation or comparison across many athletes, consider using Table if available; otherwise, Doc may be used with extraction.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides biographical articles about athletes, including personal details (name, birth date, nationality), career history (position, team, draft, college, awards), and other attributes like military service or alias.",
+        "elements": [
+          "name",
+          "position",
+          "team",
+          "draft_round",
+          "draft_pick",
+          "college",
+          "high_school",
+          "awards",
+          "military_service",
+          "birth_date",
+          "team_affiliations",
+          "league",
+          "alias",
+          "nationality",
+          "status",
+          "sport",
+          "player_name",
+          "current_club",
+          "national_team",
+          "current_team"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Doremus_Bennerman\", \"title\": \"Doremus Bennerman\", \"text\": \"Doremus Tremayne Bennerman ( born July 5 , 1972 ) is an American former professional basketball player .\"}",
+          "{\"doc_id\": \"/wiki/Frank_McPhee_(American_football)\", \"title\": \"Frank McPhee (American football)\", \"text\": \"Frank Melvin McPhee ( March 19 , 1931 - March 31 , 2011 ) was an American football defensive back who played one season with the Chicago Cardinals of the National Football League ( NFL ) . He was drafted by the Cardinals in the thirteenth round of the 1953 NFL Draft . McPhee played college football at Princeton University and attended Chaney High School in Youngstown , Ohio . He was a Consensus All-American in 1952 . He also served in the United States Marines .\"}",
+          "{\"doc_id\": \"/wiki/Shahrel_Fikri\", \"title\": \"Shahrel Fikri\", \"text\": \"Muhammad Shahrel Fikri bin Md . Fauzi ( born 17 October 1994 ) is a Malaysian professional footballer who plays for Perak in the Malaysia Super League and the Malaysia national team mainly as a left winger but can also play as a forward .\"}"
+        ]
+      }
+    }
+  },
+  "athletics_track_event_result": {
+    "concept": "athletics_track_event_result",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete's or team's performance in a track and field event, including rank, name, team or country, and time or measurement.",
+    "routing_guide": "Choose Table when the query asks for structured results such as rankings, times, or measurements for a specific event. Choose Doc if the query requires narrative context or additional details not captured in the table. Both may be used when cross-referencing results with event descriptions.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "athlete_name",
+        "team",
+        "event"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "This source provides results for the men's 10,000 metres at the 2013 Games of the Small States of Europe, listing rank, athlete name, team, and finish time.",
+        "elements": [
+          "rank",
+          "athlete_name",
+          "team",
+          "time",
+          "Name",
+          "Nationality"
+        ],
+        "data_examples": [
+          "page_title: Athletics at the 2013 Games of the Small States of Europe, section_title: Men 's results -- 10,000 metres, header: [Rank, Name, Team, Time], sample_row: [, Marcos Sanza, Andorra, 30:17.47]"
+        ]
+      }
+    }
+  },
+  "australian_football_development_activity": {
+    "concept": "australian_football_development_activity",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of organized activities or investments aimed at developing Australian rules football in a specific country or region, including exhibition matches, academies, and facility construction.",
+    "routing_guide": "Choose Doc when the query involves narrative context, specific events, or details not captured in structured fields. Choose Table when the query requires structured filtering, sorting, or aggregation on fields like country, year, or activity type. Use both when combining narrative details with structured analysis.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "country",
+        "activity_type",
+        "year",
+        "location",
+        "organizing_body"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "This source provides narrative descriptions of development activities, including the type of activity (e.g., exhibition match, academy, facility construction), the year, location, and organizing body, as well as the country and a link to the table.",
+        "elements": [
+          "country",
+          "activity_type",
+          "year",
+          "location",
+          "organizing_body",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Australian_rules_football_in_China\", \"title\": \"Australian rules football in China\", \"text\": \"Australian rules football has been played in China since the 1990s . Interest in Australian football in China received a boost after the AFL , the premier professional football competition in Australia , invested in an AFL exhibition match in Shanghai in 2010 , an AFL academy in 2011 , and built a dedicated AFL oval in Tianjin in 2011 .\"}"
+        ]
+      }
+    }
+  },
+  "championship_edition": {
+    "concept": "championship_edition",
+    "semantic_type": "event",
+    "overall_description": "A specific edition of a Gaelic football championship, a knock-out competition among county teams in Ireland, with a winner.",
+    "routing_guide": "Use Doc when the query asks for details about a specific championship edition, such as the winner or year. Use Table if a structured table is available for filtering or aggregation. Prefer Doc for narrative descriptions and Table for structured queries.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "aggregate",
+        "sort"
+      ],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify"
+      ],
+      "join_keys": [
+        "edition_year",
+        "competition_name"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Documents provide a title, text, and linked table ID for each championship edition, including the year, competition name, and winner.",
+        "elements": [
+          "edition_year",
+          "competition_name",
+          "winner",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/1953_All-Ireland_Senior_Football_Championship\", \"title\": \"1953 All-Ireland Senior Football Championship\", \"text\": \"The 1953 All-Ireland Senior Football Championship was the 67th staging of Ireland 's premier Gaelic football knock-out competition . Kerry were the winners .\"}"
+        ]
+      }
+    }
+  },
+  "club_competition_winners_record": {
+    "concept": "club_competition_winners_record",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of clubs that have won or been runners-up in a club competition, including the number of titles and the years of those achievements.",
+    "routing_guide": "Use Table when the query requires structured data such as counts, specific years, or comparisons between clubs. Use Doc if the query involves narrative context or additional details not captured in the table. For queries combining both, use both sources.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "club"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on clubs participating in a competition, with fields for club name, number of wins, number of runner-up finishes, years won, and years as runners-up. Includes examples like Lyon with 6 wins and 2 runner-up finishes, and years won from 2011 to 2019.",
+        "elements": [
+          "club",
+          "winners_count",
+          "runners_up_count",
+          "years_won",
+          "years_runners_up",
+          "Runners-up",
+          "Winners",
+          "Years won",
+          "Team",
+          "Years runner-up",
+          "Years runners-up",
+          "Country",
+          "Winning clubs",
+          "Nation",
+          "League",
+          "Champion",
+          "Title",
+          "Last honor",
+          "No"
+        ],
+        "data_examples": [
+          "page_title: UEFA Women's Champions League, section_title: Records and statistics -- Winners, header: [Club, Winners, Runners-up, Years won, Years runners-up], sample_row: [Lyon, 6, 2, 2011 , 2012 , 2016 , 2017 , 2018 , 2019, 2010 , 2013]"
+        ]
+      }
+    }
+  },
+  "college_baseball_team": {
+    "concept": "college_baseball_team",
+    "semantic_type": "entity",
+    "overall_description": "A college baseball team representing a university or college, including its conference affiliation, home stadium, and coaching staff.",
+    "routing_guide": "Choose Doc when the query requires detailed narrative information about a team, such as its history, championships, or specific textual descriptions. If the query involves structured data like team names, conferences, or stadiums, and a table is available, consider using Table. For comprehensive answers, use both sources when available.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "join_keys": [
+        "team_name",
+        "university",
+        "conference",
+        "division",
+        "home_stadium",
+        "head_coach"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Documents provide narrative descriptions of college baseball teams, including team name, university, conference, division, home stadium, head coach, championships, and other textual details. Each document is associated with a doc_id and title, and may include linked table references.",
+        "elements": [
+          "team_name",
+          "university",
+          "conference",
+          "division",
+          "home_stadium",
+          "head_coach",
+          "championships",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Georgia_Bulldogs_baseball\", \"title\": \"Georgia Bulldogs baseball\", \"text\": \"The Georgia Bulldogs baseball team represents the University of Georgia in NCAA Division I college baseball . Along with most other Georgia athletic teams , the baseball team participates in the Eastern division of the Southeastern Conference . Georgia won the College World Series in 1990 . The Bulldogs play their home games on UGA 's campus in Foley Field , and are coached by head coach Scott Stricklin .\"}"
+        ]
+      }
+    }
+  },
+  "college_basketball_all_american_record": {
+    "concept": "college_basketball_all_american_record",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of college basketball All-American selections by school, including the number of selections and the number of players selected.",
+    "routing_guide": "Choose Table when the query asks for counts of All-American selections or players by school, or when comparing schools. Use Doc if additional context or narrative about the selections is needed.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "school"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides a table with columns for school, selections, and players, listing the count of All-American selections and the number of players for each school.",
+        "elements": [
+          "school",
+          "selections",
+          "players"
+        ],
+        "data_examples": [
+          "page_title: NCAA Men's Basketball All-Americans, section_title: Academic All-Americans, header: [School, Selections, Players], sample_row: [UCLA, 17, 10]"
+        ]
+      }
+    }
+  },
+  "collegiate_athletic_conference": {
+    "concept": "collegiate_athletic_conference",
+    "semantic_type": "entity",
+    "overall_description": "A collegiate athletic conference is an association of universities that organizes sports competitions among its member institutions, typically within a specific geographic region and at a defined level of play.",
+    "routing_guide": "Use Doc when you need comprehensive details about a conference's structure, membership, or history. Use Table if tabular data is available for structured queries. If both are available, prefer Doc for rich descriptions and Table for quick lookups or aggregations.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "compare",
+        "verify"
+      ],
+      "join_keys": [
+        "conference_name"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides detailed textual descriptions of conferences, including conference name, headquarters location, member universities, sports sponsored, division level, and geographic region. Useful for extracting attributes and context not available in tabular form.",
+        "elements": [
+          "conference_name",
+          "headquarters_location",
+          "member_universities",
+          "sports_sponsored",
+          "division_level",
+          "geographic_region",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Atlantic_Coast_Conference\", \"title\": \"Atlantic Coast Conference\", \"text\": \"The Atlantic Coast Conference ( ACC ) is a collegiate athletic conference located in the eastern United States . Headquartered in Greensboro , North Carolina , the conference consists of fifteen member universities , each of whom compete in the National Collegiate Athletic Association ( NCAA ) 's Division I , with its football teams competing in the Football Bowl Subdivision ( FBS ) , the highest levels for athletic competition in US-based collegiate sports . The ACC sponsors competition in twen\"}"
+        ]
+      }
+    }
+  },
+  "conference_player_of_the_year_award": {
+    "concept": "conference_player_of_the_year_award",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of a player being named player of the year in a conference, including the season, player, school, position, and class.",
+    "routing_guide": "Use Table when the query asks for specific award winners with structured attributes like season, player, school, position, or class. Use Doc if the query requires narrative context or details not captured in the table. Both can be used for comprehensive answers.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "season",
+        "player",
+        "school",
+        "position",
+        "class"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured lists of conference player of the year award winners, with columns for season, player, school, position, and sometimes class, as seen in examples from Big East and Conference USA.",
+        "elements": [
+          "season",
+          "player",
+          "school",
+          "position",
+          "class",
+          "Pitcher"
+        ],
+        "data_examples": [
+          "page_title: Conference USA Men's Basketball Player of the Year, section_title: Winners, header: [Season, Player, School, Position, Class], sample_row: [1995-96, Danny Fortson, Cincinnati, PF, Sophomore]",
+          "page_title: Big East Conference football individual awards, section_title: Rookie of the Year -- Winners, header: [Season, Player, School, Position], sample_row: [1991, Tom Tumulty, Pittsburgh, LB]"
+        ]
+      }
+    }
+  },
+  "conference_realignment_record": {
+    "concept": "conference_realignment_record",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of a school's sports program moving from one conference to another, including the school, sport, former conference, and new conference.",
+    "routing_guide": "Use Table when the query asks for specific realignment records, such as which schools changed conferences, for which sports, and between which conferences. Use Doc if the query requires narrative context or historical background not captured in the table. For most factual queries, Table is sufficient.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve",
+        "verify"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "school",
+        "sport",
+        "former_conference",
+        "new_conference"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on NCAA Division I conference realignments, with fields for school, sport, former conference, and new conference, as well as examples of specific realignment events.",
+        "elements": [
+          "school",
+          "sport",
+          "former_conference",
+          "new_conference",
+          "Sport ( s )",
+          "Former Conference",
+          "New Conference"
+        ],
+        "data_examples": [
+          "page_title: List of NCAA Division I conference realignments (2000–present), section_title: History -- 2015–2016, header: [School, Sport ( s ), Former Conference, New Conference], sample_row: [Air Force Falcons, Men 's lacrosse, Independent, SoCon]"
+        ]
+      }
+    }
+  },
+  "conference_student_athlete_award": {
+    "concept": "conference_student_athlete_award",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of a student-athlete being recognized as the top scholar-athlete in a conference for a given season, including the year, winner, position, and school.",
+    "routing_guide": "Use Table when the query asks for specific award winners, years, positions, or schools in a structured format. Use Doc if additional context or narrative about the award is needed, but for factual lookups, Table is preferred.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "year",
+        "winner",
+        "position",
+        "school"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data with columns for year, winner, position, and school, listing award recipients for each season.",
+        "elements": [
+          "year",
+          "winner",
+          "position",
+          "school",
+          "Player",
+          "High school",
+          "College",
+          "Name",
+          "Number",
+          "Official",
+          "Other"
+        ],
+        "data_examples": [
+          "page_title: List of ECAC Hockey Student-Athlete of the Year, section_title: Award winners, header: [Year, Winner, Position, School], sample_row: [2006-07, Olivier Bouchard, Left Wing, Union]"
+        ]
+      }
+    }
+  },
+  "conference_tournament_championship_record": {
+    "concept": "conference_tournament_championship_record",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of conference tournament championship outcomes, including champion teams, runner-ups, scores, venues, dates, and historical championship counts by school.",
+    "routing_guide": "Use Table when the query asks for historical championship counts by school, last championship year, or a list of tournament winners with scores and venues. Use Doc when the query asks for details about a specific tournament edition, such as dates, host city, or automatic bid. Use both when the query requires combining historical counts with specific tournament details, e.g., 'Which school has the most championships and what was the venue of their most recent win?'",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "aggregate",
+        "join"
+      ],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "school",
+        "tournament_name",
+        "season"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides a list of schools with the number of conference tournament championships and the last championship year, as well as tournament edition details such as year, champion, score, venue, runner-up, and MVP.",
+        "elements": [
+          "school",
+          "championship_count",
+          "last_championship_year",
+          "Year",
+          "Champion",
+          "Score",
+          "Venue",
+          "# of Tournament Championships",
+          "Last Tournament Championship",
+          "Runner-up",
+          "Opponent",
+          "Tournament MVP",
+          "MVP"
+        ],
+        "data_examples": [
+          "page_title: Missouri Valley Conference Men's Basketball Tournament, section_title: Tournament championships by school, header: [School, # of Tournament Championships, Last Tournament Championship], sample_row: [Creighton, 12, 2013]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides narrative descriptions of individual conference tournaments, including host venue, dates, champion, runner-up, score, automatic bid, and tournament format.",
+        "elements": [
+          "tournament_name",
+          "season",
+          "host_venue",
+          "host_city",
+          "start_date",
+          "end_date",
+          "champion_team",
+          "runner_up_team",
+          "championship_score",
+          "automatic_bid",
+          "number_of_rounds",
+          "top_seed",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/1987_Big_East_Men's_Basketball_Tournament\", \"title\": \"1987 Big East Men's Basketball Tournament\", \"text\": \"The 1987 Big East Men 's Basketball Tournament took place at Madison Square Garden in New York City , from March 5 to March 8 , 1987 . Its winner received the Big East Conference 's automatic bid to the 1987 NCAA Tournament . It is a single-elimination tournament with four rounds . Georgetown had the best regular season conference record and received the # 1 seed . Georgetown defeated Syracuse in the championship game 69-59 , to claim its fifth Big East Tournament championship .\"}"
+        ]
+      }
+    }
+  },
+  "conference_tournament_qualifier_record": {
+    "concept": "conference_tournament_qualifier_record",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of a school or team qualifying for a conference tournament, including the conference, school, last appearance year, and total number of appearances.",
+    "routing_guide": "Use Table when the query asks for specific attributes like conference, school, last appearance, or number of appearances, or when comparing or aggregating these fields. Use Doc if the query requires narrative context or additional details not captured in the table.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "conference",
+        "school"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data with columns for conference, school, last appearance, and number of appearances, as exemplified by the 2013 NCAA Division I Women's Basketball Tournament automatic qualifiers table.",
+        "elements": [
+          "conference",
+          "school",
+          "last_appearance",
+          "number_of_appearances",
+          "Region",
+          "Rnd",
+          "Host",
+          "Venue",
+          "City",
+          "State",
+          "Last Appearance",
+          "# of Appearances"
+        ],
+        "data_examples": [
+          "page_title: 2013 NCAA Division I Women's Basketball Tournament, section_title: Qualified teams -- Automatic qualifiers, header: [Conference, School, Last Appearance, # of Appearances], sample_row: [America East, Albany, 2012, 2]"
+        ]
+      }
+    }
+  },
+  "cross_country_championship_medalist": {
+    "concept": "cross_country_championship_medalist",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete or team that won a medal at a cross country championship, including the championship edition, medal type, and event.",
+    "routing_guide": "Use Doc when the query involves cross country championship medalists and requires contextual information from narrative text, such as athlete biographies or specific championship details. If the query also involves structured data like tables, consider using both sources. Choose Doc for queries that mention athlete names, medal types, or championship editions in a descriptive context.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "verify"
+      ],
+      "join_keys": [
+        "athlete",
+        "medal_type",
+        "championship_edition",
+        "event",
+        "country"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "This source provides narrative descriptions of athletes who won medals at cross country championships, including details such as athlete name, medal type, championship edition, event, country, and title. It contains 106 items with fields like doc_id, title, text, and linked_table_id.",
+        "elements": [
+          "athlete",
+          "medal_type",
+          "championship_edition",
+          "event",
+          "country",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Berny_Lenferink\", \"title\": \"Berny Lenferink\", \"text\": \"Bernardina Maria Berny Boxem-Lenferink ( née Lenferink on 12 May 1948 ) is a retired Dutch middle-distance runner . She competed at the 1972 Summer Olympics in the 1500 metres event and finished in ninth place . She won a silver medal at the 1971 International Cross Country Championships\"}"
+        ]
+      }
+    }
+  },
+  "cross_country_race_result": {
+    "concept": "cross_country_race_result",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete's performance in a cross country race, including rank, time, and nationality.",
+    "routing_guide": "Use Table when structured race result data is needed, such as for filtering, sorting, or aggregating by rank, time, or nationality. Use Doc if additional context or narrative descriptions are required.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "athlete",
+        "race",
+        "event",
+        "season"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on individual race results, with fields for rank, athlete, nationality, time, race, event, season, country, team, and points.",
+        "elements": [
+          "rank",
+          "athlete",
+          "nationality",
+          "time",
+          "race",
+          "event",
+          "season",
+          "Country",
+          "Team",
+          "Points"
+        ],
+        "data_examples": [
+          "page_title: 1967 International Cross Country Championships, section_title: Individual Race Results -- Men 's ( 7.5 mi / 12.1 km ), header: [Rank, Athlete, Nationality, Time], sample_row: [, Gaston Roelants, Belgium, 36:03]"
+        ]
+      }
+    }
+  },
+  "cross_country_skier_achievement_record": {
+    "concept": "cross_country_skier_achievement_record",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an individual cross-country skier's achievements, including race results, championship medals, and national titles.",
+    "routing_guide": "Use Doc when the query asks for detailed narrative or specific race results, medals, or titles of a skier. Use Table if a structured tabular source is available; otherwise, rely on Doc. For queries requiring both narrative and structured data, use both.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "athlete",
+        "event",
+        "year"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides biographical articles with detailed competition results, including event names, placements, medals, years, and national/international titles.",
+        "elements": [
+          "athlete",
+          "event",
+          "competition",
+          "result",
+          "medal",
+          "year",
+          "nationality",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Tor_Håkon_Holte\", \"title\": \"Tor Håkon Holte\", \"text\": \"Tor Håkon Holte ( born 1 August 1958 ) is a Norwegian cross-country skier who competed from 1982 to 1987 . He won the 4 × 10 km relay gold at the 1985 FIS Nordic World Ski Championships in Seefeld and finished ninth in the 50 km event at those same championships . Holte also won the 50 km event at the Holmenkollen ski festival in 1984 . His best individual finish at the Winter Olympics was eight in the 15 km event in 1984 . Holte 's only other international victory was a 50 km event in Lahti in \"}"
+        ]
+      }
+    }
+  },
+  "cup_winners_cup_season": {
+    "concept": "cup_winners_cup_season",
+    "semantic_type": "event",
+    "overall_description": "A season of a cup competition for national cup winners, including the participating clubs, the final match, and the champion.",
+    "routing_guide": "Use Doc when the query asks for narrative details, winner/runner-up, or final match information. Use Table if a structured table of seasons is available; otherwise, rely on Doc.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "sort"
+      ],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify"
+      ],
+      "join_keys": [
+        "season",
+        "competition"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides a Wikipedia article describing the season, including the winner, runner-up, and final match details, with fields such as title, text, and linked_table_id.",
+        "elements": [
+          "season",
+          "competition",
+          "winner",
+          "runner_up",
+          "final_match",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/1963–64_European_Cup_Winners'_Cup\", \"title\": \"1963–64 European Cup Winners' Cup\", \"text\": \"The 1963-64 season of the European Cup Winners ' Cup club football tournament was won by Sporting CP in a replayed final victory against MTK Budapest .\"}"
+        ]
+      }
+    }
+  },
+  "doping_case_record": {
+    "concept": "doping_case_record",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete or team sanctioned for a doping violation, including the substance or rule violated, the date of violation, and the sanction imposed.",
+    "routing_guide": "Use Table when the query asks for specific doping case details such as athlete, substance, date, or sanction, and when structured comparison or aggregation is needed. Use Doc if the query requires narrative context or additional details not captured in the table. For most factual queries, Table is sufficient.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "athlete",
+        "country",
+        "sport",
+        "event",
+        "date_of_violation",
+        "banned_substance",
+        "sanction"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on doping cases, including athlete name, country, sport/event, date of violation, banned substance or anti-doping rule violation, and sanction. Examples include lists of doping cases in athletics and doping at the Olympic Games.",
+        "elements": [
+          "athlete",
+          "country",
+          "sport",
+          "banned_substance",
+          "test_details",
+          "event",
+          "date_of_violation",
+          "sanction",
+          "Name",
+          "Date of violation",
+          "Banned substance ( s ) / Anti-doping rule violation",
+          "Banned substance",
+          "Details of test",
+          "Horse",
+          "Jockey",
+          "Banned substance ( s )"
+        ],
+        "data_examples": [
+          "page_title: List of doping cases in athletics, section_title: H, header: [Name, Country, Event, Date of violation, Banned substance ( s ) / Anti-doping rule violation, Sanction], sample_row: [Abdelhadi Habassa, Morocco, Long distance, 2008, Norandrosterone, 2 years]",
+          "page_title: Doping at the Olympic Games, section_title: Summer Olympic Games -- 2012 London, header: [Name, Country, Sport, Banned substance, Details of test], sample_row: [Hussain Al-Hamdah, Saudi Arabia, Athletics 5000 metres, Biological passport abnormalities, IAAF sanction imposed 2013 w/results annulled from 26 March 2009 onwards]"
+        ]
+      }
+    }
+  },
+  "draft_selection": {
+    "concept": "draft_selection",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of a player being selected by a team in a professional sports draft, including details such as pick number, player, team, position, and school or origin.",
+    "routing_guide": "Choose Table when the user query requires specific structured attributes (e.g., pick number, team, position) and likely involves filtering, sorting, or aggregating across many selections. Choose Doc when the query is about a specific draft event or year and requires narrative context or when the information is not available in tabular form. Use both when the query needs both structured details and contextual information, or when one source may be incomplete.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "player",
+        "team",
+        "draft_year",
+        "pick_number"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured tabular data of draft selections, with columns for pick number, player, team, position, school, and other attributes like nationality, previous team, and years of experience. Examples include MLB and NBA draft tables.",
+        "elements": [
+          "pick_number",
+          "player",
+          "team",
+          "position",
+          "school",
+          "nationality",
+          "previous_team",
+          "years_of_experience",
+          "career_with_franchise",
+          "Name",
+          "Pos",
+          "Pick",
+          "ABCA",
+          "BA",
+          "Original NFL team",
+          "College",
+          "Conf",
+          "Year",
+          "Round",
+          "Previous team"
+        ],
+        "data_examples": [
+          "page_title: 2008 Major League Baseball draft, section_title: First round selections, header: [Pick, Player, Team, Position, School], sample_row: [1, Tim Beckham, Tampa Bay Rays, Shortstop, Griffin High School ( GA )]",
+          "page_title: 1974 NBA expansion draft, section_title: Selections, header: [Player, Pos, Nationality, Previous team, Years of NBA experience, Career with the franchise], sample_row: [Dennis Awtrey, C, United States, Chicago Bulls, 4, -]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides textual descriptions of draft selections, often listing first-round picks with details such as draft year, round, pick number, player name, team, position, and school or origin. May include linked tables.",
+        "elements": [
+          "draft_year",
+          "round",
+          "pick_number",
+          "player_name",
+          "team",
+          "position",
+          "school_or_origin",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/1976_Major_League_Baseball_Draft\", \"title\": \"1976 Major League Baseball Draft\", \"text\": \"The following are the first round picks in the 1976 Major League Baseball draft .\"}"
+        ]
+      }
+    }
+  },
+  "football_club": {
+    "concept": "football_club",
+    "semantic_type": "entity",
+    "overall_description": "A football club is an organized sports entity that fields teams in association football competitions, typically with a name, location, and league affiliation.",
+    "routing_guide": "For queries about football clubs, use the Doc source when you need detailed textual information about a specific club, such as its full name, location, and league. If the query involves structured data like filtering by league or country, consider using the Table source if available; otherwise, rely on Doc and extract fields from the text. For comprehensive answers, combine both sources when both are present.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify"
+      ],
+      "join_keys": [
+        "club_name",
+        "city",
+        "country",
+        "league"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Documents provide detailed textual descriptions of football clubs, including their full name, location (city and country), and current league or division. Examples include specific clubs like Asswehly S.C., FC Vedrich, and U.S.D. Lavagnese 1919, with fields such as club_name, city, country, league, location, current_division, title, text, and linked_table_id.",
+        "elements": [
+          "club_name",
+          "city",
+          "country",
+          "league",
+          "location",
+          "current_division",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Asswehly_S.C.\", \"title\": \"Asswehly S.C.\", \"text\": \"Asswehly Sports Club ( Arabic : نادي السويحلي الرياضي ) is a Libyan football club based in Misurata City , Libya . The club is playing in the Libyan Premier League for this season .\"}",
+          "{\"doc_id\": \"/wiki/FC_Vedrich\", \"title\": \"FC Vedrich\", \"text\": \"FC Rechitsa-2014 was a Belarusian football club based in Rechytsa .\"}",
+          "{\"doc_id\": \"/wiki/U.S.D._Lavagnese_1919\", \"title\": \"U.S.D. Lavagnese 1919\", \"text\": \"Unione Sportiva Dilettante Lavagnese 1919 is an Italian association football club located in Lavagna , Liguria . It currently plays in Serie D .\"}"
+        ]
+      }
+    }
+  },
+  "football_club_division_listing": {
+    "concept": "football_club_division_listing",
+    "semantic_type": "collection",
+    "overall_description": "A listing of football clubs organized by division, including their city, home stadium, and stadium capacity.",
+    "routing_guide": "Choose Table when the query requires structured data such as club names, cities, stadiums, capacities, or division-specific listings. Choose Doc if the query involves narrative context or additional details not captured in the table. Use both when combining structured data with explanatory text.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "club",
+        "city",
+        "stadium",
+        "division"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides tabular data with columns for club name, city, stadium, capacity, and division, as well as additional fields like division finish and home town/suburb.",
+        "elements": [
+          "club",
+          "city",
+          "stadium",
+          "capacity",
+          "division",
+          "team",
+          "home_town",
+          "division_finish",
+          "Home town/suburb",
+          "Province",
+          "2019 finish",
+          "Home city",
+          "2015-16 season",
+          "Titles",
+          "Winning Clubs",
+          "Home city/suburb",
+          "Court",
+          "Home ground"
+        ],
+        "data_examples": [
+          "page_title: List of football clubs in Italy, section_title: Clubs by division -- Serie C ( formerly Lega Pro ), header: [Club, City, Stadium, Capacity], sample_row: [AlbinoLeffe, Albino and Leffe, Atleti Azzurri d'Italia ( Bergamo ), 21,300]",
+          "page_title: List of association football clubs in the Republic of Ireland, section_title: Teams, header: [Team, Home town/suburb, Stadium, 2019 finish], sample_row: [Athlone Town, Athlone, Athlone Town Stadium, n/a]"
+        ]
+      }
+    }
+  },
+  "football_club_revenue_ranking": {
+    "concept": "football_club_revenue_ranking",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of a football club's revenue and its ranking in a financial league table for a given season.",
+    "routing_guide": "Choose Table when the query asks for specific revenue figures, rankings, or comparisons across clubs for a given season. Choose Doc if the query requires narrative context or historical background beyond the tabular data. Use both when combining quantitative rankings with qualitative insights.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "season",
+        "club"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides annual rankings of football clubs by revenue, including season, rank, club name, revenue in euros, country, previous rank, and rank change.",
+        "elements": [
+          "season",
+          "rank",
+          "club",
+          "revenue",
+          "country",
+          "previous_rank",
+          "rank_change",
+          "Revenue ( € million )",
+          "Change",
+          "2018 Rank",
+          "2017 Rank",
+          "Rank in 2016",
+          "Rank in 2015"
+        ],
+        "data_examples": [
+          "page_title: Deloitte Football Money League, section_title: Rankings by season -- 2018, header: [2018 Rank, Club, Revenue ( € million ), Country, 2017 Rank, Change], sample_row: [1, Manchester United, 676.3, England, 1, -]"
+        ]
+      }
+    }
+  },
+  "football_league_award_winner": {
+    "concept": "football_league_award_winner",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an individual or team recognized with an award in a football league or association, including the season, player, team, and associated statistics.",
+    "routing_guide": "Choose Table when the query asks for structured data such as award winners by season, player, or team, or when needing to filter, sort, or aggregate. Choose Doc if the query requires narrative context or additional details not captured in the table. Use both when combining structured facts with explanatory text.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve",
+        "verify"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "season",
+        "player",
+        "team_or_club"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "This source lists winners of the Football Association of Malaysia National Football Awards, with columns for seasons, players, goals, and teams/clubs.",
+        "elements": [
+          "season",
+          "player",
+          "goals",
+          "team_or_club",
+          "Seasons",
+          "Teams/Clubs",
+          "Team",
+          "City / area",
+          "Players",
+          "Name",
+          "Club",
+          "Footballers"
+        ],
+        "data_examples": [
+          "page_title: FAM Football Awards, section_title: Winners -- Players, header: [Seasons, Players, Goals, Teams/Clubs], sample_row: [2019, Kpah Sherman Safawi Rasid, 14 8, PKNS Johor Darul Ta'zim F.C]"
+        ]
+      }
+    }
+  },
+  "gaelic_games_county_board": {
+    "concept": "gaelic_games_county_board",
+    "semantic_type": "entity",
+    "overall_description": "A county board of the Gaelic Athletic Association (GAA) responsible for organizing and governing Gaelic games within a specific county in Ireland, including oversight of inter-county teams.",
+    "routing_guide": "Use Doc when you need detailed information about a specific county board, such as its official name, Irish name, or a narrative description of its role. Use Table if a structured list of county boards with attributes like county name, board name, or other tabular data is available. If both are available, prefer Doc for rich descriptions and Table for quick comparisons or aggregations.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify"
+      ],
+      "join_keys": [
+        "county"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides descriptive text about each county board, including its official name, Irish name, and its responsibilities for Gaelic games and inter-county teams within its county.",
+        "elements": [
+          "county",
+          "governing_body",
+          "responsible_for_games",
+          "inter_county_teams",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Meath_GAA\", \"title\": \"Meath GAA\", \"text\": \"The Meath County Board of the Gaelic Athletic Association ( GAA ) ( Irish : Cumann Lúthchleas Gael Coiste na Mí ) or Meath GAA is one of the 32 county boards of the GAA in Ireland , and is responsible for Gaelic games in County Meath , as well as for Meath inter-county teams .\"}"
+        ]
+      }
+    }
+  },
+  "gymnastics_event_result": {
+    "concept": "gymnastics_event_result",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of a gymnast's or team's performance in a specific event at a gymnastics competition, including rank, score, and country.",
+    "routing_guide": "Use Table when the query requires specific numeric results, rankings, or comparisons across gymnasts or teams in a known event. Use Doc if the query involves narrative descriptions or context not captured in tables. For queries combining structured results with additional context, use both.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "competition",
+        "edition",
+        "event",
+        "gymnast",
+        "country"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured results for gymnastics events, with fields such as rank, gymnast(s), country, score, apparatus, competition, edition, and gender. Examples include individual and team events from World Championships.",
+        "elements": [
+          "rank",
+          "team_members",
+          "country",
+          "score",
+          "gymnast",
+          "apparatus",
+          "competition",
+          "edition",
+          "gender",
+          "Total",
+          "Point",
+          "Gymnasts",
+          "Nation",
+          "Place"
+        ],
+        "data_examples": [
+          "page_title: 2005 World Artistic Gymnastics Championships, section_title: Men -- Horizontal Bar, header: [Rank, Gymnast, Total], sample_row: [, Aljaž Pegan ( SLO ), 9.662]",
+          "page_title: 2012 Aerobic Gymnastics World Championships, section_title: Results -- Men 's Individual, header: [Rank, Gymnast, Country, Score], sample_row: [, Ivan Parejo, Spain, 22.200]",
+          "page_title: 2008 Aerobic Gymnastics World Championships, section_title: Results -- Trio, header: [Rank, Gymnasts, Country, Point], sample_row: [, Mircea Brinzea , Tudorel-Valentin Mavrodineanu , Mircea Zamfir, Romania, 22.050]"
+        ]
+      }
+    }
+  },
+  "half_marathon_race_result": {
+    "concept": "half_marathon_race_result",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete's performance in a half marathon race, including rank, time, and nationality.",
+    "routing_guide": "Use Table when you need precise race results (e.g., rank, time) for a specific event or to compare multiple athletes. Use Doc when you need background information about an athlete's career or to verify facts not in the table. Use both when you need comprehensive information, joining on athlete name.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "athlete"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured race results with fields: rank, athlete, nationality, time, notes, and team, suitable for filtering, sorting, and comparing performances.",
+        "elements": [
+          "rank",
+          "athlete",
+          "nationality",
+          "time",
+          "notes",
+          "Country",
+          "Team"
+        ],
+        "data_examples": [
+          "page_title: 2001 IAAF World Half Marathon Championships, section_title: Race results -- Women 's, header: [Rank, Athlete, Nationality, Time, Notes], sample_row: [, Paula Radcliffe, Great Britain, 1:06:47, CR]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides narrative descriptions of athletes' half marathon achievements, including race wins, personal bests, and placements, useful for retrieving context and verifying details.",
+        "elements": [
+          "athlete",
+          "race",
+          "year",
+          "rank",
+          "time",
+          "nationality",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Abebech_Afework\", \"title\": \"Abebech Afework\", \"text\": \"Abebech Afework Bekele ( born 11 December 1990 ) is an Ethiopian long-distance runner who specialises half marathon races . She has represented Ethiopia at the IAAF World Cross Country Championships and the IAAF World Half Marathon Championships . She was the 2011 winner of the Egmond Half Marathon . Her personal best for the distance is 1:10:30 hours . She first began competing abroad in 2009 , taking third at the Udine Half Marathon in a time of 1:11:15 hours and running a 10,000 metres best o\"}"
+        ]
+      }
+    }
+  },
+  "high_school": {
+    "concept": "high_school",
+    "semantic_type": "entity",
+    "overall_description": "An educational institution providing secondary education, typically for students in grades 9-12, and often associated with a school district.",
+    "routing_guide": "Choose Doc when the query involves descriptive information about high schools, such as location, district, or general characteristics. If the query requires structured data like enrollment numbers or test scores, consider Table if available; otherwise, Doc may still provide relevant text.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify"
+      ],
+      "join_keys": [
+        "name"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides descriptive articles about high schools, including name, location, school district, and other textual details, with examples from Wikipedia pages.",
+        "elements": [
+          "name",
+          "location",
+          "school_district",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Novato_High_School\", \"title\": \"Novato High School\", \"text\": \"Novato High School ( NHS ) is a public high school located in Novato , California , in Marin County . It is a part of the Novato Unified School District .\"}"
+        ]
+      }
+    }
+  },
+  "league_attendance_statistics": {
+    "concept": "league_attendance_statistics",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of attendance figures for a sports league, typically broken down by team, including arena, number of home games, average attendance, total attendance, and capacity percentage for a given season.",
+    "routing_guide": "Use Table when the query asks for structured attendance data (e.g., specific teams, seasons, or comparisons). Use Doc if the query requires narrative context or additional details not in the table. For most queries, Table is sufficient.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "team",
+        "season"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "This source provides a table of NHL attendance statistics for the 2013-14 season, listing each team's arena, home games, average attendance, total attendance, and capacity percentage.",
+        "elements": [
+          "team",
+          "arena",
+          "season",
+          "home_games",
+          "average_attendance",
+          "total_attendance",
+          "capacity_percentage",
+          "Home Games",
+          "Average Attendance",
+          "Total Attendance",
+          "Capacity Percentage",
+          "Grandfather",
+          "Grandson",
+          "Country",
+          "Club",
+          "Sport",
+          "League",
+          "Seasons",
+          "Stadium"
+        ],
+        "data_examples": [
+          "page_title: List of National Hockey League attendance figures, section_title: 2013–14 attendance statistics, header: [Team, Arena, Home Games, Average Attendance, Total Attendance, Capacity Percentage], sample_row: [Chicago Blackhawks, United Center, 41, 22,623, 927,545, 117.6%]"
+        ]
+      }
+    }
+  },
+  "league_rookie_of_the_year_award": {
+    "concept": "league_rookie_of_the_year_award",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of a player being named rookie of the year in a professional sports league, including the season, player, team, and position.",
+    "routing_guide": "Choose Table when the query requires specific award winners, seasons, teams, or positions, and when filtering, sorting, or aggregating by these attributes. Use Doc if the query involves narrative context, historical details, or comparisons across multiple sources.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "season",
+        "player",
+        "team",
+        "position"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on rookie of the year award winners, with fields for season, player, team, and position, as well as additional context such as team represented and position played.",
+        "elements": [
+          "season",
+          "player",
+          "team",
+          "position",
+          "Year",
+          "Team represented",
+          "Position played",
+          "Rank",
+          "Team ( s ) by season",
+          "TDs",
+          "Seasons",
+          "Last appearance in Super Bowl",
+          "NFL Season",
+          "Result"
+        ],
+        "data_examples": [
+          "page_title: National Football League Rookie of the Year Award, section_title: Defensive ROTY winners ( 1969–present ), header: [Season, Player, Team, Position], sample_row: [1969, Joe Greene ( NFL ), Pittsburgh Steelers, Defensive tackle]"
+        ]
+      }
+    }
+  },
+  "marathon_race_result": {
+    "concept": "marathon_race_result",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete's performance in a marathon race, including year, athlete, country or state, time, and notes.",
+    "routing_guide": "Use Table when structured data with specific fields (year, athlete, country/state, time) is needed for filtering, sorting, or aggregation. Use Doc if additional context or narrative descriptions are required. Both can be used together for comprehensive analysis.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "year",
+        "athlete",
+        "country_or_state"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on marathon race results, with fields for year, athlete, country/state, time, and notes, as exemplified by the Boston Marathon women's wheelchair division winners list.",
+        "elements": [
+          "year",
+          "athlete",
+          "country_or_state",
+          "time",
+          "notes",
+          "Weight",
+          "Position",
+          "Winner",
+          "Country",
+          "Country/State",
+          "Place",
+          "Nationality"
+        ],
+        "data_examples": [
+          "page_title: List of winners of the Boston Marathon, section_title: Women 's wheelchair, header: [Year, Athlete, Country/State, Time, Notes], sample_row: [1977, Rahn , Sharon Sharon Rahn, United States United States ( IL ), 3:48:51, ]"
+        ]
+      }
+    }
+  },
+  "national_team": {
+    "concept": "national_team",
+    "semantic_type": "entity",
+    "overall_description": "A national team is a sports team representing a country in international competitions, governed by a national sports association, and includes various sports such as football, cricket, and rugby union.",
+    "routing_guide": "Use Doc when the query requires detailed narrative information about a national team's history, achievements, or specific tournament appearances. If the query involves structured data like dates, rankings, or win/loss records, consider extracting from Doc text or using Table if available. Since only Doc is present, route to Doc for all queries about national teams.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "team_name",
+        "country",
+        "governing_body"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides detailed textual descriptions of national teams, including team name, governing body, historical performance, achievements, and participation in international tournaments. Examples include Austria national football team, India national cricket team, and New Zealand national rugby union team.",
+        "elements": [
+          "team_name",
+          "governing_body",
+          "icc_membership_status",
+          "first_test_date",
+          "test_status_granted_year",
+          "historical_performance",
+          "country",
+          "world_cup_titles",
+          "test_match_record",
+          "ranking_history",
+          "opponents",
+          "world_cup_appearances",
+          "european_championship_appearances",
+          "most_recent_world_cup_year",
+          "most_recent_european_championship_year",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Austria_national_football_team\", \"title\": \"Austria national football team\", \"text\": \"The Austria national football team ( German : Österreichische Fußballnationalmannschaft ) is the football team that represents Austria in international competition and is controlled by the Austrian Football Association ( German : Österreichischer Fußballbund ) . Austria has qualified for seven FIFA World Cups , most recently in 1998 . The country played in the UEFA European Championship for the first time in 2008 , when it co-hosted the event with Switzerland , and most recently qualified in 201\"}",
+          "{\"doc_id\": \"/wiki/India_national_cricket_team\", \"title\": \"India national cricket team\", \"text\": \"The India men 's national cricket team , also known as Team India and Men in Blue , is governed by the Board of Control for Cricket in India ( BCCI ) , and is a Full Member of the International Cricket Council ( ICC ) with Test , One-Day International ( ODI ) and Twenty20 International ( T20I ) status . Cricket was introduced to India by European merchant sailors in the 18th century , and the first cricket club was established in 1792 . India 's national cricket team did not play its first Test \"}",
+          "{\"doc_id\": \"/wiki/New_Zealand_national_rugby_union_team\", \"title\": \"New Zealand national rugby union team\", \"text\": \"The New Zealand national rugby union team , commonly known as the All Blacks , represents New Zealand in men 's international rugby union , which is considered to be the country 's national sport . The team won the Rugby World Cup in 2011 and 2015 , as well as the inaugural tournament in 1987 . New Zealand has a 77 per cent winning record in test match rugby , and is the only international men 's side to have secured more wins than losses against every opponent . Since their international debut \"}"
+        ]
+      }
+    }
+  },
+  "national_team_championship_medalist": {
+    "concept": "national_team_championship_medalist",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete or team representing a nation that won a medal in a specific event at a world championship, including the medal type, championship edition, athlete name, and event.",
+    "routing_guide": "Use Table when the query asks for specific medalists, medal types, or events from a known championship and country. Use Doc if the query requires narrative context or additional details not captured in the table. Both can be used when cross-referencing structured data with textual descriptions.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "medal",
+        "championship",
+        "name",
+        "event"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data with columns for medal, championship, name, and event, listing medalists from a specific country at a world championship.",
+        "elements": [
+          "medal",
+          "championship",
+          "name",
+          "event"
+        ],
+        "data_examples": [
+          "page_title: Netherlands at the UCI Road World Championships, section_title: List of medalists, header: [Medal, Championship, Name, Event], sample_row: [Bronze, 1925 Apeldoorn, Gerrit van den Berg, Men 's amateur road race]"
+        ]
+      }
+    }
+  },
+  "national_team_squad_member": {
+    "concept": "national_team_squad_member",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete selected to represent a national team in a specific tournament or tour, including their squad number, name, position, and domestic team or province.",
+    "routing_guide": "Choose Table when the query requires structured attributes like squad number, player name, state, or club, and when filtering or sorting by these fields is needed. Choose Doc if the query involves narrative context or unstructured details not captured in the table. Use both when combining structured data with additional context from documents.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "national_team",
+        "tournament",
+        "season",
+        "player_name"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on national team squad members, including fields such as squad number, player name, state/province, club, national team, tournament, and season. Examples include the 2011 Rugby League Four Nations squad list and the 1903 New Zealand rugby union tour party.",
+        "elements": [
+          "squad_number",
+          "player_name",
+          "state",
+          "club",
+          "national_team",
+          "tournament",
+          "season",
+          "name",
+          "position",
+          "province",
+          "No"
+        ],
+        "data_examples": [
+          "page_title: 2011 Rugby League Four Nations, section_title: Squads -- Australia, header: [No, Name, State, Club], sample_row: [661, Darren Lockyer ( c ), QLD, Brisbane Broncos]",
+          "page_title: 1903 New Zealand rugby union tour of Australia, section_title: Touring party, header: [Name, Position, Province], sample_row: [Billy Wallace, Back, Wellington]"
+        ]
+      }
+    }
+  },
+  "olympic_athletics_relay_result": {
+    "concept": "olympic_athletics_relay_result",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of a relay race result at an Olympic Games, including the event, edition, sport, discipline, date, venue, and participating teams or athletes.",
+    "routing_guide": "Use Doc when detailed narrative descriptions or context about the relay event are needed, such as race summaries or historical notes. Use Table when structured data like results, times, or participant lists are required. Use both when a comprehensive understanding of the event is needed, combining narrative with structured facts.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "sort",
+        "aggregate"
+      ],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify"
+      ],
+      "join_keys": [
+        "event",
+        "edition",
+        "sport",
+        "discipline",
+        "date",
+        "venue"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "This source provides detailed textual descriptions of relay events, including the event name, edition, sport, discipline, date, venue, participants, and a linked table ID for structured data.",
+        "elements": [
+          "event",
+          "edition",
+          "sport",
+          "discipline",
+          "date",
+          "venue",
+          "participants",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Athletics_at_the_2012_Summer_Olympics_–_Men's_4_×_100_metres_relay\", \"title\": \"Athletics at the 2012 Summer Olympics – Men's 4 × 100 metres relay\", \"text\": \"The men 's 4 × 100 metres relay competition at the 2012 Summer Olympics in London , United Kingdom , was held at the Olympic Stadium on 10-11 August .\"}"
+        ]
+      }
+    }
+  },
+  "olympic_delegation_participation": {
+    "concept": "olympic_delegation_participation",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of a national delegation's participation in an Olympic Games, including the edition, host city, and country.",
+    "routing_guide": "Use Doc when the query asks for narrative details about a country's participation in a specific Olympic Games, such as the host city, edition, or competitor statistics. Use Table if a structured table is available for similar data; otherwise, rely on Doc.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "aggregate"
+      ],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify"
+      ],
+      "join_keys": [
+        "country",
+        "edition",
+        "host_city"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides textual descriptions of a country's participation in a specific Olympic Games, including the edition, host city, and country, as well as competitor counts and sports/events.",
+        "elements": [
+          "country",
+          "edition",
+          "host_city",
+          "competitors",
+          "men",
+          "women",
+          "events",
+          "sports",
+          "olympic_games_edition",
+          "host_country",
+          "season",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Austria_at_the_2010_Winter_Olympics\", \"title\": \"Austria at the 2010 Winter Olympics\", \"text\": \"Austria participated at the 2010 Winter Olympics in Vancouver , British Columbia , Canada .\"}",
+          "{\"doc_id\": \"/wiki/Australia_at_the_1988_Summer_Olympics\", \"title\": \"Australia at the 1988 Summer Olympics\", \"text\": \"Australia competed at the 1988 Summer Olympics in Seoul , South Korea . 252 competitors , 180 men and 72 women , took part in 145 events in 24 sports . Australian athletes have competed in every Summer Olympic Games of the modern era .\"}"
+        ]
+      }
+    }
+  },
+  "olympic_fencing_event_result": {
+    "concept": "olympic_fencing_event_result",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete's or team's performance in a fencing event at an Olympic Games, including the medal won and the opponent in the final.",
+    "routing_guide": "Choose Doc when the query involves detailed narrative descriptions, specific event details (e.g., date, venue), or when the user asks for a summary of a fencing event's outcome. Use Doc for queries that require understanding the context or when the answer is not directly available in a structured table. If the query is purely factual and can be answered with a simple list of medalists, consider using Table if available; otherwise, Doc is sufficient.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "event",
+        "edition",
+        "medal_type",
+        "athlete",
+        "country",
+        "opponent"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "This source provides detailed textual descriptions of fencing events at the Olympics, including the event name, edition, date, venue, medal types, athletes, countries, and opponents. It offers narrative context and specific results for each event.",
+        "elements": [
+          "event",
+          "edition",
+          "date",
+          "venue",
+          "medal_type",
+          "athlete",
+          "country",
+          "opponent",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Fencing_at_the_2012_Summer_Olympics_–_Men's_sabre\", \"title\": \"Fencing at the 2012 Summer Olympics – Men's sabre\", \"text\": \"The men 's sabre competition in fencing at the 2012 Olympic Games in London was held on 29 July at the ExCeL Exhibition Centre . Hungary 's Áron Szilágyi won the gold medal , beating Diego Occhiuzzi of Italy won took silver . Nikolay Kovalev from Russia won the bronze .\"}"
+        ]
+      }
+    }
+  },
+  "olympic_flag_bearer": {
+    "concept": "olympic_flag_bearer",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete selected to carry their country's flag at an Olympic Games opening ceremony, including the edition, season, and sport.",
+    "routing_guide": "Choose Table when the query asks for flag bearers for a specific country or across countries, with fields like year, season, athlete, and sport. Use Doc if additional narrative context is needed, but for structured data, Table is primary.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "aggregate",
+        "join"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "event_year",
+        "season",
+        "flag_bearer",
+        "sport"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Tables listing flag bearers for a country at the Olympics, with columns for event year, season, flag bearer name, and sport.",
+        "elements": [
+          "event_year",
+          "season",
+          "flag_bearer",
+          "sport",
+          "Event year",
+          "Flag bearer",
+          "Ceremony"
+        ],
+        "data_examples": [
+          "page_title: List of flag bearers for Malta at the Olympics, section_title: List of flag bearers, header: [#, Event year, Season, Flag bearer, Sport], sample_row: [17, 2018, Winter, Élise Pellegrin, Alpine skiing]",
+          "page_title: List of flag bearers for Tunisia at the Olympics, section_title: , header: [#, Event year, Season, Flag bearer, Sport], sample_row: [8, 2016, Summer, Oussama Mellouli, Swimming]"
+        ]
+      }
+    }
+  },
+  "olympic_handball_player_performance": {
+    "concept": "olympic_handball_player_performance",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete's performance in a handball event at an Olympic Games, including team membership, matches played, and goals scored.",
+    "routing_guide": "Choose Doc when the query involves narrative descriptions or when specific performance details (matches played, goals scored) are mentioned in text. If the query requires structured data or linking to other tables, consider using both Doc and Table if available. Since only Doc is present, route to Doc for all queries related to this concept.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "aggregate",
+        "sort",
+        "compare"
+      ],
+      "join_keys": [
+        "athlete",
+        "olympic_edition"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides narrative descriptions of athletes' Olympic handball performances, including details such as team membership, medal won, matches played, and goals scored. It contains fields like athlete, team, olympic_edition, medal, matches_played, goals_scored, title, text, and linked_table_id.",
+        "elements": [
+          "athlete",
+          "team",
+          "olympic_edition",
+          "medal",
+          "matches_played",
+          "goals_scored",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Zorica_Pavićević\", \"title\": \"Zorica Pavićević\", \"text\": \"Zorica Dragović Pavićević ( Serbian : Зорица Драговић Павићевић ) , born 9 May 1956 in Danilovgrad , Montenegro is a former Yugoslav handball player who competed in the 1984 Summer Olympics . She was a member of the Yugoslav handball team which won the gold medal . She played four matches and scored two goals .\"}"
+        ]
+      }
+    }
+  },
+  "olympic_luge_event_result": {
+    "concept": "olympic_luge_event_result",
+    "semantic_type": "event",
+    "overall_description": "A specific luge event at an Olympic Games, including the edition, venue, and dates.",
+    "routing_guide": "Use Doc when the query asks for descriptive details of a specific luge event, such as venue, dates, or narrative context. Use Table if tabular data (e.g., results, participants) is needed; otherwise, Doc is sufficient.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter"
+      ],
+      "join_keys": [
+        "doc_id"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides the event title, descriptive text, and linked table ID, with examples such as the men's singles luge at the 1972 Winter Olympics, including venue and date details.",
+        "elements": [
+          "event",
+          "edition",
+          "venue",
+          "date",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Luge_at_the_1972_Winter_Olympics_–_Men's_singles\", \"title\": \"Luge at the 1972 Winter Olympics – Men's singles\", \"text\": \"The men 's singles luge competition at the 1972 Winter Olympics in Sapporo was held from 4 to 7 February , at Sapporo Teine .\"}"
+        ]
+      }
+    }
+  },
+  "olympic_medalist": {
+    "concept": "olympic_medalist",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete or team that won a medal at an Olympic Games, including the medal type, sport, event, and date.",
+    "routing_guide": "Choose Table when the query asks for structured medalist information such as medal type, athlete, sport, event, or date, especially for filtering, sorting, or aggregating. Use Doc if the query requires narrative context or additional details not captured in tables. For queries combining structured data with contextual information, use both.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve",
+        "verify"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "athlete_name",
+        "sport",
+        "event",
+        "edition",
+        "country",
+        "medal_type"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Tables provide structured data on Olympic medalists, with columns for medal type, athlete name(s), sport, event, and sometimes date, edition, and country. Examples include medalist lists for specific countries and years, and event-specific medal tables.",
+        "elements": [
+          "medal_type",
+          "athlete_name",
+          "sport",
+          "event",
+          "date",
+          "athlete_or_team",
+          "edition",
+          "country",
+          "medal",
+          "season",
+          "Name",
+          "Games",
+          "Gold",
+          "Silver",
+          "Bronze",
+          "Date of birth"
+        ],
+        "data_examples": [
+          "page_title: Austria at the 1936 Summer Olympics, section_title: Medalists, header: [Medal, Name, Sport, Event], sample_row: [Gold, Gregor Hradetzky, Canoeing, Men 's Folding K-1 10000m]",
+          "page_title: United States at the 1952 Winter Olympics, section_title: , header: [Medal, Name, Sport, Event, Date], sample_row: [Gold, Andrea Mead Lawrence, Alpine skiing, Women 's giant slalom, February 14]",
+          "page_title: Norway at the 1936 Winter Olympics, section_title: Medalists, header: [Medal, Name, Sport, Event], sample_row: [Gold, Sonja Henie, Figure skating, Women 's singles]"
+        ]
+      }
+    }
+  },
+  "olympic_short_track_speed_skating_event_result": {
+    "concept": "olympic_short_track_speed_skating_event_result",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete's or team's performance in a short track speed skating event at an Olympic Games, including the event, date, venue, and result details.",
+    "routing_guide": "Use Doc when the query requires detailed narrative information about a specific event, such as the circumstances of the race, participant quotes, or historical context. Use Table when the query involves structured data like medal counts, times, or rankings that can be aggregated or compared. If the query needs both narrative and structured data, use both sources and join on the event identifier.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "verify"
+      ],
+      "join_keys": [
+        "event_id"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides detailed textual descriptions of individual short track speed skating events at the Olympics, including event name, edition, date, venue, participants, and results. Each document corresponds to a specific event page and contains structured elements such as title, text, and linked table ID.",
+        "elements": [
+          "event",
+          "edition",
+          "date",
+          "venue",
+          "participants",
+          "result",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Short_track_speed_skating_at_the_2010_Winter_Olympics_–_Women's_1500_metres\", \"title\": \"Short track speed skating at the 2010 Winter Olympics – Women's 1500 metres\", \"text\": \"The women 's 1500 metres in short track speed skating at the 2010 Winter Olympics was held on 20 February at the Pacific Coliseum .\"}"
+        ]
+      }
+    }
+  },
+  "olympic_skiing_event_result": {
+    "concept": "olympic_skiing_event_result",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete's or team's performance in a skiing event at an Olympic Games, including rank, time, and medal.",
+    "routing_guide": "Use Doc when detailed narrative context or event-specific information is needed, such as race conditions or athlete backgrounds. Use Table when structured data (e.g., ranks, times, medals) is required for filtering, sorting, or aggregation. Both sources can be used together for comprehensive analysis, joining on event identifiers.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "compare",
+        "verify"
+      ],
+      "join_keys": [
+        "event",
+        "edition",
+        "date",
+        "venue",
+        "athlete",
+        "country",
+        "rank",
+        "time",
+        "medal"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides detailed narrative descriptions of Olympic skiing events, including event name, edition, date, venue, participating athletes, countries, ranks, times, and medals. Each document corresponds to a specific event and includes a linked table ID for structured data.",
+        "elements": [
+          "event",
+          "edition",
+          "date",
+          "venue",
+          "athlete",
+          "country",
+          "rank",
+          "time",
+          "medal",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Alpine_skiing_at_the_1976_Winter_Olympics_–_Women's_downhill\", \"title\": \"Alpine skiing at the 1976 Winter Olympics – Women's downhill\", \"text\": \"The Women 's downhill competition of the Innsbruck 1976 Olympics was held at Axamer Lizum on Sunday , 8 February . The defending world champion was Annemarie Moser-Pröll of Austria , who was also the defending World Cup downhill champion , but spent this year away from racing to care for her ailing father ; Switzerland 's Bernadette Zurbriggen led the current season . Defending Olympic champion Marie-Theres Nadig was entered in the race but did not start . Rosi Mittermaier won the gold medal , B\"}"
+        ]
+      }
+    }
+  },
+  "olympic_volleyball_tournament": {
+    "concept": "olympic_volleyball_tournament",
+    "semantic_type": "event",
+    "overall_description": "A volleyball tournament held as part of an Olympic Games, including indoor and beach volleyball events for men and women.",
+    "routing_guide": "Choose Doc when you need to understand the scope of volleyball events at a particular Olympics, such as which events were held, or when you need contextual information from the article text. Choose Table if you need structured data about individual matches, teams, or results. Use both when you need to combine narrative context with detailed statistics.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "sort",
+        "aggregate"
+      ],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify"
+      ],
+      "join_keys": [
+        "edition",
+        "event_type",
+        "gender"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The source provides descriptions of volleyball events at a specific Olympic edition, including the edition, host city, sport, event type, gender, title, text, and linked table ID. It lists the events contested (e.g., men's and women's indoor and beach volleyball) and may contain details about the tournament structure.",
+        "elements": [
+          "edition",
+          "host_city",
+          "sport",
+          "event_type",
+          "gender",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Volleyball_at_the_2000_Summer_Olympics\", \"title\": \"Volleyball at the 2000 Summer Olympics\", \"text\": \"At the 2000 Summer Olympics , four volleyball events were contested - mens and womens indoor volleyball , and men 's and women 's beach volleyball .\"}"
+        ]
+      }
+    }
+  },
+  "olympic_water_polo_tournament": {
+    "concept": "olympic_water_polo_tournament",
+    "semantic_type": "event",
+    "overall_description": "A water polo tournament held as part of an Olympic Games, involving national teams competing for medals.",
+    "routing_guide": "Use Doc when the query involves narrative details, historical context, or mentions of tournaments not fully covered in structured tables. Use Table if available for structured data like medal counts or team lists. Prefer Doc for this concept as it is the primary evidence source.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "edition",
+        "sport"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides textual descriptions of Olympic water polo tournaments, including details such as edition, sport, participating teams, medalists, and linked table references.",
+        "elements": [
+          "edition",
+          "sport",
+          "participating_teams",
+          "medalists",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Water_polo_at_the_1908_Summer_Olympics\", \"title\": \"Water polo at the 1908 Summer Olympics\", \"text\": \"At the 1908 Summer Olympics , a water polo tournament was contested .\"}"
+        ]
+      }
+    }
+  },
+  "olympic_wrestling_event_result": {
+    "concept": "olympic_wrestling_event_result",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of an athlete's or team's performance in a wrestling event at an Olympic Games, including the event, date, venue, and medal outcome.",
+    "routing_guide": "Choose Doc when the query requires detailed narrative information about a specific wrestling event, such as the tournament format, venue details, or historical context. Choose Table when the query involves structured data like medal counts, athlete names, or event dates that can be filtered or aggregated. Use both when the query needs both narrative context and structured facts.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "aggregate",
+        "sort"
+      ],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify"
+      ],
+      "join_keys": [
+        "event",
+        "edition",
+        "date",
+        "venue",
+        "weight_class",
+        "style",
+        "medal",
+        "athlete"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides detailed textual descriptions of wrestling events, including the event title, edition, date, venue, weight class, style, and medal outcomes, along with references to linked tables.",
+        "elements": [
+          "event",
+          "edition",
+          "date",
+          "venue",
+          "weight_class",
+          "style",
+          "medal",
+          "athlete",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Wrestling_at_the_2012_Summer_Olympics_–_Men's_Greco-Roman_96_kg\", \"title\": \"Wrestling at the 2012 Summer Olympics – Men's Greco-Roman 96 kg\", \"text\": \"Men 's Greco-Roman 96 kg competition at the 2012 Summer Olympics in London , United Kingdom , took place on 7 August at ExCeL London . This Greco-Roman wrestling competition consists of a single-elimination tournament , with a repechage used to determine the winner of two bronze medals . The two finalists face off for gold and silver medals . Each wrestler who loses to one of the two finalists moves into the repechage , culminating in a pair of bronze medal matches featuring the semifinal losers\"}"
+        ]
+      }
+    }
+  },
+  "playoff_series": {
+    "concept": "playoff_series",
+    "semantic_type": "event",
+    "overall_description": "A postseason playoff series in the National Basketball Association, including the teams, conference, games won, and season.",
+    "routing_guide": "Use Doc when the query requires narrative context, historical details, or mentions of specific playoff series not easily tabulated. Use Table if a structured table of playoff series is available; otherwise, rely on Doc.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "sort",
+        "aggregate"
+      ],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "verify"
+      ],
+      "join_keys": [
+        "season",
+        "conference",
+        "team",
+        "opponent"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides narrative descriptions of NBA playoff series, including the season, conference, teams, games won, and historical context, as seen in the 1987 NBA Playoffs page.",
+        "elements": [
+          "season",
+          "conference",
+          "team",
+          "opponent",
+          "games_won",
+          "games_lost",
+          "round",
+          "champion",
+          "mvp",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/1987_NBA_Playoffs\", \"title\": \"1987 NBA Playoffs\", \"text\": \"The 1987 NBA playoffs was the postseason tournament of the National Basketball Association 's 1986-87 season . The tournament concluded with the Western Conference champion Los Angeles Lakers defeating the Eastern Conference champion Boston Celtics 4 games to 2 in the NBA Finals . The Lakers earned their 10th NBA championship , and Magic Johnson was named NBA Finals MVP for a then-record third time . This was the last time the Celtics would appear in the NBA Finals until 2008 . Boston only advan\"}"
+        ]
+      }
+    }
+  },
+  "qualifying_result": {
+    "concept": "qualifying_result",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of a driver's or team's performance in a qualifying session for a motor racing event, including position, lap time, and gap to the leader.",
+    "routing_guide": "Choose Table when the query asks for specific qualifying results, such as positions, lap times, or gaps for a given event or season. Use Doc if the query requires narrative context or additional details not captured in the table. For most qualifying result queries, Table is sufficient.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "event",
+        "season",
+        "driver",
+        "constructor"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "The table provides structured qualifying results with fields such as position, driver, constructor, lap time, gap, event, and season. It includes example data from the 2005 British Grand Prix, showing columns like Pos, No, Driver, Constructor, Lap, and Gap.",
+        "elements": [
+          "position",
+          "driver",
+          "constructor",
+          "lap_time",
+          "gap",
+          "event",
+          "season",
+          "Pos",
+          "No",
+          "Lap",
+          "Time"
+        ],
+        "data_examples": [
+          "page_title: 2005 British Grand Prix, section_title: Classification -- Qualifying, header: [Pos, No, Driver, Constructor, Lap, Gap], sample_row: [1, 5, Fernando Alonso, Renault, 1:19.905, -]"
+        ]
+      }
+    }
+  },
+  "season": {
+    "concept": "season",
+    "semantic_type": "event",
+    "overall_description": "A season of a sports league or competition, spanning a defined period and including regular season and postseason play, often culminating in a championship event.",
+    "routing_guide": "Choose Doc when the query involves detailed narrative information about a specific season, such as dates, championship outcomes, or historical context. Choose Table if a structured dataset with fields like season_year, start_date, end_date, champion, etc., is available. If both are available, prefer Doc for rich descriptions and Table for structured comparisons or aggregations.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "retrieve",
+        "compare",
+        "verify"
+      ],
+      "join_keys": [
+        "season_year",
+        "league",
+        "champion"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Documents provide detailed textual descriptions of specific seasons, including start and end dates, championship events, season numbers, overall years, and notable results (e.g., champion, runner-up). They also mention governing bodies, divisions, and specific games like the Kickoff Game or All-Star Game.",
+        "elements": [
+          "season_year",
+          "start_date",
+          "end_date",
+          "championship_event",
+          "season_number",
+          "overall_year",
+          "kickoff_game",
+          "super_bowl",
+          "champion",
+          "runner_up",
+          "year",
+          "league",
+          "mvp",
+          "cy_young_award_winner",
+          "rookie_of_the_year",
+          "all_star_game",
+          "world_series_result",
+          "governing_body",
+          "division",
+          "regular_season_start_date"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/2018–19_NCAA_Division_I_men's_ice_hockey_season\", \"title\": \"2018–19 NCAA Division I men's ice hockey season\", \"text\": \"The 2018-19 NCAA Division I men 's ice hockey season began in October 2018 and ended with the Frozen Four in April 2019 . This was the 72nd season in which an NCAA ice hockey championship was held , and United States college ice hockey 's 124th year overall .\"}",
+          "{\"doc_id\": \"/wiki/2013_NCAA_Division_I_FBS_football_season\", \"title\": \"2013 NCAA Division I FBS football season\", \"text\": \"The 2013 NCAA Division I FBS football season was the highest level college football competition in the United States organized by the National Collegiate Athletic Association ( NCAA ) . The regular season began on August 29 , 2013 and ended on December 14 , 2013 . The postseason concluded on January 6 , 2014 with the final BCS National Championship Game , played at the Rose Bowl in Pasadena , California . The Florida State Seminoles beat the Auburn Tigers in the BCS National Championship Game to\"}",
+          "{\"doc_id\": \"/wiki/2019_NFL_season\", \"title\": \"2019 NFL season\", \"text\": \"The 2019 NFL season was the 100th season of the National Football League ( NFL ) . The season began on September 5 , 2019 with the NFL Kickoff Game , in which the Green Bay Packers defeated the Chicago Bears 10-3 . The season concluded with Super Bowl LIV , the league 's championship game on February 2 , 2020 , at Hard Rock Stadium in Miami , Florida between the American Football Conference ( AFC ) champion Kansas City Chiefs and the National Football Conference ( NFC ) champion San Francisco 49\"}"
+        ]
+      }
+    }
+  },
+  "sports_event_calendar_entry": {
+    "concept": "sports_event_calendar_entry",
+    "semantic_type": "event",
+    "overall_description": "A scheduled or completed sports event or competition occurrence, including date, sport, venue, status, and winner.",
+    "routing_guide": "Use Table when the query requires structured event attributes (date, sport, venue, status, winner) for filtering, sorting, or aggregation. Use Doc when the query involves narrative context or cross-referencing multiple sources. Prefer Table for direct lookups and comparisons.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "date",
+        "sport",
+        "venue_or_event"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured rows of sports events with fields for date range, sport, venue/event name, status (e.g., International), and winner(s). Examples include calendar listings from monthly sports summaries.",
+        "elements": [
+          "date",
+          "sport",
+          "venue_or_event",
+          "status",
+          "winner",
+          "Venue/Event",
+          "Winner/s",
+          "Race",
+          "Cat"
+        ],
+        "data_examples": [
+          "page_title: 2014 in sports, section_title: Calendar by month -- January, header: [Date, Sport, Venue/Event, Status, Winner/s], sample_row: [26 Dec. 2013-5, Ice hockey, 2014 World Junior Ice Hockey Championships, International, Finland MVP : Filip Forsberg]"
+        ]
+      }
+    }
+  },
+  "sports_venue": {
+    "concept": "sports_venue",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "Information about sports venues, including their name, location, capacity, and the home team or club that uses them, as well as additional details like sports hosted or historical context.",
+    "routing_guide": "Choose Table when the query requires structured comparisons, aggregations, or filtering across multiple venues (e.g., 'list all stadiums with capacity > 50,000' or 'which team has the largest stadium?'). Choose Doc when the query asks for descriptive information about a specific venue (e.g., 'what is the capacity of Zaawia Stadium?') or when the venue is not well-covered in tables. Use both when the query needs both structured and descriptive details, such as comparing venues while also retrieving narrative context.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "aggregate",
+        "join"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "stadium_name",
+        "location",
+        "capacity",
+        "home_team"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Tables provide structured data on sports venues, typically including fields such as stadium name, capacity, city/location, home team/club, and sometimes additional attributes like state, first used year, or previous season position. Examples include lists of football stadiums in Serbia, cricket grounds in India, and team venue tables from league seasons.",
+        "elements": [
+          "stadium_name",
+          "capacity",
+          "city",
+          "home_team",
+          "club",
+          "based_city",
+          "home_stadium",
+          "stadium_capacity",
+          "manager",
+          "name",
+          "state",
+          "team",
+          "first_used_year",
+          "matches_hosted",
+          "location",
+          "venue",
+          "position_in_previous_season",
+          "stadium",
+          "games",
+          "sports_hosted"
+        ],
+        "data_examples": [
+          "page_title: 2011 Vietnamese National Football First League, section_title: Teams -- Stadia and locations, header: [Club, Based, Home stadium, Capacity, Manager], sample_row: [An Đô-An Giang, Long Xuyên, Long Xuyên Stadium, 10,000, Nhan Thiện Nhân]",
+          "page_title: 2002 Belarusian Premier League, section_title: Teams and venues, header: [Team, Location, Venue, Capacity, Position in 2001], sample_row: [Belshina, Bobruisk, Spartak , Bobruisk, 3,550, 1]",
+          "page_title: List of football stadiums in Serbia, section_title: Current stadiums, header: [Stadium, Capacity, City, Home team], sample_row: [Rajko Mitić Stadium, 55,538, Belgrade, Red Star Belgrade]"
+        ]
+      },
+      "Doc": {
+        "description": "Documents are Wikipedia-style articles about specific venues, providing descriptive text that includes the venue's name, location, capacity, primary use, and home team. They may also contain linked tables with structured details.",
+        "elements": [
+          "stadium_name",
+          "location",
+          "capacity",
+          "primary_use",
+          "home_team",
+          "venue_name",
+          "sports_hosted",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/VictoriArena\", \"title\": \"VictoriArena\", \"text\": \"N/A\"}",
+          "{\"doc_id\": \"/wiki/Zaawia_Stadium\", \"title\": \"Zaawia Stadium\", \"text\": \"Zaawia Stadium is a multi-purpose stadium in Zawiya , Libya . The stadium holds 14,000 people . It is currently used mostly for football matches and is the home ground of Al Olympic Zaouia .\"}"
+        ]
+      }
+    }
+  },
+  "tournament_award_record": {
+    "concept": "tournament_award_record",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of individual awards and statistical leaders for a specific tournament edition, including player of the final, player of the tournament, most runs, and most wickets.",
+    "routing_guide": "Choose Table when the query asks for specific tournament award winners or statistical leaders (e.g., 'Who was player of the tournament in 2000?') or when comparing across years. Choose Doc if the query requires narrative context or additional details not captured in the table. Use both when the query needs both structured data and explanatory text.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "year"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "The Table source provides per-year tournament records for the ICC Under-19 Cricket World Cup, with columns for year, player of the final, player of the tournament, most runs, and most wickets. It includes 41 rows of data, each representing a tournament edition.",
+        "elements": [
+          "year",
+          "player_of_the_final",
+          "player_of_the_tournament",
+          "most_runs",
+          "most_wickets",
+          "Team",
+          "Date",
+          "City",
+          "Venue",
+          "Total",
+          "Player",
+          "School",
+          "Opponent",
+          "Country",
+          "Season",
+          "Athlete",
+          "Nationality",
+          "Stadium",
+          "Winner"
+        ],
+        "data_examples": [
+          "page_title: Under-19 Cricket World Cup, section_title: Records -- By tournament, header: [Year, Player of the final, Player of the tournament, Most runs, Most wickets], sample_row: [1988, Brett Williams, not awarded, Brett Williams ( 471 ), Wayne Holdsworth ( 19 ) Mushtaq Ahmed ( 19 )]"
+        ]
+      }
+    }
+  },
+  "transfer_record": {
+    "concept": "transfer_record",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of a player transfer between clubs, including the transfer fee paid and the year of the transfer.",
+    "routing_guide": "Choose Table when the query requires specific transfer facts such as fees, dates, or player-club pairs, especially when structured comparison or aggregation is needed. Choose Doc if the query involves narrative context or unstructured transfer details not captured in tables. Use both when combining structured data with additional context.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "player",
+        "from_club",
+        "to_club",
+        "year"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on player transfers, including player name, source and destination clubs, transfer fee, and year, as well as auction-specific details like base price and winning bid.",
+        "elements": [
+          "player",
+          "team",
+          "base_price",
+          "winning_bid",
+          "position",
+          "from_club",
+          "fee",
+          "rank",
+          "to_club",
+          "year",
+          "From club",
+          "Date",
+          "Name",
+          "Moving from",
+          "Moving to",
+          "From",
+          "To",
+          "Goals",
+          "Caps"
+        ],
+        "data_examples": [
+          "page_title: List of Malaysian football transfers 2014, section_title: Perak FA -- Transfers in, header: [Position, Player, From club, Fee], sample_row: [DC, Martin Kafando, Union Sportive des Forces Armées, align=right| 0]",
+          "page_title: Major League Soccer records and statistics, section_title: Transfer fees -- Paid, header: [Rank, Player, From, To, Fee, Year], sample_row: [1, Ezequiel Barco, Independiente, Atlanta United, $ 15.0m, 2018]",
+          "page_title: List of 2012 Indian Premier League personnel changes, section_title: Auction -- Sold players, header: [Player, Team, Base price, Winning bid], sample_row: [Brendon McCullum, Kolkata Knight Riders, $ 400,000, $ 900,000]"
+        ]
+      }
+    }
+  },
+  "uci_road_world_championships_edition": {
+    "concept": "uci_road_world_championships_edition",
+    "semantic_type": "event",
+    "overall_description": "An edition of the UCI Road World Championships, an annual cycling event where world champions are crowned in various road cycling disciplines.",
+    "routing_guide": "Use Doc when you need detailed information about a specific edition, such as its host city, country, or narrative description. If you need to compare multiple editions or perform aggregations, you may need to extract structured data from the documents or use a table if available. Since only Doc is present, rely on Doc for all queries, but consider extracting fields like year and host_city for structured operations.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "join_keys": [
+        "year",
+        "host_city",
+        "host_country"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Documents provide detailed textual descriptions of each edition, including the year, host city, host country, and other contextual information. Each document corresponds to a specific edition and includes fields such as doc_id, title, text, and linked_table_id.",
+        "elements": [
+          "year",
+          "host_city",
+          "host_country",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/1934_UCI_Road_World_Championships\", \"title\": \"1934 UCI Road World Championships\", \"text\": \"The 1934 UCI Road World Championships took place in Leipzig , Germany .\"}"
+        ]
+      }
+    }
+  },
+  "universiade_basketball_tournament": {
+    "concept": "universiade_basketball_tournament",
+    "semantic_type": "event",
+    "overall_description": "A basketball tournament held as part of the Summer Universiade, featuring national university teams competing for medals.",
+    "routing_guide": "Use Doc when needing detailed narrative or historical context about a specific edition, or when extracting structured data from the linked tables. If only summary statistics or medal counts are needed, consider using Table if available; otherwise, rely on Doc.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "join_keys": [
+        "edition",
+        "host_city"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides detailed articles about each edition, including title, text, and linked tables of results, with elements such as edition, host city, participating teams, medalists, final ranking, and linked table ID.",
+        "elements": [
+          "edition",
+          "host_city",
+          "participating_teams",
+          "medalists",
+          "final_ranking",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Basketball_at_the_1997_Summer_Universiade\", \"title\": \"Basketball at the 1997 Summer Universiade\", \"text\": \"N/A\"}"
+        ]
+      }
+    }
+  },
+  "world_championship_event_result": {
+    "concept": "world_championship_event_result",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "A record of a team's or individual's performance in a specific event at a world championship, including rank, team members, country, and score.",
+    "routing_guide": "Use Table when the query asks for specific event results, rankings, or scores that can be directly retrieved from structured data. Use Doc if the query requires narrative context or additional details not captured in the table.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "event",
+        "country",
+        "team"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured results for events at world championships, with fields such as rank, team, country, and score (points).",
+        "elements": [
+          "rank",
+          "team",
+          "country",
+          "score",
+          "Point"
+        ],
+        "data_examples": [
+          "page_title: 2004 World Sports Acrobatics Championships, section_title: Results -- Men 's Pair, header: [Rank, Team, Country, Point], sample_row: [, Ervin Mendikov , Alexei Mochechkin, Russia, 18.780]"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "domain": "music",
+  "description": "Leakage-aware music-domain AtomR demonstrations derived from non-evaluation Table, Doc, and KG facts and quality-audited.",
+  "minimum_examples_per_stage": 8,
+  "replace_base_examples": true,
+  "stage_guidance": {
+    "tree_generation": "Keep music questions executable: isolate facts about artists, bands, albums, songs, composers, performers, labels, release chronology, genres, charts, and music awards; add a later child only when it genuinely depends on an earlier bridge answer.",
+    "source_selection": "Use KG for explicit entity-predicate-entity facts and qualifiers; Table for complete structured rows, chronology, rank, filters, comparisons, and aggregation; Text for narrative context, explanation, biography, plot, reception, and contextual wording. Select multiple labels only when the answer truly crosses boundaries.",
+    "direct_answer": "Return short evidence-compatible entities, dates, counts, organizations, places, or phrases about artists, bands, albums, songs, composers, performers, labels, release chronology, genres, charts, and music awards; never invent a fact.",
+    "direct_rag": "Ground every hop in supplied KG triples, table rows, or text passages, distinguishing exact graph edges from prose context and row operations.",
+    "search": "Identify only the entity requested at the current hop from the supplied evidence.",
+    "relate": "Extract the requested relation value exactly for the demonstrated music fact.",
+    "filter": "Apply every condition to the candidate set; use Table rows and KG qualifiers only when explicitly supplied.",
+    "answer_from_child_qa": "Resolve child dependencies in order and report only the final requested answer."
+  },
+  "stages": {
+    "tree_generation": [
+      {
+        "input": "Who published the album 'European Top 100 Albums'?",
+        "output": "{\"Who published the album 'European Top 100 Albums'?\": [\"1. Which entity published the album 'European Top 100 Albums'?\", \"2. What is the name of the publisher of 'European Top 100 Albums'?\"], \"1. Which entity published the album 'European Top 100 Albums'?\": \"Relate('European Top 100 Albums', 'publisher')\", \"2. What is the name of the publisher of 'European Top 100 Albums'?\": \"Relate([1], 'publisher')\"}"
+      },
+      {
+        "input": "Who was the creator of the song 'In My Head'?",
+        "output": "{\"Who was the creator of the song 'In My Head'?\": [\"1. Which entity created the song 'In My Head'?\", \"2. Who is the creator of 'In My Head'?\"], \"1. Which entity created the song 'In My Head'?\": \"Relate('In My Head', 'creator')\", \"2. Who is the creator of 'In My Head'?\": \"Relate([1], 'creator')\"}"
+      },
+      {
+        "input": "What was the peak chart position of the song 'Wherever I Go' in 2016?",
+        "output": "{\"What was the peak chart position of the song 'Wherever I Go' in 2016?\": [\"1. What is the peak chart position of the song 'Wherever I Go'?\", \"2. What is the peak chart position of 'Wherever I Go'?\"], \"1. What is the peak chart position of the song 'Wherever I Go'?\": \"Search('Wherever I Go', 'peak chart position')\", \"2. What is the peak chart position of 'Wherever I Go'?\": \"Relate([1], 'peak chart position')\"}"
+      },
+      {
+        "input": "Which artist performed the song 'Walk This Way' in 1986?",
+        "output": "{\"Which artist performed the song 'Walk This Way' in 1986?\": [\"1. Which artist performed the song 'Walk This Way'?\", \"2. Who is the performer of 'Walk This Way'?\"], \"1. Which artist performed the song 'Walk This Way'?\": \"Search('Walk This Way', 'artist')\", \"2. Who is the performer of 'Walk This Way'?\": \"Relate([1], 'performer')\"}"
+      },
+      {
+        "input": "Who wrote the song 'Mr. Bojangles'?",
+        "output": "{\"Who wrote the song 'Mr. Bojangles'?\": [\"1. Who wrote the song 'Mr. Bojangles'?\", \"2. Who is the writer of 'Mr. Bojangles'?\"], \"1. Who wrote the song 'Mr. Bojangles'?\": \"Search('Mr. Bojangles', 'writer')\", \"2. Who is the writer of 'Mr. Bojangles'?\": \"Relate([1], 'writer')\"}"
+      },
+      {
+        "input": "Which album was released by Billy Joel in 1973?",
+        "output": "{\"Which album was released by Billy Joel in 1973?\": [\"1. Which album was released by Billy Joel in 1973?\", \"2. What is the album released by Billy Joel in 1973?\"], \"1. Which album was released by Billy Joel in 1973?\": \"Search('Billy Joel', 'album')\", \"2. What is the album released by Billy Joel in 1973?\": \"Relate([1], 'album')\"}"
+      },
+      {
+        "input": "Who was the performer of the song 'Hometown Glory'?",
+        "output": "{\"Who was the performer of the song 'Hometown Glory'?\": [\"1. Who performed the song 'Hometown Glory'?\", \"2. Who is the performer of 'Hometown Glory'?\"], \"1. Who performed the song 'Hometown Glory'?\": \"Relate('Hometown Glory', 'performer')\", \"2. Who is the performer of 'Hometown Glory'?\": \"Relate([1], 'performer')\"}"
+      },
+      {
+        "input": "What was the peak chart position of the song 'Bitter Pill' in 2002?",
+        "output": "{\"What was the peak chart position of the song 'Bitter Pill' in 2002?\": [\"1. What is the peak chart position of the song 'Bitter Pill'?\", \"2. What is the peak chart position of 'Bitter Pill'?\"], \"1. What is the peak chart position of the song 'Bitter Pill'?\": \"Search('Bitter Pill', 'peak chart position')\", \"2. What is the peak chart position of 'Bitter Pill'?\": \"Relate([1], 'peak chart position')\"}"
+      }
+    ],
+    "source_selection": [
+      {
+        "input": "Who performed the song 'Be Still'?",
+        "output": "KG"
+      },
+      {
+        "input": "What genre is associated with the Foo Fighters?",
+        "output": "KG"
+      },
+      {
+        "input": "What was the peak chart position of 'Wherever I Go' in 2016?",
+        "output": "Table"
+      },
+      {
+        "input": "Which album contains the 1986 version of 'Walk This Way'?",
+        "output": "Table"
+      },
+      {
+        "input": "Who originally recorded the song 'Mr. Bojangles'?",
+        "output": "Text"
+      },
+      {
+        "input": "When was Billy Joel's album 'Piano Man' released?",
+        "output": "Text"
+      },
+      {
+        "input": "Who performed the song 'I' and what album contains the 1986 version of 'Walk This Way'?",
+        "output": "KG, Table"
+      },
+      {
+        "input": "What was the peak chart position of 'Wherever I Go' in 2016 and when was 'Believer' released?",
+        "output": "Table, Text"
+      }
+    ],
+    "direct_answer": [
+      {
+        "input": "Which record label published the album Wrangler?",
+        "output": "So the answer is: (1) Paraphrase Answer: The album Wrangler was published by Sony. (2) Answer List: [\"Sony\"]"
+      },
+      {
+        "input": "Who performed the song Hometown Glory?",
+        "output": "So the answer is: (1) Paraphrase Answer: The performer of Hometown Glory is Adele. (2) Answer List: [\"Adele\"]"
+      },
+      {
+        "input": "What is the birth date of Kurt Cobain?",
+        "output": "So the answer is: (1) Paraphrase Answer: Kurt Cobain was born on 20 February 1967. (2) Answer List: [\"20 February 1967\"]"
+      },
+      {
+        "input": "What was the peak chart position of the OneRepublic song 'Wherever I Go'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The peak chart position of 'Wherever I Go' was 55. (2) Answer List: [\"55\"]"
+      },
+      {
+        "input": "Which album contains the 1986 Run-D.M.C. song 'Walk This Way' featuring Steven Tyler and Joe Perry?",
+        "output": "So the answer is: (1) Paraphrase Answer: The song 'Walk This Way' is from the album Raising Hell. (2) Answer List: [\"Raising Hell\"]"
+      },
+      {
+        "input": "What was the peak position of the Buzzin' Cousins single 'Sweet Suzanne'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The peak position of 'Sweet Suzanne' was 68. (2) Answer List: [\"68\"]"
+      },
+      {
+        "input": "Who wrote and originally recorded the song 'Mr. Bojangles'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The song 'Mr. Bojangles' was written and originally recorded by Jerry Jeff Walker. (2) Answer List: [\"Jerry Jeff Walker\"]"
+      },
+      {
+        "input": "When was Billy Joel's album 'Piano Man' released?",
+        "output": "So the answer is: (1) Paraphrase Answer: The album 'Piano Man' was released on November 9, 1973. (2) Answer List: [\"November 9, 1973\"]"
+      }
+    ],
+    "direct_rag": [
+      {
+        "input": "Supporting knowledge: Wrangler --publisher--> Sony. Question: Which company published the album Wrangler?",
+        "output": "So the answer is: (1) Paraphrase Answer: The publisher of Wrangler is Sony. (2) Answer List: [\"Sony\"]"
+      },
+      {
+        "input": "Supporting knowledge: Hometown Glory --performer--> Adele. Question: Who performed the song Hometown Glory?",
+        "output": "So the answer is: (1) Paraphrase Answer: The performer of Hometown Glory is Adele. (2) Answer List: [\"Adele\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table T0466 (OneRepublic discography) has headers [Title, Year, Peak chart positions, Certifications, Album] and row: [\"Wherever I Go\", 2016, 55, 32, 29]. Question: What was the peak chart position of OneRepublic's song 'Wherever I Go'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The peak chart position of 'Wherever I Go' is 55. (2) Answer List: [\"55\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table T0635 (Steven Tyler) has headers [Year, Song, Artist, Album] and row: [1986, \"Walk This Way\", \"Run-D.M.C. featuring Steven Tyler and Joe Perry\", \"Raising Hell\"]. Question: In which year was the song 'Walk This Way' by Run-D.M.C. featuring Steven Tyler and Joe Perry released?",
+        "output": "So the answer is: (1) Paraphrase Answer: The song 'Walk This Way' was released in 1986. (2) Answer List: [\"1986\"]"
+      },
+      {
+        "input": "Supporting knowledge: \"Mr. Bojangles\" is a song written and originally recorded by American country music artist Jerry Jeff Walker for his 1968 album of the same title. Question: Who originally recorded the song 'Mr. Bojangles'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The original recording artist of 'Mr. Bojangles' is Jerry Jeff Walker. (2) Answer List: [\"Jerry Jeff Walker\"]"
+      },
+      {
+        "input": "Supporting knowledge: Piano Man is the second studio album by American recording artist Billy Joel, released on November 9, 1973, by Columbia Records. Question: When was Billy Joel's album 'Piano Man' released?",
+        "output": "So the answer is: (1) Paraphrase Answer: The album 'Piano Man' was released on November 9, 1973. (2) Answer List: [\"November 9, 1973\"]"
+      },
+      {
+        "input": "Supporting knowledge: KG: I Still Haven't Found What I'm Looking For --performer--> U2. Table T0466 (OneRepublic discography) has row: [\"Wherever I Go\", 2016, 55, 32, 29]. Question: Which band performed the song 'I Still Haven't Found What I'm Looking For' and what was the peak chart position of OneRepublic's 'Wherever I Go'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The performer of 'I Still Haven't Found What I'm Looking For' is U2, and the peak chart position of 'Wherever I Go' is 55. (2) Answer List: [\"U2\", \"55\"]"
+      },
+      {
+        "input": "Supporting knowledge: Text: The song 'Believer' was released on February 1, 2017, through Interscope Records and Kidinakorner as the lead single from the band's third studio album, Evolve (2017). Table T0635 (Steven Tyler) has row: [1986, \"Walk This Way\", \"Run-D.M.C. featuring Steven Tyler and Joe Perry\", \"Raising Hell\"]. Question: What was the release date of 'Believer' and in which year was 'Walk This Way' released?",
+        "output": "So the answer is: (1) Paraphrase Answer: The release date of 'Believer' is February 1, 2017, and 'Walk This Way' was released in 1986. (2) Answer List: [\"February 1, 2017\", \"1986\"]"
+      }
+    ],
+    "search": [
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P123\", \"relation_name\": \"publisher\", \"sample_triples\": [\"Wrangler --publisher--> Sony\", \"European Top 100 Albums --publisher--> Billboard\", \"Rolling Stone 100 Best Songs of the Decade --publisher--> Rolling Stone\", \"Pitchfork --publisher--> Condé Nast\"]}] Question: Which record label published the album Wrangler?",
+        "output": "So the answer is: (1) Paraphrase Answer: The publisher of Wrangler is Sony.; (2) Answer List: [\"Sony\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P175\", \"relation_name\": \"performer\", \"sample_triples\": [\"Be Still (Kelly Clarkson song) --performer--> Kelly Clarkson\", \"I --performer--> A. R. Rahman\", \"Hometown Glory --performer--> Adele\", \"I Still Haven't Found What I'm Looking For --performer--> U2\"]}] Question: Who performed the song Hometown Glory?",
+        "output": "So the answer is: (1) Paraphrase Answer: The performer of Hometown Glory is Adele.; (2) Answer List: [\"Adele\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P136\", \"relation_name\": \"genre\", \"sample_triples\": [\"The Pussycat Dolls --genre--> dance-pop\", \"Christine McVie --genre--> rock music\", \"Foo Fighters --genre--> grunge\", \"Britney Spears --genre--> techno\"]}] Question: What genre is associated with Christine McVie?",
+        "output": "So the answer is: (1) Paraphrase Answer: Christine McVie's genre is rock music.; (2) Answer List: [\"rock music\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0466\", \"title\": \"OneRepublic discography\", \"headers\": [\"Title\", \"Year\", \"Peak chart positions\", \"Certifications\", \"Album\"], \"sample_rows\": [[\"\\\" Wherever I Go \\\"\", \"2016\", \"55\", \"32\", \"29\"], [\"\\\" Say (All I Need) \\\"\", \"2008\", \"—\", \"—\", \"—\"], [\"\\\" If I Lose Myself \\\"\", \"2013\", \"—\", \"—\", \"—\"], [\"\\\"Someday\\\"\", \"2021\", \"—\", \"—\", \"—\"]]}] Question: What was the peak chart position of the OneRepublic song 'Wherever I Go'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The peak chart position of 'Wherever I Go' is 55.; (2) Answer List: [\"55\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0635\", \"title\": \"Steven Tyler\", \"headers\": [\"Year\", \"Song\", \"Artist\", \"Album\"], \"sample_rows\": [[\"1999\", \"\\\"Roots, Rock, Reggae\\\"\", \"Bob Marley featuring Steven Tyler\", \"Chant Down Babylon\"], [\"2006\", \"\\\"Three Chord Country and American Rock & Roll\\\"\", \"Keith Anderson featuring Steven Tyler\", \"Three Chord Country and American Rock & Roll\"], [\"1986\", \"\\\" Walk This Way \\\"\", \"Run-D.M.C. featuring Steven Tyler and Joe Perry\", \"Raising Hell\"], [\"2014\", \"\\\"Vagabond Soul\\\"\", \"The Bayonets featuring Steven Tyler\", \"Crash Boom Bang!\"]]}] Question: Which artist is credited on the 1986 song 'Walk This Way'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The artist on 'Walk This Way' is Run-D.M.C. featuring Steven Tyler and Joe Perry.; (2) Answer List: [\"Run-D.M.C. featuring Steven Tyler and Joe Perry\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0326\", \"title\": \"John Prine\", \"headers\": [\"Year\", \"Single\", \"Artist\", \"Peak positions\", \"Album\"], \"sample_rows\": [[\"2020\", \"Memories\", \"Swamp Dogg\", \"–\", \"Sorry You Couldn't Make It\"], [\"1992\", \"Sweet Suzanne\", \"Buzzin' Cousins\", \"68\", \"Falling from Grace soundtrack\"], [\"2020\", \"How Lucky\", \"Kurt Vile\", \"–\", \"Speed, Sound, Lonely KV (ep)\"]]}] Question: What album contains the single 'Sweet Suzanne' by Buzzin' Cousins?",
+        "output": "So the answer is: (1) Paraphrase Answer: The album is Falling from Grace soundtrack.; (2) Answer List: [\"Falling from Grace soundtrack\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"Mr. Bojangles (song)\", \"sample_passages\": [\"Mr. Bojangles (song), \\\"Mr. Bojangles\\\" is a song written and originally recorded by American country music artist Jerry Jeff Walker for his 1968 album of the same title.\", \"Mr. Bojangles (song), The song was first recorded by popular Austin performer Allen Wayne Damron during a live performance at the Chequered Flag folk club in Austin in 1967.\", \"Mr. Bojangles (song), It was originally backed with another interview with Uncle Charlie, also taken from the album.\", \"Mr. Bojangles (song), Other versions including those by Frankie Laine and Harry Belafonte were also recorded.\"]}] Question: Who wrote and originally recorded the song 'Mr. Bojangles'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The song was written and originally recorded by Jerry Jeff Walker.; (2) Answer List: [\"Jerry Jeff Walker\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"Piano Man (Billy Joel album)\", \"sample_passages\": [\"Piano Man (Billy Joel album), Piano Man is the second studio album by American recording artist Billy Joel, released on November 9, 1973, by Columbia Records.\", \"Piano Man (Billy Joel album), The radio broadcast included three songs (\\\"Long, Long Time\\\"; \\\"Josephine\\\"; and \\\"Rosalinda\\\") that were never on any of Joel's studio albums.\", \"Piano Man (Billy Joel album), The album emerged from legal difficulties with Joel's former label, Family Productions, and ultimately became his first breakthrough album.\", \"Piano Man (Billy Joel album), 77 and 80 on the Hot 100, respectively, while the album itself peaked at No.\"]}] Question: When was Billy Joel's album 'Piano Man' released?",
+        "output": "So the answer is: (1) Paraphrase Answer: The album was released on November 9, 1973.; (2) Answer List: [\"November 9, 1973\"]"
+      }
+    ],
+    "relate": [
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P123\", \"relation_name\": \"publisher\", \"sample_triples\": [\"Wrangler --publisher--> Sony\", \"European Top 100 Albums --publisher--> Billboard\", \"Rolling Stone 100 Best Songs of the Decade --publisher--> Rolling Stone\", \"Pitchfork --publisher--> Condé Nast\"]}] Question: What is the publisher of the album Wrangler?",
+        "output": "So the answer is: (1) Paraphrase Answer: The publisher of Wrangler is Sony. (2) Answer List: [\"Sony\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P175\", \"relation_name\": \"performer\", \"sample_triples\": [\"Be Still (Kelly Clarkson song) --performer--> Kelly Clarkson\", \"I --performer--> A. R. Rahman\", \"Hometown Glory --performer--> Adele\", \"I Still Haven't Found What I'm Looking For --performer--> U2\"]}] Question: Who performed the song Hometown Glory?",
+        "output": "So the answer is: (1) Paraphrase Answer: The performer of Hometown Glory is Adele. (2) Answer List: [\"Adele\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P136\", \"relation_name\": \"genre\", \"sample_triples\": [\"The Pussycat Dolls --genre--> dance-pop\", \"Christine McVie --genre--> rock music\", \"Foo Fighters --genre--> grunge\", \"Britney Spears --genre--> techno\"]}] Question: What genre is associated with Christine McVie?",
+        "output": "So the answer is: (1) Paraphrase Answer: Christine McVie's genre is rock music. (2) Answer List: [\"rock music\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0466\", \"title\": \"OneRepublic discography\", \"headers\": [\"Title\", \"Year\", \"Peak chart positions\", \"Certifications\", \"Album\"], \"sample_rows\": [[\"\\\" Wherever I Go \\\"\", \"2016\", \"55\", \"32\", \"29\"], [\"\\\" Say (All I Need) \\\"\", \"2008\", \"—\", \"—\", \"—\"], [\"\\\" If I Lose Myself \\\"\", \"2013\", \"—\", \"—\", \"—\"], [\"\\\"Someday\\\"\", \"2021\", \"—\", \"—\", \"—\"]]}] Question: What was the peak chart position of the OneRepublic song 'Wherever I Go'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The peak chart position of 'Wherever I Go' was 55. (2) Answer List: [\"55\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0635\", \"title\": \"Steven Tyler\", \"headers\": [\"Year\", \"Song\", \"Artist\", \"Album\"], \"sample_rows\": [[\"1999\", \"\\\"Roots, Rock, Reggae\\\"\", \"Bob Marley featuring Steven Tyler\", \"Chant Down Babylon\"], [\"2006\", \"\\\"Three Chord Country and American Rock & Roll\\\"\", \"Keith Anderson featuring Steven Tyler\", \"Three Chord Country and American Rock & Roll\"], [\"1986\", \"\\\" Walk This Way \\\"\", \"Run-D.M.C. featuring Steven Tyler and Joe Perry\", \"Raising Hell\"], [\"2014\", \"\\\"Vagabond Soul\\\"\", \"The Bayonets featuring Steven Tyler\", \"Crash Boom Bang!\"]]}] Question: Which album contains the song 'Walk This Way' by Run-D.M.C. featuring Steven Tyler and Joe Perry?",
+        "output": "So the answer is: (1) Paraphrase Answer: The song 'Walk This Way' is from the album Raising Hell. (2) Answer List: [\"Raising Hell\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0326\", \"title\": \"John Prine\", \"headers\": [\"Year\", \"Single\", \"Artist\", \"Peak positions\", \"Album\"], \"sample_rows\": [[\"2020\", \"Memories\", \"Swamp Dogg\", \"–\", \"Sorry You Couldn't Make It\"], [\"1992\", \"Sweet Suzanne\", \"Buzzin' Cousins\", \"68\", \"Falling from Grace soundtrack\"], [\"2020\", \"How Lucky\", \"Kurt Vile\", \"–\", \"Speed, Sound, Lonely KV (ep)\"]]}] Question: What was the peak chart position of the single 'Sweet Suzanne' by Buzzin' Cousins?",
+        "output": "So the answer is: (1) Paraphrase Answer: The peak chart position of 'Sweet Suzanne' was 68. (2) Answer List: [\"68\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"Mr. Bojangles (song)\", \"sample_passages\": [\"Mr. Bojangles (song), \\\"Mr. Bojangles\\\" is a song written and originally recorded by American country music artist Jerry Jeff Walker for his 1968 album of the same title.\", \"Mr. Bojangles (song), The song was first recorded by popular Austin performer Allen Wayne Damron during a live performance at the Chequered Flag folk club in Austin in 1967.\", \"Mr. Bojangles (song), It was originally backed with another interview with Uncle Charlie, also taken from the album.\", \"Mr. Bojangles (song), Other versions including those by Frankie Laine and Harry Belafonte were also recorded.\"]}] Question: Who wrote and originally recorded the song 'Mr. Bojangles'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The song 'Mr. Bojangles' was written and originally recorded by Jerry Jeff Walker. (2) Answer List: [\"Jerry Jeff Walker\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"Piano Man (Billy Joel album)\", \"sample_passages\": [\"Piano Man (Billy Joel album), Piano Man is the second studio album by American recording artist Billy Joel, released on November 9, 1973, by Columbia Records.\", \"Piano Man (Billy Joel album), The radio broadcast included three songs (\\\"Long, Long Time\\\"; \\\"Josephine\\\"; and \\\"Rosalinda\\\") that were never on any of Joel's studio albums.\", \"Piano Man (Billy Joel album), The album emerged from legal difficulties with Joel's former label, Family Productions, and ultimately became his first breakthrough album.\", \"Piano Man (Billy Joel album), 77 and 80 on the Hot 100, respectively, while the album itself peaked at No.\"]}] Question: When was Billy Joel's album 'Piano Man' released?",
+        "output": "So the answer is: (1) Paraphrase Answer: The album 'Piano Man' was released on November 9, 1973. (2) Answer List: [\"November 9, 1973\"]"
+      }
+    ],
+    "filter": [
+      {
+        "input": "Candidates: Wrangler, European Top 100 Albums, Rolling Stone 100 Best Songs of the Decade, Pitchfork. Condition: Which candidate was published by Sony?",
+        "output": "So the answer is: (1) Paraphrase Answer: Wrangler; (2) Answer List: [\"Wrangler\"]"
+      },
+      {
+        "input": "Candidates: Be Still (Kelly Clarkson song), I, Hometown Glory, I Still Haven't Found What I'm Looking For. Condition: Which candidate was performed by Adele?",
+        "output": "So the answer is: (1) Paraphrase Answer: Hometown Glory; (2) Answer List: [\"Hometown Glory\"]"
+      },
+      {
+        "input": "Candidates: The Pussycat Dolls, Christine McVie, Foo Fighters, Britney Spears. Condition: Which candidate has the genre rock music?",
+        "output": "So the answer is: (1) Paraphrase Answer: Christine McVie; (2) Answer List: [\"Christine McVie\"]"
+      },
+      {
+        "input": "Candidates: \"Wherever I Go\", \"Say (All I Need)\", \"If I Lose Myself\", \"Someday\". Condition: Which candidate was released in 2016?",
+        "output": "So the answer is: (1) Paraphrase Answer: \"Wherever I Go\"; (2) Answer List: [\"Wherever I Go\"]"
+      },
+      {
+        "input": "Candidates: \"Roots, Rock, Reggae\", \"Three Chord Country and American Rock & Roll\", \"Walk This Way\", \"Vagabond Soul\". Condition: Which candidate was performed by Run-D.M.C. featuring Steven Tyler and Joe Perry?",
+        "output": "So the answer is: (1) Paraphrase Answer: \"Walk This Way\"; (2) Answer List: [\"Walk This Way\"]"
+      },
+      {
+        "input": "Candidates: Memories, Sweet Suzanne, How Lucky. Condition: Which candidate was released in 1992?",
+        "output": "So the answer is: (1) Paraphrase Answer: Sweet Suzanne; (2) Answer List: [\"Sweet Suzanne\"]"
+      },
+      {
+        "input": "Candidates: Jerry Jeff Walker, Allen Wayne Damron, Frankie Laine, Harry Belafonte. Condition: Which candidate wrote and originally recorded the song \"Mr. Bojangles\"?",
+        "output": "So the answer is: (1) Paraphrase Answer: Jerry Jeff Walker; (2) Answer List: [\"Jerry Jeff Walker\"]"
+      },
+      {
+        "input": "Candidates: 1971, 1972, 1973, 1974. Condition: In which year was the album \"Piano Man\" released?",
+        "output": "So the answer is: (1) Paraphrase Answer: 1973; (2) Answer List: [\"1973\"]"
+      }
+    ],
+    "answer_from_child_qa": [
+      {
+        "input": "Child QA 1: Who performed the song 'Be Still (Kelly Clarkson song)'? Child QA 2: What is the name of the artist who performed 'Be Still (Kelly Clarkson song)'? Final question: Which artist performed the song 'Be Still (Kelly Clarkson song)'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The performer of 'Be Still (Kelly Clarkson song)' is Kelly Clarkson. (2) Answer List: [\"Kelly Clarkson\"]"
+      },
+      {
+        "input": "Child QA 1: Who performed the song 'I Still Haven't Found What I'm Looking For'? Child QA 2: Which band is the performer of 'I Still Haven't Found What I'm Looking For'? Final question: Which band performed the song 'I Still Haven't Found What I'm Looking For'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The performer of 'I Still Haven't Found What I'm Looking For' is U2. (2) Answer List: [\"U2\"]"
+      },
+      {
+        "input": "Child QA 1: What is the peak chart position of the song 'Wherever I Go'? Child QA 2: What is the chart position of 'Wherever I Go'? Final question: What was the peak chart position of the song 'Wherever I Go'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The peak chart position of 'Wherever I Go' is 55. (2) Answer List: [\"55\"]"
+      },
+      {
+        "input": "Child QA 1: Who is the artist of the song 'Walk This Way'? Child QA 2: Which artist performed 'Walk This Way'? Final question: Which artist performed the song 'Walk This Way'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The artist of 'Walk This Way' is Run-D.M.C. featuring Steven Tyler and Joe Perry. (2) Answer List: [\"Run-D.M.C. featuring Steven Tyler and Joe Perry\"]"
+      },
+      {
+        "input": "Child QA 1: Who wrote the song 'Mr. Bojangles'? Child QA 2: Who is the original writer of 'Mr. Bojangles'? Final question: Who wrote the song 'Mr. Bojangles'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The writer of 'Mr. Bojangles' is Jerry Jeff Walker. (2) Answer List: [\"Jerry Jeff Walker\"]"
+      },
+      {
+        "input": "Child QA 1: What is the release date of the album 'Piano Man'? Child QA 2: When was the album 'Piano Man' released? Final question: When was the album 'Piano Man' released?",
+        "output": "So the answer is: (1) Paraphrase Answer: The release date of 'Piano Man' is November 9, 1973. (2) Answer List: [\"November 9, 1973\"]"
+      },
+      {
+        "input": "Child QA 1: Who performed the song 'Be Still (Kelly Clarkson song)'? Child QA 2: What is the peak chart position of the song 'Wherever I Go'? Final question: Which artist performed 'Be Still (Kelly Clarkson song)' and what was the peak chart position of 'Wherever I Go'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The performer of 'Be Still (Kelly Clarkson song)' is Kelly Clarkson, and the peak chart position of 'Wherever I Go' is 55. (2) Answer List: [\"Kelly Clarkson\", \"55\"]"
+      },
+      {
+        "input": "Child QA 1: Who performed the song 'I Still Haven't Found What I'm Looking For'? Child QA 2: Who wrote the song 'Mr. Bojangles'? Final question: Which band performed 'I Still Haven't Found What I'm Looking For' and who wrote 'Mr. Bojangles'?",
+        "output": "So the answer is: (1) Paraphrase Answer: The performer of 'I Still Haven't Found What I'm Looking For' is U2, and the writer of 'Mr. Bojangles' is Jerry Jeff Walker. (2) Answer List: [\"U2\", \"Jerry Jeff Walker\"]"
+      }
+    ]
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_policy": "question_text_excluded_and_exact_gold_source_records_excluded",
+    "live_sources": [
+      "KG",
+      "Table",
+      "Text"
+    ]
+  }
+}

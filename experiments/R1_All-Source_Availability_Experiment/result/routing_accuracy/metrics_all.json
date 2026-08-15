@@ -1,0 +1,71 @@
+{
+  "kg-table": {
+    "graph": {
+      "n": 1147,
+      "r1_primary_acc": 0.911944202266783,
+      "r2_primary_acc": 0.9180470793374019,
+      "joint_primary_acc": 0.8482999128160419,
+      "avg_primary_acc": 0.9149956408020925
+    },
+    "atomr": {
+      "n": 1147,
+      "r1_primary_acc": 0.8605056669572798,
+      "r2_primary_acc": 0.7628596338273758,
+      "joint_primary_acc": 0.6390584132519617,
+      "avg_primary_acc": 0.8116826503923278
+    },
+    "deepsieve": {
+      "n": 1147,
+      "r1_primary_acc": 0.8526591107236269,
+      "r2_primary_acc": 0.7707061900610288,
+      "joint_primary_acc": 0.6669572798605057,
+      "avg_primary_acc": 0.8116826503923278
+    }
+  },
+  "kg-doc": {
+    "graph": {
+      "n": 1154,
+      "r1_primary_acc": 0.720103986135182,
+      "r2_primary_acc": 0.7625649913344887,
+      "joint_primary_acc": 0.5077989601386482,
+      "avg_primary_acc": 0.7413344887348354
+    },
+    "atomr": {
+      "n": 1154,
+      "r1_primary_acc": 0.5554592720970537,
+      "r2_primary_acc": 0.744367417677643,
+      "joint_primary_acc": 0.3214904679376083,
+      "avg_primary_acc": 0.6499133448873484
+    },
+    "deepsieve": {
+      "n": 1154,
+      "r1_primary_acc": 0.5337954939341422,
+      "r2_primary_acc": 0.6221837088388215,
+      "joint_primary_acc": 0.21143847487001732,
+      "avg_primary_acc": 0.5779896013864818
+    }
+  },
+  "table-doc": {
+    "graph": {
+      "n": 1120,
+      "r1_primary_acc": 0.41696428571428573,
+      "r2_primary_acc": 0.74375,
+      "joint_primary_acc": 0.24196428571428572,
+      "avg_primary_acc": 0.5803571428571429
+    },
+    "atomr": {
+      "n": 1120,
+      "r1_primary_acc": 0.21517857142857144,
+      "r2_primary_acc": 0.6857142857142857,
+      "joint_primary_acc": 0.10089285714285715,
+      "avg_primary_acc": 0.4504464285714286
+    },
+    "deepsieve": {
+      "n": 1120,
+      "r1_primary_acc": 0.26607142857142857,
+      "r2_primary_acc": 0.5535714285714286,
+      "joint_primary_acc": 0.11071428571428571,
+      "avg_primary_acc": 0.40982142857142856
+    }
+  }
+}

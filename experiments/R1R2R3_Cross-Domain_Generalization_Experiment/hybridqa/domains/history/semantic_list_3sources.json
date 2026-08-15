@@ -1,0 +1,1398 @@
+{
+  "archaeological_site": {
+    "concept": "archaeological_site",
+    "semantic_type": "entity",
+    "overall_description": "An archaeological site is a location containing physical remains of past human activity, often with cultural or historical significance, and potentially subject to official designation. This concept encompasses sites from various periods and regions, including those with water-powered mills from classical antiquity and Jōmon period settlements.",
+    "routing_guide": "Choose Table when the query requires structured comparisons, filtering by country or date, or aggregating counts of sites. Choose Doc when the query seeks detailed narrative information about a specific site, its designation, or historical context. Use both when a comprehensive answer needs both structured attributes and narrative details.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "site_name"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "The Table source provides a structured list of ancient watermill sites, with fields for site name, country, date, and identification/remains. It offers tabular data suitable for filtering, sorting, and comparing across sites.",
+        "elements": [
+          "site_name",
+          "country",
+          "date",
+          "remains_description",
+          "Site",
+          "Identification/Remains"
+        ],
+        "data_examples": [
+          "page_title: List of ancient watermills, section_title: Archaeological finds -- Watermill sites, header: [Site, Country, Date, Identification/Remains], sample_row: [Mouzaïa des Mines , near, Algeria, Unspecified, Unspecified remains]"
+        ]
+      },
+      "Doc": {
+        "description": "The Doc source contains narrative descriptions of archaeological sites, including details such as period, location, designation status, and designation date. It provides rich textual context for individual sites, useful for retrieval and verification.",
+        "elements": [
+          "site_name",
+          "period",
+          "location",
+          "designation_status",
+          "designation_date",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Mimitori_Site\", \"title\": \"Mimitori Site\", \"text\": \"The Mimitori ruins ( 耳取遺跡 , Mimitori iseki ) is an archaeological site containing the ruins of a Jōmon period settlement located in what is now part of the city of Mitsuke , Niigata in the Hokuriku region of Japan . The site was designated a National Historic Site of Japan in 2015 .\"}"
+        ]
+      }
+    }
+  },
+  "architectural_style": {
+    "concept": "architectural_style",
+    "semantic_type": "entity",
+    "overall_description": "A distinct architectural style characterized by specific design principles, historical origins, and influential figures.",
+    "routing_guide": "Use Doc when the query asks for descriptive information about an architectural style, such as its historical context, influences, or defining characteristics. Use Table if a structured dataset is available for filtering or comparison; otherwise, rely on Doc.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "style_name"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "This source provides detailed descriptions of architectural styles, including their origins, influences, key architects, and defining features. It contains fields such as style_name, origin_period, origin_location, influences, key_architects, defining_features, title, text, and linked_table_id.",
+        "elements": [
+          "style_name",
+          "origin_period",
+          "origin_location",
+          "influences",
+          "key_architects",
+          "defining_features",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Classical_Revival_architecture\", \"title\": \"Classical Revival architecture\", \"text\": \"Neoclassical architecture is an architectural style produced by the neoclassical movement that began in the mid-18th century in Italy and France . In its purest form , it is a style principally derived from the architecture of classical antiquity , the Vitruvian principles , and the work of the Italian architect Andrea Palladio . The development of archaeology was crucial in the emergence of Neoclassical architecture . Excavation sites like those in Pompeii and Herculaneum allowed architects to \"}"
+        ]
+      }
+    }
+  },
+  "artifact_or_document": {
+    "concept": "artifact_or_document",
+    "semantic_type": "entity",
+    "overall_description": "A physical or digital artifact that serves as a historical document, such as a broadside or an autobiographical book, with details about its creation, publication, and provenance.",
+    "routing_guide": "Choose Table when the user needs specific factual data about known copies or editions, such as locations, owners, or publication details. Choose Doc when the user seeks narrative or contextual information about the document's history or content. Use both when combining structured facts with historical context.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "retrieve",
+        "aggregate"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "title",
+        "president"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on historical documents: for broadsides, includes copy number, location, owner, and notes; for presidential autobiographies, includes title, president, publisher, publication date, ISBN, and whether the book covers the presidency.",
+        "elements": [
+          "copy_number",
+          "location",
+          "owner",
+          "notes",
+          "title",
+          "president",
+          "publisher",
+          "publication_date",
+          "isbn",
+          "presidency_coverage",
+          "Spanish term",
+          "Original language",
+          "Original meaning",
+          "Modern English term",
+          "Date"
+        ],
+        "data_examples": [
+          "page_title: Physical history of the United States Declaration of Independence, section_title: Broadsides -- Dunlap broadside, header: [#, Location, Owner, Notes], sample_row: [1, New Haven , Connecticut, Beinecke Library , Yale University, ]",
+          "page_title: List of autobiographies by presidents of the United States, section_title: Autobiographies not covering the period of their presidency, header: [Title, President, Publisher, Date, ISBN], sample_row: [The Autobiography of Thomas Jefferson, Thomas Jefferson, , 1821, ]"
+        ]
+      }
+    }
+  },
+  "battle": {
+    "concept": "battle",
+    "semantic_type": "event",
+    "overall_description": "A battle is a military engagement between opposing forces, typically involving organized armed conflict, with a defined date, location, participants, and outcome.",
+    "routing_guide": "Choose Table when the query requires specific battle attributes such as date, location, participants, or result, or when comparing multiple battles. Choose Doc if the query involves narrative descriptions or context not captured in structured fields. Use both when combining structured facts with narrative details.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "battle_name",
+        "date",
+        "location",
+        "combatant_1",
+        "combatant_2",
+        "result"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on battles, including battle name, date, location, allies, enemies, and result, as well as broader military confrontations with combatants and outcomes.",
+        "elements": [
+          "battle_name",
+          "date",
+          "location",
+          "allies",
+          "enemies",
+          "result",
+          "confrontation_name",
+          "combatant_1",
+          "combatant_2",
+          "results",
+          "start_year",
+          "end_year",
+          "Battle",
+          "Year",
+          "Borough",
+          "County",
+          "Confrontation",
+          "Combatant 1",
+          "Combatant 2"
+        ],
+        "data_examples": [
+          "page_title: List of battles involving the Kingdom of Scotland, section_title: Early battles ( 875–1275 ), header: [Battle, Date, Location, Allies, Enemies, Result], sample_row: [Battle of Dollar, 875, Stirlingshire , Scotland, None, Denmark, Defeat]",
+          "page_title: List of wars involving Chile, section_title: List of military confrontations -- XIX century, header: [Confrontation, Combatant 1, Combatant 2, Results], sample_row: [Spanish American wars of independence ( 1810-1833 ), Independentists : Chile Gran Colombia United Provinces of the Río de la Plata Mexico Peru Bolivia Paraguay Banda Oriental Native Americans pro-independent, Royalist : Spanish Monarchy Spain Spanish America Native Americans pro-realistic Portuguese Empire, Independentist victory End of all Spanish domains in Americas , with the exception of Cuba and Puerto Rico . Formation of the new Hispanic American states . The Banda Oriental , although it defeated the royalists , ended up being conquered by the Portuguese Empire in 1820 . Subsequently , Spain recognizes each of the new Hispanic American states through the signing of international treaties]"
+        ]
+      }
+    }
+  },
+  "census_designated_place": {
+    "concept": "census_designated_place",
+    "semantic_type": "entity",
+    "overall_description": "A populated place recognized by the U.S. Census Bureau for statistical purposes, often unincorporated, with defined boundaries and population counts.",
+    "routing_guide": "Choose Doc when the query involves natural language descriptions, historical population counts, or context about a specific CDP. Choose Table when structured data (e.g., population by year, county) is needed for aggregation or comparison. Use both when combining descriptive context with structured facts.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "compare"
+      ],
+      "join_keys": [
+        "name",
+        "county",
+        "state",
+        "country",
+        "census_year"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides descriptive text about a census-designated place, including its name, county, state, country, population figures for specific census years, and a link to a related table. The text field contains the full description, and the linked_table_id points to a table with structured data.",
+        "elements": [
+          "name",
+          "county",
+          "state",
+          "country",
+          "population",
+          "census_year",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/San_Miguel,_San_Luis_Obispo_County,_California\", \"title\": \"San Miguel, San Luis Obispo County, California\", \"text\": \"San Miguel is a census-designated place ( CDP ) in San Luis Obispo County , California , United States . As of the 2010 census , the population was 2,336 , up from 1,427 at the 2000 census .\"}"
+        ]
+      }
+    }
+  },
+  "city": {
+    "concept": "city",
+    "semantic_type": "entity",
+    "overall_description": "A populated place that is an administrative division or municipality, often with a name, location, and population.",
+    "routing_guide": "Choose Doc when the query involves city attributes mentioned in the text, such as population, area, location, or administrative details. Use Table if a structured table is available for cities; otherwise, rely on Doc.",
+    "operator_plan_hints": {
+      "Table": [
+        "retrieve",
+        "filter",
+        "sort",
+        "aggregate",
+        "join"
+      ],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "compare",
+        "aggregate",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "state",
+        "county",
+        "country"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides textual descriptions of cities, including attributes such as name, state, county, population, census year, river, metropolitan area, prefecture, country, households, population density, area, established year, location, and administrative class. Data examples show structured text with these fields.",
+        "elements": [
+          "name",
+          "state",
+          "county",
+          "population",
+          "census_year",
+          "river",
+          "metropolitan_area",
+          "prefecture",
+          "country",
+          "households",
+          "population_density",
+          "area",
+          "established_year",
+          "location",
+          "administrative_class",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Nikaho,_Akita\", \"title\": \"Nikaho, Akita\", \"text\": \"Nikaho ( にかほ市 , Nikaho-shi ) is a city located in Akita Prefecture , Japan . As of 31 December 2019 [ update ] , the city had an estimated population of 24,291 in 9,371 households , and a population density of 100 persons per km² . The total area of the city is 241.13 square kilometres ( 93.10 sq mi ) .\"}",
+          "{\"doc_id\": \"/wiki/Essexville,_Michigan\", \"title\": \"Essexville, Michigan\", \"text\": \"Essexville is a city in Bay County in the U.S. state of Michigan . The population at 3,478 at the 2010 census . Located along the Saginaw River , Essexville is part of the Saginaw , Midland , and Bay City metropolitan area .\"}",
+          "{\"doc_id\": \"/wiki/Coalmont,_Tennessee\", \"title\": \"Coalmont, Tennessee\", \"text\": \"Coalmont is a city in Grundy County , Tennessee , United States . Established in 1904 , the city has an area of 6 square smiles . The population was 841 at the 2010 census .\"}"
+        ]
+      }
+    }
+  },
+  "civil_township": {
+    "concept": "civil_township",
+    "semantic_type": "entity",
+    "overall_description": "A civil township is a type of administrative subdivision used in some U.S. states, typically a unit of local government with defined boundaries and population.",
+    "routing_guide": "Choose Doc when the query asks for details about a specific civil township, such as its population or location. Choose Table if a structured table of townships is available and the query requires aggregation or comparison across multiple townships. Use both when the query needs both narrative context and structured data.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "state",
+        "county"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "This source provides descriptions of individual civil townships, including their name, state, county, population, and census year, as well as the title and text of the document and a linked table ID.",
+        "elements": [
+          "name",
+          "state",
+          "county",
+          "population",
+          "census_year",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Newberg_Township,_Michigan\", \"title\": \"Newberg Township, Michigan\", \"text\": \"Newberg Township is a civil township of Cass County in the U.S. state of Michigan . The population was 1,632 at the 2010 census .\"}"
+        ]
+      }
+    }
+  },
+  "county": {
+    "concept": "county",
+    "semantic_type": "entity",
+    "overall_description": "A county is a geographic and administrative subdivision of a state or country, characterized by attributes such as population, county seat, naming origin, and statistical area designations.",
+    "routing_guide": "For queries about specific counties, their attributes, or comparisons across counties, use the Doc source. When the query requires aggregated statistics or cross-county analysis, consider using both Table and Doc if a Table source is available; otherwise, rely on Doc for detailed evidence.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "state"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Documents provide detailed textual descriptions of individual counties, including population, county seat, founding date, namesake, and inclusion in metropolitan or micropolitan statistical areas. Each document corresponds to a specific county and includes structured elements such as name, state, population, county_seat, named_after, metropolitan_statistical_area, founding_date, namesake, and micropolitan_statistical_area.",
+        "elements": [
+          "name",
+          "state",
+          "population",
+          "county_seat",
+          "named_after",
+          "metropolitan_statistical_area",
+          "founding_date",
+          "namesake",
+          "micropolitan_statistical_area",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Lawrence_County,_Alabama\", \"title\": \"Lawrence County, Alabama\", \"text\": \"Lawrence County is a county in the northern part of the U.S. state of Alabama . As of the 2010 census , the population was 34,339 . This county has the highest number of residents who identify as Native American of any county in the state . [ citation needed ] The county seat is Moulton . The county was named after James Lawrence , a captain in the United States Navy from New Jersey . Lawrence County is included in the Decatur , AL Metropolitan Statistical Area , which is also included in the Hu\"}",
+          "{\"doc_id\": \"/wiki/Randolph_County,_West_Virginia\", \"title\": \"Randolph County, West Virginia\", \"text\": \"Randolph County is a county located in the U.S. state of West Virginia . As of the 2010 census , the population was 29,405 . Its county seat is Elkins . The county was founded in 1787 and is named for Edmund Jennings Randolph . Randolph County comprises the Elkins , West Virginia , Micropolitan Statistical Area .\"}"
+        ]
+      }
+    }
+  },
+  "election": {
+    "concept": "election",
+    "semantic_type": "event",
+    "overall_description": "An election event in a specific jurisdiction and year, including the candidates, their party affiliations, and the outcome for each constituency or office.",
+    "routing_guide": "Choose Table when the query asks for structured election results, candidate details, or constituency-level outcomes. Choose Doc when the query involves special elections, vacancy details, or narrative context. Use both when combining structured results with contextual information.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "jurisdiction",
+        "election_year",
+        "election_date"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on election results, including candidates, parties, constituencies, and outcomes, as well as details on electors and papal elections.",
+        "elements": [
+          "constituency",
+          "winner",
+          "winner_party",
+          "runner_up",
+          "runner_up_party",
+          "election_year",
+          "jurisdiction",
+          "elector",
+          "cardinalatial_title",
+          "elevation_date",
+          "elevator",
+          "notes",
+          "election_date",
+          "pope_elected",
+          "region",
+          "party",
+          "endorsing_parties",
+          "Runner-up",
+          "Margin",
+          "Cardinalatial title"
+        ],
+        "data_examples": [
+          "page_title: 1957 Indian general election in Madras, section_title: List of Elected MPs, header: [Constituency, Winner, Party, Runner-up, Party], sample_row: [Madras North, S. C. C. Anthony Pillai, IND, T. Chengalvarayan, INC]",
+          "page_title: 1198 papal election, section_title: Absentees, header: [Elector, Cardinalatial title, Elevated, Elevator, Notes], sample_row: [Konrad von Wittelsbach, Bishop of Sabina and Archbishop of Mainz, 18 December 1165, Alexander III, Dean of the Sacred College of Cardinals ; papal legate in the Holy Land ; external cardinal]",
+          "page_title: 2009 Slovak regional elections, section_title: Results -- Presidencies, header: [Region, Winner, Party, Endorsing parties], sample_row: [Bratislava, Pavol Frešo, SDKÚ-DS, KDH , SMK , OKS , SaS]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides narrative descriptions of special elections, including dates, jurisdictions, districts, vacancy reasons, and incumbents.",
+        "elements": [
+          "election_date",
+          "jurisdiction",
+          "district",
+          "vacancy_reason",
+          "incumbent",
+          "appointment_date",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/1793_Maryland's_2nd_congressional_district_special_election\", \"title\": \"1793 Maryland's 2nd congressional district special election\", \"text\": \"A special election was held in Maryland 's 2nd congressional district on January 7 , 1793 to fill a vacancy left by the resignation of Joshua Seney ( A ) on December 6 , 1792 to accept a judicial appointment .\"}"
+        ]
+      }
+    }
+  },
+  "election_candidate": {
+    "concept": "election_candidate",
+    "semantic_type": "entity",
+    "overall_description": "An individual who is nominated to run for a political office in an election, including their name, gender, and the electoral district they contest.",
+    "routing_guide": "Choose Table when the query requires structured attributes of candidates (e.g., name, gender, district, party) or when filtering, sorting, or aggregating by these fields. Choose Doc if the query involves unstructured text or requires contextual information not captured in the table. Use both when combining structured candidate data with narrative or explanatory content.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "candidate_name",
+        "electoral_district",
+        "political_party"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on election candidates, including fields such as candidate name, gender, electoral district, political party, election date, and additional attributes like occupation and residence. Examples include rows from a table of Liberal Party of Canada candidates in the 2011 federal election.",
+        "elements": [
+          "candidate_name",
+          "gender",
+          "electoral_district",
+          "political_party",
+          "election_date",
+          "Riding",
+          "Candidate 's Name",
+          "Member",
+          "Electoral district",
+          "Party",
+          "Candidate",
+          "Notes",
+          "Occupation",
+          "Residence"
+        ],
+        "data_examples": [
+          "page_title: Liberal Party of Canada candidates in the 2011 Canadian federal election, section_title: British Columbia - 36 seats, header: [Riding, Candidate 's Name, Gender], sample_row: [Abbotsford, Madeleine Hardin, F]"
+        ]
+      }
+    }
+  },
+  "electoral_district": {
+    "concept": "electoral_district",
+    "semantic_type": "entity",
+    "overall_description": "A geographic area defined for the purpose of electing representatives to a legislative body, such as a national or state parliament.",
+    "routing_guide": "Use Doc when detailed historical or descriptive information about electoral districts is needed, such as their establishment, abolition, or specific characteristics. Table may be used if structured data is available, but currently no Table source is provided.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "jurisdiction",
+        "country",
+        "legislative_body",
+        "start_date",
+        "end_date"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Documents provide detailed descriptions of electoral districts, including their names, jurisdictions, countries, legislative bodies, representation start years, start/end dates, constituency names, parliaments, representatives, parties, since years, states, district names, centers or communities, abolition reasons, and abolition years. Examples include Mackenzie (provincial electoral district), Dharmapuri (Lok Sabha constituency), and Clutha (New Zealand electorate).",
+        "elements": [
+          "name",
+          "jurisdiction",
+          "country",
+          "legislative_body",
+          "representation_start_year",
+          "start_date",
+          "end_date",
+          "constituency_name",
+          "parliament",
+          "representative",
+          "party",
+          "since_year",
+          "state",
+          "district_name",
+          "center_or_community",
+          "abolition_reason",
+          "abolition_year",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Mackenzie_(provincial_electoral_district)\", \"title\": \"Mackenzie (provincial electoral district)\", \"text\": \"Mackenzie was a provincial electoral district in the Canadian province of British Columbia , centred on the community of Mackenzie . It elected one member to the Legislative Assembly of British Columbia . The district was abolished as the result of a redistribution under the Electoral Districts Act , 1990 .\"}",
+          "{\"doc_id\": \"/wiki/Dharmapuri_(Lok_Sabha_constituency)\", \"title\": \"Dharmapuri (Lok Sabha constituency)\", \"text\": \"Dharmapuri is a Lok Sabha constituency in Tamil Nadu .\"}",
+          "{\"doc_id\": \"/wiki/Clutha_(New_Zealand_electorate)\", \"title\": \"Clutha (New Zealand electorate)\", \"text\": \"Clutha was a New Zealand parliamentary electorate from 1866 to 1996 .\"}"
+        ]
+      }
+    }
+  },
+  "historic_site": {
+    "concept": "historic_site",
+    "semantic_type": "entity",
+    "overall_description": "A historic site is a property, district, building, or structure officially recognized for its historical significance, often listed on a national or local register, with details such as name, location, listing date, and sometimes description or type.",
+    "routing_guide": "Choose Table when the user needs a list of historic sites with structured attributes (e.g., all sites in a county, sites listed in a year, or sites of a certain type). Choose Doc when the user needs detailed information about a specific historic site, such as its history, architecture, or significance. Use both when the user needs a list of sites and then detailed information about one or more of them.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify",
+        "compare"
+      ],
+      "join_keys": [
+        "name",
+        "location",
+        "listing_date",
+        "county",
+        "municipality"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured listings of historic sites, including fields such as name, date listed, location, city/town, municipality, county, type, and sometimes description. Examples include National Register of Historic Places listings and state historic site lists.",
+        "elements": [
+          "name",
+          "date_listed",
+          "location",
+          "city_or_town",
+          "site_name",
+          "municipality",
+          "reference",
+          "built_year",
+          "listing_date",
+          "county",
+          "bridge_type",
+          "description",
+          "city",
+          "national_register_status",
+          "national_landmark_status",
+          "chinese_name",
+          "designation",
+          "date",
+          "designation_date",
+          "name_on_register"
+        ],
+        "data_examples": [
+          "page_title: National Register of Historic Places listings in Anderson County, Kentucky, section_title: Current listings, header: [, Name on the Register, Date listed, Location, City or town], sample_row: [1, Confederate Monument in Lawrenceburg, July 17 , 1997 ( # 97000716 ), Courthouse Lawn , 0.5 miles south of U.S. Route 127 and Kentucky Route 44 38°02′06″N 84°53′44″W / 38.035°N 84.895556°W / 38.035 ; -84.895556 ( Confederate Monument in Lawrenceburg ), Lawrenceburg]",
+          "page_title: National Register of Historic Places listings in Douglas County, Minnesota, section_title: Current listings, header: [, Name on the Register, Date listed, Location, City or town, Description], sample_row: [1, Alexandria Public Library, August 23 , 1985 ( # 85001817 ), 7th Ave. , W. and Fillmore St. 45°53′06″N 95°22′44″W / 45.885061°N 95.378811°W / 45.885061 ; -95.378811 ( Alexandria Public Library ), Alexandria, One of west-central Minnesota 's largest Carnegie libraries , built in 1903 for a public institution established in the 1880s . Also noted for its Beaux-Arts architecture by Henry A. Foeller]",
+          "page_title: List of Historic Sites of Japan (Saga), section_title: National Historic Sites, header: [Site, Municipality, Comments, Type, Ref], sample_row: [* Yoshinogari Site 吉野ヶ里遺跡 Yoshinogari iseki, Kanzaki , Yoshinogari, fortified Yayoi-period settlement , the subject of extensive excavation from 1986 ; 2500 burials with ICP grave goods have been uncovered ; the site has been reconstructed on the basis of hypotheses drawn from the postholes ; now a National Government Park, 1, [ 1 ]]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides narrative descriptions of individual historic sites, including details like alternative names, construction date, architectural style, historical significance, and listing status. Examples include Wikipedia articles on specific historic districts, buildings, and bridges.",
+        "elements": [
+          "name",
+          "alternative_names",
+          "location",
+          "historic_status",
+          "description",
+          "county",
+          "construction_date",
+          "architectural_type",
+          "features",
+          "affiliation",
+          "closure_date",
+          "listing_date",
+          "bridge_name",
+          "alternative_name",
+          "state",
+          "length",
+          "structural_type",
+          "crossing",
+          "district_name",
+          "contributing_properties_count"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Chester_Historic_District\", \"title\": \"Chester Historic District\", \"text\": \"Chester Historic District in Chester , South Carolina is a historic district that was listed on the National Register of Historic Places in 1972 . The district contains 324 contributing properties .\"}",
+          "{\"doc_id\": \"/wiki/Thomas_H._Hanks_House\", \"title\": \"Thomas H. Hanks House\", \"text\": \"The Thomas H. Hanks House , which was located at 516 E. Woodford St. in Lawrenceburg , Kentucky , was a Greek Revival-style house built in 1858 . It was listed on the National Register of Historic Places in 1980 . It was a two-story three-bay structure .\"}",
+          "{\"doc_id\": \"/wiki/City_Hospital_(Roosevelt_Island,_New_York)\", \"title\": \"City Hospital (Roosevelt Island, New York)\", \"text\": \"City Hospital ( also known as Island Hospital or Charity Hospital ) was a historic hospital on Roosevelt Island , Manhattan in New York City .\"}"
+        ]
+      }
+    }
+  },
+  "historical_person": {
+    "concept": "historical_person",
+    "semantic_type": "entity",
+    "overall_description": "An individual from ancient Egypt, including royalty, officials, and other notable figures, with associated titles, dynasties, dates, and biographical comments.",
+    "routing_guide": "Use Table when the query involves structured attributes such as name, title, dynasty, or date, and when filtering, sorting, or aggregating by these fields is needed. Use Doc when the query requires full biographical context or narrative details not captured in the table fields. For comprehensive answers, use both sources.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides a structured list of ancient Egyptians with fields for name, main title, dynasty, date, and comment, covering individuals from the first dynasty to the end of the Ptolemaic period.",
+        "elements": [
+          "name",
+          "main_title",
+          "dynasty",
+          "date",
+          "comment",
+          "Main Title"
+        ],
+        "data_examples": [
+          "page_title: List of ancient Egyptians, section_title: T, header: [Name, Main Title, Dynasty, Date, Comment], sample_row: [Tabekenamun, Queen, 25th dynasty, fl . c. late-8th century BC, Tabekenamun was a daughter of King Piye and may have been a queen consort to her brother Taharqa or to Shabaka]"
+        ]
+      }
+    }
+  },
+  "indigenous_people": {
+    "concept": "indigenous_people",
+    "semantic_type": "entity",
+    "overall_description": "An indigenous people or ethnic group with a distinct cultural identity, language, and historical territory, often recognized as a First Nation, Native American tribe, or similar group.",
+    "routing_guide": "Use Doc when the query requires in-depth information about a specific indigenous people, such as their history, culture, or affiliations. For broad comparisons or aggregations across multiple groups, consider using Table if available; otherwise, Doc can be used with extraction.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "name"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides detailed articles about specific indigenous peoples, including their name, population, language family, geographic location, and affiliated groups. It offers rich textual descriptions and structured data elements for each group.",
+        "elements": [
+          "name",
+          "population",
+          "language_family",
+          "geographic_location",
+          "affiliated_groups",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Ojibwe_people\", \"title\": \"Ojibwe people\", \"text\": \"The Ojibwe , Ojibwa , Chippewa , or Saulteaux are an Anishinaabe people of Canada and the northern Midwestern United States . They are one of the most numerous indigenous peoples north of the Rio Grande . In Canada , they are the second-largest First Nations population , surpassed only by the Cree . In the United States , they have the fifth-largest population among Native American peoples , surpassed in number only by the Navajo , Cherokee , Choctaw and Sioux . The Ojibwe people traditionally s\"}"
+        ]
+      }
+    }
+  },
+  "military_honor_recipient": {
+    "concept": "military_honor_recipient",
+    "semantic_type": "entity",
+    "overall_description": "An individual who has been awarded a military decoration for valor or distinguished service, including their name, service branch, rank, place and date of action, and citation notes.",
+    "routing_guide": "Choose Table when the user needs a list of recipients with structured attributes (e.g., filtering by service branch or rank, sorting by date). Choose Doc when the user needs detailed biographical information or narrative context about a specific recipient. Use both when the user requires comprehensive information, such as combining structured data with biographical details.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured lists of military honor recipients, with fields such as name, service branch, rank, place of action, date of action, and notes. Examples include Medal of Honor recipients for World War II and Union generals lists.",
+        "elements": [
+          "name",
+          "substantive_rank",
+          "rank_date",
+          "notes",
+          "service_branch",
+          "rank",
+          "place_of_action",
+          "date_of_action",
+          "citation_notes",
+          "Service",
+          "Place of action",
+          "Date of action",
+          "Substantive Rank",
+          "Brevet Rank"
+        ],
+        "data_examples": [
+          "page_title: List of Medal of Honor recipients for World War II, section_title: G, header: [Name, Service, Rank, Place of action, Date of action, Notes], sample_row: [Robert E. Galer, Marine Corps, Major, Solomon Islands area, Aug 1942 - Sep 1942, For service in the Solomon Islands as the leader of a Marine fighter squadron]",
+          "page_title: List of American Civil War generals (Union), section_title: Union generals -- L, header: [Name, Substantive Rank, Notes], sample_row: [Lander , Frederick West, Brigadier general , USV ( May 17 , 1861 ), Died of illness , March 2 , 1862]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides biographical articles about individual recipients, including birth/death dates, military branch, rank, award, conflict, and a narrative text. Useful for detailed information and cross-referencing with table data.",
+        "elements": [
+          "name",
+          "birth_date",
+          "death_date",
+          "military_branch",
+          "rank",
+          "award",
+          "conflict",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/William_J._Grabiarz\", \"title\": \"William J. Grabiarz\", \"text\": \"William J. Grabiarz ( March 25 , 1925 - February 23 , 1945 ) was a United States Army soldier and a recipient of the United States military 's highest decoration - the Medal of Honor - for his actions in World War II .\"}"
+        ]
+      }
+    }
+  },
+  "military_rank": {
+    "concept": "military_rank",
+    "semantic_type": "entity",
+    "overall_description": "A grade or level of command in a military organization, with associated insignia, pay grade, and promotion policies.",
+    "routing_guide": "Choose Doc when the query asks for detailed information about a specific military rank, such as its position in the hierarchy, insignia, pay grade, or promotion rules. If the query requires comparing multiple ranks or aggregating data across ranks, consider using Doc as the primary source, and potentially combine with Table if a structured table is available.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "rank_name",
+        "service_branch"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides detailed descriptions of specific military ranks, including rank name, service branch, rank above/below, equivalent naval rank, pay grade, insignia, and promotion policy, as exemplified by the article on Major (United States).",
+        "elements": [
+          "rank_name",
+          "service_branch",
+          "rank_above",
+          "rank_below",
+          "equivalent_naval_rank",
+          "pay_grade",
+          "insignia",
+          "promotion_policy",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Major_(United_States)\", \"title\": \"Major (United States)\", \"text\": \"In the United States Army , Marine Corps , and Air Force , major is a field grade military officer rank above the rank of captain and below the rank of lieutenant colonel . It is equivalent to the naval rank of lieutenant commander in the other uniformed services . Although lieutenant commanders are considered junior officers by their respective services ( Navy and Coast Guard ) , the rank of major is that of a senior officer in the United States Army , the United States Marine Corps , and the U\"}"
+        ]
+      }
+    }
+  },
+  "military_service_record": {
+    "concept": "military_service_record",
+    "semantic_type": "entity",
+    "overall_description": "A record of a prime minister's military service, including branch, rank, and active service details.",
+    "routing_guide": "Choose Table when the query asks for structured military service details of prime ministers, such as branch, rank, or active service. Use Doc if additional narrative context is needed.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "prime_minister"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides a list of Canadian prime ministers with their military service details, including service branch, rank, and active service notes.",
+        "elements": [
+          "prime_minister",
+          "service_branch",
+          "rank",
+          "active_service",
+          "Prime Minister",
+          "Service",
+          "Active Service"
+        ],
+        "data_examples": [
+          "page_title: List of prime ministers of Canada by military service, section_title: , header: [Prime Minister, Service, Rank, Active Service], sample_row: [Sir John A. Macdonald, Sedentary Militia, Private, Kingston during Upper Canada Rebellion 1837 ; Minister of Militia and Defence 1860-1867]"
+        ]
+      }
+    }
+  },
+  "military_unit": {
+    "concept": "military_unit",
+    "semantic_type": "entity",
+    "overall_description": "A military unit, such as a regiment, brigade, or division, that served in a specific conflict, with details on its formation, engagements, and organizational changes.",
+    "routing_guide": "Choose Doc when the query requires detailed narrative information about a specific military unit, such as its history, battles, or organizational changes. Choose Table if a structured table exists with fields like unit name, type, dates, and locations. Use both when the query needs both structured metadata and narrative context, or when the table lacks specific details that documents can provide.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "join_keys": [
+        "unit_name",
+        "unit_type",
+        "parent_division",
+        "headquarters_location",
+        "activation_date",
+        "deactivation_date",
+        "conflict",
+        "branch",
+        "active_years",
+        "battles",
+        "organizational_changes"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Documents provide narrative descriptions of military units, including unit name, type, parent division, headquarters location, activation/deactivation dates, conflict, branch, active years, battles, organizational changes, and textual details. Each document corresponds to a specific unit and includes a title and text, with a linked table ID for potential joins.",
+        "elements": [
+          "unit_name",
+          "unit_type",
+          "parent_division",
+          "headquarters_location",
+          "activation_date",
+          "deactivation_date",
+          "conflict",
+          "branch",
+          "active_years",
+          "battles",
+          "organizational_changes",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/19th_(Dawsons's)_Arkansas_Infantry\", \"title\": \"19th (Dawsons's) Arkansas Infantry\", \"text\": \"The 19th ( Dawson 's ) Arkansas Infantry ( 1861-1865 ) was a Confederate Army infantry regiment during the American Civil War . The regiment was present for but not engaged during the Battle of Pea Ridge . At the Battle of Arkansas Post , the regiment became split , with part of the regiment surrendering with the garrison when the post capitulated . The captured portion of the regiment was eventually exchanged and released on the east side of the Mississippi and served the remainder of the war w\"}",
+          "{\"doc_id\": \"/wiki/24th_Marine_Regiment_(United_States)\", \"title\": \"24th Marine Regiment (United States)\", \"text\": \"The 24th Marine Regiment ( 24th Marines ) was one of three infantry regiments in the 4th Marine Division of the United States Marine Corps . Its last headquarters before being deactivated on 9 September 2013 was in Kansas City , Missouri .\"}"
+        ]
+      }
+    }
+  },
+  "parish": {
+    "concept": "parish",
+    "semantic_type": "entity",
+    "overall_description": "A parish is a geographic and administrative subdivision of a state, typically in Louisiana, characterized by a name, population, seat, formation date, and metropolitan area membership.",
+    "routing_guide": "Choose Doc when the query involves detailed parish attributes such as population, seat, formation date, or metropolitan area membership. If a table is available, it may be used for structured comparisons or aggregations, but currently only Doc is present.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "population",
+        "seat",
+        "formation_date",
+        "metropolitan_area"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides raw descriptions of parishes, including fields such as name, population, seat, formation_date, metropolitan_area, title, text, and linked_table_id. It contains 28 items with examples like Iberville Parish, Louisiana.",
+        "elements": [
+          "name",
+          "population",
+          "seat",
+          "formation_date",
+          "metropolitan_area",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Iberville_Parish,_Louisiana\", \"title\": \"Iberville Parish, Louisiana\", \"text\": \"Iberville Parish ( French : Paroisse d'Iberville ) is a parish located south of Baton Rouge in the U.S. state of Louisiana . As of the 2010 census , the population was 33,387 . Its seat is Plaquemine . The parish was formed in 1807 . Iberville Parish is part of the Baton Rouge , LA Metropolitan Statistical Area .\"}"
+        ]
+      }
+    }
+  },
+  "parliament_member_term": {
+    "concept": "parliament_member_term",
+    "semantic_type": "entity",
+    "overall_description": "An entity representing an individual serving as a member of a legislative assembly during a specific term, including their party affiliation, electoral district, and other relevant details such as term dates and offices held.",
+    "routing_guide": "Choose Table when the query requires structured, tabular data about members of a specific parliament or term, such as listing members by party or electoral district, or comparing term numbers. Choose Doc when the query involves detailed biographical information about a specific member, such as their career history, committee roles, or notable events. Use both when the query needs both structured membership details and narrative context, such as verifying a member's party affiliation and also understanding their political career.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify",
+        "compare"
+      ],
+      "join_keys": [
+        "member_name",
+        "legislative_body",
+        "term",
+        "electoral_district",
+        "political_party"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on members of legislative assemblies, including fields like member name, party, riding/electorate, term number, election date, and sometimes birth/death dates and cause of death. Examples include current members of the Yukon Legislative Assembly, members of the 6th New Zealand Parliament, and records of UK MPs who died accidentally.",
+        "elements": [
+          "member_name",
+          "party",
+          "riding",
+          "legislative_body",
+          "term",
+          "electorate",
+          "term_number",
+          "election_date",
+          "title",
+          "name",
+          "birth_date",
+          "death_date",
+          "cause_of_death",
+          "parliamentary_seat",
+          "offices_held",
+          "Member",
+          "Election date",
+          "Province",
+          "MP 's term",
+          "Votes"
+        ],
+        "data_examples": [
+          "page_title: 6th New Zealand Parliament, section_title: Initial composition of the 6th Parliament, header: [Member, Electorate, MP 's term, Election date], sample_row: [William Montgomery, Akaroa, Second, 29 December 1875]",
+          "page_title: Records of members of parliament of the United Kingdom, section_title: Members of Parliament who have been accidentally killed, header: [Title/Rank, Name known by while in Commons, Born, Killed, MP 's Seat, Offices Held], sample_row: [Sir, Ralph Carminowe, before 1339, 1386 ( pulled over cliff by hounds when hunting ), Cornwall ( 1383 , 1384 , and 1386 but died before taking seat ), High Sheriff of Cornwall 1378]",
+          "page_title: Yukon Legislative Assembly, section_title: Current members, header: [Name, Party, Riding], sample_row: [Ted Adel, Liberal, Copperbelt North]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides narrative descriptions of individual politicians, including their name, legislative body, election year, electoral district, political party, offices held, and committee memberships. Examples include biographies of politicians from the European Parliament and the Legislative Assembly of Saskatchewan.",
+        "elements": [
+          "politician_name",
+          "legislative_body",
+          "election_year",
+          "electoral_district",
+          "political_party",
+          "office_held",
+          "term_start_date",
+          "person_name",
+          "birth_date",
+          "parliament",
+          "term_start",
+          "committee_membership",
+          "position_within_party_group",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Petru_Luhan\", \"title\": \"Petru Luhan\", \"text\": \"Petru Constantin Luhan ( born 19 March 1977 ) is a Romanian politician , who since the 2009 election has been a Member of the European Parliament for Romania , representing the Democratic Liberal Party . He is a member of the Regional Development Committee and vice-president of EPP Young Members in the European Parliament .\"}",
+          "{\"doc_id\": \"/wiki/Mark_Docherty_(politician)\", \"title\": \"Mark Docherty (politician)\", \"text\": \"Mark Docherty is a Canadian politician , who was elected to the Legislative Assembly of Saskatchewan in the 2011 election . He represents the electoral district of Regina Coronation Park as a member of the Saskatchewan Party caucus . On March 10 , 2018 , he was elected Speaker of the Legislative Assembly .\"}"
+        ]
+      }
+    }
+  },
+  "parliament_term": {
+    "concept": "parliament_term",
+    "semantic_type": "event",
+    "overall_description": "A parliament term is a period during which a specific parliament or legislative body is in session, defined by its start and end dates, the election that determined its membership, and the political composition and leadership.",
+    "routing_guide": "For queries about a specific parliament term, such as its dates, leadership, or composition, use the Doc source. If the query requires structured data or comparisons across multiple terms, consider using the Table source if available; otherwise, rely on Doc and extract structured fields from the text.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "parliament_number",
+        "start_date",
+        "end_date",
+        "election_date",
+        "governing_party",
+        "prime_minister",
+        "official_opposition_party",
+        "opposition_leader",
+        "speaker",
+        "session_count"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Documents provide detailed narrative descriptions of each parliament term, including the parliament number, session dates, election date, governing party, prime minister, official opposition party, opposition leader, speaker, and session count, along with the full text and linked table ID.",
+        "elements": [
+          "parliament_number",
+          "start_date",
+          "end_date",
+          "election_date",
+          "governing_party",
+          "prime_minister",
+          "official_opposition_party",
+          "opposition_leader",
+          "speaker",
+          "session_count",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/28th_Canadian_Parliament\", \"title\": \"28th Canadian Parliament\", \"text\": \"The 28th Canadian Parliament was in session from September 12 , 1968 , until September 1 , 1972 . The membership was set by the 1968 federal election on June 25 , 1968 , and it changed only slightly due to resignations and by-elections until it was dissolved prior to the 1972 election . It was controlled by a Liberal Party majority under Prime Minister Pierre Trudeau and the 20th Canadian Ministry . The Official Opposition was the Progressive Conservative Party led by Robert Stanfield . The Spea\"}"
+        ]
+      }
+    }
+  },
+  "political_office_holder": {
+    "concept": "political_office_holder",
+    "semantic_type": "entity",
+    "overall_description": "An individual holding a political office or position within a governmental or parliamentary body, including their role, political affiliation, and constituency.",
+    "routing_guide": "Choose Table when the query requires specific attributes of office holders (e.g., name, party, district) or when comparing multiple holders. Choose Doc when the query asks about the nature of a political office, its responsibilities, or its place in government structure. Use both when a comprehensive answer requires both structured data and contextual description.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "position",
+        "country"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on political office holders, including names, party affiliations, electoral districts, positions held, and parliamentary terms. Useful for identifying specific office holders and their attributes.",
+        "elements": [
+          "name",
+          "party",
+          "electoral_district",
+          "parliament",
+          "country",
+          "start_date",
+          "end_date",
+          "member_name",
+          "position",
+          "political_group",
+          "constituency",
+          "Electoral district",
+          "Date",
+          "Group",
+          "State",
+          "Candidate",
+          "Votes",
+          "Location",
+          "Members",
+          "Class"
+        ],
+        "data_examples": [
+          "page_title: Bureau of the European Parliament, section_title: Members -- 2009-2012, header: [Member, Position, Political group, Constituency], sample_row: [Jerzy Buzek, President, European People 's Party, Silesian ( Poland )]",
+          "page_title: List of House members of the 41st Parliament of Canada, section_title: Members -- Nova Scotia, header: [Name, Party, Electoral district], sample_row: [Rodger Cuzner, Liberal, Cape Breton - Canso]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides descriptive information about a specific political office (e.g., Minister of National Defence), including responsibilities, hierarchical relationships, and accountability structures. Useful for understanding the context and duties of a role.",
+        "elements": [
+          "minister_name",
+          "country",
+          "cabinet_role",
+          "department",
+          "military_commander",
+          "commander_in_chief",
+          "parliamentary_accountability",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Minister_of_National_Defence_(Canada)\", \"title\": \"Minister of National Defence (Canada)\", \"text\": \"The Minister of National Defence ( French : Ministre de la Défense nationale ) is a Minister of the Crown and is the politician within the Cabinet of Canada responsible for the management and direction of all matters relating to the national defence of Canada . The Department of National Defence is headed by the Deputy Minister of National Defence , the department 's senior civil servant , while the Canadian Armed Forces are headed by the Chief of the Defence Staff , Canada 's senior serving mil\"}"
+        ]
+      }
+    }
+  },
+  "school": {
+    "concept": "school",
+    "semantic_type": "entity",
+    "overall_description": "An educational institution providing learning and instruction, often with a specific name and location.",
+    "routing_guide": "Use Doc when the query involves school names, locations, or general information about schools. If the query requires structured data or comparisons across multiple schools, consider using Table if available; otherwise, Doc is sufficient.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare"
+      ],
+      "join_keys": [
+        "school_name",
+        "location"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Documents provide the school's name and location, along with title, text, and linked table ID, with 57 examples.",
+        "elements": [
+          "school_name",
+          "location",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Owen_High_School\", \"title\": \"Owen High School\", \"text\": \"Owen High School is located in Owen , Wisconsin .\"}"
+        ]
+      }
+    }
+  },
+  "sovereign_state": {
+    "concept": "sovereign_state",
+    "semantic_type": "entity",
+    "overall_description": "A sovereign state or country, including its geographical extent, population, capital, and historical origins.",
+    "routing_guide": "Use Doc when the query asks for descriptive or historical information about a country, such as its official name, constituent parts, area, population, capital, or historical origins. If the query requires structured comparisons or aggregations across multiple countries, consider using Table if available; otherwise, use Doc and extract fields as needed.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "join_keys": [
+        "name",
+        "official_name",
+        "common_name"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides overview articles about countries, containing fields such as name, official_name, common_name, constituent_units, total_area, population, capital, largest_city, historical_origin, title, text, and linked_table_id. These fields offer descriptive and factual information about a country's identity, geography, and history.",
+        "elements": [
+          "name",
+          "official_name",
+          "common_name",
+          "constituent_units",
+          "total_area",
+          "population",
+          "capital",
+          "largest_city",
+          "historical_origin",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/United_States\", \"title\": \"United States\", \"text\": \"The United States of America ( USA ) , commonly known as the United States ( U.S. or US ) or America , is a country consisting of 50 states , a federal district , five major self-governing territories , and various possessions . [ g ] At 3.8 million square miles ( 9.8 million km2 ) , it is the world 's third or fourth-largest country by total area [ b ] and is slightly smaller than the entire continent of Europe . Most of the country is located in central North America between Canada and Mexico \"}"
+        ]
+      }
+    }
+  },
+  "state_highway": {
+    "concept": "state_highway",
+    "semantic_type": "entity",
+    "overall_description": "A state-designated highway or road, typically maintained by a state government, with defined endpoints, length, and route designation.",
+    "routing_guide": "For queries about specific state highways, use Doc to retrieve detailed descriptions and attributes. If tabular data is available, use Table for structured comparisons and aggregations. Prefer Doc when the query involves narrative context or when only document data exists.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "sort",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "route_number"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides narrative descriptions of state highways, including route number, length in miles, start and end locations, and counties traversed. Each document corresponds to a specific highway and includes structured elements such as route_number, length_miles, start_location, end_location, counties_traversed, title, text, and linked_table_id.",
+        "elements": [
+          "route_number",
+          "length_miles",
+          "start_location",
+          "end_location",
+          "counties_traversed",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Tennessee_State_Route_116\", \"title\": \"Tennessee State Route 116\", \"text\": \"State Route 116 ( SR 116 ) is a 41.97 miles ( 67.54 km ) long north-south state highway in the mountains of East Tennessee . The highway runs from its junction with SR 62 at its southern end between Wartburg and Coalfield in Morgan County , to its northern end at Caryville , Tennessee in Campbell County .\"}"
+        ]
+      }
+    }
+  },
+  "town": {
+    "concept": "town",
+    "semantic_type": "entity",
+    "overall_description": "A populated place that is an administrative division or municipality, often with a name, location, and population.",
+    "routing_guide": "Use Doc when the query involves detailed textual information about towns, such as associated communities or historical context. Use Table if a structured table of towns with attributes is available; otherwise, Doc is the primary source. For queries requiring both narrative and structured data, consider both sources.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "state",
+        "county",
+        "country"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides textual descriptions of towns, including name, state, county, country, population, census year, metropolitan statistical area, and associated communities. Each document is a Wikipedia-style article with a title and text, and may include linked table IDs.",
+        "elements": [
+          "name",
+          "state",
+          "county",
+          "country",
+          "population",
+          "census_year",
+          "metropolitan_statistical_area",
+          "associated_communities",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Amberg,_Wisconsin\", \"title\": \"Amberg, Wisconsin\", \"text\": \"Amberg is a town in Marinette County , Wisconsin , United States . The population was 854 at the 2000 census . The unincorporated community of Cedarville is located partially in the town . The census-designated place of Amberg is located within the town .\"}",
+          "{\"doc_id\": \"/wiki/Gaston,_South_Carolina\", \"title\": \"Gaston, South Carolina\", \"text\": \"Gaston is a town in Lexington County , South Carolina , United States . The population was 1,645 at the 2010 census . It is part of the Columbia , South Carolina Metropolitan Statistical Area .\"}",
+          "{\"doc_id\": \"/wiki/Zemple,_Minnesota\", \"title\": \"Zemple, Minnesota\", \"text\": \"Zemple is a city in Itasca County , Minnesota , United States . The population was 93 at the 2010 census .\"}"
+        ]
+      }
+    }
+  },
+  "war_memorial": {
+    "concept": "war_memorial",
+    "semantic_type": "entity",
+    "overall_description": "A structure, monument, or site commemorating military actions, units, or individuals who served or died in a conflict.",
+    "routing_guide": "Choose Table when the user needs structured, queryable data about war memorials, such as names, locations, or commemorated units. Choose Doc if the user seeks narrative or contextual information about memorials. Use both when combining structured details with historical context.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve",
+        "verify"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "memorial_name",
+        "location",
+        "unit"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on war memorials, including memorial name, location, map coordinates, and notes describing the commemorated unit or conflict. Also includes related fields such as Name, Rank, Service, Date of action, Unit, and victory counts for specific individuals.",
+        "elements": [
+          "memorial_name",
+          "location",
+          "map_coordinates",
+          "notes",
+          "Name",
+          "Rank",
+          "Service",
+          "Date of action",
+          "Unit",
+          "Victories flying jets",
+          "Jet fighter unit ( s )",
+          "Total wartime victories",
+          "Memorial name",
+          "Map",
+          "Work",
+          "Date ( s )",
+          "Subject , notes and references"
+        ],
+        "data_examples": [
+          "page_title: Canadian war memorials, section_title: War memorials overseas -- First World War, header: [Memorial name, Location, Map, Notes], sample_row: [Beaumont-Hamel Newfoundland Memorial, Beaumont-Hamel , Somme , France, 50°04′24.80″N 002°38′53.09″E / 50.0735556°N 2.6480806°E / 50.0735556 ; 2.6480806 ( Beaumont-Hamel Newfoundland Memorial ), Commemorating the Royal Newfoundland Regiment 's participation in the Battle of the Somme]"
+        ]
+      }
+    }
+  }
+}

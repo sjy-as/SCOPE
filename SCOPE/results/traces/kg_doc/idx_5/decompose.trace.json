@@ -1,0 +1,31 @@
+{
+  "sub_q1": "Which player played for the Dallas Mavericks starting in 2014?",
+  "sub_q2": "What did [1] win with the US national team in 2010 and 2012?",
+  "rewrite_reasoning": "The query asks about a specific player (who played for the Dallas Mavericks starting in 2014) and what he won with the US national team in 2010 and 2012. First, we need to identify the player. Then, using that player, we can find his achievements with the US national team in those years.",
+  "match1": null,
+  "match2": null,
+  "route1": {
+    "matched_concept": "contract",
+    "primary_source": "kg",
+    "fallback_source": "doc",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: Dallas Mavericks (team). ASKED target: player who played for the team starting in 2014. Phase-1 rule: relation-first. The contract concept links player and team with start_time, exactly matching the pair (team, player). Thus, contract is the qualifying relation. Source selection: KG is LIKELY because its elements include player, team, and start_time, which can directly answer the query. Doc is LIKELY because player and team descriptions may mention team affiliations and years, but KG is more direct. Therefore, primary = kg, fallback = doc."
+  },
+  "route2": {
+    "matched_concept": "player",
+    "primary_source": "doc",
+    "fallback_source": "kg",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: [1] (a player, referenced by token). ASKED target: what the player won with the US national team in 2010 and 2012 (likely a championship or medal). Phase-1 rule: Known-entity fallback. No relation concept links a player to a national team win; award_received links player to award, but the query asks for a win with a team, not an award. The player concept is the anchor. Source selection: KG is RULED-OUT because its player elements (player_id, name, etc.) do not include national team achievements or wins. Doc is LIKELY because player doc passages often describe career achievements, including national team wins. Primary: doc. Fallback: kg (only other live source)."
+  },
+  "decompose_llm_calls": [
+    {
+      "stage": "step2.sq",
+      "ts": 1786685492.7369926,
+      "prompt": "You are a query decomposition assistant.\n\n        Your job is to transform ONE natural-language semantic query into EXACTLY two sub-questions.\n\n        Requirements:\n        1. The input is already a natural semantic query. Do NOT rewrite it into a different intent.\n        2. Output exactly two sub-questions: q1 and q2.\n        3. q1 should extract the first necessary piece of information.\n        4. q2 should depend on q1 and use [1] to refer to the answer of q1 when needed.\n        5. Do not do event judgment, schema routing, source selection, or query rewriting.\n        6. Keep the sub-questions faithful to the original meaning.\n        7. Return valid JSON only.\n\n        Return format:\n        {\n        \"reasoning\": \"brief explanation of the decomposition\",\n        \"subqueries\": [\n            {\n            \"id\": \"q1\",\n            \"query\": \"...\",\n            \"depends_on\": [],\n            \"variables\": []\n            },\n            {\n            \"id\": \"q2\",\n            \"query\": \"...\",\n            \"depends_on\": [\"q1\"],\n            \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n            }\n        ]\n        }\n\n        Question: For the player who played for the Dallas Mavericks starting in 2014, what did he win with the US national team in 2010 and 2012?\n\n    ",
+      "response": "{\n  \"reasoning\": \"The query asks about a specific player (who played for the Dallas Mavericks starting in 2014) and what he won with the US national team in 2010 and 2012. First, we need to identify the player. Then, using that player, we can find his achievements with the US national team in those years.\",\n  \"subqueries\": [\n    {\n      \"id\": \"q1\",\n      \"query\": \"Which player played for the Dallas Mavericks starting in 2014?\",\n      \"depends_on\": [],\n      \"variables\": []\n    },\n    {\n      \"id\": \"q2\",\n      \"query\": \"What did [1] win with the US national team in 2010 and 2012?\",\n      \"depends_on\": [\"q1\"],\n      \"variables\": [\n        {\n          \"name\": \"ref_1\",\n          \"source_query\": \"q1\"\n        }\n      ]\n    }\n  ]\n}",
+      "module": "step2.sq",
+      "model": "deepseek-chat"
+    }
+  ]
+}

@@ -1,0 +1,3446 @@
+[
+  {
+    "question_id": "019987cf5cda18be",
+    "answer": "The outburst",
+    "gold_table_id": "Bollywood_highest_grossing_films_by_month_3",
+    "answer_node": [
+      [
+        "Hellaro",
+        [
+          5,
+          1
+        ],
+        "/wiki/Hellaro",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "0cb0ab2f72ef5e91",
+    "answer": "Houses of York and Lancaster",
+    "gold_table_id": "List_of_film_spoofs_in_Mad_4",
+    "answer_node": [
+      [
+        "The War of the Roses (film)",
+        [
+          4,
+          1
+        ],
+        "/wiki/The_War_of_the_Roses_(film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "0fd093facea826db",
+    "answer": "9× Platinum",
+    "gold_table_id": "List_of_best-selling_albums_by_country_10",
+    "answer_node": [
+      [
+        "9× Platinum",
+        [
+          5,
+          5
+        ],
+        null,
+        "table"
+      ],
+      [
+        "9× Platinum",
+        [
+          6,
+          5
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "11142981fd67ab9a",
+    "answer": "1961",
+    "gold_table_id": "List_of_video_game_soundtracks_released_on_vinyl_5",
+    "answer_node": [
+      [
+        "Steve Kirk",
+        [
+          0,
+          3
+        ],
+        "/wiki/Steve_Kirk",
+        "passage"
+      ],
+      [
+        "Koji Kondo",
+        [
+          5,
+          3
+        ],
+        "/wiki/Koji_Kondo",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "120588eeb3a98cf7",
+    "answer": "The Looney Beginning",
+    "gold_table_id": "List_of_fictional_canines_in_animation_0",
+    "answer_node": [
+      [
+        "Tiny Toon Adventures",
+        [
+          4,
+          1
+        ],
+        "/wiki/Tiny_Toon_Adventures",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "13d0407dce8d2cc5",
+    "answer": "Anne Boleyn",
+    "gold_table_id": "List_of_Canadian_films_of_2002_0",
+    "answer_node": [
+      [
+        "Geneviève Bujold",
+        [
+          10,
+          2
+        ],
+        "/wiki/Geneviève_Bujold",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1753999152a67dea",
+    "answer": "The Black Door",
+    "gold_table_id": "List_of_horror_films_of_1962_0",
+    "answer_node": [
+      [
+        "The Brain That Wouldn't Die",
+        [
+          1,
+          0
+        ],
+        "/wiki/The_Brain_That_Wouldn't_Die",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1754cff04f90d4ba",
+    "answer": "Manish Paul",
+    "gold_table_id": "Indian_Television_Academy_Awards_1",
+    "answer_node": [
+      [
+        "Manish Paul",
+        [
+          10,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Manish Paul",
+        [
+          12,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Manish Paul",
+        [
+          13,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Manish Paul",
+        [
+          14,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "19c036de7ba4434d",
+    "answer": "Ramin Djawadi",
+    "gold_table_id": "List_of_fictional_antiheroes_2",
+    "answer_node": [
+      [
+        "Prison Break",
+        [
+          2,
+          1
+        ],
+        "/wiki/Prison_Break",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1a27728c5c02fd7f",
+    "answer": "3",
+    "gold_table_id": "Best-selling_albums_by_year_in_the_United_States_1",
+    "answer_node": [],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1aa0eaf4b4456d24",
+    "answer": "Japanese",
+    "gold_table_id": "Vietnam_Film_Festival_0",
+    "answer_node": [
+      [
+        "Hanoi",
+        [
+          0,
+          2
+        ],
+        "/wiki/Hanoi",
+        "passage"
+      ],
+      [
+        "Hanoi",
+        [
+          1,
+          2
+        ],
+        "/wiki/Hanoi",
+        "passage"
+      ],
+      [
+        "Hanoi",
+        [
+          4,
+          2
+        ],
+        "/wiki/Hanoi",
+        "passage"
+      ],
+      [
+        "Hanoi",
+        [
+          6,
+          2
+        ],
+        "/wiki/Hanoi",
+        "passage"
+      ],
+      [
+        "Hanoi",
+        [
+          10,
+          2
+        ],
+        "/wiki/Hanoi",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1c1f5b6ff158f2a4",
+    "answer": "7",
+    "gold_table_id": "List_of_2008_box_office_number-one_films_in_Canada_1",
+    "answer_node": [
+      [
+        "7",
+        [
+          6,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Madagascar: Escape 2 Africa",
+        [
+          10,
+          1
+        ],
+        "/wiki/Madagascar:_Escape_2_Africa",
+        "passage"
+      ],
+      [
+        "The Chronicles of Narnia: Prince Caspian (film)",
+        [
+          14,
+          1
+        ],
+        "/wiki/The_Chronicles_of_Narnia:_Prince_Caspian_(film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1e063209c1fbf992",
+    "answer": "California",
+    "gold_table_id": "Best-selling_albums_by_year_in_the_United_States_2",
+    "answer_node": [
+      [
+        "War (U.S. band)",
+        [
+          3,
+          1
+        ],
+        "/wiki/War_(U.S._band)",
+        "passage"
+      ],
+      [
+        "Rumours (album)",
+        [
+          7,
+          3
+        ],
+        "/wiki/Rumours_(album)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "1e911a9dd9d2677f",
+    "answer": "Cuba",
+    "gold_table_id": "List_of_submissions_to_the_64th_Academy_Awards_for_Best_Foreign_Language_Film_0",
+    "answer_node": [
+      [
+        "Cuba",
+        [
+          9,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "20e776a72c8dd8dc",
+    "answer": "terrestrially and via satellite",
+    "gold_table_id": "Urvashi_(actress)_7",
+    "answer_node": [
+      [
+        "DD Podhigai",
+        [
+          2,
+          2
+        ],
+        "/wiki/DD_Podhigai",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "2319cb7bf99176f0",
+    "answer": "Moscow",
+    "gold_table_id": "List_of_Kazakhstani_submissions_for_the_Academy_Award_for_Best_Foreign_Language_Film_0",
+    "answer_node": [
+      [
+        "Sergei Bodrov",
+        [
+          1,
+          3
+        ],
+        "/wiki/Sergei_Bodrov",
+        "passage"
+      ],
+      [
+        "Sergei Bodrov",
+        [
+          2,
+          3
+        ],
+        "/wiki/Sergei_Bodrov",
+        "passage"
+      ],
+      [
+        "Sergey Dvortsevoy",
+        [
+          3,
+          3
+        ],
+        "/wiki/Sergey_Dvortsevoy",
+        "passage"
+      ],
+      [
+        "Sergey Dvortsevoy",
+        [
+          12,
+          3
+        ],
+        "/wiki/Sergey_Dvortsevoy",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "2795b8be112cafc5",
+    "answer": "Japanese",
+    "gold_table_id": "Indian_Television_Academy_Awards_0",
+    "answer_node": [
+      [
+        "Sony Entertainment Television",
+        [
+          0,
+          2
+        ],
+        "/wiki/Sony_Entertainment_Television",
+        "passage"
+      ],
+      [
+        "Sony Entertainment Television",
+        [
+          2,
+          2
+        ],
+        "/wiki/Sony_Entertainment_Television",
+        "passage"
+      ],
+      [
+        "Sony Entertainment Television",
+        [
+          13,
+          2
+        ],
+        "/wiki/Sony_Entertainment_Television",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "2893c9f61581c473",
+    "answer": "Suraj Venjaramoodu",
+    "gold_table_id": "2009_Kerala_State_Film_Awards_0",
+    "answer_node": [
+      [
+        "Suraj Venjaramoodu",
+        [
+          7,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "2ca3edf41ae7de5b",
+    "answer": "Albert Wesker",
+    "gold_table_id": "Malaysia_Yearly_Box_Office_3",
+    "answer_node": [
+      [
+        "Resident Evil: Afterlife",
+        [
+          8,
+          2
+        ],
+        "/wiki/Resident_Evil:_Afterlife",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "2cb31402f3bea164",
+    "answer": "Bill Whelan",
+    "gold_table_id": "Grammy_Award_for_Best_Musical_Theater_Album_4",
+    "answer_node": [
+      [
+        "Bill Whelan ( composer & lyricist ) · produced by Bill Whelan",
+        [
+          7,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Riverdance",
+        [
+          7,
+          2
+        ],
+        "/wiki/Riverdance",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "31ec79a377259f79",
+    "answer": "A Woman for a Season",
+    "gold_table_id": "List_of_Romanian_submissions_for_the_Academy_Award_for_Best_Foreign_Language_Film_0",
+    "answer_node": [
+      [
+        "A Woman for a Season",
+        [
+          2,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Gheorghe Vitanidis",
+        [
+          2,
+          3
+        ],
+        "/wiki/Gheorghe_Vitanidis",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "3649c7c3bfda1dca",
+    "answer": "Ballybeg",
+    "gold_table_id": "Joe_Armstrong_(actor)_1",
+    "answer_node": [
+      [
+        "Dancing at Lughnasa",
+        [
+          0,
+          1
+        ],
+        "/wiki/Dancing_at_Lughnasa",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "385782a515eb827e",
+    "answer": "Avant Gershwin",
+    "gold_table_id": "Grammy_Award_for_Best_Jazz_Vocal_Album_0",
+    "answer_node": [
+      [
+        "Avant Gershwin",
+        [
+          16,
+          2
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "3f1aa2f66b949dd7",
+    "answer": "Atef Salem",
+    "gold_table_id": "List_of_submissions_to_the_37th_Academy_Awards_for_Best_Foreign_Language_Film_0",
+    "answer_node": [
+      [
+        "Atef Salem",
+        [
+          3,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Mother of the Bride (1963 film)",
+        [
+          3,
+          1
+        ],
+        "/wiki/Mother_of_the_Bride_(1963_film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "41dc69039e7dc295",
+    "answer": "1966",
+    "gold_table_id": "List_of_Kannada_films_of_1970_0",
+    "answer_node": [
+      [
+        "K. S. L. Swamy",
+        [
+          0,
+          1
+        ],
+        "/wiki/K._S._L._Swamy",
+        "passage"
+      ],
+      [
+        "K. S. L. Swamy",
+        [
+          3,
+          1
+        ],
+        "/wiki/K._S._L._Swamy",
+        "passage"
+      ],
+      [
+        "K. S. L. Swamy",
+        [
+          16,
+          1
+        ],
+        "/wiki/K._S._L._Swamy",
+        "passage"
+      ],
+      [
+        "Y. R. Swamy",
+        [
+          5,
+          1
+        ],
+        "/wiki/Y._R._Swamy",
+        "passage"
+      ],
+      [
+        "Y. R. Swamy",
+        [
+          10,
+          1
+        ],
+        "/wiki/Y._R._Swamy",
+        "passage"
+      ],
+      [
+        "Bharathi (actress)",
+        [
+          5,
+          2
+        ],
+        "/wiki/Bharathi_(actress)",
+        "passage"
+      ],
+      [
+        "Bharathi (actress)",
+        [
+          12,
+          2
+        ],
+        "/wiki/Bharathi_(actress)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "4485e60f367da7ba",
+    "answer": "Mike Leander",
+    "gold_table_id": "List_of_songs_in_The_Beatles:_Rock_Band_1",
+    "answer_node": [
+      [
+        "She's Leaving Home",
+        [
+          11,
+          0
+        ],
+        "/wiki/She's_Leaving_Home",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "44ecc6b22d5fe199",
+    "answer": "Nadia",
+    "gold_table_id": "List_of_British_films_of_2001_0",
+    "answer_node": [
+      [
+        "Birthday Girl",
+        [
+          4,
+          0
+        ],
+        "/wiki/Birthday_Girl",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "4631fac544055406",
+    "answer": "Mizuho Kusanagi",
+    "gold_table_id": "List_of_fictional_birds_of_prey_1",
+    "answer_node": [
+      [
+        "Yona of the Dawn",
+        [
+          3,
+          2
+        ],
+        "/wiki/Yona_of_the_Dawn",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "4950879950bb5189",
+    "answer": "2007",
+    "gold_table_id": "List_of_Hong_Kong_films_of_2014_0",
+    "answer_node": [
+      [
+        "Moses Chan",
+        [
+          7,
+          2
+        ],
+        "/wiki/Moses_Chan",
+        "passage"
+      ],
+      [
+        "Deep Ng",
+        [
+          11,
+          2
+        ],
+        "/wiki/Deep_Ng",
+        "passage"
+      ],
+      [
+        "Andy Lau",
+        [
+          13,
+          2
+        ],
+        "/wiki/Andy_Lau",
+        "passage"
+      ],
+      [
+        "Edison Chen",
+        [
+          13,
+          2
+        ],
+        "/wiki/Edison_Chen",
+        "passage"
+      ],
+      [
+        "Vincent Kok",
+        [
+          15,
+          1
+        ],
+        "/wiki/Vincent_Kok",
+        "passage"
+      ],
+      [
+        "Pakho Chau",
+        [
+          19,
+          2
+        ],
+        "/wiki/Pakho_Chau",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "4a72ca98f369b541",
+    "answer": "Harvey Kurtzman",
+    "gold_table_id": "List_of_television_show_spoofs_in_Mad_0",
+    "answer_node": [
+      [
+        "Harvey Kurtzman",
+        [
+          0,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Harvey Kurtzman",
+        [
+          1,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Harvey Kurtzman",
+        [
+          2,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Harvey Kurtzman",
+        [
+          3,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Harvey Kurtzman",
+        [
+          4,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Harvey Kurtzman",
+        [
+          5,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Harvey Kurtzman",
+        [
+          6,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Harvey Kurtzman",
+        [
+          7,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Harvey Kurtzman",
+        [
+          8,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Harvey Kurtzman",
+        [
+          10,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Harvey Kurtzman",
+        [
+          11,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Harvey Kurtzman",
+        [
+          13,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Will Elder",
+        [
+          2,
+          3
+        ],
+        "/wiki/Will_Elder",
+        "passage"
+      ],
+      [
+        "Will Elder",
+        [
+          6,
+          3
+        ],
+        "/wiki/Will_Elder",
+        "passage"
+      ],
+      [
+        "Will Elder",
+        [
+          7,
+          3
+        ],
+        "/wiki/Will_Elder",
+        "passage"
+      ],
+      [
+        "Will Elder",
+        [
+          9,
+          3
+        ],
+        "/wiki/Will_Elder",
+        "passage"
+      ],
+      [
+        "Will Elder",
+        [
+          10,
+          3
+        ],
+        "/wiki/Will_Elder",
+        "passage"
+      ],
+      [
+        "Will Elder",
+        [
+          11,
+          3
+        ],
+        "/wiki/Will_Elder",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "4ac4cef5fd874c43",
+    "answer": "Russian",
+    "gold_table_id": "List_of_Kazakhstani_submissions_for_the_Academy_Award_for_Best_Foreign_Language_Film_0",
+    "answer_node": [
+      [
+        "Sergei Bodrov",
+        [
+          1,
+          3
+        ],
+        "/wiki/Sergei_Bodrov",
+        "passage"
+      ],
+      [
+        "Sergei Bodrov",
+        [
+          2,
+          3
+        ],
+        "/wiki/Sergei_Bodrov",
+        "passage"
+      ],
+      [
+        "Mongol (film)",
+        [
+          2,
+          1
+        ],
+        "/wiki/Mongol_(film)",
+        "passage"
+      ],
+      [
+        "Sergey Dvortsevoy",
+        [
+          3,
+          3
+        ],
+        "/wiki/Sergey_Dvortsevoy",
+        "passage"
+      ],
+      [
+        "Sergey Dvortsevoy",
+        [
+          12,
+          3
+        ],
+        "/wiki/Sergey_Dvortsevoy",
+        "passage"
+      ],
+      [
+        "Strayed (2009 film)",
+        [
+          5,
+          1
+        ],
+        "/wiki/Strayed_(2009_film)",
+        "passage"
+      ],
+      [
+        "Returning to the 'A'",
+        [
+          6,
+          1
+        ],
+        "/wiki/Returning_to_the_'A'",
+        "passage"
+      ],
+      [
+        "Ayka",
+        [
+          12,
+          1
+        ],
+        "/wiki/Ayka",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "5005aa07df1b64d1",
+    "answer": "The Church of Jesus Christ of Latter-day Saints",
+    "gold_table_id": "List_of_television_stations_in_the_United_States_by_call_sign_(initial_letter_K)_20",
+    "answer_node": [
+      [
+        "Salt Lake City",
+        [
+          7,
+          3
+        ],
+        "/wiki/Salt_Lake_City",
+        "passage"
+      ],
+      [
+        "Salt Lake City",
+        [
+          8,
+          3
+        ],
+        "/wiki/Salt_Lake_City",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "51d073726a761420",
+    "answer": "Amalgam Comics # 1",
+    "gold_table_id": "List_of_fictional_universes_in_animation_and_comics_1",
+    "answer_node": [
+      [
+        "Amalgam Comics # 1",
+        [
+          0,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "523c334786025a20",
+    "answer": "Emmy , Grammy , Oscar , and Tony Awards",
+    "gold_table_id": "List_of_Jewish_actors_7",
+    "answer_node": [
+      [
+        "EGOT",
+        [
+          15,
+          2
+        ],
+        "/wiki/EGOT",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "5568ae933a7a829a",
+    "answer": "Cyborg 009 : Legend of the Super Galaxy",
+    "gold_table_id": "List_of_Japanese_films_of_1980_1",
+    "answer_node": [
+      [
+        "Cyborg 009 : Legend of the Super Galaxy",
+        [
+          1,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "5617b325c5461259",
+    "answer": "Monkey",
+    "gold_table_id": "List_of_fictional_primates_in_video_games_0",
+    "answer_node": [
+      [
+        "Monkey",
+        [
+          0,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "A space monkey introduced as a brief playable character , who was trapped by the Sorceress . He has a laser and can eliminate rhynocs with ease",
+        [
+          0,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Monkey",
+        [
+          1,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Super Monkey Ball",
+        [
+          1,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Monkey",
+        [
+          10,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Monkey",
+        [
+          11,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Monkey",
+        [
+          13,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Monkey",
+        [
+          14,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Diddy Kong",
+        [
+          5,
+          0
+        ],
+        "/wiki/Diddy_Kong",
+        "passage"
+      ],
+      [
+        "Sun Wukong",
+        [
+          13,
+          4
+        ],
+        "/wiki/Sun_Wukong",
+        "passage"
+      ],
+      [
+        "Sun Wukong",
+        [
+          14,
+          4
+        ],
+        "/wiki/Sun_Wukong",
+        "passage"
+      ],
+      [
+        "Journey to the West",
+        [
+          13,
+          4
+        ],
+        "/wiki/Journey_to_the_West",
+        "passage"
+      ],
+      [
+        "Journey to the West",
+        [
+          14,
+          4
+        ],
+        "/wiki/Journey_to_the_West",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "5fd71c286251aec1",
+    "answer": "Guitar Hero Track Pack 1",
+    "gold_table_id": "List_of_songs_in_Guitar_Hero_II_2",
+    "answer_node": [
+      [
+        "Guitar Hero Track Pack 1",
+        [
+          0,
+          5
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Guitar Hero Track Pack 1",
+        [
+          1,
+          5
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Guitar Hero Track Pack 1",
+        [
+          2,
+          5
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "61347856d530982a",
+    "answer": "TF1",
+    "gold_table_id": "List_of_fictional_pigs_2",
+    "answer_node": [
+      [
+        "Forest Friends",
+        [
+          1,
+          1
+        ],
+        "/wiki/Forest_Friends",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "63cf68ef83853c8a",
+    "answer": "Czech",
+    "gold_table_id": "List_of_submissions_to_the_39th_Academy_Awards_for_Best_Foreign_Language_Film_0",
+    "answer_node": [
+      [
+        "Czech",
+        [
+          0,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Czechoslovakia",
+        [
+          0,
+          0
+        ],
+        "/wiki/Czechoslovakia",
+        "passage"
+      ],
+      [
+        "Loves of a Blonde",
+        [
+          0,
+          1
+        ],
+        "/wiki/Loves_of_a_Blonde",
+        "passage"
+      ],
+      [
+        "Miloš Forman",
+        [
+          0,
+          4
+        ],
+        "/wiki/Miloš_Forman",
+        "passage"
+      ],
+      [
+        "Poland",
+        [
+          14,
+          0
+        ],
+        "/wiki/Poland",
+        "passage"
+      ],
+      [
+        "Polish language",
+        [
+          14,
+          2
+        ],
+        "/wiki/Polish_language",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6a725df740480016",
+    "answer": "British Film Institute",
+    "gold_table_id": "List_of_fictional_antiheroes_2",
+    "answer_node": [
+      [
+        "Blackadder",
+        [
+          8,
+          1
+        ],
+        "/wiki/Blackadder",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6d1600cf665e4b2b",
+    "answer": "Mother Wore Tights",
+    "gold_table_id": "List_of_fictional_rodents_in_literature_0",
+    "answer_node": [
+      [
+        "Miriam Young",
+        [
+          11,
+          1
+        ],
+        "/wiki/Miriam_Young",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6d69916b2cded237",
+    "answer": "Genie Award",
+    "gold_table_id": "List_of_Canadian_films_of_2006_0",
+    "answer_node": [
+      [
+        "Academy Award for Animated Short Film ; Genie Award - Animated Short ; Canada-Denmark co-production",
+        [
+          16,
+          4
+        ],
+        null,
+        "table"
+      ],
+      [
+        "After All (film)",
+        [
+          1,
+          0
+        ],
+        "/wiki/After_All_(film)",
+        "passage"
+      ],
+      [
+        "Catherine de Léan",
+        [
+          1,
+          2
+        ],
+        "/wiki/Catherine_de_Léan",
+        "passage"
+      ],
+      [
+        "Sarah Polley",
+        [
+          4,
+          1
+        ],
+        "/wiki/Sarah_Polley",
+        "passage"
+      ],
+      [
+        "Sarah Polley",
+        [
+          4,
+          4
+        ],
+        "/wiki/Sarah_Polley",
+        "passage"
+      ],
+      [
+        "Kristen Thomson",
+        [
+          4,
+          2
+        ],
+        "/wiki/Kristen_Thomson",
+        "passage"
+      ],
+      [
+        "Pierre Gang",
+        [
+          6,
+          1
+        ],
+        "/wiki/Pierre_Gang",
+        "passage"
+      ],
+      [
+        "Brendan Fletcher",
+        [
+          6,
+          2
+        ],
+        "/wiki/Brendan_Fletcher",
+        "passage"
+      ],
+      [
+        "Eric Canuel",
+        [
+          8,
+          1
+        ],
+        "/wiki/Eric_Canuel",
+        "passage"
+      ],
+      [
+        "Colm Feore",
+        [
+          8,
+          2
+        ],
+        "/wiki/Colm_Feore",
+        "passage"
+      ],
+      [
+        "Michael Mabbott",
+        [
+          12,
+          1
+        ],
+        "/wiki/Michael_Mabbott",
+        "passage"
+      ],
+      [
+        "The Danish Poet",
+        [
+          16,
+          0
+        ],
+        "/wiki/The_Danish_Poet",
+        "passage"
+      ],
+      [
+        "Guy Édoin",
+        [
+          17,
+          1
+        ],
+        "/wiki/Guy_Édoin",
+        "passage"
+      ],
+      [
+        "Denis Chouinard",
+        [
+          18,
+          1
+        ],
+        "/wiki/Denis_Chouinard",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6f2cc19a115e9c09",
+    "answer": "Thomas Wasinger",
+    "gold_table_id": "Grammy_Award_for_Best_Native_American_Music_Album_0",
+    "answer_node": [
+      [
+        "Thomas Wasinger",
+        [
+          2,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Thomas Wasinger",
+        [
+          6,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Thomas Wasinger",
+        [
+          8,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6f94b831808d8ca9",
+    "answer": "Asian elephant",
+    "gold_table_id": "List_of_fictional_pachyderms_3",
+    "answer_node": [
+      [
+        "Asian Elephant",
+        [
+          3,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Asian elephant",
+        [
+          4,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Asian elephant",
+        [
+          5,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Asian elephant",
+        [
+          6,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Asian elephant",
+        [
+          7,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Asian elephant",
+        [
+          8,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Asian elephant",
+        [
+          10,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Tai (elephant)",
+        [
+          4,
+          3
+        ],
+        "/wiki/Tai_(elephant)",
+        "passage"
+      ],
+      [
+        "Tai (elephant)",
+        [
+          7,
+          3
+        ],
+        "/wiki/Tai_(elephant)",
+        "passage"
+      ],
+      [
+        "Hannibal Brooks",
+        [
+          6,
+          2
+        ],
+        "/wiki/Hannibal_Brooks",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "6ff41d63828c01f6",
+    "answer": "Ubisoft",
+    "gold_table_id": "List_of_video_game_soundtracks_released_on_vinyl_1",
+    "answer_node": [
+      [
+        "Ubisoft",
+        [
+          2,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Ubisoft",
+        [
+          14,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Ubisoft",
+        [
+          15,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Tom Clancy's Splinter Cell: Chaos Theory",
+        [
+          0,
+          2
+        ],
+        "/wiki/Tom_Clancy's_Splinter_Cell:_Chaos_Theory",
+        "passage"
+      ],
+      [
+        "Driver: San Francisco",
+        [
+          2,
+          2
+        ],
+        "/wiki/Driver:_San_Francisco",
+        "passage"
+      ],
+      [
+        "Driver: San Francisco",
+        [
+          2,
+          4
+        ],
+        "/wiki/Driver:_San_Francisco",
+        "passage"
+      ],
+      [
+        "Scott Pilgrim vs. the World: The Game",
+        [
+          13,
+          2
+        ],
+        "/wiki/Scott_Pilgrim_vs._the_World:_The_Game",
+        "passage"
+      ],
+      [
+        "Far Cry 3: Blood Dragon",
+        [
+          14,
+          1
+        ],
+        "/wiki/Far_Cry_3:_Blood_Dragon",
+        "passage"
+      ],
+      [
+        "Far Cry 3: Blood Dragon",
+        [
+          14,
+          2
+        ],
+        "/wiki/Far_Cry_3:_Blood_Dragon",
+        "passage"
+      ],
+      [
+        "Watch Dogs",
+        [
+          15,
+          1
+        ],
+        "/wiki/Watch_Dogs",
+        "passage"
+      ],
+      [
+        "Watch Dogs",
+        [
+          15,
+          2
+        ],
+        "/wiki/Watch_Dogs",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "718761ff4adab02b",
+    "answer": "father and brother",
+    "gold_table_id": "List_of_Asian_historical_drama_films_5",
+    "answer_node": [
+      [
+        "Lady Snowblood (film)",
+        [
+          1,
+          0
+        ],
+        "/wiki/Lady_Snowblood_(film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "727d5528937f0195",
+    "answer": "Nintendo",
+    "gold_table_id": "List_of_Christmas_television_specials_6",
+    "answer_node": [
+      [
+        "Donkey Kong Country (TV series)",
+        [
+          5,
+          0
+        ],
+        "/wiki/Donkey_Kong_Country_(TV_series)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "73ff30b9d54285e2",
+    "answer": "Hammer",
+    "gold_table_id": "List_of_horror_films_of_1966_0",
+    "answer_node": [
+      [
+        "Carry on Screaming!",
+        [
+          5,
+          0
+        ],
+        "/wiki/Carry_on_Screaming!",
+        "passage"
+      ],
+      [
+        "Freddie Francis",
+        [
+          9,
+          1
+        ],
+        "/wiki/Freddie_Francis",
+        "passage"
+      ],
+      [
+        "Dracula: Prince of Darkness",
+        [
+          12,
+          0
+        ],
+        "/wiki/Dracula:_Prince_of_Darkness",
+        "passage"
+      ],
+      [
+        "Terence Fisher",
+        [
+          12,
+          1
+        ],
+        "/wiki/Terence_Fisher",
+        "passage"
+      ],
+      [
+        "Terence Fisher",
+        [
+          15,
+          1
+        ],
+        "/wiki/Terence_Fisher",
+        "passage"
+      ],
+      [
+        "Christopher Lee",
+        [
+          12,
+          2
+        ],
+        "/wiki/Christopher_Lee",
+        "passage"
+      ],
+      [
+        "Barbara Shelley",
+        [
+          12,
+          2
+        ],
+        "/wiki/Barbara_Shelley",
+        "passage"
+      ],
+      [
+        "Andrew Keir",
+        [
+          12,
+          2
+        ],
+        "/wiki/Andrew_Keir",
+        "passage"
+      ],
+      [
+        "Peter Cushing",
+        [
+          15,
+          2
+        ],
+        "/wiki/Peter_Cushing",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "7525533b677aee09",
+    "answer": "Sergei Lukyanenko",
+    "gold_table_id": "List_of_Russian_films_of_2004_0",
+    "answer_node": [
+      [
+        "Night Watch (2004 film)",
+        [
+          6,
+          0
+        ],
+        "/wiki/Night_Watch_(2004_film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "75910adaa1fa3b4a",
+    "answer": "Almoravides",
+    "gold_table_id": "Middle_Ages_in_film_0",
+    "answer_node": [
+      [
+        "El Cid (film)",
+        [
+          5,
+          2
+        ],
+        "/wiki/El_Cid_(film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "786f5560a7489028",
+    "answer": "Vanderbilt",
+    "gold_table_id": "List_of_American_films_of_1997_0",
+    "answer_node": [
+      [
+        "Tom Schulman",
+        [
+          5,
+          1
+        ],
+        "/wiki/Tom_Schulman",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "789b0fe3a9dc18d4",
+    "answer": "86 years old",
+    "gold_table_id": "David_O._Selznick_filmography_3",
+    "answer_node": [],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "78f92146086ab3cf",
+    "answer": "How Green Was My Valley",
+    "gold_table_id": "List_of_lesbian,_gay,_bisexual_or_transgender-related_films_of_the_1920s_0",
+    "answer_node": [
+      [
+        "Donald Crisp",
+        [
+          3,
+          2
+        ],
+        "/wiki/Donald_Crisp",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "820d46b00c226458",
+    "answer": "1950",
+    "gold_table_id": "Cannibal_film_0",
+    "answer_node": [
+      [
+        "Tsui Hark",
+        [
+          9,
+          1
+        ],
+        "/wiki/Tsui_Hark",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "84e5c28a3dea0842",
+    "answer": "Hiroshi Inagaki",
+    "gold_table_id": "List_of_Asian_historical_drama_films_4",
+    "answer_node": [
+      [
+        "Hiroshi Inagaki",
+        [
+          12,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Hiroshi Inagaki",
+        [
+          14,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Hiroshi Inagaki , Masahiro Makino",
+        [
+          16,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "858e8c32d8a8f7e0",
+    "answer": "Das Boot",
+    "gold_table_id": "List_of_American_films_of_1997_0",
+    "answer_node": [
+      [
+        "Wolfgang Petersen",
+        [
+          11,
+          1
+        ],
+        "/wiki/Wolfgang_Petersen",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "86735444f12f105b",
+    "answer": "Winnipeg , Manitoba",
+    "gold_table_id": "List_of_television_stations_in_Canada_2",
+    "answer_node": [
+      [
+        "Winnipeg , Manitoba",
+        [
+          0,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Winnipeg , Manitoba",
+        [
+          1,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Winnipeg , Manitoba",
+        [
+          2,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Aboriginal Peoples Television Network",
+        [
+          0,
+          0
+        ],
+        "/wiki/Aboriginal_Peoples_Television_Network",
+        "passage"
+      ],
+      [
+        "Aboriginal Peoples Television Network",
+        [
+          0,
+          1
+        ],
+        "/wiki/Aboriginal_Peoples_Television_Network",
+        "passage"
+      ],
+      [
+        "Aboriginal Peoples Television Network",
+        [
+          0,
+          4
+        ],
+        "/wiki/Aboriginal_Peoples_Television_Network",
+        "passage"
+      ],
+      [
+        "Aboriginal Peoples Television Network",
+        [
+          1,
+          0
+        ],
+        "/wiki/Aboriginal_Peoples_Television_Network",
+        "passage"
+      ],
+      [
+        "Aboriginal Peoples Television Network",
+        [
+          1,
+          1
+        ],
+        "/wiki/Aboriginal_Peoples_Television_Network",
+        "passage"
+      ],
+      [
+        "Aboriginal Peoples Television Network",
+        [
+          1,
+          4
+        ],
+        "/wiki/Aboriginal_Peoples_Television_Network",
+        "passage"
+      ],
+      [
+        "Aboriginal Peoples Television Network",
+        [
+          2,
+          0
+        ],
+        "/wiki/Aboriginal_Peoples_Television_Network",
+        "passage"
+      ],
+      [
+        "Aboriginal Peoples Television Network",
+        [
+          2,
+          1
+        ],
+        "/wiki/Aboriginal_Peoples_Television_Network",
+        "passage"
+      ],
+      [
+        "Aboriginal Peoples Television Network",
+        [
+          2,
+          4
+        ],
+        "/wiki/Aboriginal_Peoples_Television_Network",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "8a4beb018099ed24",
+    "answer": "José Wolfango Montes Vannuci",
+    "gold_table_id": "List_of_Bolivian_submissions_for_the_Academy_Award_for_Best_Foreign_Language_Film_0",
+    "answer_node": [
+      [
+        "Jonah and the Pink Whale",
+        [
+          0,
+          1
+        ],
+        "/wiki/Jonah_and_the_Pink_Whale",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "8dc733e7cb7f31f3",
+    "answer": "Louis Marie Malle",
+    "gold_table_id": "List_of_French_films_of_1963_0",
+    "answer_node": [
+      [
+        "Louis Malle",
+        [
+          19,
+          1
+        ],
+        "/wiki/Louis_Malle",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "8f318338fe6f35bf",
+    "answer": "April 30 , 2010",
+    "gold_table_id": "List_of_films_released_by_New_Line_Cinema_5",
+    "answer_node": [
+      [
+        "April 30 , 2010",
+        [
+          1,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "92605db4fccdb3fa",
+    "answer": "Network Ten",
+    "gold_table_id": "1995_in_Australian_television_1",
+    "answer_node": [
+      [
+        "Network Ten",
+        [
+          1,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Network Ten",
+        [
+          5,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Network Ten",
+        [
+          8,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Network Ten",
+        [
+          9,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Network Ten",
+        [
+          10,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Network Ten",
+        [
+          13,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9393505afe145650",
+    "answer": "The Adventures of Hiram Holliday",
+    "gold_table_id": "List_of_television_series_produced_by_Paramount_Television_30",
+    "answer_node": [
+      [
+        "The Adventures of Hiram Holliday",
+        [
+          1,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9bef129a6736b09a",
+    "answer": "Jon Avnet",
+    "gold_table_id": "List_of_Holocaust_films_6",
+    "answer_node": [
+      [
+        "Jon Avnet",
+        [
+          8,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Uprising (2001 film)",
+        [
+          8,
+          2
+        ],
+        "/wiki/Uprising_(2001_film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "9f6ae8eaab015b27",
+    "answer": "Rae Brunton",
+    "gold_table_id": "List_of_World_War_II_science_fiction,_fantasy,_and_horror_films_2",
+    "answer_node": [
+      [
+        "Outpost: Black Sun",
+        [
+          11,
+          2
+        ],
+        "/wiki/Outpost:_Black_Sun",
+        "passage"
+      ],
+      [
+        "Outpost: Black Sun",
+        [
+          13,
+          4
+        ],
+        "/wiki/Outpost:_Black_Sun",
+        "passage"
+      ],
+      [
+        "Outpost (2008 film)",
+        [
+          11,
+          4
+        ],
+        "/wiki/Outpost_(2008_film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a1688f66d4862655",
+    "answer": "land buyers",
+    "gold_table_id": "List_of_horror_films_of_1977_0",
+    "answer_node": [
+      [
+        "Empire of the Ants (film)",
+        [
+          10,
+          0
+        ],
+        "/wiki/Empire_of_the_Ants_(film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a269b85316c926cf",
+    "answer": "progressive rock",
+    "gold_table_id": "List_of_year-end_number-one_albums_(New_Zealand)_0",
+    "answer_node": [
+      [
+        "Pink Floyd",
+        [
+          0,
+          1
+        ],
+        "/wiki/Pink_Floyd",
+        "passage"
+      ],
+      [
+        "Pink Floyd",
+        [
+          5,
+          1
+        ],
+        "/wiki/Pink_Floyd",
+        "passage"
+      ],
+      [
+        "Supertramp",
+        [
+          4,
+          1
+        ],
+        "/wiki/Supertramp",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "a31154d8236c6041",
+    "answer": "2014",
+    "gold_table_id": "Star_Awards_for_Best_Supporting_Actor_0",
+    "answer_node": [
+      [
+        "2014",
+        [
+          18,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Tay Ping Hui",
+        [
+          4,
+          1
+        ],
+        "/wiki/Tay_Ping_Hui",
+        "passage"
+      ],
+      [
+        "Tay Ping Hui",
+        [
+          17,
+          1
+        ],
+        "/wiki/Tay_Ping_Hui",
+        "passage"
+      ],
+      [
+        "Shaun Chen",
+        [
+          11,
+          3
+        ],
+        "/wiki/Shaun_Chen",
+        "passage"
+      ],
+      [
+        "Shaun Chen",
+        [
+          18,
+          3
+        ],
+        "/wiki/Shaun_Chen",
+        "passage"
+      ],
+      [
+        "Star Awards 2009",
+        [
+          13,
+          0
+        ],
+        "/wiki/Star_Awards_2009",
+        "passage"
+      ],
+      [
+        "Jerry Yeo",
+        [
+          14,
+          3
+        ],
+        "/wiki/Jerry_Yeo",
+        "passage"
+      ],
+      [
+        "The Journey: Tumultuous Times",
+        [
+          19,
+          2
+        ],
+        "/wiki/The_Journey:_Tumultuous_Times",
+        "passage"
+      ],
+      [
+        "Against the Tide (TV series)",
+        [
+          19,
+          3
+        ],
+        "/wiki/Against_the_Tide_(TV_series)",
+        "passage"
+      ],
+      [
+        "Against the Tide (TV series)",
+        [
+          19,
+          3
+        ],
+        "/wiki/Against_the_Tide_(TV_series)",
+        "passage"
+      ],
+      [
+        "In The Name Of Love (TV Series)",
+        [
+          19,
+          3
+        ],
+        "/wiki/In_The_Name_Of_Love_(TV_Series)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ad82a5d1de3e1fa6",
+    "answer": "Sequoia Park",
+    "gold_table_id": "List_of_television_stations_in_the_United_States_by_call_sign_(initial_letter_K)_8",
+    "answer_node": [
+      [
+        "Eureka, California",
+        [
+          4,
+          3
+        ],
+        "/wiki/Eureka,_California",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "af318afc315877cb",
+    "answer": "over 500,000 copies",
+    "gold_table_id": "The_Rasmus_discography_1",
+    "answer_node": [
+      [
+        "Hide from the Sun",
+        [
+          1,
+          1
+        ],
+        "/wiki/Hide_from_the_Sun",
+        "passage"
+      ],
+      [
+        "Hide from the Sun",
+        [
+          1,
+          2
+        ],
+        "/wiki/Hide_from_the_Sun",
+        "passage"
+      ],
+      [
+        "Hide from the Sun",
+        [
+          13,
+          1
+        ],
+        "/wiki/Hide_from_the_Sun",
+        "passage"
+      ],
+      [
+        "Hide from the Sun",
+        [
+          13,
+          2
+        ],
+        "/wiki/Hide_from_the_Sun",
+        "passage"
+      ],
+      [
+        "Hide from the Sun",
+        [
+          19,
+          1
+        ],
+        "/wiki/Hide_from_the_Sun",
+        "passage"
+      ],
+      [
+        "Hide from the Sun",
+        [
+          19,
+          2
+        ],
+        "/wiki/Hide_from_the_Sun",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b121093e4b2c0608",
+    "answer": "35 years",
+    "gold_table_id": "List_of_fictional_birds_of_prey_5",
+    "answer_node": [
+      [
+        "Freddie Falcon",
+        [
+          7,
+          0
+        ],
+        "/wiki/Freddie_Falcon",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b30d78f5eb2190cf",
+    "answer": "around 600 B.C",
+    "gold_table_id": "Indian_Television_Academy_Awards_13",
+    "answer_node": [
+      [
+        "Amrapali (TV series)",
+        [
+          1,
+          2
+        ],
+        "/wiki/Amrapali_(TV_series)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b4097ceb0b475782",
+    "answer": "1883",
+    "gold_table_id": "List_of_television_stations_in_the_United_States_by_call_sign_(initial_letter_K)_14",
+    "answer_node": [
+      [
+        "Medford, Oregon",
+        [
+          7,
+          3
+        ],
+        "/wiki/Medford,_Oregon",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b5532dd09de87832",
+    "answer": "Weasel",
+    "gold_table_id": "List_of_fictional_mustelids_0",
+    "answer_node": [
+      [
+        "Weather Weasel",
+        [
+          18,
+          0
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Weasel",
+        [
+          18,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Weasel version of Weather Wizard",
+        [
+          18,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Least Weasel",
+        [
+          19,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b7b230475f4c3332",
+    "answer": "Island Records",
+    "gold_table_id": "Art_Farmer_discography_2",
+    "answer_node": [
+      [
+        "EmArcy Records",
+        [
+          3,
+          3
+        ],
+        "/wiki/EmArcy_Records",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "b8c33cd9d720569f",
+    "answer": "My Way",
+    "gold_table_id": "List_of_Romanian_submissions_for_the_Academy_Award_for_Best_Foreign_Language_Film_0",
+    "answer_node": [
+      [
+        "Filantropica",
+        [
+          18,
+          1
+        ],
+        "/wiki/Filantropica",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "be23d5b5fd0b9496",
+    "answer": "Jean Marais",
+    "gold_table_id": "List_of_French-language_films_4",
+    "answer_node": [
+      [
+        "Beauty and the Beast (1946 film)",
+        [
+          8,
+          1
+        ],
+        "/wiki/Beauty_and_the_Beast_(1946_film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "c77ffc3d252352ab",
+    "answer": "Summer Skin",
+    "gold_table_id": "List_of_submissions_to_the_34th_Academy_Awards_for_Best_Foreign_Language_Film_0",
+    "answer_node": [
+      [
+        "Summer Skin",
+        [
+          0,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "c785e669858ec6f2",
+    "answer": "Allen Swift",
+    "gold_table_id": "2010_in_American_television_6",
+    "answer_node": [
+      [
+        "Allen Swift",
+        [
+          5,
+          1
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ca620f4bebee8ef8",
+    "answer": "two",
+    "gold_table_id": "List_of_horror_films_of_1975_0",
+    "answer_node": [
+      [
+        "Armando Crispino",
+        [
+          0,
+          1
+        ],
+        "/wiki/Armando_Crispino",
+        "passage"
+      ],
+      [
+        "Joanna Cassidy",
+        [
+          5,
+          2
+        ],
+        "/wiki/Joanna_Cassidy",
+        "passage"
+      ],
+      [
+        "George Hamilton (actor)",
+        [
+          6,
+          2
+        ],
+        "/wiki/George_Hamilton_(actor)",
+        "passage"
+      ],
+      [
+        "Linda Cristal",
+        [
+          6,
+          2
+        ],
+        "/wiki/Linda_Cristal",
+        "passage"
+      ],
+      [
+        "Joan Blondell",
+        [
+          6,
+          2
+        ],
+        "/wiki/Joan_Blondell",
+        "passage"
+      ],
+      [
+        "Freddie Francis",
+        [
+          10,
+          1
+        ],
+        "/wiki/Freddie_Francis",
+        "passage"
+      ],
+      [
+        "Freddie Francis",
+        [
+          19,
+          1
+        ],
+        "/wiki/Freddie_Francis",
+        "passage"
+      ],
+      [
+        "Pete Walker (director)",
+        [
+          12,
+          1
+        ],
+        "/wiki/Pete_Walker_(director)",
+        "passage"
+      ],
+      [
+        "Judith Anderson",
+        [
+          14,
+          2
+        ],
+        "/wiki/Judith_Anderson",
+        "passage"
+      ],
+      [
+        "Roy Scheider",
+        [
+          15,
+          2
+        ],
+        "/wiki/Roy_Scheider",
+        "passage"
+      ],
+      [
+        "Last Stop on the Night Train",
+        [
+          18,
+          0
+        ],
+        "/wiki/Last_Stop_on_the_Night_Train",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ccb8265480ef2e79",
+    "answer": "3",
+    "gold_table_id": "List_of_lesbian,_gay,_bisexual_or_transgender-related_films_of_1968_0",
+    "answer_node": [
+      [
+        "Kinji Fukasaku",
+        [
+          1,
+          1
+        ],
+        "/wiki/Kinji_Fukasaku",
+        "passage"
+      ],
+      [
+        "Tony Curtis",
+        [
+          2,
+          4
+        ],
+        "/wiki/Tony_Curtis",
+        "passage"
+      ],
+      [
+        "Peter Woodcock",
+        [
+          3,
+          1
+        ],
+        "/wiki/Peter_Woodcock",
+        "passage"
+      ],
+      [
+        "Malcolm McDowell",
+        [
+          7,
+          4
+        ],
+        "/wiki/Malcolm_McDowell",
+        "passage"
+      ],
+      [
+        "Yves Beneyton",
+        [
+          10,
+          4
+        ],
+        "/wiki/Yves_Beneyton",
+        "passage"
+      ],
+      [
+        "Anthony Harvey",
+        [
+          11,
+          1
+        ],
+        "/wiki/Anthony_Harvey",
+        "passage"
+      ],
+      [
+        "John Castle",
+        [
+          11,
+          4
+        ],
+        "/wiki/John_Castle",
+        "passage"
+      ],
+      [
+        "The Lion in Winter",
+        [
+          11,
+          5
+        ],
+        "/wiki/The_Lion_in_Winter",
+        "passage"
+      ],
+      [
+        "Paul Newman",
+        [
+          13,
+          1
+        ],
+        "/wiki/Paul_Newman",
+        "passage"
+      ],
+      [
+        "Terence Stamp",
+        [
+          16,
+          4
+        ],
+        "/wiki/Terence_Stamp",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d06ae8901ce22f03",
+    "answer": "encrypted",
+    "gold_table_id": "Television_in_Austria_0",
+    "answer_node": [
+      [
+        "ORF 2",
+        [
+          0,
+          1
+        ],
+        "/wiki/ORF_2",
+        "passage"
+      ],
+      [
+        "ORF eins",
+        [
+          1,
+          1
+        ],
+        "/wiki/ORF_eins",
+        "passage"
+      ],
+      [
+        "ATV (Austria)",
+        [
+          9,
+          1
+        ],
+        "/wiki/ATV_(Austria)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d2d47943e912524b",
+    "answer": "Frank Hauser",
+    "gold_table_id": "Robert_Bathurst_filmography_2",
+    "answer_node": [
+      [
+        "Frank Hauser",
+        [
+          19,
+          3
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d39a6ddd7a058132",
+    "answer": "Salim Ahamed",
+    "gold_table_id": "2010_Kerala_State_Film_Awards_0",
+    "answer_node": [
+      [
+        "Salim Ahamed",
+        [
+          11,
+          1
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Salim Ahmed",
+        [
+          0,
+          1
+        ],
+        "/wiki/Salim_Ahmed",
+        "passage"
+      ],
+      [
+        "Adaminte Makan Abu",
+        [
+          0,
+          2
+        ],
+        "/wiki/Adaminte_Makan_Abu",
+        "passage"
+      ],
+      [
+        "Adaminte Makan Abu",
+        [
+          3,
+          2
+        ],
+        "/wiki/Adaminte_Makan_Abu",
+        "passage"
+      ],
+      [
+        "Adaminte Makan Abu",
+        [
+          11,
+          2
+        ],
+        "/wiki/Adaminte_Makan_Abu",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d6d814996cdf9209",
+    "answer": "thriller",
+    "gold_table_id": "Suresh_Gopi_filmography_0",
+    "answer_node": [
+      [
+        "Apothecary (film)",
+        [
+          7,
+          1
+        ],
+        "/wiki/Apothecary_(film)",
+        "passage"
+      ],
+      [
+        "Madhav Ramadasan",
+        [
+          7,
+          3
+        ],
+        "/wiki/Madhav_Ramadasan",
+        "passage"
+      ],
+      [
+        "Madhav Ramadasan",
+        [
+          13,
+          3
+        ],
+        "/wiki/Madhav_Ramadasan",
+        "passage"
+      ],
+      [
+        "Priyadarshan",
+        [
+          9,
+          3
+        ],
+        "/wiki/Priyadarshan",
+        "passage"
+      ],
+      [
+        "The King & The Commissioner",
+        [
+          10,
+          1
+        ],
+        "/wiki/The_King_&_The_Commissioner",
+        "passage"
+      ],
+      [
+        "Collector (2011 film)",
+        [
+          12,
+          1
+        ],
+        "/wiki/Collector_(2011_film)",
+        "passage"
+      ],
+      [
+        "Christian Brothers (film)",
+        [
+          14,
+          1
+        ],
+        "/wiki/Christian_Brothers_(film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d79960356a8e61cc",
+    "answer": "The Chocolate Mountains",
+    "gold_table_id": "List_of_television_stations_in_the_United_States_by_call_sign_(initial_letter_K)_4",
+    "answer_node": [
+      [
+        "KECY-TV",
+        [
+          1,
+          0
+        ],
+        "/wiki/KECY-TV",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d94e57571eebd774",
+    "answer": "ghost story",
+    "gold_table_id": "List_of_submissions_to_the_38th_Academy_Awards_for_Best_Foreign_Language_Film_0",
+    "answer_node": [
+      [
+        "Kwaidan (film)",
+        [
+          11,
+          1
+        ],
+        "/wiki/Kwaidan_(film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "d985d0c4448e1654",
+    "answer": "White Lion Records",
+    "gold_table_id": "Latin_Grammy_Award_for_Best_New_Artist_0",
+    "answer_node": [
+      [
+        "Calle 13 (band)",
+        [
+          6,
+          1
+        ],
+        "/wiki/Calle_13_(band)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e3a35cbb2a911440",
+    "answer": "July 8 , 2011",
+    "gold_table_id": "List_of_fictional_ungulates_4",
+    "answer_node": [
+      [
+        "Zookeeper (film)",
+        [
+          5,
+          2
+        ],
+        "/wiki/Zookeeper_(film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e661dcce0600b7c4",
+    "answer": "Harry Cohn",
+    "gold_table_id": "1984_in_film_0",
+    "answer_node": [
+      [
+        "Columbia Pictures",
+        [
+          1,
+          2
+        ],
+        "/wiki/Columbia_Pictures",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e78158a7dee74b21",
+    "answer": "Billy Bunny Sr",
+    "gold_table_id": "List_of_fictional_rabbits_and_hares_4",
+    "answer_node": [
+      [
+        "Billy Bunny Sr",
+        [
+          1,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "e7c6967d591578c0",
+    "answer": "2005 to 2007",
+    "gold_table_id": "List_of_fictional_ducks_in_animation_3",
+    "answer_node": [
+      [
+        "Loonatics Unleashed",
+        [
+          2,
+          1
+        ],
+        "/wiki/Loonatics_Unleashed",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ea346e8b1bb6688b",
+    "answer": "Green",
+    "gold_table_id": "List_of_fictional_elements,_materials,_isotopes_and_atomic_particles_0",
+    "answer_node": [
+      [
+        "A green liquid with the symbol Ar and the atomic number 7 that makes a compound that is corrosive to copper when mixed with Galine and Sanite , and a compound that produces clouds when exposed to air when mixed with Regalite",
+        [
+          7,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Diamond",
+        [
+          0,
+          2
+        ],
+        "/wiki/Diamond",
+        "passage"
+      ],
+      [
+        "Marvel Comics",
+        [
+          2,
+          1
+        ],
+        "/wiki/Marvel_Comics",
+        "passage"
+      ],
+      [
+        "Marvel Comics",
+        [
+          15,
+          1
+        ],
+        "/wiki/Marvel_Comics",
+        "passage"
+      ],
+      [
+        "Marvel Comics",
+        [
+          15,
+          2
+        ],
+        "/wiki/Marvel_Comics",
+        "passage"
+      ],
+      [
+        "Electrum",
+        [
+          8,
+          2
+        ],
+        "/wiki/Electrum",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "ea8a1fb2f9ad2669",
+    "answer": "Dene",
+    "gold_table_id": "CBC_Television_0",
+    "answer_node": [
+      [
+        "Yellowknife",
+        [
+          13,
+          0
+        ],
+        "/wiki/Yellowknife",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f0fb3233a9d99176",
+    "answer": "1949",
+    "gold_table_id": "Indian_Television_Academy_Awards_4",
+    "answer_node": [
+      [
+        "Naseeruddin Shah",
+        [
+          1,
+          1
+        ],
+        "/wiki/Naseeruddin_Shah",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f66de894596889e0",
+    "answer": "Cóndor Crux , la leyenda",
+    "gold_table_id": "List_of_Argentine_films_of_2000_0",
+    "answer_node": [
+      [
+        "Cóndor Crux , la leyenda",
+        [
+          8,
+          0
+        ],
+        null,
+        "table"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f6b8caf9ca5bc912",
+    "answer": "Oliver Hardy",
+    "gold_table_id": "List_of_fictional_pachyderms_3",
+    "answer_node": [
+      [
+        "A sick elephant that is cured by a country doctor ( Oliver Hardy ) with comical consequences",
+        [
+          10,
+          3
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Zenobia (film)",
+        [
+          10,
+          2
+        ],
+        "/wiki/Zenobia_(film)",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f84e40d407c74ed8",
+    "answer": "Terms and conditions apply",
+    "gold_table_id": "Bollywood_highest_grossing_films_by_month_3",
+    "answer_node": [
+      [
+        "Sharato Lagu",
+        [
+          4,
+          1
+        ],
+        "/wiki/Sharato_Lagu",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f86da54f39d7dea5",
+    "answer": "Jane Birkin",
+    "gold_table_id": "List_of_French_films_of_1990_0",
+    "answer_node": [
+      [
+        "Dirk Bogarde , Jane Birkin , Odette Laure",
+        [
+          4,
+          2
+        ],
+        null,
+        "table"
+      ],
+      [
+        "Jacques Doillon",
+        [
+          10,
+          1
+        ],
+        "/wiki/Jacques_Doillon",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "f91a76ab979a0412",
+    "answer": "Ilene Chaiken",
+    "gold_table_id": "List_of_programming_changes_on_Australian_television_in_2008_1",
+    "answer_node": [
+      [
+        "The L Word",
+        [
+          2,
+          0
+        ],
+        "/wiki/The_L_Word",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  },
+  {
+    "question_id": "fffaea74172aa6b8",
+    "answer": "Craig Kilborn",
+    "gold_table_id": "List_of_international_television_series_premieres_on_Australian_television_in_2011_0",
+    "answer_node": [
+      [
+        "The Late Late Show with Craig Ferguson",
+        [
+          3,
+          0
+        ],
+        "/wiki/The_Late_Late_Show_with_Craig_Ferguson",
+        "passage"
+      ]
+    ],
+    "trace_quality": "official automatically generated approximate trace"
+  }
+]

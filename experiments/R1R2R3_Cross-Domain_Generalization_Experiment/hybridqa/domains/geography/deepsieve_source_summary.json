@@ -1,0 +1,40 @@
+{
+  "domain": "geography",
+  "generated_from": "semantic_catalog/semantic_list_3sources.json",
+  "sources": {
+    "table": {
+      "summary": "The Table source is ideal for structured, queryable data about geographic entities. It provides columns for names, capitals, populations, areas, rankings, dates, and other numeric attributes. Use it when you need to compare values, sort by rank, filter by numeric thresholds, or retrieve a specific fact like a census population or area in square kilometers. Tables cover administrative divisions, islands, lakes, rivers, populated places, electoral districts, ethnic population counts, and historic site lists. The execution sees the complete question-bound table, so you can directly compute sums, averages, or identify maximum/minimum values. For example, to find the most populous city in a region or the largest island by area, the table gives exact numbers. It is also useful for verifying dates like creation or supersession years. Avoid using Table for descriptive prose, historical narratives, or qualitative attributes not present as columns.",
+      "best_for": [
+        "Numeric comparisons (population, area, elevation)",
+        "Rankings and top/bottom lists",
+        "Census figures and estimates",
+        "Structured lists of entities (islands, rivers, districts)",
+        "Identifying capitals, headquarters, or administrative seats"
+      ],
+      "avoid_when": [
+        "Need narrative descriptions or historical context",
+        "Need details like etymology, climate, or cultural institutions",
+        "Need information not explicitly in columns"
+      ]
+    },
+    "doc": {
+      "summary": "The Doc source provides rich prose descriptions for geographic entities, including countries, islands, administrative divisions, institutions, and historic places. Each document is linked to a table via `linked_from_table_ids`, so you first identify the relevant entity from the Table, then retrieve its document for deeper context. Documents are filtered by title and first sentence before full text is read, making them efficient for targeted facts. Use Doc when you need qualitative attributes like official names, etymology, historical background, government structure, architectural style, major industries, or cultural institutions. It also covers details like coordinates, bordering regions, and alternative names. For example, after finding a country's area in the Table, you can use Doc to learn about its climate or neighboring seas. Avoid Doc for direct numeric comparisons or rankings, as those are better in Table. Doc excels at explaining 'why' or 'how' behind the data.",
+      "best_for": [
+        "Prose descriptions (etymology, history, climate)",
+        "Qualitative attributes (government type, industries, architectural style)",
+        "Contextual details for a linked entity (e.g., a specific island's historical control)",
+        "Information not present in table cells, like cultural institutions or accreditation"
+      ],
+      "avoid_when": [
+        "Need exact numeric values for comparison",
+        "Need to sort or rank entities",
+        "Need a quick list of all entities in a category"
+      ]
+    }
+  },
+  "routing_boundary": "Use Table to identify an entity or value (e.g., find the island with the highest population density or the district with the largest area). Then, if you need a prose fact about that entity—such as its historical significance, architectural style, or cultural context—route to Doc, which contains the linked document for that entity. For example, first use Table to find the name of the largest lake in Bhutan, then use Doc to read about its formation or local legends. Do not use Doc for numeric comparisons; stick to Table for those.",
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat"
+  }
+}

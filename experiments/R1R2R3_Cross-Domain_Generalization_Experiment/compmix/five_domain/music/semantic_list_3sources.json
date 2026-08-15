@@ -1,0 +1,1622 @@
+{
+  "music_work_chart_position": {
+    "concept": "music_work_chart_position",
+    "overall_description": "Records the peak or yearly position of a music work (single or album) on a named regional chart, including chart name, date, and associated release year.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records the peak or yearly position of a music work (single or album) on a named regional chart, including chart name, date, and associated release year.",
+        "elements": [
+          "chart_name",
+          "chart_region",
+          "peak_position",
+          "album",
+          "artist",
+          "chart_date",
+          "album_title",
+          "chart_year",
+          "chart",
+          "position",
+          "region",
+          "release_title",
+          "release_type",
+          "year"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0002\", \"title\": \"...Baby One More Time (album)\", \"headers\": [\"Chart (1999)\", \"Peakposition\"], \"sample_rows\": [[\"South Korean Albums ( RIAK )\", \"13\"]]}",
+          "{\"table_id\": \"T0004\", \"title\": \"...Baby One More Time (album)\", \"headers\": [\"Chart (1999–2000)\", \"Peakposition\"], \"sample_rows\": [[\"Japanese Albums ( Oricon )\", \"9\"], [\"Danish Albums ( Hitlisten )\", \"7\"], [\"Australian Dance Albums ( ARIA )\", \"1\"]]}",
+          "{\"table_id\": \"T0475\", \"title\": \"Peace (Eurythmics album)\", \"headers\": [\"Chart (1999)\", \"Peakposition\"], \"sample_rows\": [[\"Danish Albums ( Hitlisten )\", \"5\"]]}",
+          "{\"table_id\": \"T0003\", \"title\": \"...Baby One More Time (album)\", \"headers\": [\"Chart (1999)\", \"Position\"], \"sample_rows\": [[\"Canadian Top Albums/CDs ( RPM )\", \"2\"], [\"US Billboard 200\", \"2\"], [\"Austrian Albums (Ö3 Austria)\", \"4\"]]}",
+          "{\"table_id\": \"T0001\", \"title\": \"...Baby One More Time (album)\", \"headers\": [\"Chart\", \"Position\"], \"sample_rows\": [[\"US Billboard 200 (Women)\", \"16\"]]}",
+          "{\"table_id\": \"T0005\", \"title\": \"...Baby One More Time (album)\", \"headers\": [\"Chart (2000)\", \"Position\"], \"sample_rows\": [[\"French Albums (SNEP)\", \"45\"], [\"European Top 100 Albums ( Music & Media )\", \"22\"], [\"Canadian Albums (Nielsen SoundScan)\", \"71\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records the peak or yearly position of a music work (single or album) on a named regional chart, including chart name, date, and associated release year.",
+        "elements": [
+          "chart_name",
+          "work_title",
+          "peak_position",
+          "chart_date",
+          "music_work"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00346\", \"title\": \"Billboard Hot 100\", \"text\": \"Billboard Hot 100, To address this issue, Billboard now separates airplay points from a song's original version and its remix, if the remix is determined to be a \\\"new song\\\".\"}",
+          "{\"doc_id\": \"D01964\", \"title\": \"G N' R Lies\", \"text\": \"G N' R Lies, Patience\\\" was the only single released from Lies, and peaked at number four on the Billboard Hot 100.\"}",
+          "{\"doc_id\": \"D00115\", \"title\": \"Guns N' Roses\", \"text\": \"Guns N' Roses, Further late showings caused issues; during a concert on September 1, 2010, in Dublin, the band was over an hour late arriving on stage.\"}",
+          "{\"doc_id\": \"D05713\", \"title\": \"Genius of Love\", \"text\": \"Genius of Love, Genius of Love\\\" reached No.\"}",
+          "{\"doc_id\": \"D00461\", \"title\": \"Love Is a Stranger\", \"text\": \"Love Is a Stranger, Stereogum and The Guardian both ranked the song number two on their lists of the greatest Annie Lennox songs.\"}",
+          "{\"doc_id\": \"D00916\", \"title\": \"I Will Always Love You\", \"text\": \"I Will Always Love You, The song has a saxophone solo by Kirk Whalum.\"}"
+        ]
+      }
+    }
+  },
+  "music_work_credit": {
+    "concept": "music_work_credit",
+    "overall_description": "Records the credited role (e.g., performer, lyricist, remixer) of an artist or entity in a music work, including release details and applicable notes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records the credited role (e.g., performer, lyricist, remixer) of an artist or entity in a music work, including release details and applicable notes.",
+        "elements": [
+          "year",
+          "work_title",
+          "language",
+          "credited_role",
+          "notes",
+          "title",
+          "role",
+          "artist",
+          "credit_role",
+          "release",
+          "album",
+          "track",
+          "release_date",
+          "label"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0015\", \"title\": \"A. R. Rahman\", \"headers\": [\"Year\", \"Title\", \"Credited as\", \"Notes\"], \"sample_rows\": [[\"2020\", \"Atkan Chatkan\", \"\", \"Norway\"]]}",
+          "{\"table_id\": \"T0016\", \"title\": \"A. R. Rahman\", \"headers\": [\"Year\", \"Title\", \"Language\", \"Role\", \"Notes\"], \"sample_rows\": [[\"2019\", \"Bigil\", \"Tamil\", \"Himself\", \"Cameo in \\\" Singappenney \\\" song\"]]}",
+          "{\"table_id\": \"T0057\", \"title\": \"Axl Rose\", \"headers\": [\"Title\", \"Year\", \"Role\"], \"sample_rows\": [[\"Jimmy Kimmel Live!\", \"2012\", \"Himself, Notes is\"]]}",
+          "{\"table_id\": \"T0550\", \"title\": \"Roger Daltrey\", \"headers\": [\"Title\", \"Year\", \"Role\", \"Notes\"], \"sample_rows\": [[\"The Beggar's Opera\", \"1983\", \"Captain Macheath\", \"BBC musical production\"], [\"The Last Detective\", \"2007\", \"Mick Keating\", \"TV series\"], [\"Best\", \"2000\", \"Rodney Marsh\", \"film\"]]}",
+          "{\"table_id\": \"T0154\", \"title\": \"Dan Wilson (musician)\", \"headers\": [\"Year\", \"Artist\", \"Credit\", \"Title\"], \"sample_rows\": [[\"2013\", \"Romeo Testa\", \"Writer\", \"\\\"With You\\\"\"], [\"2018\", \"Jason Mraz\", \"Writer / Producer\", \"\\\"Love Is Still the Answer\\\"\"], [\"2018\", \"Brett Dennen\", \"Writer / Producer\", \"\\\"Home Away from Home\\\"\"]]}",
+          "{\"table_id\": \"T0497\", \"title\": \"Pitchfork (website)\", \"headers\": [\"Artist\", \"Title\", \"Year\"], \"sample_rows\": [[\"Walt Mink\", \"El Producto\", \"1996, Reference is\"], [\"Tobin, Amon [[Amon Tobin]]\", \"Bricolage\", \"1997, Reference is\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records the credited role (e.g., performer, lyricist, remixer) of an artist or entity in a music work, including release details and applicable notes.",
+        "elements": [
+          "original_work",
+          "remix_work",
+          "remixer",
+          "release_format",
+          "notes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00388\", \"title\": \"Adina Howard\", \"text\": \"Adina Howard, While many of the song titles were variations on the word \\\"freak\\\" they were actually renamed tracks from previous releases. \\\"(\"}",
+          "{\"doc_id\": \"D01039\", \"title\": \"Freak like Me\", \"text\": \"Freak like Me, Numan considered the Sugababes version of \\\"Freak like Me\\\" to be better than \\\"Are 'Friends' Electric?\\\". \\\"\"}",
+          "{\"doc_id\": \"D00677\", \"title\": \"This Is for the Lover in You\", \"text\": \"This Is for the Lover in You, \\\"This Is for the Lover in You\\\" is a song written by Howard Hewett, member of the trio Shalamar, and songwriter Dana Meyers.\"}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the credited role (e.g., performer, lyricist, remixer) of an artist or entity in a music work, including release details and applicable notes.",
+        "elements": [
+          "music_work",
+          "lyricist",
+          "qualifier_identity_of_object_in_context",
+          "qualifier_object_has_role"
+        ],
+        "data_examples": [
+          "New World Order --lyrics by--> Dave Mustaine",
+          "Fashion of His Love --composer--> Lady Gaga",
+          "Kagerō --adapted by--> Joe Hisaishi"
+        ]
+      }
+    }
+  },
+  "music_work_release": {
+    "concept": "music_work_release",
+    "overall_description": "Records the release details of a music work (album or single), including title, year, region, edition, format, label, and commercial performance.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records the release details of a music work (album or single), including title, year, region, edition, format, label, and commercial performance.",
+        "elements": [
+          "music_work_title",
+          "release_year",
+          "title",
+          "album_title",
+          "record_label",
+          "region",
+          "release_date",
+          "edition",
+          "format",
+          "label",
+          "country",
+          "version"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0036\", \"title\": \"Alexandra Stan discography\", \"headers\": [\"Title\", \"Year\"], \"sample_rows\": [[\"ROM\", \"{{abbr|POL|Poland}}\"]]}",
+          "{\"table_id\": \"T0037\", \"title\": \"Alexandra Stan discography\", \"headers\": [\"Title\", \"Year\", \"Album\"], \"sample_rows\": [[\"\\\"Ting-Ting\\\"\", \"2013\", \"Saxobeats\"]]}",
+          "{\"table_id\": \"T0034\", \"title\": \"Alexandra Stan discography\", \"headers\": [\"Title\", \"Album details\", \"Peak chart positions\"], \"sample_rows\": [[\"The Best\", \"Released: 10 October 2018 Label: Victor Format: CD\", \"131\"]]}",
+          "{\"table_id\": \"T0462\", \"title\": \"OneRepublic discography\", \"headers\": [\"Title\", \"Year\"], \"sample_rows\": [[\"AUT\", \"GER\"]]}",
+          "{\"table_id\": \"T0464\", \"title\": \"OneRepublic discography\", \"headers\": [\"Title\", \"Year\", \"Peak chart positions\", \"Album\"], \"sample_rows\": [[\"\\\" Bones \\\" ( Galantis featuring OneRepublic)\", \"2019\", \"17\", \"54\"], [\"\\\"Burning Bridges\\\"\", \"2014\", \"—\", \"96\"]]}",
+          "{\"table_id\": \"T0465\", \"title\": \"OneRepublic discography\", \"headers\": [\"Title\", \"Year\", \"Peak chart positions\", \"Certification\", \"Album\"], \"sample_rows\": [[\"\\\"A.I.\\\" (featuring Peter Gabriel )\", \"2016\", \"—\", \"—\", \"—\"], [\"\\\"What You Wanted\\\"\", \"2013\", \"—\", \"—\", \"—\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records the release details of a music work (album or single), including title, year, region, edition, format, label, and commercial performance.",
+        "elements": [
+          "song_title",
+          "artist",
+          "release_date",
+          "record_label",
+          "album",
+          "chart_positions",
+          "certifications",
+          "chart_position",
+          "certification",
+          "music_video_director"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D01025\", \"title\": \"Oops!... I Did It Again (song)\", \"text\": \"Oops!... I Did It Again (song), I Did It Again\\\" titled \\\"Oops I Did It Again!:\"}",
+          "{\"doc_id\": \"D00079\", \"title\": \"Down Under (song)\", \"text\": \"Down Under (song), In the United States, the rights are administered by Music Sales Corporation in New York City.\"}",
+          "{\"doc_id\": \"D00143\", \"title\": \"Believer (Imagine Dragons song)\", \"text\": \"Believer (Imagine Dragons song), Among component charts, it also topped Rock Airplay, Rock Streaming Songs, Rock Digital Sale Songs, and Top TV Commercials Charts.\"}",
+          "{\"doc_id\": \"D03049\", \"title\": \"Shivers (Ed Sheeran song)\", \"text\": \"Shivers (Ed Sheeran song), It has over 234 millions views as of October 2022.\"}",
+          "{\"doc_id\": \"D01343\", \"title\": \"Bad Habits (Ed Sheeran song)\", \"text\": \"Bad Habits (Ed Sheeran song), Following his performance with Bring Me the Horizon at the 2022 BRIT Awards, the pair announced they were releasing a heavy metal studio version of the track on 17 February 2022.\"}",
+          "{\"doc_id\": \"D00203\", \"title\": \"Perfect (Ed Sheeran song)\", \"text\": \"Perfect (Ed Sheeran song), Beyoncé agreed, and the two recorded the song in May 2017.\"}"
+        ]
+      }
+    }
+  },
+  "music_award_nomination": {
+    "concept": "music_award_nomination",
+    "overall_description": "Records the nomination or recognition of a music work or artist in an award ceremony, including category, year, nominee, work, and result.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records the nomination or recognition of a music work or artist in an award ceremony, including category, year, nominee, work, and result.",
+        "elements": [
+          "year",
+          "award_category",
+          "nominee_work",
+          "source_work",
+          "result",
+          "ceremony",
+          "award_name",
+          "award_year",
+          "nominated_work",
+          "award_result",
+          "award",
+          "category",
+          "nominee",
+          "award_ceremony"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0045\", \"title\": \"Annie Lennox\", \"headers\": [\"Year\", \"Category\", \"Nominee(s)\", \"From\", \"Result\"], \"sample_rows\": [[\"2019\", \"Best Original Song\", \"\\\"Requiem for A Private War\\\"\", \"A Private War\", \"Ref is\"]]}",
+          "{\"table_id\": \"T0046\", \"title\": \"Annie Lennox\", \"headers\": [\"Year\", \"Category\", \"Nominee(s)\", \"Result\"], \"sample_rows\": [[\"1993\", \"Best Female Pop Vocal Performance\", \"Diva\", \"Ref is\"], [\"1993\", \"Best Music Video – Long Form\", \"Diva\", \"Ref is\"], [\"1986\", \"Best Rock Performance by a Duo or Group with Vocal\", \"\\\" Would I Lie to You? \\\"\", \"Ref is\"]]}",
+          "{\"table_id\": \"T0044\", \"title\": \"Annie Lennox\", \"headers\": [\"Year\", \"Category\", \"Nominee(s)\"], \"sample_rows\": [[\"1990\", \"British Female Solo Artist\", \"Herself, Result is\"], [\"1992\", \"Best Female Video\", \"\\\" Why \\\", Result is\"], [\"1989\", \"British Female Solo Artist\", \"Herself, Result is\"]]}",
+          "{\"table_id\": \"T0079\", \"title\": \"Best Song Ever\", \"headers\": [\"Year\", \"Ceremony\", \"Award\"], \"sample_rows\": [[\"2013\", \"World Music Awards\", \"World's Best Video\"]]}",
+          "{\"table_id\": \"T0080\", \"title\": \"Best Song Ever\", \"headers\": [\"Year\", \"Ceremony\", \"Award\", \"Result\"], \"sample_rows\": [[\"2013\", \"Rockbjörnen\", \"Best International Song\", \"rowspan=\\\"3\\\"\"]]}",
+          "{\"table_id\": \"T0730\", \"title\": \"Umbrella (song)\", \"headers\": [\"Year\", \"Ceremony\", \"Award\"], \"sample_rows\": [[\"2008\", \"50th Annual Grammy Awards\", \"Best Rap/Sung Collaboration, Result is\"], [\"2007\", \"Los Premios MTV Latinoamérica\", \"Song of the Year, Result is\"], [\"2007\", \"MTV Video Music Awards\", \"Best Director, Result is\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records the nomination or recognition of a music work or artist in an award ceremony, including category, year, nominee, work, and result.",
+        "elements": [
+          "work_title",
+          "award_name",
+          "award_category",
+          "year",
+          "result"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00251\", \"title\": \"Jubilee (Japanese Breakfast album)\", \"text\": \"Jubilee (Japanese Breakfast album), Critics lauded the album's joyous tone, Zauner's storytelling abilities, the songs' hooks and the album's production.\"}",
+          "{\"doc_id\": \"D00044\", \"title\": \"Grammy Awards\", \"text\": \"Grammy Awards, Taylor Swift's 1989 won Album of the Year in 2016, even though the album came out in October 2014.\"}",
+          "{\"doc_id\": \"D00135\", \"title\": \"Yellow (Coldplay song)\", \"text\": \"Yellow (Coldplay song), During most concert performances, large yellow balloons are dropped on the audience.\"}"
+        ]
+      }
+    }
+  },
+  "music_artist_media_appearance": {
+    "concept": "music_artist_media_appearance",
+    "overall_description": "Records an artist's or song's appearance in a media work (film, TV, video game), including year, title, role, and notes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records an artist's or song's appearance in a media work (film, tv, video game), including year, title, role, and notes.",
+        "elements": [
+          "year",
+          "film",
+          "role",
+          "notes",
+          "title",
+          "work_title",
+          "film_title",
+          "voice_role"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0120\", \"title\": \"Bono\", \"headers\": [\"Year\", \"Film\", \"Role\"], \"sample_rows\": [[\"1999\", \"Entropy\", \"Himself, Notes is\"], [\"2011\", \"Anton Corbijn Inside Out\", \"Himself, Notes is\"]]}",
+          "{\"table_id\": \"T0121\", \"title\": \"Bono\", \"headers\": [\"Year\", \"Film\", \"Role\", \"Notes\"], \"sample_rows\": [[\"1998\", \"The Simpsons\", \"Himself\", \"TV series; one episode, \\\" Trash of the Titans \\\"\"], [\"2008\", \"U2 3D\", \"Himself\", \"3D concert film\"], [\"2021\", \"Sing 2\", \"Clay Calloway\", \"Voice role\"]]}",
+          "{\"table_id\": \"T0507\", \"title\": \"Prince (musician)\", \"headers\": [\"Year\", \"Film\", \"Role\", \"Director\"], \"sample_rows\": [[\"1994\", \"3 Chains o' Gold\", \"Himself\", \"Prince\"]]}",
+          "{\"table_id\": \"T0202\", \"title\": \"Fergie (singer)\", \"headers\": [\"Year\", \"Title\", \"Role\"], \"sample_rows\": [[\"2011\", \"Avon Voices\", \"Judge / Mentor, Notes is\"]]}",
+          "{\"table_id\": \"T0203\", \"title\": \"Fergie (singer)\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Notes\"], \"sample_rows\": [[\"2009\", \"Nine\", \"Saraghina\", \"Nominated — Screen Actors Guild Award for Outstanding Performance by a Cast in a Motion Picture\"], [\"1985\", \"Snoopy's Getting Married, Charlie Brown\", \"Sally Brown (voice role)\", \"Television special\"], [\"2009\", \"Arthur and the Revenge of Maltazard\", \"Replay\", \"Voice\"]]}",
+          "{\"table_id\": \"T0258\", \"title\": \"Heidi Klum\", \"headers\": [\"Year\", \"Title\", \"Role\"], \"sample_rows\": [[\"2000\", \"Cursed\", \"Annika\"], [\"2011\", \"Hoodwinked Too! Hood vs. Evil\", \"Heidi\"], [\"2019–2020\", \"America's Got Talent: The Champions\", \"Herself/Judge\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records an artist's or song's appearance in a media work (film, tv, video game), including year, title, role, and notes.",
+        "elements": [
+          "artist",
+          "work_title",
+          "work_type",
+          "year",
+          "role",
+          "notes",
+          "song_title",
+          "media_work_title",
+          "media_type"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00034\", \"title\": \"Massive Attack\", \"text\": \"Massive Attack, The idea is to put a record out next year\\\", he says. \\\"\"}",
+          "{\"doc_id\": \"D12095\", \"title\": \"Risingson\", \"text\": \"Risingson, The accompanying music video for \\\"Risingson\\\" stars all the participating musicians in Mezzanine, excluding the guest singers.\"}",
+          "{\"doc_id\": \"D06296\", \"title\": \"Mezzanine (album)\", \"text\": \"Mezzanine (album), The album spawned four singles, \\\"Risingson\\\", \\\"Teardrop\\\", \\\"Angel\\\" and \\\"Inertia Creeps\\\", which also variously charted in the United Kingdom.\"}",
+          "{\"doc_id\": \"D01416\", \"title\": \"Starboy (song)\", \"text\": \"Starboy (song), He then walks through a house full of awards that he's received, as well as a portrait of Daft Punk, who collaborated on the song, and a panther.\"}",
+          "{\"doc_id\": \"D00745\", \"title\": \"Poker Face (song)\", \"text\": \"Poker Face (song), Gaga stated in an interview that \\\"Poker Face\\\" was written by her as a pop song and was a tribute to her \\\"rock 'n' roll boyfriends\\\".\"}",
+          "{\"doc_id\": \"D02767\", \"title\": \"Brutal (song)\", \"text\": \"Brutal (song), A music video for \\\"Brutal\\\" was released on August 23, 2021, directed by Canadian director Petra Collins.\"}"
+        ]
+      }
+    }
+  },
+  "music_hall_of_fame_induction": {
+    "concept": "music_hall_of_fame_induction",
+    "overall_description": "Records the induction of a music artist or recording into a hall of fame or similar recognition, including year and presenter.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records the induction of a music artist or recording into a hall of fame or similar recognition, including year and presenter.",
+        "elements": [
+          "inductee",
+          "induction_year",
+          "hall_of_fame",
+          "inducted_by",
+          "image",
+          "notes",
+          "year_recorded",
+          "title",
+          "label",
+          "year_inducted"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0376\", \"title\": \"List of Rock and Roll Hall of Fame inductees\", \"headers\": [\"Year\", \"Image\", \"Name\"], \"sample_rows\": [[\"2022\", \"75px\", \"Elizabeth Cotten, Inducted members is\"]]}",
+          "{\"table_id\": \"T0371\", \"title\": \"List of Rock and Roll Hall of Fame inductees\", \"headers\": [\"Inductee\", \"Year inducted into Rock and Roll Hall of Fame\", \"Year inducted into Country Music Hall of Fame\", \"Notes\"], \"sample_rows\": [[\"Brenda Lee\", \"2002\", \"1997\", \"First woman inducted into both Halls of Fame\"]]}",
+          "{\"table_id\": \"T0378\", \"title\": \"List of Rock and Roll Hall of Fame inductees\", \"headers\": [\"Year\", \"Image\", \"Name\", \"Inducted by\"], \"sample_rows\": [[\"2014\", \"75px\", \"Brian Epstein\", \"Peter Asher\"], [\"2020\", \"\", \"Jon Landau\", \"Bruce Springsteen\"], [\"1991\", \"75px\", \"Nesuhi Ertegun\", \"Quincy Jones\"]]}",
+          "{\"table_id\": \"T0384\", \"title\": \"Louis Armstrong\", \"headers\": [\"Year recorded\", \"Title\", \"Label\", \"Year inducted\"], \"sample_rows\": [[\"1928\", \"\\\" West End Blues \\\"\", \"OKeh\", \"1974, Notes is\"]]}",
+          "{\"table_id\": \"T0385\", \"title\": \"Louis Armstrong\", \"headers\": [\"Year recorded\", \"Title\", \"Label\", \"Year inducted\", \"Notes\"], \"sample_rows\": [[\"1928\", \"\\\" Weather Bird \\\"\", \"OKeh\", \"2008\", \"with Earl Hines\"]]}",
+          "{\"table_id\": \"T0382\", \"title\": \"Louis Armstrong\", \"headers\": [\"Year inducted\", \"Title\"], \"sample_rows\": [[\"2007\", \"Gennett Records Walk of Fame, Richmond , Indiana, Notes is\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records the induction of a music artist or recording into a hall of fame or similar recognition, including year and presenter.",
+        "elements": [
+          "hall_of_fame_name",
+          "inductee",
+          "induction_year",
+          "category_or_role"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D08755\", \"title\": \"ARIA Hall of Fame\", \"text\": \"ARIA Hall of Fame, Harry Vanda and George Young of Vanda & Young as songwriters and producers in 1988, as members of The Easybeats in 2005.\"}",
+          "{\"doc_id\": \"D01621\", \"title\": \"Songwriters Hall of Fame\", \"text\": \"Songwriters Hall of Fame, Elton John and Bernie Taupin were among those chosen in 1992, and the pop music group the Bee Gees had all three brothers inducted in 1994.\"}",
+          "{\"doc_id\": \"D00844\", \"title\": \"Canadian Songwriters Hall of Fame\", \"text\": \"Canadian Songwriters Hall of Fame, the board of directors will review any recommendations made to them by the Anglophone and Francophone Induction Committees.\"}"
+        ]
+      }
+    }
+  },
+  "music_work_critical_reception": {
+    "concept": "music_work_critical_reception",
+    "overall_description": "Records critical reviews, ratings, and year-end rankings of a music work by publications or critics.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records critical reviews, ratings, and year-end rankings of a music work by publications or critics.",
+        "elements": [
+          "publication",
+          "list",
+          "rank",
+          "work",
+          "country",
+          "accolade",
+          "year",
+          "work_title"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0521\", \"title\": \"RTJ4\", \"headers\": [\"Publication\", \"List\", \"Rank\"], \"sample_rows\": [[\"Rolling Stone\", \"The 50 Best Albums of 2020\", \"6, is\"], [\"Billboard\", \"The 50 Best Albums of 2020\", \"14, is\"]]}",
+          "{\"table_id\": \"T0009\", \"title\": \"30 (Adele album)\", \"headers\": [\"Publication\", \"List\", \"Rank\"], \"sample_rows\": [[\"Los Angeles Times\", \"The 10 best albums of 2021\", \"7, is\"], [\"BBC\", \"The 21 Best Albums of 2021\", \"10, is\"]]}",
+          "{\"table_id\": \"T0110\", \"title\": \"Blinding Lights\", \"headers\": [\"Publication\", \"List\", \"Rank\"], \"sample_rows\": [[\"Consequence of Sound\", \"The Top 50 Songs of 2020\", \"1, is\"], [\"Los Angeles Times\", \"The 50 Best Songs of 2020\", \"style=\\\"text-align:center;\\\" Placed, is\"], [\"The New York Times\", \"Lindsay Zoladz's Best Songs of 2020\", \"7, is\"]]}",
+          "{\"table_id\": \"T0645\", \"title\": \"Summer of '69\", \"headers\": [\"Publication\", \"Country\", \"Accolade\", \"Year\", \"Rank\"], \"sample_rows\": [[\"Chuck Eddy\", \"United States\", \"\\\"The 100 Best Singles of the 80s\\\"\", \"1990\", \"50\"], [\"Dave Marsh\", \"United States\", \"\\\"The 1001 Greatest Singles Ever Made\\\"\", \"1989\", \"635\"]]}",
+          "{\"table_id\": \"T0344\", \"title\": \"Kid A\", \"headers\": [\"Publication\", \"Country\", \"Accolade\", \"Year\", \"Rank\"], \"sample_rows\": [[\"The A.V. Club\", \"US\", \"The Best Music of the Decade\", \"2009\", \"3\"], [\"1001 Albums You Must Hear Before You Die\", \"US\", \"1001 Albums You Must Hear Before You Die\", \"2010\", \"*\"]]}",
+          "{\"table_id\": \"T0669\", \"title\": \"Ten (Pearl Jam album)\", \"headers\": [\"Publication\", \"Country\", \"Accolade\", \"Year\", \"Rank\"], \"sample_rows\": [[\"Kerrang!\", \"United Kingdom\", \"\\\"100 Albums You Must Hear Before You Die\\\"\", \"1998\", \"15\"], [\"Spin\", \"United States\", \"\\\"Top 90 Albums of the 90s\\\"\", \"1999\", \"33\"], [\"Nieuwe Revu\", \"Netherlands\", \"\\\"Top 100 Albums of All Time\\\"\", \"1994\", \"25\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records critical reviews, ratings, and year-end rankings of a music work by publications or critics.",
+        "elements": [
+          "album_title",
+          "reviewer_publication",
+          "rating",
+          "review_quote",
+          "review_year",
+          "critic_name",
+          "publication_name",
+          "review_rating",
+          "work_title",
+          "work_type",
+          "critic_or_publication",
+          "review_score",
+          "score_scale",
+          "review_count"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00125\", \"title\": \"Here We Go Again (Demi Lovato album)\", \"text\": \"Here We Go Again (Demi Lovato album), Mason wrote that the album includes \\\"quiet surprises\\\" and potential hits, particularly praising the title track and \\\"Catch Me\\\".\"}",
+          "{\"doc_id\": \"D00902\", \"title\": \"Unbroken (Demi Lovato album)\", \"text\": \"Unbroken (Demi Lovato album), The opening track \\\"All Night Long\\\" features rapped verses from Missy Elliot.\"}",
+          "{\"doc_id\": \"D00341\", \"title\": \"Demi Lovato\", \"text\": \"Demi Lovato, And Kelly has a set of pipes.\\\"\"}",
+          "{\"doc_id\": \"D06422\", \"title\": \"Carly Simon (album)\", \"text\": \"Carly Simon (album), Carly Simon is the debut studio album by American singer-songwriter Carly Simon, released by Elektra Records, on February 9, 1971.\"}",
+          "{\"doc_id\": \"D00626\", \"title\": \"Anticipation (Carly Simon album)\", \"text\": \"Anticipation (Carly Simon album), \\\"Cash Box described \\\"The Girl You Think You See\\\" as \\\"a chart item any way you look at it,\\\" describing it as a \\\"ballad with a rhythmic and lyrical twist.\\\"\"}",
+          "{\"doc_id\": \"D00126\", \"title\": \"Carly Simon\", \"text\": \"Carly Simon, Truly, I was dumbfounded.\"}"
+        ]
+      }
+    }
+  },
+  "music_rhythmic_cycle": {
+    "concept": "music_rhythmic_cycle",
+    "overall_description": "Describes a named rhythmic cycle in music, including beat count, grouping, and accent pattern.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for describes a named rhythmic cycle in music, including beat count, grouping, and accent pattern.",
+        "elements": [
+          "name",
+          "beats",
+          "division",
+          "vibhag"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0658\", \"title\": \"Tabla\", \"headers\": [\"Name\", \"Beats\", \"Division\", \"Vibhag\"], \"sample_rows\": [[\"Teental (or Trital or Tintal)\", \"16\", \"4+4+4+4\", \"X 2 0 3\"], [\"Dadra\", \"6\", \"3+3\", \"X 0\"], [\"Dhamar\", \"14\", \"5+2+3+4\", \"X 2 0 3\"]]}",
+          "{\"table_id\": \"T0659\", \"title\": \"Tabla\", \"headers\": [\"Name\", \"Beats\", \"Division\", \"Vibhaga\"], \"sample_rows\": [[\"Sultal\", \"10\", \"2+2+2+2+2\", \"x 0 2 3 0\"], [\"Gaj Jhampa\", \"15\", \"5+5+5\", \"x 2 0 3\"], [\"Dipchandi\", \"14\", \"3+4+3+4\", \"X 2 0 3\"]]}",
+          "{\"table_id\": \"T0411\", \"title\": \"Metacritic\", \"headers\": [\"Indication\", \"Video games\", \"Films/television/music\"], \"sample_rows\": [[\"\", \"Overwhelming dislike\", \"0–19\"], [\"\", \"Universal acclaim\", \"90–100\"]]}"
+        ]
+      }
+    }
+  },
+  "music_work_annual_recognition": {
+    "concept": "music_work_annual_recognition",
+    "overall_description": "Records the annual recognition of a person or work by a publication or organization, including year and notes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records the annual recognition of a person or work by a publication or organization, including year and notes.",
+        "elements": [
+          "year",
+          "recognized_work_or_person",
+          "recognition_type",
+          "notes"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0707\", \"title\": \"Time Person of the Year\", \"headers\": [\"Year\", \"Choice\", \"Notes\"], \"sample_rows\": [[\"2020\", \"Gitanjali Rao Gitanjali Rao (scientist)\", \"Scientist and inventor\"], [\"2021\", \"Simone Biles\", \"American gymnast\"], [\"2019\", \"United States women's national soccer team\", \"The international women's soccer team for the United States\"]]}",
+          "{\"table_id\": \"T0708\", \"title\": \"Time Person of the Year\", \"headers\": [\"Year\", \"Readers' Choice\", \"Notes\"], \"sample_rows\": [[\"2010\", \"Julian Assange\", \"Founder of WikiLeaks\"]]}",
+          "{\"table_id\": \"T0706\", \"title\": \"Time Person of the Year\", \"headers\": [\"Number of selections\", \"Office\", \"Name\"], \"sample_rows\": [[\"1\", \"President of Egypt\", \"Anwar Sadat (1977)\"], [\"3\", \"Pope of the Vatican City\", \"John XXIII (1962); John Paul II (1994); and Francis (2013)\"], [\"1\", \"Queen of the United Kingdom and the other Commonwealth realm s\", \"Elizabeth II (1952)\"]]}"
+        ]
+      }
+    }
+  },
+  "music_album_track_listing": {
+    "concept": "music_album_track_listing",
+    "overall_description": "Lists the tracks on a music album, including track number, title, performer, duration, lyricist, and notes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for lists the tracks on a music album, including track number, title, performer, duration, lyricist, and notes.",
+        "elements": [
+          "track_number",
+          "song_title",
+          "singer",
+          "length",
+          "lyricist",
+          "notes"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0734\", \"title\": \"Vande Mataram (album)\", \"headers\": [\"#\", \"Song\", \"Singer(s)\", \"Length\", \"Lyrics\", \"Notes\"], \"sample_rows\": [[\"7\", \"\\\"Thai Manne Vanakkam\\\"\", \"A. R. Rahman\", \"6:11\", \"Vairamuthu\", \"Tamil version of \\\"Maa Tujhe Salaam\\\"\"], [\"9\", \"\\\"Musafir\\\"\", \"A. R. Rahman , Faye\", \"5:43\", \"Tim Kody, Kanika Myer Bharat\", \"Percussion by Peter Lockett Oboe by Sara Prosser\"], [\"8\", \"\\\"Masoom\\\"\", \"A. R. Rahman\", \"6:08\", \"Gulzar\", \"Sitar by Janardhanan\"]]}",
+          "{\"table_id\": \"T0733\", \"title\": \"Vande Mataram (album)\", \"headers\": [\"#\", \"Song\", \"Singer(s)\", \"Length\", \"Lyrics\"], \"sample_rows\": [[\"6\", \"\\\"Missing (Vande Mataram)\\\"\", \"Instrumental\", \"5:11\", \"Notes is\"]]}",
+          "{\"table_id\": \"T0259\", \"title\": \"Helicopter 66\", \"headers\": [\"Mission\", \"Flight date\", \"Base ship\", \"Pilot\"], \"sample_rows\": [[\"Apollo 11\", \"July 24, 1969\", \"Hornet CVS-12 6\", \"Donald S. Jones, Reference is\"], [\"Apollo 13\", \"April 17, 1970\", \"Iwo Jima LPH-2 6\", \"Chuck B. Smiley, Reference is\"]]}"
+        ]
+      }
+    }
+  },
+  "music_artist_concert_tour": {
+    "concept": "music_artist_concert_tour",
+    "overall_description": "Records concert tours and performances by music artists or bands, including venues, dates, and supporting acts.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records concert tours and performances by music artists or bands, including venues, dates, and supporting acts.",
+        "elements": [
+          "artist",
+          "tour_name",
+          "venue",
+          "city",
+          "country",
+          "date",
+          "notes",
+          "band",
+          "year",
+          "supporting_act"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00003\", \"title\": \"Michael Jackson\", \"text\": \"Michael Jackson, It was moved to the National Football Museum in Manchester in May 2014, and removed from display in March 2019 following renewed sexual assault allegations.\"}",
+          "{\"doc_id\": \"D00195\", \"title\": \"The Jackson 5\", \"text\": \"The Jackson 5, The Jacksons returned to Toronto, Ontario, Canada on September 9, 2022 after 5 years.\"}",
+          "{\"doc_id\": \"D00069\", \"title\": \"New York City\", \"text\": \"New York City, Environmental issues in New York City are affected by the city's size, density, abundant public transportation infrastructure, and its location at the mouth of the Hudson River.\"}",
+          "{\"doc_id\": \"D00058\", \"title\": \"Styx (band)\", \"text\": \"Styx (band), By early 1980, \\\"Babe\\\" had become the band's biggest international hit and first million-selling single, reaching No.\"}",
+          "{\"doc_id\": \"D00269\", \"title\": \"Augustana (band)\", \"text\": \"Augustana (band), Augustana then embarked on a US tour in October 2019 into November 2019, with Zac Clark of Andrew McMahon in the Wilderness as a supporting act.\"}",
+          "{\"doc_id\": \"D00092\", \"title\": \"Queen (band)\", \"text\": \"Queen (band), The White Album is a complete catalogue of how you should use a studio to build songs.\\\"\"}"
+        ]
+      }
+    }
+  },
+  "music_band_history": {
+    "concept": "music_band_history",
+    "overall_description": "Records significant events, milestones, and membership history of a music band or artist's band affiliations.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records significant events, milestones, and membership history of a music band or artist's band affiliations.",
+        "elements": [
+          "band_name",
+          "event_year",
+          "event_description",
+          "associated_people",
+          "associated_works",
+          "event_type",
+          "event_date",
+          "description",
+          "participants",
+          "band",
+          "event",
+          "year",
+          "member",
+          "role"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00006\", \"title\": \"Black Sabbath\", \"text\": \"Black Sabbath, Portions of the show were telecast on ABC Television in the U.S., exposing the band to a wider American audience.\"}",
+          "{\"doc_id\": \"D00119\", \"title\": \"Maroon 5\", \"text\": \"Maroon 5, When the band returned in 2001, they brought those influences with them.\"}",
+          "{\"doc_id\": \"D00288\", \"title\": \"Rock music\", \"text\": \"Rock music, The following year saw punk rock spreading around the world.\"}",
+          "{\"doc_id\": \"D00016\", \"title\": \"Aerosmith\", \"text\": \"Aerosmith, This followed a 17-date European tour that Aerosmith took from May 14 to July 2.\"}",
+          "{\"doc_id\": \"D01129\", \"title\": \"Aerosmith (album)\", \"text\": \"Aerosmith (album), New York City: Avon Books.\"}",
+          "{\"doc_id\": \"D01117\", \"title\": \"Steven Tyler\", \"text\": \"Steven Tyler, Tyler and numerous other celebrities all lobbied for it.\"}"
+        ]
+      }
+    }
+  },
+  "music_artist_life_event": {
+    "concept": "music_artist_life_event",
+    "overall_description": "Records significant biographical and personal life events of a music artist, including milestones and personal details.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records significant biographical and personal life events of a music artist, including milestones and personal details.",
+        "elements": [
+          "person",
+          "event_type",
+          "date",
+          "description",
+          "artist_name",
+          "biographical_event",
+          "year",
+          "detail",
+          "artist",
+          "event"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00038\", \"title\": \"Kurt Cobain\", \"text\": \"Kurt Cobain, Cobain immersed himself in artistic projects throughout his life, as much so as he did in songwriting.\"}",
+          "{\"doc_id\": \"D00393\", \"title\": \"Jamie Spears\", \"text\": \"Jamie Spears, This is a story about a fiercely loving, dedicated, and loyal father who rescued his daughter from a life-threatening situation.\"}",
+          "{\"doc_id\": \"D00002\", \"title\": \"Britney Spears\", \"text\": \"Britney Spears, Child advocates were horrified by the photos of her holding the wheel with one hand and Sean with the other.\"}",
+          "{\"doc_id\": \"D00100\", \"title\": \"Bon Jovi\", \"text\": \"Bon Jovi, The album debuted at number two in both the U.S. and UK, reaching number one in fifteen countries.\"}",
+          "{\"doc_id\": \"D00239\", \"title\": \"Jon Bon Jovi\", \"text\": \"Jon Bon Jovi, He later transferred to Sayreville War Memorial High School in Parlin, New Jersey.\"}",
+          "{\"doc_id\": \"D03636\", \"title\": \"Tico Torres\", \"text\": \"Tico Torres, He has exhibited his art since 1994.\"}"
+        ]
+      }
+    }
+  },
+  "music_magazine_publication": {
+    "concept": "music_magazine_publication",
+    "overall_description": "Records details about a music magazine or publication, including title, year, content focus, publisher, and editorial changes.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records details about a music magazine or publication, including title, year, content focus, publisher, and editorial changes.",
+        "elements": [
+          "publication_title",
+          "publication_year",
+          "content_focus",
+          "publisher",
+          "editorial_shift"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00386\", \"title\": \"Rolling Stone\", \"text\": \"Rolling Stone, In the 1990s, the magazine changed its format to appeal to a younger readership interested in youth-oriented television shows, film actors, and popular music.\"}",
+          "{\"doc_id\": \"D00215\", \"title\": \"The Rolling Stones\", \"text\": \"The Rolling Stones, On 8 September 1994, the Stones performed their new song \\\"Love Is Strong\\\" and \\\"Start Me Up\\\" at the 1994 MTV Video Music Awards at Radio City Music Hall in New York.\"}",
+          "{\"doc_id\": \"D07168\", \"title\": \"The Rolling Stones No. 2\", \"text\": \"The Rolling Stones No. 2, It followed its predecessor's tendency to largely feature American R&B and rock and roll covers.\"}"
+        ]
+      }
+    }
+  },
+  "music_recording_studio_history": {
+    "concept": "music_recording_studio_history",
+    "overall_description": "Records significant events and milestones in the history of a recording studio, including notable sessions and artists.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records significant events and milestones in the history of a recording studio, including notable sessions and artists.",
+        "elements": [
+          "studio_name",
+          "event_year",
+          "event_description",
+          "associated_artist",
+          "associated_work"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00602\", \"title\": \"Trident Studios\", \"text\": \"Trident Studios, Many of the Beatles' Apple Records artists used Trident Studios, including Badfinger, Billy Preston, Mary Hopkin, Jackie Lomax and James Taylor.\"}",
+          "{\"doc_id\": \"D02751\", \"title\": \"Electric Lady Studios\", \"text\": \"Electric Lady Studios, In 1971, Gene Simmons and Paul Stanley, then with the New York rock band Wicked Lester, recorded demos at the studio.\"}",
+          "{\"doc_id\": \"D00957\", \"title\": \"The Beatles\", \"text\": \"The Beatles, The band expanded their use of vocal overdubs on Help!\"}"
+        ]
+      }
+    }
+  },
+  "music_record_label_history": {
+    "concept": "music_record_label_history",
+    "overall_description": "Records significant events and milestones in the history of a record label, including acquisitions, partnerships, and signings.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records significant events and milestones in the history of a record label, including acquisitions, partnerships, and signings.",
+        "elements": [
+          "record_label",
+          "event_type",
+          "event_year",
+          "event_description",
+          "associated_artist",
+          "associated_company",
+          "year",
+          "description",
+          "related_entity"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00719\", \"title\": \"Epic Records\", \"text\": \"Epic Records, Also contributing to the label's success was its distribution of Philadelphia International Records, which produced additional hit records by acts such as the Three Degrees and McFadden and Whitehead.\"}",
+          "{\"doc_id\": \"D00367\", \"title\": \"Roadrunner Records\", \"text\": \"Roadrunner Records, The award was accepted by Sharon den Adel and Ruud Jolie of Within Temptation, one of Roadrunner's biggest acts.\"}",
+          "{\"doc_id\": \"D00651\", \"title\": \"Sony Music\", \"text\": \"Sony Music, Jason Iley commented that the agreement was \\\"a once in a lifetime signing with the biggest male solo artist of our generation\\\".\"}",
+          "{\"doc_id\": \"D03624\", \"title\": \"DGC Records\", \"text\": \"DGC Records, The label went inactive in 2013.\"}",
+          "{\"doc_id\": \"D00623\", \"title\": \"Warner Records\", \"text\": \"Warner Records, It sold very poorly despite rave critical reviews, so publicist Stan Cornyn (who had helped the label to sign The Grateful Dead) wrote an infamous tongue-in-cheek advertisement to promote it.\"}",
+          "{\"doc_id\": \"D00306\", \"title\": \"Qwest Records\", \"text\": \"Qwest Records, George Benson's 1980 Give Me the Night LP was the first release on Qwest, although it was shared with Warner Bros. Records, where Benson was under contract.\"}"
+        ]
+      }
+    }
+  },
+  "music_album_production_history": {
+    "concept": "music_album_production_history",
+    "overall_description": "Records the production, release, and legal history of a music album, including documentaries and posthumous releases.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records the production, release, and legal history of a music album, including documentaries and posthumous releases.",
+        "elements": [
+          "album_title",
+          "film_title",
+          "release_year",
+          "director",
+          "production_status",
+          "legal_issue",
+          "album",
+          "artist",
+          "event_type",
+          "year",
+          "description",
+          "posthumous_status",
+          "recording_completion_year",
+          "lyricist"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00802\", \"title\": \"Amazing Grace (Aretha Franklin album)\", \"text\": \"Amazing Grace (Aretha Franklin album), However, Pollack was unable to complete the film because he had not used a clapperboard to synchronize the picture and sound at the beginning of each take.\"}",
+          "{\"doc_id\": \"D00128\", \"title\": \"Aretha Franklin\", \"text\": \"Aretha Franklin, The 1991 album What You See is What You Sweat flopped on the charts.\"}",
+          "{\"doc_id\": \"D00247\", \"title\": \"Columbia Records\", \"text\": \"Columbia Records, Brunswick was gradually phased out, the final issue being Brunswick 8520, in April 1940.\"}",
+          "{\"doc_id\": \"D00910\", \"title\": \"Confident (album)\", \"text\": \"Confident (album), On September 29, 2015, Lovato sent her fans on a scavenger hunt.\"}",
+          "{\"doc_id\": \"D02420\", \"title\": \"Peace (Eurythmics album)\", \"text\": \"Peace (Eurythmics album), Each of their eight studio albums' original track listings were supplemented with bonus tracks and remixes.\"}",
+          "{\"doc_id\": \"D00361\", \"title\": \"Graduation (album)\", \"text\": \"Graduation (album), Instead, there lies a sense of multi-layered music evidently within each track.\"}"
+        ]
+      }
+    }
+  },
+  "music_work_adaptation": {
+    "concept": "music_work_adaptation",
+    "overall_description": "Records the adaptation of a music work into another medium, such as a film, including original work, adapted work, type, and year.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records the adaptation of a music work into another medium, such as a film, including original work, adapted work, type, and year.",
+        "elements": [
+          "original_work",
+          "adapted_work",
+          "adaptation_type",
+          "release_year",
+          "notes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D01004\", \"title\": \"The Lion King (2019 film)\", \"text\": \"The Lion King (2019 film), In July 2017, John Oliver was cast as Zazu.\"}",
+          "{\"doc_id\": \"D00054\", \"title\": \"The Lion King\", \"text\": \"The Lion King, The attraction opened in April 1998 at Disney World's Animal Kingdom, and in September 2005 in Hong Kong Disneyland's Adventureland.\"}",
+          "{\"doc_id\": \"D00937\", \"title\": \"Tim Rice\", \"text\": \"Tim Rice, On 2 December 2010 he addressed the eighth Bradman Oration in Adelaide.\"}"
+        ]
+      }
+    }
+  },
+  "music_artist_award_honor": {
+    "concept": "music_artist_award_honor",
+    "overall_description": "Records awards, honors, and recognitions received by a music artist, including award name, year, and associated work.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records awards, honors, and recognitions received by a music artist, including award name, year, and associated work.",
+        "elements": [
+          "award_name",
+          "award_year",
+          "recipient",
+          "work",
+          "notes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D01074\", \"title\": \"Jagjit Singh\", \"text\": \"Jagjit Singh, Using modern arrangements, it consists of ten tracks that include two on which they sang as a duo and the remainder equally split between Jagjit and Chitra singing the lead.\"}",
+          "{\"doc_id\": \"D00117\", \"title\": \"Ranveer Singh\", \"text\": \"Ranveer Singh, Singh's performance won him his third Filmfare Award for Best Actor.\"}",
+          "{\"doc_id\": \"D00293\", \"title\": \"Padma Bhushan\", \"text\": \"Padma Bhushan, Singh was later awarded Padma Vibhushan in 2007.\"}"
+        ]
+      }
+    }
+  },
+  "music_work_certification": {
+    "concept": "music_work_certification",
+    "overall_description": "Records the certification of a music work by a regional industry association, including level and units sold.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records the certification of a music work by a regional industry association, including level and units sold.",
+        "elements": [
+          "work_title",
+          "certification_body",
+          "certification_level",
+          "certification_year",
+          "units_sold"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D01196\", \"title\": \"Can't Get You Out of My Head\", \"text\": \"Can't Get You Out of My Head, According to Minogue, the outfit was inspired by fashion designs worn by Jamaican singer and model, Grace Jones.\"}",
+          "{\"doc_id\": \"D00248\", \"title\": \"Can't Tell Me Nothing\", \"text\": \"Can't Tell Me Nothing, West begins the song by expounding his conflicted feelings regarding wealth and desire, describing a compulsion to spend that overwhelms any and all other objectives in life.\"}",
+          "{\"doc_id\": \"D01167\", \"title\": \"Fever (Kylie Minogue album)\", \"text\": \"Fever (Kylie Minogue album), At the 2002 MTV Europe Music Awards ceremony, the album was nominated for Best Album; Minogue was nominated for Best Female Act, Best Dance Act, and Best Pop Act, winning the latter two.\"}"
+        ]
+      }
+    }
+  },
+  "music_composer_film_score": {
+    "concept": "music_composer_film_score",
+    "overall_description": "Records the composition of film scores by a composer, including film title, score type, year, and notes.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records the composition of film scores by a composer, including film title, score type, year, and notes.",
+        "elements": [
+          "composer",
+          "film_title",
+          "score_type",
+          "year",
+          "notes"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D01589\", \"title\": \"John Williams\", \"text\": \"John Williams, He soon gained notice in Hollywood for his versatility in composing jazz, piano, and symphonic music.\"}",
+          "{\"doc_id\": \"D00550\", \"title\": \"John Barry (composer)\", \"text\": \"John Barry (composer), His mother was a classical pianist.\"}",
+          "{\"doc_id\": \"D01457\", \"title\": \"John Prine\", \"text\": \"John Prine, In 2019, Prine was inducted into the Songwriters Hall of Fame with a speech by Bonnie Raitt.\"}"
+        ]
+      }
+    }
+  },
+  "media_work_episode_listing": {
+    "concept": "media_work_episode_listing",
+    "overall_description": "Lists episodes of a media work, including titles, numbers, air dates, and plot summaries.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for lists episodes of a media work, including titles, numbers, air dates, and plot summaries.",
+        "elements": [
+          "work_title",
+          "episode_title",
+          "episode_number",
+          "air_date",
+          "plot_summary"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D01928\", \"title\": \"Initial D\", \"text\": \"Initial D, Initial D Third Stage was a feature film covering the story arcs between the second and fourth stage, released in Japan on January 13, 2001.\"}",
+          "{\"doc_id\": \"D00333\", \"title\": \"List of Initial D episodes\", \"text\": \"List of Initial D episodes, Vehicles featured in the compilation have their official license names in the First Stage battles since cars weren't licensed at the time First Stage was released.\"}",
+          "{\"doc_id\": \"D01079\", \"title\": \"Move (Japanese band)\", \"text\": \"Move (Japanese band), and \\\"Dogfight\\\", where the band is briefly seen watching the race between God Foot and Keisuke.\"}"
+        ]
+      }
+    }
+  },
+  "music_artist_discography": {
+    "concept": "music_artist_discography",
+    "overall_description": "Records the discography of a music artist, including albums and singles with release years and chart performances.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records the discography of a music artist, including albums and singles with release years and chart performances.",
+        "elements": [
+          "artist",
+          "work_type",
+          "work_title",
+          "release_year",
+          "chart_position",
+          "chart_name",
+          "album"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D02992\", \"title\": \"Black Eyed Peas discography\", \"text\": \"Black Eyed Peas discography, the band's first international number-one single, \\\"Shut Up\\\", \\\"Hey Mama\\\", and \\\"Let's Get It Started\\\".\"}",
+          "{\"doc_id\": \"D00400\", \"title\": \"Black Eyed Peas\", \"text\": \"Black Eyed Peas, Their seventh studio album, Masters of the Sun Vol.\"}",
+          "{\"doc_id\": \"D06387\", \"title\": \"Shakira discography\", \"text\": \"Shakira discography, La Tortura\\\" held the record for longest-running number one single on the chart by nearly a decade, until it was succeeded by Enrique Iglesias's song \\\"Bailando\\\" in October 2014.\"}"
+        ]
+      }
+    }
+  },
+  "geography_settlement_demographics": {
+    "concept": "geography_settlement_demographics",
+    "overall_description": "Records demographic, economic, cultural, and geographic information about a populated place.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records demographic, economic, cultural, and geographic information about a populated place.",
+        "elements": [
+          "settlement_name",
+          "population_demographics",
+          "immigrant_groups",
+          "economic_indicators",
+          "cultural_events",
+          "geographic_area"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D03685\", \"title\": \"Morrison, Colorado\", \"text\": \"Morrison, Colorado, It thus applies to an area covering approximately 5,000 addresses.\"}",
+          "{\"doc_id\": \"D00301\", \"title\": \"Golden, Colorado\", \"text\": \"Golden, Colorado, The town was home to sizable populations of German, Swiss, Swedish, Italian and Chinese immigrants; five immigrants became mayors of Golden.\"}",
+          "{\"doc_id\": \"D00385\", \"title\": \"United States\", \"text\": \"United States, Asian Americans are the country's fourth-largest group, composing 5.9% of the United States population, while the country's 3.7 million Native Americans account for about 1%.\"}"
+        ]
+      }
+    }
+  },
+  "legal_jurisdiction_application": {
+    "concept": "legal_jurisdiction_application",
+    "overall_description": "Records the application of a legal or administrative rule, status, or order to a specific jurisdiction.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the application of a legal or administrative rule, status, or order to a specific jurisdiction.",
+        "elements": [
+          "subject",
+          "jurisdiction",
+          "qualifier"
+        ],
+        "data_examples": [
+          "2020 Front Range stay-at-home order --applies to jurisdiction--> Jefferson County",
+          "United States of America --located in time zone--> Atlantic Time Zone",
+          "United Kingdom --VAT-rate [statement is subject of: reduced VAT rate; applies to part: Food; applies to part: clothing; applies to part: Book]--> \"+0\""
+        ]
+      }
+    }
+  },
+  "external_database_identifier": {
+    "concept": "external_database_identifier",
+    "overall_description": "Maps an entity (e.g., music artist) to an identifier in an external database, optionally specifying language.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for maps an entity (e.g., music artist) to an identifier in an external database, optionally specifying language.",
+        "elements": [
+          "artist",
+          "external_database",
+          "identifier",
+          "music_artist",
+          "external_database_id",
+          "identifier_value",
+          "subject_artist",
+          "external_database_identifier",
+          "subject_entity",
+          "language_of_work_or_name",
+          "language"
+        ],
+        "data_examples": [
+          "Britney Spears --oKino.ua actor ID--> \"nm147808\"",
+          "Beyoncé --kinobaza.com.ua actor ID--> \"beyonce-knowles\"",
+          "Gwyneth Paltrow --Kinomania.ru actor ID--> \"571\"",
+          "Jennifer Lopez --MyMusic artist ID--> \"1377\"",
+          "Aretha Franklin --Genie artist ID--> \"14937291\"",
+          "Diana Ross --VK Music artist ID--> \"dianaross\""
+        ]
+      }
+    }
+  },
+  "person_occupation": {
+    "concept": "person_occupation",
+    "overall_description": "Records the occupation or professional role of a person.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the occupation or professional role of a person.",
+        "elements": [
+          "person",
+          "occupation"
+        ],
+        "data_examples": [
+          "Justin Bieber --occupation--> television actor",
+          "singer --field of this occupation--> vocal performance",
+          "singer --ISCO-08 occupation code--> \"2652\""
+        ]
+      }
+    }
+  },
+  "population_by_year": {
+    "concept": "population_by_year",
+    "overall_description": "Records the population count of a geographic or administrative region at a specific time, optionally with method.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the population count of a geographic or administrative region at a specific time, optionally with method.",
+        "elements": [
+          "population_count",
+          "point_in_time",
+          "determination_method",
+          "location"
+        ],
+        "data_examples": [
+          "New York City --population [point in time: 1 July \"2016; determination method: project management estimation]--> \"+8537673\"",
+          "New York City --female population [point in time: \"2010]--> \"+4245512\"",
+          "New York City --median income [point in time: \"2016]--> \"+62909\""
+        ]
+      }
+    }
+  },
+  "person_death_circumstances": {
+    "concept": "person_death_circumstances",
+    "overall_description": "Records the circumstances of a person's death, including cause, date, place, and manner.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the circumstances of a person's death, including cause, date, place, and manner.",
+        "elements": [
+          "person",
+          "cause_of_death",
+          "date_of_death",
+          "place_of_death",
+          "manner_of_death",
+          "qualifier_statement_subject_of"
+        ],
+        "data_examples": [
+          "Ronnie James Dio --manner of death--> natural causes",
+          "Syd Barrett --cause of death--> pancreatic cancer",
+          "Jack Daugherty --date of death--> 2 February \"1991"
+        ]
+      }
+    }
+  },
+  "person_physical_attribute": {
+    "concept": "person_physical_attribute",
+    "overall_description": "Records a person's physical attribute such as eye color, hair color, or similar.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records a person's physical attribute such as eye color, hair color, or similar.",
+        "elements": [
+          "person",
+          "attribute_type",
+          "attribute_value",
+          "qualifier"
+        ],
+        "data_examples": [
+          "Britney Spears --eye color--> brown",
+          "The Lion King --color--> color",
+          "Agnetha Fältskog --hair color--> blonde"
+        ]
+      }
+    }
+  },
+  "music_artist_affiliation": {
+    "concept": "music_artist_affiliation",
+    "overall_description": "Records an artist's affiliation with another entity, such as a group or project, optionally specifying role.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records an artist's affiliation with another entity, such as a group or project, optionally specifying role.",
+        "elements": [
+          "affiliated_entity",
+          "affiliation_type",
+          "affiliated_artist"
+        ],
+        "data_examples": [
+          "Phenix Horns --affiliation [subject has role: horn section]--> Earth, Wind & Fire",
+          "Kanye West --partner in business or sport [affiliation: Jay-Z and Kanye West]--> Jay-Z",
+          "scrunchie --used by--> Madonna"
+        ]
+      }
+    }
+  },
+  "organization_headquarters_location": {
+    "concept": "organization_headquarters_location",
+    "overall_description": "Records the headquarters location of an organization, optionally including street address.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the headquarters location of an organization, optionally including street address.",
+        "elements": [
+          "organization",
+          "headquarters_location",
+          "street_number",
+          "postal_code",
+          "street_name",
+          "city",
+          "country"
+        ],
+        "data_examples": [
+          "Sony BMG --headquarters location [street number: \"550\"; postal code: \"NY 10022-3211\"; located on street: Madison Avenue]--> New York City",
+          "Hotel Albert --location--> Greenwich Village",
+          "Steven Tyler --work location--> Boston"
+        ]
+      }
+    }
+  },
+  "entity_country_relation": {
+    "concept": "entity_country_relation",
+    "overall_description": "Associates an entity with a country through a specific relation type such as origin, citizenship, or sport.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates an entity with a country through a specific relation type such as origin, citizenship, or sport.",
+        "elements": [
+          "entity",
+          "country",
+          "relation_type"
+        ],
+        "data_examples": [
+          "Arapaho people --country--> United States of America",
+          "Big Star --country of origin--> United States of America",
+          "Michael Jackson --country of citizenship--> United States of America"
+        ]
+      }
+    }
+  },
+  "organization_business_division": {
+    "concept": "organization_business_division",
+    "overall_description": "Records the business divisions or subdivisions of an organization, including role and temporal qualifiers.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the business divisions or subdivisions of an organization, including role and temporal qualifiers.",
+        "elements": [
+          "parent_organization",
+          "business_division",
+          "division_role",
+          "start_time",
+          "additional_role"
+        ],
+        "data_examples": [
+          "Sony Music --business division [object has role: record label]--> Sony Music Special Products",
+          "DGC Records --founded by--> David Geffen",
+          "Aztec Theatre --operator--> Live Nation Entertainment"
+        ]
+      }
+    }
+  },
+  "music_work_period": {
+    "concept": "music_work_period",
+    "overall_description": "Records the start and end years of an entity's active work period.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the start and end years of an entity's active work period.",
+        "elements": [
+          "subject_entity",
+          "work_period_start_year",
+          "work_period_end_year"
+        ],
+        "data_examples": [
+          "Jerry Jeff Walker --work period (end)--> \"2018",
+          "Kabir Café --work period (start)--> \"2013",
+          "Jelle --after a work by--> Eminem"
+        ]
+      }
+    }
+  },
+  "geographic_elevation": {
+    "concept": "geographic_elevation",
+    "overall_description": "Records the elevation of a geographic location, optionally specifying type and temporal context.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the elevation of a geographic location, optionally specifying type and temporal context.",
+        "elements": [
+          "location",
+          "elevation_value",
+          "elevation_type",
+          "start_time",
+          "reference_system"
+        ],
+        "data_examples": [
+          "Key West --elevation above sea level--> \"+7\"",
+          "United Kingdom --lowest point [elevation above sea level: \"-4\"]--> The Fens",
+          "United States of America --highest point [start time: \"1867]--> Denali"
+        ]
+      }
+    }
+  },
+  "group_membership_count": {
+    "concept": "group_membership_count",
+    "overall_description": "Records the number of members in a group or organization.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the number of members in a group or organization.",
+        "elements": [
+          "group",
+          "member_count"
+        ],
+        "data_examples": [
+          "The Bangles --member count--> \"+4\"",
+          "Zipline International --board member--> Bono",
+          "Drew Brown --member of--> OneRepublic"
+        ]
+      }
+    }
+  },
+  "media_work_financial_performance": {
+    "concept": "media_work_financial_performance",
+    "overall_description": "Records the financial performance of a media work, such as box office revenue, in specific regions with optional ranking.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the financial performance of a media work, such as box office revenue, in specific regions with optional ranking.",
+        "elements": [
+          "work",
+          "financial_metric",
+          "amount",
+          "region",
+          "rank"
+        ],
+        "data_examples": [
+          "The Lion King --box office [ranking: \"+7\"; valid in place: worldwide]--> \"+1654735262\"",
+          "The Lion King --attendance [valid in place: France]--> \"+9729852\"",
+          "No Matter What --ranking [charted in: Billboard Hot 100]--> \"+8\""
+        ]
+      }
+    }
+  },
+  "entity_telecommunication_country_code": {
+    "concept": "entity_telecommunication_country_code",
+    "overall_description": "Associates an entity with a telecommunication country code, such as a mobile country code.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates an entity with a telecommunication country code, such as a mobile country code.",
+        "elements": [
+          "entity",
+          "telecommunication_country_code",
+          "code_value"
+        ],
+        "data_examples": [
+          "United States of America --mobile country code--> \"312\"",
+          "United States of America --GS1 country code--> \"000-139\"",
+          "musical duo --model item--> Simon & Garfunkel"
+        ]
+      }
+    }
+  },
+  "entity_symbolic_representation": {
+    "concept": "entity_symbolic_representation",
+    "overall_description": "Records the use of a symbol or representation by an entity, optionally specifying the role.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the use of a symbol or representation by an entity, optionally specifying the role.",
+        "elements": [
+          "entity",
+          "symbol",
+          "role"
+        ],
+        "data_examples": [
+          "singer --uses--> voice",
+          "The Rolling Stones --official symbol [object has role: logo]--> Rolling Stones logo",
+          "Rolling Stones logo --represents--> The Rolling Stones"
+        ]
+      }
+    }
+  },
+  "media_production_code": {
+    "concept": "media_production_code",
+    "overall_description": "Records the production code assigned to a media work, such as a film or television episode.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the production code assigned to a media work, such as a film or television episode.",
+        "elements": [
+          "work",
+          "production_code"
+        ],
+        "data_examples": [
+          "The Lion King --production code--> \"0885\"",
+          "Bhoot Aaya --production company--> Sony",
+          "Skyfall --production designer--> Dennis Gassner"
+        ]
+      }
+    }
+  },
+  "family_relation": {
+    "concept": "family_relation",
+    "overall_description": "Records familial relationships between individuals, including type and optional qualifiers.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records familial relationships between individuals, including type and optional qualifiers.",
+        "elements": [
+          "subject",
+          "relation_type",
+          "object",
+          "qualifier_role"
+        ],
+        "data_examples": [
+          "Riley Keough --mother--> Lisa Marie Presley",
+          "Jane Ann Farran Amos --child--> James Blunt",
+          "Shakira --hashtag--> \"Shakira\""
+        ]
+      }
+    }
+  },
+  "work_publication_place": {
+    "concept": "work_publication_place",
+    "overall_description": "Records the place where a creative work was published.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the place where a creative work was published.",
+        "elements": [
+          "work",
+          "place_of_publication"
+        ],
+        "data_examples": [
+          "Dystopia --place of publication--> United States of America",
+          "United Kingdom --AIATSIS Place Thesaurus ID--> \"48\"",
+          "Tulsa --flag--> Flag of Tulsa"
+        ]
+      }
+    }
+  },
+  "office_holder_tenure": {
+    "concept": "office_holder_tenure",
+    "overall_description": "Records the tenure of an individual holding a political or organizational office, including office, jurisdiction, and times.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the tenure of an individual holding a political or organizational office, including office, jurisdiction, and times.",
+        "elements": [
+          "office_holder",
+          "office",
+          "jurisdiction",
+          "start_time",
+          "end_time"
+        ],
+        "data_examples": [
+          "United States of America --head of state [start time: 20 January \"2021]--> Joe Biden",
+          "United States of America --head of government--> Joe Biden",
+          "Tour Anfibio --start time--> 21 March \"2000"
+        ]
+      }
+    }
+  },
+  "organization_subsidiary": {
+    "concept": "organization_subsidiary",
+    "overall_description": "Records the subsidiary relationship between organizations, including role and temporal qualifiers.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the subsidiary relationship between organizations, including role and temporal qualifiers.",
+        "elements": [
+          "parent_organization",
+          "subsidiary_organization",
+          "subsidiary_role",
+          "start_time",
+          "end_time"
+        ],
+        "data_examples": [
+          "Warner Music Group --subsidiary--> Warner Music Russia",
+          "Sony --owner of--> Betacam",
+          "Sony Music --industry--> music industry"
+        ]
+      }
+    }
+  },
+  "award_rank_hierarchy": {
+    "concept": "award_rank_hierarchy",
+    "overall_description": "Records the hierarchical ranking of awards and the body that confers them.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the hierarchical ranking of awards and the body that confers them.",
+        "elements": [
+          "award",
+          "higher_rank_award",
+          "lower_rank_award",
+          "conferring_body"
+        ],
+        "data_examples": [
+          "Padma Bhushan --next higher rank--> Padma Vibhushan in literature & education",
+          "Padma Vibhushan in Public Affairs --next lower rank--> Padma Bhushan",
+          "César Award --conferred by--> Academy of Cinema Arts and Techniques"
+        ]
+      }
+    }
+  },
+  "media_work_rating_certification": {
+    "concept": "media_work_rating_certification",
+    "overall_description": "Records the certification rating of a media work by a specific rating system, including certificate identifier.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the certification rating of a media work by a specific rating system, including certificate identifier.",
+        "elements": [
+          "work",
+          "rating_system",
+          "rating",
+          "certificate_id",
+          "applies_to_part"
+        ],
+        "data_examples": [
+          "The Lion King --RTC film rating [rating certificate ID: \"13336\"]--> AA",
+          "The Lion King --EIRIN film rating [rating certificate ID: \"47584\"]--> G",
+          "The Lion King --NMHH film rating [rating certificate ID: \"NFT/25288/2019\"]--> Category III"
+        ]
+      }
+    }
+  },
+  "music_category_membership": {
+    "concept": "music_category_membership",
+    "overall_description": "Records the membership of an entity in a category, optionally with a qualifier specifying the role of another entity.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the membership of an entity in a category, optionally with a qualifier specifying the role of another entity.",
+        "elements": [
+          "category",
+          "member",
+          "member_type",
+          "qualifier_entity",
+          "qualifier_role"
+        ],
+        "data_examples": [
+          "Category:U2 live albums --category contains [performer: U2]--> live album",
+          "List of songs recorded by Lady Gaga --is a list of [performer: Lady Gaga]--> song",
+          "Be Still (Kelly Clarkson song) --performer--> Kelly Clarkson"
+        ]
+      }
+    }
+  },
+  "music_recording_studio_usage": {
+    "concept": "music_recording_studio_usage",
+    "overall_description": "Records the studio or venue where a music work was recorded.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the studio or venue where a music work was recorded.",
+        "elements": [
+          "music_work",
+          "recording_studio_or_venue",
+          "recording_date",
+          "recording_location"
+        ],
+        "data_examples": [
+          "Space Oddity --recorded at studio or venue--> Trident Studios",
+          "Electric Lady Studios --designed by--> John Storyk",
+          "Electric Lady Studios --date of official opening--> 26 August \"1970"
+        ]
+      }
+    }
+  },
+  "demographic_rate_measurement": {
+    "concept": "demographic_rate_measurement",
+    "overall_description": "Records a demographic or statistical rate for a subject, with method and time point.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records a demographic or statistical rate for a subject, with method and time point.",
+        "elements": [
+          "subject",
+          "rate_type",
+          "value",
+          "determination_method",
+          "point_in_time",
+          "metric"
+        ],
+        "data_examples": [
+          "United Kingdom --total fertility rate [determination method: estimation process; point in time: \"2014]--> \"+1.83\"",
+          "United States of America --suicide rate [determination method: Age adjustment]--> \"+12.1\"",
+          "Tulsa --number of households [determination method: census; point in time: 1 April \"2010]--> \"+185127\"",
+          "United States of America --Democracy Index [point in time: \"2016]--> \"+7.98\"",
+          "United States of America --unemployment rate [point in time: 1 December \"2013]--> \"+6.7\"",
+          "United States of America --Human Development Index [point in time: \"1990]--> \"+0.860\""
+        ]
+      }
+    }
+  },
+  "language_grammatical_feature": {
+    "concept": "language_grammatical_feature",
+    "overall_description": "Associates a language with a grammatical feature such as gender, mood, tense, or case, and its value.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates a language with a grammatical feature such as gender, mood, tense, or case, and its value.",
+        "elements": [
+          "language",
+          "grammatical_feature_type",
+          "grammatical_feature_value"
+        ],
+        "data_examples": [
+          "Italian --has grammatical gender--> masculine",
+          "Italian --has grammatical mood--> indicative",
+          "Italian --has grammatical case--> nominative case"
+        ]
+      }
+    }
+  },
+  "creative_work_director": {
+    "concept": "creative_work_director",
+    "overall_description": "Records the director of a creative work such as a film, music video, or other production.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the director of a creative work such as a film, music video, or other production.",
+        "elements": [
+          "creative_work",
+          "director"
+        ],
+        "data_examples": [
+          "Anokhi Ada --director--> Mehboob Khan",
+          "Couples Retreat --art director--> Clint Wallace",
+          "The Lion King --director of photography--> Caleb Deschanel"
+        ]
+      }
+    }
+  },
+  "work_publication_date": {
+    "concept": "work_publication_date",
+    "overall_description": "Records the publication date of a creative work.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the publication date of a creative work.",
+        "elements": [
+          "work",
+          "publication_date"
+        ],
+        "data_examples": [
+          "Fever --publication date--> 1 October \"2001",
+          "Overture --published in [publication date: 23 May \"1969]--> Tommy",
+          "Seed --software version identifier [named after: Wednesday Morning, 3 A.M.; publication date: 2 January \"2009]--> \"0.3\""
+        ]
+      }
+    }
+  },
+  "entity_measurement_at_time": {
+    "concept": "entity_measurement_at_time",
+    "overall_description": "Records a quantitative measurement of an entity at a specific point in time.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records a quantitative measurement of an entity at a specific point in time.",
+        "elements": [
+          "subject",
+          "measurement_type",
+          "value",
+          "point_in_time"
+        ],
+        "data_examples": [
+          "1973 Grammy Awards --point in time--> \"1973",
+          "Morrison --area [point in time: 1 April \"2010]--> \"+5.747382\"",
+          "Sony Music --employees [point in time: 16 September \"2020]--> \"+8578\""
+        ]
+      }
+    }
+  },
+  "entity_wikiproject_maintenance": {
+    "concept": "entity_wikiproject_maintenance",
+    "overall_description": "Records the maintenance of an entity by a WikiProject, indicating the project responsible.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the maintenance of an entity by a wikiproject, indicating the project responsible.",
+        "elements": [
+          "maintained_entity",
+          "wikiproject",
+          "maintenance_role"
+        ],
+        "data_examples": [
+          "Grammy Award --maintained by WikiProject--> WikiProject Awards and prizes/Grammy Awards task force",
+          "Mediage --maintained by--> Sony",
+          "Top-down signal transmission and global hyperconnectivity in auditory-visual synesthesia: Evidence from a functional EEG resting-state study. --main subject--> synaesthesia"
+        ]
+      }
+    }
+  },
+  "work_edition_translation": {
+    "concept": "work_edition_translation",
+    "overall_description": "Records the relationship between a creative work and its editions or translations, including edition number, place, language, and part.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the relationship between a creative work and its editions or translations, including edition number, place, language, and part.",
+        "elements": [
+          "original_work",
+          "edition_or_translation",
+          "edition_number",
+          "place_of_publication",
+          "language",
+          "applies_to_part"
+        ],
+        "data_examples": [
+          "Rolling Stone --edition or translation of--> Rolling Stone",
+          "Rolling Stone --has edition or translation [place of publication: Argentina; language of work or name: Spanish]--> Rolling Stone",
+          "1973 Grammy Awards --edition number--> \"15\""
+        ]
+      }
+    }
+  },
+  "media_work_character_role": {
+    "concept": "media_work_character_role",
+    "overall_description": "Associates a character with a media work, optionally specifying narrative role and order.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates a character with a media work, optionally specifying narrative role and order.",
+        "elements": [
+          "work",
+          "character",
+          "series_ordinal",
+          "narrative_role"
+        ],
+        "data_examples": [
+          "The Lion King --characters [series ordinal: \"5\"; narrative role: sidekick]--> Pumbaa",
+          "The Lion King --animator [series ordinal: \"3\"; object has role: assistant animator; stated as: \"Animating Assistant\"]--> James Young Jackson",
+          "Animal City --part of [series ordinal: \"5\"]--> Oral Fixation Vol. 2"
+        ]
+      }
+    }
+  },
+  "language_usage_role": {
+    "concept": "language_usage_role",
+    "overall_description": "Records the language used by a person or entity in a specific context such as writing, speaking, or official status.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the language used by a person or entity in a specific context such as writing, speaking, or official status.",
+        "elements": [
+          "language",
+          "usage_context",
+          "subject"
+        ],
+        "data_examples": [
+          "Ennio Morricone --writing language--> Italian",
+          "Italian --Ethnologue language status--> 1 National",
+          "Italian --UNESCO language status--> 1 safe"
+        ]
+      }
+    }
+  },
+  "person_educational_institution": {
+    "concept": "person_educational_institution",
+    "overall_description": "Associates a person with an educational institution they attended, worked at, or have another formal relationship with.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates a person with an educational institution they attended, worked at, or have another formal relationship with.",
+        "elements": [
+          "person",
+          "educational_institution",
+          "relation_type"
+        ],
+        "data_examples": [
+          "Yoshiki Hayakawa --educated at--> Kunitachi College of Music",
+          "Zhou Long --employer--> University of Missouri–Kansas City",
+          "Kunitachi College of Music --category for alumni of educational institution--> Category:Kunitachi College of Music alumni"
+        ]
+      }
+    }
+  },
+  "entity_category_membership": {
+    "concept": "entity_category_membership",
+    "overall_description": "Associates an entity with a category of a specific type, such as for people born, died, or maps.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates an entity with a category of a specific type, such as for people born, died, or maps.",
+        "elements": [
+          "entity",
+          "category",
+          "category_type"
+        ],
+        "data_examples": [
+          "United States of America --category for maps--> Category:Maps of the United States",
+          "Key West --category for people who died here--> Category:Deaths in Key West",
+          "Key West --category for people born here--> Category:Births in Key West, Florida"
+        ]
+      }
+    }
+  },
+  "entity_significant_event": {
+    "concept": "entity_significant_event",
+    "overall_description": "Records a significant event in the history of an entity, optionally with a point in time.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records a significant event in the history of an entity, optionally with a point in time.",
+        "elements": [
+          "subject",
+          "event",
+          "point_in_time"
+        ],
+        "data_examples": [
+          "Lady Gaga --significant event [point in time: 20 February \"2013]--> surgical operation",
+          "wedding dress of Lady Diana Spencer --worn by [significant event: wedding of Charles, Prince of Wales, and Lady Diana Spencer; point in time: 29 July \"1981]--> Diana, Princess of Wales",
+          "death of Diana, Princess of Wales --victim [age at event: \"+36\"; object has role: passenger]--> Diana, Princess of Wales"
+        ]
+      }
+    }
+  },
+  "music_education_mentorship": {
+    "concept": "music_education_mentorship",
+    "overall_description": "Records the educational or mentorship relationship between a student and a teacher, including field, institution, and time.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the educational or mentorship relationship between a student and a teacher, including field, institution, and time.",
+        "elements": [
+          "student",
+          "teacher",
+          "field",
+          "institution",
+          "start_time",
+          "end_time"
+        ],
+        "data_examples": [
+          "Goffredo Petrassi --student--> Ennio Morricone",
+          "Marius Constant --student of--> Olivier Messiaen",
+          "Ennio Morricone --list of works--> list of compositions by Ennio Morricone"
+        ]
+      }
+    }
+  },
+  "entity_narrative_location": {
+    "concept": "entity_narrative_location",
+    "overall_description": "Records the narrative location of a creative work, with optional qualifiers for administrative, geographical, or astronomical context.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records the narrative location of a creative work, with optional qualifiers for administrative, geographical, or astronomical context.",
+        "elements": [
+          "narrative_location",
+          "located_in_administrative_territorial_entity",
+          "sourcing_circumstances",
+          "country",
+          "located_on_astronomical_body"
+        ],
+        "data_examples": [
+          "Aap Kaa Surroor --narrative location--> Germany",
+          "Delbert Claim Number One Mine --located in the administrative territorial entity--> Jefferson County",
+          "United States of America --contains administrative territorial entity--> North Dakota"
+        ]
+      }
+    }
+  },
+  "entity_category_relation": {
+    "concept": "entity_category_relation",
+    "overall_description": "Associates an entity with a category through a specific relation type such as main topic or main category.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for associates an entity with a category through a specific relation type such as main topic or main category.",
+        "elements": [
+          "subject_entity",
+          "category",
+          "relation_type"
+        ],
+        "data_examples": [
+          "Tool --topic's main category--> Category:Tool (band)",
+          "Michael Jackson --topic's main Wikimedia portal--> Portal:Michael Jackson",
+          "Portal:Sony --Wikimedia portal's main topic--> Sony"
+        ]
+      }
+    }
+  },
+  "language_phrase_translation": {
+    "concept": "language_phrase_translation",
+    "overall_description": "Stores translations of phrases or words between languages, including pronunciation.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for stores translations of phrases or words between languages, including pronunciation.",
+        "elements": [
+          "source_language",
+          "target_language",
+          "source_phrase",
+          "target_phrase",
+          "pronunciation"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0302\", \"title\": \"Italian language\", \"headers\": [\"English ()\", \"Italian ()\"], \"sample_rows\": [[\"You are right/wrong!\", \"it (Tu) hai ragione/torto! (informal) / it (Lei) ha ragione/torto! (formal) / it (Voi) avete ragione/torto! (plural), Pronunciation is\"]]}",
+          "{\"table_id\": \"T0301\", \"title\": \"Italian language\", \"headers\": [\"English\", \"Italian\", \"IPA\"], \"sample_rows\": [[\"two thousand (and) twenty-four (2024)\", \"duemilaventiquattro\", \"/dueˌmilaˈventikwattro/\"], [\"nineteen\", \"diciannove\", \"/ditʃanˈnɔve/\"], [\"day\", \"it giorno\", \"/ˈdʒorno/\"]]}",
+          "{\"table_id\": \"T0303\", \"title\": \"Italian language\", \"headers\": [\"English ()\", \"Italian ()\", \"Pronunciation\"], \"sample_rows\": [[\"You are welcome!\", \"it Prego!\", \"/ˈprɛɡo/\"], [\"Good morning!\", \"it Buongiorno! (= Good day!)\", \"/ˌbwɔnˈdʒorno/\"], [\"I do not understand Italian.\", \"it Non capisco l'italiano.\", \"/non kaˌpisko litaˈljano/\"]]}"
+        ]
+      }
+    }
+  },
+  "tv_season_ratings": {
+    "concept": "tv_season_ratings",
+    "overall_description": "Records the ratings and scheduling details of a television season, including premiere and finale dates, viewership, and demographic performance.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records the ratings and scheduling details of a television season, including premiere and finale dates, viewership, and demographic performance.",
+        "elements": [
+          "season_number",
+          "episode_count",
+          "timeslot",
+          "season_premiere_date",
+          "season_finale_date",
+          "tv_season",
+          "viewers_in_millions",
+          "viewer_rank",
+          "key_demographics"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0421\", \"title\": \"NCIS (TV series)\", \"headers\": [\"Season premiere\", \"Season finale\", \"TV season\", \"Viewers(in millions)\", \"Rank(viewers)\", \"Key demographics(18–49)\"], \"sample_rows\": [[\"19\", \"21\", \"Monday 9:00 &nbsp; PM\", \"September 20, 2021\", \"May 23, 2022\", \"2021–22\"], [\"15\", \"24\", \"September 26, 2017\", \"May 22, 2018\", \"2017–18\", \"Tuesday 8:00 &nbsp; PM\"], [\"7\", \"24\", \"September 22, 2009\", \"May 25, 2010\", \"2009–10\", \"Tuesday 8:00 &nbsp; PM\"]]}",
+          "{\"table_id\": \"T0420\", \"title\": \"NCIS (TV series)\", \"headers\": [\"Season premiere\", \"Season finale\", \"TV season\", \"Viewers(in millions)\", \"Rank(viewers)\"], \"sample_rows\": [[\"Season\", \"Episodes\", \"Timeslot ( ET )\", \"Original airing\", \"Live television ratings\"]]}",
+          "{\"table_id\": \"T0208\", \"title\": \"Fix You\", \"headers\": [\"Publisher\", \"Year\", \"Listicle\", \"Rank\"], \"sample_rows\": [[\"Rolling Stone\", \"2021\", \"The 500 Greatest Songs of All Time\", \"392, is\"], [\"Q\", \"2005\", \"100 Greatest Tracks of the Year\", \"2, is\"]]}"
+        ]
+      }
+    }
+  }
+}

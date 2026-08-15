@@ -1,0 +1,42 @@
+{
+  "domain": "sports",
+  "generated_from": "semantic_catalog/semantic_list_3sources.json",
+  "sources": {
+    "table": {
+      "summary": "The Table source provides structured, row-and-column data ideal for queries that require exact values, rankings, dates, counts, and comparisons. It contains fields such as player names, team names, ranks, times, scores, years, seasons, and numeric statistics. Use this source when the question asks for a specific list (e.g., all-star rosters, draft picks, medalists, race results, award winners, transfer fees, attendance figures, or championship counts) and when the answer can be derived by filtering or sorting rows. The table is bound to the complete question, meaning the entire relevant table is available for execution, so you can directly retrieve the matching row(s) without needing additional context. This source is best for queries like 'Who won the 2013 MLB All-Star Game MVP?' or 'List the top 5 finishers in the men's 10,000m at the 2013 Games of the Small States of Europe.' Avoid using Table when the answer requires descriptive prose, biographical narratives, or contextual explanations not present in the cells.",
+      "best_for": [
+        "Rankings and standings",
+        "Numeric comparisons (e.g., counts, times, scores)",
+        "Lists of entities (players, teams, schools) with attributes",
+        "Award winners and statistical leaders",
+        "Draft selections and transfer records",
+        "Event results and medal tables"
+      ],
+      "avoid_when": [
+        "The answer is a narrative description or explanation",
+        "The query asks for biographical details not in columns (e.g., early life, career history)",
+        "The query requires linking an entity to a prose fact from a document"
+      ]
+    },
+    "doc": {
+      "summary": "The Doc source provides unstructured prose articles that describe entities such as athletes, teams, venues, conferences, and events in depth. Each document is linked to a table via `linked_from_table_ids`, meaning it is associated with a specific bound table. When using Doc, candidates are first filtered by the document title and first sentence before the full text is read, so the query should include keywords that match the title or opening. This source is ideal for queries that ask for attributes not present in table cells, such as biographical details (birth date, nationality, college, awards), historical context, narrative descriptions of events, or explanations of development activities. For example, 'What is the home stadium of the University of X baseball team?' or 'Describe the 1987 NBA playoff series between the Celtics and Pistons.' Use Doc when the answer requires reading a paragraph to extract a fact that is not a simple numeric or categorical value. Avoid Doc when the query is a straightforward lookup that can be answered directly from a table row.",
+      "best_for": [
+        "Biographical information about athletes (e.g., birth date, college, awards)",
+        "Descriptions of venues, conferences, and teams",
+        "Narrative accounts of events, seasons, and tournaments",
+        "Details not present in structured columns (e.g., military service, alias)",
+        "Contextual explanations and historical background"
+      ],
+      "avoid_when": [
+        "The query asks for a specific numeric value that is in a table column",
+        "The answer is a simple list or ranking that can be obtained by filtering rows",
+        "The query does not match the document title or first sentence"
+      ]
+    }
+  },
+  "routing_boundary": "Use Table to identify an entity or value from structured data (e.g., find the player with the most all-star appearances, or the winner of a race). Once the entity is known, if the query asks for a prose fact about that entity (e.g., their college, birth date, or a narrative description of their career), switch to Doc, which contains the linked document for that entity. The bridge is: Table provides the key (e.g., player name, team name) and Doc provides the detailed attribute or story associated with that key.",
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat"
+  }
+}

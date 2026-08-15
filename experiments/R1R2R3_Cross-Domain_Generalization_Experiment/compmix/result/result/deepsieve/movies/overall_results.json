@@ -1,0 +1,6175 @@
+{
+  "queries": [
+    {
+      "query": "Which is the last movie directed by James Wan?",
+      "ground_truth": "Malignant",
+      "q1_answers": [],
+      "q2_answers": [
+        "Malignant"
+      ],
+      "raw": {
+        "id": "dev-5186",
+        "question": "Which is the last movie directed by James Wan?",
+        "answer": "Malignant",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E021054",
+            "P57",
+            "E004405"
+          ],
+          [
+            "E021054",
+            "P162",
+            "E004405"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who directs the flim the Wish Dragon?",
+      "ground_truth": "Chris Appelhans",
+      "q1_answers": [],
+      "q2_answers": [
+        "Chris Appelhans"
+      ],
+      "raw": {
+        "id": "dev-5513",
+        "question": "Who directs the flim the Wish Dragon?",
+        "answer": "Chris Appelhans",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E019886",
+            "P57",
+            "E013296"
+          ],
+          [
+            "E019886",
+            "P58",
+            "E013296"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the producer of the flim the Wish Dragon?",
+      "ground_truth": "Aron Warner",
+      "q1_answers": [],
+      "q2_answers": [
+        "Aron Warner"
+      ],
+      "raw": {
+        "id": "dev-5514",
+        "question": "Who is the producer of the flim the Wish Dragon?",
+        "answer": "Aron Warner",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E019886",
+            "P162",
+            "E013149"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the composer of the flim the Wish Dragon?",
+      "ground_truth": "Jon Fratelli",
+      "q1_answers": [],
+      "q2_answers": [
+        "Jon Fratelli"
+      ],
+      "raw": {
+        "id": "dev-5517",
+        "question": "Who is the composer of the flim the Wish Dragon?",
+        "answer": "Jon Fratelli",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E019886",
+            "P86",
+            "E016572"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the director of Wish Dragon?",
+      "ground_truth": "Chris Appelhans",
+      "q1_answers": [],
+      "q2_answers": [
+        "Chris Appelhans"
+      ],
+      "raw": {
+        "id": "dev-5518",
+        "question": "Who is the director of Wish Dragon?",
+        "answer": "Chris Appelhans",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E019886",
+            "P57",
+            "E013296"
+          ],
+          [
+            "E019886",
+            "P58",
+            "E013296"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What character does Helena Bonham Carter play in The King's Speech?",
+      "ground_truth": "Queen Elizabeth",
+      "q1_answers": [],
+      "q2_answers": [
+        "Queen Elizabeth"
+      ],
+      "raw": {
+        "id": "dev-5575",
+        "question": "What character does Helena Bonham Carter play in The King's Speech?",
+        "answer": "Queen Elizabeth",
+        "source": "doc",
+        "source_ids": [
+          "D06722",
+          "D15280",
+          "D14244"
+        ]
+      }
+    },
+    {
+      "query": "Which is the Debut movie as director of Ericson Core?",
+      "ground_truth": "Invincible",
+      "q1_answers": [],
+      "q2_answers": [
+        "Invincible"
+      ],
+      "raw": {
+        "id": "dev-5635",
+        "question": "Which is the Debut movie as director of Ericson Core?",
+        "answer": "Invincible",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004274",
+            "P57",
+            "E008302"
+          ],
+          [
+            "E004274",
+            "P344",
+            "E008302"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which is the Debut movie as Cinematographer of Ericson Core?",
+      "ground_truth": "Exit in Red",
+      "q1_answers": [],
+      "q2_answers": [
+        "Exit in Red"
+      ],
+      "raw": {
+        "id": "dev-5636",
+        "question": "Which is the Debut movie as Cinematographer of Ericson Core?",
+        "answer": "Exit in Red",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006168",
+            "P344",
+            "E008302"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who played  the  Brian O'Conner in The Fast and Furious?",
+      "ground_truth": "Paul Walker",
+      "q1_answers": [],
+      "q2_answers": [
+        "Paul Walker"
+      ],
+      "raw": {
+        "id": "dev-5693",
+        "question": "Who played  the  Brian O'Conner in The Fast and Furious?",
+        "answer": "Paul Walker",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E007046",
+            "P161",
+            "E010132"
+          ],
+          [
+            "E010132",
+            "P800",
+            "E007046"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who played Dominic Toretto in The Fast and Furious?",
+      "ground_truth": "Vin Diesel",
+      "q1_answers": [],
+      "q2_answers": [
+        "Vin Diesel"
+      ],
+      "raw": {
+        "id": "dev-5695",
+        "question": "who played Dominic Toretto in The Fast and Furious?",
+        "answer": "Vin Diesel",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E007046",
+            "P161",
+            "E008406"
+          ],
+          [
+            "E008406",
+            "P800",
+            "E007046"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Actor behind the Brian O'Conner in The Fast and Furious 1?",
+      "ground_truth": "Paul Walker",
+      "q1_answers": [],
+      "q2_answers": [
+        "Paul Walker"
+      ],
+      "raw": {
+        "id": "dev-5698",
+        "question": "Actor behind the Brian O'Conner in The Fast and Furious 1?",
+        "answer": "Paul Walker",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E007046",
+            "P161",
+            "E010132"
+          ],
+          [
+            "E010132",
+            "P800",
+            "E007046"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the main subject of The Dark Knight?",
+      "ground_truth": "terrorism",
+      "q1_answers": [],
+      "q2_answers": [
+        "terrorism"
+      ],
+      "raw": {
+        "id": "dev-5752",
+        "question": "What is the main subject of The Dark Knight?",
+        "answer": "terrorism",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E007537",
+            "P921",
+            "E021564"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "what is the main subject of this movie?",
+      "ground_truth": "terrorism",
+      "q1_answers": [],
+      "q2_answers": [
+        "terrorism"
+      ],
+      "raw": {
+        "id": "dev-5757",
+        "question": "what is the main subject of this movie?",
+        "answer": "terrorism",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E007537",
+            "P921",
+            "E021564"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who won the Oscars for the best actress in 1952?",
+      "ground_truth": "Vivien Leigh",
+      "q1_answers": [],
+      "q2_answers": [
+        "Vivien Leigh"
+      ],
+      "raw": {
+        "id": "dev-5842",
+        "question": "Who won the Oscars for the best actress in 1952?",
+        "answer": "Vivien Leigh",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010072",
+            "P166",
+            "E003852"
+          ],
+          [
+            "E010072",
+            "P1411",
+            "E003852"
+          ],
+          [
+            "E005715",
+            "P166",
+            "E003852"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which actress won the Academy Awards for the best actress in the year 1952?",
+      "ground_truth": "Vivien Leigh",
+      "q1_answers": [],
+      "q2_answers": [
+        "Vivien Leigh"
+      ],
+      "raw": {
+        "id": "dev-5847",
+        "question": "Which actress won the Academy Awards for the best actress in the year 1952?",
+        "answer": "Vivien Leigh",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010072",
+            "P166",
+            "E003852"
+          ],
+          [
+            "E010072",
+            "P1411",
+            "E003852"
+          ],
+          [
+            "E005715",
+            "P166",
+            "E003852"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who was the director of the film \"The Night House\"?",
+      "ground_truth": "David Bruckner",
+      "q1_answers": [],
+      "q2_answers": [
+        "David Bruckner"
+      ],
+      "raw": {
+        "id": "dev-5872",
+        "question": "Who was the director of the film \"The Night House\"?",
+        "answer": "David Bruckner",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E022453",
+            "P57",
+            "E008256"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Director of the film The Night House?",
+      "ground_truth": "David Bruckner",
+      "q1_answers": [],
+      "q2_answers": [
+        "David Bruckner"
+      ],
+      "raw": {
+        "id": "dev-5877",
+        "question": "Director of the film The Night House?",
+        "answer": "David Bruckner",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E022453",
+            "P57",
+            "E008256"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Spouse of Kevin Zegers?",
+      "ground_truth": "Jaime Feld",
+      "q1_answers": [],
+      "q2_answers": [
+        "Jaime Feld"
+      ],
+      "raw": {
+        "id": "dev-5906",
+        "question": "Spouse of Kevin Zegers?",
+        "answer": "Jaime Feld",
+        "source": "doc",
+        "source_ids": [
+          "D02174"
+        ]
+      }
+    },
+    {
+      "query": "where was Chlo\u00e9 Zhao born?",
+      "ground_truth": "Beijing",
+      "q1_answers": [],
+      "q2_answers": [
+        "Beijing"
+      ],
+      "raw": {
+        "id": "dev-6056",
+        "question": "where was Chlo\u00e9 Zhao born?",
+        "answer": "Beijing",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010018",
+            "P19",
+            "E024111"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the past spouse of Peyton Reed?",
+      "ground_truth": "Beth LaMure",
+      "q1_answers": [],
+      "q2_answers": [
+        "Beth LaMure"
+      ],
+      "raw": {
+        "id": "dev-6265",
+        "question": "Who is the past spouse of Peyton Reed?",
+        "answer": "Beth LaMure",
+        "source": "doc",
+        "source_ids": [
+          "D18811"
+        ]
+      }
+    },
+    {
+      "query": "Who is the current spouse of Peyton Reed?",
+      "ground_truth": "Sheila Naghshineh",
+      "q1_answers": [],
+      "q2_answers": [
+        "Sheila Naghshineh"
+      ],
+      "raw": {
+        "id": "dev-6266",
+        "question": "Who is the current spouse of Peyton Reed?",
+        "answer": "Sheila Naghshineh",
+        "source": "doc",
+        "source_ids": [
+          "D19504"
+        ]
+      }
+    },
+    {
+      "query": "What is the BBFC rating of the movie Eternals?",
+      "ground_truth": "12A certificate",
+      "q1_answers": [],
+      "q2_answers": [
+        "12A certificate"
+      ],
+      "raw": {
+        "id": "dev-6356",
+        "question": "What is the BBFC rating of the movie Eternals?",
+        "answer": "12A certificate",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E011273",
+            "P2629",
+            "E010932"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "highest grossing film in 1994?",
+      "ground_truth": "The Lion King",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Lion King"
+      ],
+      "raw": {
+        "id": "dev-6442",
+        "question": "highest grossing film in 1994?",
+        "answer": "The Lion King",
+        "source": "doc",
+        "source_ids": [
+          "D19340"
+        ]
+      }
+    },
+    {
+      "query": "Which is the highest grossing movie of the year 1994?",
+      "ground_truth": "The Lion King",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Lion King"
+      ],
+      "raw": {
+        "id": "dev-6447",
+        "question": "Which is the highest grossing movie of the year 1994?",
+        "answer": "The Lion King",
+        "source": "doc",
+        "source_ids": [
+          "D19340"
+        ]
+      }
+    },
+    {
+      "query": "What was David Simon's job before he became a full time writer?",
+      "ground_truth": "Journalist",
+      "q1_answers": [],
+      "q2_answers": [
+        "Journalist"
+      ],
+      "raw": {
+        "id": "dev-6476",
+        "question": "What was David Simon's job before he became a full time writer?",
+        "answer": "Journalist",
+        "source": "doc",
+        "source_ids": [
+          "D01949",
+          "D02502",
+          "D10558"
+        ]
+      }
+    },
+    {
+      "query": "What is the BBFC rating of the movie The Addams Family?",
+      "ground_truth": "PG certificate",
+      "q1_answers": [],
+      "q2_answers": [
+        "PG certificate"
+      ],
+      "raw": {
+        "id": "dev-6504",
+        "question": "What is the BBFC rating of the movie The Addams Family?",
+        "answer": "PG certificate",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E018593",
+            "P2629",
+            "E010931"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which is debut film of Aanand L. Rai as Producer?",
+      "ground_truth": "Nil Battey Sannata",
+      "q1_answers": [],
+      "q2_answers": [
+        "Nil Battey Sannata"
+      ],
+      "raw": {
+        "id": "dev-6535",
+        "question": "Which is debut film of Aanand L. Rai as Producer?",
+        "answer": "Nil Battey Sannata",
+        "source": "table",
+        "source_ids": [
+          "T0020"
+        ]
+      }
+    },
+    {
+      "query": "Who designed the costumes in Gilda?",
+      "ground_truth": "Jean Louis",
+      "q1_answers": [],
+      "q2_answers": [
+        "Jean Louis"
+      ],
+      "raw": {
+        "id": "dev-6566",
+        "question": "Who designed the costumes in Gilda?",
+        "answer": "Jean Louis",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E015512",
+            "P2515",
+            "E007784"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the genre of the movie Alive?",
+      "ground_truth": "zombie film",
+      "q1_answers": [],
+      "q2_answers": [
+        "zombie film"
+      ],
+      "raw": {
+        "id": "test-6802",
+        "question": "What is the genre of the movie Alive?",
+        "answer": "zombie film",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E023314",
+            "P136",
+            "E013798"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Genre of the movie Alive?",
+      "ground_truth": "zombie film",
+      "q1_answers": [],
+      "q2_answers": [
+        "zombie film"
+      ],
+      "raw": {
+        "id": "test-6807",
+        "question": "Genre of the movie Alive?",
+        "answer": "zombie film",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E023314",
+            "P136",
+            "E013798"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What's the time period of the 2019 adaptation of Little Women?",
+      "ground_truth": "19th century",
+      "q1_answers": [],
+      "q2_answers": [
+        "19th century"
+      ],
+      "raw": {
+        "id": "test-6833",
+        "question": "What's the time period of the 2019 adaptation of Little Women?",
+        "answer": "19th century",
+        "source": "doc",
+        "source_ids": [
+          "D15601",
+          "D03187"
+        ]
+      }
+    },
+    {
+      "query": "Who distributed the movie Leviathan?",
+      "ground_truth": "Cirko Film",
+      "q1_answers": [],
+      "q2_answers": [
+        "Cirko Film"
+      ],
+      "raw": {
+        "id": "test-6926",
+        "question": "Who distributed the movie Leviathan?",
+        "answer": "Cirko Film",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E007195",
+            "P750",
+            "E013233"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which branch of military did James Hong serve in?",
+      "ground_truth": "United States Army",
+      "q1_answers": [],
+      "q2_answers": [
+        "United States Army"
+      ],
+      "raw": {
+        "id": "test-7105",
+        "question": "Which branch of military did James Hong serve in?",
+        "answer": "United States Army",
+        "source": "doc",
+        "source_ids": [
+          "D15103",
+          "D20330"
+        ]
+      }
+    },
+    {
+      "query": "Where was Ana de Armas born?",
+      "ground_truth": "Santa Cruz del Norte",
+      "q1_answers": [],
+      "q2_answers": [
+        "Santa Cruz del Norte"
+      ],
+      "raw": {
+        "id": "test-7134",
+        "question": "Where was Ana de Armas born?",
+        "answer": "Santa Cruz del Norte",
+        "source": "doc",
+        "source_ids": [
+          "D14648"
+        ]
+      }
+    },
+    {
+      "query": "What is the name of Hugh Jackman's wife?",
+      "ground_truth": "Deborah-Lee",
+      "q1_answers": [],
+      "q2_answers": [
+        "Deborah-Lee"
+      ],
+      "raw": {
+        "id": "test-7194",
+        "question": "What is the name of Hugh Jackman's wife?",
+        "answer": "Deborah-Lee",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E021882",
+            "P31",
+            "E009610"
+          ],
+          [
+            "E021882",
+            "P282",
+            "E022913"
+          ],
+          [
+            "E016562",
+            "P735",
+            "E021882"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who did wrongful cloning in the Jurassic World: Fallen Kingdom?",
+      "ground_truth": "John Hammond",
+      "q1_answers": [],
+      "q2_answers": [
+        "John Hammond"
+      ],
+      "raw": {
+        "id": "test-7224",
+        "question": "who did wrongful cloning in the Jurassic World: Fallen Kingdom?",
+        "answer": "John Hammond",
+        "source": "doc",
+        "source_ids": [
+          "D00981",
+          "D22538",
+          "D05920"
+        ]
+      }
+    },
+    {
+      "query": "gross collection of Jurassic World: Fallen Kingdom?",
+      "ground_truth": "$1.3 billion",
+      "q1_answers": [],
+      "q2_answers": [
+        "$1.3 billion"
+      ],
+      "raw": {
+        "id": "test-7225",
+        "question": "gross collection of Jurassic World: Fallen Kingdom?",
+        "answer": "$1.3 billion",
+        "source": "doc",
+        "source_ids": [
+          "D13841"
+        ]
+      }
+    },
+    {
+      "query": "Which actor played the role of Andy Dufresne?",
+      "ground_truth": "Tim Robbins",
+      "q1_answers": [],
+      "q2_answers": [
+        "Tim Robbins"
+      ],
+      "raw": {
+        "id": "test-7583",
+        "question": "Which actor played the role of Andy Dufresne?",
+        "answer": "Tim Robbins",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E018973",
+            "P175",
+            "E024071"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Due to which incident, was Indo-Pakistani War of 1971 sparked by?",
+      "ground_truth": "Bangladesh Liberation War",
+      "q1_answers": [],
+      "q2_answers": [
+        "Bangladesh Liberation War"
+      ],
+      "raw": {
+        "id": "test-7945",
+        "question": "Due to which incident, was Indo-Pakistani War of 1971 sparked by?",
+        "answer": "Bangladesh Liberation War",
+        "source": "doc",
+        "source_ids": [
+          "D02880"
+        ]
+      }
+    },
+    {
+      "query": "What is the BBFC rating of the movie Smurfs: The Lost Village?",
+      "ground_truth": "U certificate",
+      "q1_answers": [],
+      "q2_answers": [
+        "U certificate"
+      ],
+      "raw": {
+        "id": "test-8005",
+        "question": "What is the BBFC rating of the movie Smurfs: The Lost Village?",
+        "answer": "U certificate",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E007207",
+            "P2629",
+            "E010930"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the  EIRIN film rating for the movie The Ring?",
+      "ground_truth": "PG12",
+      "q1_answers": [],
+      "q2_answers": [
+        "PG12"
+      ],
+      "raw": {
+        "id": "test-8387",
+        "question": "What is the  EIRIN film rating for the movie The Ring?",
+        "answer": "PG12",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010088",
+            "P2756",
+            "E011193"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Where is the film set of the movie The Ring?",
+      "ground_truth": "fictional island",
+      "q1_answers": [],
+      "q2_answers": [
+        "fictional island"
+      ],
+      "raw": {
+        "id": "test-8388",
+        "question": "Where is the film set of the movie The Ring?",
+        "answer": "fictional island",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010088",
+            "P8411",
+            "E020741"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who distributed the movie The Ring?",
+      "ground_truth": "UIP-Dunafilm",
+      "q1_answers": [],
+      "q2_answers": [
+        "UIP-Dunafilm"
+      ],
+      "raw": {
+        "id": "test-8389",
+        "question": "Who distributed the movie The Ring?",
+        "answer": "UIP-Dunafilm",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010088",
+            "P750",
+            "E005876"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the street that the University of Television and Film Munich is found on?",
+      "ground_truth": "Bernd-Eichinger-Platz",
+      "q1_answers": [],
+      "q2_answers": [
+        "Bernd-Eichinger-Platz"
+      ],
+      "raw": {
+        "id": "test-8492",
+        "question": "What is the name of the street that the University of Television and Film Munich is found on?",
+        "answer": "Bernd-Eichinger-Platz",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E019098",
+            "P669",
+            "E022917"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was Garry Marshall's first movie acting role?",
+      "ground_truth": "The Phony American",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Phony American"
+      ],
+      "raw": {
+        "id": "test-8662",
+        "question": "What was Garry Marshall's first movie acting role?",
+        "answer": "The Phony American",
+        "source": "table",
+        "source_ids": [
+          "T0234"
+        ]
+      }
+    },
+    {
+      "query": "Which is the first movie produced by Nitesh Tiwari?",
+      "ground_truth": "Break Point",
+      "q1_answers": [],
+      "q2_answers": [
+        "Break Point"
+      ],
+      "raw": {
+        "id": "test-8989",
+        "question": "Which is the first movie produced by Nitesh Tiwari?",
+        "answer": "Break Point",
+        "source": "table",
+        "source_ids": [
+          "T0483"
+        ]
+      }
+    },
+    {
+      "query": "What was the first movie Sean Marshall was in?",
+      "ground_truth": "The Deadly Trackers",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Deadly Trackers"
+      ],
+      "raw": {
+        "id": "test-9150",
+        "question": "What was the first movie Sean Marshall was in?",
+        "answer": "The Deadly Trackers",
+        "source": "table",
+        "source_ids": [
+          "T0611"
+        ]
+      }
+    },
+    {
+      "query": "Which movie is the sequel to Terms of Endearment?",
+      "ground_truth": "The Evening Star",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Evening Star"
+      ],
+      "raw": {
+        "id": "test-9315",
+        "question": "Which movie is the sequel to Terms of Endearment?",
+        "answer": "The Evening Star",
+        "source": "doc",
+        "source_ids": [
+          "D06661",
+          "D23772"
+        ]
+      }
+    },
+    {
+      "query": "What was the name of the film directed by Sam Wood for his first assignment as director?",
+      "ground_truth": "Double Speed",
+      "q1_answers": [],
+      "q2_answers": [
+        "Double Speed"
+      ],
+      "raw": {
+        "id": "test-9369",
+        "question": "What was the name of the film directed by Sam Wood for his first assignment as director?",
+        "answer": "Double Speed",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E018313",
+            "P57",
+            "E016670"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Film in which Wallace Reid played the role of Walter Jarvis?",
+      "ground_truth": "The Ghost Breaker",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Ghost Breaker"
+      ],
+      "raw": {
+        "id": "test-9371",
+        "question": "Film in which Wallace Reid played the role of Walter Jarvis?",
+        "answer": "The Ghost Breaker",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E015821",
+            "P161",
+            "E024050"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which is the first film as director?",
+      "ground_truth": "Yahaan",
+      "q1_answers": [],
+      "q2_answers": [
+        "Yahaan"
+      ],
+      "raw": {
+        "id": "train-1267",
+        "question": "Which is the first film as director?",
+        "answer": "Yahaan",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E014996",
+            "P57",
+            "E021945"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "How did WetaFX created apes for Rise of the Planet of the Apes movie?",
+      "ground_truth": "Motion capture",
+      "q1_answers": [],
+      "q2_answers": [
+        "Motion capture"
+      ],
+      "raw": {
+        "id": "train-1329",
+        "question": "How did WetaFX created apes for Rise of the Planet of the Apes movie?",
+        "answer": "Motion capture",
+        "source": "doc",
+        "source_ids": [
+          "D14061",
+          "D06267",
+          "D07652"
+        ]
+      }
+    },
+    {
+      "query": "Who is the executive producer of the film Smallfoot?",
+      "ground_truth": "Jared Stern",
+      "q1_answers": [],
+      "q2_answers": [
+        "Jared Stern"
+      ],
+      "raw": {
+        "id": "train-1895",
+        "question": "Who is the executive producer of the film Smallfoot?",
+        "answer": "Jared Stern",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004599",
+            "P31",
+            "E017594"
+          ],
+          [
+            "E004599",
+            "P21",
+            "E020531"
+          ],
+          [
+            "E004599",
+            "P106",
+            "E013063"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "executive producer of the film Smallfoot?",
+      "ground_truth": "Jared Stern",
+      "q1_answers": [],
+      "q2_answers": [
+        "Jared Stern"
+      ],
+      "raw": {
+        "id": "train-1900",
+        "question": "executive producer of the film Smallfoot?",
+        "answer": "Jared Stern",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004599",
+            "P31",
+            "E017594"
+          ],
+          [
+            "E004599",
+            "P21",
+            "E020531"
+          ],
+          [
+            "E004599",
+            "P106",
+            "E013063"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who played the andre davis in 21 bridges?",
+      "ground_truth": "Chadwick Boseman",
+      "q1_answers": [],
+      "q2_answers": [
+        "Chadwick Boseman"
+      ],
+      "raw": {
+        "id": "train-216",
+        "question": "who played the andre davis in 21 bridges?",
+        "answer": "Chadwick Boseman",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E019283",
+            "P162",
+            "E017798"
+          ],
+          [
+            "E019283",
+            "P161",
+            "E017798"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who played Captain McKenna in 21 bridges?",
+      "ground_truth": "J.K. Simmons",
+      "q1_answers": [],
+      "q2_answers": [
+        "J.K. Simmons"
+      ],
+      "raw": {
+        "id": "train-218",
+        "question": "who played Captain McKenna in 21 bridges?",
+        "answer": "J.K. Simmons",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E019283",
+            "P161",
+            "E006629"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Actor behind the andre davis in 21 bridges?",
+      "ground_truth": "Chadwick Boseman",
+      "q1_answers": [],
+      "q2_answers": [
+        "Chadwick Boseman"
+      ],
+      "raw": {
+        "id": "train-221",
+        "question": "Actor behind the andre davis in 21 bridges?",
+        "answer": "Chadwick Boseman",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E019283",
+            "P162",
+            "E017798"
+          ],
+          [
+            "E019283",
+            "P161",
+            "E017798"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the spouse of the Hardik Mehta?",
+      "ground_truth": "Akanksha Tewari",
+      "q1_answers": [],
+      "q2_answers": [
+        "Akanksha Tewari"
+      ],
+      "raw": {
+        "id": "train-2225",
+        "question": "Who is the spouse of the Hardik Mehta?",
+        "answer": "Akanksha Tewari",
+        "source": "doc",
+        "source_ids": [
+          "D03189"
+        ]
+      }
+    },
+    {
+      "query": "What maritime museum in located there?",
+      "ground_truth": "Columbia River Maritime Museum",
+      "q1_answers": [],
+      "q2_answers": [
+        "Columbia River Maritime Museum"
+      ],
+      "raw": {
+        "id": "train-2255",
+        "question": "What maritime museum in located there?",
+        "answer": "Columbia River Maritime Museum",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E014472",
+            "P131",
+            "E017411"
+          ],
+          [
+            "E014472",
+            "P276",
+            "E017411"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What building was originally reused for it?",
+      "ground_truth": "Old Astoria City Hall",
+      "q1_answers": [],
+      "q2_answers": [
+        "Old Astoria City Hall"
+      ],
+      "raw": {
+        "id": "train-2256",
+        "question": "What building was originally reused for it?",
+        "answer": "Old Astoria City Hall",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E017142",
+            "P466",
+            "E014472"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What architect designed it?",
+      "ground_truth": "Emil Schacht",
+      "q1_answers": [],
+      "q2_answers": [
+        "Emil Schacht"
+      ],
+      "raw": {
+        "id": "train-2257",
+        "question": "What architect designed it?",
+        "answer": "Emil Schacht",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E017142",
+            "P84",
+            "E018423"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What awards did A Wrinkle in Time win?",
+      "ground_truth": "St. Louis Film Critics Awards",
+      "q1_answers": [],
+      "q2_answers": [
+        "St. Louis Film Critics Awards"
+      ],
+      "raw": {
+        "id": "train-2434",
+        "question": "What awards did A Wrinkle in Time win?",
+        "answer": "St. Louis Film Critics Awards",
+        "source": "table",
+        "source_ids": [
+          "T0018"
+        ]
+      }
+    },
+    {
+      "query": "Who played Scott Calvin's son Charlie in The Santa Clause?",
+      "ground_truth": "Eric Lloyd",
+      "q1_answers": [],
+      "q2_answers": [
+        "Eric Lloyd"
+      ],
+      "raw": {
+        "id": "train-2493",
+        "question": "Who played Scott Calvin's son Charlie in The Santa Clause?",
+        "answer": "Eric Lloyd",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E016169",
+            "P175",
+            "E013161"
+          ],
+          [
+            "E017551",
+            "P161",
+            "E013161"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the sequel to The Santa Clause?",
+      "ground_truth": "The Santa Clause 2",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Santa Clause 2"
+      ],
+      "raw": {
+        "id": "train-2494",
+        "question": "What is the name of the sequel to The Santa Clause?",
+        "answer": "The Santa Clause 2",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E017551",
+            "P179",
+            "E006776"
+          ],
+          [
+            "E006492",
+            "P179",
+            "E006776"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the coustume designer of The Witches?",
+      "ground_truth": "Joanna Johnston",
+      "q1_answers": [],
+      "q2_answers": [
+        "Joanna Johnston"
+      ],
+      "raw": {
+        "id": "train-2676",
+        "question": "Who is the coustume designer of The Witches?",
+        "answer": "Joanna Johnston",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E020146",
+            "P2515",
+            "E014467"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the production producer of The Witches movie?",
+      "ground_truth": "Gary Freeman",
+      "q1_answers": [],
+      "q2_answers": [
+        "Gary Freeman"
+      ],
+      "raw": {
+        "id": "train-2677",
+        "question": "who is the production producer of The Witches movie?",
+        "answer": "Gary Freeman",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E020146",
+            "P2554",
+            "E011803"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the costume designer of The Witches movie?",
+      "ground_truth": "Joanna Johnston",
+      "q1_answers": [],
+      "q2_answers": [
+        "Joanna Johnston"
+      ],
+      "raw": {
+        "id": "train-2681",
+        "question": "who is the costume designer of The Witches movie?",
+        "answer": "Joanna Johnston",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E020146",
+            "P2515",
+            "E014467"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the director of the movie Chehre?",
+      "ground_truth": "Rumy Jafry",
+      "q1_answers": [],
+      "q2_answers": [
+        "Rumy Jafry"
+      ],
+      "raw": {
+        "id": "train-2736",
+        "question": "Who is the director of the movie Chehre?",
+        "answer": "Rumy Jafry",
+        "source": "doc",
+        "source_ids": [
+          "D13603"
+        ]
+      }
+    },
+    {
+      "query": "Who directed the movie Chehre?",
+      "ground_truth": "Rumy Jafry",
+      "q1_answers": [],
+      "q2_answers": [
+        "Rumy Jafry"
+      ],
+      "raw": {
+        "id": "train-2741",
+        "question": "Who directed the movie Chehre?",
+        "answer": "Rumy Jafry",
+        "source": "doc",
+        "source_ids": [
+          "D13603"
+        ]
+      }
+    },
+    {
+      "query": "What was main subject of the movie \"The Dark Knight\"?",
+      "ground_truth": "terrorism",
+      "q1_answers": [],
+      "q2_answers": [
+        "terrorism"
+      ],
+      "raw": {
+        "id": "train-2828",
+        "question": "What was main subject of the movie \"The Dark Knight\"?",
+        "answer": "terrorism",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E007537",
+            "P921",
+            "E021564"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who did he first marry?",
+      "ground_truth": "Naomi Chance",
+      "q1_answers": [],
+      "q2_answers": [
+        "Naomi Chance"
+      ],
+      "raw": {
+        "id": "train-3008",
+        "question": "Who did he first marry?",
+        "answer": "Naomi Chance",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E015113",
+            "P26",
+            "E021151"
+          ],
+          [
+            "E021151",
+            "P26",
+            "E015113"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the actor who played Raheem in Juice?",
+      "ground_truth": "Khalil Kain",
+      "q1_answers": [],
+      "q2_answers": [
+        "Khalil Kain"
+      ],
+      "raw": {
+        "id": "train-3096",
+        "question": "What is the name of the actor who played Raheem in Juice?",
+        "answer": "Khalil Kain",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E020260",
+            "P161",
+            "E020211"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which actor in Juice was a rapper?",
+      "ground_truth": "Tupac Shakur",
+      "q1_answers": [],
+      "q2_answers": [
+        "Tupac Shakur"
+      ],
+      "raw": {
+        "id": "train-3097",
+        "question": "Which actor in Juice was a rapper?",
+        "answer": "Tupac Shakur",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E020260",
+            "P161",
+            "E019769"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the director of Man of Steel?",
+      "ground_truth": "Zack Snyder",
+      "q1_answers": [],
+      "q2_answers": [
+        "Zack Snyder"
+      ],
+      "raw": {
+        "id": "train-310",
+        "question": "What is the name of the director of Man of Steel?",
+        "answer": "Zack Snyder",
+        "source": "doc",
+        "source_ids": [
+          "D11497",
+          "D16976",
+          "D09138"
+        ]
+      }
+    },
+    {
+      "query": "Who produces the film Black Beauty?",
+      "ground_truth": "Jeremy Bolt",
+      "q1_answers": [],
+      "q2_answers": [
+        "Jeremy Bolt"
+      ],
+      "raw": {
+        "id": "train-3274",
+        "question": "Who produces the film Black Beauty?",
+        "answer": "Jeremy Bolt",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E023316",
+            "P162",
+            "E006911"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the composer of the flim tom and jerry?",
+      "ground_truth": "Christophe Beck",
+      "q1_answers": [],
+      "q2_answers": [
+        "Christophe Beck"
+      ],
+      "raw": {
+        "id": "train-337",
+        "question": "who is the composer of the flim tom and jerry?",
+        "answer": "Christophe Beck",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E020544",
+            "P86",
+            "E004454"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What's the name of the producer of the movie?",
+      "ground_truth": "Sean S. Cunningham",
+      "q1_answers": [],
+      "q2_answers": [
+        "Sean S. Cunningham"
+      ],
+      "raw": {
+        "id": "train-3424",
+        "question": "What's the name of the producer of the movie?",
+        "answer": "Sean S. Cunningham",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004943",
+            "P162",
+            "E021285"
+          ],
+          [
+            "E004943",
+            "P272",
+            "E021285"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What's the name of the first film that he was the producer of?",
+      "ground_truth": "The Art of Marriage",
+      "q1_answers": [],
+      "q2_answers": [
+        "The Art of Marriage"
+      ],
+      "raw": {
+        "id": "train-3425",
+        "question": "What's the name of the first film that he was the producer of?",
+        "answer": "The Art of Marriage",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E005378",
+            "P57",
+            "E021285"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "which award win the Best Supporting Actor role Birds of Prey movie?",
+      "ground_truth": "Hollywood Critics Association Midseason Awards",
+      "q1_answers": [],
+      "q2_answers": [
+        "Hollywood Critics Association Midseason Awards"
+      ],
+      "raw": {
+        "id": "train-3485",
+        "question": "which award win the Best Supporting Actor role Birds of Prey movie?",
+        "answer": "Hollywood Critics Association Midseason Awards",
+        "source": "table",
+        "source_ids": [
+          "T0106",
+          "T0107"
+        ]
+      }
+    },
+    {
+      "query": "which awards win Favorite Movie Actor\tin Dolittle  movie?",
+      "ground_truth": "Kids' Choice Awards",
+      "q1_answers": [],
+      "q2_answers": [
+        "Kids' Choice Awards"
+      ],
+      "raw": {
+        "id": "train-3574",
+        "question": "which awards win Favorite Movie Actor\tin Dolittle  movie?",
+        "answer": "Kids' Choice Awards",
+        "source": "table",
+        "source_ids": [
+          "T0200",
+          "T0201"
+        ]
+      }
+    },
+    {
+      "query": "Who played his younger part Alan Parrish in Jumanji?",
+      "ground_truth": "Adam Hann-Byrd",
+      "q1_answers": [],
+      "q2_answers": [
+        "Adam Hann-Byrd"
+      ],
+      "raw": {
+        "id": "train-3811",
+        "question": "Who played his younger part Alan Parrish in Jumanji?",
+        "answer": "Adam Hann-Byrd",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010516",
+            "P161",
+            "E014776"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Notable work of Sebasti\u00e1n Cordero?",
+      "ground_truth": "Ratas, Ratones, Rateros",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ratas, Ratones, Rateros"
+      ],
+      "raw": {
+        "id": "train-4082",
+        "question": "Notable work of Sebasti\u00e1n Cordero?",
+        "answer": "Ratas, Ratones, Rateros",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006128",
+            "P800",
+            "E014623"
+          ],
+          [
+            "E014623",
+            "P57",
+            "E006128"
+          ],
+          [
+            "E014623",
+            "P58",
+            "E006128"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was his first screenplay writing credit?",
+      "ground_truth": "Anna of Brooklyn",
+      "q1_answers": [],
+      "q2_answers": [
+        "Anna of Brooklyn"
+      ],
+      "raw": {
+        "id": "train-4229",
+        "question": "What was his first screenplay writing credit?",
+        "answer": "Anna of Brooklyn",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E014925",
+            "P58",
+            "E014295"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who wrote the story of film Beta?",
+      "ground_truth": "Kamlesh Pandey",
+      "q1_answers": [],
+      "q2_answers": [
+        "Kamlesh Pandey"
+      ],
+      "raw": {
+        "id": "train-4289",
+        "question": "Who wrote the story of film Beta?",
+        "answer": "Kamlesh Pandey",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E017380",
+            "P58",
+            "E006977"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the main subject of the movie \"Encanto\"?",
+      "ground_truth": "self-discovery",
+      "q1_answers": [],
+      "q2_answers": [
+        "self-discovery"
+      ],
+      "raw": {
+        "id": "train-4316",
+        "question": "What was the main subject of the movie \"Encanto\"?",
+        "answer": "self-discovery",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E003827",
+            "P921",
+            "E008107"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the character name of Stephanie Beatriz in the movie \"Encanto\"?",
+      "ground_truth": "Mirabel Madrigal",
+      "q1_answers": [],
+      "q2_answers": [
+        "Mirabel Madrigal"
+      ],
+      "raw": {
+        "id": "train-4318",
+        "question": "What was the character name of Stephanie Beatriz in the movie \"Encanto\"?",
+        "answer": "Mirabel Madrigal",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E003827",
+            "P725",
+            "E007772"
+          ],
+          [
+            "E007772",
+            "P800",
+            "E003827"
+          ],
+          [
+            "E004342",
+            "P1441",
+            "E003827"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Main subject of the movie Encanto?",
+      "ground_truth": "self-discovery",
+      "q1_answers": [],
+      "q2_answers": [
+        "self-discovery"
+      ],
+      "raw": {
+        "id": "train-4321",
+        "question": "Main subject of the movie Encanto?",
+        "answer": "self-discovery",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E003827",
+            "P921",
+            "E008107"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the next feature film Robert Zemeckis directed after Back to the Future?",
+      "ground_truth": "Who Framed Roger Rabbit",
+      "q1_answers": [],
+      "q2_answers": [
+        "Who Framed Roger Rabbit"
+      ],
+      "raw": {
+        "id": "train-4407",
+        "question": "What was the next feature film Robert Zemeckis directed after Back to the Future?",
+        "answer": "Who Framed Roger Rabbit",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008882",
+            "P800",
+            "E015441"
+          ],
+          [
+            "E015441",
+            "P57",
+            "E008882"
+          ],
+          [
+            "E005614",
+            "P1346",
+            "E008882"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "In the film Kramer vs. Kramer, what is the profession of Ted Kramer?",
+      "ground_truth": "Advertising",
+      "q1_answers": [],
+      "q2_answers": [
+        "Advertising"
+      ],
+      "raw": {
+        "id": "train-4468",
+        "question": "In the film Kramer vs. Kramer, what is the profession of Ted Kramer?",
+        "answer": "Advertising",
+        "source": "doc",
+        "source_ids": [
+          "D15625"
+        ]
+      }
+    },
+    {
+      "query": "Who is the spouse of the Cars movie director John Lasseter?",
+      "ground_truth": "Nancy Lasseter",
+      "q1_answers": [],
+      "q2_answers": [
+        "Nancy Lasseter"
+      ],
+      "raw": {
+        "id": "train-4585",
+        "question": "Who is the spouse of the Cars movie director John Lasseter?",
+        "answer": "Nancy Lasseter",
+        "source": "table",
+        "source_ids": [
+          "T0347"
+        ]
+      }
+    },
+    {
+      "query": "At which Academy Awards was he nominated for Best Film Editing?",
+      "ground_truth": "66th Academy Awards",
+      "q1_answers": [],
+      "q2_answers": [
+        "66th Academy Awards"
+      ],
+      "raw": {
+        "id": "train-4616",
+        "question": "At which Academy Awards was he nominated for Best Film Editing?",
+        "answer": "66th Academy Awards",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E005568",
+            "P1411",
+            "E013009"
+          ],
+          [
+            "E006967",
+            "P1411",
+            "E013009"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who was the winner of best film editing that year?",
+      "ground_truth": "Michael Kahn",
+      "q1_answers": [],
+      "q2_answers": [
+        "Michael Kahn"
+      ],
+      "raw": {
+        "id": "train-4617",
+        "question": "Who was the winner of best film editing that year?",
+        "answer": "Michael Kahn",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E024019",
+            "P31",
+            "E007850"
+          ],
+          [
+            "E024019",
+            "P155",
+            "E010492"
+          ],
+          [
+            "E024019",
+            "P156",
+            "E023308"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who reveals the Vers is Carol Danvers in Captain Marvel?",
+      "ground_truth": "Rambeau and her daughter Monica",
+      "q1_answers": [],
+      "q2_answers": [
+        "Rambeau and her daughter Monica"
+      ],
+      "raw": {
+        "id": "train-4825",
+        "question": "Who reveals the Vers is Carol Danvers in Captain Marvel?",
+        "answer": "Rambeau and her daughter Monica",
+        "source": "doc",
+        "source_ids": [
+          "D16645"
+        ]
+      }
+    },
+    {
+      "query": "Which is the first short movie directed by Hardik Mehta?",
+      "ground_truth": "Chal Meri Luna",
+      "q1_answers": [],
+      "q2_answers": [
+        "Chal Meri Luna"
+      ],
+      "raw": {
+        "id": "train-487",
+        "question": "Which is the first short movie directed by Hardik Mehta?",
+        "answer": "Chal Meri Luna",
+        "source": "table",
+        "source_ids": [
+          "T0261"
+        ]
+      }
+    },
+    {
+      "query": "What religion does the main character belong to in Signs, the 2002 movie?",
+      "ground_truth": "Episcopal Church",
+      "q1_answers": [],
+      "q2_answers": [
+        "Episcopal Church"
+      ],
+      "raw": {
+        "id": "train-756",
+        "question": "What religion does the main character belong to in Signs, the 2002 movie?",
+        "answer": "Episcopal Church",
+        "source": "doc",
+        "source_ids": [
+          "D20148",
+          "D01255"
+        ]
+      }
+    },
+    {
+      "query": "What was the character role of Thomas Anderson/Neo in the movie \"The Matrix\"?",
+      "ground_truth": "A computer programmer",
+      "q1_answers": [],
+      "q2_answers": [
+        "A computer programmer"
+      ],
+      "raw": {
+        "id": "train-816",
+        "question": "What was the character role of Thomas Anderson/Neo in the movie \"The Matrix\"?",
+        "answer": "A computer programmer",
+        "source": "doc",
+        "source_ids": [
+          "D02357",
+          "D00556",
+          "D13957"
+        ]
+      }
+    },
+    {
+      "query": "Which is the first movie created by Stephen Sommers?",
+      "ground_truth": "Perfect Alibi",
+      "q1_answers": [],
+      "q2_answers": [
+        "Perfect Alibi"
+      ],
+      "raw": {
+        "id": "train-877",
+        "question": "Which is the first movie created by Stephen Sommers?",
+        "answer": "Perfect Alibi",
+        "source": "table",
+        "source_ids": [
+          "T0667"
+        ]
+      }
+    },
+    {
+      "query": "Who is the director of the flim The Princess Bride?",
+      "ground_truth": "Rob Reiner",
+      "q1_answers": [],
+      "q2_answers": [
+        "Rob Reiner"
+      ],
+      "raw": {
+        "id": "train-905",
+        "question": "Who is the director of the flim The Princess Bride?",
+        "answer": "Rob Reiner",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004508",
+            "P1411",
+            "E003753"
+          ],
+          [
+            "E017789",
+            "P162",
+            "E017803"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who directs the flim The Princess Bride?",
+      "ground_truth": "Rob Reiner",
+      "q1_answers": [],
+      "q2_answers": [
+        "Rob Reiner"
+      ],
+      "raw": {
+        "id": "train-910",
+        "question": "Who directs the flim The Princess Bride?",
+        "answer": "Rob Reiner",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004508",
+            "P1411",
+            "E003753"
+          ],
+          [
+            "E017789",
+            "P162",
+            "E017803"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the Shutter Island movie production designer?",
+      "ground_truth": "Dante Ferretti",
+      "q1_answers": [],
+      "q2_answers": [
+        "Dante Ferretti"
+      ],
+      "raw": {
+        "id": "train-968",
+        "question": "What is the name of the Shutter Island movie production designer?",
+        "answer": "Dante Ferretti",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E009999",
+            "P2554",
+            "E023980"
+          ]
+        ]
+      }
+    }
+  ],
+  "overall_metrics": {
+    "avg_exact_match": 0.33,
+    "avg_f1": 0.39726666666666666,
+    "avg_retrieval_time": 6.066773934364319,
+    "avg_docs_searched": 8.81,
+    "avg_similarity": 8.101254038847545,
+    "avg_prompt_tokens_per_subquery": 0.0,
+    "avg_total_tokens_per_query": 168.24,
+    "avg_execution_time": 1.005018487563358,
+    "avg_sq1_score": 0.0,
+    "avg_sq2_score": 0.22,
+    "avg_total_score": 0.22,
+    "sq1_hit_rate": 0.0,
+    "sq2_hit_rate": 0.22,
+    "total_elapsed_time": 100.50184875633568
+  },
+  "all_query_metrics": [
+    {
+      "total_retrieval_time": 33.91741418838501,
+      "total_docs_searched": 38,
+      "avg_similarity_scores": [
+        0.18672313984966749,
+        0.18672313984966749
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 283,
+      "prompt_token_counts": [
+        283
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Aquaman and the Lost Kingdom",
+        "ground_truth": "Malignant",
+        "fallback_answer": "Aquaman and the Lost Kingdom",
+        "final_reason": "Among all movies directed by James Wan, Aquaman and the Lost Kingdom has the latest release date (2023), making it his last directed movie."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Malignant"
+      },
+      "avg_retrieval_time": 16.958707094192505,
+      "avg_similarity": 0.18672313984966749,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 283,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 27.2497296333313,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 155,
+      "prompt_token_counts": [
+        155
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "Amy Heckerling, Chris Appelhans",
+        "ground_truth": "Chris Appelhans",
+        "fallback_answer": "Amy Heckerling, Chris Appelhans",
+        "final_reason": "The evidence documents list both Amy Heckerling and Chris Appelhans as directors of Wish Dragon via the 'director' relation."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "Chris Appelhans"
+      },
+      "avg_retrieval_time": 27.2497296333313,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 155,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 25.147829055786133,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        0.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 195,
+      "prompt_token_counts": [
+        195
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Barrie M. Osborne, Peter Jackson, Fran Walsh, and Tim Sanders",
+        "ground_truth": "Aron Warner",
+        "fallback_answer": "Barrie M. Osborne, Peter Jackson, Fran Walsh, and Tim Sanders",
+        "final_reason": "The reasoning steps incorrectly identified the producer of Wish Dragon as the producers of The Lord of the Rings: The Fellowship of the Ring. However, the correct producer of Wish Dragon is Chris Bremble, but based on the provided reasoning, the answer is as stated."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Aron Warner"
+      },
+      "avg_retrieval_time": 12.573914527893066,
+      "avg_similarity": 0.22833333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 195,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.004194736480712891,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 151,
+      "prompt_token_counts": [
+        151
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Jon Fratelli",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find relevant information to identify the composer of the film 'Wish Dragon'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Jon Fratelli"
+      },
+      "avg_retrieval_time": 0.0020973682403564453,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 151,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 31.198214292526245,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 148,
+      "prompt_token_counts": [
+        148
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "Amy Heckerling, Chris Appelhans",
+        "ground_truth": "Chris Appelhans",
+        "fallback_answer": "Amy Heckerling, Chris Appelhans",
+        "final_reason": "The evidence lists both Amy Heckerling and Chris Appelhans as directors of Wish Dragon."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "Chris Appelhans"
+      },
+      "avg_retrieval_time": 31.198214292526245,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 148,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 29.862314462661743,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        1.0,
+        35.22988994717253
+      ],
+      "max_similarity_scores": [
+        1.0,
+        36.76702441278185
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 174,
+      "prompt_token_counts": [
+        174
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Queen Elizabeth",
+        "ground_truth": "Queen Elizabeth",
+        "fallback_answer": "",
+        "final_reason": "Helena Bonham Carter plays Queen Elizabeth in The King's Speech, which is directed by Tom Hooper."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Queen Elizabeth"
+      },
+      "avg_retrieval_time": 14.931157231330872,
+      "avg_similarity": 18.114944973586265,
+      "max_similarity": 36.76702441278185,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 174,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.4489424228668213,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        13.86058272468137
+      ],
+      "max_similarity_scores": [
+        15.844310859096016
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 132,
+      "prompt_token_counts": [
+        132
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Invincible",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine the debut movie as director of Ericson Core."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Invincible"
+      },
+      "avg_retrieval_time": 0.4489424228668213,
+      "avg_similarity": 13.86058272468137,
+      "max_similarity": 15.844310859096016,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 132,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 30.787307024002075,
+      "total_docs_searched": 9,
+      "avg_similarity_scores": [
+        0.31432980599647264
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 184,
+      "prompt_token_counts": [
+        184
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Exit in Red",
+        "ground_truth": "Exit in Red",
+        "fallback_answer": "Exit in Red",
+        "final_reason": "The evidence lists Ericson Core as director of photography for several films, but does not specify which is his debut. However, based on common knowledge, 'Exit in Red' (1996) is his earliest known cinematography credit among the listed films."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Exit in Red"
+      },
+      "avg_retrieval_time": 30.787307024002075,
+      "avg_similarity": 0.31432980599647264,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 184,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.0008821487426757812,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 136,
+      "prompt_token_counts": [
+        136
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Paul Walker",
+        "ground_truth": "Paul Walker",
+        "fallback_answer": "",
+        "final_reason": "Brian O'Conner is a character in The Fast and the Furious franchise, and Paul Walker is widely known to have played him in the original film and subsequent sequels."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Paul Walker"
+      },
+      "avg_retrieval_time": 0.0008821487426757812,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 136,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 34.65775394439697,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.37040816326530607
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 169,
+      "prompt_token_counts": [
+        169
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Vin Diesel",
+        "ground_truth": "Vin Diesel",
+        "fallback_answer": "Vin Diesel",
+        "final_reason": "Dominic Toretto is a character in The Fast and the Furious, and the performer of this character is Vin Diesel."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Vin Diesel"
+      },
+      "avg_retrieval_time": 34.65775394439697,
+      "avg_similarity": 0.37040816326530607,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 169,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 31.2481906414032,
+      "total_docs_searched": 4,
+      "avg_similarity_scores": [
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 138,
+      "prompt_token_counts": [
+        138
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Paul Walker",
+        "ground_truth": "Paul Walker",
+        "fallback_answer": "",
+        "final_reason": "Brian O'Conner is a character in The Fast and the Furious (2001), and the actor who played him is Paul Walker."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Paul Walker"
+      },
+      "avg_retrieval_time": 31.2481906414032,
+      "avg_similarity": 0.5208333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 138,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 1.6506030559539795,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        15.195942605202893
+      ],
+      "max_similarity_scores": [
+        15.872203676336486
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 156,
+      "prompt_token_counts": [
+        156
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Batman",
+        "ground_truth": "terrorism",
+        "fallback_answer": "Batman",
+        "final_reason": "The Dark Knight is a Batman film, and the reasoning step confirms that the main subject is Batman."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "terrorism"
+      },
+      "avg_retrieval_time": 1.6506030559539795,
+      "avg_similarity": 15.195942605202893,
+      "max_similarity": 15.872203676336486,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 156,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 32.3762481212616,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.75,
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 179,
+      "prompt_token_counts": [
+        179
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "terrorism",
+        "fallback_answer": "",
+        "final_reason": "The movie title is identified as 'Movie 43', but no relevant information about its main subject was found in the provided reasoning steps."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "terrorism"
+      },
+      "avg_retrieval_time": 16.1881240606308,
+      "avg_similarity": 0.875,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 179,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.045944929122924805,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 159,
+      "prompt_token_counts": [
+        159
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Vivien Leigh",
+        "fallback_answer": "",
+        "final_reason": "The provided reasoning steps indicate that the evidence documents do not contain information about the Academy Award for Best Actress in 1952, so the winner cannot be determined from the given information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Vivien Leigh"
+      },
+      "avg_retrieval_time": 0.045944929122924805,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 159,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.002871990203857422,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 139,
+      "prompt_token_counts": [
+        139
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No relevant information found",
+        "ground_truth": "Vivien Leigh",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found to determine the winner of the Academy Award for Best Actress in 1952."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Vivien Leigh"
+      },
+      "avg_retrieval_time": 0.002871990203857422,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 139,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 26.72090482711792,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 148,
+      "prompt_token_counts": [
+        148
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "David Bruckner",
+        "ground_truth": "David Bruckner",
+        "fallback_answer": "David Bruckner",
+        "final_reason": "The evidence document directly states that 'The Night House' has a director relation to David Bruckner."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "David Bruckner"
+      },
+      "avg_retrieval_time": 26.72090482711792,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 148,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 27.721635818481445,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 141,
+      "prompt_token_counts": [
+        141
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "David Bruckner",
+        "ground_truth": "David Bruckner",
+        "fallback_answer": "David Bruckner",
+        "final_reason": "The evidence document directly states that The Night House has a director relation to David Bruckner."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "David Bruckner"
+      },
+      "avg_retrieval_time": 27.721635818481445,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 141,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.31801795959472656,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        28.03256542513183
+      ],
+      "max_similarity_scores": [
+        31.218247470430725
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 140,
+      "prompt_token_counts": [
+        140
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Jaime Feld",
+        "ground_truth": "Jaime Feld",
+        "fallback_answer": "Jaime Feld",
+        "final_reason": "Kevin Zegers is married to Jaime Feld, as stated in the evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Jaime Feld"
+      },
+      "avg_retrieval_time": 0.31801795959472656,
+      "avg_similarity": 28.03256542513183,
+      "max_similarity": 31.218247470430725,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 140,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.403900146484375,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        13.095234451091779,
+        16.414563000459417
+      ],
+      "max_similarity_scores": [
+        22.428293508201286,
+        19.453934960130287
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 166,
+      "prompt_token_counts": [
+        166
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Beijing",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps identified Chlo\u00e9 Zhao as the director of Eternals, but no information about her birthplace was found in the provided evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Beijing"
+      },
+      "avg_retrieval_time": 0.2019500732421875,
+      "avg_similarity": 14.754898725775597,
+      "max_similarity": 22.428293508201286,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 166,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 1.2142865657806396,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        27.791942185234245,
+        14.793070619279211
+      ],
+      "max_similarity_scores": [
+        29.764826314542752,
+        16.1020472782148
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 160,
+      "prompt_token_counts": [
+        160
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Beth LaMure",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find any information about Peyton Reed's past spouse. Therefore, the answer cannot be determined from the provided evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Beth LaMure"
+      },
+      "avg_retrieval_time": 0.6071432828903198,
+      "avg_similarity": 21.292506402256727,
+      "max_similarity": 29.764826314542752,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 160,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 2.502617359161377,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        27.791942185234245,
+        15.75612363899668
+      ],
+      "max_similarity_scores": [
+        29.764826314542752,
+        18.38500436467516
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 160,
+      "prompt_token_counts": [
+        160
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Sheila Naghshineh",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find any relevant information about Peyton Reed's current spouse. Therefore, the answer cannot be determined from the provided evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Sheila Naghshineh"
+      },
+      "avg_retrieval_time": 1.2513086795806885,
+      "avg_similarity": 21.774032912115462,
+      "max_similarity": 29.764826314542752,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 160,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.8443257808685303,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 177,
+      "prompt_token_counts": [
+        177
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "12A",
+        "ground_truth": "12A certificate",
+        "fallback_answer": "12A",
+        "final_reason": "The evidence lists two BBFC ratings for Eternals: '12 certificate' and '12A certificate'. The 12A is the more specific rating for theatrical release in the UK, which is the standard for cinema films."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "12A certificate"
+      },
+      "avg_retrieval_time": 3.8443257808685303,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 177,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.0022401809692382812,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 162,
+      "prompt_token_counts": [
+        162
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Forrest Gump",
+        "ground_truth": "The Lion King",
+        "fallback_answer": "Forrest Gump",
+        "final_reason": "The highest grossing film released in 1994 was Forrest Gump, with a worldwide gross of $677,945,399, which was the highest among all 1994 films."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The Lion King"
+      },
+      "avg_retrieval_time": 0.0022401809692382812,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 162,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 4.570321321487427,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 202,
+      "prompt_token_counts": [
+        202
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Forrest Gump",
+        "ground_truth": "The Lion King",
+        "fallback_answer": "",
+        "final_reason": "According to the reasoning steps, Forrest Gump was the highest grossing movie released in 1994, with a worldwide gross of $677,945,399."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The Lion King"
+      },
+      "avg_retrieval_time": 2.2851606607437134,
+      "avg_similarity": 0.6033333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 202,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.05983304977416992,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        27.980849472121484
+      ],
+      "max_similarity_scores": [
+        33.916450455929706
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 161,
+      "prompt_token_counts": [
+        161
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "journalist",
+        "ground_truth": "Journalist",
+        "fallback_answer": "journalist",
+        "final_reason": "David Simon worked as a journalist at The Washington Post before becoming a full-time writer."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Journalist"
+      },
+      "avg_retrieval_time": 0.05983304977416992,
+      "avg_similarity": 27.980849472121484,
+      "max_similarity": 33.916450455929706,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 161,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 5.40753436088562,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 148,
+      "prompt_token_counts": [
+        148
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "PG",
+        "ground_truth": "PG certificate",
+        "fallback_answer": "PG",
+        "final_reason": "The evidence states that The Addams Family has a BBFC rating of PG certificate."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "PG certificate"
+      },
+      "avg_retrieval_time": 5.40753436088562,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 148,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.14519691467285156,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        39.89848239044119
+      ],
+      "max_similarity_scores": [
+        40.74322965543517
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 137,
+      "prompt_token_counts": [
+        137
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No relevant information found",
+        "ground_truth": "Nil Battey Sannata",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found regarding the debut film of Aanand L. Rai as a producer."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Nil Battey Sannata"
+      },
+      "avg_retrieval_time": 0.14519691467285156,
+      "avg_similarity": 39.89848239044119,
+      "max_similarity": 40.74322965543517,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 137,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 5.334811210632324,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 142,
+      "prompt_token_counts": [
+        142
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Jean Louis",
+        "ground_truth": "Jean Louis",
+        "fallback_answer": "Jean Louis",
+        "final_reason": "The reasoning step indicates that the costume designer for Gilda is Jean Louis."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Jean Louis"
+      },
+      "avg_retrieval_time": 5.334811210632324,
+      "avg_similarity": 0.611111111111111,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 142,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 2.907310724258423,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        1.0,
+        12.722644900669259
+      ],
+      "max_similarity_scores": [
+        1.0,
+        14.004232635575917
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 159,
+      "prompt_token_counts": [
+        159
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "zombie film",
+        "ground_truth": "zombie film",
+        "fallback_answer": "",
+        "final_reason": "The movie Alive is a zombie film, as stated in the evidence. The second subquestion about the genre of 'zombie film' is not applicable because 'zombie film' is a genre, not a movie. Therefore, the genre of the movie Alive is zombie film."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "zombie film"
+      },
+      "avg_retrieval_time": 1.4536553621292114,
+      "avg_similarity": 6.8613224503346295,
+      "max_similarity": 14.004232635575917,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 159,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.129483699798584,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        1.0,
+        12.282474596860215
+      ],
+      "max_similarity_scores": [
+        1.0,
+        13.690319807096767
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 157,
+      "prompt_token_counts": [
+        157
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "zombie film",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps identified that '#Alive' is a film, but no information about its genre was found in the provided evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "zombie film"
+      },
+      "avg_retrieval_time": 1.564741849899292,
+      "avg_similarity": 6.641237298430108,
+      "max_similarity": 13.690319807096767,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 157,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.16404509544372559,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        27.392069361015302,
+        45.46099430992115
+      ],
+      "max_similarity_scores": [
+        32.17809864218549,
+        47.93245475373416
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 253,
+      "prompt_token_counts": [
+        253
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "1860s",
+        "ground_truth": "19th century",
+        "fallback_answer": "1860s",
+        "final_reason": "The 2019 adaptation of Little Women is a film adaptation of the 1868 novel by Louisa May Alcott, which is set during the Civil War era, i.e., the 1860s."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "19th century"
+      },
+      "avg_retrieval_time": 0.08202254772186279,
+      "avg_similarity": 36.426531835468225,
+      "max_similarity": 47.93245475373416,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 253,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 4.316655874252319,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 148,
+      "prompt_token_counts": [
+        148
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.8,
+        "final_answer": "Cirko Film; FandangoNow",
+        "ground_truth": "Cirko Film",
+        "fallback_answer": "Cirko Film; FandangoNow",
+        "final_reason": "The evidence lists two distributors for the movie Leviathan: Cirko Film (in Hungary) and FandangoNow."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.8,
+        "ground_truth": "Cirko Film"
+      },
+      "avg_retrieval_time": 4.316655874252319,
+      "avg_similarity": 0.611111111111111,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 148,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 5.228743076324463,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        1.0,
+        25.490424261320225
+      ],
+      "max_similarity_scores": [
+        1.0,
+        33.053973406135995
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 154,
+      "prompt_token_counts": [
+        154
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "United States Army",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine James Hong's military branch."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "United States Army"
+      },
+      "avg_retrieval_time": 2.6143715381622314,
+      "avg_similarity": 13.245212130660112,
+      "max_similarity": 33.053973406135995,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 154,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.7780516147613525,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 140,
+      "prompt_token_counts": [
+        140
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Havana",
+        "ground_truth": "Santa Cruz del Norte",
+        "fallback_answer": "Havana",
+        "final_reason": "The evidence document directly states that Ana de Armas has a 'place of birth' relation to Havana."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Santa Cruz del Norte"
+      },
+      "avg_retrieval_time": 3.7780516147613525,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 140,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 5.102574110031128,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 156,
+      "prompt_token_counts": [
+        156
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Deborra-Lee",
+        "ground_truth": "Deborah-Lee",
+        "fallback_answer": "Deborra-Lee",
+        "final_reason": "The evidence document states Hugh Jackman's spouse is Deborra-Lee, with the relation 'spouse' and start time 1996."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Deborah-Lee"
+      },
+      "avg_retrieval_time": 5.102574110031128,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 156,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.09180188179016113,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        37.71380860760771
+      ],
+      "max_similarity_scores": [
+        44.492575760275685
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 158,
+      "prompt_token_counts": [
+        158
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "John Hammond",
+        "ground_truth": "John Hammond",
+        "fallback_answer": "John Hammond",
+        "final_reason": "Dr. Ian Malcolm testifies that the dinosaurs should perish naturally to correct the wrongful cloning done by John Hammond."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "John Hammond"
+      },
+      "avg_retrieval_time": 0.09180188179016113,
+      "avg_similarity": 37.71380860760771,
+      "max_similarity": 44.492575760275685,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 158,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 4.812175750732422,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 153,
+      "prompt_token_counts": [
+        153
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "1309500000",
+        "ground_truth": "$1.3 billion",
+        "fallback_answer": "1309500000",
+        "final_reason": "The evidence document directly states the box office (gross collection) as +1309500000 for Jurassic World: Fallen Kingdom."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "$1.3 billion"
+      },
+      "avg_retrieval_time": 4.812175750732422,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 153,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 6.339505672454834,
+      "total_docs_searched": 9,
+      "avg_similarity_scores": [
+        0.31432980599647264
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 176,
+      "prompt_token_counts": [
+        176
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Tim Robbins",
+        "ground_truth": "Tim Robbins",
+        "fallback_answer": "Tim Robbins",
+        "final_reason": "The reasoning step confirms that Tim Robbins played Andy Dufresne in The Shawshank Redemption."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Tim Robbins"
+      },
+      "avg_retrieval_time": 6.339505672454834,
+      "avg_similarity": 0.31432980599647264,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 176,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.10742402076721191,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        36.67783493710239
+      ],
+      "max_similarity_scores": [
+        40.252311876886246
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 155,
+      "prompt_token_counts": [
+        155
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Bangladesh Liberation War",
+        "ground_truth": "Bangladesh Liberation War",
+        "fallback_answer": "Bangladesh Liberation War",
+        "final_reason": "The Indo-Pakistani War of 1971 was sparked by the Bangladesh Liberation War, as indicated in the reasoning steps."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Bangladesh Liberation War"
+      },
+      "avg_retrieval_time": 0.10742402076721191,
+      "avg_similarity": 36.67783493710239,
+      "max_similarity": 40.252311876886246,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 155,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 4.126534461975098,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 157,
+      "prompt_token_counts": [
+        157
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "U",
+        "ground_truth": "U certificate",
+        "fallback_answer": "U",
+        "final_reason": "The BBFC rating of Smurfs: The Lost Village is U certificate."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "U certificate"
+      },
+      "avg_retrieval_time": 4.126534461975098,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 157,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 5.192966461181641,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 162,
+      "prompt_token_counts": [
+        162
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "PG12",
+        "ground_truth": "PG12",
+        "fallback_answer": "PG12",
+        "final_reason": "The evidence document directly states that The Ring has an EIRIN film rating of PG12 via the relation 'EIRIN film rating'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "PG12"
+      },
+      "avg_retrieval_time": 5.192966461181641,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 162,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 5.163218975067139,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 138,
+      "prompt_token_counts": [
+        138
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "California",
+        "ground_truth": "fictional island",
+        "fallback_answer": "California",
+        "final_reason": "The film set of The Ring is California, as stated in the evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "fictional island"
+      },
+      "avg_retrieval_time": 5.163218975067139,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 138,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 5.439661026000977,
+      "total_docs_searched": 4,
+      "avg_similarity_scores": [
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 154,
+      "prompt_token_counts": [
+        154
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "final_answer": "UIP-Dunafilm, Netflix, FandangoNow",
+        "ground_truth": "UIP-Dunafilm",
+        "fallback_answer": "UIP-Dunafilm, Netflix, FandangoNow",
+        "final_reason": "The evidence lists three distributors for The Ring: UIP-Dunafilm (Hungary), Netflix, and FandangoNow."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "ground_truth": "UIP-Dunafilm"
+      },
+      "avg_retrieval_time": 5.439661026000977,
+      "avg_similarity": 0.5208333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 154,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.2033371925354004,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        37.67090249339431,
+        18.62838152062714
+      ],
+      "max_similarity_scores": [
+        39.00233856313627,
+        19.295334640377572
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 166,
+      "prompt_token_counts": [
+        166
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Bernd-Eichinger-Platz",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find any relevant information about the address or street of the University of Television and Film Munich."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Bernd-Eichinger-Platz"
+      },
+      "avg_retrieval_time": 0.1016685962677002,
+      "avg_similarity": 28.149642007010726,
+      "max_similarity": 39.00233856313627,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 166,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.042023658752441406,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        27.687847663708688
+      ],
+      "max_similarity_scores": [
+        28.974582474002293
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "The Phony American",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine Garry Marshall's first movie acting role."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The Phony American"
+      },
+      "avg_retrieval_time": 0.042023658752441406,
+      "avg_similarity": 27.687847663708688,
+      "max_similarity": 28.974582474002293,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 12.25867772102356,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        31.36977214159893,
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        33.20023696933689,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 194,
+      "prompt_token_counts": [
+        194
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No relevant information found",
+        "ground_truth": "Break Point",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps could not find any information about the first movie produced by Nitesh Tiwari, as the second subquestion returned no relevant information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Break Point"
+      },
+      "avg_retrieval_time": 6.12933886051178,
+      "avg_similarity": 15.99044162635502,
+      "max_similarity": 33.20023696933689,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 194,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.004907369613647461,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 336,
+      "prompt_token_counts": [
+        336
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Deadly Trackers",
+        "ground_truth": "The Deadly Trackers",
+        "fallback_answer": "The Deadly Trackers",
+        "final_reason": "Sean Marshall's filmography lists 'The Deadly Trackers' as his earliest feature film, released in 1973, which precedes all other movies in the list."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Deadly Trackers"
+      },
+      "avg_retrieval_time": 0.0024536848068237305,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 336,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.08605647087097168,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        28.776146634526462
+      ],
+      "max_similarity_scores": [
+        33.39448806537698
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 157,
+      "prompt_token_counts": [
+        157
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Evening Star",
+        "ground_truth": "The Evening Star",
+        "fallback_answer": "The Evening Star",
+        "final_reason": "The reasoning step confirms that the sequel to Terms of Endearment is The Evening Star, released in 1996."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Evening Star"
+      },
+      "avg_retrieval_time": 0.08605647087097168,
+      "avg_similarity": 28.776146634526462,
+      "max_similarity": 33.39448806537698,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 157,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.978180170059204,
+      "total_docs_searched": 88,
+      "avg_similarity_scores": [
+        0.06026588280337549,
+        30.711689943200803
+      ],
+      "max_similarity_scores": [
+        1.0,
+        32.00536533154357
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 227,
+      "prompt_token_counts": [
+        227
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Fascinating Youth",
+        "ground_truth": "Double Speed",
+        "fallback_answer": "Fascinating Youth",
+        "final_reason": "Sam Wood's first assignment as director was the film 'Fascinating Youth' (1926), as indicated by the evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Double Speed"
+      },
+      "avg_retrieval_time": 1.989090085029602,
+      "avg_similarity": 15.385977913002089,
+      "max_similarity": 32.00536533154357,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 227,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.10239505767822266,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        27.13303018343263
+      ],
+      "max_similarity_scores": [
+        27.57460699765182
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 137,
+      "prompt_token_counts": [
+        137
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "The Ghost Breaker",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found to determine the film in which Wallace Reid played the role of Walter Jarvis."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The Ghost Breaker"
+      },
+      "avg_retrieval_time": 0.10239505767822266,
+      "avg_similarity": 27.13303018343263,
+      "max_similarity": 27.57460699765182,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 137,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.004075050354003906,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 145,
+      "prompt_token_counts": [
+        145
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Yahaan",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not identify the director or provide any information about their first film, so the answer cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Yahaan"
+      },
+      "avg_retrieval_time": 0.002037525177001953,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 145,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.09513044357299805,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        20.603828736376695
+      ],
+      "max_similarity_scores": [
+        1.0,
+        25.45378229011894
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 228,
+      "prompt_token_counts": [
+        228
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.16,
+        "final_answer": "WetaFX used performance capture and a camera that enabled viewing motion capture dots in daylight to create the apes in Rise of the Planet of the Apes.",
+        "ground_truth": "Motion capture",
+        "fallback_answer": "performance capture and a camera that enabled viewing motion capture dots in daylight",
+        "final_reason": "The reasoning steps indicate that Weta Digital employed performance capture for the apes, and a key breakthrough was a camera that allowed viewing motion capture dots in daylight, which was used for the Golden Gate Bridge battle."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.2857142857142857,
+        "ground_truth": "Motion capture"
+      },
+      "avg_retrieval_time": 0.04756522178649902,
+      "avg_similarity": 10.53024770152168,
+      "max_similarity": 25.45378229011894,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 228,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 9.069945335388184,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 143,
+      "prompt_token_counts": [
+        143
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Jared Stern",
+        "ground_truth": "Jared Stern",
+        "fallback_answer": "Jared Stern",
+        "final_reason": "The reasoning step confirms that Jared Stern is the executive producer of Smallfoot."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Jared Stern"
+      },
+      "avg_retrieval_time": 9.069945335388184,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 143,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.8625643253326416,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 140,
+      "prompt_token_counts": [
+        140
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Jared Stern",
+        "ground_truth": "Jared Stern",
+        "fallback_answer": "Jared Stern",
+        "final_reason": "The reasoning step indicates that the executive producer of Smallfoot is Jared Stern."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Jared Stern"
+      },
+      "avg_retrieval_time": 3.8625643253326416,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 140,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.5085277557373047,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        0.0
+      ],
+      "max_similarity_scores": [
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 151,
+      "prompt_token_counts": [
+        151
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Chadwick Boseman",
+        "ground_truth": "Chadwick Boseman",
+        "fallback_answer": "Chadwick Boseman",
+        "final_reason": "The reasoning step confirms that Chadwick Boseman played Andre Davis in the movie 21 Bridges."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Chadwick Boseman"
+      },
+      "avg_retrieval_time": 3.5085277557373047,
+      "avg_similarity": 0.0,
+      "max_similarity": 0.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 151,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.00734710693359375,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No relevant information found",
+        "ground_truth": "J.K. Simmons",
+        "fallback_answer": "",
+        "final_reason": "The reasoning step indicates that no relevant information was found to answer the subquestion about who played Captain McKenna in 21 Bridges."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "J.K. Simmons"
+      },
+      "avg_retrieval_time": 0.00734710693359375,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.0012309551239013672,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Chadwick Boseman",
+        "ground_truth": "Chadwick Boseman",
+        "fallback_answer": "",
+        "final_reason": "Andre Davis is the protagonist in the movie 21 Bridges, played by Chadwick Boseman."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Chadwick Boseman"
+      },
+      "avg_retrieval_time": 0.0012309551239013672,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.09062647819519043,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        31.87464602055092,
+        15.223801833922483
+      ],
+      "max_similarity_scores": [
+        34.76910495744096,
+        16.627573930753734
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 200,
+      "prompt_token_counts": [
+        200
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Ashwiny Iyer Tiwari",
+        "ground_truth": "Akanksha Tewari",
+        "fallback_answer": "Ashwiny Iyer Tiwari",
+        "final_reason": "Hardik Mehta is a writer-director, and the evidence indicates that a writer-director (specifically Nitesh Tiwari) is married to Ashwiny Iyer Tiwari. Therefore, the spouse of Hardik Mehta is Ashwiny Iyer Tiwari."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Akanksha Tewari"
+      },
+      "avg_retrieval_time": 0.045313239097595215,
+      "avg_similarity": 23.549223927236703,
+      "max_similarity": 34.76910495744096,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 200,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 2.2814364433288574,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        12.254986468495542
+      ],
+      "max_similarity_scores": [
+        0.0,
+        14.342344307373436
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 148,
+      "prompt_token_counts": [
+        148
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Columbia River Maritime Museum",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps could not determine the location referred to by 'there' or identify a maritime museum, so the final answer is unknown."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Columbia River Maritime Museum"
+      },
+      "avg_retrieval_time": 1.1407182216644287,
+      "avg_similarity": 6.127493234247771,
+      "max_similarity": 14.342344307373436,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 148,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 2.7852425575256348,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 123,
+      "prompt_token_counts": [
+        123
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Old Astoria City Hall",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to determine which building was originally reused for the subject in question."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Old Astoria City Hall"
+      },
+      "avg_retrieval_time": 2.7852425575256348,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 123,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 2.822537660598755,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        9.642411259478795
+      ],
+      "max_similarity_scores": [
+        0.0,
+        12.066042752384561
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 147,
+      "prompt_token_counts": [
+        147
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Emil Schacht",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found to determine the referent of 'it' or the architect who designed it. Therefore, the final answer cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Emil Schacht"
+      },
+      "avg_retrieval_time": 1.4112688302993774,
+      "avg_similarity": 4.8212056297393975,
+      "max_similarity": 12.066042752384561,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 147,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.1501939296722412,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        20.14775075906582,
+        23.239621474277094
+      ],
+      "max_similarity_scores": [
+        20.68976644433515,
+        37.93954288157498
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 207,
+      "prompt_token_counts": [
+        207
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No relevant information found",
+        "ground_truth": "St. Louis Film Critics Awards",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that the book 'A Wrinkle in Time' is the source material for the 2018 Disney film adaptation, but no information about awards won by the book or the film was found in the provided evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "St. Louis Film Critics Awards"
+      },
+      "avg_retrieval_time": 0.0750969648361206,
+      "avg_similarity": 21.693686116671458,
+      "max_similarity": 37.93954288157498,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 207,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 9.669607162475586,
+      "total_docs_searched": 65,
+      "avg_similarity_scores": [
+        0.07321962337062127
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 189,
+      "prompt_token_counts": [
+        189
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Eric Lloyd",
+        "ground_truth": "Eric Lloyd",
+        "fallback_answer": "Eric Lloyd",
+        "final_reason": "The evidence lists Eric Lloyd as a cast member of The Santa Clause, and the character Charlie is Scott Calvin's son. Since Scott Calvin is played by Tim Allen, and Eric Lloyd is the only cast member associated with the role of Charlie, he is the answer."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Eric Lloyd"
+      },
+      "avg_retrieval_time": 9.669607162475586,
+      "avg_similarity": 0.07321962337062127,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 189,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 5.3817527294158936,
+      "total_docs_searched": 4,
+      "avg_similarity_scores": [
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 147,
+      "prompt_token_counts": [
+        147
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "The Santa Clause 2",
+        "ground_truth": "The Santa Clause 2",
+        "fallback_answer": "The Santa Clause 2",
+        "final_reason": "The sequel to The Santa Clause is The Santa Clause 2, as indicated by the reasoning step."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "The Santa Clause 2"
+      },
+      "avg_retrieval_time": 5.3817527294158936,
+      "avg_similarity": 0.5208333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 147,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 5.8692145347595215,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 148,
+      "prompt_token_counts": [
+        148
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Joanna Johnston",
+        "ground_truth": "Joanna Johnston",
+        "fallback_answer": "Joanna Johnston",
+        "final_reason": "The costume designer of the 1990 film The Witches is Joanna Johnston."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Joanna Johnston"
+      },
+      "avg_retrieval_time": 5.8692145347595215,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 148,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 10.818997859954834,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        17.948165298242564,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        22.676937779089116,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 235,
+      "prompt_token_counts": [
+        235
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Alfonso Cuar\u00f3n, Robert Zemeckis, Jack Rapke, Guillermo del Toro",
+        "ground_truth": "Gary Freeman",
+        "fallback_answer": "Alfonso Cuar\u00f3n, Robert Zemeckis, Jack Rapke, Guillermo del Toro",
+        "final_reason": "The Witches movie refers to The Witches (2020 film), and its producers are Alfonso Cuar\u00f3n, Robert Zemeckis, Jack Rapke, and Guillermo del Toro."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Gary Freeman"
+      },
+      "avg_retrieval_time": 5.409498929977417,
+      "avg_similarity": 9.202415982454616,
+      "max_similarity": 22.676937779089116,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 235,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 5.993284463882446,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        24.395114768440386,
+        0.75
+      ],
+      "max_similarity_scores": [
+        27.167452880026328,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 224,
+      "prompt_token_counts": [
+        224
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Joanna Johnston",
+        "ground_truth": "Joanna Johnston",
+        "fallback_answer": "Joanna Johnston",
+        "final_reason": "The question refers to the 2020 film adaptation of The Witches, and the evidence indicates that Joanna Johnston was the costume designer for that film."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Joanna Johnston"
+      },
+      "avg_retrieval_time": 2.996642231941223,
+      "avg_similarity": 12.572557384220193,
+      "max_similarity": 27.167452880026328,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 224,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.0025489330291748047,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Rumy Jafry",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine the director of the movie Chehre."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Rumy Jafry"
+      },
+      "avg_retrieval_time": 0.0025489330291748047,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.0021021366119384766,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 123,
+      "prompt_token_counts": [
+        123
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Rumy Jafry",
+        "ground_truth": "Rumy Jafry",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate no relevant information was found, but based on general knowledge, the movie Chehre (2021) was directed by Rumy Jafry."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Rumy Jafry"
+      },
+      "avg_retrieval_time": 0.0021021366119384766,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 123,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.06673860549926758,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        14.628369271094225
+      ],
+      "max_similarity_scores": [
+        14.95901434005366
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 160,
+      "prompt_token_counts": [
+        160
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Batman",
+        "ground_truth": "terrorism",
+        "fallback_answer": "Batman",
+        "final_reason": "The evidence describes 'The Dark Knight' as a follow-up to 'Batman Begins' and a superhero/comic book film, indicating its main subject is Batman."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "terrorism"
+      },
+      "avg_retrieval_time": 0.06673860549926758,
+      "avg_similarity": 14.628369271094225,
+      "max_similarity": 14.95901434005366,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 160,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 1.1140694618225098,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        10.646538504254302
+      ],
+      "max_similarity_scores": [
+        0.0,
+        13.966715939235852
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 145,
+      "prompt_token_counts": [
+        145
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Naomi Chance",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps could not identify the person referred to as 'he' or find any information about his first marriage, so the answer cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Naomi Chance"
+      },
+      "avg_retrieval_time": 0.5570347309112549,
+      "avg_similarity": 5.323269252127151,
+      "max_similarity": 13.966715939235852,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 145,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.0013272762298583984,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 134,
+      "prompt_token_counts": [
+        134
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Khalil Kain",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found to identify the actor who played Raheem in Juice."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Khalil Kain"
+      },
+      "avg_retrieval_time": 0.0013272762298583984,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 134,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 6.098776340484619,
+      "total_docs_searched": 16,
+      "avg_similarity_scores": [
+        0.22121526621526624,
+        0.0
+      ],
+      "max_similarity_scores": [
+        1.0,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 340,
+      "prompt_token_counts": [
+        340
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Queen Latifah",
+        "ground_truth": "Tupac Shakur",
+        "fallback_answer": "Queen Latifah",
+        "final_reason": "Queen Latifah is the actor in Juice who was also a rapper, as confirmed by the reasoning steps."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Tupac Shakur"
+      },
+      "avg_retrieval_time": 3.0493881702423096,
+      "avg_similarity": 0.11060763310763312,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 340,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.0017042160034179688,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 127,
+      "prompt_token_counts": [
+        127
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Zack Snyder",
+        "ground_truth": "Zack Snyder",
+        "fallback_answer": "",
+        "final_reason": "Man of Steel was directed by Zack Snyder, which is a well-known fact about the film."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Zack Snyder"
+      },
+      "avg_retrieval_time": 0.0017042160034179688,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 127,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 9.888840675354004,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 138,
+      "prompt_token_counts": [
+        138
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "Jeremy Bolt, Robert Kulzer",
+        "ground_truth": "Jeremy Bolt",
+        "fallback_answer": "Jeremy Bolt, Robert Kulzer",
+        "final_reason": "The evidence lists two producers for Black Beauty: Jeremy Bolt and Robert Kulzer."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "Jeremy Bolt"
+      },
+      "avg_retrieval_time": 9.888840675354004,
+      "avg_similarity": 0.611111111111111,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 138,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.927022933959961,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        1.0,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 174,
+      "prompt_token_counts": [
+        174
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Christophe Beck",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps could not find any relevant information about the composer of the film 'Tom and Jerry'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Christophe Beck"
+      },
+      "avg_retrieval_time": 1.9635114669799805,
+      "avg_similarity": 0.7283333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 174,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 4.089731931686401,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.75,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 172,
+      "prompt_token_counts": [
+        172
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Sean S. Cunningham",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found to identify the producer of the movie 'Movie 43'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Sean S. Cunningham"
+      },
+      "avg_retrieval_time": 2.0448659658432007,
+      "avg_similarity": 0.6033333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 172,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.0998697280883789,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        14.454157518202397
+      ],
+      "max_similarity_scores": [
+        0.0,
+        15.513694368834528
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 163,
+      "prompt_token_counts": [
+        163
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "The Art of Marriage",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps could not identify the person referred to as 'he' or find any information about the first film they produced. Therefore, the answer cannot be determined from the given information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The Art of Marriage"
+      },
+      "avg_retrieval_time": 0.04993486404418945,
+      "avg_similarity": 7.2270787591011985,
+      "max_similarity": 15.513694368834528,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 163,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.005179643630981445,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 163,
+      "prompt_token_counts": [
+        163
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No award found",
+        "ground_truth": "Hollywood Critics Association Midseason Awards",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found for either subquestion, so it is not possible to determine which award was won for Best Supporting Actor in Birds of Prey."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Hollywood Critics Association Midseason Awards"
+      },
+      "avg_retrieval_time": 0.0025898218154907227,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 163,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.5245282649993896,
+      "total_docs_searched": 21,
+      "avg_similarity_scores": [
+        0.2112955620768121,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 194,
+      "prompt_token_counts": [
+        194
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No information found",
+        "ground_truth": "Kids' Choice Awards",
+        "fallback_answer": "",
+        "final_reason": "Robert Downey, Jr. played the title role in Dolittle, but there is no evidence that he won any award for Favorite Movie Actor for this movie."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Kids' Choice Awards"
+      },
+      "avg_retrieval_time": 1.7622641324996948,
+      "avg_similarity": 0.3339811143717394,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 194,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.08002614974975586,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        25.738879570654547
+      ],
+      "max_similarity_scores": [
+        28.524898022436993
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 136,
+      "prompt_token_counts": [
+        136
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Adam Hann-Byrd",
+        "ground_truth": "Adam Hann-Byrd",
+        "fallback_answer": "",
+        "final_reason": "Adam Hann-Byrd played the younger Alan Parrish in the 1995 film Jumanji."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Adam Hann-Byrd"
+      },
+      "avg_retrieval_time": 0.08002614974975586,
+      "avg_similarity": 25.738879570654547,
+      "max_similarity": 28.524898022436993,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 136,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.1539716720581055,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.0,
+        0.0
+      ],
+      "max_similarity_scores": [
+        0.0,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 146,
+      "prompt_token_counts": [
+        146
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No answer found",
+        "ground_truth": "Ratas, Ratones, Rateros",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not yield any relevant information about Sebasti\u00e1n Cordero or his notable works."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Ratas, Ratones, Rateros"
+      },
+      "avg_retrieval_time": 1.5769858360290527,
+      "avg_similarity": 0.0,
+      "max_similarity": 0.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 146,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.1609814167022705,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        14.944776417785352,
+        24.932833545105147
+      ],
+      "max_similarity_scores": [
+        15.795839531063683,
+        25.584547030016317
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 192,
+      "prompt_token_counts": [
+        192
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Anna of Brooklyn",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found regarding Judy Garland's first screenplay writing credit."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Anna of Brooklyn"
+      },
+      "avg_retrieval_time": 0.08049070835113525,
+      "avg_similarity": 19.93880498144525,
+      "max_similarity": 25.584547030016317,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 192,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.8991317749023438,
+      "total_docs_searched": 11,
+      "avg_similarity_scores": [
+        0.40833333333333327,
+        12.116062323412802
+      ],
+      "max_similarity_scores": [
+        1.0,
+        13.930362657213688
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 143,
+      "prompt_token_counts": [
+        143
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Kamlesh Pandey",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to determine the writer of the story of the film Beta."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Kamlesh Pandey"
+      },
+      "avg_retrieval_time": 1.9495658874511719,
+      "avg_similarity": 6.2621978283730675,
+      "max_similarity": 13.930362657213688,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 143,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 5.036004066467285,
+      "total_docs_searched": 12,
+      "avg_similarity_scores": [
+        0.25860088985088986
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 165,
+      "prompt_token_counts": [
+        165
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "family",
+        "ground_truth": "self-discovery",
+        "fallback_answer": "family",
+        "final_reason": "The evidence identifies 'family' as the most central and overarching theme of the movie Encanto, appearing directly and implicitly through related subjects."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "self-discovery"
+      },
+      "avg_retrieval_time": 5.036004066467285,
+      "avg_similarity": 0.25860088985088986,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 165,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 7.63686728477478,
+      "total_docs_searched": 15,
+      "avg_similarity_scores": [
+        0.22121526621526624
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 167,
+      "prompt_token_counts": [
+        167
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Mirabel Madrigal",
+        "ground_truth": "Mirabel Madrigal",
+        "fallback_answer": "Mirabel Madrigal",
+        "final_reason": "Stephanie Beatriz voiced the character Mirabel Madrigal in the movie Encanto."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Mirabel Madrigal"
+      },
+      "avg_retrieval_time": 7.63686728477478,
+      "avg_similarity": 0.22121526621526624,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 167,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.1223676204681396,
+      "total_docs_searched": 12,
+      "avg_similarity_scores": [
+        0.25860088985088986
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 160,
+      "prompt_token_counts": [
+        160
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "family",
+        "ground_truth": "self-discovery",
+        "fallback_answer": "family",
+        "final_reason": "The evidence identifies 'family' as the most central and overarching main subject of the movie Encanto, as it directly appears and is implied in other listed themes such as family conflict and grandparent-grandchild relationship."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "self-discovery"
+      },
+      "avg_retrieval_time": 3.1223676204681396,
+      "avg_similarity": 0.25860088985088986,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 160,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 13.959609746932983,
+      "total_docs_searched": 37,
+      "avg_similarity_scores": [
+        0.75,
+        0.75,
+        0.12390297653756213
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 244,
+      "prompt_token_counts": [
+        244
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Who Framed Roger Rabbit",
+        "fallback_answer": "",
+        "final_reason": "The release date of Back to the Future is not provided, and no information about Robert Zemeckis's subsequent films is available. Therefore, it is impossible to determine the next feature film he directed after that movie."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Who Framed Roger Rabbit"
+      },
+      "avg_retrieval_time": 4.653203248977661,
+      "avg_similarity": 0.5413009921791874,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 244,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 6.871066093444824,
+      "total_docs_searched": 20,
+      "avg_similarity_scores": [
+        54.83806867653965,
+        0.22121526621526624
+      ],
+      "max_similarity_scores": [
+        55.508656616097085,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 217,
+      "prompt_token_counts": [
+        217
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "film actor",
+        "ground_truth": "Advertising",
+        "fallback_answer": "film actor",
+        "final_reason": "Ted Kramer is played by Dustin Hoffman, whose profession in the film is a film actor."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Advertising"
+      },
+      "avg_retrieval_time": 3.435533046722412,
+      "avg_similarity": 27.52964197137746,
+      "max_similarity": 55.508656616097085,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 217,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 6.122456073760986,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        0.611111111111111,
+        21.29964222106284
+      ],
+      "max_similarity_scores": [
+        1.0,
+        23.921296119108888
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 162,
+      "prompt_token_counts": [
+        162
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Nancy Lasseter",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps confirm that John Lasseter directed Cars, but no information about his spouse was found in the provided evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Nancy Lasseter"
+      },
+      "avg_retrieval_time": 3.061228036880493,
+      "avg_similarity": 10.955376666086975,
+      "max_similarity": 23.921296119108888,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 162,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.0023398399353027344,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        0.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 157,
+      "prompt_token_counts": [
+        157
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "66th Academy Awards",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not identify the person referred to as 'he' or provide any information about the Academy Awards nomination for Best Film Editing. Therefore, the final answer cannot be determined from the given information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "66th Academy Awards"
+      },
+      "avg_retrieval_time": 0.0011699199676513672,
+      "avg_similarity": 0.22833333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 157,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.9218380451202393,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        0.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 150,
+      "prompt_token_counts": [
+        150
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Michael Kahn",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide any information about the year or the winner of best film editing. Therefore, the answer cannot be determined from the given context."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Michael Kahn"
+      },
+      "avg_retrieval_time": 0.46091902256011963,
+      "avg_similarity": 0.22833333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 150,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.11533141136169434,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        45.756793008414995
+      ],
+      "max_similarity_scores": [
+        49.63906107011113
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 164,
+      "prompt_token_counts": [
+        164
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6,
+        "final_answer": "Maria Rambeau and Monica Rambeau",
+        "ground_truth": "Rambeau and her daughter Monica",
+        "fallback_answer": "Maria Rambeau and Monica Rambeau",
+        "final_reason": "According to the reasoning step, Maria Rambeau and her daughter Monica reveal to Carol Danvers that she is actually Carol Danvers, not Vers."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6,
+        "ground_truth": "Rambeau and her daughter Monica"
+      },
+      "avg_retrieval_time": 0.11533141136169434,
+      "avg_similarity": 45.756793008414995,
+      "max_similarity": 49.63906107011113,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 164,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.6792304515838623,
+      "total_docs_searched": 15,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667,
+        13.917961276217094
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0,
+        16.170212848758545
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 269,
+      "prompt_token_counts": [
+        269
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Chal Meri Luna",
+        "ground_truth": "Chal Meri Luna",
+        "fallback_answer": "",
+        "final_reason": "The short movies directed by Hardik Mehta are Skin Deep (2013), The Affair (2017), and Chal Meri Luna (2010). The first one chronologically is Chal Meri Luna, released in 2010."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Chal Meri Luna"
+      },
+      "avg_retrieval_time": 1.226410150527954,
+      "avg_similarity": 4.943764869850143,
+      "max_similarity": 16.170212848758545,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 269,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 0.1392686367034912,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        21.933939095060346,
+        27.401759628001503
+      ],
+      "max_similarity_scores": [
+        23.40920077696464,
+        28.902807092113477
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 215,
+      "prompt_token_counts": [
+        215
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "final_answer": "Episcopal",
+        "ground_truth": "Episcopal Church",
+        "fallback_answer": "Episcopal",
+        "final_reason": "The main character in Signs is Graham Hess, who is identified as a former Episcopal priest, indicating his religion is Episcopal."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666,
+        "ground_truth": "Episcopal Church"
+      },
+      "avg_retrieval_time": 0.0696343183517456,
+      "avg_similarity": 24.667849361530926,
+      "max_similarity": 28.902807092113477,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 215,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 13.48853087425232,
+      "total_docs_searched": 73,
+      "avg_similarity_scores": [
+        29.019803001842696,
+        0.07064791602542894
+      ],
+      "max_similarity_scores": [
+        37.586565951973,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 234,
+      "prompt_token_counts": [
+        234
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Neo",
+        "ground_truth": "A computer programmer",
+        "fallback_answer": "Neo",
+        "final_reason": "Keanu Reeves played Thomas Anderson/Neo in 'The Matrix', and the character Neo is the protagonist, so the character role is Neo."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "A computer programmer"
+      },
+      "avg_retrieval_time": 6.74426543712616,
+      "avg_similarity": 14.545225458934063,
+      "max_similarity": 37.586565951973,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 234,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 4.223251104354858,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.0,
+        0.0
+      ],
+      "max_similarity_scores": [
+        0.0,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 173,
+      "prompt_token_counts": [
+        173
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Catch Me If You Can",
+        "ground_truth": "Perfect Alibi",
+        "fallback_answer": "",
+        "final_reason": "Stephen Sommers' first credited film as director and writer is the 1989 comedy 'Catch Me If You Can' (not the Spielberg film), which was his directorial debut."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Perfect Alibi"
+      },
+      "avg_retrieval_time": 2.111625552177429,
+      "avg_similarity": 0.0,
+      "max_similarity": 0.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 173,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.9177589416503906,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 141,
+      "prompt_token_counts": [
+        141
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Rob Reiner",
+        "ground_truth": "Rob Reiner",
+        "fallback_answer": "Rob Reiner",
+        "final_reason": "The director of The Princess Bride is Rob Reiner."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Rob Reiner"
+      },
+      "avg_retrieval_time": 3.9177589416503906,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 141,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 3.7905311584472656,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 135,
+      "prompt_token_counts": [
+        135
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Rob Reiner",
+        "ground_truth": "Rob Reiner",
+        "fallback_answer": "Rob Reiner",
+        "final_reason": "The reasoning step confirms that the director of The Princess Bride is Rob Reiner."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Rob Reiner"
+      },
+      "avg_retrieval_time": 3.7905311584472656,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 135,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    },
+    {
+      "total_retrieval_time": 5.702879905700684,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 151,
+      "prompt_token_counts": [
+        151
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Dante Ferretti",
+        "ground_truth": "Dante Ferretti",
+        "fallback_answer": "Dante Ferretti",
+        "final_reason": "The reasoning step confirms that the production designer of Shutter Island is Dante Ferretti."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Dante Ferretti"
+      },
+      "avg_retrieval_time": 5.702879905700684,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 151,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.0050184875633568
+    }
+  ]
+}

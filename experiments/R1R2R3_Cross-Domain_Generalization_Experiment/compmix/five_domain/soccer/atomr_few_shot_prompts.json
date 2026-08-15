@@ -1,0 +1,300 @@
+{
+  "domain": "soccer",
+  "description": "Leakage-aware soccer-domain AtomR demonstrations derived from non-evaluation Table, Doc, and KG facts and quality-audited.",
+  "minimum_examples_per_stage": 8,
+  "replace_base_examples": true,
+  "stage_guidance": {
+    "tree_generation": "Keep soccer questions executable: isolate facts about players, clubs, national teams, positions, transfers, managers, seasons, matches, scores, competitions, rankings, and football awards; add a later child only when it genuinely depends on an earlier bridge answer.",
+    "source_selection": "Use KG for explicit entity-predicate-entity facts and qualifiers; Table for complete structured rows, chronology, rank, filters, comparisons, and aggregation; Text for narrative context, explanation, biography, plot, reception, and contextual wording. Select multiple labels only when the answer truly crosses boundaries.",
+    "direct_answer": "Return short evidence-compatible entities, dates, counts, organizations, places, or phrases about players, clubs, national teams, positions, transfers, managers, seasons, matches, scores, competitions, rankings, and football awards; never invent a fact.",
+    "direct_rag": "Ground every hop in supplied KG triples, table rows, or text passages, distinguishing exact graph edges from prose context and row operations.",
+    "search": "Identify only the entity requested at the current hop from the supplied evidence.",
+    "relate": "Extract the requested relation value exactly for the demonstrated soccer fact.",
+    "filter": "Apply every condition to the candidate set; use Table rows and KG qualifiers only when explicitly supplied.",
+    "answer_from_child_qa": "Resolve child dependencies in order and report only the final requested answer."
+  },
+  "stages": {
+    "tree_generation": [
+      {
+        "input": "Which team did Giuseppe Meazza coach from 1952 to 1953?",
+        "output": "{\"Which team did Giuseppe Meazza coach from 1952 to 1953?\": [\"1. Which team did Giuseppe Meazza coach from 1952 to 1953?\", \"2. What is the name of the team that Giuseppe Meazza coached from 1952 to 1953?\"], \"1. Which team did Giuseppe Meazza coach from 1952 to 1953?\": \"Relate('Giuseppe Meazza', 'coach of sports team')\", \"2. What is the name of the team that Giuseppe Meazza coached from 1952 to 1953?\": \"Filter([1], 'start time = 1952 and end time = 1953')\"}"
+      },
+      {
+        "input": "Who was the performer of the song 'Dare (La La La)'?",
+        "output": "{\"Who was the performer of the song 'Dare (La La La)'?\": [\"1. Who performed the song 'Dare (La La La)'?\", \"2. What is the name of the performer of 'Dare (La La La)'?\"], \"1. Who performed the song 'Dare (La La La)'?\": \"Relate('Dare (La La La)', 'performer')\", \"2. What is the name of the performer of 'Dare (La La La)'?\": \"Search('Dare (La La La) performer')\"}"
+      },
+      {
+        "input": "Which club did Andoni Zubizarreta play for from 1981 to 1998?",
+        "output": "{\"Which club did Andoni Zubizarreta play for from 1981 to 1998?\": [\"1. Which club did Andoni Zubizarreta play for from 1981 to 1998?\", \"2. What is the name of the club that Andoni Zubizarreta played for from 1981 to 1998?\"], \"1. Which club did Andoni Zubizarreta play for from 1981 to 1998?\": \"Relate('Andoni Zubizarreta', 'member of sports team')\", \"2. What is the name of the club that Andoni Zubizarreta played for from 1981 to 1998?\": \"Filter([1], 'start time = 1981 and end time = 1998')\"}"
+      },
+      {
+        "input": "Which league does Ehime FC play in?",
+        "output": "{\"Which league does Ehime FC play in?\": [\"1. Which league does Ehime FC play in?\", \"2. What is the league of Ehime FC?\"], \"1. Which league does Ehime FC play in?\": \"Relate('Ehime FC', 'league')\", \"2. What is the league of Ehime FC?\": \"Search('Ehime FC league')\"}"
+      },
+      {
+        "input": "What is the name of the award given to the most valuable player in Major League Soccer each season?",
+        "output": "{\"What is the name of the award given to the most valuable player in Major League Soccer each season?\": [\"1. What is the name of the award given to the most valuable player in Major League Soccer each season?\", \"2. What is the title of the award for the most valuable player in Major League Soccer?\"], \"1. What is the name of the award given to the most valuable player in Major League Soccer each season?\": \"Search('Major League Soccer most valuable player award')\", \"2. What is the title of the award for the most valuable player in Major League Soccer?\": \"Search('MLS MVP award name')\"}"
+      },
+      {
+        "input": "Which team did Japan lose to in the quarter-finals of the 2019 Asian Cup?",
+        "output": "{\"Which team did Japan lose to in the quarter-finals of the 2019 Asian Cup?\": [\"1. Which team did Japan lose to in the quarter-finals of the 2019 Asian Cup?\", \"2. What is the name of the team that defeated Japan in the quarter-finals of the 2019 Asian Cup?\"], \"1. Which team did Japan lose to in the quarter-finals of the 2019 Asian Cup?\": \"Search('Japan national football team 2019 Asian Cup quarter-final loss')\", \"2. What is the name of the team that defeated Japan in the quarter-finals of the 2019 Asian Cup?\": \"Search('Japan lost to United Arab Emirates 2019 Asian Cup')\"}"
+      },
+      {
+        "input": "Which club did Pelé play for in 2015, and what is the name of that club?",
+        "output": "{\"Which club did Pelé play for in 2015, and what is the name of that club?\": [\"1. Which club did Pelé play for in 2015?\", \"2. What is the name of the club that Pelé played for in 2015?\"], \"1. Which club did Pelé play for in 2015?\": \"Relate('Pelé', 'member of sports team')\", \"2. What is the name of the club that Pelé played for in 2015?\": \"Filter([1], 'start time = 2015 and end time = 2015')\"}"
+      },
+      {
+        "input": "Which club did Michael Langer play for from 2014 to 2016, and what is the name of that club?",
+        "output": "{\"Which club did Michael Langer play for from 2014 to 2016, and what is the name of that club?\": [\"1. Which club did Michael Langer play for from 2014 to 2016?\", \"2. What is the name of the club that Michael Langer played for from 2014 to 2016?\"], \"1. Which club did Michael Langer play for from 2014 to 2016?\": \"Relate('Michael Langer', 'member of sports team')\", \"2. What is the name of the club that Michael Langer played for from 2014 to 2016?\": \"Filter([1], 'start time = 2014 and end time = 2016')\"}"
+      }
+    ],
+    "source_selection": [
+      {
+        "input": "Who is the coach of Athletic Bilbao B?",
+        "output": "KG"
+      },
+      {
+        "input": "Which team did Bonaventure Kalou play for?",
+        "output": "KG"
+      },
+      {
+        "input": "How many goals did Raúl García score in La Liga?",
+        "output": "Table"
+      },
+      {
+        "input": "In which year did Fukushima United join the J.League?",
+        "output": "Table"
+      },
+      {
+        "input": "When was the MLS MVP award renamed in honor of Landon Donovan?",
+        "output": "Text"
+      },
+      {
+        "input": "What was the score of the 1998 World Cup final?",
+        "output": "Text"
+      },
+      {
+        "input": "What position did Lionel Messi play and how many goals did he score for Barcelona in La Liga?",
+        "output": "KG, Table"
+      },
+      {
+        "input": "In which league does Verspah Oita play and what was the result of Japan's match against Cameroon in the 2010 World Cup?",
+        "output": "Table, Text"
+      }
+    ],
+    "direct_answer": [
+      {
+        "input": "Who is the coach of Athletic Bilbao B?",
+        "output": "So the answer is: (1) Paraphrase Answer: The coach of Athletic Bilbao B is Edorta Murua Zenarruzabeitia. (2) Answer List: [\"Edorta Murua Zenarruzabeitia\"]"
+      },
+      {
+        "input": "Which team did Bonaventure Kalou play for?",
+        "output": "So the answer is: (1) Paraphrase Answer: Bonaventure Kalou was a member of Paris Saint-Germain F.C. (2) Answer List: [\"Paris Saint-Germain F.C.\"]"
+      },
+      {
+        "input": "What position did Hugo Lloris play?",
+        "output": "So the answer is: (1) Paraphrase Answer: Hugo Lloris played as a goalkeeper. (2) Answer List: [\"goalkeeper\"]"
+      },
+      {
+        "input": "Which league does Tokyo Verdy play in?",
+        "output": "So the answer is: (1) Paraphrase Answer: Tokyo Verdy plays in the J2 league. (2) Answer List: [\"J2\"]"
+      },
+      {
+        "input": "How many goals did Lionel Messi score for Barcelona in La Liga?",
+        "output": "So the answer is: (1) Paraphrase Answer: Lionel Messi scored 474 goals for Barcelona in La Liga. (2) Answer List: [\"474\"]"
+      },
+      {
+        "input": "Which club did Claudio Pizarro play for the most in the Bundesliga?",
+        "output": "So the answer is: (1) Paraphrase Answer: Claudio Pizarro played for Werder Bremen the most in the Bundesliga, with 250 appearances. (2) Answer List: [\"Werder Bremen\"]"
+      },
+      {
+        "input": "When was the MLS MVP award renamed in honor of Landon Donovan?",
+        "output": "So the answer is: (1) Paraphrase Answer: The MLS MVP award was renamed in honor of Landon Donovan on January 15, 2015. (2) Answer List: [\"January 15, 2015\"]"
+      },
+      {
+        "input": "What was the score of the 1998 World Cup final?",
+        "output": "So the answer is: (1) Paraphrase Answer: France won the 1998 World Cup final by defeating Brazil 3–0. (2) Answer List: [\"3–0\"]"
+      }
+    ],
+    "direct_rag": [
+      {
+        "input": "Supporting knowledge: Giuseppe Meazza --coach of sports team [end time: \"1953; start time: \"1952]--> Italy national association football team. Question: Who coached the Italy national association football team from 1952 to 1953?",
+        "output": "So the answer is: (1) Paraphrase Answer: Giuseppe Meazza coached the Italy national association football team from 1952 to 1953. (2) Answer List: [\"Giuseppe Meazza\"]"
+      },
+      {
+        "input": "Supporting knowledge: Pelé --member of sports team [start time: \"2015; end time: \"2015]--> S.L. Benfica. Question: Which team did Pelé belong to in 2015?",
+        "output": "So the answer is: (1) Paraphrase Answer: Pelé was a member of S.L. Benfica in 2015. (2) Answer List: [\"S.L. Benfica\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table 'La Liga' with headers [Rank, Player, Club(s), Years active, Apps, Goals] and row [8, Argentina Lionel Messi, Barcelona, 2004–2021, 520, 474]. Question: How many goals did Lionel Messi score in La Liga according to the table?",
+        "output": "So the answer is: (1) Paraphrase Answer: Lionel Messi scored 474 goals in La Liga. (2) Answer List: [\"474\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table 'J.League' with headers [Area, Club Name (Name), Activity area/Hometown (Home stadium), League, Year Joined] and row [Kantō, Tokyo Verdy, Inagi, Tokyo (Ajinomoto Stadium, Chōfu), J2, 1991]. Question: In which year did Tokyo Verdy join the J.League?",
+        "output": "So the answer is: (1) Paraphrase Answer: Tokyo Verdy joined the J.League in 1991. (2) Answer List: [\"1991\"]"
+      },
+      {
+        "input": "Supporting knowledge: Landon Donovan MVP Award, On January 15, 2015, MLS renamed its MVP award in honor of Landon Donovan. Question: When did MLS rename its MVP award in honor of Landon Donovan?",
+        "output": "So the answer is: (1) Paraphrase Answer: MLS renamed its MVP award in honor of Landon Donovan on January 15, 2015. (2) Answer List: [\"January 15, 2015\"]"
+      },
+      {
+        "input": "Supporting knowledge: France national football team, France won their first World Cup title in 1998 on home soil by defeating Brazil 3–0 in the final match. Question: What was the score in the 1998 World Cup final where France won their first title?",
+        "output": "So the answer is: (1) Paraphrase Answer: France defeated Brazil 3–0 in the 1998 World Cup final. (2) Answer List: [\"3–0\"]"
+      },
+      {
+        "input": "Supporting knowledge: KG: 2005–06 Ligue 1 --sports season of league or competition [follows: 2004–05 Ligue 1; followed by: 2006–07 Ligue 1]--> Ligue 1. Table: 'J.League' with headers [Area, Club Name (Name), Activity area/Hometown (Home stadium), League, Year Approval, Year Withdrawal] and row [Kyushu, Verspah Oita, Ōita, Ōita Prefecture (Ōita Sports Park), JFL, 2019, –]. Question: Which league did Verspah Oita join in 2019, and what was the league that followed the 2005–06 Ligue 1 season?",
+        "output": "So the answer is: (1) Paraphrase Answer: Verspah Oita joined the JFL in 2019, and the 2006–07 Ligue 1 followed the 2005–06 Ligue 1 season. (2) Answer List: [\"JFL\", \"2006–07 Ligue 1\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: 'Bundesliga' with headers [Rank, Player, Goals, Ratio, Years, Club(s)] and row [9, GER Klaus Allofs, 177, is 424, 0.42, 1975–1993, Düsseldorf 71/169, Köln 88/177, Bremen 18/78]. Text: FIFA World Player of the Year, Originally a single award for the world's best men's player, parallels awards for men and women were awarded from 2001 to 2009. Question: How many goals did Klaus Allofs score in the Bundesliga, and from which year did parallel awards for men and women exist?",
+        "output": "So the answer is: (1) Paraphrase Answer: Klaus Allofs scored 177 goals in the Bundesliga, and parallel awards for men and women were awarded from 2001 to 2009. (2) Answer List: [\"177\", \"2001\"]"
+      }
+    ],
+    "search": [
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P6087\", \"relation_name\": \"coach of sports team\", \"sample_triples\": [\"Edorta Murua Zenarruzabeitia --coach of sports team--> Athletic Bilbao B\", \"Giuseppe Meazza --coach of sports team [end time: \\\"1953; start time: \\\"1952]--> Italy national association football team\", \"Farid Benstiti --coach of sports team [end time: \\\"2016; start time: \\\"2012]--> Paris Saint-Germain Féminine\", \"Jean-Louis Gasset --coach of sports team [start time: \\\"2013; together with: Laurent Blanc; end time: \\\"2016; subject has role: assistant coach]--> Paris Saint-Germain F.C.\"]}] Question: Who is the coach of Athletic Bilbao B?",
+        "output": "So the answer is: (1) Paraphrase Answer: Edorta Murua Zenarruzabeitia; (2) Answer List: [\"Edorta Murua Zenarruzabeitia\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P54\", \"relation_name\": \"member of sports team\", \"sample_triples\": [\"Pelé --member of sports team [start time: \\\"2015; end time: \\\"2015]--> S.L. Benfica\", \"Bonaventure Kalou --member of sports team--> Paris Saint-Germain F.C.\", \"Michael Langer --member of sports team [number of points/goals/set scored: \\\"+0\\\"; end time: \\\"2016; number of matches played/races/starts: \\\"+42\\\"; start time: \\\"2014]--> Vålerenga Fotball\", \"Fernando Fernández Escribano --member of sports team--> Real Madrid Castilla\"]}] Question: Which team did Bonaventure Kalou play for?",
+        "output": "So the answer is: (1) Paraphrase Answer: Paris Saint-Germain F.C.; (2) Answer List: [\"Paris Saint-Germain F.C.\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P413\", \"relation_name\": \"position played on team / speciality\", \"sample_triples\": [\"Zlatko Dalić --position played on team / speciality--> midfielder\", \"Hugo Lloris --position played on team / speciality--> goalkeeper\", \"Mohamed Salah --position played on team / speciality--> winger\", \"Nuno Gomes --position played on team / speciality--> forward\"]}] Question: What position did Hugo Lloris play?",
+        "output": "So the answer is: (1) Paraphrase Answer: goalkeeper; (2) Answer List: [\"goalkeeper\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0585\", \"title\": \"J.League\", \"headers\": [\"Area\", \"Club Name (Name)\", \"Activity area/Hometown (Home stadium)\", \"League\", \"Year Joined\"], \"sample_rows\": [[\"Shikoku\", \"Ehime FC\", \"Matsuyama , Ehime ( Ningineer Stadium , Matsuyama)\", \"J3\", \"2006\"], [\"Kantō\", \"Thespakusatsu Gunma\", \"Maebashi , Gunma ( Shoda Shoyu Stadium Gunma , Maebashi)\", \"J2\", \"2005\"], [\"Tōhoku\", \"Fukushima United\", \"Fukushima , Fukushima ( Toho Stadium , Fukushima)\", \"J3\", \"2014\"], [\"Kantō\", \"Tokyo Verdy\", \"Inagi , Tokyo (Ajinomoto Stadium, Chōfu)\", \"J2\", \"1991\"]]}] Question: Which club joined the J.League in 1991?",
+        "output": "So the answer is: (1) Paraphrase Answer: Tokyo Verdy; (2) Answer List: [\"Tokyo Verdy\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0676\", \"title\": \"La Liga\", \"headers\": [\"Rank\", \"Player\", \"Club(s)\", \"Years active\", \"Apps\", \"Goals\"], \"sample_rows\": [[\"3\", \"Spain Raúl García\", \"Osasuna , Atlético Madrid , Athletic Bilbao\", \"2004–\", \"585\", \"111\"], [\"1\", \"Spain Andoni Zubizarreta\", \"Athletic Bilbao , Barcelona , Valencia\", \"1981–1998\", \"622\", \"0\"], [\"8\", \"Argentina Lionel Messi\", \"Barcelona\", \"2004–2021\", \"520\", \"474\"], [\"6\", \"Spain Paco Buyo\", \"Sevilla , Real Madrid\", \"1980–1997\", \"542\", \"0\"]]}] Question: How many goals did Lionel Messi score for Barcelona in La Liga?",
+        "output": "So the answer is: (1) Paraphrase Answer: 474; (2) Answer List: [\"474\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0259\", \"title\": \"Bundesliga\", \"headers\": [\"Rank\", \"Player\", \"Goals\", \"Ratio\", \"Years\", \"Club(s)\"], \"sample_rows\": [[\"9\", \"GER Klaus Allofs\", \"177, is 424\", \"0.42\", \"1975–1993\", \"Düsseldorf 71/169, Köln 88/177, Bremen 18/78\"], [\"6\", \"PER football Claudio Pizarro\", \"197, is 490\", \"0.4\", \"1999–2020\", \"Bremen 109/250, Bayern 87/224, Köln 1/16\"]]}] Question: Which club did Claudio Pizarro play for in the Bundesliga?",
+        "output": "So the answer is: (1) Paraphrase Answer: Werder Bremen and Bayern Munich; (2) Answer List: [\"Werder Bremen\", \"Bayern Munich\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"Landon Donovan MVP Award\", \"sample_passages\": [\"Landon Donovan MVP Award, On January 15, 2015, MLS renamed its MVP award in honor of Landon Donovan.\", \"Landon Donovan MVP Award, Kansas City's Preki is the only player to ever win twice, in 1997 and 2003.\", \"Landon Donovan MVP Award, It is voted on by media, MLS players, and club management and is given to the player deemed the most valuable player in the league each season.\", \"Landon Donovan MVP Award, The Landon Donovan MVP Award is an annual award for Major League Soccer players.\"]}] Question: When was the MLS MVP award renamed in honor of Landon Donovan?",
+        "output": "So the answer is: (1) Paraphrase Answer: On January 15, 2015; (2) Answer List: [\"January 15, 2015\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"France national football team\", \"sample_passages\": [\"France national football team, France won their first World Cup title in 1998 on home soil by defeating Brazil 3–0 in the final match.\", \"France national football team, The team's two titles place in second place only trailing Brazil who have won four.\", \"France national football team, Both matches were friendlies.\", \"France national football team, With two matches to play, qualification had been all but secured with matches remaining against last-placed Israel and in-contention Bulgaria.\"]}] Question: Which team did France defeat in the 1998 World Cup final?",
+        "output": "So the answer is: (1) Paraphrase Answer: Brazil; (2) Answer List: [\"Brazil\"]"
+      }
+    ],
+    "relate": [
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P6087\", \"relation_name\": \"coach of sports team\", \"sample_triples\": [\"Edorta Murua Zenarruzabeitia --coach of sports team--> Athletic Bilbao B\", \"Giuseppe Meazza --coach of sports team [end time: \\\"1953; start time: \\\"1952]--> Italy national association football team\", \"Farid Benstiti --coach of sports team [end time: \\\"2016; start time: \\\"2012]--> Paris Saint-Germain Féminine\", \"Jean-Louis Gasset --coach of sports team [start time: \\\"2013; together with: Laurent Blanc; end time: \\\"2016; subject has role: assistant coach]--> Paris Saint-Germain F.C.\"]}] Question: Who is the coach of Athletic Bilbao B?",
+        "output": "So the answer is: (1) Paraphrase Answer: Edorta Murua Zenarruzabeitia; (2) Answer List: [\"Edorta Murua Zenarruzabeitia\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P54\", \"relation_name\": \"member of sports team\", \"sample_triples\": [\"Pelé --member of sports team [start time: \\\"2015; end time: \\\"2015]--> S.L. Benfica\", \"Bonaventure Kalou --member of sports team--> Paris Saint-Germain F.C.\", \"Michael Langer --member of sports team [number of points/goals/set scored: \\\"+0\\\"; end time: \\\"2016; number of matches played/races/starts: \\\"+42\\\"; start time: \\\"2014]--> Vålerenga Fotball\", \"Fernando Fernández Escribano --member of sports team--> Real Madrid Castilla\"]}] Question: Which team did Bonaventure Kalou play for?",
+        "output": "So the answer is: (1) Paraphrase Answer: Paris Saint-Germain F.C.; (2) Answer List: [\"Paris Saint-Germain F.C.\"]"
+      },
+      {
+        "input": "Retrieved KG evidence: [{\"source\": \"KG\", \"relation_id\": \"P413\", \"relation_name\": \"position played on team / speciality\", \"sample_triples\": [\"Zlatko Dalić --position played on team / speciality--> midfielder\", \"Hugo Lloris --position played on team / speciality--> goalkeeper\", \"Mohamed Salah --position played on team / speciality--> winger\", \"Nuno Gomes --position played on team / speciality--> forward\"]}] Question: What position did Hugo Lloris play?",
+        "output": "So the answer is: (1) Paraphrase Answer: goalkeeper; (2) Answer List: [\"goalkeeper\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0676\", \"title\": \"La Liga\", \"headers\": [\"Rank\", \"Player\", \"Club(s)\", \"Years active\", \"Apps\", \"Goals\"], \"sample_rows\": [[\"3\", \"Spain Raúl García\", \"Osasuna , Atlético Madrid , Athletic Bilbao\", \"2004–\", \"585\", \"111\"], [\"1\", \"Spain Andoni Zubizarreta\", \"Athletic Bilbao , Barcelona , Valencia\", \"1981–1998\", \"622\", \"0\"], [\"8\", \"Argentina Lionel Messi\", \"Barcelona\", \"2004–2021\", \"520\", \"474\"], [\"6\", \"Spain Paco Buyo\", \"Sevilla , Real Madrid\", \"1980–1997\", \"542\", \"0\"]]}] Question: How many goals did Lionel Messi score for Barcelona in La Liga?",
+        "output": "So the answer is: (1) Paraphrase Answer: 474; (2) Answer List: [\"474\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0585\", \"title\": \"J.League\", \"headers\": [\"Area\", \"Club Name (Name)\", \"Activity area/Hometown (Home stadium)\", \"League\", \"Year Joined\"], \"sample_rows\": [[\"Shikoku\", \"Ehime FC\", \"Matsuyama , Ehime ( Ningineer Stadium , Matsuyama)\", \"J3\", \"2006\"], [\"Kantō\", \"Thespakusatsu Gunma\", \"Maebashi , Gunma ( Shoda Shoyu Stadium Gunma , Maebashi)\", \"J2\", \"2005\"], [\"Tōhoku\", \"Fukushima United\", \"Fukushima , Fukushima ( Toho Stadium , Fukushima)\", \"J3\", \"2014\"], [\"Kantō\", \"Tokyo Verdy\", \"Inagi , Tokyo (Ajinomoto Stadium, Chōfu)\", \"J2\", \"1991\"]]}] Question: In which year did Tokyo Verdy join the J.League?",
+        "output": "So the answer is: (1) Paraphrase Answer: 1991; (2) Answer List: [\"1991\"]"
+      },
+      {
+        "input": "Retrieved Table evidence: [{\"source\": \"Table\", \"table_id\": \"T0259\", \"title\": \"Bundesliga\", \"headers\": [\"Rank\", \"Player\", \"Goals\", \"Ratio\", \"Years\", \"Club(s)\"], \"sample_rows\": [[\"9\", \"GER Klaus Allofs\", \"177, is 424\", \"0.42\", \"1975–1993\", \"Düsseldorf 71/169, Köln 88/177, Bremen 18/78\"], [\"6\", \"PER football Claudio Pizarro\", \"197, is 490\", \"0.4\", \"1999–2020\", \"Bremen 109/250, Bayern 87/224, Köln 1/16\"]]}] Question: What was Claudio Pizarro's goal ratio in the Bundesliga?",
+        "output": "So the answer is: (1) Paraphrase Answer: 0.4; (2) Answer List: [\"0.4\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"Landon Donovan MVP Award\", \"sample_passages\": [\"Landon Donovan MVP Award, On January 15, 2015, MLS renamed its MVP award in honor of Landon Donovan.\", \"Landon Donovan MVP Award, Kansas City's Preki is the only player to ever win twice, in 1997 and 2003.\", \"Landon Donovan MVP Award, It is voted on by media, MLS players, and club management and is given to the player deemed the most valuable player in the league each season.\", \"Landon Donovan MVP Award, The Landon Donovan MVP Award is an annual award for Major League Soccer players.\"]}] Question: In what year did MLS rename its MVP award in honor of Landon Donovan?",
+        "output": "So the answer is: (1) Paraphrase Answer: 2015; (2) Answer List: [\"2015\"]"
+      },
+      {
+        "input": "Retrieved Text evidence: [{\"source\": \"Text\", \"title\": \"Japan national football team\", \"sample_passages\": [\"Japan national football team, The team also is often known by the last name of the manager.\", \"Japan national football team, Japan started with a 1–0 win against Cameroon, before subsequently losing to the Netherlands 0–1.\", \"Japan national football team, In the quarter-finals, Japan lost to the United Arab Emirates in a penalty shootout after a 1–1 draw, as Honda and Shinji Kagawa missed their penalty kicks.\", \"Japan national football team, Match history Match history Japan is the first team from outside the Americas to participate in the Copa América, having been invited to the 1999 Copa América.\"]}] Question: Against which team did Japan lose in the quarter-finals of the 2019 Asian Cup?",
+        "output": "So the answer is: (1) Paraphrase Answer: United Arab Emirates; (2) Answer List: [\"United Arab Emirates\"]"
+      }
+    ],
+    "filter": [
+      {
+        "input": "Candidates: [Athletic Bilbao B, Italy national association football team, Paris Saint-Germain Féminine, Paris Saint-Germain F.C.] Condition: Which of these teams is coached by Edorta Murua Zenarruzabeitia?",
+        "output": "So the answer is: (1) Paraphrase Answer: Edorta Murua Zenarruzabeitia coaches Athletic Bilbao B. (2) Answer List: [\"Athletic Bilbao B\"]"
+      },
+      {
+        "input": "Candidates: [various artists, Average White Band, Shakira, Soda Stereo] Condition: Which artist performed the song 'Girl like Me'?",
+        "output": "So the answer is: (1) Paraphrase Answer: Shakira performed 'Girl like Me'. (2) Answer List: [\"Shakira\"]"
+      },
+      {
+        "input": "Candidates: [S.L. Benfica, Paris Saint-Germain F.C., Vålerenga Fotball, Real Madrid Castilla] Condition: Which team did Bonaventure Kalou play for?",
+        "output": "So the answer is: (1) Paraphrase Answer: Bonaventure Kalou was a member of Paris Saint-Germain F.C. (2) Answer List: [\"Paris Saint-Germain F.C.\"]"
+      },
+      {
+        "input": "Candidates: [Ehime FC, Thespakusatsu Gunma, Fukushima United, Tokyo Verdy] Condition: Which club is based in Inagi, Tokyo?",
+        "output": "So the answer is: (1) Paraphrase Answer: Tokyo Verdy is based in Inagi, Tokyo. (2) Answer List: [\"Tokyo Verdy\"]"
+      },
+      {
+        "input": "Candidates: [Raúl García, Andoni Zubizarreta, Lionel Messi, Paco Buyo] Condition: Which player scored 474 goals in La Liga?",
+        "output": "So the answer is: (1) Paraphrase Answer: Lionel Messi scored 474 goals in La Liga. (2) Answer List: [\"Lionel Messi\"]"
+      },
+      {
+        "input": "Candidates: [Klaus Allofs, Claudio Pizarro, Klaus Fischer, Michael Lameck] Condition: Which player scored 197 goals in the Bundesliga?",
+        "output": "So the answer is: (1) Paraphrase Answer: Claudio Pizarro scored 197 goals in the Bundesliga. (2) Answer List: [\"Claudio Pizarro\"]"
+      },
+      {
+        "input": "Candidates: [Landon Donovan, Preki, David Beckham, Thierry Henry] Condition: Which player is the only one to win the MLS MVP award twice?",
+        "output": "So the answer is: (1) Paraphrase Answer: Preki is the only player to win the MLS MVP award twice. (2) Answer List: [\"Preki\"]"
+      },
+      {
+        "input": "Candidates: [Cameroon, Netherlands, United Arab Emirates, South Korea] Condition: Which team did Japan lose to in a penalty shootout in the quarter-finals?",
+        "output": "So the answer is: (1) Paraphrase Answer: Japan lost to the United Arab Emirates in a penalty shootout. (2) Answer List: [\"United Arab Emirates\"]"
+      }
+    ],
+    "answer_from_child_qa": [
+      {
+        "input": "Child QA 1: Who was the coach of Italy national association football team from 1952 to 1953? Child QA 2: Which team did that coach play for in 2015? Final question: What is the name of the team that the coach of Italy national association football team from 1952 to 1953 played for in 2015?",
+        "output": "So the answer is: (1) Paraphrase Answer: The coach of Italy national association football team from 1952 to 1953 was Giuseppe Meazza. Giuseppe Meazza played for S.L. Benfica in 2015. So the answer is: (2) Answer List: [\"S.L. Benfica\"]"
+      },
+      {
+        "input": "Child QA 1: What position did Zlatko Dalić play? Child QA 2: Which team did the player who played that position for Paris Saint-Germain F.C. belong to? Final question: What is the name of the team that the player who played the same position as Zlatko Dalić and was a member of Paris Saint-Germain F.C. belonged to?",
+        "output": "So the answer is: (1) Paraphrase Answer: Zlatko Dalić played as a midfielder. Bonaventure Kalou, who played as a midfielder, was a member of Paris Saint-Germain F.C. So the answer is: (2) Answer List: [\"Paris Saint-Germain F.C.\"]"
+      },
+      {
+        "input": "Child QA 1: Who is ranked 3rd in the La Liga table? Child QA 2: What is the number of goals scored by the player ranked 1st in that table? Final question: What is the goal count of the player ranked 1st in the La Liga table, given that the player ranked 3rd is Raúl García?",
+        "output": "So the answer is: (1) Paraphrase Answer: The player ranked 3rd is Raúl García. The player ranked 1st is Andoni Zubizarreta, who scored 0 goals. So the answer is: (2) Answer List: [\"0\"]"
+      },
+      {
+        "input": "Child QA 1: Which club is in the Shikoku area? Child QA 2: What league does the club in the Kantō area with the name Thespakusatsu Gunma play in? Final question: What league does Thespakusatsu Gunma play in, given that Ehime FC is in Shikoku?",
+        "output": "So the answer is: (1) Paraphrase Answer: Ehime FC is in Shikoku. Thespakusatsu Gunma is in Kantō and plays in J2. So the answer is: (2) Answer List: [\"J2\"]"
+      },
+      {
+        "input": "Child QA 1: When was the MLS MVP award renamed in honor of Landon Donovan? Child QA 2: Who is the only player to win the Landon Donovan MVP Award twice? Final question: Who is the only player to win the Landon Donovan MVP Award twice, given that the award was renamed in 2015?",
+        "output": "So the answer is: (1) Paraphrase Answer: The MLS MVP award was renamed in honor of Landon Donovan on January 15, 2015. Kansas City's Preki is the only player to win the award twice, in 1997 and 2003. So the answer is: (2) Answer List: [\"Preki\"]"
+      },
+      {
+        "input": "Child QA 1: What is the Japan national football team often known by? Child QA 2: What was the result of Japan's match against the Netherlands in the 2010 World Cup? Final question: What was the result of Japan's match against the Netherlands, given that the team is often known by the last name of the manager?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Japan national football team is often known by the last name of the manager. Japan lost to the Netherlands 0–1. So the answer is: (2) Answer List: [\"0–1\"]"
+      },
+      {
+        "input": "Child QA 1: Which league does the 1999 J. League Division 1 belong to? Child QA 2: In the J.League table, what is the league of Verspah Oita? Final question: What league does Verspah Oita play in, given that the 1999 J. League Division 1 is part of the J1 League?",
+        "output": "So the answer is: (1) Paraphrase Answer: The 1999 J. League Division 1 is a sports season of the J1 League. Verspah Oita is in the JFL. So the answer is: (2) Answer List: [\"JFL\"]"
+      },
+      {
+        "input": "Child QA 1: Which team did Michael Langer play for from 2014 to 2016? Child QA 2: In the Bundesliga table, what is the goal count of Klaus Allofs? Final question: What is the goal count of Klaus Allofs, given that Michael Langer played for Vålerenga Fotball?",
+        "output": "So the answer is: (1) Paraphrase Answer: Michael Langer played for Vålerenga Fotball from 2014 to 2016. Klaus Allofs scored 177 goals. So the answer is: (2) Answer List: [\"177\"]"
+      }
+    ]
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_policy": "question_text_excluded_and_exact_gold_source_records_excluded",
+    "live_sources": [
+      "KG",
+      "Table",
+      "Text"
+    ]
+  }
+}

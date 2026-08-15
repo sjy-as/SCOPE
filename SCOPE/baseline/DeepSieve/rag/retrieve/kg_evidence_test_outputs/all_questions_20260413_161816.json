@@ -1,0 +1,4857 @@
+[
+  {
+    "question": "Who was the coach of L.A. Lakers in the 1968-69 season?",
+    "program": {
+      "question": "Who was the coach of L.A. Lakers in the 1968-69 season?",
+      "backend": "mmqa_local_kg",
+      "api_url": "http://127.0.0.1:8002/query",
+      "entities": [
+        "L.A. Lakers"
+      ],
+      "relation_text": "coach of",
+      "relation_targets": [
+        {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        }
+      ],
+      "relation_target": {
+        "head": "L.A. Lakers",
+        "predicate": "coachedBy",
+        "tail": "coach"
+      },
+      "parser": "llm"
+    },
+    "answer": "",
+    "inner_content": [
+      {
+        "content": []
+      }
+    ],
+    "evidence_count": 100,
+    "evidence": [
+      {
+        "label": "Darvin Ham",
+        "qid": "Q2500405",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "coachedBy",
+        "direction": "outgoing",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2500405",
+          "label": "Darvin Ham",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Darvin Ham",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Saginaw",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "23 July 1973",
+            "work_period_start": "1996",
+            "work_period_end": "2008"
+          }
+        },
+        "similarity_score": 45.098
+      },
+      {
+        "label": "Klay Thompson",
+        "qid": "Q29342",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q29342",
+          "label": "Klay Thompson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Klay Thompson",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Los Angeles",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "08 February 1990",
+            "height": "201 centimetre",
+            "mass": "93 kilogram",
+            "work_period_start": "2011",
+            "schools_attended": "Santa Margarita Catholic High School; Washington State University"
+          }
+        },
+        "similarity_score": 41.9048
+      },
+      {
+        "label": "Von Wafer",
+        "qid": "Q972973",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q972973",
+          "label": "Von Wafer",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Von Wafer",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Homer",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "21 July 1985",
+            "height": "195 centimetre",
+            "mass": "95 kilogram",
+            "work_period_start": "2005",
+            "schools_attended": "Florida State University; R. L. Paschal High School"
+          }
+        },
+        "similarity_score": 41.5842
+      },
+      {
+        "label": "Wayne Robinson",
+        "qid": "Q4018613",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q4018613",
+          "label": "Wayne Robinson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Wayne Robinson (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Greensboro",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "19 April 1958",
+            "height": "203 centimetre",
+            "mass": "217 pound",
+            "work_period_start": "1980",
+            "work_period_end": "1993",
+            "schools_attended": "Virginia Tech; Greensboro Day School"
+          }
+        },
+        "similarity_score": 41.5094
+      },
+      {
+        "label": "Jim Paxson, Sr.",
+        "qid": "Q3808370",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3808370",
+          "label": "Jim Paxson, Sr.",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jim Paxson Sr.",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Springfield",
+            "sex_or_gender": "male",
+            "date_of_birth": "19 December 1932",
+            "height": "198 centimetre",
+            "mass": "200 pound",
+            "work_period_start": "1956",
+            "work_period_end": "1958",
+            "schools_attended": "Catholic Central School; University of Dayton"
+          }
+        },
+        "similarity_score": 41.1215
+      },
+      {
+        "label": "Ruben Patterson",
+        "qid": "Q3942138",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3942138",
+          "label": "Ruben Patterson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Ruben Patterson",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Cleveland",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "31 July 1975",
+            "height": "196 centimetre",
+            "mass": "102 kilogram",
+            "work_period_start": "1998",
+            "work_period_end": "2009",
+            "schools_attended": "John Hay High School; Independence Community College; University of Cincinnati"
+          }
+        },
+        "similarity_score": 41.1215
+      },
+      {
+        "label": "Sun Yue",
+        "qid": "Q514117",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q514117",
+          "label": "Sun Yue",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Sun Yue (basketball)",
+            "country_of_citizenship": "People's Republic of China",
+            "place_of_birth": "Cangzhou",
+            "sex_or_gender": "male",
+            "date_of_birth": "06 November 1985",
+            "height": "206 centimetre",
+            "mass": "93 kilogram",
+            "work_period_start": "2002"
+          }
+        },
+        "similarity_score": 40.404
+      },
+      {
+        "label": "Paul Walther",
+        "qid": "Q1606859",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1606859",
+          "label": "Paul Walther",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Paul Walther",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Covington",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "23 March 1927",
+            "height": "188 centimetre",
+            "mass": "73 kilogram",
+            "work_period_start": "1949",
+            "work_period_end": "1955",
+            "schools_attended": "University of Tennessee, Knoxville; Covington Catholic High School"
+          }
+        },
+        "similarity_score": 40.3846
+      },
+      {
+        "label": "Carlos Terry",
+        "qid": "Q3660140",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3660140",
+          "label": "Carlos Terry",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Carlos Terry",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Lexington",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "22 June 1956",
+            "height": "196 centimetre",
+            "mass": "210 pound",
+            "work_period_start": "1980",
+            "work_period_end": "1983",
+            "schools_attended": "Lexington Senior High School"
+          }
+        },
+        "similarity_score": 40.3846
+      },
+      {
+        "label": "Julius Randle",
+        "qid": "Q15623860",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q15623860",
+          "label": "Julius Randle",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Julius Randle",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Dallas",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "29 November 1994",
+            "height": "206 centimetre",
+            "mass": "113 kilogram",
+            "work_period_start": "2014",
+            "schools_attended": "University of Kentucky; Prestonwood Christian Academy"
+          }
+        },
+        "similarity_score": 40.0
+      },
+      {
+        "label": "Vern Mikkelsen",
+        "qid": "Q547400",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q547400",
+          "label": "Vern Mikkelsen",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Vern Mikkelsen",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Parlier",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "21 October 1928",
+            "work_period_start": "1949",
+            "work_period_end": "1959"
+          }
+        },
+        "similarity_score": 39.6226
+      },
+      {
+        "label": "John Smith",
+        "qid": "Q3809625",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3809625",
+          "label": "John Smith",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "John Smith (basketball, born 1944)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Columbus",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "24 May 1944",
+            "height": "213 centimetre",
+            "mass": "235 pound",
+            "work_period_end": "1970",
+            "schools_attended": "Colorado State University Pueblo"
+          }
+        },
+        "similarity_score": 39.2157
+      },
+      {
+        "label": "Luke Walton",
+        "qid": "Q449642",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q449642",
+          "label": "Luke Walton",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Luke Walton",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "San Diego",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "28 March 1980",
+            "work_period_start": "2003",
+            "work_period_end": "2013"
+          }
+        },
+        "similarity_score": 38.835
+      },
+      {
+        "label": "Bobby Smith",
+        "qid": "Q4935595",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q4935595",
+          "label": "Bobby Smith",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Bobby Smith (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Charleston",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "20 August 1937",
+            "height": "193 centimetre",
+            "mass": "190 pound",
+            "schools_attended": "Stonewall Jackson High School; West Virginia University"
+          }
+        },
+        "similarity_score": 38.835
+      },
+      {
+        "label": "Cotton Nash",
+        "qid": "Q3695980",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3695980",
+          "label": "Cotton Nash",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Cotton Nash",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Jersey City",
+            "sex_or_gender": "male",
+            "date_of_birth": "24 July 1942",
+            "height": "196 centimetre",
+            "mass": "215 pound",
+            "work_period_start": "1964",
+            "work_period_end": "1968",
+            "schools_attended": "University of Kentucky"
+          }
+        },
+        "similarity_score": 38.835
+      },
+      {
+        "label": "Moritz Wagner",
+        "qid": "Q22999836",
+        "meta": {
+          "time": "2018"
+        },
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q22999836",
+          "label": "Moritz Wagner",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Moritz Wagner (basketball)",
+            "country_of_citizenship": "Germany",
+            "place_of_birth": "Berlin",
+            "sex_or_gender": "male",
+            "date_of_birth": "26 April 1997",
+            "height": "204 centimetre; 211 centimetre",
+            "mass": "88 kilogram; 240 pound",
+            "work_period_start": "2014",
+            "schools_attended": "University of Michigan"
+          }
+        },
+        "similarity_score": 38.6555
+      },
+      {
+        "label": "Sam Jacobson",
+        "qid": "Q1618646",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1618646",
+          "label": "Sam Jacobson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Sam Jacobson",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Cottage Grove",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "22 July 1975",
+            "height": "193 centimetre",
+            "mass": "98 kilogram",
+            "work_period_start": "1998",
+            "work_period_end": "2007",
+            "schools_attended": "Park High School; University of Minnesota"
+          }
+        },
+        "similarity_score": 38.4615
+      },
+      {
+        "label": "Kevin O'Shea",
+        "qid": "Q2610277",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2610277",
+          "label": "Kevin O'Shea",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Kevin O%27Shea (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "San Francisco",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "10 July 1925",
+            "work_period_start": "1950",
+            "work_period_end": "1953"
+          }
+        },
+        "similarity_score": 38.4615
+      },
+      {
+        "label": "Tony Jackson",
+        "qid": "Q17285036",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q17285036",
+          "label": "Tony Jackson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Tony Jackson (basketball, born 1958)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Lexington",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "17 January 1958",
+            "height": "183 centimetre",
+            "mass": "170 pound",
+            "schools_attended": "Florida State University; Bryan Station High School"
+          }
+        },
+        "similarity_score": 38.4615
+      },
+      {
+        "label": "Walt Hazzard",
+        "qid": "Q2561192",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2561192",
+          "label": "Walt Hazzard",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Walt Hazzard",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Wilmington",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "15 April 1942",
+            "work_period_start": "1964",
+            "work_period_end": "1974"
+          }
+        },
+        "similarity_score": 38.4615
+      },
+      {
+        "label": "Travis Grant",
+        "qid": "Q3998036",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3998036",
+          "label": "Travis Grant",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Travis Grant",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Clayton",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "01 January 1950",
+            "height": "201 centimetre",
+            "mass": "215 pound",
+            "work_period_start": "1972",
+            "work_period_end": "1976",
+            "schools_attended": "Kentucky State University"
+          }
+        },
+        "similarity_score": 38.4615
+      },
+      {
+        "label": "James Worthy",
+        "qid": "Q362872",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q362872",
+          "label": "James Worthy",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "James Worthy",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Gastonia",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "27 February 1961",
+            "height": "206 centimetre",
+            "mass": "102 kilogram",
+            "work_period_start": "1982",
+            "work_period_end": "1994",
+            "schools_attended": "University of North Carolina at Chapel Hill; Ashbrook High School"
+          }
+        },
+        "similarity_score": 38.4615
+      },
+      {
+        "label": "Sasha Vujačić",
+        "qid": "Q318926",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q318926",
+          "label": "Sasha Vujačić",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Sasha Vuja%C4%8Di%C4%87",
+            "country_of_citizenship": "Slovenia",
+            "place_of_birth": "Maribor",
+            "sex_or_gender": "male",
+            "date_of_birth": "08 March 1984",
+            "height": "201 centimetre",
+            "mass": "93 kilogram",
+            "work_period_start": "2001"
+          }
+        },
+        "similarity_score": 38.0952
+      },
+      {
+        "label": "Rick Roberson",
+        "qid": "Q3935021",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3935021",
+          "label": "Rick Roberson",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Rick Roberson",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Memphis",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "07 July 1947",
+            "height": "206 centimetre",
+            "mass": "231 pound",
+            "work_period_start": "1969",
+            "work_period_end": "1976",
+            "schools_attended": "Mitchell High School; University of Cincinnati"
+          }
+        },
+        "similarity_score": 38.0952
+      },
+      {
+        "label": "Kermit Washington",
+        "qid": "Q936680",
+        "meta": {
+          "time": "1973"
+        },
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q936680",
+          "label": "Kermit Washington",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Kermit Washington",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Washington, D.C.",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "17 September 1951",
+            "work_period_start": "1973",
+            "work_period_end": "1987"
+          }
+        },
+        "similarity_score": 37.3984
+      },
+      {
+        "label": "Tony Smith",
+        "qid": "Q1618809",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1618809",
+          "label": "Tony Smith",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Tony Smith (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Wauwatosa",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "14 June 1968",
+            "height": "190 centimetre",
+            "mass": "84 kilogram",
+            "work_period_start": "1990",
+            "work_period_end": "2002",
+            "nickname": "Tony",
+            "schools_attended": "Marquette University; Wauwatosa East High School"
+          }
+        },
+        "similarity_score": 37.2549
+      },
+      {
+        "label": "Mike McGee",
+        "qid": "Q1606675",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1606675",
+          "label": "Mike McGee",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Mike McGee (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Tyler",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "29 July 1959",
+            "work_period_start": "1981",
+            "work_period_end": "1992"
+          }
+        },
+        "similarity_score": 37.2549
+      },
+      {
+        "label": "Ron Carter",
+        "qid": "Q1622114",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1622114",
+          "label": "Ron Carter",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Ron Carter (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Pittsburgh",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "31 August 1956",
+            "height": "196 centimetre",
+            "mass": "86 kilogram",
+            "work_period_start": "1978",
+            "work_period_end": "1980",
+            "schools_attended": "Virginia Military Institute; Perry Traditional Academy"
+          }
+        },
+        "similarity_score": 37.2549
+      },
+      {
+        "label": "Jim Chones",
+        "qid": "Q2333148",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2333148",
+          "label": "Jim Chones",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jim Chones",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Racine",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "30 November 1949",
+            "height": "211 centimetre",
+            "mass": "100 kilogram",
+            "work_period_start": "1973",
+            "work_period_end": "1983",
+            "schools_attended": "Marquette University; St. Catherine's High School"
+          }
+        },
+        "similarity_score": 37.2549
+      },
+      {
+        "label": "Norm Nixon",
+        "qid": "Q2663482",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2663482",
+          "label": "Norm Nixon",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Norm Nixon",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Macon",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "10 October 1955; 11 October 1955",
+            "height": "188 centimetre",
+            "mass": "77 kilogram",
+            "work_period_start": "1977",
+            "work_period_end": "1989",
+            "nickname": "Big; Stormin' Norman; Sav; The Storm; Mr. May; Savoir Faire",
+            "schools_attended": "Wofford College; Duquesne University; Southwest Magnet High School"
+          }
+        },
+        "similarity_score": 37.2549
+      },
+      {
+        "label": "Ed Kalafat",
+        "qid": "Q3718855",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3718855",
+          "label": "Ed Kalafat",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Ed Kalafat",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Anaconda",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "13 October 1932",
+            "height": "198 centimetre",
+            "mass": "111 kilogram",
+            "work_period_start": "1954",
+            "work_period_end": "1957",
+            "schools_attended": "University of Minnesota"
+          }
+        },
+        "similarity_score": 37.2549
+      },
+      {
+        "label": "C. J. Kupec",
+        "qid": "Q3666431",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3666431",
+          "label": "C. J. Kupec",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "C. J. Kupec",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Oak Lawn",
+            "sex_or_gender": "male",
+            "date_of_birth": "16 January 1953",
+            "height": "198 centimetre",
+            "mass": "230 pound",
+            "work_period_start": "1975",
+            "work_period_end": "1988",
+            "schools_attended": "Oak Lawn Community High School; University of Michigan"
+          }
+        },
+        "similarity_score": 36.8932
+      },
+      {
+        "label": "Mark Madsen",
+        "qid": "Q2573187",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2573187",
+          "label": "Mark Madsen",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Mark Madsen (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Walnut Creek",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "28 January 1976",
+            "work_period_start": "2000",
+            "work_period_end": "2009"
+          }
+        },
+        "similarity_score": 36.8932
+      },
+      {
+        "label": "Tom Hawkins",
+        "qid": "Q3661316",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3661316",
+          "label": "Tom Hawkins",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Tom Hawkins (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Chicago",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "22 December 1936",
+            "height": "196 centimetre",
+            "mass": "210 pound",
+            "work_period_start": "1959",
+            "work_period_end": "1969",
+            "schools_attended": "University of Notre Dame; Paul Robeson High School"
+          }
+        },
+        "similarity_score": 36.8932
+      },
+      {
+        "label": "Hutch Jones",
+        "qid": "Q3787733",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3787733",
+          "label": "Hutch Jones",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Hutch Jones",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Buffalo",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "01 September 1959",
+            "height": "203 centimetre",
+            "mass": "190 pound",
+            "work_period_start": "1982",
+            "work_period_end": "1989",
+            "schools_attended": "Vanderbilt University"
+          }
+        },
+        "similarity_score": 36.8932
+      },
+      {
+        "label": "Cheikh Samb",
+        "qid": "Q2720240",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2720240",
+          "label": "Cheikh Samb",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Cheikh Samb",
+            "country_of_citizenship": "Senegal",
+            "place_of_birth": "Dakar",
+            "sex_or_gender": "male",
+            "date_of_birth": "22 October 1984",
+            "height": "216 centimetre",
+            "mass": "111 kilogram",
+            "work_period_start": "2005",
+            "work_period_end": "2017"
+          }
+        },
+        "similarity_score": 36.8932
+      },
+      {
+        "label": "Vlade Divac",
+        "qid": "Q94846",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q94846",
+          "label": "Vlade Divac",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Vlade Divac",
+            "country_of_citizenship": "Serbia",
+            "place_of_birth": "Prijepolje",
+            "sex_or_gender": "male",
+            "date_of_birth": "03 February 1968",
+            "height": "217 centimetre",
+            "mass": "118 kilogram",
+            "work_period_start": "1983",
+            "work_period_end": "2005"
+          }
+        },
+        "similarity_score": 36.8932
+      },
+      {
+        "label": "Joe Crawford",
+        "qid": "Q928003",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q928003",
+          "label": "Joe Crawford",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Joe Crawford (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Detroit",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "17 June 1986",
+            "height": "196 centimetre",
+            "mass": "94 kilogram",
+            "work_period_start": "2008",
+            "work_period_end": "2015",
+            "schools_attended": "University of Kentucky; Renaissance High School"
+          }
+        },
+        "similarity_score": 36.5385
+      },
+      {
+        "label": "Robert Sacre",
+        "qid": "Q964976",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q964976",
+          "label": "Robert Sacre",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Robert Sacre",
+            "country_of_citizenship": "Canada; United States of America",
+            "place_of_birth": "Baton Rouge",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "06 June 1989",
+            "height": "213 centimetre",
+            "mass": "113 kilogram",
+            "work_period_start": "2012",
+            "work_period_end": "2019",
+            "schools_attended": "Handsworth Secondary School"
+          }
+        },
+        "similarity_score": 36.5385
+      },
+      {
+        "label": "Jim Fritsche",
+        "qid": "Q3808336",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3808336",
+          "label": "Jim Fritsche",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jim Fritsche",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Saint Paul",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "10 December 1931",
+            "height": "203 centimetre",
+            "mass": "210 pound",
+            "work_period_start": "1953",
+            "work_period_end": "1955",
+            "schools_attended": "Humboldt Senior High School"
+          }
+        },
+        "similarity_score": 36.5385
+      },
+      {
+        "label": "Rudy LaRusso",
+        "qid": "Q979242",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q979242",
+          "label": "Rudy LaRusso",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Rudy LaRusso",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Brooklyn",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "11 November 1937",
+            "height": "201 centimetre",
+            "mass": "100 kilogram",
+            "work_period_start": "1959",
+            "work_period_end": "1969",
+            "schools_attended": "Dartmouth College; James Madison High School"
+          }
+        },
+        "similarity_score": 36.5385
+      },
+      {
+        "label": "Jim Cleamons",
+        "qid": "Q2331791",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2331791",
+          "label": "Jim Cleamons",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jim Cleamons",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Lincolnton",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "13 September 1949",
+            "work_period_start": "1971",
+            "work_period_end": "1980"
+          }
+        },
+        "similarity_score": 36.5385
+      },
+      {
+        "label": "Wayman Britt",
+        "qid": "Q5115076",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q5115076",
+          "label": "Wayman Britt",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Wayman Britt",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Wilson's Mills",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "31 August 1952",
+            "height": "188 centimetre",
+            "mass": "185 pound",
+            "work_period_start": "1976",
+            "work_period_end": "1977",
+            "schools_attended": "University of Michigan; Flint Northern High School"
+          }
+        },
+        "similarity_score": 36.5385
+      },
+      {
+        "label": "Javaris Crittenton",
+        "qid": "Q2451555",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2451555",
+          "label": "Javaris Crittenton",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Javaris Crittenton",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Atlanta",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "31 December 1987",
+            "height": "196 centimetre",
+            "mass": "91 kilogram",
+            "work_period_start": "2007",
+            "work_period_end": "2011",
+            "schools_attended": "Southwest Atlanta Christian Academy; Georgia Tech"
+          }
+        },
+        "similarity_score": 36.3636
+      },
+      {
+        "label": "Dexter Shouse",
+        "qid": "Q5268445",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q5268445",
+          "label": "Dexter Shouse",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Dexter Shouse",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Terre Haute",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "24 March 1963",
+            "height": "188 centimetre",
+            "mass": "91 kilogram",
+            "schools_attended": "University of South Alabama; Terre Haute North Vigo High School; Panola College"
+          }
+        },
+        "similarity_score": 36.1905
+      },
+      {
+        "label": "Toney Douglas",
+        "qid": "Q600954",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q600954",
+          "label": "Toney Douglas",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Toney Douglas",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Jonesboro",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "16 March 1986",
+            "height": "188 centimetre",
+            "mass": "86 kilogram",
+            "work_period_start": "2009",
+            "schools_attended": "Auburn University; Jonesboro High School"
+          }
+        },
+        "similarity_score": 36.1905
+      },
+      {
+        "label": "Ed Beach",
+        "qid": "Q2586704",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2586704",
+          "label": "Ed Beach",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Ed Beach",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Elizabeth",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "25 January 1929",
+            "height": "190 centimetre",
+            "mass": "200 pound",
+            "work_period_start": "1950",
+            "work_period_end": "1951",
+            "schools_attended": "West Virginia University; Thomas Jefferson High School"
+          }
+        },
+        "similarity_score": 36.0
+      },
+      {
+        "label": "Steve Hamilton",
+        "qid": "Q6932895",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q6932895",
+          "label": "Steve Hamilton",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Steve Hamilton (sportsman, born 1934)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Columbia",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "30 November 1935",
+            "height": "198 centimetre",
+            "mass": "86 kilogram",
+            "work_period_start": "1958",
+            "work_period_end": "1960",
+            "schools_attended": "Fork Union Military Academy; Morehead State University; Charlestown Senior High School"
+          }
+        },
+        "similarity_score": 35.8491
+      },
+      {
+        "label": "John Fairchild",
+        "qid": "Q3809254",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3809254",
+          "label": "John Fairchild",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "John Fairchild",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Encinitas",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "28 April 1943",
+            "height": "203 centimetre",
+            "mass": "205 pound",
+            "work_period_start": "1965",
+            "work_period_end": "1970",
+            "schools_attended": "Brigham Young University; San Dieguito Academy"
+          }
+        },
+        "similarity_score": 35.8491
+      },
+      {
+        "label": "Nate Hawthorne",
+        "qid": "Q3870713",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3870713",
+          "label": "Nate Hawthorne",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Nate Hawthorne",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Mount Vernon",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "19 January 1951",
+            "height": "193 centimetre",
+            "mass": "190 pound",
+            "work_period_start": "1973",
+            "work_period_end": "1976",
+            "schools_attended": "Southern Illinois University Carbondale; Mt. Vernon Township High School"
+          }
+        },
+        "similarity_score": 35.8491
+      },
+      {
+        "label": "Michael Cooper",
+        "qid": "Q971538",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q971538",
+          "label": "Michael Cooper",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Michael Cooper",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Los Angeles",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "15 April 1956",
+            "work_period_start": "1978",
+            "work_period_end": "1991"
+          }
+        },
+        "similarity_score": 35.8491
+      },
+      {
+        "label": "Brandon Ingram",
+        "qid": "Q19880865",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q19880865",
+          "label": "Brandon Ingram",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Brandon Ingram",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Kinston",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "02 September 1997",
+            "height": "211 centimetre",
+            "mass": "88 kilogram",
+            "work_period_start": "2016",
+            "schools_attended": "Duke University; Kinston High School"
+          }
+        },
+        "similarity_score": 35.8491
+      },
+      {
+        "label": "Jim Price",
+        "qid": "Q1458383",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1458383",
+          "label": "Jim Price",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jim Price (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Russellville",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "27 November 1949",
+            "work_period_start": "1972",
+            "work_period_end": "1979"
+          }
+        },
+        "similarity_score": 35.6436
+      },
+      {
+        "label": "Lew Hitch",
+        "qid": "Q2329287",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2329287",
+          "label": "Lew Hitch",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Lew Hitch",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Griggsville",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "16 July 1929",
+            "height": "203 centimetre",
+            "mass": "91 kilogram",
+            "work_period_start": "1951",
+            "work_period_end": "1957",
+            "schools_attended": "Kansas State University; Culver–Stockton College; Griggsville-Perry High School"
+          }
+        },
+        "similarity_score": 35.6436
+      },
+      {
+        "label": "Wil Jones",
+        "qid": "Q4019746",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q4019746",
+          "label": "Wil Jones",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Wil Jones (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "McGehee",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "27 February 1947",
+            "work_period_start": "1969",
+            "work_period_end": "1978"
+          }
+        },
+        "similarity_score": 35.6436
+      },
+      {
+        "label": "DeJuan Wheat",
+        "qid": "Q3703886",
+        "meta": {
+          "time": "1997"
+        },
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3703886",
+          "label": "DeJuan Wheat",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "DeJuan Wheat",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Louisville",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "14 October 1973",
+            "height": "183 centimetre",
+            "mass": "165 pound",
+            "work_period_start": "1997",
+            "work_period_end": "2010",
+            "schools_attended": "Ballard High School; University of Louisville"
+          }
+        },
+        "similarity_score": 35.5932
+      },
+      {
+        "label": "Tony Bradley",
+        "qid": "Q29438680",
+        "meta": {
+          "time": "2017"
+        },
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q29438680",
+          "label": "Tony Bradley",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Tony Bradley (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Bartow",
+            "sex_or_gender": "male",
+            "date_of_birth": "08 January 1998",
+            "height": "208 centimetre",
+            "mass": "109 kilogram",
+            "work_period_start": "2017",
+            "schools_attended": "University of North Carolina at Chapel Hill; Bartow High School"
+          }
+        },
+        "similarity_score": 35.5932
+      },
+      {
+        "label": "Willie McCarter",
+        "qid": "Q4020208",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q4020208",
+          "label": "Willie McCarter",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Willie McCarter",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Gary",
+            "sex_or_gender": "male",
+            "date_of_birth": "26 July 1946",
+            "work_period_start": "1969",
+            "work_period_end": "1972"
+          }
+        },
+        "similarity_score": 35.514
+      },
+      {
+        "label": "Earl Tatum",
+        "qid": "Q1627238",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1627238",
+          "label": "Earl Tatum",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Earl Tatum",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Mount Vernon",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "26 July 1953",
+            "height": "196 centimetre",
+            "mass": "84 kilogram",
+            "work_period_start": "1976",
+            "work_period_end": "1980",
+            "schools_attended": "Mount Vernon High School; Marquette University"
+          }
+        },
+        "similarity_score": 35.2941
+      },
+      {
+        "label": "Al Bianchi",
+        "qid": "Q3607477",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3607477",
+          "label": "Al Bianchi",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Al Bianchi",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Long Island",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "26 March 1932",
+            "work_period_start": "1956",
+            "work_period_end": "1966"
+          }
+        },
+        "similarity_score": 35.2941
+      },
+      {
+        "label": "Kenny Carr",
+        "qid": "Q2319183",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2319183",
+          "label": "Kenny Carr",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Kenny Carr",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Washington, D.C.",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "15 August 1955",
+            "height": "201 centimetre",
+            "mass": "100 kilogram",
+            "work_period_start": "1977",
+            "work_period_end": "1987",
+            "schools_attended": "North Carolina State University; DeMatha Catholic High School"
+          }
+        },
+        "similarity_score": 35.2941
+      },
+      {
+        "label": "Don Carlos",
+        "qid": "Q946002",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q946002",
+          "label": "Don Carlos",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Don Carlos (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Columbus",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "03 March 1944",
+            "height": "196 centimetre",
+            "mass": "95 kilogram",
+            "schools_attended": "Eastmoor Academy"
+          }
+        },
+        "similarity_score": 35.2941
+      },
+      {
+        "label": "Ryan Kelly",
+        "qid": "Q13605944",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q13605944",
+          "label": "Ryan Kelly",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Ryan Kelly (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Carmel",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "09 April 1991",
+            "height": "211 centimetre",
+            "mass": "107 kilogram",
+            "work_period_start": "2013",
+            "schools_attended": "Ravenscroft School; Duke University"
+          }
+        },
+        "similarity_score": 35.2941
+      },
+      {
+        "label": "Jerry West",
+        "qid": "Q311195",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q311195",
+          "label": "Jerry West",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jerry West",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Chelyan",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "28 May 1938",
+            "work_period_start": "1960",
+            "work_period_end": "1974"
+          }
+        },
+        "similarity_score": 35.2941
+      },
+      {
+        "label": "John Block",
+        "qid": "Q1609507",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1609507",
+          "label": "John Block",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "John Block (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Los Angeles",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "16 April 1944",
+            "height": "206 centimetre",
+            "mass": "94 kilogram",
+            "work_period_start": "1966",
+            "work_period_end": "1976",
+            "nickname": "Bronco",
+            "schools_attended": "University of Southern California"
+          }
+        },
+        "similarity_score": 35.2941
+      },
+      {
+        "label": "Myer Skoog",
+        "qid": "Q2330320",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2330320",
+          "label": "Myer Skoog",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Whitey Skoog",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Duluth",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "02 November 1926",
+            "work_period_start": "1951",
+            "work_period_end": "1957"
+          }
+        },
+        "similarity_score": 35.2941
+      },
+      {
+        "label": "Brian Cook",
+        "qid": "Q2463660",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2463660",
+          "label": "Brian Cook",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Brian Cook (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Lincoln",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "04 December 1980",
+            "height": "206 centimetre",
+            "mass": "117 kilogram",
+            "work_period_start": "2003",
+            "work_period_end": "2015",
+            "schools_attended": "Lincoln Community High School; University of Illinois at Urbana–Champaign"
+          }
+        },
+        "similarity_score": 35.2941
+      },
+      {
+        "label": "Roger Strickland",
+        "qid": "Q5837659",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q5837659",
+          "label": "Roger Strickland",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Roger Strickland (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Jacksonville",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "04 September 1940",
+            "height": "196 centimetre",
+            "mass": "200 pound",
+            "work_period_start": "1963",
+            "work_period_end": "1964",
+            "schools_attended": "University of Notre Dame; Bishop Kenny High School"
+          }
+        },
+        "similarity_score": 35.1852
+      },
+      {
+        "label": "D'Angelo Russell",
+        "qid": "Q18749170",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q18749170",
+          "label": "D'Angelo Russell",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "D%27Angelo Russell",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Louisville",
+            "sex_or_gender": "male",
+            "date_of_birth": "23 February 1996",
+            "height": "191 centimetre",
+            "mass": "88 kilogram",
+            "work_period_start": "2015",
+            "schools_attended": "Montverde Academy; Ohio State University; Central High School"
+          }
+        },
+        "similarity_score": 35.1852
+      },
+      {
+        "label": "Toby Bailey",
+        "qid": "Q355750",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q355750",
+          "label": "Toby Bailey",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Toby Bailey",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Los Angeles",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "19 November 1975",
+            "height": "198 centimetre",
+            "mass": "97 kilogram",
+            "work_period_start": "1999",
+            "work_period_end": "2011",
+            "schools_attended": "University of California, Los Angeles"
+          }
+        },
+        "similarity_score": 34.9515
+      },
+      {
+        "label": "Roger Brown",
+        "qid": "Q3940077",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3940077",
+          "label": "Roger Brown",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Roger Brown (basketball, born 1950)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Chicago",
+            "sex_or_gender": "male",
+            "date_of_birth": "23 February 1950",
+            "height": "211 centimetre",
+            "mass": "102 kilogram",
+            "work_period_start": "1972",
+            "work_period_end": "1980",
+            "schools_attended": "University of Kansas"
+          }
+        },
+        "similarity_score": 34.9515
+      },
+      {
+        "label": "Phil Jordon",
+        "qid": "Q1622734",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1622734",
+          "label": "Phil Jordon",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Phil Jordon",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Lakeport",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "12 September 1933",
+            "height": "208 centimetre",
+            "mass": "93 kilogram",
+            "work_period_start": "1956",
+            "work_period_end": "1963",
+            "schools_attended": "Willits High School"
+          }
+        },
+        "similarity_score": 34.9515
+      },
+      {
+        "label": "LeRoy Ellis",
+        "qid": "Q2336851",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2336851",
+          "label": "LeRoy Ellis",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "LeRoy Ellis",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Far Rockaway",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "10 March 1940",
+            "height": "208 centimetre",
+            "mass": "95 kilogram",
+            "work_period_start": "1962",
+            "work_period_end": "1976",
+            "schools_attended": "St. John's University; Thomas Jefferson High School"
+          }
+        },
+        "similarity_score": 34.9515
+      },
+      {
+        "label": "John Wetzel",
+        "qid": "Q2348890",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2348890",
+          "label": "John Wetzel",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "John Wetzel (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Waynesboro",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "22 October 1944",
+            "work_period_start": "1967",
+            "work_period_end": "1976"
+          }
+        },
+        "similarity_score": 34.9515
+      },
+      {
+        "label": "Ivica Zubac",
+        "qid": "Q23761524",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q23761524",
+          "label": "Ivica Zubac",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Ivica Zubac",
+            "country_of_citizenship": "Croatia",
+            "place_of_birth": "Mostar",
+            "sex_or_gender": "male",
+            "date_of_birth": "18 March 1997",
+            "height": "216 centimetre",
+            "mass": "120 kilogram",
+            "work_period_start": "2013"
+          }
+        },
+        "similarity_score": 34.9515
+      },
+      {
+        "label": "Duane Cooper",
+        "qid": "Q377852",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q377852",
+          "label": "Duane Cooper",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Duane Cooper",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Benton Harbor",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "25 June 1969",
+            "height": "185 centimetre",
+            "mass": "84 kilogram",
+            "work_period_start": "1992",
+            "work_period_end": "2003",
+            "schools_attended": "University of Southern California; Lakewood High School"
+          }
+        },
+        "similarity_score": 34.6154
+      },
+      {
+        "label": "Bob Harrison",
+        "qid": "Q2329453",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2329453",
+          "label": "Bob Harrison",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Bob Harrison (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Toledo",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "12 August 1927",
+            "work_period_start": "1949",
+            "work_period_end": "1958"
+          }
+        },
+        "similarity_score": 34.6154
+      },
+      {
+        "label": "Jim Caldwell",
+        "qid": "Q3808316",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3808316",
+          "label": "Jim Caldwell",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jim Caldwell (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Durham",
+            "sex_or_gender": "male",
+            "date_of_birth": "28 January 1943",
+            "height": "208 centimetre",
+            "mass": "240 pound",
+            "work_period_start": "1965",
+            "work_period_end": "1969",
+            "schools_attended": "Georgia Tech"
+          }
+        },
+        "similarity_score": 34.6154
+      },
+      {
+        "label": "Paul Stovall",
+        "qid": "Q3898160",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3898160",
+          "label": "Paul Stovall",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Paul Stovall",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Wichita",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "16 August 1948",
+            "height": "193 centimetre",
+            "mass": "215 pound",
+            "work_period_start": "1972",
+            "work_period_end": "1974",
+            "schools_attended": "Pratt Community College; Wichita North High School; Arizona State University"
+          }
+        },
+        "similarity_score": 34.6154
+      },
+      {
+        "label": "Jordan Farmar",
+        "qid": "Q313045",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q313045",
+          "label": "Jordan Farmar",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jordan Farmar",
+            "country_of_citizenship": "Israel; United States of America",
+            "place_of_birth": "Los Angeles",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "30 November 1986",
+            "height": "188 centimetre",
+            "mass": "81 kilogram",
+            "work_period_start": "2006",
+            "work_period_end": "2016",
+            "schools_attended": "Birmingham High School; William Howard Taft Charter High School; University of California, Los Angeles; Hebrew school"
+          }
+        },
+        "similarity_score": 34.2857
+      },
+      {
+        "label": "James Edwards",
+        "qid": "Q547977",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q547977",
+          "label": "James Edwards",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "James Edwards (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Seattle",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "22 November 1955",
+            "height": "213 centimetre",
+            "mass": "102 kilogram",
+            "work_period_start": "1977",
+            "work_period_end": "1996",
+            "schools_attended": "Roosevelt High School; University of Washington"
+          }
+        },
+        "similarity_score": 34.2857
+      },
+      {
+        "label": "Earnie Killum",
+        "qid": "Q5816623",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q5816623",
+          "label": "Earnie Killum",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Earnie Killum",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Clarksdale",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "11 July 1948",
+            "height": "190 centimetre",
+            "mass": "180 pound",
+            "schools_attended": "Coahoma Community College"
+          }
+        },
+        "similarity_score": 34.2857
+      },
+      {
+        "label": "Tom Abernethy",
+        "qid": "Q3992437",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3992437",
+          "label": "Tom Abernethy",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Tom Abernethy",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "South Bend",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "06 May 1954",
+            "height": "201 centimetre",
+            "mass": "220 pound",
+            "work_period_start": "1976",
+            "work_period_end": "1983",
+            "schools_attended": "St. Joseph's High School; Indiana University Bloomington"
+          }
+        },
+        "similarity_score": 34.2857
+      },
+      {
+        "label": "Ed Biedenbach",
+        "qid": "Q3718833",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3718833",
+          "label": "Ed Biedenbach",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Eddie Biedenbach",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Pittsburgh",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "12 August 1945"
+          }
+        },
+        "similarity_score": 34.2857
+      },
+      {
+        "label": "Gail Goodrich",
+        "qid": "Q1393162",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1393162",
+          "label": "Gail Goodrich",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Gail Goodrich",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Los Angeles",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "23 April 1943",
+            "height": "185 centimetre",
+            "mass": "77 kilogram",
+            "work_period_start": "1965",
+            "work_period_end": "1979",
+            "nickname": "Stumpy; The Stump",
+            "schools_attended": "University of California, Los Angeles; John H. Francis Polytechnic High School"
+          }
+        },
+        "similarity_score": 34.2857
+      },
+      {
+        "label": "Howie Jolliff",
+        "qid": "Q3787269",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3787269",
+          "label": "Howie Jolliff",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Howie Jolliff",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Canton",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "20 July 1938",
+            "work_period_start": "1960",
+            "work_period_end": "1963"
+          }
+        },
+        "similarity_score": 34.2857
+      },
+      {
+        "label": "Jim King",
+        "qid": "Q763044",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q763044",
+          "label": "Jim King",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jim King (basketball, born 1941)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Tulsa",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "07 February 1941",
+            "work_period_start": "1963",
+            "work_period_end": "1973"
+          }
+        },
+        "similarity_score": 34.0
+      },
+      {
+        "label": "Don Ford",
+        "qid": "Q3713516",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3713516",
+          "label": "Don Ford",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Don Ford",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Santa Barbara",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "31 December 1952",
+            "height": "206 centimetre",
+            "mass": "215 pound",
+            "work_period_start": "1975",
+            "work_period_end": "1983",
+            "schools_attended": "University of New Mexico; Santa Barbara High School"
+          }
+        },
+        "similarity_score": 34.0
+      },
+      {
+        "label": "Ron Feiereisel",
+        "qid": "Q4356763",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q4356763",
+          "label": "Ron Feiereisel",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Ron Feiereisel",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Chicago",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "06 August 1931",
+            "work_period_start": "1955",
+            "work_period_end": "1956"
+          }
+        },
+        "similarity_score": 33.9623
+      },
+      {
+        "label": "Jerry Chambers",
+        "qid": "Q1617143",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1617143",
+          "label": "Jerry Chambers",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jerry Chambers",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Washington, D.C.",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "18 July 1943",
+            "height": "196 centimetre",
+            "mass": "84 kilogram",
+            "work_period_start": "1966",
+            "work_period_end": "1974",
+            "schools_attended": "Eastern High School; University of Utah"
+          }
+        },
+        "similarity_score": 33.9623
+      },
+      {
+        "label": "John Celestand",
+        "qid": "Q1699578",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1699578",
+          "label": "John Celestand",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "John Celestand",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Houston",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "06 March 1977",
+            "height": "193 centimetre",
+            "mass": "81 kilogram",
+            "work_period_start": "1999",
+            "work_period_end": "2005",
+            "schools_attended": "Piscataway Township High School; Villanova University"
+          }
+        },
+        "similarity_score": 33.9623
+      },
+      {
+        "label": "Jim Krebs",
+        "qid": "Q3808350",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3808350",
+          "label": "Jim Krebs",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Jim Krebs",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Webster Groves",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "08 September 1935",
+            "height": "203 centimetre",
+            "mass": "230 pound",
+            "work_period_start": "1957",
+            "work_period_end": "1964",
+            "nickname": "Boomer; Red",
+            "schools_attended": "Webster Groves High School; Southern Methodist University"
+          }
+        },
+        "similarity_score": 33.6634
+      },
+      {
+        "label": "Boo Ellis",
+        "qid": "Q587512",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q587512",
+          "label": "Boo Ellis",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Boo Ellis",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Hamilton",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "11 February 1936",
+            "height": "196 centimetre",
+            "mass": "84 kilogram",
+            "work_period_start": "1958",
+            "work_period_end": "1966",
+            "schools_attended": "Hamilton High School; Niagara University"
+          }
+        },
+        "similarity_score": 33.6634
+      },
+      {
+        "label": "Chris Jefferies",
+        "qid": "Q428720",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q428720",
+          "label": "Chris Jefferies",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Chris Jefferies",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Fresno",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "13 February 1980",
+            "height": "203 centimetre",
+            "mass": "102 kilogram",
+            "work_period_start": "2002",
+            "work_period_end": "2004",
+            "schools_attended": "Washington Union High School; University of Arkansas"
+          }
+        },
+        "similarity_score": 33.6449
+      },
+      {
+        "label": "Billy Schaeffer",
+        "qid": "Q3640059",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q3640059",
+          "label": "Billy Schaeffer",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Billy Schaeffer",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Bellerose",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "11 December 1951",
+            "height": "196 centimetre",
+            "mass": "200 pound",
+            "work_period_start": "1973",
+            "work_period_end": "1976",
+            "schools_attended": "Holy Cross High School; St. John's University"
+          }
+        },
+        "similarity_score": 33.6449
+      },
+      {
+        "label": "Magic Johnson",
+        "qid": "Q134183",
+        "meta": {
+          "time": "1979"
+        },
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q134183",
+          "label": "Magic Johnson",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Magic Johnson",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Lansing",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "14 August 1959",
+            "work_period_start": "1979",
+            "work_period_end": "1991"
+          }
+        },
+        "similarity_score": 33.6134
+      },
+      {
+        "label": "Talen Horton-Tucker",
+        "qid": "Q60674264",
+        "meta": {
+          "time": "2019"
+        },
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q60674264",
+          "label": "Talen Horton-Tucker",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Talen Horton-Tucker",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Chicago",
+            "sex_or_gender": "male",
+            "date_of_birth": "25 November 2000",
+            "height": "193 centimetre",
+            "mass": "234 pound",
+            "work_period_start": "2019",
+            "schools_attended": "Iowa State University; Simeon Career Academy"
+          }
+        },
+        "similarity_score": 33.6
+      },
+      {
+        "label": "Larry Nance, Jr.",
+        "qid": "Q19605398",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q19605398",
+          "label": "Larry Nance, Jr.",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Larry Nance Jr.",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Akron",
+            "sex_or_gender": "male",
+            "date_of_birth": "01 January 1993",
+            "height": "206 centimetre",
+            "mass": "107 kilogram",
+            "work_period_start": "2015",
+            "schools_attended": "Revere High School; University of Wyoming"
+          }
+        },
+        "similarity_score": 33.3333
+      },
+      {
+        "label": "Joe Hutton",
+        "qid": "Q1606800",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q1606800",
+          "label": "Joe Hutton",
+          "types": [
+            "coach",
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Joe Hutton (basketball)",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Excelsior",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "06 October 1928",
+            "work_period_start": "1950",
+            "work_period_end": "1952"
+          }
+        },
+        "similarity_score": 33.3333
+      },
+      {
+        "label": "Derrick Caracter",
+        "qid": "Q2632962",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "draftedBy",
+        "direction": "incoming",
+        "parser": "llm",
+        "evidence_source": "matched_triple",
+        "relation_target": {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        },
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {
+          "qid": "Q2632962",
+          "label": "Derrick Caracter",
+          "types": [
+            "player"
+          ],
+          "attrs": {
+            "enwiki_title": "Derrick Caracter",
+            "country_of_citizenship": "United States of America",
+            "place_of_birth": "Fanwood",
+            "native_language": "English",
+            "sex_or_gender": "male",
+            "date_of_birth": "04 May 1988",
+            "height": "206 centimetre",
+            "mass": "125 kilogram",
+            "work_period_start": "2010",
+            "schools_attended": "Notre Dame Preparatory School; University of Louisville; University of Texas at El Paso; St. Patrick High School"
+          }
+        },
+        "similarity_score": 33.3333
+      }
+    ],
+    "unresolved": []
+  }
+]

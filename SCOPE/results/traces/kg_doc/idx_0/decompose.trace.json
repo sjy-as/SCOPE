@@ -1,0 +1,31 @@
+{
+  "sub_q1": "Which player played for the Houston Rockets in 2013?",
+  "sub_q2": "What NBA D-League All-Star Game honor did [1] receive?",
+  "rewrite_reasoning": "To answer the question, we first need to identify the player who played for the Houston Rockets in 2013. Then, we need to find the NBA D-League All-Star Game honor that this player received.",
+  "match1": null,
+  "match2": null,
+  "route1": {
+    "matched_concept": "contract",
+    "primary_source": "kg",
+    "fallback_source": "doc",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: Houston Rockets (team). ASKED target: player. The query asks which player played for the Houston Rockets in 2013, which is a relation between a team and a player. The contract concept in KG links player and team with temporal bounds (start_time, end_time), exactly matching the pair (team, player). Thus, the relation-first rule fires. KG is LIKELY because its elements include player, team, start_time, end_time, which can directly answer the query. Doc is LIKELY because player_stats doc source may contain narrative descriptions of players' team affiliations, but KG is more direct. Therefore, primary_source is kg, fallback_source is doc."
+  },
+  "route2": {
+    "matched_concept": "award_received",
+    "primary_source": "kg",
+    "fallback_source": "doc",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: [1] (a player, as implied by the query context). ASKED target: an award honor (specifically, an NBA D-League All-Star Game honor). Phase-1 rule: relation-first. The concept 'award_received' links a player to an award, which exactly matches the pair (player, award). The query asks for an award received by a player, so this relation qualifies. Source selection: KG is LIKELY because its elements include 'player' and 'award', directly matching the query's entities and target. Doc is also LIKELY because the 'competition' concept's doc source describes events like the NBA All-Star Game and mentions awards, and the 'award' concept's doc source includes winners. However, KG is preferred as primary because it directly records the fact of a player receiving an award, which is a structured atomic fact. Doc is chosen as fallback."
+  },
+  "decompose_llm_calls": [
+    {
+      "stage": "step2.sq",
+      "ts": 1786685492.4662786,
+      "prompt": "You are a query decomposition assistant.\n\n        Your job is to transform ONE natural-language semantic query into EXACTLY two sub-questions.\n\n        Requirements:\n        1. The input is already a natural semantic query. Do NOT rewrite it into a different intent.\n        2. Output exactly two sub-questions: q1 and q2.\n        3. q1 should extract the first necessary piece of information.\n        4. q2 should depend on q1 and use [1] to refer to the answer of q1 when needed.\n        5. Do not do event judgment, schema routing, source selection, or query rewriting.\n        6. Keep the sub-questions faithful to the original meaning.\n        7. Return valid JSON only.\n\n        Return format:\n        {\n        \"reasoning\": \"brief explanation of the decomposition\",\n        \"subqueries\": [\n            {\n            \"id\": \"q1\",\n            \"query\": \"...\",\n            \"depends_on\": [],\n            \"variables\": []\n            },\n            {\n            \"id\": \"q2\",\n            \"query\": \"...\",\n            \"depends_on\": [\"q1\"],\n            \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n            }\n        ]\n        }\n\n        Question: What NBA D-League All-Star Game honor did the player who played for the Houston Rockets in 2013 receive?\n\n    ",
+      "response": "{\n  \"reasoning\": \"To answer the question, we first need to identify the player who played for the Houston Rockets in 2013. Then, we need to find the NBA D-League All-Star Game honor that this player received.\",\n  \"subqueries\": [\n    {\n      \"id\": \"q1\",\n      \"query\": \"Which player played for the Houston Rockets in 2013?\",\n      \"depends_on\": [],\n      \"variables\": []\n    },\n    {\n      \"id\": \"q2\",\n      \"query\": \"What NBA D-League All-Star Game honor did [1] receive?\",\n      \"depends_on\": [\"q1\"],\n      \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n    }\n  ]\n}",
+      "module": "step2.sq",
+      "model": "deepseek-chat"
+    }
+  ]
+}

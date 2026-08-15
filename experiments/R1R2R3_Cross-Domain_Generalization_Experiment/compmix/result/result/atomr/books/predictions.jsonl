@@ -1,0 +1,100 @@
+{"index": 7, "question": "Who was the main character of the novel \"The Outsiders\"?", "predicted": "Ponyboy Curtis", "gold": ["Ponyboy Curtis"], "retrieval_counts": {"doc": 1}}
+{"index": 10, "question": "Who is the former governor of Ardsmuir Prison?", "predicted": "Lord John Grey", "gold": ["Lord John Grey"], "retrieval_counts": {"doc": 1}}
+{"index": 18, "question": "Who were the main characters featured in the Hardy Boys?", "predicted": "Frank Hardy, Joe Hardy", "gold": ["Frank Hardy;Joe Hardy"], "retrieval_counts": {"doc": 1}}
+{"index": 3, "question": "What is the genre of the book The God of Small Things?", "predicted": "Novel", "gold": ["magic realist fiction"], "retrieval_counts": {"doc": 1}}
+{"index": 16, "question": "How many copies of Sense and Sensibility were printed at first?", "predicted": "750", "gold": ["750"], "retrieval_counts": {"doc": 1}}
+{"index": 15, "question": "What is the pseudonym with which The Hardy Boys was written?", "predicted": "Franklin W. Dixon", "gold": ["Franklin W. Dixon"], "retrieval_counts": {"doc": 1}}
+{"index": 2, "question": "What was the theme of the book \"Adventures of Huckleberry Finn\"?", "predicted": "conflict between civilization and individual freedom, moral growth and questioning of societal norms regarding slavery and racism", "gold": ["Race and identity"], "retrieval_counts": {"doc": 1}}
+{"index": 14, "question": "What year did The Hardy Boys book series first debut?", "predicted": "1927", "gold": ["1927"], "retrieval_counts": {"doc": 3}}
+{"index": 24, "question": "Where does The Shining take place?", "predicted": "The Stanley Hotel", "gold": ["the Southern Rocky Mountains"], "retrieval_counts": {"doc": 1}}
+{"index": 23, "question": "What noble title was conferred on Leo Tolstoy?", "predicted": "Count", "gold": ["graf"], "retrieval_counts": {"doc": 1}}
+{"index": 26, "question": "What is the main subject of the book The Origin of Species?", "predicted": "evolution by natural selection", "gold": ["theory of evolution"], "retrieval_counts": {"doc": 1}}
+{"index": 0, "question": "What year was Catcher in the Rye published?", "predicted": "1969", "gold": ["1951"], "retrieval_counts": {"kg": 1}}
+{"index": 5, "question": "Who is the publisher of the book Disgrace?", "predicted": "Harvill Secker", "gold": ["Harvill Secker"], "retrieval_counts": {"kg": 1}}
+{"index": 17, "question": "In the first edition of Charlie and the Chocolate Factory what were the Oompa-Loompas?", "predicted": "African pygmies", "gold": ["African Pygmies"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 19, "question": "What is the profession of Balram in the novel The White Tiger?", "predicted": "driver", "gold": ["Halwai"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 28, "question": "The Origin of Species books main subject?", "predicted": "evolution by natural selection", "gold": ["theory of evolution"], "retrieval_counts": {"doc": 1}}
+{"index": 12, "question": "What religion inspired the author?", "predicted": "Christianity", "gold": ["Mormonism"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 25, "question": "The author of the Book \"The Power of Habit\" Charles Duhigg is residing in which city?", "predicted": "Santa Cruz, California", "gold": ["Santa Cruz, California"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 6, "question": "Which is the first book of Paulo Coelho?", "predicted": "The Pilgrimage", "gold": ["Teatro da Educação"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 13, "question": "Under what pseudonym was The Hardy Boys books written?", "predicted": "Franklin W. Dixon", "gold": ["Franklin W. Dixon"], "retrieval_counts": {"kg": 1}}
+{"index": 11, "question": "What is the third book in the Incarnations of Immortality series?", "predicted": "Bearing an Hourglass", "gold": ["With a Tangled Skein"], "retrieval_counts": {"doc": 1, "table": 1, "kg": 1}}
+{"index": 20, "question": "Who was the author of the first book published in the Dune series?", "predicted": "Frank Herbert", "gold": ["Frank Herbert"], "retrieval_counts": {"kg": 2}}
+{"index": 27, "question": "Who is the author name of the book The Origin of Species?", "predicted": "Charles Darwin", "gold": ["Charles Darwin"], "retrieval_counts": {"kg": 1}}
+{"index": 31, "question": "Who wrote the Alfred A. Knopf Inc series?", "predicted": "Alfred A. Knopf", "gold": ["Toni Morrison"], "retrieval_counts": {"doc": 2}}
+{"index": 4, "question": "In what year was Mary Tuffley born?", "predicted": "1665", "gold": ["1659"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 8, "question": "What is the second book of Francisco de Robles?", "predicted": "Don Quixote", "gold": ["Don Quixote de la Mancha"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 1, "question": "Which prize was won by Roberto Bolaño in 1999?", "predicted": "Rómulo Gallegos Prize", "gold": ["Rómulo Gallegos Prize"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 22, "question": "Author of first published Dune book?", "predicted": "Frank Herbert", "gold": ["Frank Herbert"], "retrieval_counts": {"doc": 1, "table": 1, "kg": 2}}
+{"index": 32, "question": "Who was the bookshop owner that Little, Brown and Company traces its roots to?", "predicted": "John Carter Brown", "gold": ["Ebenezer Battelle"], "retrieval_counts": {"kg": 1}}
+{"index": 30, "question": "What book was the final one in the Little Women series?", "predicted": "Jo's Boys, Little Women", "gold": ["Jo's Boys"], "retrieval_counts": {"doc": 3}}
+{"index": 48, "question": "Who honored George Orwell as one of \"The 50 greatest British writers since 1945\"?", "predicted": "", "gold": ["The Times"], "retrieval_counts": {}}
+{"index": 37, "question": "What is the first name of the Cardinal that Thomas Cromwell advises Wolf Hall book series?", "predicted": "Thomas", "gold": ["Thomas Wolsey"], "retrieval_counts": {"doc": 2}}
+{"index": 44, "question": "What novel did the Three Laws of Robotics appear in?", "predicted": "I, Robot", "gold": ["I, Robot"], "retrieval_counts": {"doc": 1}}
+{"index": 34, "question": "How many day did Piscine survive in sea in the book Life of Pi?", "predicted": "227", "gold": ["227 days"], "retrieval_counts": {"doc": 3}}
+{"index": 9, "question": "Who wrote the Francisco de Robles?", "predicted": "Miguel de Cervantes", "gold": ["Miguel de Cervantes"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 41, "question": "What is the name of the school that was the basis of Malory Towers?", "predicted": "Benenden School", "gold": ["Benenden School"], "retrieval_counts": {"doc": 2}}
+{"index": 36, "question": "Who is the main character of the Wolf Hall book series?", "predicted": "Thomas Cromwell", "gold": ["Thomas Cromwell"], "retrieval_counts": {"doc": 4}}
+{"index": 35, "question": "When was The Wind Through the Keyhole book published?", "predicted": "1 February 2012", "gold": ["February 2012"], "retrieval_counts": {"kg": 1}}
+{"index": 45, "question": "When was the zeroth law of Robotics given a name?", "predicted": "Foundation and Earth, Prelude to Foundation", "gold": ["Robots and Empire"], "retrieval_counts": {"doc": 2}}
+{"index": 33, "question": "Which movies are based on the novel Five Point Someone?", "predicted": "3 Idiots, Nanban", "gold": ["3 Idiots;Nanban"], "retrieval_counts": {"doc": 2, "kg": 1}}
+{"index": 43, "question": "Who is the author of the The Last Thing he told me book?", "predicted": "Laura Dave", "gold": ["Laura Dave"], "retrieval_counts": {"kg": 1}}
+{"index": 47, "question": "What year did the first feature film adaptation of the novel Nineteen Eighty-Four come out?", "predicted": "1949", "gold": ["1956"], "retrieval_counts": {"doc": 2}}
+{"index": 29, "question": "What is the last book of the series The Famous Five?", "predicted": "Five Are Together Again", "gold": ["Five Are Together Again"], "retrieval_counts": {"doc": 2, "kg": 1}}
+{"index": 49, "question": "The novel Nineteen Eighty-Four's first feature film adaptation came out in what year?", "predicted": "1949", "gold": ["1956"], "retrieval_counts": {"doc": 2}}
+{"index": 46, "question": "In which novel did the Three Laws of Robotics first appear?", "predicted": "I, Robot", "gold": ["I, Robot"], "retrieval_counts": {"doc": 4}}
+{"index": 57, "question": "How many copies of The Hunger Games were sold by February, 2010?", "predicted": "800,000 copies", "gold": ["800,000"], "retrieval_counts": {"doc": 1}}
+{"index": 58, "question": "What is the Daily mean temperature of Kabul in jan?", "predicted": "−2.3 °C (27.9 °F)", "gold": ["−2.3"], "retrieval_counts": {"doc": 1}}
+{"index": 40, "question": "Mary Robinette Kowal was president of which organization for professional writers between 2019 and 2021?", "predicted": "Science Fiction and Fantasy Writers of America", "gold": ["Science Fiction and Fantasy Writers of America"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 52, "question": "Where did Jean Valjean go to prison in Les Misérables?", "predicted": "Toulon", "gold": ["Bagne of Toulon"], "retrieval_counts": {"doc": 2}}
+{"index": 51, "question": "Who wrote the novel The Chosen?", "predicted": "Chaim Potok", "gold": ["Chaim Potok"], "retrieval_counts": {"kg": 1}}
+{"index": 39, "question": "Who first published The Lady Astronaut of Mars?", "predicted": "Tor.com", "gold": ["Audible"], "retrieval_counts": {"kg": 1, "table": 1}}
+{"index": 62, "question": "Where is Frodo heading in The Two Towers?", "predicted": "Mordor", "gold": ["Mordor"], "retrieval_counts": {"doc": 1}}
+{"index": 50, "question": "Who is the author of The Chosen?", "predicted": "Chaim Potok", "gold": ["Chaim Potok"], "retrieval_counts": {"kg": 1}}
+{"index": 61, "question": "What book did the character of D'Artagnan die?", "predicted": "The Man in the Iron Mask", "gold": ["The Vicomte of Bragelonne: Ten Years Later"], "retrieval_counts": {"doc": 2}}
+{"index": 60, "question": "What type of bomber did the main character Captain John Yossarian fly in the novel Catch-22?", "predicted": "B-25", "gold": ["North American B-25 Mitchell"], "retrieval_counts": {"doc": 2}}
+{"index": 42, "question": "Name the fifth book in Malory Towers series.", "predicted": "Five Go to Mystery Moor, The New Class at Malory Towers", "gold": ["In the Fifth at Malory Towers"], "retrieval_counts": {"doc": 1, "table": 2, "kg": 2}}
+{"index": 38, "question": "Which book preceded Kingdom Come in the Left Behind series?", "predicted": "Desecration", "gold": ["Glorious Appearing"], "retrieval_counts": {"table": 2, "kg": 1}}
+{"index": 55, "question": "What is the name of the wife of the writer Honoré de Balzac?", "predicted": "Ewelina Hańska", "gold": ["Ewelina Hańska"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 67, "question": "Who made this genre name popular?", "predicted": "The Name of the Rose", "gold": ["Richard Garriott"], "retrieval_counts": {"doc": 2}}
+{"index": 71, "question": "Who was the main character in A Tale of Two Cities?", "predicted": "Charles Darnay", "gold": ["Alexandre Manette"], "retrieval_counts": {"doc": 1}}
+{"index": 72, "question": "What is the full meaning of the novel title \"Moby-Dick\"?", "predicted": "Moby-Dick", "gold": ["Different problem"], "retrieval_counts": {"doc": 1}}
+{"index": 68, "question": "What is the name of the first novel of Percy Jackson and the Olympians?", "predicted": "The Lightning Thief", "gold": ["The Lightning Thief"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 75, "question": "What city was it founded in?", "predicted": "New York City", "gold": ["Wilkinsburg, PA"], "retrieval_counts": {"doc": 1}}
+{"index": 66, "question": "who wrote the The Kent Family Chronicles series?", "predicted": "John Jakes", "gold": ["John Jakes"], "retrieval_counts": {"kg": 1}}
+{"index": 64, "question": "What is the name of the last Percy Jackson & the Olympians book?", "predicted": "The Last Olympian", "gold": ["The Last Olympian"], "retrieval_counts": {"kg": 1}}
+{"index": 63, "question": "What was the flat number of Sherlock Holmes in the novel A Study in Scarlet?", "predicted": "221B", "gold": ["221B"], "retrieval_counts": {"kg": 1}}
+{"index": 79, "question": "What years does The Thorn Birds span?", "predicted": "1915-1969", "gold": ["1915 to 1969"], "retrieval_counts": {"doc": 1}}
+{"index": 80, "question": "Where does most of the action in The Thorn Birds take place?", "predicted": "Australia", "gold": ["The Australian Outback"], "retrieval_counts": {"doc": 1}}
+{"index": 70, "question": "What is the name of Percy Jackson's mother?", "predicted": "Sally Jackson", "gold": ["Sally Jackson"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 69, "question": "What is the name of the second book in the series Percy Jackson and the Olympians?", "predicted": "The Sea of Monsters", "gold": ["The Sea of Monsters"], "retrieval_counts": {"doc": 1, "table": 1, "kg": 1}}
+{"index": 73, "question": "who is the publisher of The Scarlet Letter?", "predicted": "Ticknor and Fields", "gold": ["Ticknor, Reed & Fields"], "retrieval_counts": {"kg": 1}}
+{"index": 76, "question": "Who was the city named after?", "predicted": "a swimming pool in Paris", "gold": ["John Wilkins Jr."], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 65, "question": "what is the second book of The Kent Family Chronicles?", "predicted": "The Rebels", "gold": ["The Rebels"], "retrieval_counts": {"doc": 1, "kg": 2}}
+{"index": 82, "question": "who wrote the Writers & Lovers novel?", "predicted": "Lily King", "gold": ["Lily King"], "retrieval_counts": {"kg": 1}}
+{"index": 77, "question": "If Beale Street Could Talk is by who?", "predicted": "James Baldwin", "gold": ["James Baldwin"], "retrieval_counts": {"kg": 1}}
+{"index": 74, "question": "Who originally illustrated the cover?", "predicted": "John Jude Palencar", "gold": ["Tim Jacobus"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 59, "question": "What was the final publication written by Ian Fleming?", "predicted": "Casino Royale", "gold": ["Octopussy and The Living Daylights"], "retrieval_counts": {"doc": 2}}
+{"index": 53, "question": "Which novelist's mother was Anne-Charlotte-Laure Sallambier and also won the Légion d'honneur?", "predicted": "Honoré de Balzac", "gold": ["Honoré de Balzac"], "retrieval_counts": {"doc": 2, "kg": 2}}
+{"index": 78, "question": "Who created the book If Beale Street Could Talk?", "predicted": "James Baldwin", "gold": ["James Baldwin"], "retrieval_counts": {"kg": 1}}
+{"index": 83, "question": "who is the publisher of the book the Tale of peter Rabbit?", "predicted": "Frederick Warne & Co", "gold": ["Frederick Warne & Co"], "retrieval_counts": {"kg": 1}}
+{"index": 91, "question": "Where did Exodus take place?", "predicted": "Palestine, Israel", "gold": ["Cyprus internment camp"], "retrieval_counts": {"doc": 2}}
+{"index": 86, "question": "What is the name of the first book of the series The Farseer Trilogy?", "predicted": "Assassin's Apprentice", "gold": ["Assassin's Apprentice"], "retrieval_counts": {"kg": 1}}
+{"index": 84, "question": "What is the name of the second book in the Oz series?", "predicted": "The Marvelous Land of Oz", "gold": ["The Marvelous Land of Oz"], "retrieval_counts": {"doc": 1, "table": 1, "kg": 1}}
+{"index": 81, "question": "What was the name of the first Hercule Poirot novel?", "predicted": "The Mysterious Affair at Styles", "gold": ["The Mysterious Affair at Styles"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 88, "question": "Name of the first book of the series The Farseer Trilogy?", "predicted": "Assassin's Apprentice", "gold": ["Assassin's Apprentice"], "retrieval_counts": {"kg": 1}}
+{"index": 54, "question": "Which book of Honoré de Balzac is third to feature the character called Rastignac?", "predicted": "La Peau de chagrin", "gold": ["Les Secrets de la princesse de Cadignan"], "retrieval_counts": {"kg": 2, "doc": 1, "table": 3}}
+{"index": 87, "question": "What is the second book of The Farseer Trilogy?", "predicted": "Royal Assassin", "gold": ["Assassin's Quest"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 85, "question": "What company published this book?", "predicted": "Not specified", "gold": ["Reilly & Lee"], "retrieval_counts": {"kg": 1}}
+{"index": 90, "question": "What is the total number of novels that feature Perry Mason?", "predicted": "82", "gold": ["82"], "retrieval_counts": {"kg": 1}}
+{"index": 93, "question": "What was the name of the third series in Empire of the Moghul?", "predicted": "Brothers at War", "gold": ["Ruler of the World"], "retrieval_counts": {"kg": 1}}
+{"index": 97, "question": "Who is the author of The Folk of the Air book series?", "predicted": "Holly Black", "gold": ["Holly Black"], "retrieval_counts": {"kg": 1}}
+{"index": 96, "question": "Who wrote the book series The Folk of the Air?", "predicted": "Holly Black", "gold": ["Holly Black"], "retrieval_counts": {"kg": 1}}
+{"index": 95, "question": "Who are the founders Rupa Publications?", "predicted": "D. Mehra, R.K. Mehra", "gold": ["D. Mehra and R. K. Mehra"], "retrieval_counts": {"kg": 1}}
+{"index": 99, "question": "What is the name of the book written by Charlotte Brontë in 1833?", "predicted": "The Green Dwarf, A Tale of the Perfect Tense", "gold": ["The Green Dwarf, A Tale of the Perfect Tense"], "retrieval_counts": {"kg": 1}}
+{"index": 56, "question": "Which writer's mother was named Anne-Charlotte-Laure Sallambier and was also conferred upon with Légion d'honneur?", "predicted": "Honoré de Balzac", "gold": ["Honoré de Balzac"], "retrieval_counts": {"doc": 1, "kg": 3}}
+{"index": 94, "question": "Who director of Little Women?", "predicted": "Greta Gerwig", "gold": ["Greta Gerwig"], "retrieval_counts": {"kg": 1}}
+{"index": 92, "question": "What was the last series title of Empire of the Moghul?", "predicted": "The Tainted Throne", "gold": ["Traitors in the Shadows"], "retrieval_counts": {"kg": 2}}
+{"index": 98, "question": "What was the name of Becky Chambers' first published book?", "predicted": "The Long Way to a Small, Angry Planet", "gold": ["The Long Way to a Small, Angry Planet"], "retrieval_counts": {"doc": 2, "kg": 1}}
+{"index": 89, "question": "What is the first novel adaptation movie that Matt Damon acted in?", "predicted": "The Martian", "gold": ["The Good Mother"], "retrieval_counts": {"doc": 3, "kg": 1, "table": 1}}
+{"index": 21, "question": "What was the last book in the Dune series written by Frank Herbert?", "predicted": "Heretics of Dune", "gold": ["Chapterhouse: Dune"], "retrieval_counts": {"doc": 7, "kg": 1}}

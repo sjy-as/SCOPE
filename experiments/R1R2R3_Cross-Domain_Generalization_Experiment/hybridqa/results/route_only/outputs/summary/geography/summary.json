@@ -1,0 +1,27 @@
+{
+  "domain": "geography",
+  "routing_mode": "deepsieve",
+  "knowledge_base": [
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/geography/questions.json",
+  "output_dir": "/root/autodl-tmp/BBB_hybridQA/experiments/route_only/outputs/deepsieve/geography",
+  "semantic_catalog": null,
+  "atomr_prompts": null,
+  "deepsieve_source_summary": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/geography/deepsieve_source_summary.json",
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 36.46091908682138,
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 1
+  },
+  "primary_source_counts": {
+    "route1.doc": 28,
+    "route1.table": 72,
+    "route2.doc": 30,
+    "route2.table": 70
+  }
+}

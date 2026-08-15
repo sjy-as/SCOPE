@@ -1,0 +1,295 @@
+{
+  "domain": "transportation",
+  "description": "Leakage-aware, domain-specific AtomR demonstrations derived from non-evaluation table and linked-document facts.",
+  "minimum_examples_per_stage": 8,
+  "replace_base_examples": true,
+  "stage_guidance": {
+    "tree_generation": "Decompose transportation questions into a table bridge lookup followed by a linked-document fact lookup when needed. Keep children executable and preserve [n] references exactly.",
+    "source_selection": "In transportation HybridQA, Table is the complete bound table and Text is its linked documents. Use Table for row values, rankings, dates, names, categories, and comparisons; Text for descriptive or relational prose; both for bridge questions.",
+    "direct_answer": "Return only evidence-compatible transportation entities, names, dates, counts, organizations, places, titles, or short phrases in the required Answer List format.",
+    "direct_rag": "Resolve the table candidate or bridge before extracting the final linked-document fact. Copy the final span faithfully and do not substitute unrelated prior knowledge.",
+    "search": "Identify only the requested current-hop entity or candidate from the supplied evidence; do not jump to a later-hop answer.",
+    "relate": "Return only the value connected to the named entity by the requested relation, preserving exact names, dates, quantities, and labels.",
+    "filter": "Apply every stated condition to the candidate set and return all and only matching entities.",
+    "answer_from_child_qa": "Fuse child answers in dependency order, resolve references, and exclude intermediate bridge entities unless the final question requests them."
+  },
+  "stages": {
+    "tree_generation": [
+      {
+        "input": "Which airport in the Seychelles has the ICAO code FSAL and what island does it serve?",
+        "output": "{\"Which airport in the Seychelles has the ICAO code FSAL and what island does it serve?\": [\"1. Find the airport with ICAO code FSAL.\", \"2. Identify the island served by [1].\"], \"1. Find the airport with ICAO code FSAL.\": \"Filter([1], 'ICAO == FSAL')\", \"2. Identify the island served by [1].\": \"Relate([1], 'Island')\"}"
+      },
+      {
+        "input": "What is the length in miles of County Route 2 in Chenango County, New York, and which county line does it end at?",
+        "output": "{\"What is the length in miles of County Route 2 in Chenango County, New York, and which county line does it end at?\": [\"1. Find the row for County Route 2.\", \"2. Extract the length in miles from [1].\", \"3. Extract the 'To' endpoint from [1].\"], \"1. Find the row for County Route 2.\": \"Filter([1], 'Route == CR 2')\", \"2. Extract the length in miles from [1].\": \"Relate([1], 'Length (mi)')\", \"3. Extract the 'To' endpoint from [1].\": \"Relate([1], 'To')\"}"
+      },
+      {
+        "input": "Which airline operates the busiest international route from Jeju International Airport, and what is the passenger count for that route?",
+        "output": "{\"Which airline operates the busiest international route from Jeju International Airport, and what is the passenger count for that route?\": [\"1. Find the busiest international route from Jeju International Airport.\", \"2. Identify the carriers for [1].\", \"3. Extract the passenger count for [1].\"], \"1. Find the busiest international route from Jeju International Airport.\": \"Filter([1], 'Rank == 1')\", \"2. Identify the carriers for [1].\": \"Relate([1], 'Carriers')\", \"3. Extract the passenger count for [1].\": \"Relate([1], 'Passengers')\"}"
+      },
+      {
+        "input": "What is the ICAO code for the airport serving Akureyri in Iceland, and what is the airport's name?",
+        "output": "{\"What is the ICAO code for the airport serving Akureyri in Iceland, and what is the airport's name?\": [\"1. Find the row for Akureyri.\", \"2. Extract the ICAO code from [1].\", \"3. Extract the airport name from [1].\"], \"1. Find the row for Akureyri.\": \"Filter([1], 'Location served == Akureyri')\", \"2. Extract the ICAO code from [1].\": \"Relate([1], 'ICAO')\", \"3. Extract the airport name from [1].\": \"Relate([1], 'Airport name')\"}"
+      },
+      {
+        "input": "Which port in the United States is located in Puerto Rico and has an external link?",
+        "output": "{\"Which port in the United States is located in Puerto Rico and has an external link?\": [\"1. Find ports in Puerto Rico.\", \"2. Filter those with an external link.\"], \"1. Find ports in Puerto Rico.\": \"Filter([1], 'Country , Province or State == PR')\", \"2. Filter those with an external link.\": \"Filter([1], 'External Link != \\\"\\\"')\"}"
+      },
+      {
+        "input": "What is the wheel arrangement of the BR Standard Class 7 locomotive, and how many were in class?",
+        "output": "{\"What is the wheel arrangement of the BR Standard Class 7 locomotive, and how many were in class?\": [\"1. Find the row for BR Standard Class 7.\", \"2. Extract the wheel arrangement from [1].\", \"3. Extract the number in class from [1].\"], \"1. Find the row for BR Standard Class 7.\": \"Filter([1], 'Class == BR Standard Class 7')\", \"2. Extract the wheel arrangement from [1].\": \"Relate([1], 'Wheel arr')\", \"3. Extract the number in class from [1].\": \"Relate([1], 'No . in class')\"}"
+      },
+      {
+        "input": "Which tram system in France opened in 2011 and has 25 stations?",
+        "output": "{\"Which tram system in France opened in 2011 and has 25 stations?\": [\"1. Find the tram system that opened in 2011.\", \"2. Check if it has 25 stations.\"], \"1. Find the tram system that opened in 2011.\": \"Filter([1], 'Year opened == 2011')\", \"2. Check if it has 25 stations.\": \"Filter([1], 'Stations == 25')\"}"
+      },
+      {
+        "input": "What is the name of the airport in Queensland, Australia with IATA code ABG, and what is its ICAO code?",
+        "output": "{\"What is the name of the airport in Queensland, Australia with IATA code ABG, and what is its ICAO code?\": [\"1. Find the airport with IATA code ABG.\", \"2. Extract the airport name from [1].\", \"3. Extract the ICAO code from [1].\"], \"1. Find the airport with IATA code ABG.\": \"Filter([1], 'IATA == ABG')\", \"2. Extract the airport name from [1].\": \"Relate([1], 'Airport name')\", \"3. Extract the ICAO code from [1].\": \"Relate([1], 'ICAO')\"}"
+      }
+    ],
+    "source_selection": [
+      {
+        "input": "Which airport in the Seychelles has the ICAO code FSAL?",
+        "output": "Table"
+      },
+      {
+        "input": "What is the aircraft movements count for Toronto Pearson International Airport in 2017?",
+        "output": "Table"
+      },
+      {
+        "input": "Which county route in Chenango County has a length of 15.97 miles?",
+        "output": "Table"
+      },
+      {
+        "input": "What is the first sentence of the Wikipedia article about Agat, Guam?",
+        "output": "Text"
+      },
+      {
+        "input": "What is the first sentence of the Wikipedia article about Akureyri Airport?",
+        "output": "Text"
+      },
+      {
+        "input": "What is the first sentence of the Wikipedia article about the airport with ICAO code FSAL in the Seychelles?",
+        "output": "Table, Text"
+      },
+      {
+        "input": "What is the first sentence of the Wikipedia article about the airport that serves the city of Akureyri in Iceland?",
+        "output": "Table, Text"
+      },
+      {
+        "input": "What is the first sentence of the Wikipedia article about the airport with IATA code ABG in Australia?",
+        "output": "Table, Text"
+      }
+    ],
+    "direct_answer": [
+      {
+        "input": "Which airport in Seychelles has the ICAO code FSAL?",
+        "output": "So the answer is: (1) Paraphrase Answer: The airport with ICAO code FSAL is Alphonse Airport, serving Alphonse Island in the Seychelles.; (2) Answer List: [\"Alphonse Airport\"]"
+      },
+      {
+        "input": "What is the aircraft movements count for Vancouver International Airport in 2017?",
+        "output": "So the answer is: (1) Paraphrase Answer: Vancouver International Airport had 333,861 aircraft movements in 2017.; (2) Answer List: [\"333,861\"]"
+      },
+      {
+        "input": "Which county route in Chenango County, New York, has a length of 15.97 miles?",
+        "output": "So the answer is: (1) Paraphrase Answer: County Route 2 has a length of 15.97 miles.; (2) Answer List: [\"CR 2\"]"
+      },
+      {
+        "input": "What is the IATA code for Akureyri Airport?",
+        "output": "So the answer is: (1) Paraphrase Answer: The IATA code for Akureyri Airport is AEY.; (2) Answer List: [\"AEY\"]"
+      },
+      {
+        "input": "Which airline operates the route from Jeju to Shanghai-Pudong?",
+        "output": "So the answer is: (1) Paraphrase Answer: The route from Jeju to Shanghai-Pudong is operated by China Eastern Airlines, China Southern Airlines, Jin Air, Juneyao Airlines, and Spring Airlines.; (2) Answer List: [\"China Eastern Airlines\", \"China Southern Airlines\", \"Jin Air\", \"Juneyao Airlines\", \"Spring Airlines\"]"
+      },
+      {
+        "input": "What is the type of the Angers tramway?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Angers tramway is a tram system.; (2) Answer List: [\"Tram\"]"
+      },
+      {
+        "input": "Which airport in Australia has the ICAO code YABI?",
+        "output": "So the answer is: (1) Paraphrase Answer: The airport with ICAO code YABI is Abingdon Downs Airport, serving Abingdon in Queensland.; (2) Answer List: [\"Abingdon Downs Airport\"]"
+      },
+      {
+        "input": "What is the wheel arrangement of the ex-LMS Stanier Class 5 4-6-0 locomotive?",
+        "output": "So the answer is: (1) Paraphrase Answer: The ex-LMS Stanier Class 5 4-6-0 locomotive has a 4-6-0 wheel arrangement.; (2) Answer List: [\"4-6-0\"]"
+      }
+    ],
+    "direct_rag": [
+      {
+        "input": "Supporting knowledge: Table: List of ports in the United States, section Non-continental islands. Columns: Port, Country, Province or State, External Link. Rows: San Juan, PR; Marina Puerto Chico, Fajardo, PR; Port of Ponce, PR; Christiansted, St Croix, Virgin Islands Port Authority, VI; Hilo, HI. Document: Christiansted, U.S. Virgin Islands is a town on St. Croix. Question: Which port in the table is located in the U.S. Virgin Islands and is associated with the Virgin Islands Port Authority?",
+        "output": "So the answer is: (1) Paraphrase Answer: The port in the U.S. Virgin Islands associated with the Virgin Islands Port Authority is Christiansted, St Croix, Virgin Islands Port Authority. (2) Answer List: [\"Christiansted, St Croix, Virgin Islands Port Authority\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: List of airports in Seychelles. Columns: Island, ICAO, Airport name. Rows: Alphonse Island, FSAL, Alphonse Airport; Assumption Island, FSAS, Assumption Island Airport; Astove Island, FSSA, Astove Island Airport; Bird Island, FSSB, Bird Island Airport; Coëtivy Island, FSSC, Coëtivy Airport. Document: Assumption Island is a small island in the Outer Islands of Seychelles north of Madagascar. Question: What is the ICAO code for the airport serving Assumption Island?",
+        "output": "So the answer is: (1) Paraphrase Answer: The ICAO code for the airport serving Assumption Island is FSAS. (2) Answer List: [\"FSAS\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: List of the busiest airports in Canada, 2017. Columns: Rank, Airport, Serves, Aircraft movements, Rank change, Annual change. Rows: 1, Toronto Pearson International Airport, Greater Toronto Area, 467,103, , 1.8%; 2, Vancouver International Airport, Metro Vancouver, 333,861, , 2.4%; 3, Montréal-Pierre Elliott Trudeau International Airport, Greater Montreal, 235,099, 1, 3.8%; 4, Calgary International Airport, Calgary, 233,017, 1, 0.6%; 5, Boundary Bay Airport, Greater Vancouver, 175,296, , 1.8%. Document: Chicoutimi/Saint-Honoré Aerodrome is located in Quebec, Canada. Question: Which airport in the table has the highest number of aircraft movements?",
+        "output": "So the answer is: (1) Paraphrase Answer: The airport with the highest number of aircraft movements is Toronto Pearson International Airport. (2) Answer List: [\"Toronto Pearson International Airport\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: List of airports in Iceland. Columns: Location served, ICAO, IATA, Airport name. Rows: Akureyri, BIAR, AEY, Akureyri Airport; Bakki, BIBA, , Bakki Airport; Bíldudalur, BIBD, BIU, Bíldudalur Airport; Blönduós, BIBL, BLO, Blönduós Airport; Breiðdalsvík, BIBV, BXV, Breiðdalsvík Airport. Document: Akureyri is a town in northern Iceland. Question: Which airport in the table has the IATA code AEY?",
+        "output": "So the answer is: (1) Paraphrase Answer: The airport with IATA code AEY is Akureyri Airport. (2) Answer List: [\"Akureyri Airport\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: List of county routes in Chenango County, New York, Routes 1–25. Columns: Route, Length (mi), Length (km), From, Via, To. Rows: CR 1, 1.79, 2.88, Broome County line (becomes CR 140), Cloverdale Road in Greene, NY 12; CR 2, 15.97, 25.70, NY 12 in Greene, Genegantslet and Ridge roads, Cortland County line in German (becomes CR 164); CR 3, 10.25, 16.50, NY 41 in Smithville, East Smithville, Bottle Hill, and Tyner roads, NY 12 in Oxford; CR 3A, 4.27, 6.87, NY 12 in Greene, Harbor Road, CR 3 in Smithville; CR 4, 6.04, 9.72, NY 12 in Oxford, Georgetown Road, CR 10 / CR 10A / CR 19 in Preston. Document: Broome County is a county in the U.S. state of New York. Question: Which county route in the table has the shortest length in miles?",
+        "output": "So the answer is: (1) Paraphrase Answer: The county route with the shortest length in miles is CR 1. (2) Answer List: [\"CR 1\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: Sacred Sites and Pilgrimage Routes in the Kii Mountain Range, List of sites. Columns: Area, Cultural asset, Type, Location. Rows: Yoshino and Ōmine, Mount Yoshino, nature Mountain, nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken; Yoshino and Ōmine, Yoshino Mikumari Shrine, shrine Shinto shrine, nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken; Yoshino and Ōmine, Kimpu Shrine, shrine Shinto shrine, nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken; Yoshino and Ōmine, Kimpusen-ji, temple shugendo buddhist Shugendō / Buddhist temple, nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken; Yoshino and Ōmine, Yoshimizu Shrine, shrine Shinto shrine, nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken. Document: Buddhist temples in Japan are numerous and important. Question: Which cultural asset in the table is a Shugendō / Buddhist temple?",
+        "output": "So the answer is: (1) Paraphrase Answer: The cultural asset that is a Shugendō / Buddhist temple is Kimpusen-ji. (2) Answer List: [\"Kimpusen-ji\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: Yeti Airlines, Destinations. Columns: Destination, Airport, Notes. Rows: Kathmandu, Tribhuvan International Airport, Hub; Bajhang, Bajhang Airport, Terminated; Bajura, Bajura Airport, Terminated; Bhadrapur, Bhadrapur Airport, ; Bhairahawa, Gautam Buddha Airport, . Document: Bajhang Airport is an airport located in Jaya Prithvi Municipality serving the district of Bajhang. Question: Which destination in the table has the note 'Terminated' and is served by Bajhang Airport?",
+        "output": "So the answer is: (1) Paraphrase Answer: The destination with note 'Terminated' and served by Bajhang Airport is Bajhang. (2) Answer List: [\"Bajhang\"]"
+      },
+      {
+        "input": "Supporting knowledge: Table: Rapid transit in France, Trams and light rail. Columns: Location, Relevant Wikipedia article, Year opened, Stations, Total route length, Type. Rows: Angers, Angers tramway, 2011, 25, 12.3 km (7.6 mi), Tram; Bordeaux, Bordeaux tramway, 2003, 89, 43.9 km (27.3 mi), Tram; Brest, Brest Tramway, 2012, 28, 14.3 km (8.9 mi), Tram; Caen, Caen Tram, 2002, 34, 15.7 km (9.8 mi), TVR; Clermont-Ferrand, Clermont-Ferrand Tramway, 2006, 31, 14.2 km (8.8 mi), Translohr. Document: Angers is a city in western France. Question: Which tram system in the table has the most stations?",
+        "output": "So the answer is: (1) Paraphrase Answer: The tram system with the most stations is Bordeaux tramway. (2) Answer List: [\"Bordeaux tramway\"]"
+      }
+    ],
+    "search": [
+      {
+        "input": "Retrieved Table: List of ports in the United States | Non-continental islands | Port | Country, Province or State | External Link | Sample rows: San Juan | PR | ; Marina Puerto Chico, Fajardo | PR | ; Port of Ponce | PR | ; Christiansted, St Croix, Virgin Islands Port Authority | VI | [1] ; Hilo | HI | [2] . Question: Which port in the table is located in the U.S. Virgin Islands?",
+        "output": "So the answer is: (1) Paraphrase Answer: The port located in the U.S. Virgin Islands is Christiansted, St Croix, Virgin Islands Port Authority. (2) Answer List: [\"Christiansted, St Croix, Virgin Islands Port Authority\"]"
+      },
+      {
+        "input": "Retrieved Table: List of airports in Seychelles | Airports | Island | ICAO | Airport name | Sample rows: Alphonse Island | FSAL | Alphonse Airport ; Assumption Island | FSAS | Assumption Island Airport ; Astove Island | FSSA | Astove Island Airport ; Bird Island | FSSB | Bird Island Airport ; Coëtivy Island | FSSC | Coëtivy Airport . Question: What is the ICAO code for the airport on Bird Island?",
+        "output": "So the answer is: (1) Paraphrase Answer: The ICAO code for the airport on Bird Island is FSSB. (2) Answer List: [\"FSSB\"]"
+      },
+      {
+        "input": "Retrieved Table: List of the busiest airports in Canada | 2017 -- Canada 's 20 busiest airports by aircraft movements | Rank | Airport | Serves | Aircraft movements | Rank change | Annual change | Sample rows: 1 | Toronto Pearson International Airport | Greater Toronto Area | 467,103 | | 1.8% ; 2 | Vancouver International Airport | Metro Vancouver | 333,861 | | 2.4% ; 3 | Montréal-Pierre Elliott Trudeau International Airport | Greater Montreal | 235,099 | 1 | 3.8% ; 4 | Calgary International Airport | Calgary | 233,017 | 1 | 0.6% ; 5 | Boundary Bay Airport | Greater Vancouver | 175,296 | | 1.8% . Question: Which airport serves Calgary?",
+        "output": "So the answer is: (1) Paraphrase Answer: The airport that serves Calgary is Calgary International Airport. (2) Answer List: [\"Calgary International Airport\"]"
+      },
+      {
+        "input": "Retrieved Table: List of airports in Iceland | Airports | Location served | ICAO | IATA | Airport name | Sample rows: Akureyri | BIAR | AEY | Akureyri Airport ; Bakki | BIBA | | Bakki Airport ; Bíldudalur | BIBD | BIU | Bíldudalur Airport ; Blönduós | BIBL | BLO | Blönduós Airport ; Breiðdalsvík | BIBV | BXV | Breiðdalsvík Airport . Question: What is the IATA code for Blönduós Airport?",
+        "output": "So the answer is: (1) Paraphrase Answer: The IATA code for Blönduós Airport is BLO. (2) Answer List: [\"BLO\"]"
+      },
+      {
+        "input": "Retrieved Table: List of county routes in Chenango County, New York | Routes 1–25 | Route | Length (mi) | Length (km) | From | Via | To | Sample rows: CR 1 | 1.79 | 2.88 | Broome County line (becomes CR 140) | Cloverdale Road in Greene | NY 12 ; CR 2 | 15.97 | 25.70 | NY 12 in Greene | Genegantslet and Ridge roads | Cortland County line in German (becomes CR 164) ; CR 3 | 10.25 | 16.50 | NY 41 in Smithville | East Smithville, Bottle Hill, and Tyner roads | NY 12 in Oxford ; CR 3A | 4.27 | 6.87 | NY 12 in Greene | Harbor Road | CR 3 in Smithville ; CR 4 | 6.04 | 9.72 | NY 12 in Oxford | Georgetown Road | CR 10 / CR 10A / CR 19 in Preston . Question: Which county route has the longest length in miles?",
+        "output": "So the answer is: (1) Paraphrase Answer: The county route with the longest length in miles is CR 2. (2) Answer List: [\"CR 2\"]"
+      },
+      {
+        "input": "Retrieved Table: Sacred Sites and Pilgrimage Routes in the Kii Mountain Range | List of sites | Area | Cultural asset | Type | Location | Sample rows: Yoshino and Ōmine | Mount Yoshino (吉野山, Yoshino-yama) | nature Mountain | nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken ; Yoshino and Ōmine | Yoshino Mikumari Shrine (吉野水分神社, Yoshino-mikumari-jinja) | shrine Shinto shrine | nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken ; Yoshino and Ōmine | Kimpu Shrine (金峯神社, Kimpu-jinja) | shrine Shinto shrine | nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken ; Yoshino and Ōmine | Kimpusen-ji (金峯山寺, Kimpusen-ji) | temple shugendo buddhist Shugendō / Buddhist temple | nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken ; Yoshino and Ōmine | Yoshimizu Shrine (吉水神社, Yoshimizu-jinja) | shrine Shinto shrine | nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken . Question: What is the type of Kimpusen-ji?",
+        "output": "So the answer is: (1) Paraphrase Answer: The type of Kimpusen-ji is temple shugendo buddhist Shugendō / Buddhist temple. (2) Answer List: [\"temple shugendo buddhist Shugendō / Buddhist temple\"]"
+      },
+      {
+        "input": "Retrieved Table: Yeti Airlines | Destinations | Destination | Airport | Notes | Sample rows: Kathmandu | Tribhuvan International Airport | Hub ; Bajhang | Bajhang Airport | Terminated ; Bajura | Bajura Airport | Terminated ; Bhadrapur | Bhadrapur Airport | ; Bhairahawa | Gautam Buddha Airport | . Question: Which destination is a hub for Yeti Airlines?",
+        "output": "So the answer is: (1) Paraphrase Answer: The destination that is a hub for Yeti Airlines is Kathmandu. (2) Answer List: [\"Kathmandu\"]"
+      },
+      {
+        "input": "Retrieved Table: Rapid transit in France | Trams and light rail -- List of trams and light rail systems | Location | Relevant Wikipedia article | Year opened | Stations | Total route length | Type | Sample rows: Angers | Angers tramway | 2011 | 25 | 12.3 km (7.6 mi) | Tram ; Bordeaux | Bordeaux tramway | 2003 | 89 | 43.9 km (27.3 mi) | Tram ; Brest | Brest Tramway | 2012 | 28 | 14.3 km (8.9 mi) | Tram ; Caen | Caen Tram | 2002 | 34 | 15.7 km (9.8 mi) | TVR ; Clermont-Ferrand | Clermont-Ferrand Tramway [fr] | 2006 | 31 | 14.2 km (8.8 mi) | Translohr . Question: Which location has the tram system with the most stations?",
+        "output": "So the answer is: (1) Paraphrase Answer: The location with the tram system with the most stations is Bordeaux. (2) Answer List: [\"Bordeaux\"]"
+      }
+    ],
+    "relate": [
+      {
+        "input": "Evidence: Table 'List of ports in the United States' has rows: San Juan, PR; Marina Puerto Chico, Fajardo, PR; Port of Ponce, PR; Christiansted, St Croix, Virgin Islands Port Authority, VI; Hilo, HI. Question: What is the country, province or state for the port of San Juan?",
+        "output": "So the answer is: (1) Paraphrase Answer: The country, province or state for the port of San Juan is PR. (2) Answer List: [\"PR\"]"
+      },
+      {
+        "input": "Evidence: Table 'List of airports in Seychelles' has rows: Alphonse Island, FSAL, Alphonse Airport; Assumption Island, FSAS, Assumption Island Airport; Astove Island, FSSA, Astove Island Airport; Bird Island, FSSB, Bird Island Airport; Coëtivy Island, FSSC, Coëtivy Airport. Question: What is the ICAO code for Alphonse Airport?",
+        "output": "So the answer is: (1) Paraphrase Answer: The ICAO code for Alphonse Airport is FSAL. (2) Answer List: [\"FSAL\"]"
+      },
+      {
+        "input": "Evidence: Table 'List of the busiest airports in Canada' has rows: Rank 1, Toronto Pearson International Airport, Greater Toronto Area, 467,103; Rank 2, Vancouver International Airport, Metro Vancouver, 333,861; Rank 3, Montréal-Pierre Elliott Trudeau International Airport, Greater Montreal, 235,099; Rank 4, Calgary International Airport, Calgary, 233,017; Rank 5, Boundary Bay Airport, Greater Vancouver, 175,296. Question: What is the rank of Calgary International Airport?",
+        "output": "So the answer is: (1) Paraphrase Answer: The rank of Calgary International Airport is 4. (2) Answer List: [\"4\"]"
+      },
+      {
+        "input": "Evidence: Table 'List of airports in Iceland' has rows: Akureyri, BIAR, AEY, Akureyri Airport; Bakki, BIBA, , Bakki Airport; Bíldudalur, BIBD, BIU, Bíldudalur Airport; Blönduós, BIBL, BLO, Blönduós Airport; Breiðdalsvík, BIBV, BXV, Breiðdalsvík Airport. Question: What is the IATA code for Akureyri Airport?",
+        "output": "So the answer is: (1) Paraphrase Answer: The IATA code for Akureyri Airport is AEY. (2) Answer List: [\"AEY\"]"
+      },
+      {
+        "input": "Evidence: Table 'List of county routes in Chenango County, New York' has rows: CR 1, 1.79, 2.88, Broome County line (becomes CR 140), Cloverdale Road in Greene, NY 12; CR 2, 15.97, 25.70, NY 12 in Greene, Genegantslet and Ridge roads, Cortland County line in German (becomes CR 164); CR 3, 10.25, 16.50, NY 41 in Smithville, East Smithville, Bottle Hill, and Tyner roads, NY 12 in Oxford; CR 3A, 4.27, 6.87, NY 12 in Greene, Harbor Road, CR 3 in Smithville; CR 4, 6.04, 9.72, NY 12 in Oxford, Georgetown Road, CR 10 / CR 10A / CR 19 in Preston. Question: What is the length in miles of CR 3?",
+        "output": "So the answer is: (1) Paraphrase Answer: The length in miles of CR 3 is 10.25. (2) Answer List: [\"10.25\"]"
+      },
+      {
+        "input": "Evidence: Table 'Sacred Sites and Pilgrimage Routes in the Kii Mountain Range' has rows: Yoshino and Ōmine, Mount Yoshino, nature Mountain, nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken; Yoshino and Ōmine, Yoshino Mikumari Shrine, shrine Shinto shrine, nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken; Yoshino and Ōmine, Kimpu Shrine, shrine Shinto shrine, nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken; Yoshino and Ōmine, Kimpusen-ji, temple shugendo buddhist Shugendō / Buddhist temple, nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken; Yoshino and Ōmine, Yoshimizu Shrine, shrine Shinto shrine, nara yoshino yoshino Yoshino-chō, Yoshino-gun, Nara-ken. Question: What is the type of Yoshino Mikumari Shrine?",
+        "output": "So the answer is: (1) Paraphrase Answer: The type of Yoshino Mikumari Shrine is shrine Shinto shrine. (2) Answer List: [\"shrine Shinto shrine\"]"
+      },
+      {
+        "input": "Evidence: Table 'Yeti Airlines' has rows: Kathmandu, Tribhuvan International Airport, Hub; Bajhang, Bajhang Airport, Terminated; Bajura, Bajura Airport, Terminated; Bhadrapur, Bhadrapur Airport, ; Bhairahawa, Gautam Buddha Airport, . Question: What is the airport for Kathmandu?",
+        "output": "So the answer is: (1) Paraphrase Answer: The airport for Kathmandu is Tribhuvan International Airport. (2) Answer List: [\"Tribhuvan International Airport\"]"
+      },
+      {
+        "input": "Evidence: Table 'Rapid transit in France' has rows: Angers, Angers tramway, 2011, 25, 12.3 km (7.6 mi), Tram; Bordeaux, Bordeaux tramway, 2003, 89, 43.9 km (27.3 mi), Tram; Brest, Brest Tramway, 2012, 28, 14.3 km (8.9 mi), Tram; Caen, Caen Tram, 2002, 34, 15.7 km (9.8 mi), TVR; Clermont-Ferrand, Clermont-Ferrand Tramway [fr], 2006, 31, 14.2 km (8.8 mi), Translohr. Question: What is the year opened for the Bordeaux tramway?",
+        "output": "So the answer is: (1) Paraphrase Answer: The year opened for the Bordeaux tramway is 2003. (2) Answer List: [\"2003\"]"
+      }
+    ],
+    "filter": [
+      {
+        "input": "Candidates: San Juan, Marina Puerto Chico, Port of Ponce, Christiansted, Hilo. Condition: The port is located in Puerto Rico. Question: Which of these ports are in Puerto Rico?",
+        "output": "So the answer is: (1) Paraphrase Answer: The ports in Puerto Rico are San Juan, Marina Puerto Chico, and Port of Ponce. (2) Answer List: [\"San Juan\", \"Marina Puerto Chico\", \"Port of Ponce\"]"
+      },
+      {
+        "input": "Candidates: Alphonse Airport, Assumption Island Airport, Astove Island Airport, Bird Island Airport, Coëtivy Airport. Condition: The airport's ICAO code starts with 'FSAS'. Question: Which airport has the ICAO code FSAS?",
+        "output": "So the answer is: (1) Paraphrase Answer: The airport with ICAO code FSAS is Assumption Island Airport. (2) Answer List: [\"Assumption Island Airport\"]"
+      },
+      {
+        "input": "Candidates: Toronto Pearson International Airport, Vancouver International Airport, Montréal-Pierre Elliott Trudeau International Airport, Calgary International Airport, Boundary Bay Airport. Condition: The airport serves the Greater Toronto Area. Question: Which airport serves the Greater Toronto Area?",
+        "output": "So the answer is: (1) Paraphrase Answer: The airport serving the Greater Toronto Area is Toronto Pearson International Airport. (2) Answer List: [\"Toronto Pearson International Airport\"]"
+      },
+      {
+        "input": "Candidates: Akureyri Airport, Bakki Airport, Bíldudalur Airport, Blönduós Airport, Breiðdalsvík Airport. Condition: The airport has an IATA code. Question: Which airports have an IATA code?",
+        "output": "So the answer is: (1) Paraphrase Answer: The airports with an IATA code are Akureyri Airport, Bíldudalur Airport, Blönduós Airport, and Breiðdalsvík Airport. (2) Answer List: [\"Akureyri Airport\", \"Bíldudalur Airport\", \"Blönduós Airport\", \"Breiðdalsvík Airport\"]"
+      },
+      {
+        "input": "Candidates: CR 1, CR 2, CR 3, CR 3A, CR 4. Condition: The route's length in miles is greater than 10. Question: Which county routes are longer than 10 miles?",
+        "output": "So the answer is: (1) Paraphrase Answer: The county routes longer than 10 miles are CR 2 and CR 3. (2) Answer List: [\"CR 2\", \"CR 3\"]"
+      },
+      {
+        "input": "Candidates: Mount Yoshino, Yoshino Mikumari Shrine, Kimpu Shrine, Kimpusen-ji, Yoshimizu Shrine. Condition: The cultural asset is a Shinto shrine. Question: Which cultural assets are Shinto shrines?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Shinto shrines are Yoshino Mikumari Shrine, Kimpu Shrine, and Yoshimizu Shrine. (2) Answer List: [\"Yoshino Mikumari Shrine\", \"Kimpu Shrine\", \"Yoshimizu Shrine\"]"
+      },
+      {
+        "input": "Candidates: Kathmandu, Bajhang, Bajura, Bhadrapur, Bhairahawa. Condition: The destination is a hub for Yeti Airlines. Question: Which destination is a hub?",
+        "output": "So the answer is: (1) Paraphrase Answer: The hub destination is Kathmandu. (2) Answer List: [\"Kathmandu\"]"
+      },
+      {
+        "input": "Candidates: Angers, Bordeaux, Brest, Caen, Clermont-Ferrand. Condition: The tram system opened in 2002. Question: Which city's tram system opened in 2002?",
+        "output": "So the answer is: (1) Paraphrase Answer: The city whose tram system opened in 2002 is Caen. (2) Answer List: [\"Caen\"]"
+      }
+    ],
+    "answer_from_child_qa": [
+      {
+        "input": "Child QA 1: Q: Which port in the United States territory of Guam is a deep-water port on the western side? A: Apra Harbor. Child QA 2: Q: What is the name of the village in Guam that is a village in the United States territory? A: Agat. Final Question: Which port is located in the village of Agat?",
+        "output": "So the answer is: (1) Paraphrase Answer: Apra Harbor is the deep-water port on the western side of Guam, and it is located in the village of Agat. (2) Answer List: [\"Apra Harbor\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which airport in Seychelles serves Alphonse Island? A: Alphonse Airport. Child QA 2: Q: What is the ICAO code for Alphonse Airport? A: FSAL. Final Question: What is the ICAO code for the airport serving Alphonse Island?",
+        "output": "So the answer is: (1) Paraphrase Answer: The airport serving Alphonse Island is Alphonse Airport, and its ICAO code is FSAL. (2) Answer List: [\"FSAL\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which airport in Canada had the highest number of aircraft movements in 2017? A: Toronto Pearson International Airport. Child QA 2: Q: What is the annual change for Toronto Pearson International Airport? A: 1.8%. Final Question: What was the annual change for the busiest airport in Canada in 2017?",
+        "output": "So the answer is: (1) Paraphrase Answer: The busiest airport in Canada in 2017 was Toronto Pearson International Airport, and its annual change was 1.8%. (2) Answer List: [\"1.8%\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which airport in Iceland is located in the town of Akureyri? A: Akureyri Airport. Child QA 2: Q: What is the IATA code for Akureyri Airport? A: AEY. Final Question: What is the IATA code for the airport serving Akureyri?",
+        "output": "So the answer is: (1) Paraphrase Answer: The airport serving Akureyri is Akureyri Airport, and its IATA code is AEY. (2) Answer List: [\"AEY\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which county route in Chenango County, New York, runs from the Broome County line to NY 12? A: CR 1. Child QA 2: Q: What is the length of CR 1 in miles? A: 1.79. Final Question: What is the length in miles of the county route that starts at the Broome County line?",
+        "output": "So the answer is: (1) Paraphrase Answer: The county route that starts at the Broome County line is CR 1, and its length is 1.79 miles. (2) Answer List: [\"1.79\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which cultural asset in the Yoshino and Ōmine area is a mountain? A: Mount Yoshino. Child QA 2: Q: What is the location of Mount Yoshino? A: Yoshino-chō, Yoshino-gun, Nara-ken. Final Question: In which location is Mount Yoshino?",
+        "output": "So the answer is: (1) Paraphrase Answer: Mount Yoshino is located in Yoshino-chō, Yoshino-gun, Nara-ken. (2) Answer List: [\"Yoshino-chō, Yoshino-gun, Nara-ken\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which destination is the hub for Yeti Airlines? A: Kathmandu. Child QA 2: Q: What is the airport serving Kathmandu? A: Tribhuvan International Airport. Final Question: What is the hub airport for Yeti Airlines?",
+        "output": "So the answer is: (1) Paraphrase Answer: The hub for Yeti Airlines is Kathmandu, and its airport is Tribhuvan International Airport. (2) Answer List: [\"Tribhuvan International Airport\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which tram system in France opened in 2011? A: Angers tramway. Child QA 2: Q: How many stations does the Angers tramway have? A: 25. Final Question: How many stations does the tram system that opened in 2011 have?",
+        "output": "So the answer is: (1) Paraphrase Answer: The tram system that opened in 2011 is the Angers tramway, and it has 25 stations. (2) Answer List: [\"25\"]"
+      }
+    ]
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_policy": "non_gold_tables_and_exclusive_docs_only"
+  }
+}

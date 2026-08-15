@@ -1,0 +1,20 @@
+{
+  "f1": {
+    "metric": "f1",
+    "f1": 0.7073353965912142,
+    "exact_match": 0.6342182890855457,
+    "total": 339
+  },
+  "llm": {
+    "metric": "llm",
+    "model": "deepseek-chat",
+    "score": 0.4513274336283186,
+    "accuracy": 0.7256637168141593,
+    "hallucination": 0.2743362831858407,
+    "missing": 0.0,
+    "n_miss": 0,
+    "n_correct": 246,
+    "n_hallucination": 93,
+    "total": 339
+  }
+}

@@ -1,0 +1,100 @@
+{"index": 9, "question": "Who is the top goal scorer of the football club Borussia Dortmund?", "predicted": "Robert Lewandowski", "gold": ["Alfred Preissler"], "retrieval_counts": {"table": 2}}
+{"index": 6, "question": "Which is the book published on Carlos Kaiser?", "predicted": "Kaiser: The Greatest Footballer Never to Play Football", "gold": ["The book Kaiser: The Greatest Footballer Never to Play Football"], "retrieval_counts": {"doc": 2}}
+{"index": 0, "question": "which handedness did pele have?", "predicted": "Right-footed", "gold": ["left-handedness"], "retrieval_counts": {"doc": 2}}
+{"index": 16, "question": "the abbreviation of the soccer United States women's national soccer team?", "predicted": "USWNT", "gold": ["USWNT"], "retrieval_counts": {"doc": 1}}
+{"index": 13, "question": "The award received by the pele in 1997?", "predicted": "Knight Commander of the Order of the British Empire, Marca Leyenda", "gold": ["Knight Commander of the Order of the British Empire"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 18, "question": "What year was the Real Madrid Club de Fútbolf founded?", "predicted": "1902", "gold": ["1902"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 17, "question": "In which year was the Real Madrid Club de Fútbol founded?", "predicted": "1902", "gold": ["1902"], "retrieval_counts": {"kg": 1}}
+{"index": 5, "question": "What is place of birth of the Carlos Kaiser?", "predicted": "Rio Pardo", "gold": ["Rio Pardo"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 7, "question": "Who scored the most number of goals for the club Borussia Dortmund?", "predicted": "Alfred Preißler", "gold": ["Alfred Preissler"], "retrieval_counts": {"table": 2, "kg": 1}}
+{"index": 15, "question": "what is the abbreviation of the US soccer team?", "predicted": "USWNT", "gold": ["USWNT"], "retrieval_counts": {"doc": 2, "kg": 1}}
+{"index": 20, "question": "What is the parent company of Manchester United Limited", "predicted": "Manchester United Plc", "gold": ["Manchester United Plc"], "retrieval_counts": {"kg": 2}}
+{"index": 14, "question": "What is the name of the political party did Andrey Arshavin joined?", "predicted": "United Russia", "gold": ["United Russia"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 11, "question": "What is the name of Luís Figo's wife?", "predicted": "Helen Svedin", "gold": ["Helen Svedin"], "retrieval_counts": {"kg": 2}}
+{"index": 24, "question": "What was the name of the club when its started?", "predicted": "East Bengal Club", "gold": ["Newton Heath LYR Football Club"], "retrieval_counts": {"doc": 2}}
+{"index": 22, "question": "Who is the owner of Manchester United FC?", "predicted": "Glazer family", "gold": ["Manchester United Limited"], "retrieval_counts": {"kg": 2}}
+{"index": 19, "question": "Who owns Manchester United?", "predicted": "Joel Glazer, Bryan Glazer, Avram Glazer", "gold": ["Manchester United Limited"], "retrieval_counts": {"kg": 1}}
+{"index": 1, "question": "What is the award received by Andrés Iniesta?", "predicted": "Gold Medal of the Royal Order of Sports Merit", "gold": ["Gold Medal of the Royal Order of Sports Merit"], "retrieval_counts": {"kg": 2}}
+{"index": 2, "question": "What was the second football club Zlatko Dalić played for?", "predicted": "Hajduk Split", "gold": ["Hajduk Split"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 10, "question": "How much was Beckham's annual salary while he was at LA Galaxy?", "predicted": "$6.5 million", "gold": ["$6.5 million"], "retrieval_counts": {"doc": 1, "table": 1, "kg": 1}}
+{"index": 30, "question": "What is time zone of Camas, Seville?", "predicted": "Central European Time", "gold": ["UTC+01:00"], "retrieval_counts": {"doc": 1}}
+{"index": 23, "question": "What university did Zinedine Zidane study in?", "predicted": "None", "gold": ["University of Limoges"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 3, "question": "Which club did Robert Lewandowski played in 2009?", "predicted": "Lech Poznań", "gold": ["Lech Poznań"], "retrieval_counts": {"kg": 1}}
+{"index": 8, "question": "name of the football player who captains Borussia Dortmund currently?", "predicted": "Emre Can", "gold": ["Marco Reus"], "retrieval_counts": {"kg": 2}}
+{"index": 21, "question": "What is the religious affiliation of Joel Glazer?", "predicted": "Jewish", "gold": ["Judaism"], "retrieval_counts": {"kg": 1, "doc": 3}}
+{"index": 29, "question": "What is total population in 2018 of Camas, Seville?", "predicted": "27,000", "gold": ["27,463"], "retrieval_counts": {"table": 2}}
+{"index": 26, "question": "What is the award received in 2018 by Kylian Mbappé?", "predicted": "Knight of the Legion of Honour", "gold": ["Best Young Player Award"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 33, "question": "What is the name of the architect of Stadio Olimpico Grande Torino?", "predicted": "Brenno Del Giudice", "gold": ["Raffaello Fagnoni"], "retrieval_counts": {"doc": 2}}
+{"index": 25, "question": "How many social media followers for the team Soccer?", "predicted": "Not specified", "gold": ["149,918"], "retrieval_counts": {"doc": 3}}
+{"index": 32, "question": "Who sang the official song of the 2010 FIFA World Cup?", "predicted": "Shakira", "gold": ["Shakira"], "retrieval_counts": {"doc": 2}}
+{"index": 28, "question": "Which soccer club won the U.S. Open Cup title in 2019?", "predicted": "Atlanta United FC", "gold": ["Atlanta United FC"], "retrieval_counts": {"kg": 2}}
+{"index": 37, "question": "Who was Brooklyn Beckham's partner in 2019?", "predicted": "Hana Cross", "gold": ["Nicola Peltz"], "retrieval_counts": {"doc": 2}}
+{"index": 27, "question": "Where did Kylian Mbappé born?", "predicted": "Paris, France", "gold": ["19th arrondissement of Paris"], "retrieval_counts": {"kg": 2}}
+{"index": 42, "question": "What was the name of the first president of the FIFA organization?", "predicted": "Robert Guérin", "gold": ["Robert Guérin"], "retrieval_counts": {"doc": 2}}
+{"index": 35, "question": "Where was Luigi Ridolfi born?", "predicted": "Forlì", "gold": ["Forlì"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 40, "question": "What year did Limavady United F.C. form?", "predicted": "1884", "gold": ["1884"], "retrieval_counts": {"kg": 1}}
+{"index": 4, "question": "Against whom did Harry Kane score his first goal in 2020?", "predicted": "Czech Republic", "gold": ["Ukraine national association football team"], "retrieval_counts": {"doc": 1, "kg": 2, "table": 2}}
+{"index": 39, "question": "What soccer stadium is in Manchester?", "predicted": "Old Trafford", "gold": ["City of Manchester Stadium"], "retrieval_counts": {"kg": 1}}
+{"index": 48, "question": "Which club won the Regionalliga West in 2020?", "predicted": "Rot-Weiss Essen", "gold": ["SV Rödinghausen"], "retrieval_counts": {"table": 2}}
+{"index": 34, "question": "What's the name of Florence's soccer stadium?", "predicted": "Stadio Artemio Franchi", "gold": ["Stadio Artemio Franchi"], "retrieval_counts": {"kg": 2}}
+{"index": 41, "question": "What honour was bestowed upon Paolo Maldini?", "predicted": "Knight of the Order of Merit of the Italian Republic", "gold": ["Bravo Award"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 31, "question": "What is the award received by award receivedNuno Gomes?", "predicted": "Officer of the Order of Prince Henry", "gold": ["Officer of the Order of Prince Henry"], "retrieval_counts": {"kg": 2}}
+{"index": 36, "question": "What's the name of Forlì's soccer stadium?", "predicted": "Stadio Tullo Morgagni", "gold": ["Stadio Tullo Morgagni"], "retrieval_counts": {"kg": 2}}
+{"index": 12, "question": "Who scored the goal for Italy in the Euro 2020 final?", "predicted": "Leonardo Bonucci", "gold": ["Leonardo Bonucci"], "retrieval_counts": {"doc": 3, "kg": 2}}
+{"index": 44, "question": "In which year was Chelsea FC founded?", "predicted": "1905", "gold": ["1905"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 47, "question": "What is the founding year of Chelsea FC?", "predicted": "1905", "gold": ["1905"], "retrieval_counts": {"kg": 1}}
+{"index": 57, "question": "What are the set of rules called in soccer?", "predicted": "Laws of the Game", "gold": ["Laws of the Game"], "retrieval_counts": {"doc": 1}}
+{"index": 43, "question": "Who is the current preside of the CONCACAF league?", "predicted": "Victor Montagliani", "gold": ["Victor Montagliani"], "retrieval_counts": {"kg": 2}}
+{"index": 38, "question": "Against which opponent Bruno Fernandes scored his last international goal?", "predicted": "Luxembourg", "gold": ["Luxembourg"], "retrieval_counts": {"doc": 2, "table": 1}}
+{"index": 50, "question": "Where is the Charlotte Football Club stadium located?", "predicted": "Charlotte, North Carolina", "gold": ["Bank of America Stadium, Charlotte"], "retrieval_counts": {"kg": 2}}
+{"index": 45, "question": "Where in London is Chelsea FC based?", "predicted": "Stamford Bridge", "gold": ["Fulham"], "retrieval_counts": {"kg": 2}}
+{"index": 58, "question": "Where was Kylian Mbappé born?", "predicted": "Paris, France", "gold": ["19th arrondissement of Paris"], "retrieval_counts": {"doc": 2}}
+{"index": 52, "question": "What is N'Golo Kanté's religion?", "predicted": "Muslim", "gold": ["Islam"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 54, "question": "What is the pseudonym of the soccer player Raúl González?", "predicted": "El Siete", "gold": ["El que nunca hace nada"], "retrieval_counts": {"doc": 2}}
+{"index": 64, "question": "What is the native language of the player Mohamed Salah?", "predicted": "Arabic", "gold": ["Egyptian Arabic"], "retrieval_counts": {"doc": 2}}
+{"index": 51, "question": "Who was the owner of the Charlotte Football Club?", "predicted": "David Tepper", "gold": ["David Tepper"], "retrieval_counts": {"kg": 2}}
+{"index": 56, "question": "Who was the kit manufacturer of Chelsea Football Club from 1981 to 1983?", "predicted": "Le Coq Sportif", "gold": ["Le Coq Sportif"], "retrieval_counts": {"kg": 1}}
+{"index": 53, "question": "who is the captain of Brazil national football team?", "predicted": "Neymar", "gold": ["Thiago Silva"], "retrieval_counts": {"kg": 2}}
+{"index": 60, "question": "Which award did soccer player Kylian Mbappé get in the year 2017?", "predicted": "Golden Boy", "gold": ["Golden Boy"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 68, "question": "Which player did Zinedine Zidane headbutts in 2006 FIFA World Cup final?", "predicted": "Marco Materazzi", "gold": ["Marco Materazzi"], "retrieval_counts": {"doc": 2}}
+{"index": 49, "question": "What is the name of the team that was played against in which Rafael Pereira da Silva committed a foul and Fábio Pereira da Silva was booked?", "predicted": "Manchester United", "gold": ["Barnsley F.C."], "retrieval_counts": {"kg": 1, "table": 1, "doc": 1}}
+{"index": 70, "question": "From what famous location did the term \"soccer\" originate?", "predicted": "England", "gold": ["Oxford University"], "retrieval_counts": {"doc": 2}}
+{"index": 63, "question": "what are all the award received by kylian mbappe ?", "predicted": "Knight of the Legion of Honour, Golden Boy, Best Young Player Award", "gold": ["Knight of the Legion of Honour,Best Young Player Award,Golden Boy"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 71, "question": "which year founded of Manchester united F.C?", "predicted": "1878", "gold": ["1902"], "retrieval_counts": {"kg": 1}}
+{"index": 61, "question": "What league does the team participate in?", "predicted": "Not specified", "gold": ["Eliteserien"], "retrieval_counts": {"kg": 2}}
+{"index": 75, "question": "What is the Dialling code of Stuttgart?", "predicted": "0711", "gold": ["0711"], "retrieval_counts": {"doc": 1}}
+{"index": 65, "question": "Who is currently the head coach of the Spanish Olympic football team?", "predicted": "Luis de la Fuente", "gold": ["Luis de la Fuente"], "retrieval_counts": {"kg": 1}}
+{"index": 74, "question": "What is Christine Bleakley's occupation?", "predicted": "television presenter, broadcaster", "gold": ["television presenter"], "retrieval_counts": {"doc": 3}}
+{"index": 62, "question": "Which club was the first to win the title?", "predicted": "Unknown", "gold": ["Rosenborg BK"], "retrieval_counts": {"doc": 1, "table": 1, "kg": 2}}
+{"index": 69, "question": "Who was the player Zinedine Zidane headbutts in 2006 FIFA World Cup?", "predicted": "Marco Materazzi", "gold": ["Marco Materazzi"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 66, "question": "Who is the captain of Brazilian football team in 2021?", "predicted": "Dani Alves", "gold": ["Thiago Silva"], "retrieval_counts": {"kg": 2}}
+{"index": 67, "question": "Who is the current head coach of Chicago Fire?", "predicted": "Gregg Berhalter", "gold": ["Ezra Hendrickson"], "retrieval_counts": {"kg": 2}}
+{"index": 46, "question": "When did Chelsea FC when their first FIFA Club World Cup?", "predicted": "2021", "gold": ["2021 FIFA Club World Cup"], "retrieval_counts": {"doc": 2, "table": 3, "kg": 2}}
+{"index": 73, "question": "Where did he play college soccer?", "predicted": "California State University, Chico", "gold": ["University of Illinois Chicago"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 81, "question": "Who suggested increasing the number of teams in the 2026 FIFA World Cup?", "predicted": "Gianni Infantino", "gold": ["Michel Platini;Gianni Infantino"], "retrieval_counts": {"doc": 2}}
+{"index": 83, "question": "What is Mesut Özil's ethnic group?", "predicted": "Turkish", "gold": ["Turks in Germany"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 59, "question": "What is the name of the footballer who captained the club S.S. Lazio in 2000?", "predicted": "Alessandro Nesta", "gold": ["Alessandro Nesta"], "retrieval_counts": {"kg": 2}}
+{"index": 72, "question": "Who was the first person to serve as the team's captain?", "predicted": "The first person to serve as the team's captain was [Name].", "gold": ["Jay DeMerit"], "retrieval_counts": {"kg": 2}}
+{"index": 55, "question": "Which Football Association of Wales honor did Gareth Bale win multiple times?", "predicted": "Welsh Footballer of the Year", "gold": ["Welsh Footballer of the Year"], "retrieval_counts": {"doc": 3, "kg": 1}}
+{"index": 76, "question": "What county is it a part of?", "predicted": "India", "gold": ["Norfolk"], "retrieval_counts": {"doc": 1, "table": 1, "kg": 2}}
+{"index": 77, "question": "who is the president of Borussia Dortmund team?", "predicted": "Hans-Joachim Watzke", "gold": ["Reinhard Rauball"], "retrieval_counts": {"kg": 2}}
+{"index": 91, "question": "In what city was the world's first international football match played?", "predicted": "Glasgow", "gold": ["Glasgow"], "retrieval_counts": {"doc": 2}}
+{"index": 82, "question": "Which club did Mesut Özil playing now?", "predicted": "Fenerbahçe S.K.", "gold": ["Fenerbahçe S.K."], "retrieval_counts": {"kg": 2}}
+{"index": 87, "question": "What is the name of the team he initially played on?", "predicted": "Al Mokawloon Al Arab SC", "gold": ["Sporting de Gijón B"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 88, "question": "What is the name of their home stadium?", "predicted": "Not specified", "gold": ["Escuela de Fútbol de Mareo"], "retrieval_counts": {"kg": 1}}
+{"index": 79, "question": "who is the head coach of Al Hilal SFC team?", "predicted": "Leonardo Jardim", "gold": ["Leonardo Jardim"], "retrieval_counts": {"kg": 2}}
+{"index": 78, "question": "who is the Sleeve Sponsor of Borussia Dortmund in 2022?", "predicted": "Evonik Industries", "gold": ["Opel"], "retrieval_counts": {"kg": 2}}
+{"index": 94, "question": "What is the soccer club Manchester United F.C.'s theme music?", "predicted": "Glory Glory Man United", "gold": ["Glory Glory"], "retrieval_counts": {"doc": 2}}
+{"index": 80, "question": "name of Athletic Bilbao's head coach in 2021?", "predicted": "Marcelino García Toral", "gold": ["Patxi Salinas"], "retrieval_counts": {"kg": 1}}
+{"index": 84, "question": "For which club did Mesut Özil playing currently?", "predicted": "Fenerbahçe S.K.", "gold": ["Fenerbahçe S.K."], "retrieval_counts": {"kg": 1}}
+{"index": 96, "question": "Who was the Who was the head coach of the Chicago Fire Football Club?", "predicted": "Veljko Paunović", "gold": ["Ezra Hendrickson"], "retrieval_counts": {"kg": 1}}
+{"index": 86, "question": "What is the name of Oliver Kahn's brother?", "predicted": "Axel Kahn", "gold": ["Axel Kahn"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 93, "question": "At their premier game what team did FC Nantes face?", "predicted": "Olympique de Marseille", "gold": ["CA Paris-Charenton"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 90, "question": "What is the name of the head coach of the club Hellas Verona F.C.?", "predicted": "Igor Tudor", "gold": ["Ivan Jurić"], "retrieval_counts": {"kg": 2}}
+{"index": 85, "question": "Which award received in 2012 by Xavi?", "predicted": "Princess of Asturias Award for Sports", "gold": ["Princess of Asturias Award for Sports"], "retrieval_counts": {"kg": 2}}
+{"index": 89, "question": "Who was the architect of the stadium?", "predicted": "The architect of the stadium was [Architect's Name].", "gold": ["Miguel Díaz Negrete"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 95, "question": "How much money did Liverpool F.C. bought Mohamed Salah?", "predicted": "£36.9 million", "gold": ["£36.9 million"], "retrieval_counts": {"doc": 2, "kg": 1}}
+{"index": 97, "question": "Which team played in 2008 by Thomas Müller?", "predicted": "FC Bayern Munich", "gold": ["FC Bayern Munich II"], "retrieval_counts": {"kg": 1}}
+{"index": 92, "question": "Who was the first coach of San Jose Earthquakes?", "predicted": "Laurie Calloway", "gold": ["Laurie Calloway"], "retrieval_counts": {"kg": 2}}
+{"index": 99, "question": "What division does Paris Saint-Germain Féminine belong to?", "predicted": "Division 1 Féminine", "gold": ["Division 1 Féminine"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 98, "question": "who is the fitness coach of Argentina national football team ?", "predicted": "Lionel Scaloni", "gold": ["Luis Martín"], "retrieval_counts": {"kg": 2}}

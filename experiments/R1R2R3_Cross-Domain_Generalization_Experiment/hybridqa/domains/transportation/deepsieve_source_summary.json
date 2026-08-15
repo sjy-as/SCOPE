@@ -1,0 +1,37 @@
+{
+  "domain": "transportation",
+  "generated_from": "semantic_catalog/semantic_list_3sources.json",
+  "sources": {
+    "table": {
+      "summary": "The Table source provides structured, columnar data ideal for queries requiring exact values, rankings, dates, and numeric comparisons. It contains lists of entities such as airports, airlines, bus routes, bridges, cruise ships, locomotives, and transit stations, with attributes like names, codes, locations, passenger counts, lengths, and opening years. Use this source when the question asks for a specific entity's measurable attribute (e.g., 'What is the passenger count of X airport?') or when comparing multiple entities by a numeric field (e.g., 'Which bridge has the longest span?'). The table is fully visible to the execution engine, so it can directly filter, sort, and aggregate rows based on the complete question. It is best for queries that involve 'top', 'most', 'least', 'rank', 'year', 'length', or 'count'.",
+      "best_for": [
+        "Queries asking for rankings, maximum/minimum values, or numeric comparisons",
+        "Queries that require filtering by specific codes (IATA, ICAO), names, or locations",
+        "Queries about lists of entities with structured attributes (e.g., all airports in a province, all bus routes with a certain operator)"
+      ],
+      "avoid_when": [
+        "Queries asking for descriptive prose, historical context, or narrative explanations",
+        "Queries about entities that are only described in documents (e.g., administrative divisions, countries, towns, villages)",
+        "Queries requiring information not present in the table columns, such as detailed service history or cultural significance"
+      ]
+    },
+    "doc": {
+      "summary": "The Doc source provides rich, narrative descriptions of entities such as administrative divisions, countries, cities, towns, villages, provinces, districts, and various transportation-related concepts like airlines, airports, cruise ships, and national highways. Each document contains a title, full text, and structured fields (e.g., name, location, population, founding year) but is linked to a specific table via `linked_table_id`. When a query involves a table-bound entity, the Doc source is used to retrieve prose facts about that entity or a linked entity. Candidates are filtered by title and first sentence before full text is read, making it efficient for targeted lookups. Use this source when the question asks for descriptive attributes not in the table, such as 'What is the history of X?', 'What languages are spoken in Y?', or 'What is the capital of Z?'.",
+      "best_for": [
+        "Queries asking for descriptive facts, historical background, or narrative details",
+        "Queries about entities that are primarily described in prose (e.g., countries, cities, towns, provinces)",
+        "Queries that require linking a table entity to its associated document for additional context (e.g., 'What is the ethnic composition of the region where airport X is located?')"
+      ],
+      "avoid_when": [
+        "Queries that can be answered directly from structured table columns (e.g., 'What is the IATA code of airport X?')",
+        "Queries requiring numeric comparisons or rankings across multiple entities, which are better handled by tables",
+        "Queries about entities not linked to any table, as the Doc source only contains documents linked to tables"
+      ]
+    }
+  },
+  "routing_boundary": "Use the Table source to identify a specific entity or value from structured data (e.g., find the airport with the highest passenger count, or the bridge with a given name). Once the entity is identified, if the query asks for a prose fact about that entity or a linked entity (e.g., the history of that airport, the country where that bridge is located, or the operator of that cruise ship), switch to the Doc source. The Doc source is used to retrieve descriptive information from documents that are linked to the table via `linked_table_id`. Do not use Doc for queries that are purely numeric or list-based; do not use Table for queries that require narrative explanation or contextual details not present in the table columns.",
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat"
+  }
+}

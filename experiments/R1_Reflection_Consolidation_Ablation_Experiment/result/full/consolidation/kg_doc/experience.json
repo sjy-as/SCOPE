@@ -1,0 +1,169 @@
+{
+  "enabled": true,
+  "revision": 22,
+  "updated_at": 1786689578.3512208,
+  "source": "reflection_consolidation_llm",
+  "items": [
+    {
+      "stage": "routing",
+      "when": "The query asks for a venue where a player achieved a specific performance (e.g., scored points, set a record, made a shot) and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the venue) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks game-specific performance or venue attributes; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Records 947, 953, 957, 967, 969, 971, 974, 979, 990: doc found the venue, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a venue where a player was involved in an incident (e.g., altercation, brawl, ejection, fall) and the incident is not in KG",
+      "action": "Route the first sub-query (identifying the venue) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's schema does not cover narrative incidents like altercations, brawls, ejections, or falls; these are only in doc text. KG directly provides home venue assignments.",
+      "evidence": "Records 959, 963, 976, 980, 987: doc found the venue, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a venue where a player had a jersey retired or honored, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the venue) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks jersey retirement or honor attributes; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Records 939, 942, 952, 955, 966, 982, 988: doc found the venue, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a venue where a player made their debut, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the venue) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks debut event or venue attributes; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Records 941, 950, 973: doc found the venue, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a venue where a player participated in a competition (e.g., All-Star Game, Slam Dunk Contest, championship game) and the venue is not in KG",
+      "action": "Route the first sub-query (identifying the venue) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's schema lacks competition or event-venue relationships; doc contains event descriptions with venues. KG directly provides home venue assignments.",
+      "evidence": "Records 923, 944, 960, 961, 977, 991, 996: doc found the venue, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a venue where a coach led a team to a win, and the venue is not directly linked to the coach in KG",
+      "action": "Route the first sub-query (identifying the venue) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's coach schema lacks game-specific coaching events or venue attributes; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Record 970: doc found the venue, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a venue where a player played (without specific event details) and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the venue) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks venue attributes; doc contains narrative descriptions of players' careers and venues. KG directly provides home venue assignments.",
+      "evidence": "Records 949, 981: doc found the venue, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a venue where a player was involved in a specific event (e.g., free throws, three-point play, telecast) and the venue is not in KG",
+      "action": "Route the first sub-query (identifying the venue) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's schema lacks event-specific venue relationships; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Records 984, 989, 990: doc found the venue, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who played for a team at a specific venue during a time period, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks venue attributes; doc contains narrative descriptions of players' careers and venues. KG directly provides home venue assignments.",
+      "evidence": "Records 1149, 1150, 1151, 1152, 1153: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who scored a specific number of points at a venue, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks game-specific performance or venue attributes; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Records 1146, 1147, 1148, 1144, 1145: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who made a comeback from retirement at a venue, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks comeback or retirement event attributes; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Record 1133: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who shattered a backboard at a venue, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's schema lacks narrative incident attributes; doc contains descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Record 1119: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who headlined a team's championships at a venue, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks championship or headlining event attributes; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Records 1140, 1139: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who played for a team at a venue during a time period, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks venue attributes; doc contains narrative descriptions of players' careers and venues. KG directly provides home venue assignments.",
+      "evidence": "Records 1149, 1150, 1151, 1152, 1153: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who scored a specific number of points at a venue, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks game-specific performance or venue attributes; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Records 1146, 1147, 1148, 1144, 1145: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who made a comeback from retirement at a venue, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks comeback or retirement event attributes; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Record 1133: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who shattered a backboard at a venue, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's schema lacks narrative incident attributes; doc contains descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Record 1119: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who headlined a team's championships at a venue, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks championship or headlining event attributes; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Records 1140, 1139: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who played for a team at a venue during a time period, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks venue attributes; doc contains narrative descriptions of players' careers and venues. KG directly provides home venue assignments.",
+      "evidence": "Records 1149, 1150, 1151, 1152, 1153: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who scored a specific number of points at a venue, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks game-specific performance or venue attributes; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Records 1146, 1147, 1148, 1144, 1145: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who made a comeback from retirement at a venue, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks comeback or retirement event attributes; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Record 1133: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who shattered a backboard at a venue, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's schema lacks narrative incident attributes; doc contains descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Record 1119: doc found the player, KG found the team."
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a player who headlined a team's championships at a venue, and the venue is not directly linked to the player in KG",
+      "action": "Route the first sub-query (identifying the player) to doc as primary source; route the second sub-query (asking for the team) to KG as primary source.",
+      "lesson": "KG's player schema lacks championship or headlining event attributes; doc contains narrative descriptions of such events. KG directly provides home venue assignments.",
+      "evidence": "Records 1140, 1139: doc found the player, KG found the team."
+    }
+  ]
+}

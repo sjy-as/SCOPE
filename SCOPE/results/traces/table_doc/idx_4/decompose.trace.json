@@ -1,0 +1,31 @@
+{
+  "sub_q1": "Who won the Best Breakthrough Athlete ESPY Award in 2012?",
+  "sub_q2": "What is [1] known for?",
+  "rewrite_reasoning": "To answer the question, we first need to identify the athlete who won the Best Breakthrough Athlete ESPY Award in 2012. Then, we need to find what that athlete is known for.",
+  "match1": null,
+  "match2": null,
+  "route1": {
+    "matched_concept": "award",
+    "primary_source": "doc",
+    "fallback_source": "table",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: Best Breakthrough Athlete ESPY Award (an award). ASKED target: the winner of that award in 2012. Phase-1 rule: Known-entity fallback — no relation concept links the award to its winner (award_received links player+award+time, but the query's known entity is the award itself, not a player). Thus match the concept of the known entity, which is 'award'. Source selection: The 'award' concept only has a doc source, which is LIKELY because its description includes 'winners' as an element and doc text can contain lists of winners. The table source is RULED-OUT because no table source in the catalog is associated with the 'award' concept, and no other table source plausibly contains award winner information for this specific award. Therefore primary=doc, fallback=table (only remaining live source)."
+  },
+  "route2": {
+    "matched_concept": "player",
+    "primary_source": "doc",
+    "fallback_source": "table",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: [1] (a placeholder for a specific entity, likely a player or team). ASKED target: what the entity is known for, which is a descriptive attribute. Phase-1 rule: Known-entity fallback (c) — no relation concept links the entity to a 'known for' attribute; the query asks for an attribute of the known entity, so match the concept of that entity. Since [1] is unspecified, the most general entity concept is 'player'. Source selection: The 'player' concept has only doc as a live source, so doc is LIKELY (its elements include name, profession, team, league, which can describe what a player is known for). Table is RULED-OUT because the 'player' concept has no table source, and no other concept's table elements plausibly carry 'known for' information. Primary = doc, fallback = table (only other live source, even though ruled out)."
+  },
+  "decompose_llm_calls": [
+    {
+      "stage": "step2.sq",
+      "ts": 1786685492.101513,
+      "prompt": "You are a query decomposition assistant.\n\n        Your job is to transform ONE natural-language semantic query into EXACTLY two sub-questions.\n\n        Requirements:\n        1. The input is already a natural semantic query. Do NOT rewrite it into a different intent.\n        2. Output exactly two sub-questions: q1 and q2.\n        3. q1 should extract the first necessary piece of information.\n        4. q2 should depend on q1 and use [1] to refer to the answer of q1 when needed.\n        5. Do not do event judgment, schema routing, source selection, or query rewriting.\n        6. Keep the sub-questions faithful to the original meaning.\n        7. Return valid JSON only.\n\n        Return format:\n        {\n        \"reasoning\": \"brief explanation of the decomposition\",\n        \"subqueries\": [\n            {\n            \"id\": \"q1\",\n            \"query\": \"...\",\n            \"depends_on\": [],\n            \"variables\": []\n            },\n            {\n            \"id\": \"q2\",\n            \"query\": \"...\",\n            \"depends_on\": [\"q1\"],\n            \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n            }\n        ]\n        }\n\n        Question: What is the athlete who won the Best Breakthrough Athlete ESPY Award in 2012 known for?\n\n    ",
+      "response": "{\n  \"reasoning\": \"To answer the question, we first need to identify the athlete who won the Best Breakthrough Athlete ESPY Award in 2012. Then, we need to find what that athlete is known for.\",\n  \"subqueries\": [\n    {\n      \"id\": \"q1\",\n      \"query\": \"Who won the Best Breakthrough Athlete ESPY Award in 2012?\",\n      \"depends_on\": [],\n      \"variables\": []\n    },\n    {\n      \"id\": \"q2\",\n      \"query\": \"What is [1] known for?\",\n      \"depends_on\": [\"q1\"],\n      \"variables\": [\n        {\n          \"name\": \"ref_1\",\n          \"source_query\": \"q1\"\n        }\n      ]\n    }\n  ]\n}",
+      "module": "step2.sq",
+      "model": "deepseek-chat"
+    }
+  ]
+}

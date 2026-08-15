@@ -1,0 +1,180 @@
+{
+  "question": "Which player received both the Pro Football Hall of Fame and the Canadian Football Hall of Fame?",
+  "program": {
+    "question": "Which player received both the Pro Football Hall of Fame and the Canadian Football Hall of Fame?",
+    "backend": "mmqa_local_kg",
+    "api_url": "http://127.0.0.1:8002/query",
+    "entities": [
+      "Pro Football Hall of Fame",
+      "Canadian Football Hall of Fame"
+    ],
+    "relation_text": "player received",
+    "relation_targets": [
+      {
+        "head": "player",
+        "predicate": "received",
+        "tail": "Pro Football Hall of Fame"
+      },
+      {
+        "head": "player",
+        "predicate": "received",
+        "tail": "Canadian Football Hall of Fame"
+      }
+    ],
+    "relation_target": {
+      "head": "player",
+      "predicate": "received",
+      "tail": "Pro Football Hall of Fame"
+    },
+    "parser": "llm"
+  },
+  "answer": "",
+  "inner_content": [
+    {
+      "content": []
+    }
+  ],
+  "evidence_count": 3,
+  "evidence": [
+    {
+      "label": "Bud Grant",
+      "qid": "Q970476",
+      "meta": {},
+      "head_entity": "Canadian Football Hall of Fame",
+      "head_qid": "Q3517653",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "player",
+        "predicate": "received",
+        "tail": "Pro Football Hall of Fame"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q3517653",
+        "label": "Canadian Football Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {
+          "enwiki_title": "Canadian Football Hall of Fame"
+        }
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q970476",
+        "label": "Bud Grant",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Bud Grant",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Superior",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "20 May 1927",
+          "height": "191 centimetre",
+          "mass": "88 kilogram",
+          "work_period_start": "1949",
+          "work_period_end": "1951",
+          "schools_attended": "University of Minnesota"
+        }
+      },
+      "similarity_score": 59.5745
+    },
+    {
+      "label": "Bud Grant",
+      "qid": "Q970476",
+      "meta": {},
+      "head_entity": "Pro Football Hall of Fame",
+      "head_qid": "Q778412",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "player",
+        "predicate": "received",
+        "tail": "Pro Football Hall of Fame"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q778412",
+        "label": "Pro Football Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {
+          "enwiki_title": "Pro Football Hall of Fame"
+        }
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q970476",
+        "label": "Bud Grant",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Bud Grant",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Superior",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "20 May 1927",
+          "height": "191 centimetre",
+          "mass": "88 kilogram",
+          "work_period_start": "1949",
+          "work_period_end": "1951",
+          "schools_attended": "University of Minnesota"
+        }
+      },
+      "similarity_score": 54.4118
+    },
+    {
+      "label": "Otto Graham",
+      "qid": "Q960594",
+      "meta": {},
+      "head_entity": "Pro Football Hall of Fame",
+      "head_qid": "Q778412",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "player",
+        "predicate": "received",
+        "tail": "Pro Football Hall of Fame"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q778412",
+        "label": "Pro Football Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {
+          "enwiki_title": "Pro Football Hall of Fame"
+        }
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q960594",
+        "label": "Otto Graham",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Otto Graham",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Waukegan",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "06 December 1921",
+          "height": "185 centimetre",
+          "mass": "89 kilogram",
+          "schools_attended": "Northwestern University; Colgate University; Waukegan High School"
+        }
+      },
+      "similarity_score": 52.1739
+    }
+  ],
+  "unresolved": []
+}

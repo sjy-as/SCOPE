@@ -1,0 +1,34 @@
+{
+  "domain": "tvseries",
+  "routing_mode": "graph",
+  "knowledge_base": [
+    "kg",
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/tvseries/qa_benchmark/questions_clean.jsonl",
+  "output_dir": "/root/autodl-tmp/BBB_CompMix/experiments/route_only/outputs/new_model/tvseries",
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 28.2514765271917,
+  "semantic_catalog": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/tvseries/semantic_list_3sources.json",
+  "atomr_prompts": null,
+  "deepsieve_source_summary": null,
+  "decomposition_counts": {
+    "1": 96,
+    "2": 4
+  },
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 26,
+    "route1.kg": 55,
+    "route1.table": 19,
+    "route2.doc": 1,
+    "route2.kg": 1,
+    "route2.table": 2
+  }
+}

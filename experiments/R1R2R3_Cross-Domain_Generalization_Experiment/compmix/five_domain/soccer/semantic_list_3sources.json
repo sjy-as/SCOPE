@@ -1,0 +1,1867 @@
+{
+  "soccer_team": {
+    "concept": "soccer_team",
+    "overall_description": "A collection of soccer teams participating in a tournament.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for a collection of soccer teams participating in a tournament.",
+        "elements": [
+          "team"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0003\", \"title\": \"1930 FIFA World Cup\", \"headers\": [\"Team\"], \"sample_rows\": [[\"ARG\"], [\"BEL\"], [\"URU\"]]}",
+          "{\"table_id\": \"T0004\", \"title\": \"1930 FIFA World Cup\", \"headers\": [\"content\"], \"sample_rows\": [[\"is Eliminated in the group stage\"]]}",
+          "{\"table_id\": \"T0002\", \"title\": \"1930 FIFA World Cup\", \"headers\": [\"Montevideo\"], \"sample_rows\": [[\"Estadio Centenario\"], [\"250px\"], [\"Uruguay\"]]}"
+        ]
+      }
+    }
+  },
+  "tournament_award": {
+    "concept": "tournament_award",
+    "overall_description": "Awards and honors given to participants in sports tournaments, including rankings and statistics.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for awards and honors given to participants in sports tournaments, including rankings and statistics.",
+        "elements": [
+          "award_name",
+          "tournament",
+          "rank",
+          "recipient",
+          "year",
+          "player",
+          "team",
+          "country",
+          "player_count",
+          "total_awards",
+          "nationality",
+          "wins",
+          "season",
+          "winner"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0007\", \"title\": \"1982 FIFA World Cup\", \"headers\": [\"Rank:\"], \"sample_rows\": [[\"Golden Ball\"]]}",
+          "{\"table_id\": \"T0009\", \"title\": \"1982 FIFA World Cup\", \"headers\": [\"Team\"], \"sample_rows\": [[\"HUN\"], [\"KUW\"], [\"AUT\"]]}",
+          "{\"table_id\": \"T0008\", \"title\": \"1982 FIFA World Cup\", \"headers\": [\"Rank:\", \"Player:\"], \"sample_rows\": [[\"2nd\", \"BRA Falcão\"], [\"1st\", \"ITA Paolo Rossi\"]]}",
+          "{\"table_id\": \"T0211\", \"title\": \"Ballon d'Or\", \"headers\": [\"Year\", \"Rank\", \"Player\", \"Team\"], \"sample_rows\": [[\"2006\", \"2nd\", \"ITA Gianluigi Buffon\", \"ITA Juventus, is 124\"], [\"1992\", \"2nd\", \"BUL Hristo Stoichkov\", \"ESP Barcelona, is 80\"], [\"1995\", \"2nd\", \"GER Jürgen Klinsmann\", \"GER Bayern Munich, is 108\"]]}",
+          "{\"table_id\": \"T0210\", \"title\": \"Ballon d'Or\", \"headers\": [\"Year\", \"Rank\"], \"sample_rows\": [[\"2020\", \"Not awarded due to the COVID-19 pandemic\"]]}",
+          "{\"table_id\": \"T0208\", \"title\": \"Ballon d'Or\", \"headers\": [\"Year\"], \"sample_rows\": [[\"Ballon d'Or (2016–present)\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for awards and honors given to participants in sports tournaments, including rankings and statistics.",
+        "elements": [
+          "player",
+          "award",
+          "rank",
+          "year",
+          "team"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D01450\", \"title\": \"European Golden Shoe\", \"text\": \"European Golden Shoe, Ronaldo and Suárez are the only players to win the award in two different leagues, with each having won the award while playing in both the Premier League and La Liga.\"}",
+          "{\"doc_id\": \"D00320\", \"title\": \"Phil Foden\", \"text\": \"Phil Foden, Foden scored his first Premier League goal of the season on 3 October, in a 2-2 away draw at Liverpool.\"}",
+          "{\"doc_id\": \"D01249\", \"title\": \"Ballon d'Or\", \"text\": \"Ballon d'Or, Pelé was named the greatest by 17 voters, receiving almost double the number of points earned by the runner-up, Diego Maradona.\"}"
+        ]
+      }
+    }
+  },
+  "tournament_round_result": {
+    "concept": "tournament_round_result",
+    "overall_description": "Records of team performances in specific rounds of tournaments, including entries and results.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of team performances in specific rounds of tournaments, including entries and results.",
+        "elements": [
+          "team",
+          "round",
+          "result",
+          "year",
+          "position",
+          "note",
+          "tournament",
+          "teams_entering",
+          "teams_advancing",
+          "qualification_path"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0019\", \"title\": \"1998 FIFA World Cup\", \"headers\": [\"Team\"], \"sample_rows\": [[\"ARG\"], [\"ENG\"], [\"FRY\"]]}",
+          "{\"table_id\": \"T0020\", \"title\": \"1998 FIFA World Cup\", \"headers\": [\"content\"], \"sample_rows\": [[\"is Eliminated in the round of 16\"]]}",
+          "{\"table_id\": \"T0015\", \"title\": \"1998 FIFA World Cup\", \"headers\": [\"Country\", \"Round 1\"], \"sample_rows\": [[\"Morocco\", \"7\"], [\"France\", \"12\"]]}",
+          "{\"table_id\": \"T1021\", \"title\": \"Senegal national football team\", \"headers\": [\"Year\", \"Round\", \"Position\", \"*\"], \"sample_rows\": [[\"GHA 2013\", \"Runners-up\", \"2nd, is 4\", \"0\"], [\"GAM 1997\", \"Runners-up\", \"2nd, is 3\", \"2\"], [\"France 1974 1998\", \"\", \"Did not qualify, is 3\", \"1\"]]}",
+          "{\"table_id\": \"T0898\", \"title\": \"Portugal national football team\", \"headers\": [\"Year\", \"Round\", \"Position\"], \"sample_rows\": [[\"CAN 1995 SkyDome Cup\", \"Winners, round-robin\", \"1st, is 1\"], [\"USA 1992 U.S. Cup\", \"Round-robin\", \"4th, is 3\"]]}",
+          "{\"table_id\": \"T0899\", \"title\": \"Portugal national football team\", \"headers\": [\"Year\", \"Round\", \"Position\", \"*\"], \"sample_rows\": [[\"England 1996\", \"\", \"Quarter-finals, is 29\", \"2\"], [\"France 1974 2016\", \"\", \"Champions, is 11\", \"3\"], [\"France 1974 1984\", \"\", \"Semi-finals, is 11\", \"1\"]]}"
+        ]
+      }
+    }
+  },
+  "tournament_participant": {
+    "concept": "tournament_participant",
+    "overall_description": "Records of team participation, results, and appearances in tournaments, including staff and abbreviations.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of team participation, results, and appearances in tournaments, including staff and abbreviations.",
+        "elements": [
+          "participant",
+          "tournament",
+          "result",
+          "team",
+          "confederation",
+          "qualification_method",
+          "qualification_date",
+          "participation_number",
+          "round",
+          "edition",
+          "tournament_name",
+          "year",
+          "appearances",
+          "first_year"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0031\", \"title\": \"2006 FIFA World Cup\", \"headers\": [\"Country\"], \"sample_rows\": [[\"Voting results\"]]}",
+          "{\"table_id\": \"T0034\", \"title\": \"2006 FIFA World Cup\", \"headers\": [\"Team\"], \"sample_rows\": [[\"TRI\"], [\"NED, is 10\"], [\"KSA, is 19\"]]}",
+          "{\"table_id\": \"T0027\", \"title\": \"2006 FIFA World Cup\", \"headers\": [\"Berlin\", \"Bavaria\"], \"sample_rows\": [[\"Munich\", \"Germany, Dortmund, North Rhine-Westphalia is\"]]}",
+          "{\"table_id\": \"T0041\", \"title\": \"2009 FIFA Confederations Cup\", \"headers\": [\"Team\", \"Confederation\", \"Qualification method\", \"Date qualification secured\", \"Participation no.\"], \"sample_rows\": [[\"United States\", \"CONCACAF\", \"2007 CONCACAF Gold Cup winners\", \"24 June 2007\", \"4th\"], [\"Italy\", \"UEFA\", \"2006 FIFA World Cup winners\", \"9 July 2006\", \"1st\"], [\"Iraq\", \"AFC\", \"2007 AFC Asian Cup winners\", \"29 July 2007\", \"1st\"]]}",
+          "{\"table_id\": \"T0038\", \"title\": \"2009 FIFA Confederations Cup\", \"headers\": [\"Goalkeeper\"], \"sample_rows\": [[\"+ FIFA.com Users' Top 11\"]]}",
+          "{\"table_id\": \"T0024\", \"title\": \"2001 FIFA Confederations Cup\", \"headers\": [\"Team\", \"Confederation\", \"Qualification method\", \"Date qualification secured\", \"Participation no.\"], \"sample_rows\": [[\"FRA 1974\", \"UEFA\", \"1998 FIFA World Cup and UEFA Euro 2000 winners\", \"12 July 1998\", \"1st\"], [\"CAN\", \"CONCACAF\", \"2000 CONCACAF Gold Cup winners\", \"27 February 2000\", \"1st\"], [\"AUS\", \"OFC\", \"2000 OFC Nations Cup winners\", \"28 June 2000\", \"2nd\"]]}"
+        ]
+      }
+    }
+  },
+  "tournament_draft_pick_distribution": {
+    "concept": "tournament_draft_pick_distribution",
+    "overall_description": "Records of player selections by position in each round of a sports draft.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of player selections by position in each round of a sports draft.",
+        "elements": [
+          "round",
+          "position",
+          "number_of_picks"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0052\", \"title\": \"2010 MLS SuperDraft\", \"headers\": [\"Round\", \"Forwards\", \"Midfielders\", \"Defenders\", \"Goalkeepers\"], \"sample_rows\": [[\"1st\", \"6\", \"9\", \"1\", \"0\"], [\"4th\", \"0\", \"7\", \"7\", \"2\"], [\"2nd\", \"3\", \"6\", \"7\", \"0\"]]}",
+          "{\"table_id\": \"T0051\", \"title\": \"2010 MLS SuperDraft\", \"headers\": [\"Rank\", \"Affiliation\", \"No.\"], \"sample_rows\": [[\"T24\", \"44 Affiliations\", \"1\"], [\"T3\", \"Cary Clarets\", \"4\"], [\"T5\", \"Orange County Blue Star\", \"3\"]]}",
+          "{\"table_id\": \"T0700\", \"title\": \"Lionel Messi\", \"headers\": [\"Total\", \"16\", \"11\", \"2\", \"3\", \"18\", \"14\"], \"sample_rows\": [[\"Argentina\", \"2021\", \"16 Nine appearances and five goals in FIFA World Cup qualification, seven appearances and four goals in Copa América\", \"9\", \"0\", \"0\", \"16\"]]}"
+        ]
+      }
+    }
+  },
+  "stadium_capacity": {
+    "concept": "stadium_capacity",
+    "overall_description": "Records of stadium capacities and soccer-specific stadium details.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of stadium capacities and soccer-specific stadium details.",
+        "elements": [
+          "city",
+          "stadium_name",
+          "capacity",
+          "stadium",
+          "club",
+          "opened"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0054\", \"title\": \"2013 CONCACAF Gold Cup\", \"headers\": [\"Pasadena\", \"Arlington\", \"Denver\", \"Miami Gardens\"], \"sample_rows\": [[\"Capacity: 25,189\", \"Capacity: 22,039\", \"Capacity: 20,438\", \"Capacity: 20,213\"]]}",
+          "{\"table_id\": \"T0053\", \"title\": \"2013 CONCACAF Gold Cup\", \"headers\": [\"Pasadena\", \"Arlington\", \"Denver\"], \"sample_rows\": [[\"M&T Bank Stadium\", \"\", \"CenturyLink Field\"], [\"150px\", \"\", \"150px\"], [\"Capacity: 61,500\", \"\", \"Capacity: 40,000\"]]}",
+          "{\"table_id\": \"T0055\", \"title\": \"2013 CONCACAF Gold Cup\", \"headers\": [\"Pasadena\", \"Arlington\", \"Denver\", \"Miami Gardens\", \"Atlanta\"], \"sample_rows\": [[\"Group A\", \"Semi-finals\", \"Group A\", \"Group B\", \"Quarter-finals\"], [\"Rose Bowl\", \"AT&T Stadium\", \"Sports Authority Field at Mile High\", \"Hard Rock Stadium\", \"Georgia Dome\"]]}",
+          "{\"table_id\": \"T1045\", \"title\": \"Soccer-specific stadium\", \"headers\": [\"Stadium\", \"Club(s)\", \"Metro area\", \"Proposed capacity\", \"Expected Opening\"], \"sample_rows\": [[\"KC Current Stadium\", \"Kansas City Current\", \"Kansas City, Missouri\", \"11500\", \"2024\"]]}",
+          "{\"table_id\": \"T1044\", \"title\": \"Soccer-specific stadium\", \"headers\": [\"Stadium\", \"Club(s)\", \"Metro area\", \"Proposed capacity\"], \"sample_rows\": [[\"York College\", \"Queensboro FC\", \"Queens , New York\", \"7500\"], [\"Downtown Spokane Stadium\", \"USL1 Spokane\", \"Spokane , Washington\", \"5000\"], [\"Iron District Stadium\", \"USL Milwaukee\", \"Milwaukee , Wisconsin\", \"8000\"]]}",
+          "{\"table_id\": \"T1043\", \"title\": \"Soccer-specific stadium\", \"headers\": [\"Stadium\", \"Club(s)\", \"City\", \"Capacity\", \"Opened\"], \"sample_rows\": [[\"H-E-B Park\", \"Rio Grande Valley FC Toros\", \"Edinburg , Texas\", \"9400\", \"2017\"], [\"Children's Mercy Park\", \"Kansas City Current\", \"Kansas City , Kansas\", \"18467\", \"2011\"], [\"Exploria Stadium\", \"Orlando City SC\", \"Orlando , Florida\", \"25500\", \"2017\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records of stadium capacities and soccer-specific stadium details.",
+        "elements": [
+          "stadium_name",
+          "associated_clubs",
+          "location",
+          "capacity",
+          "opening_year"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00013\", \"title\": \"San Siro\", \"text\": \"San Siro, However, in recent years both Inter and Milan fans have called the stadium simply San Siro.\"}",
+          "{\"doc_id\": \"D00271\", \"title\": \"Inter Milan\", \"text\": \"Inter Milan, On 22 June 2021, Carlo Cottarelli launched the shareholding of the fans of the Inter Milan club with InterSpac project.\"}",
+          "{\"doc_id\": \"D00283\", \"title\": \"Ibrox Stadium\", \"text\": \"Ibrox Stadium, A crowd of 68,114 assembled for a Scotland v England match on 5 April 1902, but shortly after the kick-off one section of the terracing \\\"collapsed like a trap door\\\".\"}"
+        ]
+      }
+    }
+  },
+  "tournament_qualification_slots": {
+    "concept": "tournament_qualification_slots",
+    "overall_description": "Records of qualification slots and formats for tournaments.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of qualification slots and formats for tournaments.",
+        "elements": [
+          "confederation",
+          "continent",
+          "slots",
+          "change_from_previous"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0075\", \"title\": \"2015 FIFA Women's World Cup\", \"headers\": [\"Confederation/hosts\", \"Continent/country\", \"Slots\"], \"sample_rows\": [[\"Total\", \"24\", \"8\"]]}",
+          "{\"table_id\": \"T0076\", \"title\": \"2015 FIFA Women's World Cup\", \"headers\": [\"Confederation/hosts\", \"Continent/country\", \"Slots\", \"Change from 2011\"], \"sample_rows\": [[\"AFC\", \"Asia\", \"5\", \"2\"], [\"CAF\", \"Africa\", \"3\", \"1\"], [\"Hosts\", \"Canada\", \"1\", \"–\"]]}",
+          "{\"table_id\": \"T0079\", \"title\": \"2015 FIFA Women's World Cup\", \"headers\": [\"Golden Ball\"], \"sample_rows\": [[\"16 for 4–0 in Final vs Japan (5 July)\"], [\"FIFA Fair Play Award\"], [\"CAN Kadeisha Buchanan\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records of qualification slots and formats for tournaments.",
+        "elements": [
+          "tournament_name",
+          "qualification_phase",
+          "group_format",
+          "draw_seeding",
+          "qualification_criteria",
+          "historical_format_changes",
+          "competition",
+          "qualification_path",
+          "qualification_rule",
+          "qualification_round",
+          "qualification_year"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00069\", \"title\": \"UEFA European Championship\", \"text\": \"UEFA European Championship, The qualifying phase is played in a group format, the composition of the groups is determined through means of a draw of teams from pre-defined seeded bowls.\"}",
+          "{\"doc_id\": \"D00024\", \"title\": \"EFL Championship\", \"text\": \"EFL Championship, West Ham United won the first Championship play-off final that season, following a 1–0 victory over Preston North End at the Millennium Stadium in Cardiff.\"}",
+          "{\"doc_id\": \"D08618\", \"title\": \"CCCF Championship\", \"text\": \"CCCF Championship, The CCCF Championship was succeeded by the CONCACAF Championship in 1963, following the merger.\"}",
+          "{\"doc_id\": \"D00183\", \"title\": \"UEFA\", \"text\": \"UEFA, The first edition of the competition was played in 2021–2022.In women's football UEFA also conducts the UEFA Women's Champions League for club teams.\"}",
+          "{\"doc_id\": \"D00947\", \"title\": \"UEFA Women's Champions League\", \"text\": \"UEFA Women's Champions League, Group winners, plus the smallest possible number of runners-up, qualify for the Round of 32.\"}"
+        ]
+      }
+    }
+  },
+  "tournament_official": {
+    "concept": "tournament_official",
+    "overall_description": "Records of match officials assigned to tournaments, including roles and assignments.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of match officials assigned to tournaments, including roles and assignments.",
+        "elements": [
+          "confederation",
+          "official_role",
+          "official_name",
+          "country",
+          "tournament",
+          "tournament_edition",
+          "match_assignment"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0092\", \"title\": \"2019 FIFA Women's World Cup\", \"headers\": [\"Confederation\", \"Assistant referee\"], \"sample_rows\": [[\"UEFA\", \"Susanne Küng ( Switzerland )\"], [\"CONCACAF\", \"Kathryn Nesbitt ( United States )\"], [\"UEFA\", \"Katrin Rafalski ( Germany )\"]]}",
+          "{\"table_id\": \"T0073\", \"title\": \"2015 FIFA Women's World Cup\", \"headers\": [\"Confederation\", \"Assistant referee\"], \"sample_rows\": [[\"UEFA\", \"Nataliya Rachynska ( Ukraine )\"], [\"CONCACAF\", \"Shirley Perelló ( Honduras )\"], [\"UEFA\", \"Natalie Aspinall ( England )\"]]}",
+          "{\"table_id\": \"T0074\", \"title\": \"2015 FIFA Women's World Cup\", \"headers\": [\"Confederation\", \"Referee\"], \"sample_rows\": [[\"UEFA\", \"Teodora Albon ( Romania )\"], [\"CONMEBOL\", \"Olga Miranda ( Paraguay )\"], [\"UEFA\", \"Efthalia Mitsi ( Greece )\"]]}",
+          "{\"table_id\": \"T1133\", \"title\": \"UEFA Euro 2020\", \"headers\": [\"Country\", \"Video assistant referees\"], \"sample_rows\": [[\"NED\", \"Kevin Blom Pol van Boekel, Offside VAR is\"]]}",
+          "{\"table_id\": \"T1134\", \"title\": \"UEFA Euro 2020\", \"headers\": [\"Country\", \"Video assistant referees\", \"Offside VAR\"], \"sample_rows\": [[\"ITA\", \"Marco Di Bello Massimiliano Irrati Paolo Valeri\", \"Filippo Meli\"], [\"FRA\", \"Jérôme Brisard François Letexier\", \"Benjamin Pagès\"], [\"ENG\", \"Stuart Attwell Chris Kavanagh\", \"Lee Betts\"]]}",
+          "{\"table_id\": \"T1132\", \"title\": \"UEFA Euro 2020\", \"headers\": [\"Country\", \"Referee\", \"Assistant referees\", \"Matches assigned\"], \"sample_rows\": [[\"FRA\", \"Clément Turpin\", \"Nicolas Danos Cyril Gringore\", \"Wales–Switzerland ( Group A ) Russia–Denmark ( Group B )\"], [\"ROU\", \"Ovidiu Hațegan\", \"Radu Ghinguleac Sebastian Gheorghe\", \"Poland–Slovakia ( Group E ) Italy–Wales ( Group A )\"], [\"ENG\", \"Anthony Taylor\", \"Gary Beswick Adam Nunn\", \"Denmark–Finland ( Group B ) Portugal–Germany ( Group F ) Italy–Austria ( Round of 16 )\"]]}"
+        ]
+      }
+    }
+  },
+  "tournament_host_city": {
+    "concept": "tournament_host_city",
+    "overall_description": "Records of host cities and groups for tournaments, including announcements and details.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of host cities and groups for tournaments, including announcements and details.",
+        "elements": [
+          "host_city",
+          "country",
+          "date_announced",
+          "bridge",
+          "other_language",
+          "group",
+          "host",
+          "status_of_host",
+          "draw",
+          "number_of_home_matches"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0097\", \"title\": \"2019 FIFA Women's World Cup\", \"headers\": [\"Lyon\", \"Paris\"], \"sample_rows\": [[\"Le Havre\", \"France\"]]}",
+          "{\"table_id\": \"T0095\", \"title\": \"2019 FIFA Women's World Cup\", \"headers\": [\"Golden Ball\"], \"sample_rows\": [[\"FIFA Fair Play Award\"], [\"Goal of the Tournament\"], [\"Golden Glove\"]]}",
+          "{\"table_id\": \"T0101\", \"title\": \"2019 FIFA Women's World Cup\", \"headers\": [\"VOTE\", \"1ST BALLOT\"], \"sample_rows\": [[\"SOUTH KOREA\", \"5\"]]}",
+          "{\"table_id\": \"T1139\", \"title\": \"UEFA Euro 2020\", \"headers\": [\"Host city\", \"Date announced\", \"Bridge\", \"Other language(s)\"], \"sample_rows\": [[\"Dublin\", \"24 November 2016\", \"Samuel Beckett Bridge\", \"Irish, is\"]]}",
+          "{\"table_id\": \"T1138\", \"title\": \"UEFA Euro 2020\", \"headers\": [\"Host city\", \"Date announced\", \"Bridge\", \"Other language\"], \"sample_rows\": [[\"Copenhagen\", \"1 November 2016\", \"Circle Bridge\", \"Danish, is\"], [\"Amsterdam\", \"16 December 2016\", \"Magere Brug\", \"Dutch, is\"], [\"Baku\", \"30 September 2016\", \"Baku cable-stayed bridge\", \"Azerbaijani, is\"]]}",
+          "{\"table_id\": \"T1135\", \"title\": \"UEFA Euro 2020\", \"headers\": [\"Group\", \"Host\"], \"sample_rows\": [[\"Three\", \"Two\"]]}"
+        ]
+      }
+    }
+  },
+  "tournament_vote_result": {
+    "concept": "tournament_vote_result",
+    "overall_description": "Records of vote counts for candidates in elections or selection processes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of vote counts for candidates in elections or selection processes.",
+        "elements": [
+          "candidate",
+          "vote_count",
+          "total_votes",
+          "election_round"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0105\", \"title\": \"2026 FIFA World Cup\", \"headers\": [\"Nation\", \"Vote\"], \"sample_rows\": [[\"Morocco\", \"65\"], [\"Total votes\", \"200\"], [\"Canada, Mexico, United States\", \"134\"]]}",
+          "{\"table_id\": \"T0104\", \"title\": \"2026 FIFA World Cup\", \"headers\": [\"Nation\"], \"sample_rows\": [[\"Round 1\"]]}",
+          "{\"table_id\": \"T0102\", \"title\": \"2026 FIFA World Cup\", \"headers\": [\"Allowed to vote\", \"Banned from voting\"], \"sample_rows\": [[\"#2770AB Voted for Moroccan bid\", \"#55208D Morocco\"], [\"#867650 Voted for United bid\", \"#FFBD41 Canada–Mexico–United States\"], [\"#008E2A Voted for neither\", \"#000000 Sanctioned by FIFA\"]]}"
+        ]
+      }
+    }
+  },
+  "club_financial_record": {
+    "concept": "club_financial_record",
+    "overall_description": "Records of financial performance and metrics for clubs or entities.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of financial performance and metrics for clubs or entities.",
+        "elements": [
+          "financial_year",
+          "turnover",
+          "result",
+          "total_assets",
+          "net_assets",
+          "re_capitalization"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0112\", \"title\": \"ACF Fiorentina\", \"headers\": [\"Financial year\", \"Turnover\"], \"sample_rows\": [[\"2001–02\", \"Not available due to bankruptcy\"]]}",
+          "{\"table_id\": \"T0111\", \"title\": \"ACF Fiorentina\", \"headers\": [\"Financial year\"], \"sample_rows\": [[\"A.C. Fiorentina S.p.A. ( PI 0039250485) exchange rate €1 = Lire&nbsp; 1936.27\"]]}",
+          "{\"table_id\": \"T0116\", \"title\": \"ACF Fiorentina\", \"headers\": [\"Series\"], \"sample_rows\": [[\"90 years of professional football in Italy since 1929\"]]}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of financial performance and metrics for clubs or entities.",
+        "elements": [
+          "subject_entity",
+          "financial_metric",
+          "metric_value",
+          "criterion_used",
+          "point_in_time"
+        ],
+        "data_examples": [
+          "Manchester United Plc --net profit [point in time: \"2019; sourcing circumstances: fiscal year]--> \"+18881000\"",
+          "Atlético Madrid --operating income [criterion used: fiscal year; point in time: \"2015]--> \"+40059834\"",
+          "2008 --model year code [criterion used: initial series of model year codes]--> \"8\""
+        ]
+      }
+    }
+  },
+  "player_national_team_appearances": {
+    "concept": "player_national_team_appearances",
+    "overall_description": "Records of player appearances and goals for national teams, including match details and totals.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of player appearances and goals for national teams, including match details and totals.",
+        "elements": [
+          "player",
+          "national_team",
+          "year",
+          "appearances",
+          "rank",
+          "caps",
+          "goals",
+          "career",
+          "competitive_appearances",
+          "friendly_appearances",
+          "total_appearances",
+          "period",
+          "player_name",
+          "first_cap_date"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0124\", \"title\": \"Alessandro Del Piero\", \"headers\": [\"National team\", \"Year\", \"Apps\"], \"sample_rows\": [[\"Total\", \"91\", \"27\"]]}",
+          "{\"table_id\": \"T0855\", \"title\": \"Paul Pogba\", \"headers\": [\"National team\", \"Year\", \"Apps\"], \"sample_rows\": [[\"Total\", \"91\", \"11\"]]}",
+          "{\"table_id\": \"T0139\", \"title\": \"Andrew Robertson\", \"headers\": [\"National team\", \"Year\", \"Apps\"], \"sample_rows\": [[\"Total\", \"62\", \"3\"]]}",
+          "{\"table_id\": \"T0135\", \"title\": \"Andrea Pirlo\", \"headers\": [\"National team\", \"Year\", \"Apps\"], \"sample_rows\": [[\"Total\", \"116\", \"13\"]]}",
+          "{\"table_id\": \"T0157\", \"title\": \"Argentina national football team\", \"headers\": [\"Rank\", \"Player\", \"Caps\", \"Goals\", \"Career\"], \"sample_rows\": [[\"10\", \"Sergio Romero\", \"96\", \"0\", \"2009–2018\"], [\"4\", \"Ángel Di María\", \"131\", \"29\", \"2008–present\"], [\"2\", \"Javier Mascherano\", \"147\", \"3\", \"2003–2018\"]]}",
+          "{\"table_id\": \"T0374\", \"title\": \"El Salvador national football team\", \"headers\": [\"Rank\", \"Player\", \"Caps\", \"Goals\", \"Career\"], \"sample_rows\": [[\"8\", \"Alexander Larín\", \"77\", \"6\", \"2012–present\"], [\"6\", \"Ramón Sánchez\", \"78\", \"2\", \"2003–2012\"]]}"
+        ]
+      }
+    }
+  },
+  "player_career_statistics": {
+    "concept": "player_career_statistics",
+    "overall_description": "Records of player career statistics across clubs, seasons, and divisions.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of player career statistics across clubs, seasons, and divisions.",
+        "elements": [
+          "player_name",
+          "club",
+          "season",
+          "division",
+          "appearances",
+          "goals",
+          "reference",
+          "apps",
+          "player",
+          "notes",
+          "year",
+          "rank",
+          "years",
+          "statistic"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0127\", \"title\": \"Alex Morgan\", \"headers\": [\"Career total\", \"161\", \"77\", \"6\", \"1\", \"13\", \"11\", \"5\", \"0\", \"185\", \"90\", \"—\"], \"sample_rows\": [[\"Club\", \"Season\", \"Division\", \"Apps\", \"Goals\", \"Apps\", \"Ref. Reference\", \"Goals\", \"Apps\", \"Goals\", \"Apps\", \"Goals\"]]}",
+          "{\"table_id\": \"T0267\", \"title\": \"Cafu\", \"headers\": [\"Division\", \"Apps\", \"Goals\"], \"sample_rows\": [[\"AC Milan\", \"0\", \"45\"], [\"Career total\", \"525\", \"18\"], [\"Roma\", \"7\", \"0\"]]}",
+          "{\"table_id\": \"T0954\", \"title\": \"Rivaldo\", \"headers\": [\"Division\", \"Apps\", \"Goals\"], \"sample_rows\": [[\"1992\", \"9\", \"1\"], [\"Palmeiras\", \"29\", \"14\"], [\"A.C. Milan\", \"—\", \"38\"]]}",
+          "{\"table_id\": \"T0973\", \"title\": \"Rui Costa\", \"headers\": [\"Division\", \"Apps\", \"Goals\"], \"sample_rows\": [[\"Fiorentina\", \"0\", \"38\"], [\"Club\", \"—\", \"38\"], [\"AC Milan\", \"0\", \"41\"]]}",
+          "{\"table_id\": \"T0458\", \"title\": \"Fabinho (footballer\", \"headers\": [\"Division\", \"Apps\", \"Goals\"], \"sample_rows\": [[\"Monaco (loan)\", \"31\", \"1\"], [\"Liverpool\", \"—\", \"41\"], [\"Liverpool\", \"1\", \"0\"]]}",
+          "{\"table_id\": \"T0741\", \"title\": \"Marta (footballer)\", \"headers\": [\"Division\", \"Apps\", \"Goals\"], \"sample_rows\": [[\"Orlando Pride\", \"–\", \"4\"], [\"Rosengård\", \"5\", \"2\"], [\"Orlando Pride\", \"–\", \"23\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records of player career statistics across clubs, seasons, and divisions.",
+        "elements": [
+          "player_name",
+          "club",
+          "season",
+          "appearances",
+          "goals",
+          "assists"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00529\", \"title\": \"Kevin De Bruyne\", \"text\": \"Kevin De Bruyne, In the final Premier League match of the season, City beat Norwich City 5–0 at home.\"}",
+          "{\"doc_id\": \"D00797\", \"title\": \"Manchester City F.C.\", \"text\": \"Manchester City F.C., A succession of managers then followed – seven in the 1980s alone.\"}",
+          "{\"doc_id\": \"D00231\", \"title\": \"Norwich City F.C.\", \"text\": \"Norwich City F.C., In January 2009, Roeder was relieved of his duties as manager and, shortly after, former Norwich goalkeeper Bryan Gunn was appointed until the end of the season.\"}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of player career statistics across clubs, seasons, and divisions.",
+        "elements": [
+          "player",
+          "competition",
+          "goal_count",
+          "point_in_time",
+          "date_of_latest_one",
+          "date_of_first_one"
+        ],
+        "data_examples": [
+          "Robert Lewandowski --total goals in career [point in time: 9 February \"2021; of: FIFA Club World Cup; date of the latest one: 8 February \"2021; date of the first one: 8 February \"2021]--> \"+2\"",
+          "Manchester United Plc --total equity [point in time: 30 June \"2019]--> \"+415202000\"",
+          "Atlético Madrid --total assets [point in time: 30 June \"2016]--> \"+617371841\""
+        ]
+      }
+    }
+  },
+  "player_college_team_applications": {
+    "concept": "player_college_team_applications",
+    "overall_description": "Records of player college team affiliations and application counts.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of player college team affiliations and application counts.",
+        "elements": [
+          "player",
+          "college_team",
+          "year",
+          "applications",
+          "goals"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0128\", \"title\": \"Alex Morgan\", \"headers\": [\"College team\", \"Year\", \"Apps\"], \"sample_rows\": [[\"Total\", \"67\", \"45\"]]}",
+          "{\"table_id\": \"T0129\", \"title\": \"Alex Morgan\", \"headers\": [\"College team\", \"Year\", \"Apps\", \"Goals\"], \"sample_rows\": [[\"California Golden Bears\", \"2010\", \"12\", \"14\"], [\"California Golden Bears\", \"2008\", \"17\", \"9\"]]}"
+        ]
+      }
+    }
+  },
+  "team_staff_member": {
+    "concept": "team_staff_member",
+    "overall_description": "Records of staff members, managers, and officials within sports teams and organizations, including tenures.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of staff members, managers, and officials within sports teams and organizations, including tenures.",
+        "elements": [
+          "position",
+          "name",
+          "team",
+          "role",
+          "nationality",
+          "staff_name",
+          "nation",
+          "person_name",
+          "tenure_start",
+          "tenure_end",
+          "tenure_period",
+          "manager_name",
+          "period",
+          "start_date"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0156\", \"title\": \"Argentina national football team\", \"headers\": [\"Position\", \"Name\"], \"sample_rows\": [[\"Goalkeeping coach\", \"ARG Martín Tocalli\"], [\"Assistant coach\", \"ARG Walter Samuel\"], [\"Head coach\", \"ARG Lionel Scaloni\"]]}",
+          "{\"table_id\": \"T0536\", \"title\": \"Germany national football team\", \"headers\": [\"Position\", \"Name\"], \"sample_rows\": [[\"National team director\", \"GER Rudi Völler\"], [\"Goalkeeping coach\", \"SUI Andreas Kronenberg\"], [\"Team doctor\", \"GER Tim Meyer\"]]}",
+          "{\"table_id\": \"T1015\", \"title\": \"Senegal national football team\", \"headers\": [\"Position\", \"Name\"], \"sample_rows\": [[\"Technical Director\", \"Senegal Mayacine Mar\"], [\"Physical Trainer\", \"Senegal Djibril Yattar\"], [\"Assistant Coach\", \"France Régis Bogaert\"]]}",
+          "{\"table_id\": \"T0178\", \"title\": \"Atlanta United FC\", \"headers\": [\"Role\", \"Name\"], \"sample_rows\": [[\"Vice president of business operations\", \"Georgia O'Donoghue, Nationality is\"], [\"Director of communications\", \"Chris Winkler, Nationality is\"]]}",
+          "{\"table_id\": \"T0179\", \"title\": \"Atlanta United FC\", \"headers\": [\"Role\", \"Name\", \"Nationality\"], \"sample_rows\": [[\"Head of international player recruitment & development\", \"Jonathan Spector\", \"United States\"], [\"Vice president, technical director\", \"Carlos Bocanegra\", \"United States\"], [\"Assistant coach\", \"Diego de la Torre\", \"Mexico\"]]}",
+          "{\"table_id\": \"T0175\", \"title\": \"Atlanta United FC\", \"headers\": [\"Name\", \"Location\", \"Years\"], \"sample_rows\": [[\"Bobby Dodd Stadium\", \"Atlanta, Georgia\", \"2017\"], [\"Fifth Third Bank Stadium\", \"Kennesaw, Georgia\", \"2017–present; 4 matches in U.S. Open Cup , 3 matches in CONCACAF Champions League\"]]}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of staff members, managers, and officials within sports teams and organizations, including tenures.",
+        "elements": [
+          "organization",
+          "official_role",
+          "official_name",
+          "start_time"
+        ],
+        "data_examples": [
+          "FC Cincinnati --general manager [start time: \"2018]--> Jeff Berding",
+          "United States Soccer Federation --secretary general [start time: 1 June \"2000]--> Dan Flynn",
+          "Athletic Bilbao B --director / manager--> Rafael Alkorta"
+        ]
+      }
+    }
+  },
+  "club_tournament_honors": {
+    "concept": "club_tournament_honors",
+    "overall_description": "Records of sports club achievements in competitions, including titles and seasons.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of sports club achievements in competitions, including titles and seasons.",
+        "elements": [
+          "competition_type",
+          "competition_name",
+          "titles_count",
+          "winning_seasons",
+          "competition",
+          "seasons"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0167\", \"title\": \"Arsenal F.C.\", \"headers\": [\"Type\", \"Competition\", \"Titles\", \"Seasons\"], \"sample_rows\": [[\"Continental\", \"UEFA Cup Winners' Cup\", \"1\", \"1993–94\"]]}",
+          "{\"table_id\": \"T0647\", \"title\": \"Juventus F.C.\", \"headers\": [\"Type\", \"Competition\", \"Titles\", \"Seasons\"], \"sample_rows\": [[\"Continental\", \"UEFA Intertoto Cup\", \"1\", \"1999\"], [\"Continental\", \"European Super Cup / UEFA Super Cup\", \"2\", \"1984 , 1996\"], [\"Continental\", \"UEFA Cup Winners' Cup\", \"1\", \"1983–84\"]]}",
+          "{\"table_id\": \"T0735\", \"title\": \"Manchester United F.C.\", \"headers\": [\"Type\", \"Competition\", \"Titles\", \"Seasons\"], \"sample_rows\": [[\"Domestic\", \"Second Division\", \"2\", \"1935–36 , 1974–75\"], [\"Continental\", \"UEFA Europa League\", \"1\", \"2016–17\"], [\"Continental\", \"UEFA Super Cup\", \"1\", \"1991\"]]}",
+          "{\"table_id\": \"T0665\", \"title\": \"LA Galaxy\", \"headers\": [\"Competitions\", \"Titles\", \"Seasons\"], \"sample_rows\": [[\"CONCACAF Champions' Cup\", \"1\", \"2000\"], [\"Competitions\", \"Titles\", \"Seasons\"]]}",
+          "{\"table_id\": \"T0868\", \"title\": \"Philadelphia Union\", \"headers\": [\"Competitions\", \"Titles\", \"Seasons\"], \"sample_rows\": [[\"Eastern Conference (Regular Season)\", \"2\", \"2020, 2022\"], [\"Competitions\", \"Titles\", \"Seasons\"], [\"Supporters' Shield\", \"1\", \"2020\"]]}",
+          "{\"table_id\": \"T0279\", \"title\": \"Chicago Fire FC\", \"headers\": [\"Competitions\", \"Titles\", \"Seasons\"], \"sample_rows\": [[\"Supporters' Shield\", \"1\", \"2003\"], [\"U.S. Open Cup\", \"4\", \"1998 , 2000 , 2003 , 2006\"], [\"MLS Cup\", \"1\", \"1998\"]]}"
+        ]
+      }
+    }
+  },
+  "player_club_tenure": {
+    "concept": "player_club_tenure",
+    "overall_description": "Records of player tenures and transfers at clubs.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of player tenures and transfers at clubs.",
+        "elements": [
+          "player_name",
+          "club",
+          "start_year",
+          "end_year",
+          "nationality",
+          "tenure_years",
+          "years_active"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0168\", \"title\": \"Aston Villa F.C.\", \"headers\": [\"Name\", \"Period\"], \"sample_rows\": [[\"From\", \"To\"]]}",
+          "{\"table_id\": \"T0701\", \"title\": \"Liverpool F.C.\", \"headers\": [\"Name\", \"Period\"], \"sample_rows\": [[\"Scotland Donald McKinlay\", \"1919–1920\"], [\"Scotland Matt Busby\", \"1939–1940\"], [\"Ireland Ronnie Whelan\", \"1990–1991\"]]}",
+          "{\"table_id\": \"T0702\", \"title\": \"Liverpool F.C.\", \"headers\": [\"Period\", \"Brand\"], \"sample_rows\": [[\"1996–2006\", \"Reebok\"]]}",
+          "{\"table_id\": \"T0813\", \"title\": \"New York City FC\", \"headers\": [\"Name\", \"Nationality\", \"Years\"], \"sample_rows\": [[\"David Villa\", \"Spain\", \"2015–2018\"], [\"Alexander Ring\", \"Finland\", \"2019–2020\"]]}",
+          "{\"table_id\": \"T0809\", \"title\": \"New York City FC\", \"headers\": [\"Coach\", \"Nationality\", \"Tenure\"], \"sample_rows\": [[\"Jason Kreis\", \"United States\", \"2013 December 11 – 2015 November 2 35 10 18 7\"], [\"Patrick Vieira\", \"France\", \"2016 January 1 – 2018 June 11 90 40 28 22\"], [\"Domènec Torrent\", \"Spain\", \"2018 June 12 – 2019 November 8 45 20 13 12\"]]}",
+          "{\"table_id\": \"T0817\", \"title\": \"New York City FC\", \"headers\": [\"Title\", \"Name\", \"Tenure\"], \"sample_rows\": [[\"CEO\", \"Brad Sims\", \"January 1, 2019 – present\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records of player tenures and transfers at clubs.",
+        "elements": [
+          "player_name",
+          "from_club",
+          "to_club",
+          "transfer_season",
+          "transfer_type",
+          "transfer_date",
+          "transfer_fee"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00005\", \"title\": \"RB Leipzig\", \"text\": \"RB Leipzig, The first two to become registered as official fanclubs were L.E Bulls and Bulls Club, both registered in 2009.\"}",
+          "{\"doc_id\": \"D02035\", \"title\": \"Joshua Kimmich\", \"text\": \"Joshua Kimmich, Stuttgart secured an option to rebuy.\"}",
+          "{\"doc_id\": \"D00021\", \"title\": \"Germany\", \"text\": \"Germany, Various Germanic tribes have inhabited the northern parts of modern Germany since classical antiquity.\"}",
+          "{\"doc_id\": \"D00051\", \"title\": \"Luca Toni\", \"text\": \"Luca Toni, On 7 June, Toni was presented at a Bayern press conference along with fellow new signing Franck Ribéry.\"}",
+          "{\"doc_id\": \"D00351\", \"title\": \"S.S. Lazio\", \"text\": \"S.S. Lazio, In 1927, Lazio was the only major Roman club which resisted the Fascist regime's attempts to merge all the city's teams into what would become A.S. Roma the same year.\"}",
+          "{\"doc_id\": \"D00498\", \"title\": \"Hellas Verona F.C.\", \"text\": \"Hellas Verona F.C., The fact that the result came late during the last matchday of the season makes the sudden and unexpected end to the rossoneri's title ambitions all the more memorable.\"}"
+        ]
+      }
+    }
+  },
+  "tournament_overview": {
+    "concept": "tournament_overview",
+    "overall_description": "High-level overviews and summaries of tournaments, including editions, results, champions, and records.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for high-level overviews and summaries of tournaments, including editions, results, champions, and records.",
+        "elements": [
+          "event_name",
+          "event_type",
+          "description",
+          "year",
+          "host",
+          "venue",
+          "first_place_game",
+          "third_place_game",
+          "city",
+          "final",
+          "third_place_playoff",
+          "edition_number",
+          "host_location",
+          "champion"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0181\", \"title\": \"Australia men's national soccer team\", \"headers\": [\"Event\"], \"sample_rows\": [[\"Overview\"]]}",
+          "{\"table_id\": \"T0196\", \"title\": \"Australia men's national soccer team\", \"headers\": [\"content\"], \"sample_rows\": [[\"is {{color|#FCD116|Australia's FIFA world rankings}}\"]]}",
+          "{\"table_id\": \"T0183\", \"title\": \"Australia men's national soccer team\", \"headers\": [\"Kit supplier\", \"Period\"], \"sample_rows\": [[\"Adidas\", \"1993–2004, Notes is\"]]}",
+          "{\"table_id\": \"T0438\", \"title\": \"FIFA Women's World Cup\", \"headers\": [\"Year\", \"Host\", \"First place game\"], \"sample_rows\": [[\"2023\", \"&nbsp; Australia &nbsp; {{flag|New Zealand}}\", \"Third place game is\"]]}",
+          "{\"table_id\": \"T0440\", \"title\": \"FIFA Women's World Cup\", \"headers\": [\"Year\", \"Hosts\", \"Venues/Cities\"], \"sample_rows\": [[\"Total\", \"Average\", \"Highest\"]]}",
+          "{\"table_id\": \"T0439\", \"title\": \"FIFA Women's World Cup\", \"headers\": [\"Year\", \"Host\", \"First place game\", \"Third place game\"], \"sample_rows\": [[\"2019\", \"&nbsp; France 1974\", \"USA\", \"2–0 Parc Olympique Lyonnais , Lyon\"], [\"1995\", \"&nbsp; Sweden\", \"Norway\", \"2–0 Råsunda Stadium , Solna\"], [\"2011\", \"&nbsp; Germany\", \"Japan\", \"2–2 3–1 Commerzbank-Arena , Frankfurt\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for high-level overviews and summaries of tournaments, including editions, results, champions, and records.",
+        "elements": [
+          "tournament_name",
+          "edition_year",
+          "host_country",
+          "ball_design",
+          "doping_test_criticism",
+          "third_place_playoff",
+          "host_countries",
+          "venues",
+          "format_changes",
+          "participant_count",
+          "host_cities",
+          "participating_teams",
+          "champion",
+          "runner_up"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00831\", \"title\": \"2014 FIFA World Cup\", \"text\": \"2014 FIFA World Cup, Adidas created a new design of ball after criticisms of the Adidas Jabulani used in the previous World Cup.\"}",
+          "{\"doc_id\": \"D00084\", \"title\": \"FIFA World Cup\", \"text\": \"FIFA World Cup, The last round of matches of each group is scheduled at the same time to preserve fairness among all four teams.\"}",
+          "{\"doc_id\": \"D00977\", \"title\": \"2014 FIFA Club World Cup\", \"text\": \"2014 FIFA Club World Cup, All times are local, WET (UTC±0).\"}",
+          "{\"doc_id\": \"D01168\", \"title\": \"2026 FIFA World Cup\", \"text\": \"2026 FIFA World Cup, The recommendation was submitted for the ratification by the FIFA Council.\"}",
+          "{\"doc_id\": \"D00682\", \"title\": \"FIFA Beach Soccer World Cup\", \"text\": \"FIFA Beach Soccer World Cup, The tournament was deemed a \\\"major success\\\" and therefore, for the 2006 competition and beyond, FIFA decided to standardise the participants to 16 countries.\"}",
+          "{\"doc_id\": \"D03751\", \"title\": \"Fritz-Walter-Stadion\", \"text\": \"Fritz-Walter-Stadion, The stadium was built on the Betzenberg hill, hence its nickname \\\"Betze\\\" (German pronunciation: [ˈbɛt͡sə] (listen)), and was opened in 1920.\"}"
+        ]
+      }
+    }
+  },
+  "team_ranking_history": {
+    "concept": "team_ranking_history",
+    "overall_description": "Records of team and player rankings over time.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of team and player rankings over time.",
+        "elements": [
+          "rank",
+          "year",
+          "games_played",
+          "best_rank",
+          "worst_rank",
+          "player",
+          "team_or_club",
+          "points_or_votes",
+          "award_or_competition"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0190\", \"title\": \"Australia men's national soccer team\", \"headers\": [\"Rank\", \"Year\", \"GamesPlayed\", \"Best\"], \"sample_rows\": [[\"89\", \"1999\", \"0\", \"50, Worst is\"]]}",
+          "{\"table_id\": \"T0189\", \"title\": \"Australia men's national soccer team\", \"headers\": [\"Rank\", \"Year\", \"GamesPlayed\"], \"sample_rows\": [[\"Move\", \"Rank\", \"Move\"]]}",
+          "{\"table_id\": \"T0191\", \"title\": \"Australia men's national soccer team\", \"headers\": [\"Rank\", \"Year\", \"GamesPlayed\", \"Best\", \"Worst\"], \"sample_rows\": [[\"26\", \"2010\", \"13\", \"19\", \"4\"], [\"36\", \"2012\", \"13\", \"20\", \"2\"], [\"50\", \"1996\", \"12\", \"48\", \"9\"]]}",
+          "{\"table_id\": \"T0677\", \"title\": \"La Liga\", \"headers\": [\"Rank\", \"Player\", \"Club(s)\", \"Years active\", \"Goals\", \"Apps\"], \"sample_rows\": [[\"1\", \"Argentina Lionel Messi\", \"Barcelona\", \"2004–2021\", \"474\", \"520, Ratio is\"], [\"8\", \"Spain César Rodríguez †\", \"Granada , Barcelona , Cultural Leonesa , Elche\", \"1939–1955\", \"221\", \"353, Ratio is\"], [\"6\", \"Spain Raúl\", \"Real Madrid\", \"1994–2010\", \"228\", \"550, Ratio is\"]]}",
+          "{\"table_id\": \"T0026\", \"title\": \"2001 FIFA World Player of the Year\", \"headers\": [\"Rank\", \"Player\", \"Club\", \"Points\"], \"sample_rows\": [[\"2\", \"CHN Sun Wen\", \"USA Atlanta Beat\", \"79\"], [\"11\", \"USA Brandi Chastain\", \"USA San Jose CyberRays\", \"11\"], [\"4\", \"GER Birgit Prinz\", \"GER FFC Frankfurt\", \"40\"]]}",
+          "{\"table_id\": \"T0025\", \"title\": \"2001 FIFA World Player of the Year\", \"headers\": [\"Rank\", \"Player\", \"5P\", \"3P\", \"1P\", \"Points\", \"Club(s)\"], \"sample_rows\": [[\"9\", \"UKR Andriy Shevchenko\", \"6\", \"4\", \"4\", \"46\", \"ITA Milan\"], [\"7\", \"GER Oliver Kahn\", \"8\", \"5\", \"10\", \"65\", \"GER Bayern Munich\"], [\"8\", \"ENG Michael Owen\", \"4\", \"11\", \"8\", \"61\", \"ENG Liverpool\"]]}"
+        ]
+      }
+    }
+  },
+  "music_discography": {
+    "concept": "music_discography",
+    "overall_description": "Discography tables listing an artist's albums with release details and chart positions.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for discography tables listing an artist's albums with release details and chart positions.",
+        "elements": [
+          "year",
+          "title",
+          "peak_chart_positions",
+          "certifications"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0197\", \"title\": \"Average White Band\", \"headers\": [\"UK\", \"AUS\", \"US\", \"US R&B\"], \"sample_rows\": [[\"Year\", \"Title\", \"Peak chart positions\", \"Certifications\"]]}",
+          "{\"table_id\": \"T0201\", \"title\": \"Average White Band\", \"headers\": [\"Year\", \"Title\"], \"sample_rows\": [[\"UK\", \"US\"]]}",
+          "{\"table_id\": \"T0203\", \"title\": \"Average White Band\", \"headers\": [\"Year\", \"Title\", \"Peak chart positions\", \"Certifications\"], \"sample_rows\": [[\"1994\", \"The Best of the Average White Band - Let's Go Round Again\", \"38\", \"—\"], [\"1980\", \"Volume VIII (contains 5 hits and 4 unreleased songs)\", \"—\", \"182\"]]}"
+        ]
+      }
+    }
+  },
+  "kit_supplier_contract": {
+    "concept": "kit_supplier_contract",
+    "overall_description": "Records of kit supplier contracts and sponsorships for sports teams.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of kit supplier contracts and sponsorships for sports teams.",
+        "elements": [
+          "team",
+          "kit_supplier",
+          "period",
+          "contract_announcement_date",
+          "contract_duration",
+          "contract_value",
+          "contract_announcement",
+          "kit_manufacturer",
+          "shirt_sponsor",
+          "sleeve_sponsor",
+          "season",
+          "chest_sponsor",
+          "sponsor",
+          "supplier"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0236\", \"title\": \"Brazil national football team\", \"headers\": [\"Kit supplier\", \"Period\", \"Contractannouncement\", \"Contractduration\", \"Value\"], \"sample_rows\": [[\"30px|left Nike\", \"1997–present\", \"Unknown\", \"2008–2026\", \"€69.5 &nbsp; million per year, Ref. is\"], [\"30px|left Topper\", \"1981–1991\", \"\", \"1981–1991\", \"Ref. is\"], [\"30px|left Nike\", \"1997–present\", \"December 1996\", \"1997–2007\", \"Total $200 million~$250 million, Ref. is\"]]}",
+          "{\"table_id\": \"T0493\", \"title\": \"France national football team\", \"headers\": [\"Kit supplier\", \"Period\", \"Contractannouncement\", \"Contractduration\", \"Value\"], \"sample_rows\": [[\"USA Nike\", \"2011–present\", \"8 December 2016\", \"2018–2026 (8 years)\", \"Total € 450 million ( € 50 million per year), Notes is\"]]}",
+          "{\"table_id\": \"T0492\", \"title\": \"France national football team\", \"headers\": [\"Kit supplier\", \"Period\"], \"sample_rows\": [[\"GER Adidas\", \"1972–2010, Notes is\"]]}",
+          "{\"table_id\": \"T0576\", \"title\": \"Italy national football team\", \"headers\": [\"Kit supplier\", \"Period\"], \"sample_rows\": [[\"GER Puma\", \"2003–2022\"], [\"No supplier\", \"1910–1974\"], [\"GER Adidas\", \"2023–present\"]]}",
+          "{\"table_id\": \"T1206\", \"title\": \"Uruguay national football team\", \"headers\": [\"Kit supplier\", \"Period\"], \"sample_rows\": [[\"L-Sporto\", \"2002–2004\"], [\"Adidas\", \"1974–1982\"], [\"Puma\", \"2006–present\"]]}",
+          "{\"table_id\": \"T0949\", \"title\": \"Real Madrid CF\", \"headers\": [\"Kit supplier\", \"Period\"], \"sample_rows\": [[\"[[Adidas]]\", \"1998–present\"]]}"
+        ]
+      }
+    }
+  },
+  "tournament_player_selection": {
+    "concept": "tournament_player_selection",
+    "overall_description": "Records of players selected for tournament rosters, including positions.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of players selected for tournament rosters, including positions.",
+        "elements": [
+          "tournament",
+          "player",
+          "position",
+          "selection_status"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0243\", \"title\": \"Brazil national under-23 football team\", \"headers\": [\"Tournament\", \"Player 1\"], \"sample_rows\": [[\"[[Football at the 2000 Summer Olympics – Men's tournament|2000]]\", \"did not select\"]]}",
+          "{\"table_id\": \"T0245\", \"title\": \"Brazil national under-23 football team\", \"headers\": [\"Year\", \"Round\"], \"sample_rows\": [[\"PER 1964\", \"Runners-up, is 2\"], [\"ECU 1984\", \"Champions, is 3\"], [\"ARG 1996\", \"Champions, is 9\"]]}",
+          "{\"table_id\": \"T0241\", \"title\": \"Brazil national under-23 football team\", \"headers\": [\"Host and Year\", \"Round\"], \"sample_rows\": [[\"United Kingdom London 1948\", \"Did not participate\"], [\"Canada Winnipeg 1999\", \"Did not enter\"], [\"Soviet Union Moscow 1980\", \"Did not qualify\"]]}"
+        ]
+      }
+    }
+  },
+  "entertainment_award_nomination": {
+    "concept": "entertainment_award_nomination",
+    "overall_description": "Records of nominations for entertainment awards, including categories and results.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of nominations for entertainment awards, including categories and results.",
+        "elements": [
+          "year",
+          "award_name",
+          "category",
+          "nominated_work",
+          "result"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0246\", \"title\": \"Bruna Marquezine\", \"headers\": [\"Year\", \"Awards\", \"Category\"], \"sample_rows\": [[\"2008\", \"Flor in Negócio da China\", \"Best Child Actress\"]]}",
+          "{\"table_id\": \"T0248\", \"title\": \"Bruna Marquezine\", \"headers\": [\"Year\", \"Awards\", \"Category\", \"Nominated work\", \"Result\"], \"sample_rows\": [[\"2012\", \"Noveleiros Awards\", \"The Prettiest\", \"Lurdinha in Salve Jorge\", \"rowspan=\\\"14\\\"\"]]}",
+          "{\"table_id\": \"T0247\", \"title\": \"Bruna Marquezine\", \"headers\": [\"Year\", \"Awards\", \"Category\", \"Nominated work\"], \"sample_rows\": [[\"2003\", \"Troféu Imprensa\", \"Revelação do Ano\", \"Salete in Mulheres Apaixonadas\"], [\"2021\", \"Meus Prêmios Nick\", \"Instapet\", \"Mia\"], [\"2003\", \"Melhores do Ano\", \"Best Child Actor and Actress\", \"Salete in Mulheres Apaixonadas, Result is\"]]}"
+        ]
+      }
+    }
+  },
+  "soccer_team_season_statistics": {
+    "concept": "soccer_team_season_statistics",
+    "overall_description": "Records of soccer team performance statistics for seasons, including league results, goals, and player contributions.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of soccer team performance statistics for seasons, including league results, goals, and player contributions.",
+        "elements": [
+          "season",
+          "league",
+          "division",
+          "wins",
+          "losses",
+          "draws",
+          "goals_for",
+          "goals_against",
+          "position",
+          "playoffs",
+          "games_played",
+          "goal_difference",
+          "year",
+          "regular_season_result"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0280\", \"title\": \"Chicago Fire FC\", \"headers\": [\"Div\", \"League\", \"Pld\", \"W\", \"L\", \"D\", \"GF\", \"GA\"], \"sample_rows\": [[\"Season\", \"League\", \"Position\", \"Playoffs\", \"USOC\", \"Continental / Other\", \"Average <br> attendance\", \"Top goalscorer(s)\"]]}",
+          "{\"table_id\": \"T0869\", \"title\": \"Philadelphia Union\", \"headers\": [\"Div\", \"League\", \"Pld\", \"W\", \"L\", \"D\", \"GF\", \"GA\"], \"sample_rows\": [[\"Season\", \"League\", \"Position\", \"Playoffs\", \"USOC\", \"Continental / Other\", \"Average <br /> attendance\", \"Top goalscorer(s)\"]]}",
+          "{\"table_id\": \"T0810\", \"title\": \"New York City FC\", \"headers\": [\"Div\", \"League\", \"Pld\", \"W\", \"L\", \"D\", \"GF\", \"GA\"], \"sample_rows\": [[\"Season\", \"League\", \"Position\", \"Playoffs\", \"USOC\", \"Continental / Other\", \"Average <br /> attendance\", \"Top goalscorer(s)\"]]}",
+          "{\"table_id\": \"T0666\", \"title\": \"LA Galaxy\", \"headers\": [\"Div\", \"League\", \"Pld\", \"W\", \"L\", \"D\", \"GF\", \"GA\", \"GD\", \"Pts\", \"PPG\", \"Conf.\", \"Overall\", \"Name(s)\", \"Goals\"], \"sample_rows\": [[\"2020\", \"MLS\", \"1\", \"22\", \"6\", \"12\", \"4\", \"27\", \"46\", \"–19\", \"22\", \"1.0\", \"10th\", \"20th\", \"DNQ\"]]}",
+          "{\"table_id\": \"T0775\", \"title\": \"Nashville SC\", \"headers\": [\"Div\", \"League\", \"Pld\", \"W\", \"L\", \"D\", \"GF\", \"GA\", \"GD\", \"Pts\", \"PPG\", \"Conf.\", \"Overall\", \"Name(s)\", \"Goals\"], \"sample_rows\": [[\"2021\", \"34\", \"1\", \"12\", \"4\", \"18\", \"55\", \"MLS\", \"33\", \"22\", \"54\", \"1.59\", \"3rd\", \"7th\", \"QF\"]]}",
+          "{\"table_id\": \"T0985\", \"title\": \"San Jose Earthquakes\", \"headers\": [\"Div\", \"League\", \"Pld\", \"W\", \"L\", \"D\", \"GF\", \"GA\", \"GD\", \"Pts\", \"PPG\", \"Conf.\", \"Overall\", \"Name(s)\", \"Goals\"], \"sample_rows\": [[\"2019\", \"MLS\", \"1\", \"34\", \"13\", \"16\", \"5\", \"52\", \"55\", \"−3\", \"44\", \"1.29\", \"8th\", \"15th\", \"DNQ\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records of soccer team performance statistics for seasons, including league results, goals, and player contributions.",
+        "elements": [
+          "team",
+          "season",
+          "competition",
+          "result",
+          "statistics",
+          "player_name",
+          "team_name",
+          "goals_scored"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00327\", \"title\": \"Nashville SC\", \"text\": \"Nashville SC, They entered the MLS Cup playoffs in the play-in round beating Inter Miami 3–0 before knocking off Toronto FC 1–0 in the first round, Nashville in the conference semi-finals 2–0.\"}",
+          "{\"doc_id\": \"D00494\", \"title\": \"MLS Cup\", \"text\": \"MLS Cup, During the 2013 season, the Galaxy's chance to three-peat was thwarted by Real Salt Lake.\"}",
+          "{\"doc_id\": \"D00028\", \"title\": \"Los Angeles FC\", \"text\": \"Los Angeles FC, They won it with a record breaking 72 points in just their second season in existence.\"}",
+          "{\"doc_id\": \"D00003\", \"title\": \"FC Barcelona\", \"text\": \"FC Barcelona, The match was against local side Terrassa where Barcelona won the match 6–2.\"}",
+          "{\"doc_id\": \"D00450\", \"title\": \"La Liga\", \"text\": \"La Liga, The club subsequently won its first Liga title and retained it in 1941.\"}",
+          "{\"doc_id\": \"D00109\", \"title\": \"Xavi\", \"text\": \"Xavi, Two days later Al Sadd announced Xavi's move to Barcelona after his release clause was paid.\"}"
+        ]
+      }
+    }
+  },
+  "club_president_tenure": {
+    "concept": "club_president_tenure",
+    "overall_description": "Records of individuals' tenures in leadership or executive roles within organizations.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of individuals' tenures in leadership or executive roles within organizations.",
+        "elements": [
+          "person_name",
+          "role",
+          "start_year",
+          "end_year"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0303\", \"title\": \"Columbus Crew\", \"headers\": [\"Name\", \"Years\"], \"sample_rows\": [[\"USA Frankie Hejduk\", \"2006–2010\"], [\"USA Mike Lapper\", \"2000\"], [\"USA Mike Clark\", \"2001\"]]}",
+          "{\"table_id\": \"T0301\", \"title\": \"Columbus Crew\", \"headers\": [\"Key\"], \"sample_rows\": [[\"**\"], [\"*\"]]}",
+          "{\"table_id\": \"T0644\", \"title\": \"Juventus F.C.\", \"headers\": [\"Name\", \"Years\"], \"sample_rows\": [[\"Giovanni Cobolli Gigli\", \"2006–2009\"], [\"Jean-Claude Blanc\", \"2009–2010\"], [\"Carlo Vittorio Varetti\", \"1907–1910\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records of individuals' tenures in leadership or executive roles within organizations.",
+        "elements": [
+          "person_name",
+          "organization",
+          "role",
+          "start_year",
+          "end_year",
+          "notable_actions"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00065\", \"title\": \"Khaldoon Al Mubarak\", \"text\": \"Khaldoon Al Mubarak, In May 2005, he was appointed vice-chairman of Oasis International Leasing, an Abu Dhabi-based leasing company.\"}",
+          "{\"doc_id\": \"D00179\", \"title\": \"Tamim bin Hamad Al Thani\", \"text\": \"Tamim bin Hamad Al Thani, He also decreased the fiscal budget of several institutions, including Qatar Foundation and Qatar Museums Authority.\"}",
+          "{\"doc_id\": \"D00228\", \"title\": \"Al Hilal SFC\", \"text\": \"Al Hilal SFC, Al-Hilal has a long-standing rivalry with Al-Ittihad.\"}"
+        ]
+      }
+    }
+  },
+  "team_record_breakdown": {
+    "concept": "team_record_breakdown",
+    "overall_description": "Records of notable team achievements or records, such as biggest wins.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of notable team achievements or records, such as biggest wins.",
+        "elements": [
+          "record_type",
+          "record_value",
+          "team",
+          "competition",
+          "year"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0313\", \"title\": \"Croatia national football team\", \"headers\": [\"Matches\"], \"sample_rows\": [[\"Biggest win\"]]}",
+          "{\"table_id\": \"T0314\", \"title\": \"Croatia national football team\", \"headers\": [\"Opponent\"], \"sample_rows\": [[\"ROU 3 3 0 0\"], [\"TUN 1 0 0 1\"], [\"ENG 11 3 2 6\"]]}",
+          "{\"table_id\": \"T0321\", \"title\": \"Croatia national football team\", \"headers\": [\"Year\"], \"sample_rows\": [[\"West Germany 1988, Round is\"], [\"Sweden 1992, Round is\"], [\"Kingdom of Italy 1934, Round is\"]]}"
+        ]
+      }
+    }
+  },
+  "territory_geography": {
+    "concept": "territory_geography",
+    "overall_description": "Records of geographic territories, administrative divisions, and regional profiles.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of geographic territories, administrative divisions, and regional profiles.",
+        "elements": [
+          "territory_name",
+          "sovereign_state",
+          "area",
+          "population",
+          "population_density",
+          "capital",
+          "content",
+          "division_name",
+          "constitutional_status"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0391\", \"title\": \"Europe\", \"headers\": [\"Symbol\", \"Flag\", \"Name\", \"Sovereignstate\", \"Area(km2)\", \"Population\", \"Populationdensity(per km2)\"], \"sample_rows\": [[\"<!-- None widely used-->\", \"Svalbard\", \"Svalbard\", \"Norway\", \"61022\", \"2667\", \"Capital is\"]]}",
+          "{\"table_id\": \"T0392\", \"title\": \"Europe\", \"headers\": [\"Symbol\", \"Flag\", \"Name\", \"Sovereignstate\", \"Area(km2)\", \"Population\", \"Populationdensity(per km2)\", \"Capital\"], \"sample_rows\": [[\"Gibraltar\", \"Gibraltar\", \"Gibraltar\", \"UK\", \"6.7\", \"32194\", \"4328\", \"Gibraltar\"], [\"Greenland\", \"Greenland\", \"Greenland\", \"Denmark r 2\", \"2166086\", \"55877\", \"0.028\", \"Nuuk\"], [\"Isle of Man\", \"Isle of Man\", \"Isle of Man c 2\", \"UK\", \"572\", \"83314\", \"148\", \"Douglas\"]]}",
+          "{\"table_id\": \"T0390\", \"title\": \"Europe\", \"headers\": [\"Symbol\", \"Flag\", \"Name\", \"Area(km2)\", \"Population\", \"Population density(per km2)\", \"Capital\"], \"sample_rows\": [[\"Abkhazia\", \"Abkhazia\", \"Abkhazia p 1\", \"8660\", \"243206\", \"28\", \"Sukhumi\"], [\"Transnistria\", \"Transnistria\", \"Transnistria a 2\", \"4163\", \"475665\", \"114\", \"Tiraspol\"], [\"South Ossetia\", \"South Ossetia\", \"South Ossetia p 2\", \"3900\", \"53532\", \"13.7\", \"Tskhinvali\"]]}",
+          "{\"table_id\": \"T0886\", \"title\": \"Portugal\", \"headers\": [\"content\"], \"sample_rows\": [[\"is Districts\"], [\"is Regions\"]]}",
+          "{\"table_id\": \"T0214\", \"title\": \"Barcelona\", \"headers\": [\"content\"], \"sample_rows\": [[\"is Coordinates\"], [\"is Code, year\"]]}",
+          "{\"table_id\": \"T1247\", \"title\": \"Zinedine Zidane\", \"headers\": [\"content\"], \"sample_rows\": [[\"is Ref Reference\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records of geographic territories, administrative divisions, and regional profiles.",
+        "elements": [
+          "region_name",
+          "region_type",
+          "location",
+          "population",
+          "history",
+          "culture",
+          "economy",
+          "transportation"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00053\", \"title\": \"Argentina\", \"text\": \"Argentina, Nuclear facilities with Argentine technology have been built in Peru, Algeria, Australia and Egypt.\"}",
+          "{\"doc_id\": \"D00057\", \"title\": \"Buenos Aires\", \"text\": \"Buenos Aires, More than 2.2 million people per year travel between Argentina and Uruguay with Buquebus.\"}",
+          "{\"doc_id\": \"D00370\", \"title\": \"North Brabant\", \"text\": \"North Brabant, The historical region of Kempen occupies the southern part of the province of Noord-Brabant and extends south of Eindhoven far into northern Belgium.\"}"
+        ]
+      }
+    }
+  },
+  "soccer_team_league_tier_record": {
+    "concept": "soccer_team_league_tier_record",
+    "overall_description": "Records of soccer team league tiers, memberships, and promotion/relegation outcomes.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of soccer team league tiers, memberships, and promotion/relegation outcomes.",
+        "elements": [
+          "team",
+          "tier",
+          "years",
+          "last_season",
+          "promotions",
+          "relegations",
+          "series",
+          "year",
+          "number_of_teams",
+          "top_division_teams",
+          "promoted_teams",
+          "relegated_teams",
+          "lower_division_teams",
+          "remarks"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0412\", \"title\": \"FC Shakhtar Donetsk\", \"headers\": [\"Tier\"], \"sample_rows\": [[\"31 years of professional national football in Ukraine since 1992\"]]}",
+          "{\"table_id\": \"T0413\", \"title\": \"FC Shakhtar Donetsk\", \"headers\": [\"Tier\", \"Years\", \"Last\", \"Promotions\", \"Relegations\"], \"sample_rows\": [[\"First League (tier 2)\", \"7\", \"1972\", \"3 ( 1972 )\", \"never\"], [\"Premier League (tier 1)\", \"31\", \"2021–22\", \"26 times to Europe\", \"never\"]]}",
+          "{\"table_id\": \"T0407\", \"title\": \"FC Shakhtar Donetsk\", \"headers\": [\"#\", \"Name\", \"Years\", \"League\", \"Cup\", \"Europe\", \"Other\", \"Total\"], \"sample_rows\": [[\"1\", \"BRA Luiz Adriano Luiz Adriano\", \"2007–2015\", \"077 77\", \"016 16\", \"032 32\", \"003 3\", \"128 128\"]]}",
+          "{\"table_id\": \"T0550\", \"title\": \"Hellas Verona F.C.\", \"headers\": [\"Series\"], \"sample_rows\": [[\"90 years of professional football in Italy since 1929\"]]}",
+          "{\"table_id\": \"T0545\", \"title\": \"Hellas Verona F.C.\", \"headers\": [\"#\", \"Name\", \"Years\", \"Goals\"], \"sample_rows\": [[\"1\", \"BRA 1889 ITA 1861 Arnaldo Porta\", \"1914–1930\", \"74\"], [\"4\", \"BRA Adaílton\", \"1999–2006\", \"52\"], [\"5\", \"ITA Luca Toni\", \"2013–2016\", \"51\"]]}",
+          "{\"table_id\": \"T0551\", \"title\": \"Hellas Verona F.C.\", \"headers\": [\"Series\", \"Years\", \"Last\", \"Promotions\", \"Relegations\"], \"sample_rows\": [[\"C\", \"6\", \"2010–11\", \"2 ( 1943 , 2011 )\", \"never\"]]}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of soccer team league tiers, memberships, and promotion/relegation outcomes.",
+        "elements": [
+          "league",
+          "league_system",
+          "sports_league_level",
+          "start_period"
+        ],
+        "data_examples": [
+          "Regionalliga West --league system--> German football league system",
+          "Ligue 1 --sports league level--> \"+1\"",
+          "A.C. Milan --Football Money League rank [point in time: \"2018]--> \"+18\""
+        ]
+      }
+    }
+  },
+  "tournament_player_goal_ranking": {
+    "concept": "tournament_player_goal_ranking",
+    "overall_description": "Rankings of players by goals scored in tournaments.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for rankings of players by goals scored in tournaments.",
+        "elements": [
+          "rank",
+          "player",
+          "goals_scored"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0435\", \"title\": \"FIFA Women's World Cup\", \"headers\": [\"Rank\", \"Player\", \"Goals scored\"], \"sample_rows\": [[\"2\", \"GER Birgit Prinz\", \"14\"], [\"5\", \"BRA Cristiane\", \"11\"], [\"5\", \"GER Bettina Wiegmann\", \"11\"]]}",
+          "{\"table_id\": \"T0434\", \"title\": \"FIFA Women's World Cup\", \"headers\": [\"Rank\", \"Country\", \"Goals scored\"], \"sample_rows\": [[\"2\", \"Germany\", \"121\"], [\"3\", \"Norway\", \"93\"], [\"5\", \"Brazil\", \"66\"]]}"
+        ]
+      }
+    }
+  },
+  "language_phrase_translation": {
+    "concept": "language_phrase_translation",
+    "overall_description": "Records of language phrases, translations, usage, and grammatical features.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of language phrases, translations, usage, and grammatical features.",
+        "elements": [
+          "source_language",
+          "target_language",
+          "source_phrase",
+          "target_phrase",
+          "pronunciation"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0567\", \"title\": \"Italian language\", \"headers\": [\"English ()\", \"Italian ()\"], \"sample_rows\": [[\"You are right/wrong!\", \"it (Tu) hai ragione/torto! (informal) / it (Lei) ha ragione/torto! (formal) / it (Voi) avete ragione/torto! (plural), Pronunciation is\"]]}",
+          "{\"table_id\": \"T0566\", \"title\": \"Italian language\", \"headers\": [\"English\", \"Italian\", \"IPA\"], \"sample_rows\": [[\"eight\", \"otto\", \"/ˈɔtto/\"], [\"January\", \"gennaio\", \"/dʒenˈnajo/\"], [\"two thousand (and) twenty-four (2024)\", \"duemilaventiquattro\", \"/dueˌmilaˈventikwattro/\"]]}",
+          "{\"table_id\": \"T0568\", \"title\": \"Italian language\", \"headers\": [\"English ()\", \"Italian ()\", \"Pronunciation\"], \"sample_rows\": [[\"You are welcome!\", \"it Prego!\", \"/ˈprɛɡo/\"], [\"I like\", \"it Mi piace (for one object) / it Mi piacciono (for multiple objects)\", \"/mi pjatʃe/ /mi pjattʃono/\"], [\"Where is the bathroom?\", \"it Dov'è il bagno?\", \"( [//upload.wikimedia.org/wikipedia/commons/6/6e/It-dov%27%C3%A8_il_bagno.ogg listen] ) /doˌvɛ il ˈbaɲɲo/\"]]}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of language phrases, translations, usage, and grammatical features.",
+        "elements": [
+          "subject_entity",
+          "language",
+          "usage_context",
+          "subject_language",
+          "grammatical_feature",
+          "feature_value"
+        ],
+        "data_examples": [
+          "Waka Waka (This Time for Africa) --language of work or name--> English",
+          "Brazil --language used--> Aruáshi",
+          "David Beckham --writing language--> English",
+          "Italian --has grammatical person--> first-person plural",
+          "Italian --has grammatical mood--> gerund",
+          "Italian --has grammatical gender--> feminine"
+        ]
+      }
+    }
+  },
+  "tournament_office_holder": {
+    "concept": "tournament_office_holder",
+    "overall_description": "Records of individuals holding specific offices or positions within organizations or events.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of individuals holding specific offices or positions within organizations or events.",
+        "elements": [
+          "office",
+          "holder"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T0918\", \"title\": \"Premier League\", \"headers\": [\"Office holders\"], \"sample_rows\": [[\"Chair\"], [\"Office\"]]}",
+          "{\"table_id\": \"T0920\", \"title\": \"Premier League\", \"headers\": [\"Rank\"], \"sample_rows\": [[\"+ Most appearances\"], [\"30 April 2023 ''Italicised'' players still playing professional football.<br />'''Bolded''' players still playing in Premier League.\"]]}",
+          "{\"table_id\": \"T0914\", \"title\": \"Premier League\", \"headers\": [\"Club\", \"Top 6 finishes\"], \"sample_rows\": [[\"Liverpool\", \"2\"], [\"Leicester City\", \"2\"], [\"Manchester City\", \"10\"]]}"
+        ]
+      }
+    }
+  },
+  "concert_tour_attendance_record": {
+    "concept": "concert_tour_attendance_record",
+    "overall_description": "Records of concert or tour events, including performers, dates, and attendance.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of concert or tour events, including performers, dates, and attendance.",
+        "elements": [
+          "date",
+          "performer",
+          "opening_act",
+          "tour_or_event",
+          "attendance"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T1000\", \"title\": \"San Siro\", \"headers\": [\"Date\", \"Performer(s)\", \"Opening act(s)\", \"Tour/Event\", \"Attendance\"], \"sample_rows\": [[\"15 May 1987\", \"Genesis\", \"Paul Young\", \"Invisible Touch Tour\", \"Notes is\"], [\"27 May 2006\", \"Ligabue\", \"\", \"Nome e Cognome Tour\", \"Notes is\"], [\"1 June 2019\", \"Vasco Rossi\", \"\", \"Vasco Non Stop Tour 2019\", \"Notes is\"]]}",
+          "{\"table_id\": \"T1237\", \"title\": \"Yankee Stadium\", \"headers\": [\"Date\", \"Artist(s)\", \"Opening act(s)\", \"Tour\", \"Tickets sold\", \"Revenue\"], \"sample_rows\": [[\"August 28, 2022\", \"Bad Bunny\", \"Diplo\", \"World's Hottest Tour\", \"84,865 / 84,865\", \"$22,757,636, Additional notes is\"], [\"August 27, 2022\", \"Bad Bunny\", \"Diplo\", \"World's Hottest Tour\", \"84,865 / 84,865\", \"$22,757,636, Additional notes is\"]]}",
+          "{\"table_id\": \"T0999\", \"title\": \"San Siro\", \"headers\": [\"Date\", \"Performer(s)\", \"Opening act(s)\", \"Tour/Event\"], \"sample_rows\": [[\"10 July 2022\", \"Guns N' Roses\", \"Gary Clark Jr.\", \"Guns N' Roses 2020 Tour, Attendance is\"]]}"
+        ]
+      }
+    }
+  },
+  "passenger_survival_statistics": {
+    "concept": "passenger_survival_statistics",
+    "overall_description": "Records of passenger survival statistics by group and class for voyages or disasters.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of passenger survival statistics by group and class for voyages or disasters.",
+        "elements": [
+          "passenger_group",
+          "class_or_crew",
+          "number_aboard",
+          "number_saved",
+          "number_lost",
+          "percentage_saved",
+          "percentage_lost"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T1079\", \"title\": \"Titanic\", \"headers\": [\"Age/sex\", \"Class/crew\", \"Number aboard\", \"Number saved\", \"Number lost\", \"Percentage saved\"], \"sample_rows\": [[\"Total\", \"2224\", \"710\", \"1514\", \"32%\", \"68%\"]]}",
+          "{\"table_id\": \"T1080\", \"title\": \"Titanic\", \"headers\": [\"Age/sex\", \"Class/crew\", \"Number aboard\", \"Number saved\", \"Number lost\", \"Percentage saved\", \"Percentage lost\"], \"sample_rows\": [[\"Women\", \"Second Class\", \"93\", \"80\", \"13\", \"86%\", \"14%\"], [\"Women\", \"Third Class\", \"165\", \"76\", \"89\", \"46%\", \"54%\"], [\"Men\", \"Third Class\", \"462\", \"75\", \"387\", \"16%\", \"84%\"]]}",
+          "{\"table_id\": \"T0839\", \"title\": \"Oliver Kahn\", \"headers\": [\"Total\", \"429\", \"0\", \"57\", \"13\", \"130\", \"3\", \"632\"], \"sample_rows\": [[\"Club\", \"Season\", \"Apps\", \"Goals\", \"Goals\", \"Goals\", \"Goals\", \"Goals\"]]}"
+        ]
+      }
+    }
+  },
+  "media_appearance_record": {
+    "concept": "media_appearance_record",
+    "overall_description": "Records of appearances in media productions, including roles and video game covers.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for records of appearances in media productions, including roles and video game covers.",
+        "elements": [
+          "year",
+          "title",
+          "role",
+          "notes"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T1216\", \"title\": \"Victoria Beckham\", \"headers\": [\"Year\", \"Title\", \"Role\"], \"sample_rows\": [[\"2001\", \"Zoolander\", \"Herself, Notes is\"]]}",
+          "{\"table_id\": \"T1217\", \"title\": \"Victoria Beckham\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Notes\"], \"sample_rows\": [[\"2003\", \"The Real Beckhams\", \"Herself\", \"Reality television\"], [\"2007\", \"Giving You Everything\", \"Herself\", \"Documentary\"], [\"2002\", \"Being Victoria Beckham\", \"Herself\", \"Reality television\"]]}",
+          "{\"table_id\": \"T0131\", \"title\": \"Alex Morgan\", \"headers\": [\"Year\", \"Title\", \"Role\", \"Notes\"], \"sample_rows\": [[\"2015\", \"Nicky, Ricky, Dicky & Dawn\", \"Herself\", \"Episode: \\\"The Quad Test\\\"\"], [\"2015\", \"Taylor Swift: The 1989 World Tour Live\", \"Herself\", \"Concert film\"], [\"2015\", \"The Kicks\", \"Herself\", \"Episode: \\\"Pilot\\\"; also creator\"]]}"
+        ]
+      },
+      "Doc": {
+        "description": "Narrative passages for records of appearances in media productions, including roles and video game covers.",
+        "elements": [
+          "player_name",
+          "video_game_title",
+          "edition",
+          "cover_role"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00067\", \"title\": \"Alessandro Del Piero\", \"text\": \"Alessandro Del Piero, Del Piero was featured on the cover of EA Sports FIFA Football 2004 video game, alongside Thierry Henry and Ronaldinho, and on the cover of the Italian edition of the FIFA World Cup 2006 video game.\"}",
+          "{\"doc_id\": \"D00467\", \"title\": \"Francesco Totti\", \"text\": \"Francesco Totti, Totti has featured in EA Sports' FIFA video game series; he starred on the cover of the Italian edition of FIFA 2002.\"}",
+          "{\"doc_id\": \"D00107\", \"title\": \"FIFA (video game series)\", \"text\": \"FIFA (video game series), In 2012, EA Sports signed Lionel Messi to the FIFA franchise, luring him away from the competitor Pro Evolution Soccer.\"}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of appearances in media productions, including roles and video game covers.",
+        "elements": [
+          "subject",
+          "work",
+          "subject_role"
+        ],
+        "data_examples": [
+          "Titanic --present in work--> Titanic Waltz",
+          "John Charles Asplund --affiliation [subject has role: third-class passenger of the Titanic]--> Titanic",
+          "Charles A. Haas --field of work--> Titanic"
+        ]
+      }
+    }
+  },
+  "soccer_rules_and_regulations": {
+    "concept": "soccer_rules_and_regulations",
+    "overall_description": "Records of rules and regulations governing sports, including player count rules.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records of rules and regulations governing sports, including player count rules.",
+        "elements": [
+          "rule_name",
+          "rule_description",
+          "governing_body",
+          "adoption_date",
+          "amendment_history"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00012\", \"title\": \"Association football\", \"text\": \"Association football, The ten outfield players may be arranged in any combination.\"}",
+          "{\"doc_id\": \"D00266\", \"title\": \"Laws of the Game (association football)\", \"text\": \"Laws of the Game (association football), During the meeting, however, Morley brought the delegates' attention to a recently published set of football laws from Cambridge University which banned carrying and hacking.\"}",
+          "{\"doc_id\": \"D00449\", \"title\": \"Women's association football\", \"text\": \"Women's association football, The Irish side of this match was dramatised in the play Rough Girls in 2021.\"}"
+        ]
+      },
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of rules and regulations governing sports, including player count rules.",
+        "elements": [
+          "sport",
+          "player_count_type",
+          "player_count_value",
+          "qualifier_context"
+        ],
+        "data_examples": [
+          "soccer --maximum number of players [of: simultaneity]--> \"+22\"",
+          "soccer --minimum number of players [of: team]--> \"+7\"",
+          "S.S. Lazio --phone number--> \"+39-06-9760-7111\""
+        ]
+      }
+    }
+  },
+  "soccer_team_history": {
+    "concept": "soccer_team_history",
+    "overall_description": "Comprehensive profiles and historical records of soccer teams, leagues, coaches, players, and celebrities.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for comprehensive profiles and historical records of soccer teams, leagues, coaches, players, and celebrities.",
+        "elements": [
+          "team",
+          "season",
+          "competition",
+          "result",
+          "event",
+          "achievement",
+          "team_name",
+          "event_description",
+          "year",
+          "league_position",
+          "playoff_result",
+          "tournament_group",
+          "rivalry",
+          "stadium"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00026\", \"title\": \"Tottenham Hotspur F.C.\", \"text\": \"Tottenham Hotspur F.C., Under Venables, Spurs won the 1990–91 FA Cup, making them the first club to win eight FA Cups.\"}",
+          "{\"doc_id\": \"D00332\", \"title\": \"Portsmouth F.C.\", \"text\": \"Portsmouth F.C., On 10 April 2013, a deal with administrators was reached, although the Pompey Supporters' Trust had not yet finalised the purchase.\"}",
+          "{\"doc_id\": \"D01065\", \"title\": \"Cobh Ramblers F.C.\", \"text\": \"Cobh Ramblers F.C., This led to the re-formation of Cobh Ramblers as a football club.\"}",
+          "{\"doc_id\": \"D00120\", \"title\": \"Liverpool F.C.\", \"text\": \"Liverpool F.C., Reade, Brian (2009).\"}",
+          "{\"doc_id\": \"D00023\", \"title\": \"Liverpool\", \"text\": \"Liverpool, It also hosted the Walker Cup in 1983.\"}",
+          "{\"doc_id\": \"D01148\", \"title\": \"Everton F.C.\", \"text\": \"Everton F.C., It was also located opposite the lock-up on which Everton's club crest is based.\"}"
+        ]
+      }
+    }
+  },
+  "soccer_club_ownership_group": {
+    "concept": "soccer_club_ownership_group",
+    "overall_description": "Records of soccer club affiliations with ownership groups or related entities.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records of soccer club affiliations with ownership groups or related entities.",
+        "elements": [
+          "ownership_group",
+          "club",
+          "affiliation_type",
+          "year",
+          "event"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D01138\", \"title\": \"City Football Group\", \"text\": \"City Football Group, In August 2018, Girona had two loanees, both 21 years old, from Manchester City.\"}",
+          "{\"doc_id\": \"D00082\", \"title\": \"New York City FC\", \"text\": \"New York City FC, In early 2006, Major League Soccer had an interest in placing a second team in the New York City area.\"}",
+          "{\"doc_id\": \"D00834\", \"title\": \"Stoke City F.C.\", \"text\": \"Stoke City F.C., In 1997, Stoke left the Victoria Ground after 119 years, and moved to the modern 28,384 all seater Britannia Stadium at a cost of £14.7 million.\"}"
+        ]
+      }
+    }
+  },
+  "soccer_team_reserve_academy": {
+    "concept": "soccer_team_reserve_academy",
+    "overall_description": "Records of soccer team reserve or academy squads, including leagues and players.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for records of soccer team reserve or academy squads, including leagues and players.",
+        "elements": [
+          "team",
+          "reserve_team",
+          "academy",
+          "league",
+          "season",
+          "player",
+          "manager",
+          "team_name",
+          "squad_type",
+          "player_list",
+          "player_nationality",
+          "player_position",
+          "player_appearances",
+          "player_goals"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D02651\", \"title\": \"Manchester United F.C. Reserves and Academy\", \"text\": \"Manchester United F.C. Reserves and Academy, They play in the Premier League 2, the highest tier of the Professional Development League.\"}",
+          "{\"doc_id\": \"D00126\", \"title\": \"Manchester United F.C.\", \"text\": \"Manchester United F.C., They remained part of their home kits until 1927.\"}",
+          "{\"doc_id\": \"D00038\", \"title\": \"Manchester\", \"text\": \"Manchester, On Saturday 15 June 1996, the Provisional Irish Republican Army (IRA) carried out the 1996 Manchester bombing, the detonation of a large bomb next to a department store in the city centre.\"}",
+          "{\"doc_id\": \"D03024\", \"title\": \"Real Madrid Castilla\", \"text\": \"Real Madrid Castilla, Note: This list includes players that have appeared in at least 100 top league games and/or have reached international status.\"}",
+          "{\"doc_id\": \"D00091\", \"title\": \"Real Madrid CF\", \"text\": \"Real Madrid CF, The club established itself as a major force in both Spanish and European football during the 1950s and 60s, winning five consecutive and six overall European Cups and reaching a further two finals.\"}",
+          "{\"doc_id\": \"D01278\", \"title\": \"Orlando Pride\", \"text\": \"Orlando Pride, In May 2019, plans were unveiled to build a dedicated training facility at Sylvan Lake Park, the first-ever training facility in the NWSL that is tailored to and used exclusively by a women's team.\"}"
+        ]
+      }
+    }
+  },
+  "person_employer_tenure": {
+    "concept": "person_employer_tenure",
+    "overall_description": "Records of a person's employment or tenure with an organization or government.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of a person's employment or tenure with an organization or government.",
+        "elements": [
+          "person",
+          "employer",
+          "start_time",
+          "subject_entity",
+          "head_of_government",
+          "end_time",
+          "additional_qualifiers"
+        ],
+        "data_examples": [
+          "Hans Friderichs --employer--> Adidas",
+          "University of Limoges --IPv4 routing prefix [start time: 1 October \"2001]--> \"193.50.181.0/24\"",
+          "University of Limoges --students count [duration: \"+1\"; start time: 1 September \"2018; end time: 1 June \"2019]--> \"+17347\"",
+          "United States of America --head of government [start time: 4 March \"1877; end time: 4 March \"1881]--> Rutherford B. Hayes",
+          "Germany --office held by head of government--> Federal Chancellor of Germany",
+          "Italy --head of state [start time: 12 May \"1948; determination method: 1948 Italian presidential election; end time: 11 May \"1955]--> Luigi Einaudi"
+        ]
+      }
+    }
+  },
+  "entity_representation_relation": {
+    "concept": "entity_representation_relation",
+    "overall_description": "Relations indicating that one entity represents another.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relations indicating that one entity represents another.",
+        "elements": [
+          "represented_entity",
+          "representative_entity",
+          "relation_type"
+        ],
+        "data_examples": [
+          "NWSLsoccer.com --represents--> National Women's Soccer League",
+          "National Women's Soccer League Best XI --conferred by--> National Women's Soccer League",
+          "Frank Lampard --league--> Premier League"
+        ]
+      }
+    }
+  },
+  "geographic_location_qualifier": {
+    "concept": "geographic_location_qualifier",
+    "overall_description": "Relations indicating geographic locations, water bodies, extreme points, and filming locations.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relations indicating geographic locations, water bodies, extreme points, and filming locations.",
+        "elements": [
+          "located_in_administrative_territorial_entity",
+          "country",
+          "geographic_subject",
+          "geographic_object",
+          "located_entity",
+          "water_body",
+          "applies_to_part",
+          "direction_relative_to_location",
+          "geographic_entity",
+          "extreme_point_type",
+          "extreme_point_location",
+          "elevation_qualifier",
+          "subject",
+          "work"
+        ],
+        "data_examples": [
+          "Mass grave: Fosa común en el antiguo Cementerio de Camas --located in the administrative territorial entity--> Camas",
+          "Branche de La Louvière --origin of the watercourse [located in the administrative territorial entity: La Louvière; located in the administrative territorial entity: Hainaut]--> Belgium",
+          "New York Red Bulls --home venue--> Red Bull Arena",
+          "United States of America --located in or next to body of water [applies to part: Alaska; direction relative to location: north]--> Arctic Ocean",
+          "United States of America --located in time zone--> Mountain Time Zone",
+          "France --continent [applies to part: French Polynesia; applies to part: Wallis and Futuna; applies to part: New Caledonia]--> Oceania"
+        ]
+      }
+    }
+  },
+  "physical_attribute_color": {
+    "concept": "physical_attribute_color",
+    "overall_description": "Records of physical attributes such as eye, hair, or other colors.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of physical attributes such as eye, hair, or other colors.",
+        "elements": [
+          "subject",
+          "attribute_type",
+          "color_value"
+        ],
+        "data_examples": [
+          "Alex Curran --eye color--> blue",
+          "Alex Curran --hair color--> blonde",
+          "Club Atlético River Plate --color--> white"
+        ]
+      }
+    }
+  },
+  "goal_scoring_event": {
+    "concept": "goal_scoring_event",
+    "overall_description": "Records of goals scored by players in matches, including teams and times.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of goals scored by players in matches, including teams and times.",
+        "elements": [
+          "scoring_player",
+          "scored_team",
+          "opposing_team",
+          "match",
+          "match_time",
+          "tournament"
+        ],
+        "data_examples": [
+          "Israel v Slovenia --points/goal scored by [match time of event: \"+48\"; member of sports team: Slovenia national football team]--> Andraž Šporar",
+          "Pelé --member of sports team [start time: \"2015; end time: \"2015]--> S.L. Benfica",
+          "2004 Coupe de la Ligue Final --participating team [number of points/goals/set scored: \"+1\"]--> F.C. Nantes"
+        ]
+      }
+    }
+  },
+  "entity_main_template": {
+    "concept": "entity_main_template",
+    "overall_description": "Relations linking entities to their primary templates or navigation pages.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relations linking entities to their primary templates or navigation pages.",
+        "elements": [
+          "entity",
+          "main_template"
+        ],
+        "data_examples": [
+          "Real Madrid C.F. --topic's main template--> Template:Real Madrid C.F. squad",
+          "Stuttgart --topic's main Wikimedia portal--> Portal:Stuttgart",
+          "Portal:2006 FIFA World Cup --Wikimedia portal's main topic--> 2006 FIFA World Cup"
+        ]
+      }
+    }
+  },
+  "person_category_relation": {
+    "concept": "person_category_relation",
+    "overall_description": "Relations linking entities to categories or classes of people or things.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relations linking entities to categories or classes of people or things.",
+        "elements": [
+          "subject",
+          "category_type",
+          "category",
+          "category_page",
+          "class",
+          "class_type"
+        ],
+        "data_examples": [
+          "Forlì --category for people born here--> Q8077271",
+          "Portugal --category for people who died here--> Category:Deaths in Portugal",
+          "Netherlands --category of people buried here--> Category:Burials in the Netherlands",
+          "Mercedes-Benz Stadium --category for the interior of the item--> Category:Interior of Mercedes-Benz Stadium",
+          "Mercedes-Benz Stadium --category for the exterior of the item--> Category:Exterior of Mercedes-Benz Stadium",
+          "Liverpool --category for the view of the item--> Category:Views of Liverpool"
+        ]
+      }
+    }
+  },
+  "population_statistic": {
+    "concept": "population_statistic",
+    "overall_description": "Records of population statistics for geographic or administrative entities.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of population statistics for geographic or administrative entities.",
+        "elements": [
+          "subject",
+          "population_value",
+          "point_in_time",
+          "determination_method"
+        ],
+        "data_examples": [
+          "Camas --male population [point in time: \"2019; determination method: census]--> \"+13425\"",
+          "Portugal --population [point in time: \"1991]--> \"+9960235\"",
+          "Marseille --female population [determination method: census; point in time: \"2017]--> \"+454273\""
+        ]
+      }
+    }
+  },
+  "entity_motto": {
+    "concept": "entity_motto",
+    "overall_description": "Records of mottos associated with entities.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of mottos associated with entities.",
+        "elements": [
+          "entity",
+          "motto_text"
+        ],
+        "data_examples": [
+          "2006 FIFA World Cup --motto--> A time to make friends",
+          "Netherlands --said to be the same as--> European Netherlands",
+          "United States of America --maritime identification digits--> \"366\""
+        ]
+      }
+    }
+  },
+  "temporal_period_record": {
+    "concept": "temporal_period_record",
+    "overall_description": "Records of temporal periods associated with entities, including start and end times.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of temporal periods associated with entities, including start and end times.",
+        "elements": [
+          "subject",
+          "temporal_period",
+          "start_time",
+          "end_time"
+        ],
+        "data_examples": [
+          "Raúl Díaz Arce --work period (end)--> \"2004",
+          "Paolo Maldini --work period (start)--> 20 January \"1985",
+          "2020–21 Premier League --time period--> 2020–2021 one-year-period",
+          "football at the 1996 Summer Olympics – women's tournament --end time--> 1 August \"1996",
+          "2015 FIFA Women's World Cup --start time--> 6 June \"2015",
+          "Brazil --currency [end time: \"1986; start time: \"1970]--> cruzeiro"
+        ]
+      }
+    }
+  },
+  "official_symbol_relation": {
+    "concept": "official_symbol_relation",
+    "overall_description": "Relations indicating official symbols of entities.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relations indicating official symbols of entities.",
+        "elements": [
+          "subject",
+          "official_symbol",
+          "applies_to_part"
+        ],
+        "data_examples": [
+          "England --official symbol--> Tudor rose",
+          "Portugal --official language--> Mirandese",
+          "mayor of Camas --applies to jurisdiction--> Camas"
+        ]
+      }
+    }
+  },
+  "entity_list_relation": {
+    "concept": "entity_list_relation",
+    "overall_description": "Relations indicating that a subject has a list of items.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relations indicating that a subject has a list of items.",
+        "elements": [
+          "subject",
+          "list_object",
+          "list_type"
+        ],
+        "data_examples": [
+          "soccer in the United States --has list--> list of U.S. stadiums by capacity",
+          "glossary of Olympic terms --is a list of [of: Olympic Games; of: Ancient Olympic Games]--> term",
+          "Category:FIFA World Cup finals --list related to category--> List of FIFA World Cup finals"
+        ]
+      }
+    }
+  },
+  "family_relation": {
+    "concept": "family_relation",
+    "overall_description": "Records of family relationships between individuals.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of family relationships between individuals.",
+        "elements": [
+          "subject",
+          "relation_type",
+          "object",
+          "qualifier_time"
+        ],
+        "data_examples": [
+          "Cruz Beckham --mother--> Victoria Beckham",
+          "Antoine Griezmann --number of children--> \"+2\"",
+          "Felix Kroos --sibling--> Toni Kroos"
+        ]
+      }
+    }
+  },
+  "entity_part_quantity_record": {
+    "concept": "entity_part_quantity_record",
+    "overall_description": "Records indicating that an entity has parts of a certain class, optionally with quantities.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records indicating that an entity has parts of a certain class, optionally with quantities.",
+        "elements": [
+          "subject_entity",
+          "part_class",
+          "quantity_qualifier"
+        ],
+        "data_examples": [
+          "Q57303951 --instance has part(s) of the class--> Thomas Müller",
+          "Titanic --powered by [quantity: \"+4\"]--> Parsons turbine",
+          "200 --prime factor [quantity: \"+3\"]--> 2"
+        ]
+      }
+    }
+  },
+  "country_code_mapping": {
+    "concept": "country_code_mapping",
+    "overall_description": "Mappings from countries to standardized codes.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for mappings from countries to standardized codes.",
+        "elements": [
+          "country",
+          "code_type",
+          "code_value"
+        ],
+        "data_examples": [
+          "Argentina --GS1 country code--> \"778-779\"",
+          "France --mobile country code--> \"208\"",
+          "Netherlands women's national football team --FIFA country code--> \"NED\""
+        ]
+      }
+    }
+  },
+  "entity_commons_category": {
+    "concept": "entity_commons_category",
+    "overall_description": "Relations linking entities to Wikimedia Commons categories or galleries.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relations linking entities to wikimedia commons categories or galleries.",
+        "elements": [
+          "entity",
+          "commons_category_name"
+        ],
+        "data_examples": [
+          "Bruna Marquezine --Commons category--> \"Bruna Marquezine\"",
+          "1930 --Commons gallery--> \"1930\"",
+          "Victor Montagliani --Commons Creator page--> \"Victor Montagliani\""
+        ]
+      }
+    }
+  },
+  "tournament_final_event": {
+    "concept": "tournament_final_event",
+    "overall_description": "Relations linking tournaments to their final match events.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relations linking tournaments to their final match events.",
+        "elements": [
+          "tournament",
+          "final_event",
+          "final_match"
+        ],
+        "data_examples": [
+          "2018 FIFA World Cup --final event--> 2018 FIFA World Cup Final",
+          "1998 FA Cup Final --followed by--> 1999 FA Cup Final",
+          "UEFA Champions League final --part of--> UEFA Champions League"
+        ]
+      }
+    }
+  },
+  "distribution_format": {
+    "concept": "distribution_format",
+    "overall_description": "Records of distribution formats for creative works.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of distribution formats for creative works.",
+        "elements": [
+          "work",
+          "distribution_format"
+        ],
+        "data_examples": [
+          "Waka Waka (This Time for Africa) --distribution format--> music streaming",
+          "Waka Waka (This Time for Africa) --duration--> \"+202\"",
+          "Listen Up! The Official 2010 FIFA World Cup Album --tracklist [series ordinal: \"2\"]--> Waka Waka (This Time for Africa)"
+        ]
+      }
+    }
+  },
+  "person_death_circumstance": {
+    "concept": "person_death_circumstance",
+    "overall_description": "Records of circumstances surrounding a person's death.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of circumstances surrounding a person's death.",
+        "elements": [
+          "subject_person",
+          "death_circumstance",
+          "death_cause",
+          "death_date",
+          "death_place",
+          "manner_of_death"
+        ],
+        "data_examples": [
+          "Johan Cruyff --cause of death--> lung cancer",
+          "Jacques Futrelle --manner of death [of: Titanic]--> accident",
+          "Lamar Hunt --date of death--> 13 December \"2006"
+        ]
+      }
+    }
+  },
+  "crew_membership": {
+    "concept": "crew_membership",
+    "overall_description": "Records of a person's membership as a crew member on a vessel.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of a person's membership as a crew member on a vessel.",
+        "elements": [
+          "person",
+          "vessel",
+          "role"
+        ],
+        "data_examples": [
+          "Sid Daniels --member of the crew of--> Titanic",
+          "Titanic --crew member(s)--> Robert Hichens",
+          "Titanic --speed--> \"+24\""
+        ]
+      }
+    }
+  },
+  "publication_date": {
+    "concept": "publication_date",
+    "overall_description": "Relations indicating publication or release dates of works.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relations indicating publication or release dates of works.",
+        "elements": [
+          "subject",
+          "publication_date"
+        ],
+        "data_examples": [
+          "Waka Waka (This Time for Africa) --publication date--> 11 March \"2010",
+          "Shakira --Treccani's Lessico del XXI Secolo ID [named as: \"Shakira\"; publication date: \"2013]--> \"shakira\"",
+          "soccer --Enciclopedia dello Sport ID [author name string: \"Alessandro Cavalli\"; author name string: \"Antonio Roversi\"; named as: \"CALCIO: UN FENOMENO NON SOLO SPORTIVO\"; publication date: \"2002]--> \"calcio-un-fenomeno-non-solo-sportivo\""
+        ]
+      }
+    }
+  },
+  "statement_subject_relation": {
+    "concept": "statement_subject_relation",
+    "overall_description": "Relations indicating that a statement is about a specific subject.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relations indicating that a statement is about a specific subject.",
+        "elements": [
+          "subject",
+          "statement",
+          "object"
+        ],
+        "data_examples": [
+          "Q19968431 --statement is subject of--> Slovenia national football team",
+          "United States of America --diplomatic relation [statement is subject of: Gabon–United States relations]--> Gabon",
+          "Oliver Kahn --described by source--> Obalky knih.cz"
+        ]
+      }
+    }
+  },
+  "governance_index_rating": {
+    "concept": "governance_index_rating",
+    "overall_description": "Records of governance or democracy index ratings for entities.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for records of governance or democracy index ratings for entities.",
+        "elements": [
+          "subject_entity",
+          "governance_index_type",
+          "index_value",
+          "point_in_time"
+        ],
+        "data_examples": [
+          "Argentina --BTI Governance Index [point in time: \"2018]--> \"+6\"",
+          "Italy --Democracy Index [point in time: \"2011]--> \"+7.74\"",
+          "Argentina --BTI Status Index [point in time: \"2020]--> \"+7.29\""
+        ]
+      }
+    }
+  },
+  "topic_identifier": {
+    "concept": "topic_identifier",
+    "overall_description": "Relations assigning topic identifiers to entities.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relations assigning topic identifiers to entities.",
+        "elements": [
+          "subject_entity",
+          "topic_id",
+          "topic_system"
+        ],
+        "data_examples": [
+          "France --Ávvir topic ID--> \"frankriika\"",
+          "Brazil --CNA topic ID--> \"brazil\"",
+          "Europe --France24 topic ID (Arabic)--> \"أوروبا\""
+        ]
+      }
+    }
+  },
+  "authority_identifier": {
+    "concept": "authority_identifier",
+    "overall_description": "Relations linking entities to identifiers in external authority control systems or databases.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for relations linking entities to identifiers in external authority control systems or databases.",
+        "elements": [
+          "subject_entity",
+          "authority_identifier",
+          "authority_scheme",
+          "person",
+          "external_database",
+          "identifier",
+          "subject_person",
+          "identifier_value",
+          "artist",
+          "identifier_system"
+        ],
+        "data_examples": [
+          "Real Madrid C.F. --SVKKL authority ID--> \"0235544-Real-Madrid-Club-de-Futbol\"",
+          "soccer --authority--> FIFA",
+          "Q3764976 --author--> Alessandro Del Piero",
+          "Victoria Beckham --OFDb person ID--> \"6414\"",
+          "Shakira --7 Days person ID--> \"shakira\"",
+          "Shakira --Vokrug.tv person ID--> \"shakira_\""
+        ]
+      }
+    }
+  },
+  "person_family_name": {
+    "concept": "person_family_name",
+    "overall_description": "A record of a person's family name or surname.",
+    "sources": {
+      "KG": {
+        "description": "Structured entity relations and qualified triples for a record of a person's family name or surname.",
+        "elements": [
+          "person",
+          "family_name"
+        ],
+        "data_examples": [
+          "Keisuke Honda --family name--> Honda",
+          "Tamim bin Hamad Al Thani --family--> Al thani",
+          "Marta --first family name in Portuguese name--> Vieira"
+        ]
+      }
+    }
+  },
+  "player_career_highlights": {
+    "concept": "player_career_highlights",
+    "overall_description": "A record of notable events and achievements in a soccer player's career, including goals, awards, and match performances.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for a record of notable events and achievements in a soccer player's career, including goals, awards, and match performances.",
+        "elements": [
+          "player_name",
+          "season",
+          "team",
+          "competition",
+          "opponent",
+          "event_type",
+          "event_description",
+          "result",
+          "date",
+          "event_date"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00319\", \"title\": \"Frank Lampard\", \"text\": \"Frank Lampard, Lampard captained Chelsea in the 2012 Champions League final against Bayern Munich due to Terry's suspension.\"}",
+          "{\"doc_id\": \"D00277\", \"title\": \"Michael Ballack\", \"text\": \"Michael Ballack, 2009–10 season In Chelsea's second game of the season, away at Sunderland, Ballack scored his first goal of the 2009–10 campaign in their 3–1 win.\"}",
+          "{\"doc_id\": \"D00421\", \"title\": \"Andrew Robertson\", \"text\": \"Andrew Robertson, His performance during his first season as a professional led to him being named PFA Scotland Young Player of the Year and also making his international debut.\"}",
+          "{\"doc_id\": \"D00364\", \"title\": \"Landon Donovan\", \"text\": \"Landon Donovan, He later returned to Germany for a loan with Bayern Munich, and twice went on short loans to English Premier League club Everton in 2010 and 2012.\"}",
+          "{\"doc_id\": \"D01747\", \"title\": \"Landon Donovan MVP Award\", \"text\": \"Landon Donovan MVP Award, On January 15, 2015, MLS renamed its MVP award in honor of Landon Donovan.\"}",
+          "{\"doc_id\": \"D00130\", \"title\": \"Clint Dempsey\", \"text\": \"Clint Dempsey, He scored his second goal for Spurs in the 39th minute in an away game at Southampton in October.\"}"
+        ]
+      }
+    }
+  },
+  "stadium_match_hosting_record": {
+    "concept": "stadium_match_hosting_record",
+    "overall_description": "A record of matches hosted at a specific stadium, including the date, opponent, score, and competition.",
+    "sources": {
+      "Doc": {
+        "description": "Narrative passages for a record of matches hosted at a specific stadium, including the date, opponent, score, and competition.",
+        "elements": [
+          "stadium",
+          "match_date",
+          "opponent",
+          "score",
+          "competition"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"D00875\", \"title\": \"Stadio Artemio Franchi\", \"text\": \"Stadio Artemio Franchi, During the match with Faroe Islands on 7 September 2010, Fabio Quagliarella (a member of Juventus at the time) scored a goal.\"}",
+          "{\"doc_id\": \"D00655\", \"title\": \"Stadio Olimpico Grande Torino\", \"text\": \"Stadio Olimpico Grande Torino, However, during the restructuring held after the Winter Olympics, a new parterre was built, bringing the crowd closer to the front rows.\"}",
+          "{\"doc_id\": \"D00187\", \"title\": \"Fabio Cannavaro\", \"text\": \"Fabio Cannavaro, However, his second season was not as productive, and he missed a large chunk of it through injury.\"}"
+        ]
+      }
+    }
+  },
+  "team_tournament_performance_record": {
+    "concept": "team_tournament_performance_record",
+    "overall_description": "A record of a team's performance in a tournament or series of matches, including match statistics and optionally the coach.",
+    "sources": {
+      "Table": {
+        "description": "Row-structured records for a record of a team's performance in a tournament or series of matches, including match statistics and optionally the coach.",
+        "elements": [
+          "year",
+          "result",
+          "matches",
+          "wins",
+          "draws",
+          "losses",
+          "goals_for",
+          "goals_against",
+          "coach"
+        ],
+        "data_examples": [
+          "{\"table_id\": \"T1199\", \"title\": \"United States women's national soccer team\", \"headers\": [\"Year\", \"Result\", \"Matches\", \"Wins\", \"Draws\", \"Losses\", \"GF\"], \"sample_rows\": [[\"Total\", \"79\", \"56\", \"11\", \"12\", \"172\", \"62, GA is\"]]}",
+          "{\"table_id\": \"T1200\", \"title\": \"United States women's national soccer team\", \"headers\": [\"Year\", \"Result\", \"Matches\", \"Wins\", \"Draws\", \"Losses\", \"GF\", \"GA\"], \"sample_rows\": [[\"Total\", \"8/8\", \"50\", \"40\", \"6\", \"4\", \"138\", \"38, Coach is\"], [\"Total\", \"10/11\", \"44\", \"42\", \"1\", \"1\", \"212\", \"6, Coach is\"], [\"Total\", \"2/2\", \"6\", \"4\", \"1\", \"1\", \"16\", \"8, Coach is\"]]}",
+          "{\"table_id\": \"T1201\", \"title\": \"United States women's national soccer team\", \"headers\": [\"Year\", \"Result\", \"Matches\", \"Wins\", \"Draws\", \"Losses\", \"GF\", \"GA\", \"Coach\"], \"sample_rows\": [[\"2010\", \"1 Champions\", \"4\", \"4\", \"0\", \"0\", \"9\", \"3\", \"Pia Sundhage\"], [\"1995\", \"4th place\", \"4\", \"2\", \"1\", \"1\", \"8\", \"5\", \"Tony DiCicco\"], [\"USA 2003\", \"Third place\", \"6\", \"5\", \"0\", \"1\", \"15\", \"5\", \"April Heinrichs\"]]}"
+        ]
+      }
+    }
+  }
+}

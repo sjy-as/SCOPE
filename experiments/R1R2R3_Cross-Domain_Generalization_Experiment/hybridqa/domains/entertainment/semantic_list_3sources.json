@@ -1,0 +1,1397 @@
+{
+  "actor": {
+    "concept": "actor",
+    "semantic_type": "entity",
+    "overall_description": "An actor is a person who performs in dramatic or comedic productions, such as films, television shows, or theater, and is often characterized by their name, years of activity, nationality, profession, and notable roles.",
+    "routing_guide": "Use Table when the query requires structured attributes like actor names, years, nationality, or specific soap opera details (character, show, duration). Use Doc when the query needs richer biographical context, such as birth date, awards, or career highlights. For comprehensive answers, use both sources, joining on actor name.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "actor_name"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured lists of actors with attributes such as name, years active, nationality/profession, and for soap opera actors, character name, soap opera title, and duration of tenure.",
+        "elements": [
+          "name",
+          "years",
+          "nationality",
+          "profession",
+          "actor_name",
+          "character_name",
+          "soap_opera_title",
+          "years_active",
+          "duration",
+          "Actor",
+          "Character",
+          "Soap Opera",
+          "Nationality/profession",
+          "Country",
+          "Prominent roles"
+        ],
+        "data_examples": [
+          "page_title: List of Jewish actors, section_title: Born in the 1930s, header: [Name, Years, Nationality/profession], sample_row: [Anouk Aimée, 1932-, French film actress]",
+          "page_title: List of longest-serving soap opera actors, section_title: United Kingdom, header: [Actor, Character, Soap Opera, Years, Duration], sample_row: [William Roache, Ken Barlow, Coronation Street, 1960-, 60 years]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides biographical articles about actors, including details like birth date, nationality, notable roles, awards, career start year, and other professional information.",
+        "elements": [
+          "name",
+          "birth_date",
+          "nationality",
+          "notable_roles",
+          "profession",
+          "notable_works",
+          "awards",
+          "stage_name",
+          "film_count",
+          "languages",
+          "honors",
+          "career_start_year",
+          "birth_place",
+          "occupation",
+          "years_active",
+          "birth_name",
+          "television_series",
+          "film_series",
+          "created_work",
+          "panelist_show"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Paul_Michael_Glaser\", \"title\": \"Paul Michael Glaser\", \"text\": \"Paul Michael Glaser ( born March 25 , 1943 ) , is an American actor and director best known for his role as Detective David Starsky on the 1970s television series , Starsky & Hutch . Glaser also appeared as Captain Jack Steeper on the NBC series Third Watch from 2004 to 2005 .\"}",
+          "{\"doc_id\": \"/wiki/Michael_Caine\", \"title\": \"Michael Caine\", \"text\": \"Sir Michael Caine , CBE ( /keɪn/ ; born Maurice Joseph Micklewhite Jr. , 14 March 1933 ) is an English actor , film producer and author . He has appeared in more than 130 films in a career spanning over 60 years and is considered a British film icon . Known for his cockney accent , Caine was born in Southeast London . He made his breakthrough in the 1960s with starring roles in British films , including Zulu ( 1964 ) , The Ipcress File ( 1965 ) , Alfie ( 1966 ) , for which he was nominated for a\"}",
+          "{\"doc_id\": \"/wiki/Mary-Louise_Parker\", \"title\": \"Mary-Louise Parker\", \"text\": \"Mary-Louise Parker ( born August 2 , 1964 ) is an American actress and writer . After making her stage debut as Rita in a Broadway production of Craig Lucas 's Prelude to a Kiss in 1990 ( for which she received a Tony Award nomination ) , Parker came to prominence for film roles in Grand Canyon ( 1991 ) , Fried Green Tomatoes ( 1991 ) , The Client ( 1994 ) , Bullets over Broadway ( 1994 ) , Boys on the Side ( 1995 ) , The Portrait of a Lady ( 1996 ) , and The Maker ( 1997 ) . Among stage and ind\"}"
+        ]
+      }
+    }
+  },
+  "album": {
+    "concept": "album",
+    "semantic_type": "entity",
+    "overall_description": "An album is a collection of audio recordings issued as a single unit, typically by a musician or group, with a title, release date, and often associated with awards or chart performance.",
+    "routing_guide": "Use Table when the query involves best-selling albums by year in the US or requires comparative/aggregate analysis across years. Use Doc when the query targets a specific album's attributes, awards, or detailed background. Use both when combining yearly sales data with album-specific details.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify",
+        "compare",
+        "join"
+      ],
+      "join_keys": [
+        "album_title",
+        "artist"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides yearly best-selling albums in the United States, including year, performing artist, nationality, album title, and additional chart/certification details.",
+        "elements": [
+          "year",
+          "performing_artist",
+          "nationality",
+          "album_title",
+          "Album",
+          "Artist",
+          "Certification",
+          "Performing artist ( s )",
+          "Issue date of chart",
+          "Weeks at number one ( total )",
+          "Rank",
+          "Sales",
+          "Title",
+          "Weeks on chart",
+          "Weeks at number one"
+        ],
+        "data_examples": [
+          "page_title: List of best-selling albums by year in the United States, section_title: 1960s, header: [Year, Performing artist ( s ), Nationality, Album], sample_row: [1960, Original Broadway Cast, -, The Sound of Music]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides detailed descriptions of individual albums, including title, artist, release date, awards, genre, record label, singles, and chart performance.",
+        "elements": [
+          "album_title",
+          "artist",
+          "release_date",
+          "award",
+          "title",
+          "release_year",
+          "genre",
+          "format",
+          "release_order",
+          "award_received",
+          "record_label",
+          "singles",
+          "chart_performance",
+          "sales",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Caraluna\", \"title\": \"Caraluna\", \"text\": \"Caraluna ( Moonface ) is the second studio album recorded by Bacilos released on July 16 , 2002 . The album won the Latin Grammy Award for Best Pop Album by a Duo or Group with Vocals in 2003 .\"}",
+          "{\"doc_id\": \"/wiki/Mel_and_George_\\\"Do\\\"_World_War_II\", \"title\": \"Mel and George \\\"Do\\\" World War II\", \"text\": \"Mel and George Do World War II is a 1990 live album by the American jazz singer Mel Tormé and the British jazz pianist George Shearing .\"}",
+          "{\"doc_id\": \"/wiki/Life_thru_a_Lens\", \"title\": \"Life thru a Lens\", \"text\": \"Life thru a Lens is the debut solo studio album by English singer-songwriter Robbie Williams . It was Williams ' first solo album following his departure from Take That . Released on 29 September 1997 through Chrysalis Records , it is influenced by Britpop , a departure from the poppier tone of music Take That employed . The album 's working name was The Show-Off Must Go On . The album 's first three singles , Old Before I Die , Lazy Days and South of the Border ( the only single to miss the top\"}"
+        ]
+      }
+    }
+  },
+  "award": {
+    "concept": "award",
+    "semantic_type": "event",
+    "overall_description": "An award is a recognition event in entertainment (film, music, television) that honors excellence through categories, nominees, and winners, often presented at annual ceremonies with details like year, venue, and host.",
+    "routing_guide": "Use Table when the query asks for specific award winners, nominees, or category details in a tabular format, such as 'Who won Best Musical Theater Album in 1990?' or 'List shows that won an award in 2005'. Use Doc when the query asks for ceremony details like date, venue, host, or a summary of winners, such as 'When and where was the 75th Academy Awards held?' or 'Who hosted the Grammy Awards of 1987?'. Use both when the query requires combining ceremony details with specific winner lists, e.g., 'What were the winners at the 29th Grammy Awards and where was it held?'",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "award_name",
+        "year",
+        "category"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured lists of award winners and nominees, including fields such as year, category, winner, work, show, channel, and award name, as seen in examples like Grammy Awards, Indian Television Academy Awards, and state film awards.",
+        "elements": [
+          "year",
+          "show",
+          "channel",
+          "award_name",
+          "category",
+          "winner",
+          "work",
+          "nominees",
+          "award_category",
+          "producer",
+          "awardee",
+          "film_title",
+          "Performing artist ( s )",
+          "Winner ( s )",
+          "Name of Award",
+          "Awardee ( s )",
+          "Name of Film",
+          "Nationality",
+          "No",
+          "Film"
+        ],
+        "data_examples": [
+          "page_title: Grammy Award for Best Musical Theater Album, section_title: Winner and nominees -- 1990s, header: [Year, Winner ( s ), Work, Nominees], sample_row: [1990, Jay David Saks ( producer ), Jerome Robbins ' Broadway, Aspects of Love Broadway the Hard Way - Frank Zappa ( producer ) Sarafina ! Pacific Overtures]",
+          "page_title: Indian Television Academy Awards, section_title: Categories -- Other Awards, header: [Year, Show, Channel], sample_row: [2005, Fame Gurukul, Sony TV]",
+          "page_title: 40th Kerala State Film Awards, section_title: , header: [Name of Award, Awardee ( s ), Name of Film], sample_row: [Best Film, Ranjith, Paleri Manikyam : Oru Pathirakolapathakathinte Katha]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides narrative descriptions of award ceremonies, including details like ceremony date, venue, host, network, and winners in various categories, as seen in articles about the Grammy Awards and Academy Awards.",
+        "elements": [
+          "award_name",
+          "edition_number",
+          "ceremony_date",
+          "venue",
+          "city",
+          "state",
+          "country",
+          "year_recognized",
+          "category",
+          "winner",
+          "work",
+          "ceremony_name",
+          "date",
+          "location",
+          "host",
+          "network",
+          "producer",
+          "director",
+          "award_category",
+          "nominee"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Grammy_Awards_of_1987\", \"title\": \"Grammy Awards of 1987\", \"text\": \"The 29th Annual Grammy Awards were held on February 24 , 1987 , at Shrine Auditorium , Los Angeles , California . They recognized accomplishments by musicians from the previous year . Paul Simon won Album of the Year for Graceland , and Burt Bacharach and Carole Bayer Sager won Song of the Year for That 's What Friends Are For .\"}",
+          "{\"doc_id\": \"/wiki/75th_Academy_Awards\", \"title\": \"75th Academy Awards\", \"text\": \"The 75th Academy Awards ceremony , presented by the Academy of Motion Picture Arts and Sciences ( AMPAS ) took place on March 23 , 2003 , at the Kodak Theatre in Hollywood , Los Angeles beginning at 5:30 p.m. PST / 8:30 p.m. EST . During the ceremony , AMPAS presented Academy Awards ( commonly referred to as Oscars ) in 24 categories honoring films released in 2002 . The ceremony , televised in the United States by ABC , was produced by Gil Cates and was directed by Louis J. Horvitz . Actor Stev\"}"
+        ]
+      }
+    }
+  },
+  "award_category": {
+    "concept": "award_category",
+    "semantic_type": "event",
+    "overall_description": "An award category is a specific recognition within an award ceremony, defined by criteria such as genre, language, or craft, and includes a list of winners and nominees over time.",
+    "routing_guide": "Use Table when structured data on winners, nominees, and years is needed for analysis or comparison. Use Doc when contextual information or descriptions of the award category are required. Use both when comprehensive information is needed, such as combining structured winner data with narrative context.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "award_name",
+        "category_name",
+        "year",
+        "winner"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on award categories, including year, winner, album, nominees, award name, category, country, and language, with examples from the Juno Award for Francophone Album of the Year.",
+        "elements": [
+          "year",
+          "winner",
+          "album",
+          "nominees",
+          "award_name",
+          "category",
+          "country",
+          "language",
+          "Winner ( s )"
+        ],
+        "data_examples": [
+          "page_title: Juno Award for Francophone Album of the Year, section_title: Recipients -- Best Selling Francophone Album ( 1992–2002 ), header: [Year, Winner ( s ), Album, Nominees], sample_row: [1992, Luc de Larochellière, Sauvez mon âme, L'Album du peuple - Tome 1 - François Pérusse Kathleen - Kathleen Snob - Les B.B . Vilain Pingouin - Vilain Pingouin]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides textual descriptions of award categories, including award name, category name, winner, year, film title, and title, with examples from the Kerala State Film Award for Best Photography.",
+        "elements": [
+          "award_name",
+          "category_name",
+          "winner",
+          "year",
+          "film_title",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Kerala_State_Film_Award_for_Best_Photography\", \"title\": \"Kerala State Film Award for Best Photography\", \"text\": \"The Kerala State Film Award for Best Cinematographer winners :\"}"
+        ]
+      }
+    }
+  },
+  "award_submission": {
+    "concept": "award_submission",
+    "semantic_type": "relation_or_fact",
+    "overall_description": "An award submission is a formal entry of a work (e.g., a film) by a country or organization for consideration in a specific award category, often with a designated title, language, director, and result.",
+    "routing_guide": "Use Table when the query involves structured attributes like year, country, title, director, or result, and when comparisons or aggregations across submissions are needed. Use Doc if the query requires narrative context or details not captured in the table, but for most factual queries, Table is sufficient.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve",
+        "verify"
+      ],
+      "Doc": [],
+      "join_keys": [
+        "submitting_country",
+        "film_title_used_in_nomination",
+        "original_title",
+        "director",
+        "year_ceremony"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on award submissions, including fields such as year/ceremony, submitting country, film title used in nomination, original title, language(s), director(s), and result (e.g., nominated or not).",
+        "elements": [
+          "year",
+          "ceremony",
+          "film_title_used_in_nomination",
+          "original_title",
+          "director",
+          "result",
+          "submitting_country",
+          "film_title",
+          "language",
+          "Film title used in nomination",
+          "Original title",
+          "Language ( s )",
+          "Director ( s )",
+          "Submitting country",
+          "Year ( Ceremony )",
+          "Film title",
+          "English title",
+          "Kazakh title"
+        ],
+        "data_examples": [
+          "page_title: List of submissions to the 52nd Academy Awards for Best Foreign Language Film, section_title: Submissions, header: [Submitting country, Film title used in nomination, Language ( s ), Original title, Director ( s ), Result], sample_row: [Argentina, The Island, Spanish, La Isla, Alejandro Doria, Not Nominated]",
+          "page_title: List of Austrian submissions for the Academy Award for Best International Feature Film, section_title: Submissions, header: [Year ( Ceremony ), Film title used in nomination, Original title, Director ( s ), Result], sample_row: [1961 ( 34th ), Jedermann, Jedermann, Gottfried Reinhardt, Not Nominated]"
+        ]
+      }
+    }
+  },
+  "band": {
+    "concept": "band",
+    "semantic_type": "entity",
+    "overall_description": "A band is a group of musicians who perform together, often with a specific genre, origin, and formation date.",
+    "routing_guide": "Use Doc when the query involves detailed band information such as lineup, history, or descriptive text. For structured queries like filtering by genre or origin, consider extracting structured fields from Doc if available, but prefer Table if present.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides narrative descriptions of bands, including name, genre, origin, formation date, lineup, and other textual details.",
+        "elements": [
+          "name",
+          "genre",
+          "origin",
+          "formation_date",
+          "lineup",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Jumbo_(band)\", \"title\": \"Jumbo (band)\", \"text\": \"Jumbo is the name of an Avanzada Regia Alternative rock band from Monterrey , Mexico . They were founded in May 1997 with the following lineup :\"}"
+        ]
+      }
+    }
+  },
+  "comic_book_publishing_imprint": {
+    "concept": "comic_book_publishing_imprint",
+    "semantic_type": "entity",
+    "overall_description": "A comic book publishing imprint is a distinct brand or division of a comic book publisher, often used to publish a specific line of comics, sometimes featuring merged or alternate versions of characters.",
+    "routing_guide": "Use Doc when the query involves narrative details, historical context, or relationships between imprints and characters/publishers. Use Table if a structured list of imprints with attributes is available; otherwise, rely on Doc. For comprehensive answers, consider both sources.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "compare",
+        "aggregate",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "publisher"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides narrative descriptions of comic book publishing imprints, including details such as the imprint name, publisher(s), characters involved, publication years, and any universe designations. Each document is a separate article about a specific imprint, with fields like doc_id, title, text, and linked_table_id.",
+        "elements": [
+          "name",
+          "publisher",
+          "characters",
+          "publication_years",
+          "universe_designation",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Amalgam_Comics\", \"title\": \"Amalgam Comics\", \"text\": \"Amalgam Comics was a publishing imprint shared by DC Comics and Marvel Comics , in which the two comic book publishers merged their characters into new ones ( e.g. , DC Comics ' the Batman and Marvel Comics ' Wolverine became the Amalgam character the Dark Claw ) . These characters first appeared in a series of 12 comic books which were published in April 1996 , between issues # 3-4 of the DC vs. Marvel miniseries . A second set of 12 comic books followed one year later in June 1997.All 24 of th\"}"
+        ]
+      }
+    }
+  },
+  "discography": {
+    "concept": "discography",
+    "semantic_type": "collection",
+    "overall_description": "A discography is a comprehensive listing of an artist's or group's recordings, including albums, singles, and other releases, often with details such as year, title, label, and track listings.",
+    "routing_guide": "Choose Table when the query requires structured data about albums, such as filtering by year, sorting by title, or comparing releases. Choose Doc if the query involves narrative or biographical context. For queries needing both structured and contextual information, use both sources.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "artist",
+        "year",
+        "title"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "This source provides a structured table of albums featuring the artist, with columns for year, title, label, and song, along with an introductory biography of the artist. It includes data examples such as page title, section title, header, and sample rows.",
+        "elements": [
+          "year",
+          "title",
+          "label",
+          "song",
+          "artist",
+          "Year recorded",
+          "Leader"
+        ],
+        "data_examples": [
+          "page_title: Sara Niemietz discography, section_title: Albums -- As featured artist, header: [Year, Title, Label, Song], sample_row: [2004, Barbie as the Princess and the Pauper, Family Home, I 'm on My Way]"
+        ]
+      }
+    }
+  },
+  "fictional_character": {
+    "concept": "fictional_character",
+    "semantic_type": "entity",
+    "overall_description": "A fictional character is a person, animal, or other being that appears in works of fiction, such as literature, film, television, or video games, and is defined by attributes like name, species, and origin.",
+    "routing_guide": "Choose Table when the query involves structured attributes like species, work, or author, or when comparing multiple characters. Choose Doc when the query requires detailed background, actor information, or narrative context. Use both when a comprehensive answer is needed, such as verifying a character's details and cross-referencing with structured data.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify",
+        "compare"
+      ],
+      "join_keys": [
+        "name",
+        "work",
+        "character_name",
+        "origin"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured lists of fictional characters categorized by type (e.g., ungulates, rodents, birds of prey, pigs, primates) with fields such as character name, species, work of origin, author, platform, and notes. Useful for querying specific attributes and comparing characters across works.",
+        "elements": [
+          "name",
+          "species",
+          "work",
+          "notes",
+          "character_name",
+          "author",
+          "rodent_type",
+          "origin_work",
+          "origin",
+          "character",
+          "platform",
+          "media_type",
+          "Character/s",
+          "Creator",
+          "Universe",
+          "Origin / first mentioned",
+          "Date",
+          "Film",
+          "Comic",
+          "Princess"
+        ],
+        "data_examples": [
+          "page_title: List of fictional birds of prey, section_title: Animation, header: [Character, Species, Origin], sample_row: [18, Owl, Sankarea]",
+          "page_title: List of fictional ungulates, section_title: Media -- Film, header: [Name, Species, Work, Notes], sample_row: [Sven, Reindeer, Frozen, A reindeer and the companion of Kristoff from the Frozen franchise]",
+          "page_title: List of fictional turtles, section_title: In film and television, header: [Character, Origin, Notes], sample_row: [Gamera, Daiei Motion Picture Company, A flying , fire-breathing turtle]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides detailed narrative descriptions of individual fictional characters, including their name, the work they appear in, actor/portrayer, creator, debut date, and other biographical details. Useful for in-depth information and verification.",
+        "elements": [
+          "character_name",
+          "portrayer",
+          "soap_opera",
+          "start_year",
+          "name",
+          "creator",
+          "series",
+          "debut_date",
+          "duration",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Ken_Barlow\", \"title\": \"Ken Barlow\", \"text\": \"Kenneth Ken Barlow is a fictional character and the central protagonist from the British ITV soap opera Coronation Street , played by William Roache . Ken was created by Tony Warren as one of Coronation Street 's original characters . He debuted in the soap 's first episode on 9 December 1960 . Having appeared continuously since , December 2010 marked Ken 's 50th anniversary on-screen , making Roache the longest-serving actor in a televised soap opera . Roache was honoured at the 2010 Guinness W\"}",
+          "{\"doc_id\": \"/wiki/Nicole_Miller_(Shortland_Street)\", \"title\": \"Nicole Miller (Shortland Street)\", \"text\": \"Nicole Kruse-Miller ( previously Miller ) is a fictional character on the New Zealand soap opera Shortland Street who has been portrayed by Sally Martin since September 2009 .\"}"
+        ]
+      }
+    }
+  },
+  "fictional_settlement": {
+    "concept": "fictional_settlement",
+    "semantic_type": "entity",
+    "overall_description": "A fictional settlement is a town, village, city, or other populated place that appears in works of fiction, such as animation, literature, film, or television, and is integral to the narrative.",
+    "routing_guide": "Choose Table when the user query asks for a list of fictional settlements with attributes like origin work, network, or notes, or when comparing or aggregating across multiple settlements. Choose Doc if the query requires narrative context or detailed descriptions not captured in tabular fields. Use both when the query needs both structured attributes and narrative details.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "town_name",
+        "origin_work"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "This source is a list of fictional towns in animation, providing the town name, the originating animated work, the network on which it aired, and notes about the town's location or significance.",
+        "elements": [
+          "town_name",
+          "origin_work",
+          "network",
+          "notes",
+          "Town name",
+          "Origin"
+        ],
+        "data_examples": [
+          "page_title: List of fictional towns in animation, section_title: , header: [Town name, Origin, Network, Notes], sample_row: [Aberdale, Clarence, CN, A fictional town located in Arizona]"
+        ]
+      }
+    }
+  },
+  "film": {
+    "concept": "film",
+    "semantic_type": "entity",
+    "overall_description": "A film is a motion picture, typically a narrative work produced for theatrical release or broadcast, with a title, director, cast, and country of origin.",
+    "routing_guide": "Choose Table when the query involves multiple films, requires structured attributes (e.g., list films by year, country, or gross), or needs sorting/comparison/aggregation. Choose Doc when the query targets a specific film and requires detailed information such as plot, awards, or production history. Use both when a query needs both structured attributes and detailed context, e.g., comparing films while also retrieving their synopses.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify",
+        "join"
+      ],
+      "join_keys": [
+        "title",
+        "director",
+        "year",
+        "country"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured lists of films with attributes such as title, director, cast, genre, year, country, producer, rank, studio, and gross figures. Useful for comparative and aggregate queries across many films.",
+        "elements": [
+          "title",
+          "director",
+          "cast",
+          "genre",
+          "year",
+          "country",
+          "producer",
+          "rank",
+          "studio",
+          "total_gross",
+          "events_depicted",
+          "release_date",
+          "time_period",
+          "setting_notes",
+          "french_title",
+          "english_title",
+          "language",
+          "film_title",
+          "worldwide_gross",
+          "notes"
+        ],
+        "data_examples": [
+          "page_title: List of horror films of 1964, section_title: , header: [Title, Director, Cast, Country], sample_row: [2000 Maniacs, Herschell Gordon Lewis, Connie Mason , Shelby Livingston , Michael Korb, United States]",
+          "page_title: List of Japanese films of 1980, section_title: List of films, header: [Title, Director, Cast, Genre], sample_row: [The Beast to Die, , , N/A]",
+          "page_title: List of highest-grossing Indian films, section_title: Highest-grossing films by language -- Punjabi, header: [Rank, Film, Year, Director, Studio ( s ), Worldwide gross], sample_row: [1, Chaar Sahibzaade, 2014, Harry Baweja, Baweja Movies, ₹ 70 crore ( US $ 9.8 million )]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides detailed narrative descriptions of individual films, including plot, awards, production details, and background information. Useful for in-depth retrieval and verification of specific film facts.",
+        "elements": [
+          "title",
+          "release_year",
+          "country",
+          "language",
+          "genre",
+          "director",
+          "based_on",
+          "premiere_date",
+          "release_type",
+          "year",
+          "screenwriter",
+          "source_play_author",
+          "award_submission",
+          "production_company",
+          "characters",
+          "plot",
+          "awards",
+          "cast",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Bleeders_(film)\", \"title\": \"Bleeders (film)\", \"text\": \"Bleeders ( also known as Hemoglobin ) is a 1997 Canadian horror film directed by Peter Svatek , based upon H. P. Lovecraft 's story The Lurking Fear . It premiered at the Fantastisk Film Festival Lund in Sweden on September 14 , 1997 , and was released direct to video the following year . It is the last original script written by Dan O'Bannon produced during his lifetime .\"}",
+          "{\"doc_id\": \"/wiki/A_Moslem\", \"title\": \"A Moslem\", \"text\": \"A Moslem ( Russian : Мусульманин , Musulmanin ) is a 1995 Russian drama film directed by Vladimir Khotinenko . The film was selected as the Russian entry for the Best Foreign Language Film at the 68th Academy Awards , but was not accepted as a nominee .\"}",
+          "{\"doc_id\": \"/wiki/But_Always\", \"title\": \"But Always\", \"text\": \"But Always ( Chinese : 一生一世 ) is a 2014 Chinese-Hong Kong romantic drama film directed by Snow Zou .\"}"
+        ]
+      }
+    }
+  },
+  "film_director": {
+    "concept": "film_director",
+    "semantic_type": "entity",
+    "overall_description": "A film director is a person who directs the making of a film, overseeing the artistic and dramatic aspects and guiding the technical crew and actors.",
+    "routing_guide": "Choose Doc when the query involves film directors' biographical details, filmographies, awards, or festival participation. Since only Doc is present, route all such queries to Doc. If Table were available, it would be used for structured comparisons or aggregations, but currently Doc is the sole source.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "join_keys": [
+        "name",
+        "birth_date",
+        "nationality",
+        "occupation",
+        "filmography",
+        "awards",
+        "notable_films"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides biographical and professional information about film directors, including their name, birth date, nationality, occupation, filmography, notable films, awards, and festival entries. It contains textual descriptions and structured elements such as title, text, and linked_table_id, with 1099 items.",
+        "elements": [
+          "name",
+          "birth_date",
+          "nationality",
+          "occupation",
+          "filmography",
+          "awards",
+          "birth_year",
+          "profession",
+          "notable_films",
+          "film_festival",
+          "award_submission",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Christian_Duguay_(director)\", \"title\": \"Christian Duguay (director)\", \"text\": \"Christian Duguay ( born March 30 , 1956 ) is a Canadian film director .\"}",
+          "{\"doc_id\": \"/wiki/Peter_Patzak\", \"title\": \"Peter Patzak\", \"text\": \"Peter Patzak ( born 2 January 1945 ) is an Austrian film director and screenwriter . He has directed 60 films since 1973 . His film Kassbach - Ein Porträt was entered into the 29th Berlin International Film Festival and his film Wahnfried was screened out of competition at the 1987 Cannes Film Festival . His 1997 film Shanghai 1937 was entered into the 20th Moscow International Film Festival .\"}",
+          "{\"doc_id\": \"/wiki/Yann_Samuell\", \"title\": \"Yann Samuell\", \"text\": \"Yann Samuell ( born 7 June 1965 ) is a French film director and screenwriter .\"}"
+        ]
+      }
+    }
+  },
+  "film_festival": {
+    "concept": "film_festival",
+    "semantic_type": "event",
+    "overall_description": "A film festival is an organized event, typically annual, where films are screened and often judged, with a name, establishment year, host city, and country.",
+    "routing_guide": "Use Table when the query requires structured attributes of film festivals, such as filtering by year, city, or country, or when comparing festivals. Use Doc if the query involves unstructured text or detailed historical narratives. For queries combining structured and unstructured information, use both sources.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "festival_name",
+        "year",
+        "host_city"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on film festivals, including fields such as festival name, establishment year, city, country, edition number, year, and host city. Examples include lists of documentary film festivals and historical editions of specific festivals like the Vietnam Film Festival.",
+        "elements": [
+          "name",
+          "established_year",
+          "city",
+          "country",
+          "festival_name",
+          "edition_number",
+          "year",
+          "host_city",
+          "Est",
+          "Director",
+          "Title",
+          "State/Prov",
+          "Notes",
+          "Website",
+          "Film",
+          "Festival",
+          "Host city"
+        ],
+        "data_examples": [
+          "page_title: List of documentary film festivals, section_title: , header: [Name, Est, City, Country], sample_row: [10 Under 10 Film Festival, 2002, Austin , Texas, United States]",
+          "page_title: Vietnam Film Festival, section_title: History, header: [Festival, Year, Host city], sample_row: [1st Vietnam Film Festival, 1970, Hanoi]"
+        ]
+      }
+    }
+  },
+  "filmography": {
+    "concept": "filmography",
+    "semantic_type": "collection",
+    "overall_description": "A filmography is a comprehensive listing of an individual's credits in film, television, video games, music videos, or other media, typically including details such as year, title, role, and director.",
+    "routing_guide": "Choose Table when the query requires structured, attribute-based filtering, sorting, or aggregation of filmography entries (e.g., 'list all films by director X in the 1990s'). Choose Doc when the query involves unstructured narrative descriptions or when the information is not available in tabular form. Use both when cross-referencing structured data with textual context.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve",
+        "verify"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "person",
+        "title",
+        "year",
+        "role",
+        "director"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "This source provides structured tabular data for filmographies, with columns such as year(s), title, role, network, notes, release date, director, and other attributes. It includes examples from actors and producers, listing their credits in a systematic format.",
+        "elements": [
+          "year",
+          "title",
+          "role",
+          "network",
+          "notes",
+          "release_date",
+          "director",
+          "person",
+          "media_type",
+          "Release Date",
+          "Artist",
+          "Date",
+          "Rank",
+          "Studio",
+          "Country",
+          "Film Title",
+          "Gross ( RM )",
+          "Series",
+          "Year ( s )"
+        ],
+        "data_examples": [
+          "page_title: Laurence Fishburne filmography, section_title: Film, header: [Year, Title, Role, Director], sample_row: [1975, Cornbread , Earl and Me, Wilford Robinson, Joseph Manduke]",
+          "page_title: Andrew Gower (actor), section_title: Filmography, header: [Year ( s ), Title, Role, Network, Notes], sample_row: [2011, Frankenstein 's Wedding ... Live in Leeds, Victor Frankenstein, BBC Three, ]",
+          "page_title: David O. Selznick filmography, section_title: Filmography -- RKO Pictures, header: [Release date, Title, Director ( s )], sample_row: [March 10 , 1932, The Lost Squadron, George Archainbaud]"
+        ]
+      }
+    }
+  },
+  "manga": {
+    "concept": "manga",
+    "semantic_type": "entity",
+    "overall_description": "A manga is a Japanese comic book or graphic novel, typically serialized in a magazine and later collected into volumes, with a creator, publisher, and serialization period.",
+    "routing_guide": "Choose Doc when the query requires rich narrative details, such as plot summaries, inspirations, or adaptation information, or when the query involves specific manga titles and their attributes. Choose Table if a structured table with fields like title, author, publisher, and dates is available for filtering and aggregation. Use both when a query needs both structured filtering and narrative context.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "join_keys": [
+        "title",
+        "author",
+        "publisher"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides detailed narrative descriptions of individual manga series, including title, author, illustrator, publisher, serialization start and end dates, chapter and volume counts, genre, inspiration, adaptations, and a text field with the full description. It also includes a linked_table_id for potential joins.",
+        "elements": [
+          "title",
+          "author",
+          "illustrator",
+          "publisher",
+          "serialization_start",
+          "serialization_end",
+          "chapter_count",
+          "volume_count",
+          "genre",
+          "inspiration",
+          "adaptations",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Dragon_Ball_(manga)\", \"title\": \"Dragon Ball (manga)\", \"text\": \"Dragon Ball ( Japanese : ドラゴンボール , Hepburn : Doragon Bōru ) is a Japanese manga series written and illustrated by Akira Toriyama . Originally serialized in Weekly Shōnen Jump magazine from 1984 to 1995 , the 519 individual chapters were printed in 42 tankōbon volumes by the publisher Shueisha . Dragon Ball was inspired by the Chinese novel Journey to the West as well as Hong Kong martial arts films . It initially had a comedy focus but later became an action-packed fighting series . The story fo\"}"
+        ]
+      }
+    }
+  },
+  "musician": {
+    "concept": "musician",
+    "semantic_type": "entity",
+    "overall_description": "A musician is a person who performs, composes, or conducts music, often associated with a band or solo career, and may also write and perform their own songs.",
+    "routing_guide": "Choose Doc when the query involves detailed biographical information, career milestones, or specific attributes like birth date, nationality, genre, or associated acts. Since only Doc is present, it should be used for all musician-related queries.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "name",
+        "birth_date",
+        "nationality",
+        "genre",
+        "associated_band"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "The Doc source provides biographical and career information about musicians, including fields such as name, birth date, nationality, profession, occupation, genre, debut album, notable singles, associated acts, birth place, associated band, role in band, title, text, and linked table ID. It contains 233 items with examples like Marjo, Mike Posner, and Gustavo Cordera.",
+        "elements": [
+          "name",
+          "birth_date",
+          "nationality",
+          "profession",
+          "occupation",
+          "genre",
+          "debut_album",
+          "notable_singles",
+          "associated_acts",
+          "birth_place",
+          "associated_band",
+          "role_in_band",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Marjo\", \"title\": \"Marjo\", \"text\": \"Marjolène Morin ( born 2 August 1953 ) , professionally known as Marjo , is a Canadian singer-songwriter from Quebec .\"}",
+          "{\"doc_id\": \"/wiki/Mike_Posner\", \"title\": \"Mike Posner\", \"text\": \"Michael Robert Henrion Posner ( /ˈpoʊznər/ POHZ-nər ; born February 12 , 1988 ) is an American singer , songwriter , rapper , poet , and record producer . Posner released his debut album , 31 Minutes to Takeoff , on August 10 , 2010 . The album includes the US Billboard Hot 100 top 10 single Cooler than Me as well as the top 20 single Please Do n't Go . In 2016 he released his second album , At Night , Alone . A remix of his 2015 single I Took a Pill in Ibiza from the album peaked in the top 10 \"}",
+          "{\"doc_id\": \"/wiki/Gustavo_Cordera\", \"title\": \"Gustavo Cordera\", \"text\": \"Gustavo Edgardo Cordera ( born September 15 , 1961 in Avellaneda , Buenos Aires ) is an Argentine rock musician , best known as the ex frontman of the band Bersuit Vergarabat .\"}"
+        ]
+      }
+    }
+  },
+  "novel": {
+    "concept": "novel",
+    "semantic_type": "entity",
+    "overall_description": "A novel is a long-form fictional prose narrative, typically published as a book, with a title, author, publication date, and often adapted into other media.",
+    "routing_guide": "Choose Doc when the query involves specific novel details, narrative content, or requires verification of facts from the text. Choose Table if a structured overview of novels is needed (e.g., list of titles, authors, dates). Use both when combining structured metadata with in-depth narrative information.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "verify",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "join_keys": [
+        "title",
+        "author",
+        "publication_date"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "This source provides detailed narrative descriptions of individual novels, including title, author, publication dates, original language, publisher, adaptations, and full text. It offers rich contextual information for retrieval and verification.",
+        "elements": [
+          "title",
+          "author",
+          "publication_date",
+          "original_language",
+          "publisher",
+          "adaptations",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Phantom_of_the_Opera\", \"title\": \"Phantom of the Opera\", \"text\": \"The Phantom of the Opera ( French : Le Fantôme de l'Opéra ) , is a novel by French writer Gaston Leroux . It was first published as a serialization in Le Gaulois from 23 September 1909 , to 8 January 1910 . It was published in volume form in late March 1910 by Pierre Lafitte and directed by Aluel Malinao . The novel is partly inspired by historical events at the Paris Opera during the nineteenth century and an apocryphal tale concerning the use of a former ballet pupil 's skeleton in Carl Maria \"}"
+        ]
+      }
+    }
+  },
+  "song": {
+    "concept": "song",
+    "semantic_type": "entity",
+    "overall_description": "A song is a musical composition intended to be performed by a human voice, typically with lyrics and melody, and often associated with an artist or band.",
+    "routing_guide": "Choose Table when the query requires structured comparisons, filtering, or aggregation over multiple songs (e.g., 'list all songs by artist X', 'songs released in 2000', 'compare original artists of covers'). Choose Doc when the query asks for detailed narrative information about a specific song (e.g., 'who wrote song Y?', 'what instruments are used?', 'chart positions'). Use both when the query needs structured attributes plus detailed context (e.g., 'find songs by artist X and describe their recording details').",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify",
+        "filter",
+        "compare"
+      ],
+      "join_keys": [
+        "song_title",
+        "artist",
+        "album",
+        "year_released"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data about songs, including song titles, artists, albums, release years, original artists for covers, and regional availability in games. Useful for filtering, sorting, and comparing songs based on these attributes.",
+        "elements": [
+          "song_title",
+          "album",
+          "year_released",
+          "original_artist",
+          "artist",
+          "availability_in_region",
+          "Song Title",
+          "Year",
+          "Song",
+          "Title",
+          "AU",
+          "DE",
+          "Album ( s )",
+          "Year Released",
+          "Original Artist",
+          "Release date",
+          "US",
+          "Written By",
+          "Recorded"
+        ],
+        "data_examples": [
+          "page_title: List of songs recorded by Kasabian, section_title: Cover songs, header: [Song title, Album ( s ), Year released, Original artist], sample_row: [Heroes, Free download, 2006, David Bowie , Brian Eno]",
+          "page_title: List of songs in SingStar games (PlayStation 2), section_title: SingStar Hottest Hits, header: [Artist, Song Title, AU, DE], sample_row: [Annie, I Know UR Girlfriend Hates Me, Yes, Yes]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides detailed textual descriptions of individual songs, including writers, recording details, instrumentation, release dates, and chart performance. Useful for retrieving in-depth information and verifying facts about specific songs.",
+        "elements": [
+          "title",
+          "artist",
+          "writer",
+          "album",
+          "release_year",
+          "recording_key",
+          "instrumentation",
+          "release_date",
+          "chart_positions",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Jerk_It_Out\", \"title\": \"Jerk It Out\", \"text\": \"Jerk It Out is a song by the Swedish rock band Caesars . It was released in April 2003 as the lead single from their album Love for the Streets ; it is also featured on the follow-up Paper Tigers in remixed form . The song was an international success , reaching number eight on the UK Singles Chart and peaking at number 70 on the US Billboard Hot 100 .\"}",
+          "{\"doc_id\": \"/wiki/When_I'm_Sixty-Four\", \"title\": \"When I'm Sixty-Four\", \"text\": \"When I 'm Sixty-Four is a song by the English rock band the Beatles , written by Paul McCartney ( credited to Lennon-McCartney ) and released on their 1967 album Sgt . Pepper 's Lonely Hearts Club Band . It was one of the first songs written by McCartney , who wrote it when he was 16 . The song was recorded in a different key than the final recording ; it was sped up at the request of McCartney to make his voice sound younger . It prominently features a trio of clarinets ( two regular clarinets \"}"
+        ]
+      }
+    }
+  },
+  "song_contest": {
+    "concept": "song_contest",
+    "semantic_type": "event",
+    "overall_description": "An annual song contest for young performers, part of the Eurovision family, where countries compete with original songs.",
+    "routing_guide": "Use Doc when the query asks about a specific edition's details (e.g., winner, date, host city) or requires narrative context. For comparisons across editions or aggregations (e.g., count of wins by country), use Doc if the data is available in text; otherwise, consider Table if it exists.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate"
+      ],
+      "join_keys": [
+        "edition",
+        "year",
+        "host_city",
+        "host_country",
+        "date",
+        "winner",
+        "winning_song",
+        "participating_countries"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "Provides detailed descriptions of specific editions, including year, host city and country, date, winner, winning song, participating countries, and other textual information.",
+        "elements": [
+          "edition",
+          "year",
+          "host_city",
+          "host_country",
+          "date",
+          "winner",
+          "winning_song",
+          "participating_countries",
+          "title",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Junior_Eurovision_Song_Contest_2010\", \"title\": \"Junior Eurovision Song Contest 2010\", \"text\": \"The Junior Eurovision Song Contest 2010 was the eighth edition of the annual Junior Eurovision Song Contest and took place in Minsk , Belarus . It was held on 20 November 2010 . The contest was won by Vladimir Arzumanyan from Armenia with the song Mama . This gave Armenia its first Junior Eurovision victory and its first victory in any Eurovision contest .\"}"
+        ]
+      }
+    }
+  },
+  "soundtrack": {
+    "concept": "soundtrack",
+    "semantic_type": "entity",
+    "overall_description": "A video game soundtrack is a collection of music from a video game, often released as an album on various media, including vinyl, and associated with the game title, label, and release year.",
+    "routing_guide": "Choose Table when the query involves structured attributes such as release year, OST title, game title, label, or notes, especially for filtering, sorting, or aggregating. Use Doc if the query requires narrative context or additional details not captured in the table. Both may be used when combining structured data with textual explanations.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "game_title",
+        "ost_title",
+        "label",
+        "release_year"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "This source lists video game soundtracks released on vinyl, with columns for release year, OST title, game title, label, and notes, covering releases from 2017.",
+        "elements": [
+          "release_year",
+          "ost_title",
+          "game_title",
+          "label",
+          "notes",
+          "Rel",
+          "OST Title",
+          "Game Title",
+          "Composer ( s )"
+        ],
+        "data_examples": [
+          "page_title: List of video game soundtracks released on vinyl, section_title: Soundtrack albums -- 2017, header: [Rel, OST Title, Game Title, Label, Notes], sample_row: [2017, NieR : Automata / NieR Gestalt & Replicant Original Soundtrack Vinyl Box Set, Nier , Nier : Automata, Square Enix, Two sets of 2xLP for each game , 4xLP in total . Cover art by Tokyo Ghoul creator Sui Ishida]"
+        ]
+      }
+    }
+  },
+  "television_program": {
+    "concept": "television_program",
+    "semantic_type": "event",
+    "overall_description": "A television program is a broadcast or streamed production, typically episodic, with a title, network, and scheduling information, including individual episodes, series, and specials.",
+    "routing_guide": "Use Table when you need precise, structured facts such as titles, dates, networks, or episode details, or when performing comparisons or aggregations. Use Doc when you need descriptive context, background, or details not captured in tabular form. Use both when you need a comprehensive view, e.g., to enrich structured data with narrative descriptions.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "temporal_filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join",
+        "retrieve"
+      ],
+      "Doc": [
+        "filter",
+        "retrieve",
+        "verify"
+      ],
+      "join_keys": [
+        "title",
+        "network",
+        "start_date",
+        "end_date"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured data on television programs, including titles, original run dates, networks, episode-specific details (date, co-hosts, guests/segments), and program titles with debut dates. Useful for querying specific attributes and comparing across programs.",
+        "elements": [
+          "title",
+          "original_run",
+          "network",
+          "date",
+          "co_hosts",
+          "guests",
+          "segments",
+          "series",
+          "episode",
+          "year",
+          "channel",
+          "program_title",
+          "debut_date",
+          "years",
+          "notes",
+          "Guests / segments",
+          "Co-hosts",
+          "Program",
+          "Debut date",
+          "Original run"
+        ],
+        "data_examples": [
+          "page_title: List of Live episodes, section_title: Season 28 ( 2015–16 ) -- May 2016, header: [Date, Co-hosts, Guests / segments], sample_row: [May 2, Kelly Ripa & Michael Strahan, Chadwick Boseman , Adrien Brody , Ruth B]",
+          "page_title: 2006 in Australian television, section_title: New international programming, header: [Program, Channel, Debut date], sample_row: [Garth Marenghi 's Darkplace, SBS TV, 30 January]",
+          "page_title: List of ViacomCBS television programs, section_title: Spelling Television -- Republic Pictures Television, header: [Title, Original run, Network], sample_row: [Fireside Theatre, 1949-1958, NBC]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides descriptive text about television series, including title, network, start/end dates, genre, director, creator, production company, number of seasons/episodes, and other narrative details. Useful for in-depth information and context.",
+        "elements": [
+          "title",
+          "network",
+          "start_date",
+          "end_date",
+          "genre",
+          "director",
+          "based_on",
+          "creator",
+          "production_company",
+          "premiere_date",
+          "number_of_seasons",
+          "number_of_episodes",
+          "award_nominations",
+          "finale_date",
+          "setting",
+          "producers",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Hi_Hi_Puffy_AmiYumi\", \"title\": \"Hi Hi Puffy AmiYumi\", \"text\": \"Hi Hi Puffy AmiYumi is an American animated television series created by Sam Register for Cartoon Network . Produced by Renegade Animation and Cartoon Network Studios , the series stars fictionalized and animated versions of the Japanese pop rock group Puffy AmiYumi . The series premiered on November 19 , 2004 and ended on June 27 , 2006 with a total of three seasons and 39 episodes , leaving a total of 34 episodes aired and five episodes unaired in North America . During its run , the series ha\"}",
+          "{\"doc_id\": \"/wiki/Hatim_(TV_series)\", \"title\": \"Hatim (TV series)\", \"text\": \"Hatim is an Indian television series that aired on Star Plus plus from 26 December 2003 to 12 November 2004 . It has elements of fantasy . It was started by director Amrit Sagar , based on Hatim al-Tai .\"}",
+          "{\"doc_id\": \"/wiki/All_Saints_(TV_series)\", \"title\": \"All Saints (TV series)\", \"text\": \"All Saints is an Australian television medical drama that first screened on the Seven Network on 24 February 1998 . Set in the fictional All Saints Western General Hospital , it focused on the staff of Ward 17 until its closure in 2004 , which is when the focus changed and began following the staff of the Emergency Department . It was produced by John Holmes alongside Jo Porter , MaryAnne Carroll and Di Drew . The final episode aired on 27 October 2009 , completing its recording-breaking 12-year\"}"
+        ]
+      }
+    }
+  },
+  "television_station": {
+    "concept": "television_station",
+    "semantic_type": "entity",
+    "overall_description": "A television station is a broadcast entity that transmits television programming over a specific channel, identified by call letters, and associated with a network and geographic location.",
+    "routing_guide": "Use Table when you need to compare or filter stations by attributes like call letters, channel, network, or location, or when you need audience share rankings. Use Doc when you need detailed narrative information about a specific station, such as its history, ownership structure, or programming focus. Use both when you need a comprehensive view, e.g., first identify candidate stations from Table, then retrieve detailed descriptions from Doc.",
+    "operator_plan_hints": {
+      "Table": [
+        "filter",
+        "sort",
+        "compare",
+        "aggregate",
+        "join"
+      ],
+      "Doc": [
+        "retrieve",
+        "verify",
+        "filter"
+      ],
+      "join_keys": [
+        "call_letters",
+        "channel",
+        "network",
+        "city",
+        "state"
+      ]
+    },
+    "sources": {
+      "Table": {
+        "description": "Provides structured lists of television stations and channels, including call letters, channel numbers, network affiliations, city/state or market, ownership, and audience share metrics. Useful for tabular queries and comparisons.",
+        "elements": [
+          "call_letters",
+          "channel",
+          "network",
+          "city",
+          "state",
+          "notes",
+          "city_of_license",
+          "market",
+          "station_call_letters",
+          "channel_tv",
+          "channel_dt",
+          "year_of_affiliation",
+          "ownership",
+          "position",
+          "channel_name",
+          "group",
+          "share_of_total_viewing",
+          "Call letters",
+          "Network ( s )",
+          "City and state"
+        ],
+        "data_examples": [
+          "page_title: List of television stations in the United States by call sign (initial letter K), section_title: KY, header: [Call letters, Channel, Network ( s ), City and state, Meaning or notes], sample_row: [KYAZ, 25 PSIP 51, 51.1 Azteca America, Katy , Texas, AZ teca]",
+          "page_title: Television in Austria, section_title: Most-viewed channels, header: [Position, Channel, Group, Share of total viewing (% )], sample_row: [1, ORF 2, ORF, 20.6]",
+          "page_title: List of NBC television affiliates (table), section_title: Affiliate stations, header: [City of license/Market, Station, Channel TV ( DT ), Year of affiliation, Ownership], sample_row: [Abilene - Sweetwater , TX, KRBC-TV, 9 ( 29 ), 1953, Mission Broadcasting ( operated by Nexstar Media Group )]"
+        ]
+      },
+      "Doc": {
+        "description": "Provides detailed textual descriptions of individual television stations and channels, including ownership, launch dates, programming focus, and technical broadcast details. Useful for in-depth information and verification.",
+        "elements": [
+          "call_letters",
+          "virtual_channel",
+          "digital_channel",
+          "network",
+          "owner",
+          "location",
+          "affiliation",
+          "sister_station",
+          "name",
+          "country",
+          "launch_date",
+          "target_audience",
+          "programming_focus",
+          "call_sign",
+          "channel",
+          "broadcast_type",
+          "former_name",
+          "headquarters_location",
+          "state",
+          "title"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/Eleven_(TV_channel)\", \"title\": \"Eleven (TV channel)\", \"text\": \"10 Peach is an Australian free-to-air television channel operated by Network 10 . It was launched on 11 January 2011 as Eleven . It is owned by ElevenCo , which was established as a joint venture between Ten Network Holdings and CBS Studios International ; the latter would ultimately acquire Network Ten in 2017 . The channel focuses primarily on programming targeting a young adult audience , and is the current home of Neighbours - the longest-running drama series on Australian television .\"}",
+          "{\"doc_id\": \"/wiki/KYW-TV\", \"title\": \"KYW-TV\", \"text\": \"KYW-TV , virtual channel 3 ( UHF digital channel 30 ) , is a CBS owned-and-operated television station licensed to Philadelphia , Pennsylvania , United States . The station is owned by the CBS Television Stations subsidiary of ViacomCBS , as part of a duopoly with CW East Coast flagship WPSG ( channel 57 ) . The two stations share studios on Hamilton Street north of Center City ; KYW-TV 's transmitter is located in the Roxborough section of Philadelphia .\"}",
+          "{\"doc_id\": \"/wiki/KUBD_(TV)\", \"title\": \"KUBD (TV)\", \"text\": \"KUBD is a CBS-affiliated television station licensed to Ketchikan , Alaska , United States . It is a full-time satellite of Sitka-licensed KTNL-TV ( channel 13 ) which is owned by Denali Media Holdings ( a subsidiary of local cable provider GCI ) . KUBD broadcasts a high definition digital signal on VHF channel 13 ( or virtual channel 4 via PSIP ) from a transmitter in downtown Ketchikan . KUBD is seen on cable channel 4 on GCI Cable and KPU CommVision , the latter of which is owned by the City \"}"
+        ]
+      }
+    }
+  },
+  "video_game": {
+    "concept": "video_game",
+    "semantic_type": "entity",
+    "overall_description": "A video game is an electronic game that involves interaction with a user interface to generate visual feedback, typically played on a console, computer, or mobile device, and characterized by its title, developer, publisher, platforms, and release date.",
+    "routing_guide": "Choose Doc when the query requires detailed information about a specific video game, such as its development history, critical reception, or unique features. Use Doc for tasks like retrieving game descriptions, verifying facts, or extracting specific attributes from text. If the query involves structured comparisons or aggregations across many games, consider using a Table source if available; otherwise, Doc can be used with extraction.",
+    "operator_plan_hints": {
+      "Table": [],
+      "Doc": [
+        "retrieve",
+        "filter",
+        "verify",
+        "aggregate"
+      ],
+      "join_keys": [
+        "title"
+      ]
+    },
+    "sources": {
+      "Doc": {
+        "description": "This source provides detailed textual descriptions of individual video games, including title, developer, publisher, platforms, release dates, genre, and critical reception. It offers rich narrative information that can be used for retrieval and verification.",
+        "elements": [
+          "title",
+          "developer",
+          "publisher",
+          "platform",
+          "release_date",
+          "genre",
+          "reception",
+          "text",
+          "linked_table_id"
+        ],
+        "data_examples": [
+          "{\"doc_id\": \"/wiki/CounterSpy_(video_game)\", \"title\": \"CounterSpy (video game)\", \"text\": \"CounterSpy is a side-scrolling stealth video game developed by American indie studio Dynamighty and published by Sony Computer Entertainment as a cross-buy and cross-save title for the PlayStation 3 , PlayStation 4 , and PlayStation Vita . Subsequently , the game was released on Android and iOS on September 5 , 2014 . The games received a mixed to positive reviews . It was mostly praised for its art and soundtrack .\"}"
+        ]
+      }
+    }
+  }
+}

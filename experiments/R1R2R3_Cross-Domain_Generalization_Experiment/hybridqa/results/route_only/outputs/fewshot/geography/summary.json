@@ -1,0 +1,27 @@
+{
+  "domain": "geography",
+  "routing_mode": "atomr",
+  "knowledge_base": [
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/geography/questions.json",
+  "output_dir": "/root/autodl-tmp/BBB_hybridQA/experiments/route_only/outputs/atomr/geography",
+  "semantic_catalog": null,
+  "atomr_prompts": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/geography/atomr_few_shot_prompts.json",
+  "deepsieve_source_summary": null,
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 36.21184191852808,
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 1
+  },
+  "primary_source_counts": {
+    "route1.doc": 22,
+    "route1.table": 78,
+    "route2.doc": 14,
+    "route2.table": 86
+  }
+}

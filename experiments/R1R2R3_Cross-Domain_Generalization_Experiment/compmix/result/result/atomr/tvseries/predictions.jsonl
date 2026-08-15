@@ -1,0 +1,100 @@
+{"index": 10, "question": "In which film Benedict Wong got his debut role?", "predicted": "Shanghai", "gold": ["Kiss Kiss (Bang Bang)"], "retrieval_counts": {"doc": 2}}
+{"index": 13, "question": "Which genre is the tv series On the Wings of Love?", "predicted": "Romantic comedy-drama", "gold": ["romantic comedy"], "retrieval_counts": {"kg": 2}}
+{"index": 3, "question": "Which tv series was followed by the tv series Sky Castle?", "predicted": "The Third Charm", "gold": ["Legal High"], "retrieval_counts": {"kg": 2}}
+{"index": 4, "question": "who distributes the tv series Sky Castle?", "predicted": "JTBC, Netflix", "gold": ["JTBC"], "retrieval_counts": {"kg": 2}}
+{"index": 5, "question": "Author of the tv series Sky Castle?", "predicted": "Yoo Hyun-mi", "gold": ["Yoo Hyun-mi"], "retrieval_counts": {"kg": 2}}
+{"index": 1, "question": "Who is the author of the tv series Sky Castle?", "predicted": "Yoo Hyun-mi", "gold": ["Yoo Hyun-mi"], "retrieval_counts": {"kg": 2}}
+{"index": 14, "question": "Who is the director of episode one of the tv series Ekaterina?", "predicted": "Ramil Sabitov", "gold": ["Aleksandr Baranov"], "retrieval_counts": {"kg": 2, "table": 1}}
+{"index": 6, "question": "Who directs the tv series The Tunnel?", "predicted": "Dominik Moll", "gold": ["Dominik Moll"], "retrieval_counts": {"kg": 2}}
+{"index": 12, "question": "What is the genre of the tv series On the Wings of Love?", "predicted": "Romantic comedy-drama", "gold": ["romantic comedy"], "retrieval_counts": {"kg": 2}}
+{"index": 7, "question": "Who Composes the music in the tv series The Tunnel?", "predicted": "Adrian Johnston", "gold": ["Adrian Johnston"], "retrieval_counts": {"kg": 2}}
+{"index": 18, "question": "What genre does the Hellbound  television show  belong to?", "predicted": "thriller", "gold": ["hard rock"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 16, "question": "Who is the creator of the tv series Ekaterina?", "predicted": "Anton Zlatopolsky", "gold": ["Anton Zlatopolsky"], "retrieval_counts": {"kg": 2}}
+{"index": 11, "question": "Which character in the TV series The Marvelous Mrs. Maisel was played by Michael Arden", "predicted": "Lenny Bruce", "gold": ["Milken Prince"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 19, "question": "What is the main cast name in the tv series Tribes of Europa?", "predicted": "Emilio Sakraya, Henriette Confurius, David Ali Rashed", "gold": ["Emilio Sakraya"], "retrieval_counts": {"kg": 2}}
+{"index": 17, "question": "Who is the original broadcaster of the tv series Ekaterina?", "predicted": "Russia-1", "gold": ["Russia-1"], "retrieval_counts": {"kg": 2}}
+{"index": 8, "question": "Who is the Original Broadcaster of Season 1 of the tv series The Tunnel?", "predicted": "Sky Atlantic, Canal+", "gold": ["Sky Atlantic"], "retrieval_counts": {"kg": 2}}
+{"index": 0, "question": "What is the name of the first album of the Jeff Russo?", "predicted": "The Long Goodbye", "gold": ["Lemon Parade"], "retrieval_counts": {"doc": 2, "kg": 1}}
+{"index": 2, "question": "who is the director of episode 1 in the tv series Sky Castle?", "predicted": "Jo Hyun Tak", "gold": ["Jo Hyun Tak"], "retrieval_counts": {"kg": 1, "table": 1}}
+{"index": 15, "question": "What is the genre of the tv series Ekaterina?", "predicted": "historical film, drama", "gold": ["historical film"], "retrieval_counts": {"kg": 2}}
+{"index": 20, "question": "What is the name of the role that the actor Nestor Carbonell played in the Lost series?", "predicted": "Richard Alpert", "gold": ["Richard Alpert"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 9, "question": "Who is the director of tv series The Tunnel?", "predicted": "Dominik Moll", "gold": ["Dominik Moll"], "retrieval_counts": {"kg": 2}}
+{"index": 22, "question": "Number of episodes in third season of Third Watch?", "predicted": "22", "gold": ["22"], "retrieval_counts": {"kg": 1, "table": 1}}
+{"index": 31, "question": "Who was the founder of HBO?", "predicted": "Charles Dolan", "gold": ["Charles Dolan"], "retrieval_counts": {"doc": 2}}
+{"index": 23, "question": "Third Watch how many episodes in third season?", "predicted": "22", "gold": ["22"], "retrieval_counts": {"kg": 1, "table": 1}}
+{"index": 29, "question": "TV series Scam 1992 is based on which incident?", "predicted": "1992 Indian stock market scam", "gold": ["1992 Indian stock market scam"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 26, "question": "Which is the first movie of Paul Scheuring as writer?", "predicted": "A Man Apart", "gold": ["Den of Thieves"], "retrieval_counts": {"doc": 1, "kg": 1, "table": 1}}
+{"index": 32, "question": "Who played the role of Eddard Stark in Game of Thrones?", "predicted": "Sean Bean", "gold": ["Sean Bean"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 21, "question": "In which sitcom did the actor Nestor Carbonell play the role of Luis Rivera?", "predicted": "Suddenly Susan", "gold": ["Suddenly Susan"], "retrieval_counts": {"kg": 2}}
+{"index": 33, "question": "Where does the Mary Tyler Moore Show take place?", "predicted": "Minnesota", "gold": ["Minneapolis"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 45, "question": "Who is the presenter of \"Penn & Teller: Fool Us?\"", "predicted": "", "gold": ["Alyson Hannigan"], "retrieval_counts": {}}
+{"index": 27, "question": "Who is lead actor of the TV series Scam 1992?", "predicted": "Pratik Gandhi", "gold": ["Pratik Gandhi"], "retrieval_counts": {"kg": 2}}
+{"index": 37, "question": "Director of the TV series Kota Factory?", "predicted": "Raghav Subbu", "gold": ["Raghav SubbuRaghav Subbu"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 28, "question": "Who directed the TV series Scam 1992?", "predicted": "Hansal Mehta", "gold": ["Hansal Mehta"], "retrieval_counts": {"kg": 2}}
+{"index": 24, "question": "Who played the titular character in Anne with an E?", "predicted": "Amybeth McNulty", "gold": ["Amybeth McNulty"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 30, "question": "lead actor of Scam 1992?", "predicted": "Pratik Gandhi", "gold": ["Pratik Gandhi"], "retrieval_counts": {"kg": 2}}
+{"index": 42, "question": "Who played the character of Arya Iyer in Decoupled?", "predicted": "Surveen Chawla", "gold": ["R. Madhavan"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 39, "question": "Which award is nominated for TV Series Money Heist?", "predicted": "International Emmy Award for Best Drama Series", "gold": ["Feroz Awards"], "retrieval_counts": {"kg": 2}}
+{"index": 40, "question": "Who composes the music in the  tv series Barbarians?", "predicted": "Maurus Ronner, Ali N. Aşkın", "gold": ["Ali N. Aşkın"], "retrieval_counts": {"kg": 2}}
+{"index": 34, "question": "What is the location of the Mary Tyler Moore show?", "predicted": "Minnesota", "gold": ["Minneapolis"], "retrieval_counts": {"kg": 2}}
+{"index": 46, "question": "Presenter on \"Penn & Teller: Fool Us?\"", "predicted": "Jonathan Ross, Alyson Hannigan", "gold": ["Alyson Hannigan"], "retrieval_counts": {"kg": 1}}
+{"index": 38, "question": "Who is the creator of TV Series Money Heist?", "predicted": "Alex Pina", "gold": ["Álex Pina"], "retrieval_counts": {"kg": 2}}
+{"index": 49, "question": "Ernest Gold won an Academy Award for scoring which film?", "predicted": "Exodus", "gold": ["Exodus"], "retrieval_counts": {"doc": 2}}
+{"index": 36, "question": "Which is the Production company of the TV series Kota Factory?", "predicted": "The Viral Fever", "gold": ["The Viral Fever"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 35, "question": "Who is the director of the TV series Kota Factory?", "predicted": "Raghav Subbu", "gold": ["Raghav SubbuRaghav Subbu"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 25, "question": "What show was Dalila Bella in before Anne with an E?", "predicted": "The Good Witch", "gold": ["Ready Jet Go!"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 48, "question": "What was Cherami Leigh's debut role?", "predicted": "Sue", "gold": ["Shiki"], "retrieval_counts": {"doc": 2}}
+{"index": 41, "question": "Who are the lead actors of the TV series Decoupled?", "predicted": "R. Madhavan, Surveen Chawla", "gold": ["R. Madhavan; Surveen Chawla"], "retrieval_counts": {"kg": 2}}
+{"index": 50, "question": "What band played the opening song for How I Met Your Mother?", "predicted": "The Solids", "gold": ["The Solids"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 51, "question": "What was Chi McBride tv debut?", "predicted": "The Fresh Prince of Bel-Air", "gold": ["The Fresh Prince of Bel-Air"], "retrieval_counts": {"doc": 2}}
+{"index": 53, "question": "what is the Nationality of Alba August?", "predicted": "Swedish", "gold": ["Sweden"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 44, "question": "What network did Jamie Kellner run after The WB?", "predicted": "The CW", "gold": ["Turner Broadcasting System"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 43, "question": "What was the character Justin Chatwin played in Another Life series?", "predicted": "Erik Wallace", "gold": ["a scientist employed by United States Interstellar Command"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 59, "question": "What city was Good Morning, Miss Bliss set?", "predicted": "Indianapolis", "gold": ["Indianapolis"], "retrieval_counts": {"doc": 2}}
+{"index": 55, "question": "Who is the original broadcaster of the he Tunnel tv series?", "predicted": "Sky Atlantic, Canal+", "gold": ["Sky Atlantic , Canal+"], "retrieval_counts": {"kg": 2}}
+{"index": 57, "question": "Who directs season 1 episode \"Welcome to Matheson\" in the tv series locke & key?", "predicted": "Mark Tonderai", "gold": ["Michael Morris"], "retrieval_counts": {"kg": 1}}
+{"index": 54, "question": "what is the genre of the TV show The Tunnel?", "predicted": "drama television series, LGBTI+ related TV series", "gold": ["drama television series,LGBTI+ related TV series"], "retrieval_counts": {"kg": 2}}
+{"index": 47, "question": "What actor plays Lady Mary in the TV series Downton Actor?", "predicted": "Michelle Dockery", "gold": ["Michelle Dockery"], "retrieval_counts": {"kg": 2}}
+{"index": 56, "question": "Who is the director of the Tunnel tv series?", "predicted": "Dominik Moll", "gold": ["Dominik Moll"], "retrieval_counts": {"kg": 2}}
+{"index": 61, "question": "What was their first well popular series produced for the USA network?", "predicted": "Miami Vice", "gold": ["Duckman"], "retrieval_counts": {"doc": 1, "kg": 1, "table": 1}}
+{"index": 71, "question": "How many daily views did the Rachael Ray Show get on average during its first season?", "predicted": "2.4 million", "gold": ["2.6 million"], "retrieval_counts": {"doc": 1, "table": 1}}
+{"index": 64, "question": "Who directed Caretaker, Part I?", "predicted": "Michael Caffey", "gold": ["Winrich Kolbe"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 67, "question": "Who is the director of money heist?", "predicted": "Jesús Colmenar", "gold": ["Álex Pina"], "retrieval_counts": {"kg": 2}}
+{"index": 63, "question": "who played Detective Robert Parker in Unbelievable?", "predicted": "Eric Lange", "gold": ["Eric Lange"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 66, "question": "Who is the creator of Money Heist?", "predicted": "Alex Pina", "gold": ["Álex Pina"], "retrieval_counts": {"kg": 2}}
+{"index": 65, "question": "Who played the character of Krishna of Goloka in RadhaKrishn?", "predicted": "Sumedh Mudgalkar", "gold": ["Himanshu Soni"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 68, "question": "who is the creator of Emily in Paris ?", "predicted": "Darren Star", "gold": ["Darren Star"], "retrieval_counts": {"kg": 2}}
+{"index": 69, "question": "who is the producer of Emily in Paris series?", "predicted": "Stephen Brown", "gold": ["Stephen Brown"], "retrieval_counts": {"kg": 2}}
+{"index": 58, "question": "Director of season 1 episode 1 in the tv series locke & key?", "predicted": "Michael Morris", "gold": ["Michael Morris"], "retrieval_counts": {"kg": 2}}
+{"index": 70, "question": "Who created the series?", "predicted": "Not specified", "gold": ["Donald P. Bellisario"], "retrieval_counts": {"kg": 2}}
+{"index": 76, "question": "In what film did Donald Sutherland make his acting debut?", "predicted": "The Castle of the Living Dead", "gold": ["The World Ten Times Over"], "retrieval_counts": {"doc": 2}}
+{"index": 72, "question": "What award did The Rachael Ray Show win in 2008?", "predicted": "Daytime Emmy Award", "gold": ["Daytime Emmy Award for Outstanding Talk Show Entertainment"], "retrieval_counts": {"kg": 2}}
+{"index": 52, "question": "What program did the first season premier episode of Teen Wolf follow?", "predicted": "Teen Wolf", "gold": ["2011 MTV Movie Awards"], "retrieval_counts": {"kg": 2, "table": 1}}
+{"index": 87, "question": "Who directs the episode \"Liber\" \"The Book\" in tv series Luna Nera?", "predicted": "", "gold": ["Francesca Comencini"], "retrieval_counts": {}}
+{"index": 74, "question": "Who is the creator of the tv series wizards of waverly place?", "predicted": "Todd J. Greenwald", "gold": ["Todd J. Greenwald"], "retrieval_counts": {"kg": 2}}
+{"index": 62, "question": "who was the actor of Detective Robert Parker in Unbelievable?", "predicted": "Merritt Wever", "gold": ["Eric Lange"], "retrieval_counts": {"doc": 1, "kg": 2}}
+{"index": 73, "question": "Which is the first film as writer of Leena Gangopadhyay?", "predicted": "Sanjhbati", "gold": ["Bhalo Theko"], "retrieval_counts": {"doc": 2, "kg": 1}}
+{"index": 75, "question": "What is the Production company of the tv series wizards of waverly place", "predicted": "It's a Laugh Productions", "gold": ["It's a Laugh Productions"], "retrieval_counts": {"kg": 2}}
+{"index": 79, "question": "What show did Leslie Jordan have a recurring role on in 2005?", "predicted": "Desperate Housewives", "gold": ["Boston Legal"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 82, "question": "Who directs the tv series hospital playlist?", "predicted": "Shin Won-ho", "gold": ["Shin Won-ho"], "retrieval_counts": {"kg": 2}}
+{"index": 83, "question": "what is the genre of the tv series Hospital Playlist?", "predicted": "Korean drama, medical drama, comedy", "gold": ["medical drama"], "retrieval_counts": {"kg": 2}}
+{"index": 90, "question": "What 2002 movie starred Mary-Kate and Ashley Olsen?", "predicted": "Full Throttle", "gold": ["When in Rome"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 84, "question": "Who is the screenwriter of the tv series Hospital Playlist?", "predicted": "Lee Woo-jung", "gold": ["Lee Woo-jung"], "retrieval_counts": {"kg": 2}}
+{"index": 80, "question": "What is the production company of the tv series High Seas?", "predicted": "Bambú Producciones", "gold": ["Bambú Producciones"], "retrieval_counts": {"kg": 2}}
+{"index": 85, "question": "Who is the director of the tv series Hospital Playlist?", "predicted": "Shin Won-ho", "gold": ["Shin Won-ho"], "retrieval_counts": {"kg": 2}}
+{"index": 60, "question": "What is the name of Sofia Vergara's husband whom she married in 2015?", "predicted": "Joe Manganiello", "gold": ["Joe Manganiello"], "retrieval_counts": {"doc": 1, "kg": 2}}
+{"index": 88, "question": "What was Nathan Fillion's first television show?", "predicted": "Waitress", "gold": ["Ordeal in the Arctic"], "retrieval_counts": {"doc": 2}}
+{"index": 86, "question": "Which is the debut movie of Kevin Alejandro?", "predicted": "Strange Wilderness", "gold": ["Purgatory Flats"], "retrieval_counts": {"doc": 1, "kg": 2}}
+{"index": 91, "question": "Who is the Inspector of the Burgue Constabulary in Carnival Row series?", "predicted": "Jonah Breakspear", "gold": ["Orlando Bloom"], "retrieval_counts": {"kg": 2}}
+{"index": 89, "question": "What show was Nathan Fillion's first TV role?", "predicted": "One Life to Live", "gold": ["Ordeal in the Arctic"], "retrieval_counts": {"doc": 2}}
+{"index": 93, "question": "Name of the Inspector of Burgue Constabulary in Carnival Row series?", "predicted": "Jonah Breakspear", "gold": ["Orlando Bloom"], "retrieval_counts": {"kg": 2}}
+{"index": 81, "question": "Who is the director of the Second season of Locke & Key?", "predicted": "Mark Tonderai", "gold": ["Mark Tonderai"], "retrieval_counts": {"kg": 2}}
+{"index": 99, "question": "What business school did Aaron Korsh attend?", "predicted": "The Wharton School of the University of Pennsylvania", "gold": ["The Wharton School"], "retrieval_counts": {"doc": 2}}
+{"index": 95, "question": "What is the name of the actress who played teenage Martha in Dark?", "predicted": "Lisa Vicari", "gold": ["Lisa Vicari"], "retrieval_counts": {"kg": 2}}
+{"index": 78, "question": "Who were the directors of the episode named MADMAX of the series Stranger Things?", "predicted": "The Duffer Brothers", "gold": ["Duffer brothers"], "retrieval_counts": {"table": 1, "kg": 1}}
+{"index": 92, "question": "Who played as human street performer in Carnival Row series?", "predicted": "Simon McBurney", "gold": ["Simon McBurney"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 96, "question": "Who is the creator of the tv series Loki?", "predicted": "Michael Waldron", "gold": ["Michael Waldron"], "retrieval_counts": {"kg": 2}}
+{"index": 98, "question": "Who creates the flim The Princess Bride?", "predicted": "William Goldman", "gold": ["Michael Waldron"], "retrieval_counts": {"kg": 2}}
+{"index": 97, "question": "Who directs the episode \"Glorious Purpose\" in the tv series Loki?", "predicted": "Kate Herron", "gold": ["Kate Herron"], "retrieval_counts": {"kg": 2}}
+{"index": 77, "question": "Who directed the episode MADMAX of Stranger Things series?", "predicted": "Richard Greenberg", "gold": ["Duffer brothers"], "retrieval_counts": {"kg": 2}}
+{"index": 94, "question": "Who played teenage Martha in Dark?", "predicted": "Lisa Vicari", "gold": ["Lisa Vicari"], "retrieval_counts": {"kg": 2}}

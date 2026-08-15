@@ -1,0 +1,100 @@
+{"index": 5, "question": "What is the birth name of the singer Bono?", "predicted": "Paul David Hewson", "gold": ["Paul David Hewson"], "retrieval_counts": {"doc": 2}}
+{"index": 0, "question": "Which album by Selena Gomez & The Scene was released first:Kiss & Tell or when the sun goes down?", "predicted": "Kiss & Tell", "gold": ["Kiss & Tell"], "retrieval_counts": {"doc": 2}}
+{"index": 1, "question": "who was the guitarist of Selena Gomez & The Scene?", "predicted": "Ethan Roberts", "gold": ["Ethan Robert"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 7, "question": "What was the 10th song on the album Piano Man?", "predicted": "Captain Jack", "gold": ["Captain Jack"], "retrieval_counts": {"doc": 1, "table": 11}}
+{"index": 9, "question": "In Babyface's cover of \"This Is for the Lover in You\" it featured which rapper beside Shalamar?", "predicted": "", "gold": ["LL Cool J"], "retrieval_counts": {"doc": 1}}
+{"index": 6, "question": "What is the main catogiri of the", "predicted": "Not specified", "gold": ["Big Star"], "retrieval_counts": {"kg": 1}}
+{"index": 19, "question": "Where was the band Indian Ocean formed?", "predicted": "India", "gold": ["New Delhi"], "retrieval_counts": {"doc": 2}}
+{"index": 8, "question": "Which R&B singer made a cover of \"This Is for the Lover in You\" in 1996?", "predicted": "Babyface", "gold": ["Babyface"], "retrieval_counts": {"doc": 2}}
+{"index": 3, "question": "What is the birth date of David Geffen?", "predicted": "21 February 1943", "gold": ["Borough Park, Brooklyn"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 13, "question": "Which record label was the first to signed the country singer Toby Keith?", "predicted": "Mercury Records", "gold": ["Mercury Records"], "retrieval_counts": {"doc": 2}}
+{"index": 16, "question": "What is the birth name of the guitarist Slash?", "predicted": "Saul Hudson", "gold": ["Saul Hudson"], "retrieval_counts": {"doc": 2}}
+{"index": 4, "question": "What is the award received in 20074 by Beyoncé?", "predicted": "American Music Awards", "gold": ["Grammy Award for Best R&B Song"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 20, "question": "What was Pink Floyd named after?", "predicted": "Pink Anderson and Floyd Council", "gold": ["Pink Anderson;Floyd Council"], "retrieval_counts": {"doc": 2}}
+{"index": 22, "question": "How many copies sold worldwide of Thriller (album)?", "predicted": "66 million", "gold": ["70 million copies worldwide"], "retrieval_counts": {"table": 1}}
+{"index": 21, "question": "What was the name of Pink Floyd member Roger Waters' father?", "predicted": "Eric Fletcher Waters", "gold": ["Eric Fletcher Waters"], "retrieval_counts": {"doc": 2}}
+{"index": 15, "question": "What is nominated for Marc Shaiman ?", "predicted": "Academy Award for Best Original Musical or Comedy Score", "gold": ["Academy Award for Best Original Musical or Comedy Score"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 12, "question": "What is the award received by singer Laura Pausini in 2006?", "predicted": "Grammy Award for Best Latin Pop or Urban Album", "gold": ["Grammy Award for Best Latin Pop or Urban Album"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 14, "question": "What is the name of band the guitarist Larry Wallis joined in 1972?", "predicted": "Motörhead", "gold": ["Pink Fairies"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 10, "question": "What type of band was Nirvana?", "predicted": "grunge", "gold": ["American rock band"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 32, "question": "Who is credited as the inventor of gangsta rap?", "predicted": "Schoolly D", "gold": ["Schoolly D"], "retrieval_counts": {"doc": 1}}
+{"index": 25, "question": "Who is the founder of the band Kabir café?", "predicted": "Neeraj Arya", "gold": ["Neeraj Arya"], "retrieval_counts": {"doc": 2}}
+{"index": 17, "question": "who was discography of the band Alice in Chains?", "predicted": "Facelift, Dirt, Jar of Flies, Alice in Chains, Black Gives Way to Blue, The Devil Put Dinosaurs Here, Rainier Fog, MTV Unplugged, Live Facelift, Greatest Hits, The Essential Alice in Chains, Music Bank, Sap, Live, The Nona Tapes, Music Bank: The Videos, The Treehouse Tapes", "gold": ["Alice in Chains discography"], "retrieval_counts": {"doc": 1, "kg": 1, "table": 1}}
+{"index": 2, "question": "in which did Ethan Robert play before Selena Gomez & The Scene?", "predicted": "Forever the Sickest Kids", "gold": ["Selena Gomez & The Scene"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 30, "question": "Significant event of ABBA Band?", "predicted": "1974 Eurovision Song Contest victory, International breakthrough with 'Waterloo', Chart-topping hits and albums in the 1970s", "gold": ["ABBA reunion"], "retrieval_counts": {"doc": 2}}
+{"index": 31, "question": "What is the notable work by Yoko Kanno?", "predicted": "Cowboy Bebop", "gold": ["GET9"], "retrieval_counts": {"doc": 2}}
+{"index": 29, "question": "Who founded by ABBA Band?", "predicted": "Benny Andersson, Björn Ulvaeus", "gold": ["Benny Andersson & Björn Ulvaeus"], "retrieval_counts": {"doc": 3}}
+{"index": 33, "question": "In which year was the Trident Studio constructed?", "predicted": "1967", "gold": ["1967"], "retrieval_counts": {"doc": 2}}
+{"index": 23, "question": "What record to broke after the release of the album?", "predicted": "Not specified", "gold": ["Racial barriers"], "retrieval_counts": {"doc": 2}}
+{"index": 18, "question": "Who directed the music video for \"Harder to Breathe\"?", "predicted": "Marc Webb", "gold": ["Marc Webb"], "retrieval_counts": {"kg": 2}}
+{"index": 28, "question": "What is the Significant event of ABBA Band?", "predicted": "1974 Eurovision Song Contest victory with 'Waterloo'", "gold": ["ABBA reunion"], "retrieval_counts": {"doc": 3}}
+{"index": 27, "question": "In which year was the music company Sony Music was formed?", "predicted": "1929", "gold": ["1929"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 41, "question": "What type of people are the Arapahos?", "predicted": "Native American", "gold": ["Native American"], "retrieval_counts": {"doc": 2}}
+{"index": 40, "question": "What city did Thomas L. Golden found?", "predicted": "Golden Gate City", "gold": ["Arapahoe, CO"], "retrieval_counts": {"doc": 2}}
+{"index": 34, "question": "where location of formation for band Kings of Leon?", "predicted": "Nashville, Tennessee", "gold": ["Nashville"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 11, "question": "What are the names of the members who founded the band Nirvana?", "predicted": "Kurt Cobain, Krist Novoselic", "gold": ["lead singer and guitarist Kurt Cobain and bassist Krist Novoselic"], "retrieval_counts": {"doc": 1, "kg": 3}}
+{"index": 35, "question": "who was discography of the band Kings of Leon?", "predicted": "Youth and Young Manhood, Aha Shake Heartbreak, Because of the Times, Only by the Night, Come Around Sundown, Mechanical Bull, Walls, When You See Yourself", "gold": ["Kings of Leon discography"], "retrieval_counts": {"doc": 2, "kg": 1, "table": 1}}
+{"index": 38, "question": "Which award was nominated for the composer Marc Shaiman?", "predicted": "Academy Award for Best Original Musical or Comedy Score", "gold": ["Academy Award for Best Original Musical or Comedy Score"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 45, "question": "What university did the Boards of Canada attend?", "predicted": "University of Edinburgh", "gold": ["University of Edinburgh"], "retrieval_counts": {"doc": 3}}
+{"index": 48, "question": "What was Dove Cameron's first EP?", "predicted": "Bloodshot / Waste", "gold": ["Bloodshot / Waste"], "retrieval_counts": {"doc": 2}}
+{"index": 37, "question": "The song Rainy Days and Mondays was sung by which siblings?", "predicted": "Karen Carpenter, Richard Carpenter", "gold": ["Karen Carpenter;Richard Carpenter"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 49, "question": "What is the name of Dove Cameron's first EP?", "predicted": "Bloodshot / Waste", "gold": ["Bloodshot / Waste"], "retrieval_counts": {"doc": 2}}
+{"index": 44, "question": "What is the last album that was recorded by artist George Harrison, from the band the Beatles?", "predicted": "", "gold": ["Brainwashed"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 43, "question": "What was the first song that Jerry Moss promoted?", "predicted": "The Little Old Lady (from Pasadena)", "gold": ["16 Candles"], "retrieval_counts": {"doc": 2}}
+{"index": 50, "question": "What is Ilaiyaraaja's first movie as music director?", "predicted": "Annakili", "gold": ["Annakili"], "retrieval_counts": {"doc": 2}}
+{"index": 46, "question": "Where is Hexagon Sun?", "predicted": "United Kingdom", "gold": ["Pentland Hills"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 42, "question": "Performer of \"Hook?\"", "predicted": "Blues Traveler", "gold": ["Blues Traveler"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 26, "question": "Who is the lead drummer of the band Kabir Café?", "predicted": "Ravi Srinivasan", "gold": ["Viren Solanki"], "retrieval_counts": {"kg": 2}}
+{"index": 52, "question": "What was Pierre Boulez's last major work?", "predicted": "Dérive 2", "gold": ["Dérive 2 (2006)"], "retrieval_counts": {"doc": 2}}
+{"index": 39, "question": "Who performed the song \"Hook?\"", "predicted": "Blues Traveler", "gold": ["Blues Traveler"], "retrieval_counts": {"kg": 2}}
+{"index": 51, "question": "which orchestra performed Ilaiyaraaja's first symphony score?", "predicted": "Czech Philharmonic Orchestra", "gold": ["Royal Philharmonic Orchestra"], "retrieval_counts": {"doc": 2, "kg": 1}}
+{"index": 59, "question": "When was Kunitachi College of Music founded?", "predicted": "1926", "gold": ["1926"], "retrieval_counts": {"doc": 2}}
+{"index": 47, "question": "What is the name of the second single in the album Arise?", "predicted": "Under Siege", "gold": ["Dead Embryonic Cells"], "retrieval_counts": {"doc": 1, "kg": 1, "table": 3}}
+{"index": 24, "question": "Who is the producer of the song Love Buzz by Nirvana?", "predicted": "Jack Endino", "gold": ["Jack Endino"], "retrieval_counts": {"kg": 2}}
+{"index": 36, "question": "Which siblings sang Rainy Days and Mondays?", "predicted": "Richard Carpenter, Karen Carpenter", "gold": ["Karen Carpenter;Richard Carpenter"], "retrieval_counts": {"kg": 2, "doc": 1}}
+{"index": 56, "question": "What is nominated for André Previn?", "predicted": "Academy Award for Best Original Musical Score, Academy Award for Best Original Dramatic or Comedy Score, Academy Award for Best Score, Adaptation or Treatment", "gold": ["Academy Award for Best Original Musical Score"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 58, "question": "For which street racing anime did M.O.V.E make openings and endings songs?", "predicted": "Initial D", "gold": ["Initial D"], "retrieval_counts": {"doc": 3}}
+{"index": 67, "question": "Who founded Earth Wind & Fire?", "predicted": "Maurice White", "gold": ["Maurice White"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 60, "question": "Who wrote the song?", "predicted": "Roger Waters", "gold": ["Stewart Copeland"], "retrieval_counts": {"kg": 1}}
+{"index": 55, "question": "What is the discography of the cream band?", "predicted": "Fresh Cream, Disraeli Gears, Wheels of Fire, Goodbye, Live Cream, Live Cream Volume II, BBC Sessions, The Best of Cream, The Very Best of Cream, Strange Brew: The Very Best of Cream, Cream Gold, Heavy Cream, Best of Cream, Royal Albert Hall London May 2-3-5-6, 2005", "gold": ["Cream discography"], "retrieval_counts": {"doc": 2, "kg": 1, "table": 1}}
+{"index": 66, "question": "What city was he born in?", "predicted": "Pannaipuram", "gold": ["Enfield"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 64, "question": "who is the producer of Dance Monkey song?", "predicted": "Konstantin Kersting", "gold": ["Konstantin Kersting"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 65, "question": "A member of which music group built it?", "predicted": "Unknown", "gold": ["The Hunters"], "retrieval_counts": {"doc": 2}}
+{"index": 53, "question": "Which Tom Tom Club song is sampled by Mark Morrison's song \"Return of the Mack\"?", "predicted": "Genius of Love", "gold": ["Genius of Love"], "retrieval_counts": {"kg": 2, "doc": 1}}
+{"index": 62, "question": "who was the vocal artist of Toosie slide song?", "predicted": "Drake", "gold": ["Drake"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 73, "question": "when was The Who band incepted?", "predicted": "1964", "gold": ["February 1964"], "retrieval_counts": {"doc": 2}}
+{"index": 54, "question": "Mark Morrison's song \"Return of the Mack\" sampled which Tom Tom Club song?", "predicted": "Genius of Love", "gold": ["Genius of Love"], "retrieval_counts": {"kg": 2, "doc": 1}}
+{"index": 68, "question": "What was the second Earth Wind & Fire album?", "predicted": "The Need of Love", "gold": ["The Need of Love"], "retrieval_counts": {"doc": 1, "table": 1}}
+{"index": 69, "question": "Who started Earth Wind & Fire?", "predicted": "Maurice White", "gold": ["Maurice White"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 74, "question": "When did this The Who band start?", "predicted": "1964", "gold": ["February 1964"], "retrieval_counts": {"doc": 2}}
+{"index": 63, "question": "who is the writer of Dance Monkey song?", "predicted": "Tones and I", "gold": ["Tones and I"], "retrieval_counts": {"kg": 2}}
+{"index": 61, "question": "Which is the first album of the singer Jagjit Singh?", "predicted": "The Unforgettables", "gold": ["Arth"], "retrieval_counts": {"doc": 2}}
+{"index": 75, "question": "which position of Brazil country chart Bad Blood  song?", "predicted": "60", "gold": ["60"], "retrieval_counts": {"table": 2}}
+{"index": 78, "question": "What TV show used Sweet and Low by Augustana in an episode?", "predicted": "Kyle XY", "gold": ["Kyle XY"], "retrieval_counts": {"doc": 2}}
+{"index": 79, "question": "Where did Zhou Long gets Doctor of Musical Arts?", "predicted": "Columbia University", "gold": ["Columbia University"], "retrieval_counts": {"doc": 2}}
+{"index": 81, "question": "Where did will.i.am attended summer school?", "predicted": "John Marshall High School", "gold": ["John Marshall High School"], "retrieval_counts": {"doc": 2}}
+{"index": 85, "question": "What is the title of his first studio album?", "predicted": "Elvis Presley", "gold": ["Mind of Mine"], "retrieval_counts": {"doc": 2}}
+{"index": 86, "question": "What was the first single to be released from the album?", "predicted": "Skyscraper", "gold": ["Pillowtalk"], "retrieval_counts": {"doc": 1, "table": 1}}
+{"index": 84, "question": "What id the position of Brazil chart Blank Space song?", "predicted": "1", "gold": ["74"], "retrieval_counts": {"table": 2}}
+{"index": 87, "question": "Who influenced Nicole Scherzinger the most?", "predicted": "Whitney Houston", "gold": ["Whitney Houston"], "retrieval_counts": {"doc": 2}}
+{"index": 76, "question": "Where did Coldplay film the music video for their song \"Yellow\"?", "predicted": "Studland Bay", "gold": ["Studland"], "retrieval_counts": {"kg": 1, "doc": 1}}
+{"index": 70, "question": "who is the singer of Blinding Lights song?", "predicted": "The Weeknd", "gold": ["The Weeknd"], "retrieval_counts": {"kg": 2}}
+{"index": 82, "question": "what is genre the music  Avenged Sevenfold ?", "predicted": "Heavy metal music, hard rock, new wave of American heavy metal, traditional heavy metal, progressive metal, Metalcore", "gold": ["heavy metal"], "retrieval_counts": {"kg": 1}}
+{"index": 88, "question": "What was Simon & Garfunkel's first studio alubm?", "predicted": "Wednesday Morning, 3 A.M.", "gold": ["Wednesday Morning, 3 A.M."], "retrieval_counts": {"doc": 3}}
+{"index": 91, "question": "Initial album released by Simon & Garfunkel?", "predicted": "Wednesday Morning, 3 A.M.", "gold": ["Wednesday Morning, 3 A.M."], "retrieval_counts": {"doc": 2}}
+{"index": 80, "question": "Which award received in 2012 by Zhou Long?", "predicted": "Stoeger Prize", "gold": ["Stoeger Prize"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 71, "question": "Who was the performer of the music \"I'm Your Angel\"?", "predicted": "Celine Dion, R. Kelly", "gold": ["Celine Dion and R. Kelly"], "retrieval_counts": {"kg": 3}}
+{"index": 97, "question": "What was the first ever number one song on the US Billboard Hot 100?", "predicted": "Poor Little Fool", "gold": ["Poor Little Fool"], "retrieval_counts": {"table": 1}}
+{"index": 77, "question": "What was the catalog number of the song \"Suddenly There's a Valley\"?", "predicted": "45-7111", "gold": ["1003"], "retrieval_counts": {"kg": 2}}
+{"index": 95, "question": "What was Billboard Hot 100's first song to reach number one?", "predicted": "Poor Little Fool", "gold": ["Poor Little Fool"], "retrieval_counts": {"doc": 1, "table": 1}}
+{"index": 96, "question": "Which religion did bismillah khan belongs?", "predicted": "Islam", "gold": ["Islam"], "retrieval_counts": {"doc": 2}}
+{"index": 90, "question": "What school district was it part of?", "predicted": "Not specified", "gold": ["Waco Independent School District"], "retrieval_counts": {"doc": 2}}
+{"index": 92, "question": "who is the performer of Save Your Tears song?", "predicted": "The Weeknd, Ariana Grande", "gold": ["The Weeknd"], "retrieval_counts": {"kg": 1}}
+{"index": 89, "question": "Who was the album's producer?", "predicted": "Nigel Godrich", "gold": ["Tom Wilson"], "retrieval_counts": {"doc": 1, "kg": 1}}
+{"index": 72, "question": "Performer of the song I'm Your Angel?", "predicted": "Celine Dion, R. Kelly", "gold": ["Celine Dion and R. Kelly"], "retrieval_counts": {"kg": 3}}
+{"index": 98, "question": "What is the name of Michael Jackson's first album?", "predicted": "Got to Be There", "gold": ["Got to Be There"], "retrieval_counts": {"doc": 2}}
+{"index": 93, "question": "What is the reason behind Vande Mataram album?", "predicted": "To celebrate and honor the patriotic song 'Vande Mataram' and its significance in Indian history and culture", "gold": ["to commemorate 50 years of Indian Independence in 1997"], "retrieval_counts": {"doc": 2}}
+{"index": 94, "question": "What was the first single released from the album \"On the 6?\"", "predicted": "I Want You Back", "gold": ["If You Had My Love"], "retrieval_counts": {"doc": 1, "table": 1}}
+{"index": 99, "question": "What is the pseudonym of the singer Joe Elliot?", "predicted": "Joe Elliott", "gold": ["Zeff"], "retrieval_counts": {"doc": 2}}
+{"index": 57, "question": "what is the discography of the Black Flag music band?", "predicted": "Damaged, My War, Slip It In, Loose Nut, Jealous Again, Six Pack, Nervous Breakdown, Everything Went Black, The First Four Years, Family Man, In My Head, Wasted...Again, TV Party, Who's Got the 10½?, The Process of Weeding Out, What The..., 1982 Demos, Live at the On Broadway 1982, Live '84, Annihilate This Week, I Can See You, Louie Louie", "gold": ["Black Flag discography"], "retrieval_counts": {"doc": 2, "table": 2, "kg": 2}}
+{"index": 83, "question": "who are all member category of the music  Avenged Sevenfold ?", "predicted": "band member, drummer, member of Avenged Sevenfold", "gold": ["Category:Avenged Sevenfold members"], "retrieval_counts": {"kg": 8}}

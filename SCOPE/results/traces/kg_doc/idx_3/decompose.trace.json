@@ -1,0 +1,31 @@
+{
+  "sub_q1": "Which player played for the Sacramento Kings between 1970 and 1976?",
+  "sub_q2": "What did [1] do after his NBA career that involved completing a master's degree?",
+  "rewrite_reasoning": "The query asks about a specific player's post-NBA activity involving a master's degree, but first we need to identify which player played for the Sacramento Kings between 1970 and 1976. Then we can ask about that player's post-career education.",
+  "match1": null,
+  "match2": null,
+  "route1": {
+    "matched_concept": "contract",
+    "primary_source": "kg",
+    "fallback_source": "doc",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: Sacramento Kings (team). ASKED target: player. Phase-1 rule: relation-first. The contract concept links player and team, exactly matching the pair (team, player). Phase-2: KG is LIKELY because its elements include player, team, start_time, end_time, which can directly answer the query. Doc is LIKELY because it may contain player-team affiliations in text, but KG is more direct. Therefore primary=kg, fallback=doc."
+  },
+  "route2": {
+    "matched_concept": "player",
+    "primary_source": "doc",
+    "fallback_source": "kg",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: [1] (a player, referenced by token). ASKED target: an action/event after NBA career involving completing a master's degree (a narrative/descriptive fact). Phase-1 rule: no relation concept links player to this target (e.g., award_received, contract, draft, etc. do not match), so fallback to known-entity concept 'player'. Source selection: KG has closed schema with elements like player_id, name, etc., but no element for post-career education or master's degree, so KG is RULED-OUT. Doc has open content and likely contains biographical narratives about players' post-career activities, including education, so doc is LIKELY. Primary = doc, fallback = kg (only other live source)."
+  },
+  "decompose_llm_calls": [
+    {
+      "stage": "step2.sq",
+      "ts": 1786685492.7939131,
+      "prompt": "You are a query decomposition assistant.\n\n        Your job is to transform ONE natural-language semantic query into EXACTLY two sub-questions.\n\n        Requirements:\n        1. The input is already a natural semantic query. Do NOT rewrite it into a different intent.\n        2. Output exactly two sub-questions: q1 and q2.\n        3. q1 should extract the first necessary piece of information.\n        4. q2 should depend on q1 and use [1] to refer to the answer of q1 when needed.\n        5. Do not do event judgment, schema routing, source selection, or query rewriting.\n        6. Keep the sub-questions faithful to the original meaning.\n        7. Return valid JSON only.\n\n        Return format:\n        {\n        \"reasoning\": \"brief explanation of the decomposition\",\n        \"subqueries\": [\n            {\n            \"id\": \"q1\",\n            \"query\": \"...\",\n            \"depends_on\": [],\n            \"variables\": []\n            },\n            {\n            \"id\": \"q2\",\n            \"query\": \"...\",\n            \"depends_on\": [\"q1\"],\n            \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n            }\n        ]\n        }\n\n        Question: For the player who played for the Sacramento Kings between 1970 and 1976, what did he do after his NBA career that involved completing a master's degree?\n\n    ",
+      "response": "{\n  \"reasoning\": \"The query asks about a specific player's post-NBA activity involving a master's degree, but first we need to identify which player played for the Sacramento Kings between 1970 and 1976. Then we can ask about that player's post-career education.\",\n  \"subqueries\": [\n    {\n      \"id\": \"q1\",\n      \"query\": \"Which player played for the Sacramento Kings between 1970 and 1976?\",\n      \"depends_on\": [],\n      \"variables\": []\n    },\n    {\n      \"id\": \"q2\",\n      \"query\": \"What did [1] do after his NBA career that involved completing a master's degree?\",\n      \"depends_on\": [\"q1\"],\n      \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n    }\n  ]\n}",
+      "module": "step2.sq",
+      "model": "deepseek-chat"
+    }
+  ]
+}

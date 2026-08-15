@@ -1,0 +1,100 @@
+{"id": "dev-5082", "question": "which handedness did pele have?", "answer": "left-handedness", "source": "kg", "source_ids": [["E006496", "P552", "E030994"]]}
+{"id": "dev-5325", "question": "What is the award received by Andrés Iniesta?", "answer": "Gold Medal of the Royal Order of Sports Merit", "source": "kg", "source_ids": [["E021305", "P166", "E017097"]]}
+{"id": "dev-5593", "question": "What was the second football club Zlatko Dalić played for?", "answer": "Hajduk Split", "source": "kg", "source_ids": [["E031213", "P54", "E009990"]]}
+{"id": "dev-5742", "question": "Which club did Robert Lewandowski played in 2009?", "answer": "Lech Poznań", "source": "kg", "source_ids": [["E032495", "P3279", "E007679"], ["E007679", "P1344", "E032367"], ["E007679", "P1344", "E032495"]]}
+{"id": "dev-5921", "question": "Against whom did Harry Kane score his first goal in 2020?", "answer": "Ukraine national association football team", "source": "doc", "source_ids": ["D20697"]}
+{"id": "dev-5952", "question": "What is place of birth of the Carlos Kaiser?", "answer": "Rio Pardo", "source": "kg", "source_ids": [["E023007", "P19", "E023765"]]}
+{"id": "dev-5954", "question": "Which is the book published on Carlos Kaiser?", "answer": "The book Kaiser: The Greatest Footballer Never to Play Football", "source": "doc", "source_ids": ["D28836"]}
+{"id": "dev-6340", "question": "Who scored the most number of goals for the club Borussia Dortmund?", "answer": "Alfred Preissler", "source": "doc", "source_ids": ["D30798", "D22076"]}
+{"id": "dev-6341", "question": "name of the football player who captains Borussia Dortmund currently?", "answer": "Marco Reus", "source": "doc", "source_ids": ["D13551"]}
+{"id": "dev-6345", "question": "Who is the top goal scorer of the football club Borussia Dortmund?", "answer": "Alfred Preissler", "source": "doc", "source_ids": ["D30798", "D22076"]}
+{"id": "dev-6431", "question": "How much was Beckham's annual salary while he was at LA Galaxy?", "answer": "$6.5 million", "source": "doc", "source_ids": ["D02525"]}
+{"id": "dev-6463", "question": "What is the name of Luís Figo's wife?", "answer": "Helen Svedin", "source": "kg", "source_ids": [["E022968", "P26", "E021492"], ["E021492", "P26", "E022968"]]}
+{"id": "dev-6584", "question": "Who scored the goal for Italy in the Euro 2020 final?", "answer": "Leonardo Bonucci", "source": "kg", "source_ids": [["E029810", "P3279", "E012055"], ["E029810", "P1363", "E012055"]]}
+{"id": "test-6704", "question": "The award received by the pele in 1997?", "answer": "Knight Commander of the Order of the British Empire", "source": "kg", "source_ids": [["E006496", "P166", "E006151"]]}
+{"id": "test-6944", "question": "What is the name of the political party did Andrey Arshavin joined?", "answer": "United Russia", "source": "kg", "source_ids": [["E022627", "P102", "E007698"]]}
+{"id": "test-6970", "question": "what is the abbreviation of the US soccer team?", "answer": "USWNT", "source": "doc", "source_ids": ["D17668", "D28053", "D16283"]}
+{"id": "test-6975", "question": "the abbreviation of the soccer United States women's national soccer team?", "answer": "USWNT", "source": "doc", "source_ids": ["D17668", "D28053", "D16283"]}
+{"id": "test-7059", "question": "In which year was the Real Madrid Club de Fútbol founded?", "answer": "1902", "source": "doc", "source_ids": ["D32200", "D15163", "D10025"]}
+{"id": "test-7064", "question": "What year was the Real Madrid Club de Fútbolf founded?", "answer": "1902", "source": "doc", "source_ids": ["D32200", "D15163", "D10025"]}
+{"id": "test-7149", "question": "Who owns Manchester United?", "answer": "Manchester United Limited", "source": "kg", "source_ids": [["E010395", "P127", "E033457"]]}
+{"id": "test-7150", "question": "What is the parent company of Manchester United Limited", "answer": "Manchester United Plc", "source": "kg", "source_ids": [["E033457", "P749", "E033462"], ["E033462", "P355", "E033457"]]}
+{"id": "test-7153", "question": "What is the religious affiliation of Joel Glazer?", "answer": "Judaism", "source": "kg", "source_ids": [["E006782", "P140", "E032539"]]}
+{"id": "test-7154", "question": "Who is the owner of Manchester United FC?", "answer": "Manchester United Limited", "source": "kg", "source_ids": [["E010395", "P127", "E033457"]]}
+{"id": "test-7213", "question": "What university did Zinedine Zidane study in?", "answer": "University of Limoges", "source": "kg", "source_ids": [["E015268", "P31", "E019044"], ["E015268", "P31", "E021633"], ["E015268", "P463", "E011974"]]}
+{"id": "test-7242", "question": "What was the name of the club when its started?", "answer": "Newton Heath LYR Football Club", "source": "doc", "source_ids": ["D11714", "D23236"]}
+{"id": "test-7903", "question": "How many social media followers for the team Soccer?", "answer": "149,918", "source": "kg", "source_ids": [["E028963", "P8687", "E000393"]]}
+{"id": "test-8022", "question": "What is the award received in 2018 by Kylian Mbappé?", "answer": "Best Young Player Award", "source": "kg", "source_ids": [["E012632", "P166", "E008121"]]}
+{"id": "test-8023", "question": "Where did Kylian Mbappé born?", "answer": "19th arrondissement of Paris", "source": "kg", "source_ids": [["E012632", "P19", "E011667"]]}
+{"id": "test-8052", "question": "Which soccer club won the U.S. Open Cup title in 2019?", "answer": "Atlanta United FC", "source": "table", "source_ids": ["T1100", "T1101"]}
+{"id": "test-8081", "question": "What is total population in 2018 of Camas, Seville?", "answer": "27,463", "source": "kg", "source_ids": [["E030446", "P1082", "E000732"]]}
+{"id": "test-8083", "question": "What is time zone of Camas, Seville?", "answer": "UTC+01:00", "source": "kg", "source_ids": [["E030446", "P421", "E028184"]]}
+{"id": "test-8161", "question": "What is the award received by award receivedNuno Gomes?", "answer": "Officer of the Order of Prince Henry", "source": "kg", "source_ids": [["E010835", "P166", "E012126"]]}
+{"id": "test-8363", "question": "Who sang the official song of the 2010 FIFA World Cup?", "answer": "Shakira", "source": "kg", "source_ids": [["E007920", "P175", "E018681"], ["E007920", "P676", "E018681"], ["E007920", "P162", "E018681"]]}
+{"id": "test-8524", "question": "What is the name of the architect of Stadio Olimpico Grande Torino?", "answer": "Raffaello Fagnoni", "source": "kg", "source_ids": [["E012525", "P84", "E020528"]]}
+{"id": "test-8526", "question": "What's the name of Florence's soccer stadium?", "answer": "Stadio Artemio Franchi", "source": "doc", "source_ids": ["D02554"]}
+{"id": "test-8529", "question": "Where was Luigi Ridolfi born?", "answer": "Forlì", "source": "kg", "source_ids": [["E020225", "P19", "E006694"]]}
+{"id": "test-8530", "question": "What's the name of Forlì's soccer stadium?", "answer": "Stadio Tullo Morgagni", "source": "kg", "source_ids": [["E006694", "P1830", "E032682"]]}
+{"id": "test-8585", "question": "Who was Brooklyn Beckham's partner in 2019?", "answer": "Nicola Peltz", "source": "kg", "source_ids": [["E009550", "P451", "E013474"], ["E013474", "P451", "E009550"]]}
+{"id": "test-8638", "question": "Against which opponent Bruno Fernandes scored his last international goal?", "answer": "Luxembourg", "source": "table", "source_ids": ["T0255"]}
+{"id": "test-8693", "question": "What soccer stadium is in Manchester?", "answer": "City of Manchester Stadium", "source": "doc", "source_ids": ["D20893", "D11091"]}
+{"id": "test-8804", "question": "What year did Limavady United F.C. form?", "answer": "1884", "source": "kg", "source_ids": [["E010784", "P571", "E001901"]]}
+{"id": "test-8963", "question": "What honour was bestowed upon Paolo Maldini?", "answer": "Bravo Award", "source": "doc", "source_ids": ["D21763", "D32186"]}
+{"id": "test-9126", "question": "What was the name of the first president of the FIFA organization?", "answer": "Robert Guérin", "source": "kg", "source_ids": [["E005756", "P21", "E028051"], ["E005756", "P106", "E010798"], ["E005756", "P31", "E023415"]]}
+{"id": "test-9129", "question": "Who is the current preside of the CONCACAF league?", "answer": "Victor Montagliani", "source": "kg", "source_ids": [["E013433", "P31", "E023415"], ["E013433", "P1472", "E004165"], ["E013433", "P735", "E024504"]]}
+{"id": "test-9234", "question": "In which year was Chelsea FC founded?", "answer": "1905", "source": "doc", "source_ids": ["D08560", "D03319", "D23735"]}
+{"id": "test-9239", "question": "Where in London is Chelsea FC based?", "answer": "Fulham", "source": "doc", "source_ids": ["D13973", "D12279", "D02211"]}
+{"id": "test-9243", "question": "When did Chelsea FC when their first FIFA Club World Cup?", "answer": "2021 FIFA Club World Cup", "source": "doc", "source_ids": ["D27511", "D23123"]}
+{"id": "test-9244", "question": "What is the founding year of Chelsea FC?", "answer": "1905", "source": "doc", "source_ids": ["D08560", "D03319", "D23735"]}
+{"id": "test-9353", "question": "Which club won the Regionalliga West in 2020?", "answer": "SV Rödinghausen", "source": "kg", "source_ids": [["E008077", "P118", "E024987"]]}
+{"id": "test-9400", "question": "What is the name of the team that was played against in which Rafael Pereira da Silva committed a foul and Fábio Pereira da Silva was booked?", "answer": "Barnsley F.C.", "source": "doc", "source_ids": ["D29684"]}
+{"id": "train-1076", "question": "Where is the Charlotte Football Club stadium located?", "answer": "Bank of America Stadium, Charlotte", "source": "kg", "source_ids": [["E030993", "P115", "E031208"], ["E031208", "P466", "E030993"]]}
+{"id": "train-1077", "question": "Who was the owner of the Charlotte Football Club?", "answer": "David Tepper", "source": "kg", "source_ids": [["E030993", "P127", "E022046"]]}
+{"id": "train-1107", "question": "What is N'Golo Kanté's religion?", "answer": "Islam", "source": "kg", "source_ids": [["E008913", "P140", "E021218"]]}
+{"id": "train-1137", "question": "who is the captain of Brazil national football team?", "answer": "Thiago Silva", "source": "doc", "source_ids": ["D18652", "D17660"]}
+{"id": "train-117", "question": "What is the pseudonym of the soccer player Raúl González?", "answer": "El que nunca hace nada", "source": "kg", "source_ids": [["E005724", "P742", "E003936"]]}
+{"id": "train-1375", "question": "Which Football Association of Wales honor did Gareth Bale win multiple times?", "answer": "Welsh Footballer of the Year", "source": "doc", "source_ids": ["D11907"]}
+{"id": "train-1497", "question": "Who was the kit manufacturer of Chelsea Football Club from 1981 to 1983?", "answer": "Le Coq Sportif", "source": "doc", "source_ids": ["D13762"]}
+{"id": "train-1946", "question": "What are the set of rules called in soccer?", "answer": "Laws of the Game", "source": "doc", "source_ids": ["D30004", "D26213", "D08520"]}
+{"id": "train-206", "question": "Where was Kylian Mbappé born?", "answer": "19th arrondissement of Paris", "source": "kg", "source_ids": [["E012632", "P19", "E011667"]]}
+{"id": "train-2066", "question": "What is the name of the footballer who captained the club S.S. Lazio in 2000?", "answer": "Alessandro Nesta", "source": "doc", "source_ids": ["D20103"]}
+{"id": "train-207", "question": "Which award did soccer player Kylian Mbappé get in the year 2017?", "answer": "Golden Boy", "source": "kg", "source_ids": [["E012632", "P166", "E008113"]]}
+{"id": "train-2274", "question": "What league does the team participate in?", "answer": "Eliteserien", "source": "kg", "source_ids": [["E012444", "P118", "E011490"]]}
+{"id": "train-2275", "question": "Which club was the first to win the title?", "answer": "Rosenborg BK", "source": "kg", "source_ids": [["E010410", "P118", "E011490"]]}
+{"id": "train-2393", "question": "what are all the award received by kylian mbappe ?", "answer": "Knight of the Legion of Honour,Best Young Player Award,Golden Boy", "source": "kg", "source_ids": [["E012632", "P166", "E008113"]]}
+{"id": "train-2422", "question": "What is the native language of the player Mohamed Salah?", "answer": "Egyptian Arabic", "source": "kg", "source_ids": [["E006848", "P1412", "E016645"], ["E006848", "P103", "E016645"]]}
+{"id": "train-2514", "question": "Who is currently the head coach of the Spanish Olympic football team?", "answer": "Luis de la Fuente", "source": "kg", "source_ids": [["E020234", "P54", "E015179"]]}
+{"id": "train-2542", "question": "Who is the captain of Brazilian football team in 2021?", "answer": "Thiago Silva", "source": "doc", "source_ids": ["D18652", "D17660"]}
+{"id": "train-2575", "question": "Who is the current head coach of Chicago Fire?", "answer": "Ezra Hendrickson", "source": "table", "source_ids": ["T0282"]}
+{"id": "train-2664", "question": "Which player did Zinedine Zidane headbutts in 2006 FIFA World Cup final?", "answer": "Marco Materazzi", "source": "doc", "source_ids": ["D24254", "D24781", "D13041"]}
+{"id": "train-2669", "question": "Who was the player Zinedine Zidane headbutts in 2006 FIFA World Cup?", "answer": "Marco Materazzi", "source": "doc", "source_ids": ["D24254", "D24781", "D13041"]}
+{"id": "train-2906", "question": "From what famous location did the term \"soccer\" originate?", "answer": "Oxford University", "source": "doc", "source_ids": ["D08938"]}
+{"id": "train-2996", "question": "which year founded of Manchester united F.C?", "answer": "1902", "source": "doc", "source_ids": ["D11714", "D16705", "D17175"]}
+{"id": "train-3026", "question": "Who was the first person to serve as the team's captain?", "answer": "Jay DeMerit", "source": "kg", "source_ids": [["E019074", "P54", "E010967"]]}
+{"id": "train-3027", "question": "Where did he play college soccer?", "answer": "University of Illinois Chicago", "source": "kg", "source_ids": [["E019074", "P69", "E032959"]]}
+{"id": "train-3177", "question": "What is Christine Bleakley's occupation?", "answer": "television presenter", "source": "kg", "source_ids": [["E023689", "P106", "E032874"]]}
+{"id": "train-3414", "question": "What is the Dialling code of Stuttgart?", "answer": "0711", "source": "kg", "source_ids": [["E004325", "P473", "E001714"]]}
+{"id": "train-3444", "question": "What county is it a part of?", "answer": "Norfolk", "source": "kg", "source_ids": [["E024336", "P131", "E024540"]]}
+{"id": "train-3502", "question": "who is the president of Borussia Dortmund team?", "answer": "Reinhard Rauball", "source": "kg", "source_ids": [["E020942", "P127", "E032078"]]}
+{"id": "train-3504", "question": "who is the Sleeve Sponsor of Borussia Dortmund in 2022?", "answer": "Opel", "source": "doc", "source_ids": ["D06312"]}
+{"id": "train-3591", "question": "who is the head coach of Al Hilal SFC team?", "answer": "Leonardo Jardim", "source": "kg", "source_ids": [["E030199", "P286", "E012637"]]}
+{"id": "train-3710", "question": "name of Athletic Bilbao's head coach in 2021?", "answer": "Patxi Salinas", "source": "kg", "source_ids": [["E031062", "P286", "E014983"], ["E014983", "P54", "E031062"]]}
+{"id": "train-388", "question": "Who suggested increasing the number of teams in the 2026 FIFA World Cup?", "answer": "Michel Platini;Gianni Infantino", "source": "doc", "source_ids": ["D18266", "D17211", "D03649"]}
+{"id": "train-4096", "question": "Which club did Mesut Özil playing now?", "answer": "Fenerbahçe S.K.", "source": "kg", "source_ids": [["E031548", "P1618", "E001721"], ["E031548", "P54", "E028084"]]}
+{"id": "train-4100", "question": "What is Mesut Özil's ethnic group?", "answer": "Turks in Germany", "source": "kg", "source_ids": [["E031548", "P172", "E029308"]]}
+{"id": "train-4101", "question": "For which club did Mesut Özil playing currently?", "answer": "Fenerbahçe S.K.", "source": "kg", "source_ids": [["E031548", "P1618", "E001721"], ["E031548", "P54", "E028084"]]}
+{"id": "train-4160", "question": "Which award received in 2012 by Xavi?", "answer": "Princess of Asturias Award for Sports", "source": "kg", "source_ids": [["E009615", "P166", "E018298"]]}
+{"id": "train-4190", "question": "What is the name of Oliver Kahn's brother?", "answer": "Axel Kahn", "source": "kg", "source_ids": [["E006572", "P3373", "E031021"], ["E031021", "P3373", "E006572"]]}
+{"id": "train-4246", "question": "What is the name of the team he initially played on?", "answer": "Sporting de Gijón B", "source": "kg", "source_ids": [["E031502", "P54", "E016614"]]}
+{"id": "train-4247", "question": "What is the name of their home stadium?", "answer": "Escuela de Fútbol de Mareo", "source": "kg", "source_ids": [["E016614", "P115", "E025715"]]}
+{"id": "train-4248", "question": "Who was the architect of the stadium?", "answer": "Miguel Díaz Negrete", "source": "kg", "source_ids": [["E025715", "P84", "E026436"]]}
+{"id": "train-4367", "question": "What is the name of the head coach of the club Hellas Verona F.C.?", "answer": "Ivan Jurić", "source": "doc", "source_ids": ["D31599"]}
+{"id": "train-4484", "question": "In what city was the world's first international football match played?", "answer": "Glasgow", "source": "doc", "source_ids": ["D22204", "D28841"]}
+{"id": "train-4545", "question": "Who was the first coach of San Jose Earthquakes?", "answer": "Laurie Calloway", "source": "table", "source_ids": ["T0987"]}
+{"id": "train-4634", "question": "At their premier game what team did FC Nantes face?", "answer": "CA Paris-Charenton", "source": "doc", "source_ids": ["D19540"]}
+{"id": "train-4692", "question": "What is the soccer club Manchester United F.C.'s theme music?", "answer": "Glory Glory", "source": "kg", "source_ids": [["E010395", "P942", "E007776"]]}
+{"id": "train-4720", "question": "How much money did Liverpool F.C. bought Mohamed Salah?", "answer": "£36.9 million", "source": "doc", "source_ids": ["D12049"]}
+{"id": "train-475", "question": "Who was the Who was the head coach of the Chicago Fire Football Club?", "answer": "Ezra Hendrickson", "source": "table", "source_ids": ["T0282"]}
+{"id": "train-595", "question": "Which team played in 2008 by Thomas Müller?", "answer": "FC Bayern Munich II", "source": "kg", "source_ids": [["E021298", "P54", "E033443"], ["E021298", "P1344", "E027539"]]}
+{"id": "train-684", "question": "who is the fitness coach of Argentina national football team ?", "answer": "Luis Martín", "source": "table", "source_ids": ["T0156"]}
+{"id": "train-777", "question": "What division does Paris Saint-Germain Féminine belong to?", "answer": "Division 1 Féminine", "source": "kg", "source_ids": [["E018417", "P118", "E006250"]]}

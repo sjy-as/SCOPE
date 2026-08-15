@@ -1,0 +1,100 @@
+{"id": "dev-5186", "question": "Which is the last movie directed by James Wan?", "answer": "Malignant", "source": "kg", "source_ids": [["E021054", "P57", "E004405"], ["E021054", "P162", "E004405"]]}
+{"id": "dev-5513", "question": "Who directs the flim the Wish Dragon?", "answer": "Chris Appelhans", "source": "kg", "source_ids": [["E019886", "P57", "E013296"], ["E019886", "P58", "E013296"]]}
+{"id": "dev-5514", "question": "Who is the producer of the flim the Wish Dragon?", "answer": "Aron Warner", "source": "kg", "source_ids": [["E019886", "P162", "E013149"]]}
+{"id": "dev-5517", "question": "Who is the composer of the flim the Wish Dragon?", "answer": "Jon Fratelli", "source": "kg", "source_ids": [["E019886", "P86", "E016572"]]}
+{"id": "dev-5518", "question": "Who is the director of Wish Dragon?", "answer": "Chris Appelhans", "source": "kg", "source_ids": [["E019886", "P57", "E013296"], ["E019886", "P58", "E013296"]]}
+{"id": "dev-5575", "question": "What character does Helena Bonham Carter play in The King's Speech?", "answer": "Queen Elizabeth", "source": "doc", "source_ids": ["D06722", "D15280", "D14244"]}
+{"id": "dev-5635", "question": "Which is the Debut movie as director of Ericson Core?", "answer": "Invincible", "source": "kg", "source_ids": [["E004274", "P57", "E008302"], ["E004274", "P344", "E008302"]]}
+{"id": "dev-5636", "question": "Which is the Debut movie as Cinematographer of Ericson Core?", "answer": "Exit in Red", "source": "kg", "source_ids": [["E006168", "P344", "E008302"]]}
+{"id": "dev-5693", "question": "Who played  the  Brian O'Conner in The Fast and Furious?", "answer": "Paul Walker", "source": "kg", "source_ids": [["E007046", "P161", "E010132"], ["E010132", "P800", "E007046"]]}
+{"id": "dev-5695", "question": "who played Dominic Toretto in The Fast and Furious?", "answer": "Vin Diesel", "source": "kg", "source_ids": [["E007046", "P161", "E008406"], ["E008406", "P800", "E007046"]]}
+{"id": "dev-5698", "question": "Actor behind the Brian O'Conner in The Fast and Furious 1?", "answer": "Paul Walker", "source": "kg", "source_ids": [["E007046", "P161", "E010132"], ["E010132", "P800", "E007046"]]}
+{"id": "dev-5752", "question": "What is the main subject of The Dark Knight?", "answer": "terrorism", "source": "kg", "source_ids": [["E007537", "P921", "E021564"]]}
+{"id": "dev-5757", "question": "what is the main subject of this movie?", "answer": "terrorism", "source": "kg", "source_ids": [["E007537", "P921", "E021564"]]}
+{"id": "dev-5842", "question": "Who won the Oscars for the best actress in 1952?", "answer": "Vivien Leigh", "source": "kg", "source_ids": [["E010072", "P166", "E003852"], ["E010072", "P1411", "E003852"], ["E005715", "P166", "E003852"]]}
+{"id": "dev-5847", "question": "Which actress won the Academy Awards for the best actress in the year 1952?", "answer": "Vivien Leigh", "source": "kg", "source_ids": [["E010072", "P166", "E003852"], ["E010072", "P1411", "E003852"], ["E005715", "P166", "E003852"]]}
+{"id": "dev-5872", "question": "Who was the director of the film \"The Night House\"?", "answer": "David Bruckner", "source": "kg", "source_ids": [["E022453", "P57", "E008256"]]}
+{"id": "dev-5877", "question": "Director of the film The Night House?", "answer": "David Bruckner", "source": "kg", "source_ids": [["E022453", "P57", "E008256"]]}
+{"id": "dev-5906", "question": "Spouse of Kevin Zegers?", "answer": "Jaime Feld", "source": "doc", "source_ids": ["D02174"]}
+{"id": "dev-6056", "question": "where was Chloé Zhao born?", "answer": "Beijing", "source": "kg", "source_ids": [["E010018", "P19", "E024111"]]}
+{"id": "dev-6265", "question": "Who is the past spouse of Peyton Reed?", "answer": "Beth LaMure", "source": "doc", "source_ids": ["D18811"]}
+{"id": "dev-6266", "question": "Who is the current spouse of Peyton Reed?", "answer": "Sheila Naghshineh", "source": "doc", "source_ids": ["D19504"]}
+{"id": "dev-6356", "question": "What is the BBFC rating of the movie Eternals?", "answer": "12A certificate", "source": "kg", "source_ids": [["E011273", "P2629", "E010932"]]}
+{"id": "dev-6442", "question": "highest grossing film in 1994?", "answer": "The Lion King", "source": "doc", "source_ids": ["D19340"]}
+{"id": "dev-6447", "question": "Which is the highest grossing movie of the year 1994?", "answer": "The Lion King", "source": "doc", "source_ids": ["D19340"]}
+{"id": "dev-6476", "question": "What was David Simon's job before he became a full time writer?", "answer": "Journalist", "source": "doc", "source_ids": ["D01949", "D02502", "D10558"]}
+{"id": "dev-6504", "question": "What is the BBFC rating of the movie The Addams Family?", "answer": "PG certificate", "source": "kg", "source_ids": [["E018593", "P2629", "E010931"]]}
+{"id": "dev-6535", "question": "Which is debut film of Aanand L. Rai as Producer?", "answer": "Nil Battey Sannata", "source": "table", "source_ids": ["T0020"]}
+{"id": "dev-6566", "question": "Who designed the costumes in Gilda?", "answer": "Jean Louis", "source": "kg", "source_ids": [["E015512", "P2515", "E007784"]]}
+{"id": "test-6802", "question": "What is the genre of the movie Alive?", "answer": "zombie film", "source": "kg", "source_ids": [["E023314", "P136", "E013798"]]}
+{"id": "test-6807", "question": "Genre of the movie Alive?", "answer": "zombie film", "source": "kg", "source_ids": [["E023314", "P136", "E013798"]]}
+{"id": "test-6833", "question": "What's the time period of the 2019 adaptation of Little Women?", "answer": "19th century", "source": "doc", "source_ids": ["D15601", "D03187"]}
+{"id": "test-6926", "question": "Who distributed the movie Leviathan?", "answer": "Cirko Film", "source": "kg", "source_ids": [["E007195", "P750", "E013233"]]}
+{"id": "test-7105", "question": "Which branch of military did James Hong serve in?", "answer": "United States Army", "source": "doc", "source_ids": ["D15103", "D20330"]}
+{"id": "test-7134", "question": "Where was Ana de Armas born?", "answer": "Santa Cruz del Norte", "source": "doc", "source_ids": ["D14648"]}
+{"id": "test-7194", "question": "What is the name of Hugh Jackman's wife?", "answer": "Deborah-Lee", "source": "kg", "source_ids": [["E021882", "P31", "E009610"], ["E021882", "P282", "E022913"], ["E016562", "P735", "E021882"]]}
+{"id": "test-7224", "question": "who did wrongful cloning in the Jurassic World: Fallen Kingdom?", "answer": "John Hammond", "source": "doc", "source_ids": ["D00981", "D22538", "D05920"]}
+{"id": "test-7225", "question": "gross collection of Jurassic World: Fallen Kingdom?", "answer": "$1.3 billion", "source": "doc", "source_ids": ["D13841"]}
+{"id": "test-7583", "question": "Which actor played the role of Andy Dufresne?", "answer": "Tim Robbins", "source": "kg", "source_ids": [["E018973", "P175", "E024071"]]}
+{"id": "test-7945", "question": "Due to which incident, was Indo-Pakistani War of 1971 sparked by?", "answer": "Bangladesh Liberation War", "source": "doc", "source_ids": ["D02880"]}
+{"id": "test-8005", "question": "What is the BBFC rating of the movie Smurfs: The Lost Village?", "answer": "U certificate", "source": "kg", "source_ids": [["E007207", "P2629", "E010930"]]}
+{"id": "test-8387", "question": "What is the  EIRIN film rating for the movie The Ring?", "answer": "PG12", "source": "kg", "source_ids": [["E010088", "P2756", "E011193"]]}
+{"id": "test-8388", "question": "Where is the film set of the movie The Ring?", "answer": "fictional island", "source": "kg", "source_ids": [["E010088", "P8411", "E020741"]]}
+{"id": "test-8389", "question": "Who distributed the movie The Ring?", "answer": "UIP-Dunafilm", "source": "kg", "source_ids": [["E010088", "P750", "E005876"]]}
+{"id": "test-8492", "question": "What is the name of the street that the University of Television and Film Munich is found on?", "answer": "Bernd-Eichinger-Platz", "source": "kg", "source_ids": [["E019098", "P669", "E022917"]]}
+{"id": "test-8662", "question": "What was Garry Marshall's first movie acting role?", "answer": "The Phony American", "source": "table", "source_ids": ["T0234"]}
+{"id": "test-8989", "question": "Which is the first movie produced by Nitesh Tiwari?", "answer": "Break Point", "source": "table", "source_ids": ["T0483"]}
+{"id": "test-9150", "question": "What was the first movie Sean Marshall was in?", "answer": "The Deadly Trackers", "source": "table", "source_ids": ["T0611"]}
+{"id": "test-9315", "question": "Which movie is the sequel to Terms of Endearment?", "answer": "The Evening Star", "source": "doc", "source_ids": ["D06661", "D23772"]}
+{"id": "test-9369", "question": "What was the name of the film directed by Sam Wood for his first assignment as director?", "answer": "Double Speed", "source": "kg", "source_ids": [["E018313", "P57", "E016670"]]}
+{"id": "test-9371", "question": "Film in which Wallace Reid played the role of Walter Jarvis?", "answer": "The Ghost Breaker", "source": "kg", "source_ids": [["E015821", "P161", "E024050"]]}
+{"id": "train-1267", "question": "Which is the first film as director?", "answer": "Yahaan", "source": "kg", "source_ids": [["E014996", "P57", "E021945"]]}
+{"id": "train-1329", "question": "How did WetaFX created apes for Rise of the Planet of the Apes movie?", "answer": "Motion capture", "source": "doc", "source_ids": ["D14061", "D06267", "D07652"]}
+{"id": "train-1895", "question": "Who is the executive producer of the film Smallfoot?", "answer": "Jared Stern", "source": "kg", "source_ids": [["E004599", "P31", "E017594"], ["E004599", "P21", "E020531"], ["E004599", "P106", "E013063"]]}
+{"id": "train-1900", "question": "executive producer of the film Smallfoot?", "answer": "Jared Stern", "source": "kg", "source_ids": [["E004599", "P31", "E017594"], ["E004599", "P21", "E020531"], ["E004599", "P106", "E013063"]]}
+{"id": "train-216", "question": "who played the andre davis in 21 bridges?", "answer": "Chadwick Boseman", "source": "kg", "source_ids": [["E019283", "P162", "E017798"], ["E019283", "P161", "E017798"]]}
+{"id": "train-218", "question": "who played Captain McKenna in 21 bridges?", "answer": "J.K. Simmons", "source": "kg", "source_ids": [["E019283", "P161", "E006629"]]}
+{"id": "train-221", "question": "Actor behind the andre davis in 21 bridges?", "answer": "Chadwick Boseman", "source": "kg", "source_ids": [["E019283", "P162", "E017798"], ["E019283", "P161", "E017798"]]}
+{"id": "train-2225", "question": "Who is the spouse of the Hardik Mehta?", "answer": "Akanksha Tewari", "source": "doc", "source_ids": ["D03189"]}
+{"id": "train-2255", "question": "What maritime museum in located there?", "answer": "Columbia River Maritime Museum", "source": "kg", "source_ids": [["E014472", "P131", "E017411"], ["E014472", "P276", "E017411"]]}
+{"id": "train-2256", "question": "What building was originally reused for it?", "answer": "Old Astoria City Hall", "source": "kg", "source_ids": [["E017142", "P466", "E014472"]]}
+{"id": "train-2257", "question": "What architect designed it?", "answer": "Emil Schacht", "source": "kg", "source_ids": [["E017142", "P84", "E018423"]]}
+{"id": "train-2434", "question": "What awards did A Wrinkle in Time win?", "answer": "St. Louis Film Critics Awards", "source": "table", "source_ids": ["T0018"]}
+{"id": "train-2493", "question": "Who played Scott Calvin's son Charlie in The Santa Clause?", "answer": "Eric Lloyd", "source": "kg", "source_ids": [["E016169", "P175", "E013161"], ["E017551", "P161", "E013161"]]}
+{"id": "train-2494", "question": "What is the name of the sequel to The Santa Clause?", "answer": "The Santa Clause 2", "source": "kg", "source_ids": [["E017551", "P179", "E006776"], ["E006492", "P179", "E006776"]]}
+{"id": "train-2676", "question": "Who is the coustume designer of The Witches?", "answer": "Joanna Johnston", "source": "kg", "source_ids": [["E020146", "P2515", "E014467"]]}
+{"id": "train-2677", "question": "who is the production producer of The Witches movie?", "answer": "Gary Freeman", "source": "kg", "source_ids": [["E020146", "P2554", "E011803"]]}
+{"id": "train-2681", "question": "who is the costume designer of The Witches movie?", "answer": "Joanna Johnston", "source": "kg", "source_ids": [["E020146", "P2515", "E014467"]]}
+{"id": "train-2736", "question": "Who is the director of the movie Chehre?", "answer": "Rumy Jafry", "source": "doc", "source_ids": ["D13603"]}
+{"id": "train-2741", "question": "Who directed the movie Chehre?", "answer": "Rumy Jafry", "source": "doc", "source_ids": ["D13603"]}
+{"id": "train-2828", "question": "What was main subject of the movie \"The Dark Knight\"?", "answer": "terrorism", "source": "kg", "source_ids": [["E007537", "P921", "E021564"]]}
+{"id": "train-3008", "question": "Who did he first marry?", "answer": "Naomi Chance", "source": "kg", "source_ids": [["E015113", "P26", "E021151"], ["E021151", "P26", "E015113"]]}
+{"id": "train-3096", "question": "What is the name of the actor who played Raheem in Juice?", "answer": "Khalil Kain", "source": "kg", "source_ids": [["E020260", "P161", "E020211"]]}
+{"id": "train-3097", "question": "Which actor in Juice was a rapper?", "answer": "Tupac Shakur", "source": "kg", "source_ids": [["E020260", "P161", "E019769"]]}
+{"id": "train-310", "question": "What is the name of the director of Man of Steel?", "answer": "Zack Snyder", "source": "doc", "source_ids": ["D11497", "D16976", "D09138"]}
+{"id": "train-3274", "question": "Who produces the film Black Beauty?", "answer": "Jeremy Bolt", "source": "kg", "source_ids": [["E023316", "P162", "E006911"]]}
+{"id": "train-337", "question": "who is the composer of the flim tom and jerry?", "answer": "Christophe Beck", "source": "kg", "source_ids": [["E020544", "P86", "E004454"]]}
+{"id": "train-3424", "question": "What's the name of the producer of the movie?", "answer": "Sean S. Cunningham", "source": "kg", "source_ids": [["E004943", "P162", "E021285"], ["E004943", "P272", "E021285"]]}
+{"id": "train-3425", "question": "What's the name of the first film that he was the producer of?", "answer": "The Art of Marriage", "source": "kg", "source_ids": [["E005378", "P57", "E021285"]]}
+{"id": "train-3485", "question": "which award win the Best Supporting Actor role Birds of Prey movie?", "answer": "Hollywood Critics Association Midseason Awards", "source": "table", "source_ids": ["T0106", "T0107"]}
+{"id": "train-3574", "question": "which awards win Favorite Movie Actor\tin Dolittle  movie?", "answer": "Kids' Choice Awards", "source": "table", "source_ids": ["T0200", "T0201"]}
+{"id": "train-3811", "question": "Who played his younger part Alan Parrish in Jumanji?", "answer": "Adam Hann-Byrd", "source": "kg", "source_ids": [["E010516", "P161", "E014776"]]}
+{"id": "train-4082", "question": "Notable work of Sebastián Cordero?", "answer": "Ratas, Ratones, Rateros", "source": "kg", "source_ids": [["E006128", "P800", "E014623"], ["E014623", "P57", "E006128"], ["E014623", "P58", "E006128"]]}
+{"id": "train-4229", "question": "What was his first screenplay writing credit?", "answer": "Anna of Brooklyn", "source": "kg", "source_ids": [["E014925", "P58", "E014295"]]}
+{"id": "train-4289", "question": "Who wrote the story of film Beta?", "answer": "Kamlesh Pandey", "source": "kg", "source_ids": [["E017380", "P58", "E006977"]]}
+{"id": "train-4316", "question": "What was the main subject of the movie \"Encanto\"?", "answer": "self-discovery", "source": "kg", "source_ids": [["E003827", "P921", "E008107"]]}
+{"id": "train-4318", "question": "What was the character name of Stephanie Beatriz in the movie \"Encanto\"?", "answer": "Mirabel Madrigal", "source": "kg", "source_ids": [["E003827", "P725", "E007772"], ["E007772", "P800", "E003827"], ["E004342", "P1441", "E003827"]]}
+{"id": "train-4321", "question": "Main subject of the movie Encanto?", "answer": "self-discovery", "source": "kg", "source_ids": [["E003827", "P921", "E008107"]]}
+{"id": "train-4407", "question": "What was the next feature film Robert Zemeckis directed after Back to the Future?", "answer": "Who Framed Roger Rabbit", "source": "kg", "source_ids": [["E008882", "P800", "E015441"], ["E015441", "P57", "E008882"], ["E005614", "P1346", "E008882"]]}
+{"id": "train-4468", "question": "In the film Kramer vs. Kramer, what is the profession of Ted Kramer?", "answer": "Advertising", "source": "doc", "source_ids": ["D15625"]}
+{"id": "train-4585", "question": "Who is the spouse of the Cars movie director John Lasseter?", "answer": "Nancy Lasseter", "source": "table", "source_ids": ["T0347"]}
+{"id": "train-4616", "question": "At which Academy Awards was he nominated for Best Film Editing?", "answer": "66th Academy Awards", "source": "kg", "source_ids": [["E005568", "P1411", "E013009"], ["E006967", "P1411", "E013009"]]}
+{"id": "train-4617", "question": "Who was the winner of best film editing that year?", "answer": "Michael Kahn", "source": "kg", "source_ids": [["E024019", "P31", "E007850"], ["E024019", "P155", "E010492"], ["E024019", "P156", "E023308"]]}
+{"id": "train-4825", "question": "Who reveals the Vers is Carol Danvers in Captain Marvel?", "answer": "Rambeau and her daughter Monica", "source": "doc", "source_ids": ["D16645"]}
+{"id": "train-487", "question": "Which is the first short movie directed by Hardik Mehta?", "answer": "Chal Meri Luna", "source": "table", "source_ids": ["T0261"]}
+{"id": "train-756", "question": "What religion does the main character belong to in Signs, the 2002 movie?", "answer": "Episcopal Church", "source": "doc", "source_ids": ["D20148", "D01255"]}
+{"id": "train-816", "question": "What was the character role of Thomas Anderson/Neo in the movie \"The Matrix\"?", "answer": "A computer programmer", "source": "doc", "source_ids": ["D02357", "D00556", "D13957"]}
+{"id": "train-877", "question": "Which is the first movie created by Stephen Sommers?", "answer": "Perfect Alibi", "source": "table", "source_ids": ["T0667"]}
+{"id": "train-905", "question": "Who is the director of the flim The Princess Bride?", "answer": "Rob Reiner", "source": "kg", "source_ids": [["E004508", "P1411", "E003753"], ["E017789", "P162", "E017803"]]}
+{"id": "train-910", "question": "Who directs the flim The Princess Bride?", "answer": "Rob Reiner", "source": "kg", "source_ids": [["E004508", "P1411", "E003753"], ["E017789", "P162", "E017803"]]}
+{"id": "train-968", "question": "What is the name of the Shutter Island movie production designer?", "answer": "Dante Ferretti", "source": "kg", "source_ids": [["E009999", "P2554", "E023980"]]}

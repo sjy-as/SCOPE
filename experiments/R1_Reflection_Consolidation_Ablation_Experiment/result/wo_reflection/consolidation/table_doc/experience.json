@@ -1,0 +1,176 @@
+{
+  "enabled": true,
+  "revision": 23,
+  "updated_at": 1786694450.699503,
+  "source": "reflection_consolidation_llm",
+  "items": [
+    {
+      "stage": "routing",
+      "when": "The query asks for a team associated with a venue (e.g., 'home team at', 'primary tenant of', 'played home games at')",
+      "action": "Route to doc source; venue concept has no table source, and doc passages list teams and historical details",
+      "lesson": "Venue-team associations are narrative and found in doc, not in structured tables",
+      "evidence": "Records 1005-1054, 1056-1086, 1090-1103: doc primary returned correct team in most cases"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team associated with a venue (e.g., 'home team at', 'primary tenant of', 'played home games at')",
+      "action": "If doc returns multiple teams (e.g., multiple tenants), use additional constraints (e.g., sport, time period) to disambiguate; if still ambiguous, consider the team that matches the sport context of the follow-up query",
+      "lesson": "Venue doc may list multiple teams; need to filter by sport or time period to get the correct one",
+      "evidence": "Records 1024-1030, 1057, 1062, 1065, 1069, 1070, 1072, 1075, 1092, 1093: doc returned multiple teams but gold required only one; filtering by sport or season would help"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team associated with a venue (e.g., 'home team at', 'primary tenant of', 'played home games at')",
+      "action": "If the venue has multiple teams and the follow-up query involves a specific season, check if the team existed in that season; if not, try the other team",
+      "lesson": "Some teams may not have existed in the queried season; use season context to disambiguate",
+      "evidence": "Records 1025-1027, 1070, 1075: doc returned multiple teams, but only one had a season in the queried year; the other teams were not active then"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team associated with a venue (e.g., 'home team at', 'primary tenant of', 'played home games at')",
+      "action": "If the venue has multiple teams and the follow-up query involves a specific sport (e.g., basketball), filter to that sport's team",
+      "lesson": "Venue doc may list teams from different sports; filter by sport to get the correct one",
+      "evidence": "Records 1025-1030, 1057, 1062, 1065, 1069, 1092, 1093: doc returned multiple teams including hockey and basketball; gold required basketball team"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team's record after a specific game number (e.g., 'after game 14', 'after game 42')",
+      "action": "Route to table source (teamgame or teamgame_basic); if table returns no answers, try doc source",
+      "lesson": "Game-by-game records are tabular and found in teamgame tables; doc may not have per-game records",
+      "evidence": "Records 1056, 1057, 1058, 1062, 1063, 1068, 1069, 1073, 1074, 1100: table primary returned correct record in most cases; failures occurred when table returned no answers"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team's record after a specific date (e.g., 'after January 8 game', 'after its game on December 2')",
+      "action": "Route to table source (monthly_schedule or teamgame); if table returns no answers, try doc source",
+      "lesson": "Date-specific records are tabular and found in schedule tables; doc may not have exact per-date records",
+      "evidence": "Records 1055, 1067, 1070, 1075, 1076, 1083: table primary returned correct record in most cases; failures occurred when table returned no answers"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a result of a specific game (e.g., 'result of Game 1', 'score of game seven')",
+      "action": "Route to table source (playoff_series or teamgame_basic); if table returns no answers, try doc source",
+      "lesson": "Game results are tabular and found in playoff_series or teamgame tables; doc may not have per-game results",
+      "evidence": "Records 1079, 1080, 1082, 1084, 1086, 1090, 1091, 1096, 1102, 1103: table primary returned correct result in most cases"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team's result in a playoff series (e.g., 'result in the 1956–57 NBA Finals')",
+      "action": "Route to table source (playoff_series); if table returns multiple game results, aggregate to series outcome (win/loss)",
+      "lesson": "Playoff series tables list individual game results; need to aggregate to series outcome for questions asking for the overall result",
+      "evidence": "Records 1077, 1078, 1081: table returned multiple game results but gold required 'lost'; need to aggregate"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team's record after a specific game number (e.g., 'after game 14', 'after game 42')",
+      "action": "If table returns no answers, immediately try doc source; game logs may be incomplete in table",
+      "lesson": "Game logs may be incomplete in table; doc passages can contain narrative season summaries with records",
+      "evidence": "Records 1056, 1063, 1069, 1100: table returned no answers; doc fallback was not attempted or also failed"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team's record after a specific date (e.g., 'after January 8 game', 'after its game on December 2')",
+      "action": "If table returns no answers, immediately try doc source; schedule tables may be incomplete",
+      "lesson": "Schedule tables may be incomplete for specific dates; doc passages can contain narrative season summaries",
+      "evidence": "Records 1055, 1070: table returned no answers; doc fallback was not attempted or also failed"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team's record after a specific game number (e.g., 'after game 14', 'after game 42')",
+      "action": "If the team is not found in table, consider that the team may have multiple affiliations; check doc for career history",
+      "lesson": "Teams may have multiple affiliations; table may only list one team, while doc provides full history",
+      "evidence": "Records 1056, 1063, 1069, 1100: table returned no answers; gold answers required identifying the correct team from history"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team's record after a specific date (e.g., 'after January 8 game', 'after its game on December 2')",
+      "action": "If the team is not found in table, consider that the team may have multiple affiliations; check doc for career history",
+      "lesson": "Teams may have multiple affiliations; table may only list one team, while doc provides full history",
+      "evidence": "Records 1055, 1070: table returned no answers; gold answers required identifying the correct team from history"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team associated with a venue (e.g., 'home team at', 'primary tenant of', 'played home games at')",
+      "action": "If doc returns multiple teams, use the follow-up query's season or sport to disambiguate; if still ambiguous, consider the team that matches the sport context of the follow-up query",
+      "lesson": "Venue doc may list multiple teams; need to filter by sport or time period to get the correct one",
+      "evidence": "Records 1024-1030, 1057, 1062, 1065, 1069, 1070, 1072, 1075, 1092, 1093: doc returned multiple teams but gold required only one; filtering by sport or season would help"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team associated with a venue (e.g., 'home team at', 'primary tenant of', 'played home games at')",
+      "action": "If the venue has multiple teams and the follow-up query involves a specific season, check if the team existed in that season; if not, try the other team",
+      "lesson": "Some teams may not have existed in the queried season; use season context to disambiguate",
+      "evidence": "Records 1025-1027, 1070, 1075: doc returned multiple teams, but only one had a season in the queried year; the other teams were not active then"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team associated with a venue (e.g., 'home team at', 'primary tenant of', 'played home games at')",
+      "action": "If the venue has multiple teams and the follow-up query involves a specific sport (e.g., basketball), filter to that sport's team",
+      "lesson": "Venue doc may list teams from different sports; filter by sport to get the correct one",
+      "evidence": "Records 1025-1030, 1057, 1062, 1065, 1069, 1092, 1093: doc returned multiple teams including hockey and basketball; gold required basketball team"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team's record after a specific game number (e.g., 'after game 14', 'after game 42')",
+      "action": "If table returns no answers, immediately try doc source; game logs may be incomplete in table",
+      "lesson": "Game logs may be incomplete in table; doc passages can contain narrative season summaries with records",
+      "evidence": "Records 1056, 1063, 1069, 1100: table returned no answers; doc fallback was not attempted or also failed"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team's record after a specific date (e.g., 'after January 8 game', 'after its game on December 2')",
+      "action": "If table returns no answers, immediately try doc source; schedule tables may be incomplete",
+      "lesson": "Schedule tables may be incomplete for specific dates; doc passages can contain narrative season summaries",
+      "evidence": "Records 1055, 1070: table returned no answers; doc fallback was not attempted or also failed"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team's record after a specific game number (e.g., 'after game 14', 'after game 42')",
+      "action": "If the team is not found in table, consider that the team may have multiple affiliations; check doc for career history",
+      "lesson": "Teams may have multiple affiliations; table may only list one team, while doc provides full history",
+      "evidence": "Records 1056, 1063, 1069, 1100: table returned no answers; gold answers required identifying the correct team from history"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team's record after a specific date (e.g., 'after January 8 game', 'after its game on December 2')",
+      "action": "If the team is not found in table, consider that the team may have multiple affiliations; check doc for career history",
+      "lesson": "Teams may have multiple affiliations; table may only list one team, while doc provides full history",
+      "evidence": "Records 1055, 1070: table returned no answers; gold answers required identifying the correct team from history"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team associated with a venue (e.g., 'home team at', 'primary tenant of', 'played home games at')",
+      "action": "If doc returns multiple teams, use the follow-up query's season or sport to disambiguate; if still ambiguous, consider the team that matches the sport context of the follow-up query",
+      "lesson": "Venue doc may list multiple teams; need to filter by sport or time period to get the correct one",
+      "evidence": "Records 1024-1030, 1057, 1062, 1065, 1069, 1070, 1072, 1075, 1092, 1093: doc returned multiple teams but gold required only one; filtering by sport or season would help"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team associated with a venue (e.g., 'home team at', 'primary tenant of', 'played home games at')",
+      "action": "If the venue has multiple teams and the follow-up query involves a specific season, check if the team existed in that season; if not, try the other team",
+      "lesson": "Some teams may not have existed in the queried season; use season context to disambiguate",
+      "evidence": "Records 1025-1027, 1070, 1075: doc returned multiple teams, but only one had a season in the queried year; the other teams were not active then"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team associated with a venue (e.g., 'home team at', 'primary tenant of', 'played home games at')",
+      "action": "If the venue has multiple teams and the follow-up query involves a specific sport (e.g., basketball), filter to that sport's team",
+      "lesson": "Venue doc may list teams from different sports; filter by sport to get the correct one",
+      "evidence": "Records 1025-1030, 1057, 1062, 1065, 1069, 1092, 1093: doc returned multiple teams including hockey and basketball; gold required basketball team"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team's record after a specific game number (e.g., 'after game 14', 'after game 42')",
+      "action": "If table returns no answers, immediately try doc source; game logs may be incomplete in table",
+      "lesson": "Game logs may be incomplete in table; doc passages can contain narrative season summaries with records",
+      "evidence": "Records 1056, 1063, 1069, 1100: table returned no answers; doc fallback was not attempted or also failed"
+    },
+    {
+      "stage": "routing",
+      "when": "The query asks for a team's record after a specific date (e.g., 'after January 8 game', 'after its game on December 2')",
+      "action": "If table returns no answers, immediately try doc source; schedule tables may be incomplete",
+      "lesson": "Schedule tables may be incomplete for specific dates; doc passages can contain narrative season summaries",
+      "evidence": "Records 1055, 1070: table returned no answers; doc fallback was not attempted or also failed"
+    }
+  ]
+}

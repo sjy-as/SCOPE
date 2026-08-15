@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Who was the coach of L.A. Lakers in the 1968-69 season?",
+    "program": {
+      "question": "Who was the coach of L.A. Lakers in the 1968-69 season?",
+      "backend": "mmqa_local_kg",
+      "api_url": "http://127.0.0.1:8002/query",
+      "entities": [
+        "L.A. Lakers"
+      ],
+      "relation_text": "coach of",
+      "relation_targets": [
+        {
+          "head": "L.A. Lakers",
+          "predicate": "coachedBy",
+          "tail": "coach"
+        }
+      ],
+      "relation_target": {
+        "head": "L.A. Lakers",
+        "predicate": "coachedBy",
+        "tail": "coach"
+      },
+      "parser": "llm"
+    },
+    "answer": "",
+    "inner_content": [
+      {
+        "content": []
+      }
+    ],
+    "evidence_count": 1,
+    "evidence": [
+      {
+        "label": "Los Angeles Lakers",
+        "qid": "Q121783",
+        "meta": {},
+        "head_entity": "Los Angeles Lakers",
+        "head_qid": "Q121783",
+        "relation": "",
+        "direction": "self",
+        "parser": "llm",
+        "evidence_source": "entity_only_no_relation_match",
+        "head_entity_snapshot": {
+          "qid": "Q121783",
+          "label": "Los Angeles Lakers",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "Los Angeles Lakers",
+            "inception": "1946; 1947",
+            "owners": "Jeanie Buss"
+          }
+        },
+        "tail_entity_snapshot": {},
+        "similarity_score": 41.5584
+      }
+    ],
+    "unresolved": []
+  }
+]

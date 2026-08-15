@@ -1,0 +1,100 @@
+{"id": "dev-5400", "question": "Which album by Selena Gomez & The Scene was released first:Kiss & Tell or when the sun goes down?", "answer": "Kiss & Tell", "source": "kg", "source_ids": [["E025551", "P175", "E023297"]]}
+{"id": "dev-5402", "question": "who was the guitarist of Selena Gomez & The Scene?", "answer": "Ethan Robert", "source": "kg", "source_ids": [["E006112", "P175", "E023297"], ["E023297", "P358", "E006112"]]}
+{"id": "dev-5403", "question": "in which did Ethan Robert play before Selena Gomez & The Scene?", "answer": "Selena Gomez & The Scene", "source": "kg", "source_ids": [["E006112", "P175", "E023297"], ["E023297", "P358", "E006112"]]}
+{"id": "dev-5463", "question": "What is the birth date of David Geffen?", "answer": "Borough Park, Brooklyn", "source": "doc", "source_ids": ["D21743", "D00554"]}
+{"id": "dev-5730", "question": "What is the award received in 20074 by Beyoncé?", "answer": "Grammy Award for Best R&B Song", "source": "kg", "source_ids": [["E015568", "P166", "E006864"], ["E006998", "P166", "E006864"], ["E009504", "P166", "E006864"]]}
+{"id": "dev-6060", "question": "What is the birth name of the singer Bono?", "answer": "Paul David Hewson", "source": "doc", "source_ids": ["D19561", "D05462"]}
+{"id": "dev-6092", "question": "What is the main catogiri of the", "answer": "Big Star", "source": "kg", "source_ids": [["E025255", "P301", "E023299"], ["E025255", "P373", "E002448"], ["E023299", "P910", "E025255"]]}
+{"id": "dev-6151", "question": "What was the 10th song on the album Piano Man?", "answer": "Captain Jack", "source": "kg", "source_ids": [["E018430", "P361", "E007876"]]}
+{"id": "dev-6179", "question": "Which R&B singer made a cover of \"This Is for the Lover in You\" in 1996?", "answer": "Babyface", "source": "doc", "source_ids": ["D02766", "D08347", "D17794"]}
+{"id": "dev-6180", "question": "In Babyface's cover of \"This Is for the Lover in You\" it featured which rapper beside Shalamar?", "answer": "LL Cool J", "source": "doc", "source_ids": ["D19946", "D27961"]}
+{"id": "dev-6240", "question": "What type of band was Nirvana?", "answer": "American rock band", "source": "doc", "source_ids": ["D03421"]}
+{"id": "dev-6242", "question": "What are the names of the members who founded the band Nirvana?", "answer": "lead singer and guitarist Kurt Cobain and bassist Krist Novoselic", "source": "doc", "source_ids": ["D11688"]}
+{"id": "dev-6360", "question": "What is the award received by singer Laura Pausini in 2006?", "answer": "Grammy Award for Best Latin Pop or Urban Album", "source": "kg", "source_ids": [["E017187", "P31", "E016038"], ["E017187", "P571", "E001298"], ["E017187", "P17", "E013984"]]}
+{"id": "dev-6482", "question": "Which record label was the first to signed the country singer Toby Keith?", "answer": "Mercury Records", "source": "doc", "source_ids": ["D14739"]}
+{"id": "test-6661", "question": "What is the name of band the guitarist Larry Wallis joined in 1972?", "answer": "Pink Fairies", "source": "doc", "source_ids": ["D06346", "D20329", "D14521"]}
+{"id": "test-6810", "question": "What is nominated for Marc Shaiman ?", "answer": "Academy Award for Best Original Musical or Comedy Score", "source": "kg", "source_ids": [["E027114", "P1411", "E011042"], ["E024655", "P1411", "E011042"], ["E016879", "P1411", "E011042"]]}
+{"id": "test-6899", "question": "What is the birth name of the guitarist Slash?", "answer": "Saul Hudson", "source": "doc", "source_ids": ["D28999"]}
+{"id": "test-6961", "question": "who was discography of the band Alice in Chains?", "answer": "Alice in Chains discography", "source": "kg", "source_ids": [["E017758", "P358", "E021676"]]}
+{"id": "test-7111", "question": "Who directed the music video for \"Harder to Breathe\"?", "answer": "Marc Webb", "source": "doc", "source_ids": ["D23106"]}
+{"id": "test-7168", "question": "Where was the band Indian Ocean formed?", "answer": "New Delhi", "source": "doc", "source_ids": ["D12509", "D24296"]}
+{"id": "test-7198", "question": "What was Pink Floyd named after?", "answer": "Pink Anderson;Floyd Council", "source": "kg", "source_ids": [["E016137", "P21", "E021937"], ["E016137", "P509", "E005928"], ["E016137", "P569", "E000889"]]}
+{"id": "test-7200", "question": "What was the name of Pink Floyd member Roger Waters' father?", "answer": "Eric Fletcher Waters", "source": "kg", "source_ids": [["E012448", "P21", "E021937"], ["E012448", "P31", "E018377"], ["E012448", "P569", "E000903"]]}
+{"id": "test-7230", "question": "How many copies sold worldwide of Thriller (album)?", "answer": "70 million copies worldwide", "source": "doc", "source_ids": ["D11042", "D31985"]}
+{"id": "test-7231", "question": "What record to broke after the release of the album?", "answer": "Racial barriers", "source": "doc", "source_ids": ["D31728"]}
+{"id": "test-7290", "question": "Who is the producer of the song Love Buzz by Nirvana?", "answer": "Jack Endino", "source": "doc", "source_ids": ["D25267"]}
+{"id": "test-7500", "question": "Who is the founder of the band Kabir café?", "answer": "Neeraj Arya", "source": "kg", "source_ids": [["E003959", "P31", "E010830"], ["E003959", "P2031", "E001691"]]}
+{"id": "test-7501", "question": "Who is the lead drummer of the band Kabir Café?", "answer": "Viren Solanki", "source": "kg", "source_ids": [["E003959", "P31", "E010830"], ["E003959", "P2031", "E001691"]]}
+{"id": "test-7680", "question": "In which year was the music company Sony Music was formed?", "answer": "1929", "source": "doc", "source_ids": ["D08623"]}
+{"id": "test-7737", "question": "What is the Significant event of ABBA Band?", "answer": "ABBA reunion", "source": "kg", "source_ids": [["E004386", "P31", "E007940"], ["E004386", "P31", "E019834"], ["E004386", "P585", "E001899"]]}
+{"id": "test-7741", "question": "Who founded by ABBA Band?", "answer": "Benny Andersson & Björn Ulvaeus", "source": "kg", "source_ids": [["E003394", "P361", "E009107"], ["E009107", "P112", "E003394"], ["E013476", "P162", "E003394"]]}
+{"id": "test-7742", "question": "Significant event of ABBA Band?", "answer": "ABBA reunion", "source": "kg", "source_ids": [["E004386", "P31", "E007940"], ["E004386", "P31", "E019834"], ["E004386", "P585", "E001899"]]}
+{"id": "test-8009", "question": "What is the notable work by Yoko Kanno?", "answer": "GET9", "source": "kg", "source_ids": [["E011104", "P800", "E015893"], ["E015893", "P86", "E011104"], ["E015893", "P175", "E011104"]]}
+{"id": "test-8041", "question": "Who is credited as the inventor of gangsta rap?", "answer": "Schoolly D", "source": "doc", "source_ids": ["D19177", "D30210", "D31279"]}
+{"id": "test-8070", "question": "In which year was the Trident Studio constructed?", "answer": "1967", "source": "doc", "source_ids": ["D30598"]}
+{"id": "test-8117", "question": "where location of formation for band Kings of Leon?", "answer": "Nashville", "source": "doc", "source_ids": ["D15987", "D19476", "D09036"]}
+{"id": "test-8119", "question": "who was discography of the band Kings of Leon?", "answer": "Kings of Leon discography", "source": "kg", "source_ids": [["E009552", "P358", "E008562"], ["E008562", "P175", "E009552"]]}
+{"id": "test-8176", "question": "Which siblings sang Rainy Days and Mondays?", "answer": "Karen Carpenter;Richard Carpenter", "source": "doc", "source_ids": ["D27948", "D20102", "D14586"]}
+{"id": "test-8181", "question": "The song Rainy Days and Mondays was sung by which siblings?", "answer": "Karen Carpenter;Richard Carpenter", "source": "doc", "source_ids": ["D27948", "D20102", "D14586"]}
+{"id": "test-8396", "question": "Which award was nominated for the composer Marc Shaiman?", "answer": "Academy Award for Best Original Musical or Comedy Score", "source": "kg", "source_ids": [["E027114", "P1411", "E011042"], ["E024655", "P1411", "E011042"], ["E016879", "P1411", "E011042"]]}
+{"id": "test-8501", "question": "Who performed the song \"Hook?\"", "answer": "Blues Traveler", "source": "kg", "source_ids": [["E008270", "P175", "E026005"]]}
+{"id": "test-8507", "question": "What city did Thomas L. Golden found?", "answer": "Arapahoe, CO", "source": "doc", "source_ids": ["D21373", "D12378"]}
+{"id": "test-8509", "question": "What type of people are the Arapahos?", "answer": "Native American", "source": "doc", "source_ids": ["D18323", "D02232", "D25746"]}
+{"id": "test-8511", "question": "Performer of \"Hook?\"", "answer": "Blues Traveler", "source": "kg", "source_ids": [["E008270", "P175", "E026005"]]}
+{"id": "test-8671", "question": "What was the first song that Jerry Moss promoted?", "answer": "16 Candles", "source": "doc", "source_ids": ["D29783"]}
+{"id": "test-9112", "question": "What is the last album that was recorded by artist George Harrison, from the band the Beatles?", "answer": "Brainwashed", "source": "kg", "source_ids": [["E022124", "P264", "E012717"], ["E022124", "P264", "E009160"], ["E022124", "P31", "E017703"]]}
+{"id": "test-9324", "question": "What university did the Boards of Canada attend?", "answer": "University of Edinburgh", "source": "doc", "source_ids": ["D13654"]}
+{"id": "test-9328", "question": "Where is Hexagon Sun?", "answer": "Pentland Hills", "source": "doc", "source_ids": ["D24345"]}
+{"id": "test-9381", "question": "What is the name of the second single in the album Arise?", "answer": "Dead Embryonic Cells", "source": "kg", "source_ids": [["E018816", "P361", "E022034"]]}
+{"id": "train-1001", "question": "What was Dove Cameron's first EP?", "answer": "Bloodshot / Waste", "source": "doc", "source_ids": ["D29470"]}
+{"id": "train-1006", "question": "What is the name of Dove Cameron's first EP?", "answer": "Bloodshot / Waste", "source": "doc", "source_ids": ["D29470"]}
+{"id": "train-1093", "question": "What is Ilaiyaraaja's first movie as music director?", "answer": "Annakili", "source": "doc", "source_ids": ["D26736", "D04560"]}
+{"id": "train-1095", "question": "which orchestra performed Ilaiyaraaja's first symphony score?", "answer": "Royal Philharmonic Orchestra", "source": "doc", "source_ids": ["D16035", "D27684", "D14548"]}
+{"id": "train-1336", "question": "What was Pierre Boulez's last major work?", "answer": "Dérive 2 (2006)", "source": "doc", "source_ids": ["D32345"]}
+{"id": "train-1362", "question": "Which Tom Tom Club song is sampled by Mark Morrison's song \"Return of the Mack\"?", "answer": "Genius of Love", "source": "doc", "source_ids": ["D05434"]}
+{"id": "train-1367", "question": "Mark Morrison's song \"Return of the Mack\" sampled which Tom Tom Club song?", "answer": "Genius of Love", "source": "doc", "source_ids": ["D05434"]}
+{"id": "train-1723", "question": "What is the discography of the cream band?", "answer": "Cream discography", "source": "kg", "source_ids": [["E010186", "P358", "E015770"], ["E015770", "P175", "E010186"]]}
+{"id": "train-1905", "question": "What is nominated for André Previn?", "answer": "Academy Award for Best Original Musical Score", "source": "kg", "source_ids": [["E007372", "P166", "E017395"]]}
+{"id": "train-1993", "question": "what is the discography of the Black Flag music band?", "answer": "Black Flag discography", "source": "kg", "source_ids": [["E017325", "P358", "E016740"], ["E016740", "P175", "E017325"]]}
+{"id": "train-2083", "question": "For which street racing anime did M.O.V.E make openings and endings songs?", "answer": "Initial D", "source": "doc", "source_ids": ["D26119", "D32351"]}
+{"id": "train-2112", "question": "When was Kunitachi College of Music founded?", "answer": "1926", "source": "kg", "source_ids": [["E025520", "P571", "E000920"]]}
+{"id": "train-2262", "question": "Who wrote the song?", "answer": "Stewart Copeland", "source": "kg", "source_ids": [["E011220", "P676", "E014522"], ["E011220", "P162", "E014522"]]}
+{"id": "train-2352", "question": "Which is the first album of the singer Jagjit Singh?", "answer": "Arth", "source": "doc", "source_ids": ["D17625", "D12349"]}
+{"id": "train-2805", "question": "who was the vocal artist of Toosie slide song?", "answer": "Drake", "source": "kg", "source_ids": [["E026529", "P31", "E023412"], ["E026529", "P2550", "E026056"], ["E026529", "P1433", "E026527"]]}
+{"id": "train-2982", "question": "who is the writer of Dance Monkey song?", "answer": "Tones and I", "source": "kg", "source_ids": [["E021732", "P175", "E021144"], ["E021732", "P676", "E021144"], ["E021144", "P800", "E021732"]]}
+{"id": "train-2983", "question": "who is the producer of Dance Monkey song?", "answer": "Konstantin Kersting", "source": "kg", "source_ids": [["E021732", "P162", "E022559"]]}
+{"id": "train-3013", "question": "A member of which music group built it?", "answer": "The Hunters", "source": "doc", "source_ids": ["D30598"]}
+{"id": "train-3015", "question": "What city was he born in?", "answer": "Enfield", "source": "kg", "source_ids": [["E022879", "P19", "E010623"]]}
+{"id": "train-3101", "question": "Who founded Earth Wind & Fire?", "answer": "Maurice White", "source": "kg", "source_ids": [["E013647", "P527", "E006244"], ["E006244", "P463", "E013647"]]}
+{"id": "train-3103", "question": "What was the second Earth Wind & Fire album?", "answer": "The Need of Love", "source": "kg", "source_ids": [["E016515", "P175", "E013647"]]}
+{"id": "train-3106", "question": "Who started Earth Wind & Fire?", "answer": "Maurice White", "source": "kg", "source_ids": [["E013647", "P527", "E006244"], ["E006244", "P463", "E013647"]]}
+{"id": "train-3222", "question": "who is the singer of Blinding Lights song?", "answer": "The Weeknd", "source": "kg", "source_ids": [["E026930", "P175", "E010703"], ["E026930", "P86", "E010703"]]}
+{"id": "train-3308", "question": "Who was the performer of the music \"I'm Your Angel\"?", "answer": "Celine Dion and R. Kelly", "source": "doc", "source_ids": ["D16755"]}
+{"id": "train-3313", "question": "Performer of the song I'm Your Angel?", "answer": "Celine Dion and R. Kelly", "source": "doc", "source_ids": ["D16755"]}
+{"id": "train-3338", "question": "when was The Who band incepted?", "answer": "February 1964", "source": "doc", "source_ids": ["D24567"]}
+{"id": "train-3343", "question": "When did this The Who band start?", "answer": "February 1964", "source": "doc", "source_ids": ["D24567"]}
+{"id": "train-3492", "question": "which position of Brazil country chart Bad Blood  song?", "answer": "60", "source": "table", "source_ids": ["T0060"]}
+{"id": "train-3519", "question": "Where did Coldplay film the music video for their song \"Yellow\"?", "answer": "Studland", "source": "doc", "source_ids": ["D23404"]}
+{"id": "train-3551", "question": "What was the catalog number of the song \"Suddenly There's a Valley\"?", "answer": "1003", "source": "doc", "source_ids": ["D24320"]}
+{"id": "train-3609", "question": "What TV show used Sweet and Low by Augustana in an episode?", "answer": "Kyle XY", "source": "doc", "source_ids": ["D17383"]}
+{"id": "train-3639", "question": "Where did Zhou Long gets Doctor of Musical Arts?", "answer": "Columbia University", "source": "kg", "source_ids": [["E011680", "P69", "E018023"]]}
+{"id": "train-3640", "question": "Which award received in 2012 by Zhou Long?", "answer": "Stoeger Prize", "source": "kg", "source_ids": [["E011680", "P166", "E011558"], ["E011558", "P1346", "E011680"]]}
+{"id": "train-3789", "question": "Where did will.i.am attended summer school?", "answer": "John Marshall High School", "source": "doc", "source_ids": ["D06343"]}
+{"id": "train-3966", "question": "what is genre the music  Avenged Sevenfold ?", "answer": "heavy metal", "source": "doc", "source_ids": ["D33044", "D15420", "D25048"]}
+{"id": "train-3969", "question": "who are all member category of the music  Avenged Sevenfold ?", "answer": "Category:Avenged Sevenfold members", "source": "kg", "source_ids": [["E007906", "P6365", "E021365"], ["E021365", "P4224", "E018377"], ["E021365", "P971", "E007906"]]}
+{"id": "train-4029", "question": "What id the position of Brazil chart Blank Space song?", "answer": "74", "source": "table", "source_ids": ["T0104"]}
+{"id": "train-404", "question": "What is the title of his first studio album?", "answer": "Mind of Mine", "source": "kg", "source_ids": [["E011301", "P175", "E015591"]]}
+{"id": "train-406", "question": "What was the first single to be released from the album?", "answer": "Pillowtalk", "source": "kg", "source_ids": [["E011083", "P361", "E011301"]]}
+{"id": "train-4177", "question": "Who influenced Nicole Scherzinger the most?", "answer": "Whitney Houston", "source": "doc", "source_ids": ["D13454", "D30722"]}
+{"id": "train-4233", "question": "What was Simon & Garfunkel's first studio alubm?", "answer": "Wednesday Morning, 3 A.M.", "source": "kg", "source_ids": [["E004708", "P175", "E017768"], ["E021592", "P527", "E004087"]]}
+{"id": "train-4234", "question": "Who was the album's producer?", "answer": "Tom Wilson", "source": "kg", "source_ids": [["E024300", "P162", "E010073"]]}
+{"id": "train-4236", "question": "What school district was it part of?", "answer": "Waco Independent School District", "source": "kg", "source_ids": [["E017329", "P5353", "E024887"]]}
+{"id": "train-4237", "question": "Initial album released by Simon & Garfunkel?", "answer": "Wednesday Morning, 3 A.M.", "source": "kg", "source_ids": [["E004708", "P175", "E017768"], ["E021592", "P527", "E004087"]]}
+{"id": "train-45", "question": "who is the performer of Save Your Tears song?", "answer": "The Weeknd", "source": "kg", "source_ids": [["E026951", "P175", "E010703"], ["E026951", "P676", "E010703"]]}
+{"id": "train-4561", "question": "What is the reason behind Vande Mataram album?", "answer": "to commemorate 50 years of Indian Independence in 1997", "source": "doc", "source_ids": ["D14482"]}
+{"id": "train-4621", "question": "What was the first single released from the album \"On the 6?\"", "answer": "If You Had My Love", "source": "kg", "source_ids": [["E018857", "P658", "E004249"], ["E004249", "P1433", "E018857"]]}
+{"id": "train-4623", "question": "What was Billboard Hot 100's first song to reach number one?", "answer": "Poor Little Fool", "source": "doc", "source_ids": ["D13194", "D24122"]}
+{"id": "train-4892", "question": "Which religion did bismillah khan belongs?", "answer": "Islam", "source": "kg", "source_ids": [["E016025", "P140", "E016908"]]}
+{"id": "train-765", "question": "What was the first ever number one song on the US Billboard Hot 100?", "answer": "Poor Little Fool", "source": "doc", "source_ids": ["D13194", "D24122"]}
+{"id": "train-883", "question": "What is the name of Michael Jackson's first album?", "answer": "Got to Be There", "source": "doc", "source_ids": ["D00479", "D32608"]}
+{"id": "train-943", "question": "What is the pseudonym of the singer Joe Elliot?", "answer": "Zeff", "source": "kg", "source_ids": [["E019105", "P742", "E002878"]]}

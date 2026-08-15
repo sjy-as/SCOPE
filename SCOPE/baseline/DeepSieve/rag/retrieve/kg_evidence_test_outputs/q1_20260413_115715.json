@@ -1,0 +1,1719 @@
+{
+  "question": "Who is the player who received the North Carolina Sports Hall of Fame induction in 1998?",
+  "program": {
+    "question": "Who is the player who received the North Carolina Sports Hall of Fame induction in 1998?",
+    "backend": "mmqa_local_kg",
+    "api_url": "http://127.0.0.1:8002/query",
+    "entities": [
+      "North Carolina Sports Hall of Fame induction 1998"
+    ],
+    "relation_text": "player who received",
+    "relation_targets": [
+      {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      }
+    ],
+    "relation_target": {
+      "head": "North Carolina Sports Hall of Fame induction 1998",
+      "predicate": "received by",
+      "tail": "player"
+    },
+    "parser": "llm"
+  },
+  "answer": "",
+  "inner_content": [
+    {
+      "content": []
+    }
+  ],
+  "evidence_count": 37,
+  "evidence": [
+    {
+      "label": "Jack Marin",
+      "qid": "Q2326948",
+      "meta": {
+        "time": "1998"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q2326948",
+        "label": "Jack Marin",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Jack Marin",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Sharon",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "12 October 1944",
+          "height": "201 centimetre",
+          "mass": "91 kilogram",
+          "work_period_start": "1966",
+          "work_period_end": "1977",
+          "schools_attended": "Duke University"
+        }
+      },
+      "similarity_score": 71.5152
+    },
+    {
+      "label": "Phil Ford",
+      "qid": "Q948237",
+      "meta": {
+        "time": "1991"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q948237",
+        "label": "Phil Ford",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Phil Ford (basketball)",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Rocky Mount",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "09 February 1956",
+          "work_period_start": "1978",
+          "work_period_end": "1985"
+        }
+      },
+      "similarity_score": 70.7317
+    },
+    {
+      "label": "Sam Jones",
+      "qid": "Q440357",
+      "meta": {
+        "time": "1969"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q440357",
+        "label": "Sam Jones",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Sam Jones (basketball, born 1933)",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Wilmington",
+          "sex_or_gender": "male",
+          "date_of_birth": "24 June 1933",
+          "work_period_start": "1957",
+          "work_period_end": "1969"
+        }
+      },
+      "similarity_score": 70.7317
+    },
+    {
+      "label": "Jeff Mullins",
+      "qid": "Q637382",
+      "meta": {
+        "time": "1983"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q637382",
+        "label": "Jeff Mullins",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Jeff Mullins (basketball)",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Queens",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "18 March 1942",
+          "work_period_start": "1964",
+          "work_period_end": "1976"
+        }
+      },
+      "similarity_score": 70.6587
+    },
+    {
+      "label": "Bobby Jones",
+      "qid": "Q743850",
+      "meta": {
+        "time": "1989"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q743850",
+        "label": "Bobby Jones",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Bobby Jones (basketball, born 1951)",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Charlotte",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "18 December 1951",
+          "height": "206 centimetre",
+          "mass": "95 kilogram",
+          "work_period_start": "1974",
+          "work_period_end": "1986",
+          "nickname": "The Secretary of Defense; Bobby",
+          "schools_attended": "University of North Carolina at Chapel Hill; South Mecklenburg High School"
+        }
+      },
+      "similarity_score": 69.8795
+    },
+    {
+      "label": "James Worthy",
+      "qid": "Q362872",
+      "meta": {
+        "time": "1997"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q362872",
+        "label": "James Worthy",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "James Worthy",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Gastonia",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "27 February 1961",
+          "height": "206 centimetre",
+          "mass": "102 kilogram",
+          "work_period_start": "1982",
+          "work_period_end": "1994",
+          "schools_attended": "University of North Carolina at Chapel Hill; Ashbrook High School"
+        }
+      },
+      "similarity_score": 69.4611
+    },
+    {
+      "label": "Bob McAdoo",
+      "qid": "Q553232",
+      "meta": {
+        "time": "1993"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q553232",
+        "label": "Bob McAdoo",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Bob McAdoo",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Greensboro",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "25 September 1951",
+          "work_period_start": "1972",
+          "work_period_end": "1992"
+        }
+      },
+      "similarity_score": 69.0909
+    },
+    {
+      "label": "John Lucas II",
+      "qid": "Q2325022",
+      "meta": {
+        "time": "1995"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q2325022",
+        "label": "John Lucas II",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "John Lucas II",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Durham",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "31 October 1953",
+          "work_period_start": "1976",
+          "work_period_end": "1990"
+        }
+      },
+      "similarity_score": 69.0476
+    },
+    {
+      "label": "Sam Ranzino",
+      "qid": "Q3946349",
+      "meta": {
+        "time": "1981"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q3946349",
+        "label": "Sam Ranzino",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Sam Ranzino",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Gary",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "21 June 1927",
+          "height": "185 centimetre",
+          "mass": "84 kilogram",
+          "schools_attended": "North Carolina State University"
+        }
+      },
+      "similarity_score": 68.6747
+    },
+    {
+      "label": "Lou Hudson",
+      "qid": "Q2565114",
+      "meta": {
+        "time": "1988"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q2565114",
+        "label": "Lou Hudson",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Lou Hudson",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Greensboro",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "11 July 1944",
+          "height": "196 centimetre",
+          "mass": "95 kilogram",
+          "work_period_start": "1966",
+          "work_period_end": "1979",
+          "schools_attended": "University of Minnesota; James B. Dudley High School"
+        }
+      },
+      "similarity_score": 67.8788
+    },
+    {
+      "label": "Dale Morey",
+      "qid": "Q19615890",
+      "meta": {
+        "time": "1980"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q19615890",
+        "label": "Dale Morey",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Dale Morey",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Martinsville",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "01 December 1918",
+          "work_period_start": "1946",
+          "work_period_end": "1947"
+        }
+      },
+      "similarity_score": 67.8788
+    },
+    {
+      "label": "Dickie Hemric",
+      "qid": "Q2333229",
+      "meta": {
+        "time": "1972"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q2333229",
+        "label": "Dickie Hemric",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Dickie Hemric",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Jonesville",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "29 August 1933",
+          "height": "198 centimetre",
+          "mass": "100 kilogram",
+          "work_period_start": "1955",
+          "work_period_end": "1957",
+          "schools_attended": "Wake Forest University; Jonesville High School"
+        }
+      },
+      "similarity_score": 67.8571
+    },
+    {
+      "label": "Lee Shaffer",
+      "qid": "Q2329774",
+      "meta": {
+        "time": "1993"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q2329774",
+        "label": "Lee Shaffer",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Lee Shaffer",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Chicago",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "23 February 1939",
+          "height": "201 centimetre",
+          "mass": "100 kilogram",
+          "work_period_start": "1961",
+          "work_period_end": "1964",
+          "schools_attended": "Baldwin High School"
+        }
+      },
+      "similarity_score": 67.4699
+    },
+    {
+      "label": "Michael Jordan",
+      "qid": "Q41421",
+      "meta": {
+        "time": "2010"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q41421",
+        "label": "Michael Jordan",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Michael Jordan",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Brooklyn",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "17 February 1963",
+          "height": "198 centimetre",
+          "mass": "98 kilogram; 216 pound; 198 pound; 195 pound",
+          "work_period_start": "1984",
+          "work_period_end": "2003",
+          "nickname": "Air; Air Jordan; G.O.A.T.; Money; Captain Marvel; Mr. June; His Airness; Mike; MJ; The Black Cat; vaca sagrada; Mr. J",
+          "handedness": "right-handedness",
+          "schools_attended": "University of North Carolina at Chapel Hill; University of North Carolina at Chapel Hill; Emsley A. Laney High School"
+        }
+      },
+      "similarity_score": 67.4556
+    },
+    {
+      "label": "Cedric Maxwell",
+      "qid": "Q555100",
+      "meta": {
+        "time": "1998"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q555100",
+        "label": "Cedric Maxwell",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Cedric Maxwell",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Kinston",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "21 November 1955",
+          "work_period_start": "1977",
+          "work_period_end": "1988"
+        }
+      },
+      "similarity_score": 67.4556
+    },
+    {
+      "label": "Bones McKinney",
+      "qid": "Q1450542",
+      "meta": {
+        "time": "1970"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q1450542",
+        "label": "Bones McKinney",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Bones McKinney",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Lowland",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "01 January 1919",
+          "work_period_start": "1946",
+          "work_period_end": "1952"
+        }
+      },
+      "similarity_score": 67.4556
+    },
+    {
+      "label": "Bob Gantt",
+      "qid": "Q1583907",
+      "meta": {
+        "time": "1978"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q1583907",
+        "label": "Bob Gantt",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Bob Gantt",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Durham",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "22 June 1922",
+          "height": "193 centimetre",
+          "mass": "93 kilogram",
+          "work_period_start": "1946",
+          "work_period_end": "1947",
+          "schools_attended": "Durham High School; Duke University"
+        }
+      },
+      "similarity_score": 67.0732
+    },
+    {
+      "label": "Walter Davis",
+      "qid": "Q975066",
+      "meta": {
+        "time": "1996"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q975066",
+        "label": "Walter Davis",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Walter Davis (basketball)",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Pineville",
+          "sex_or_gender": "male",
+          "date_of_birth": "09 September 1954",
+          "height": "198 centimetre",
+          "mass": "88 kilogram",
+          "work_period_start": "1977",
+          "work_period_end": "1992",
+          "nickname": "Walt; The Candyman; Sweet D; The Man with the Velvet Touch; Greyhound",
+          "schools_attended": "University of North Carolina at Chapel Hill; Sanford School; South Mecklenburg High School"
+        }
+      },
+      "similarity_score": 67.0659
+    },
+    {
+      "label": "Randy Denton",
+      "qid": "Q3930049",
+      "meta": {
+        "time": "2014"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q3930049",
+        "label": "Randy Denton",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Randy Denton",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Raleigh",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "18 February 1949",
+          "height": "208 centimetre",
+          "mass": "240 pound",
+          "work_period_start": "1971",
+          "work_period_end": "1979",
+          "schools_attended": "William G. Enloe High School; Duke University"
+        }
+      },
+      "similarity_score": 67.0659
+    },
+    {
+      "label": "Antawn Jamison",
+      "qid": "Q352140",
+      "meta": {
+        "time": "2016"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q352140",
+        "label": "Antawn Jamison",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Antawn Jamison",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Shreveport",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "12 June 1976",
+          "height": "203 centimetre",
+          "mass": "101 kilogram",
+          "work_period_start": "1998",
+          "work_period_end": "2014",
+          "schools_attended": "Providence High School; University of North Carolina at Chapel Hill"
+        }
+      },
+      "similarity_score": 66.2722
+    },
+    {
+      "label": "David Thompson",
+      "qid": "Q718669",
+      "meta": {
+        "time": "1982"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q718669",
+        "label": "David Thompson",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "David Thompson (basketball)",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Shelby",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "13 July 1954",
+          "height": "193 centimetre",
+          "mass": "89 kilogram",
+          "work_period_start": "1975",
+          "work_period_end": "1984",
+          "nickname": "Skywalker",
+          "schools_attended": "Crest High School; North Carolina State University"
+        }
+      },
+      "similarity_score": 66.2722
+    },
+    {
+      "label": "Henry Bibby",
+      "qid": "Q2387113",
+      "meta": {
+        "time": "2022"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q2387113",
+        "label": "Henry Bibby",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Henry Bibby",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Franklinton",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "24 November 1949",
+          "work_period_start": "1972",
+          "work_period_end": "1981"
+        }
+      },
+      "similarity_score": 66.2651
+    },
+    {
+      "label": "Pete Brennan",
+      "qid": "Q3900792",
+      "meta": {
+        "time": "2007"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q3900792",
+        "label": "Pete Brennan",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Pete Brennan",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Brooklyn",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "23 September 1936",
+          "height": "198 centimetre",
+          "mass": "205 pound",
+          "work_period_start": "1958",
+          "work_period_end": "1959",
+          "schools_attended": "University of North Carolina at Chapel Hill"
+        }
+      },
+      "similarity_score": 65.8683
+    },
+    {
+      "label": "Walt Bellamy",
+      "qid": "Q735251",
+      "meta": {
+        "time": "1984"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q735251",
+        "label": "Walt Bellamy",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Walt Bellamy",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "New Bern",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "24 July 1939",
+          "height": "211 centimetre",
+          "mass": "102 kilogram",
+          "work_period_start": "1961",
+          "work_period_end": "1974",
+          "schools_attended": "Indiana University Bloomington; Indiana University"
+        }
+      },
+      "similarity_score": 65.8683
+    },
+    {
+      "label": "Belus Smawley",
+      "qid": "Q3637883",
+      "meta": {
+        "time": "1992"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q3637883",
+        "label": "Belus Smawley",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Belus Smawley",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Ellenboro",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "18 March 1918"
+        }
+      },
+      "similarity_score": 65.4762
+    },
+    {
+      "label": "M. L. Carr",
+      "qid": "Q2331870",
+      "meta": {
+        "time": "2012"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q2331870",
+        "label": "M. L. Carr",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "M. L. Carr",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Wallace",
+          "sex_or_gender": "male",
+          "date_of_birth": "09 January 1951",
+          "work_period_start": "1973",
+          "work_period_end": "1985"
+        }
+      },
+      "similarity_score": 65.4545
+    },
+    {
+      "label": "Tommy Burleson",
+      "qid": "Q2328264",
+      "meta": {
+        "time": "1996"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q2328264",
+        "label": "Tommy Burleson",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Tommy Burleson",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Crossnore",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "24 February 1952",
+          "height": "218 centimetre",
+          "mass": "102 kilogram",
+          "work_period_start": "1974",
+          "work_period_end": "1981",
+          "schools_attended": "North Carolina State University"
+        }
+      },
+      "similarity_score": 65.0888
+    },
+    {
+      "label": "Ronnie Shavlik",
+      "qid": "Q6390069",
+      "meta": {
+        "time": "1979"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q6390069",
+        "label": "Ronnie Shavlik",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Ronnie Shavlik",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Denver",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "04 December 1933",
+          "height": "203 centimetre",
+          "mass": "91 kilogram",
+          "work_period_start": "1956",
+          "work_period_end": "1958",
+          "schools_attended": "North Carolina State University"
+        }
+      },
+      "similarity_score": 65.0888
+    },
+    {
+      "label": "Jerry Stackhouse",
+      "qid": "Q351802",
+      "meta": {
+        "time": "2023"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q351802",
+        "label": "Jerry Stackhouse",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Jerry Stackhouse",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Kinston",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "05 November 1974",
+          "work_period_start": "1995",
+          "work_period_end": "2013"
+        }
+      },
+      "similarity_score": 64.3275
+    },
+    {
+      "label": "Muggsy Bogues",
+      "qid": "Q150502",
+      "meta": {
+        "time": "2022"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q150502",
+        "label": "Muggsy Bogues",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Muggsy Bogues",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Baltimore",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "09 January 1965",
+          "work_period_start": "1987",
+          "work_period_end": "2001"
+        }
+      },
+      "similarity_score": 64.2857
+    },
+    {
+      "label": "Sleepy Floyd",
+      "qid": "Q925099",
+      "meta": {
+        "time": "2016"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q925099",
+        "label": "Sleepy Floyd",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Sleepy Floyd",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Gastonia",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "06 March 1960",
+          "height": "191 centimetre",
+          "mass": "77 kilogram",
+          "work_period_start": "1982",
+          "work_period_end": "1995",
+          "schools_attended": "Georgetown University; Georgetown University; Hunter Huss High School"
+        }
+      },
+      "similarity_score": 63.4731
+    },
+    {
+      "label": "Mike Gminski",
+      "qid": "Q1618750",
+      "meta": {
+        "time": "2003"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q1618750",
+        "label": "Mike Gminski",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Mike Gminski",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Monroe",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "03 August 1959",
+          "height": "211 centimetre",
+          "mass": "114 kilogram",
+          "work_period_start": "1980",
+          "work_period_end": "1994",
+          "nickname": "G-Man",
+          "schools_attended": "Duke University; Masuk High School"
+        }
+      },
+      "similarity_score": 63.4731
+    },
+    {
+      "label": "Rodney Rogers",
+      "qid": "Q634812",
+      "meta": {
+        "time": "2014"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q634812",
+        "label": "Rodney Rogers",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Rodney Rogers",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Durham",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "20 June 1971",
+          "height": "201 centimetre",
+          "mass": "107 kilogram",
+          "work_period_start": "1993",
+          "work_period_end": "2005",
+          "schools_attended": "Hillside High School; Wake Forest University"
+        }
+      },
+      "similarity_score": 63.0952
+    },
+    {
+      "label": "Ed Biedenbach",
+      "qid": "Q3718833",
+      "meta": {
+        "time": "2014"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q3718833",
+        "label": "Ed Biedenbach",
+        "types": [
+          "coach",
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Eddie Biedenbach",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Pittsburgh",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "12 August 1945"
+        }
+      },
+      "similarity_score": 63.0952
+    },
+    {
+      "label": "Lennie Rosenbluth",
+      "qid": "Q3830193",
+      "meta": {
+        "time": "2012"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q3830193",
+        "label": "Lennie Rosenbluth",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Lennie Rosenbluth",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "The Bronx",
+          "sex_or_gender": "male",
+          "date_of_birth": "22 January 1933",
+          "height": "193 centimetre",
+          "mass": "86 kilogram",
+          "work_period_start": "1957",
+          "work_period_end": "1959",
+          "schools_attended": "James Monroe High School; University of North Carolina at Chapel Hill; Staunton Military Academy"
+        }
+      },
+      "similarity_score": 62.7907
+    },
+    {
+      "label": "Brad Daugherty",
+      "qid": "Q896772",
+      "meta": {
+        "time": "2001"
+      },
+      "head_entity": "North Carolina Sports Hall of Fame",
+      "head_qid": "Q41628143",
+      "relation": "receivesAward",
+      "direction": "incoming",
+      "parser": "llm",
+      "evidence_source": "matched_triple",
+      "relation_target": {
+        "head": "North Carolina Sports Hall of Fame induction 1998",
+        "predicate": "received by",
+        "tail": "player"
+      },
+      "head_entity_snapshot": {
+        "qid": "Q41628143",
+        "label": "North Carolina Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {}
+      },
+      "tail_entity_snapshot": {
+        "qid": "Q896772",
+        "label": "Brad Daugherty",
+        "types": [
+          "player"
+        ],
+        "attrs": {
+          "enwiki_title": "Brad Daugherty (basketball)",
+          "country_of_citizenship": "United States of America",
+          "place_of_birth": "Black Mountain",
+          "native_language": "English",
+          "sex_or_gender": "male",
+          "date_of_birth": "19 October 1965",
+          "height": "213 centimetre",
+          "mass": "111 kilogram",
+          "work_period_start": "1986",
+          "work_period_end": "1994",
+          "nickname": "Mr. Softee",
+          "schools_attended": "Charles D. Owen High School; University of North Carolina at Chapel Hill"
+        }
+      },
+      "similarity_score": 62.7219
+    },
+    {
+      "label": "Arkansas Sports Hall of Fame",
+      "qid": "Q4791866",
+      "meta": {},
+      "head_entity": "Arkansas Sports Hall of Fame",
+      "head_qid": "Q4791866",
+      "relation": "",
+      "direction": "self",
+      "parser": "llm",
+      "evidence_source": "entity_only_no_relation_match",
+      "head_entity_snapshot": {
+        "qid": "Q4791866",
+        "label": "Arkansas Sports Hall of Fame",
+        "types": [
+          "award"
+        ],
+        "attrs": {
+          "enwiki_title": "Arkansas Sports Hall of Fame"
+        }
+      },
+      "tail_entity_snapshot": {},
+      "similarity_score": 46.5517
+    }
+  ],
+  "unresolved": []
+}

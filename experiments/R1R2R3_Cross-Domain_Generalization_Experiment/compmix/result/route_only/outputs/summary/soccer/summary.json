@@ -1,0 +1,32 @@
+{
+  "domain": "soccer",
+  "routing_mode": "deepsieve",
+  "knowledge_base": [
+    "kg",
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/soccer/qa_benchmark/questions_clean.jsonl",
+  "output_dir": "/root/autodl-tmp/BBB_CompMix/experiments/route_only/outputs/deepsieve/soccer",
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 17.200905327685177,
+  "semantic_catalog": null,
+  "atomr_prompts": null,
+  "deepsieve_source_summary": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/soccer/deepsieve_source_summary.json",
+  "decomposition_counts": {
+    "1": 95,
+    "2": 5
+  },
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 6,
+    "route1.kg": 88,
+    "route1.table": 6,
+    "route2.kg": 5
+  }
+}

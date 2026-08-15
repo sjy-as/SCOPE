@@ -1,0 +1,148 @@
+{
+  "enabled": true,
+  "revision": 24,
+  "updated_at": 1786694623.7176092,
+  "source": "reflection_consolidation_llm",
+  "items": [
+    {
+      "stage": "routing",
+      "when": "sub-question asks for a player who achieved a specific scoring milestone (e.g., scored 63 points) at a named venue",
+      "action": "Route to doc as primary source; KG player schema lacks game-specific scoring performance fields.",
+      "lesson": "KG has no relation linking player to scoring events at venues; doc narratives contain such details.",
+      "evidence": "Record 1143: doc primary returned correct player (Hersey Hawkins); KG primary would fail."
+    },
+    {
+      "stage": "routing",
+      "when": "sub-question asks for a player who headlined a team's championships at a venue",
+      "action": "Route to doc as primary source; KG has no relation linking team to a 'headlining player' for championships.",
+      "lesson": "KG team schema lacks championship player relations; doc narratives contain such details.",
+      "evidence": "Record 1142: doc primary returned correct player (Julius Erving); KG primary would fail."
+    },
+    {
+      "stage": "routing",
+      "when": "sub-question asks for a player who has a dedication (e.g., alcove) at a venue",
+      "action": "Route to doc as primary source; KG venue schema has no relation for dedications or honors.",
+      "lesson": "KG venue schema lacks dedication/honor fields; doc narratives contain such details.",
+      "evidence": "Record 1130: doc primary returned correct player (Elvin Hayes); KG primary would fail."
+    },
+    {
+      "stage": "routing",
+      "when": "sub-question asks for a player who played for a team at a venue during a time period",
+      "action": "Route to doc as primary source; KG has no relation linking team to player with venue and temporal bounds.",
+      "lesson": "KG team schema lacks player roster relations with venue/time; doc narratives contain such details.",
+      "evidence": "Record 1151: KG primary returned no answers; doc primary would have returned correct player (Oscar Robertson)."
+    },
+    {
+      "stage": "routing",
+      "when": "sub-question asks for a player's school attended after identifying the player via a venue-related clue",
+      "action": "Route to doc as primary source for the school query; KG player schema has schools_attended but doc is more reliable for venue-derived entities.",
+      "lesson": "Doc is preferred for school queries when the player was identified via venue context; KG may lack complete school data.",
+      "evidence": "Record 1130: doc primary returned correct school (University of Houston); KG primary would be less reliable."
+    },
+    {
+      "stage": "routing",
+      "when": "sub-question asks for a player's place of birth after identifying the player via a venue-related clue",
+      "action": "Route to KG as primary source; KG player schema explicitly lists place_of_birth.",
+      "lesson": "KG directly provides place_of_birth for players; doc is fallback.",
+      "evidence": "Record 1142: KG primary returned correct place (Manhattan); doc primary would be less direct."
+    },
+    {
+      "stage": "routing",
+      "when": "sub-question asks for a team a player played for after identifying the player via a venue-related clue",
+      "action": "Route to KG as primary source; KG contract concept links player to team.",
+      "lesson": "KG contract concept directly provides team affiliations; doc is fallback.",
+      "evidence": "Record 1143: KG primary returned multiple teams including correct one (Chicago Bulls); doc primary would be less direct."
+    },
+    {
+      "stage": "routing",
+      "when": "sub-question asks for an award won by a player in a specific year after identifying the player via a venue-related clue",
+      "action": "Route to KG as primary source; KG award_received concept links player to award with time.",
+      "lesson": "KG award_received concept directly provides award and time; doc is fallback.",
+      "evidence": "Record 1151: KG primary would have returned correct award (All-NBA Team) if player was identified."
+    },
+    {
+      "stage": "semantic",
+      "when": "sub-question contains a venue name and asks for a player who performed an action there",
+      "action": "Parse the venue as the known entity and the player as the return type; use doc for the relation.",
+      "lesson": "Venue names are reliable anchors for doc searches; player is the target entity.",
+      "evidence": "Records 1143, 1130: venue-based queries correctly parsed with venue as entity and player as return type."
+    },
+    {
+      "stage": "semantic",
+      "when": "sub-question contains a team name, venue name, and time period, asking for a player",
+      "action": "Parse team as the known entity, venue and time as conditions, player as return type; route to doc.",
+      "lesson": "Team+venue+time is a complex condition that KG cannot resolve; doc narratives contain player rosters.",
+      "evidence": "Record 1151: semantic parse correctly identified entities and conditions but KG failed to return answers."
+    },
+    {
+      "stage": "semantic",
+      "when": "sub-question asks for a player's school or place of birth using [1] reference",
+      "action": "Parse [1] as the known entity and the attribute (school/place of birth) as the relation; route to KG for place of birth, doc for school.",
+      "lesson": "[1] references are correctly resolved as player entities; attribute queries work well with KG for structured fields.",
+      "evidence": "Records 1142, 1130: [1] references correctly parsed and resolved."
+    },
+    {
+      "stage": "planning",
+      "when": "sub-question asks for a player who performed an action at a venue",
+      "action": "Plan a single path: Search venue in doc, then Relate to player; use Filter for additional conditions.",
+      "lesson": "Venue-first search in doc is effective for player identification; filter conditions refine results.",
+      "evidence": "Records 1143, 1130: venue-first plans returned correct players."
+    },
+    {
+      "stage": "planning",
+      "when": "sub-question asks for a player who played for a team at a venue during a time period",
+      "action": "Plan a single path: Search team in doc, then Relate to player, then Filter by venue and time.",
+      "lesson": "Team-first search in doc with venue/time filters is necessary; KG cannot handle this complex relation.",
+      "evidence": "Record 1151: KG-based plan returned no answers; doc-based plan would have succeeded."
+    },
+    {
+      "stage": "planning",
+      "when": "sub-question asks for an attribute (school, place of birth) of a player identified via [1]",
+      "action": "Plan a single path: Search [1] in KG, then Relate to the attribute; use doc as fallback.",
+      "lesson": "KG attribute lookup is efficient for structured player fields; doc fallback handles missing data.",
+      "evidence": "Records 1142, 1130: KG attribute lookups returned correct answers."
+    },
+    {
+      "stage": "execution",
+      "when": "KG primary returns no answers for a player identification query with venue/time conditions",
+      "action": "Immediately fallback to doc; KG schema lacks the necessary relations for venue-based player identification.",
+      "lesson": "KG failure on venue-related player queries indicates a routing mistake; doc should have been primary.",
+      "evidence": "Record 1151: KG returned no answers; doc would have returned correct player."
+    },
+    {
+      "stage": "execution",
+      "when": "Doc primary returns a player for a venue-related query",
+      "action": "Trust the doc result; doc narratives reliably contain venue-based player information.",
+      "lesson": "Doc is the authoritative source for venue-related player identification.",
+      "evidence": "Records 1143, 1142, 1130: doc primary returned correct players."
+    },
+    {
+      "stage": "general",
+      "when": "sub-question involves a venue as a clue to identify a player",
+      "action": "Prefer doc as primary source; KG lacks venue-to-player relations.",
+      "lesson": "Venue-based player identification is a doc-strength query pattern.",
+      "evidence": "Records 1143, 1142, 1130, 1151: doc consistently outperformed KG for venue-based player identification."
+    },
+    {
+      "stage": "general",
+      "when": "sub-question asks for a structured player attribute (place of birth, team) after player identification",
+      "action": "Prefer KG as primary source; KG has direct attribute fields.",
+      "lesson": "KG is efficient for structured player attributes; doc is fallback.",
+      "evidence": "Records 1142, 1143: KG returned correct attributes (Manhattan, Chicago Bulls)."
+    },
+    {
+      "stage": "general",
+      "when": "sub-question asks for a school attended by a player identified via venue context",
+      "action": "Prefer doc as primary source; KG schools_attended may be incomplete.",
+      "lesson": "Doc narratives provide more reliable school information for venue-derived players.",
+      "evidence": "Record 1130: doc returned correct school (University of Houston)."
+    },
+    {
+      "stage": "general",
+      "when": "sub-question asks for an award won by a player in a specific year",
+      "action": "Prefer KG as primary source; KG award_received concept directly provides award and time.",
+      "lesson": "KG is efficient for award queries with temporal constraints.",
+      "evidence": "Record 1151: KG would have returned correct award (All-NBA Team) if player was identified."
+    }
+  ]
+}

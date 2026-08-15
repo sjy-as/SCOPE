@@ -1,0 +1,31 @@
+{
+  "sub_q1": "Who won the NBA Sportsmanship Award in 2004–05?",
+  "sub_q2": "What was [1] widely considered to be during his college and early NBA career?",
+  "rewrite_reasoning": "The query asks about a specific player identified by winning the NBA Sportsmanship Award in 2004–05, and then asks what he was widely considered to be during his college and early NBA career. The first sub-query identifies the player, and the second uses that identification to answer the descriptive part.",
+  "match1": null,
+  "match2": null,
+  "route1": {
+    "matched_concept": "award_received",
+    "primary_source": "table",
+    "fallback_source": "doc",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: NBA Sportsmanship Award (an award). ASKED target: the winner (player) for the 2004–05 season. Phase-1 rule: relation-first. The award_received concept links player + award + time, matching the pair (award, player). Source selection: award_received exposes only table, so primary = table. Doc is LIKELY as fallback because it may contain narrative descriptions of award winners, but table is more direct."
+  },
+  "route2": {
+    "matched_concept": "player",
+    "primary_source": "doc",
+    "fallback_source": "table",
+    "parse_failed": false,
+    "reasoning": "KNOWN entity: [1] (a player, referenced by token). ASKED target: a description of how the player was widely considered (an attribute or characterization). No relation concept links a player to a general 'widely considered' attribute; the query asks for an attribute of the known entity, so the Phase-1 known-entity fallback rule fires, matching the concept 'player'. For source selection: doc is LIKELY because its description includes narrative details about players' careers and reputations, which would cover such a characterization. table is LIKELY because player_stats tables may include career details, but less directly; however, since doc is more likely to contain descriptive text, primary is doc, fallback is table."
+  },
+  "decompose_llm_calls": [
+    {
+      "stage": "step2.sq",
+      "ts": 1786685492.187822,
+      "prompt": "You are a query decomposition assistant.\n\n        Your job is to transform ONE natural-language semantic query into EXACTLY two sub-questions.\n\n        Requirements:\n        1. The input is already a natural semantic query. Do NOT rewrite it into a different intent.\n        2. Output exactly two sub-questions: q1 and q2.\n        3. q1 should extract the first necessary piece of information.\n        4. q2 should depend on q1 and use [1] to refer to the answer of q1 when needed.\n        5. Do not do event judgment, schema routing, source selection, or query rewriting.\n        6. Keep the sub-questions faithful to the original meaning.\n        7. Return valid JSON only.\n\n        Return format:\n        {\n        \"reasoning\": \"brief explanation of the decomposition\",\n        \"subqueries\": [\n            {\n            \"id\": \"q1\",\n            \"query\": \"...\",\n            \"depends_on\": [],\n            \"variables\": []\n            },\n            {\n            \"id\": \"q2\",\n            \"query\": \"...\",\n            \"depends_on\": [\"q1\"],\n            \"variables\": [{\"name\": \"ref_1\", \"source_query\": \"q1\"}]\n            }\n        ]\n        }\n\n        Question: For the player who won the NBA Sportsmanship Award in 2004–05, what was he widely considered to be during his college and early NBA career?\n\n    ",
+      "response": "{\n  \"reasoning\": \"The query asks about a specific player identified by winning the NBA Sportsmanship Award in 2004–05, and then asks what he was widely considered to be during his college and early NBA career. The first sub-query identifies the player, and the second uses that identification to answer the descriptive part.\",\n  \"subqueries\": [\n    {\n      \"id\": \"q1\",\n      \"query\": \"Who won the NBA Sportsmanship Award in 2004–05?\",\n      \"depends_on\": [],\n      \"variables\": []\n    },\n    {\n      \"id\": \"q2\",\n      \"query\": \"What was [1] widely considered to be during his college and early NBA career?\",\n      \"depends_on\": [\"q1\"],\n      \"variables\": [\n        {\n          \"name\": \"ref_1\",\n          \"source_query\": \"q1\"\n        }\n      ]\n    }\n  ]\n}",
+      "module": "step2.sq",
+      "model": "deepseek-chat"
+    }
+  ]
+}

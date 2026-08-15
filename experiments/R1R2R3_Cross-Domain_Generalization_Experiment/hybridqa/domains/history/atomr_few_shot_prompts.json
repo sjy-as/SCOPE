@@ -1,0 +1,295 @@
+{
+  "domain": "history",
+  "description": "Leakage-aware, domain-specific AtomR demonstrations derived from non-evaluation table and linked-document facts.",
+  "minimum_examples_per_stage": 8,
+  "replace_base_examples": true,
+  "stage_guidance": {
+    "tree_generation": "Decompose history questions into a table bridge lookup followed by a linked-document fact lookup when needed. Keep children executable and preserve [n] references exactly.",
+    "source_selection": "In history HybridQA, Table is the complete bound table and Text is its linked documents. Use Table for row values, rankings, dates, names, categories, and comparisons; Text for descriptive or relational prose; both for bridge questions.",
+    "direct_answer": "Return only evidence-compatible history entities, names, dates, counts, organizations, places, titles, or short phrases in the required Answer List format.",
+    "direct_rag": "Resolve the table candidate or bridge before extracting the final linked-document fact. Copy the final span faithfully and do not substitute unrelated prior knowledge.",
+    "search": "Identify only the requested current-hop entity or candidate from the supplied evidence; do not jump to a later-hop answer.",
+    "relate": "Return only the value connected to the named entity by the requested relation, preserving exact names, dates, quantities, and labels.",
+    "filter": "Apply every stated condition to the candidate set and return all and only matching entities.",
+    "answer_from_child_qa": "Fuse child answers in dependency order, resolve references, and exclude intermediate bridge entities unless the final question requests them."
+  },
+  "stages": {
+    "tree_generation": [
+      {
+        "input": "Which National Historic Landmark in New York, outside New York City, was designated in 1963 and is the largest publicly protected area in the lower 48 United States?",
+        "output": "{\"Which National Historic Landmark in New York, outside New York City, was designated in 1963 and is the largest publicly protected area in the lower 48 United States?\": [\"1. Find the National Historic Landmark in New York outside New York City designated in 1963.\", \"2. Identify the landmark that is the largest publicly protected area in the lower 48 United States.\"], \"1. Find the National Historic Landmark in New York outside New York City designated in 1963.\": \"Relate('National Historic Landmarks in New York', 'designated in 1963')\", \"2. Identify the landmark that is the largest publicly protected area in the lower 48 United States.\": \"Filter([1], 'description contains largest publicly protected area')\"}"
+      },
+      {
+        "input": "What is the name of the historic district in Eminence, Kentucky that was listed on the National Register in 1979?",
+        "output": "{\"What is the name of the historic district in Eminence, Kentucky that was listed on the National Register in 1979?\": [\"1. Find the historic district in Eminence, Kentucky listed in 1979.\", \"2. Retrieve the name of that district.\"], \"1. Find the historic district in Eminence, Kentucky listed in 1979.\": \"Relate('National Register listings in Henry County, Kentucky', 'city or town is Eminence and date listed is 1979')\", \"2. Retrieve the name of that district.\": \"Relate([1], 'name on the register')\"}"
+      },
+      {
+        "input": "Which building in Fort Pierce, Florida, listed on the National Register in 2001, was built in 1926?",
+        "output": "{\"Which building in Fort Pierce, Florida, listed on the National Register in 2001, was built in 1926?\": [\"1. Find the building in Fort Pierce, Florida listed in 2001.\", \"2. Identify the building that was built in 1926.\"], \"1. Find the building in Fort Pierce, Florida listed in 2001.\": \"Relate('National Register listings in St. Lucie County, Florida', 'city or town is Fort Pierce and date listed is 2001')\", \"2. Identify the building that was built in 1926.\": \"Filter([1], 'built in 1926')\"}"
+      },
+      {
+        "input": "Who was the Speaker of the Legislative Assembly of Upper Canada during the 4th Parliament?",
+        "output": "{\"Who was the Speaker of the Legislative Assembly of Upper Canada during the 4th Parliament?\": [\"1. Find the Speaker of the Legislative Assembly of Upper Canada for the 4th Parliament.\", \"2. Retrieve the name of that Speaker.\"], \"1. Find the Speaker of the Legislative Assembly of Upper Canada for the 4th Parliament.\": \"Relate('Legislative Assembly of Upper Canada', 'parliament is 4th')\", \"2. Retrieve the name of that Speaker.\": \"Relate([1], 'speaker')\"}"
+      },
+      {
+        "input": "Which ancient Egyptian prince from the 4th dynasty was possibly a son of Pharaoh Sneferu?",
+        "output": "{\"Which ancient Egyptian prince from the 4th dynasty was possibly a son of Pharaoh Sneferu?\": [\"1. Find the prince from the 4th dynasty in the list of ancient Egyptians.\", \"2. Identify the prince who was possibly a son of Pharaoh Sneferu.\"], \"1. Find the prince from the 4th dynasty in the list of ancient Egyptians.\": \"Relate('List of ancient Egyptians', 'main title is Prince and dynasty is 4th dynasty')\", \"2. Identify the prince who was possibly a son of Pharaoh Sneferu.\": \"Filter([1], 'comment mentions son of Sneferu')\"}"
+      },
+      {
+        "input": "Which baseball club in the Inland Empire was founded in 1941 and has won 6 titles?",
+        "output": "{\"Which baseball club in the Inland Empire was founded in 1941 and has won 6 titles?\": [\"1. Find the baseball club in the Inland Empire founded in 1941.\", \"2. Identify the club that has won 6 titles.\"], \"1. Find the baseball club in the Inland Empire founded in 1941.\": \"Relate('Inland Empire sports clubs', 'sport is Baseball and founded is 1941')\", \"2. Identify the club that has won 6 titles.\": \"Filter([1], 'titles equals 6')\"}"
+      },
+      {
+        "input": "What is the name of the historic school in Adams, North Dakota that was listed on the National Register in 2008?",
+        "output": "{\"What is the name of the historic school in Adams, North Dakota that was listed on the National Register in 2008?\": [\"1. Find the historic school in Adams, North Dakota listed in 2008.\", \"2. Retrieve the name of that school.\"], \"1. Find the historic school in Adams, North Dakota listed in 2008.\": \"Relate('National Register listings in Walsh County, North Dakota', 'city or town is Adams and date listed is 2008')\", \"2. Retrieve the name of that school.\": \"Relate([1], 'name on the register')\"}"
+      },
+      {
+        "input": "Which site in Cheatham County, Tennessee, listed on the National Register in 1971, is located along the Harpeth River?",
+        "output": "{\"Which site in Cheatham County, Tennessee, listed on the National Register in 1971, is located along the Harpeth River?\": [\"1. Find the site in Cheatham County, Tennessee listed in 1971.\", \"2. Identify the site that is located along the Harpeth River.\"], \"1. Find the site in Cheatham County, Tennessee listed in 1971.\": \"Relate('National Register listings in Cheatham County, Tennessee', 'date listed is 1971')\", \"2. Identify the site that is located along the Harpeth River.\": \"Filter([1], 'location mentions Harpeth River')\"}"
+      }
+    ],
+    "source_selection": [
+      {
+        "input": "Which National Historic Landmark in New York was designated on May 23, 1963?",
+        "output": "Table"
+      },
+      {
+        "input": "What is the architectural style of the Armour-Stiner House?",
+        "output": "Text"
+      },
+      {
+        "input": "Which county is the Adams Power Plant Transformer House located in?",
+        "output": "Table"
+      },
+      {
+        "input": "What is the significance of the Bennington Battlefield?",
+        "output": "Text"
+      },
+      {
+        "input": "Which National Register site in Henry County, Kentucky was listed in 1980 and is located in Eminence?",
+        "output": "Table, Text"
+      },
+      {
+        "input": "What is the name of the historic district in St. Lucie County, Florida that was listed in 1985?",
+        "output": "Table"
+      },
+      {
+        "input": "Who was the Speaker of the Legislative Assembly of Upper Canada during the 4th Parliament?",
+        "output": "Table, Text"
+      },
+      {
+        "input": "Which ancient Egyptian pharaoh founded the 19th dynasty?",
+        "output": "Table, Text"
+      }
+    ],
+    "direct_answer": [
+      {
+        "input": "Which National Historic Landmark in New York outside New York City was designated on May 23, 1963?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Adirondack Forest Preserve was designated on May 23, 1963.; (2) Answer List: [\"Adirondack Forest Preserve\"]"
+      },
+      {
+        "input": "What is the name of the historic site in Henry County, Kentucky, that is located in Eminence and was listed on the National Register in 1980?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Crutcher House is the historic site in Eminence listed in 1980.; (2) Answer List: [\"Crutcher House\"]"
+      },
+      {
+        "input": "Which building in Fort Pierce, Florida, was built in 1926 and is listed on the National Register?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Arcade Building was built in 1926 and is listed on the National Register.; (2) Answer List: [\"Arcade Building\"]"
+      },
+      {
+        "input": "Who served as Speaker of the Legislative Assembly of Upper Canada during the 4th Parliament?",
+        "output": "So the answer is: (1) Paraphrase Answer: Alexander Macdonell served as Speaker during the 4th Parliament.; (2) Answer List: [\"Alexander Macdonell\"]"
+      },
+      {
+        "input": "Which ancient Egyptian prince from the 4th dynasty was possibly a son of Pharaoh Sneferu?",
+        "output": "So the answer is: (1) Paraphrase Answer: Rahotep was a prince from the 4th dynasty possibly a son of Sneferu.; (2) Answer List: [\"Rahotep\"]"
+      },
+      {
+        "input": "Which baseball club in the Inland Empire was founded in 1941 and has won 6 titles?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Inland Empire 66ers were founded in 1941 and have won 6 titles.; (2) Answer List: [\"Inland Empire 66ers\"]"
+      },
+      {
+        "input": "What is the name of the historic site in Walsh County, North Dakota, that is located in Grafton and was listed on the National Register in 1985?",
+        "output": "So the answer is: (1) Paraphrase Answer: Elmwood is the historic site in Grafton listed in 1985.; (2) Answer List: [\"Elmwood\"]"
+      },
+      {
+        "input": "Which historic site in Cheatham County, Tennessee, is located in Ashland City and was listed on the National Register in 1976?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Cheatham County Courthouse is in Ashland City and was listed in 1976.; (2) Answer List: [\"Cheatham County Courthouse\"]"
+      }
+    ],
+    "direct_rag": [
+      {
+        "input": "Supporting knowledge: The Adams Power Plant Transformer House in Niagara Falls, New York is a National Historic Landmarked building constructed in 1895. It is listed in the National Register of Historic Places. The table shows it was designated on May 4, 1983. Question: What is the construction year of the Adams Power Plant Transformer House?",
+        "output": "So the answer is: (1) Paraphrase Answer: The construction year of the Adams Power Plant Transformer House is 1895. (2) Answer List: [\"1895\"]"
+      },
+      {
+        "input": "Supporting knowledge: The table lists National Register of Historic Places listings in Henry County, Kentucky. The Crutcher House is listed on Mulberry Pike in Eminence. The linked document says it was listed in 1980. Question: In which city is the Crutcher House located?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Crutcher House is located in Eminence. (2) Answer List: [\"Eminence\"]"
+      },
+      {
+        "input": "Supporting knowledge: The table shows the Arcade Building in Fort Pierce, Florida, was listed on October 12, 2001. The linked document says it was built in 1926. Question: What is the name of the building built in 1926 in Fort Pierce?",
+        "output": "So the answer is: (1) Paraphrase Answer: The building built in 1926 in Fort Pierce is the Arcade Building. (2) Answer List: [\"Arcade Building\"]"
+      },
+      {
+        "input": "Supporting knowledge: The table lists speakers of the Legislative Assembly of Upper Canada. Alexander Macdonell served as Speaker from 1805-1808 during the 4th Parliament. The linked document says he was a soldier and political figure. Question: Which parliament did Alexander Macdonell serve as Speaker?",
+        "output": "So the answer is: (1) Paraphrase Answer: Alexander Macdonell served as Speaker during the 4th Parliament. (2) Answer List: [\"4th\"]"
+      },
+      {
+        "input": "Supporting knowledge: The table lists ancient Egyptians. Raherka was Chief of Scribes during the 4th-5th dynasty. The linked document about Ahmose I is not relevant. Question: What was Raherka's main title?",
+        "output": "So the answer is: (1) Paraphrase Answer: Raherka's main title was Chief of Scribes. (2) Answer List: [\"Chief of Scribes\"]"
+      },
+      {
+        "input": "Supporting knowledge: The table shows sports clubs in the Inland Empire. The Lake Elsinore Storm plays baseball at Lake Elsinore Diamond. The linked document about baseball describes the sport. Question: What sport does the Lake Elsinore Storm play?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Lake Elsinore Storm plays baseball. (2) Answer List: [\"Baseball\"]"
+      },
+      {
+        "input": "Supporting knowledge: The table lists National Register of Historic Places listings in Walsh County, North Dakota. The Edinburg WPA Auditorium is at 67 Main St. in Edinburg. The linked document says it is a historic auditorium building. Question: What is the address of the Edinburg WPA Auditorium?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Edinburg WPA Auditorium is located at 67 Main St. (2) Answer List: [\"67 Main St.\"]"
+      },
+      {
+        "input": "Supporting knowledge: The table lists National Register of Historic Places listings in Cheatham County, Tennessee. The Montgomery Bell Tunnel is at the junction of the Harpeth River and Bell Bend Rd. The linked document about the Harpeth River describes it as a major stream. Question: Along which river is the Montgomery Bell Tunnel located?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Montgomery Bell Tunnel is located along the Harpeth River. (2) Answer List: [\"Harpeth River\"]"
+      }
+    ],
+    "search": [
+      {
+        "input": "Retrieved Table: List of National Historic Landmarks in New York (columns: Landmark name, Date designated, Location, County, Description). Question: What is the name of the National Historic Landmark in Niagara County that was designated on May 4, 1983?",
+        "output": "So the answer is: (1) Paraphrase Answer: The National Historic Landmark in Niagara County designated on May 4, 1983 is the Adams Power Plant Transformer House. (2) Answer List: [\"Adams Power Plant Transformer House\"]"
+      },
+      {
+        "input": "Retrieved Table: National Register of Historic Places listings in Henry County, Kentucky (columns: Name on the Register, Date listed, Location, City or town). Question: Which historic place in Eminence, Kentucky was listed on July 17, 1997?",
+        "output": "So the answer is: (1) Paraphrase Answer: The historic place in Eminence, Kentucky listed on July 17, 1997 is the Confederate Soldiers Martyrs Monument in Eminence. (2) Answer List: [\"Confederate Soldiers Martyrs Monument in Eminence\"]"
+      },
+      {
+        "input": "Retrieved Table: National Register of Historic Places listings in St. Lucie County, Florida (columns: Name on the Register, Date listed, Location, City or town). Question: What is the name of the historic building in Fort Pierce, Florida that was listed on October 12, 2001?",
+        "output": "So the answer is: (1) Paraphrase Answer: The historic building in Fort Pierce, Florida listed on October 12, 2001 is the Arcade Building. (2) Answer List: [\"Arcade Building\"]"
+      },
+      {
+        "input": "Retrieved Table: Legislative Assembly of Upper Canada (columns: Speaker, Term, Parliament). Question: Who was the Speaker of the 4th Parliament of Upper Canada?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Speaker of the 4th Parliament of Upper Canada was Alexander Macdonell. (2) Answer List: [\"Alexander Macdonell\"]"
+      },
+      {
+        "input": "Retrieved Table: List of ancient Egyptians (columns: Name, Main Title, Dynasty, Date, Comment). Question: Which pharaoh founded the 19th dynasty of Egypt?",
+        "output": "So the answer is: (1) Paraphrase Answer: The pharaoh who founded the 19th dynasty of Egypt is Ramesses I Menpehtyre. (2) Answer List: [\"Ramesses I Menpehtyre\"]"
+      },
+      {
+        "input": "Retrieved Table: Inland Empire (columns: Club, League, Sport, Venue, Founded, Titles). Question: Which baseball club in the Inland Empire was founded in 1941?",
+        "output": "So the answer is: (1) Paraphrase Answer: The baseball club in the Inland Empire founded in 1941 is the Inland Empire 66ers. (2) Answer List: [\"Inland Empire 66ers\"]"
+      },
+      {
+        "input": "Retrieved Table: National Register of Historic Places listings in Walsh County, North Dakota (columns: Name on the Register, Date listed, Location, City or town). Question: What is the name of the historic school in Adams, North Dakota that was listed on March 20, 2008?",
+        "output": "So the answer is: (1) Paraphrase Answer: The historic school in Adams, North Dakota listed on March 20, 2008 is the District No. 70-Hoff Rural School. (2) Answer List: [\"District No. 70-Hoff Rural School\"]"
+      },
+      {
+        "input": "Retrieved Table: National Register of Historic Places listings in Tennessee (columns: Name on the Register, Date listed, Location, City or town). Question: Which historic site in Ashland City, Tennessee was listed on December 12, 1976?",
+        "output": "So the answer is: (1) Paraphrase Answer: The historic site in Ashland City, Tennessee listed on December 12, 1976 is the Cheatham County Courthouse. (2) Answer List: [\"Cheatham County Courthouse\"]"
+      }
+    ],
+    "relate": [
+      {
+        "input": "What is the county of the Adams Power Plant Transformer House?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Adams Power Plant Transformer House is located in Niagara County. (2) Answer List: [\"Niagara\"]"
+      },
+      {
+        "input": "In which city or town is the Crutcher House located?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Crutcher House is located in Eminence. (2) Answer List: [\"Eminence\"]"
+      },
+      {
+        "input": "What is the city or town for the Arcade Building?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Arcade Building is in Fort Pierce. (2) Answer List: [\"Fort Pierce\"]"
+      },
+      {
+        "input": "Which parliament did Samuel Street serve as Speaker for?",
+        "output": "So the answer is: (1) Paraphrase Answer: Samuel Street served as Speaker for the 2nd and 5th Parliaments. (2) Answer List: [\"2nd and 5th\"]"
+      },
+      {
+        "input": "What is the dynasty of Rahotep, the prince?",
+        "output": "So the answer is: (1) Paraphrase Answer: Rahotep, the prince, was from the 4th dynasty. (2) Answer List: [\"4th dynasty\"]"
+      },
+      {
+        "input": "What is the venue of the Inland Empire 66ers?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Inland Empire 66ers play at San Manuel Stadium. (2) Answer List: [\"San Manuel Stadium\"]"
+      },
+      {
+        "input": "What is the city or town for the Edinburg WPA Auditorium?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Edinburg WPA Auditorium is located in Edinburg. (2) Answer List: [\"Edinburg\"]"
+      },
+      {
+        "input": "What is the city or town for the Cheatham County Courthouse?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Cheatham County Courthouse is in Ashland City. (2) Answer List: [\"Ashland City\"]"
+      }
+    ],
+    "filter": [
+      {
+        "input": "Candidates: Adams Power Plant Transformer House, Adirondack Forest Preserve, Susan B. Anthony House, Armour-Stiner House, Bennington Battlefield. Condition: The landmark is in Niagara County. Question: Which candidate is in Niagara County?",
+        "output": "So the answer is: (1) Paraphrase Answer: The landmark in Niagara County is Adams Power Plant Transformer House.; (2) Answer List: [\"Adams Power Plant Transformer House\"]"
+      },
+      {
+        "input": "Candidates: Callaway-Goodridge-Robertson Farm, Confederate Soldiers Martyrs Monument in Eminence, Crutcher House, Eminence Historic Commercial District, Isham Henderson House. Condition: The place is listed on the National Register in 1980. Question: Which candidate was listed in 1980?",
+        "output": "So the answer is: (1) Paraphrase Answer: The candidate listed in 1980 is Crutcher House.; (2) Answer List: [\"Crutcher House\"]"
+      },
+      {
+        "input": "Candidates: Arcade Building, Casa Caprona, Cresthaven, Fort Pierce Old Post Office, Fort Pierce Site. Condition: The building is also known as Boston House. Question: Which candidate is also known as Boston House?",
+        "output": "So the answer is: (1) Paraphrase Answer: The candidate also known as Boston House is Cresthaven.; (2) Answer List: [\"Cresthaven\"]"
+      },
+      {
+        "input": "Candidates: Captain John McDonell, Sir David William Smith, Samuel Street, Alexander Macdonell, Allan McLean. Condition: The speaker served during the 4th Parliament. Question: Which speaker served during the 4th Parliament?",
+        "output": "So the answer is: (1) Paraphrase Answer: The speaker who served during the 4th Parliament is Alexander Macdonell.; (2) Answer List: [\"Alexander Macdonell\"]"
+      },
+      {
+        "input": "Candidates: Raemka, Raherka, Rahotep (Prince), Rahotep (Pharaoh), Ramesses I. Condition: The person is a prince from the 4th dynasty. Question: Which candidate is a prince from the 4th dynasty?",
+        "output": "So the answer is: (1) Paraphrase Answer: The prince from the 4th dynasty is Rahotep (Prince).; (2) Answer List: [\"Rahotep (Prince)\"]"
+      },
+      {
+        "input": "Candidates: Inland Empire 66ers, Lake Elsinore Storm, Rancho Cucamonga Quakes, High Desert Yardbirds, Palm Springs Power. Condition: The club plays in the California League. Question: Which candidates play in the California League?",
+        "output": "So the answer is: (1) Paraphrase Answer: The clubs that play in the California League are Inland Empire 66ers, Lake Elsinore Storm, and Rancho Cucamonga Quakes.; (2) Answer List: [\"Inland Empire 66ers\", \"Lake Elsinore Storm\", \"Rancho Cucamonga Quakes\"]"
+      },
+      {
+        "input": "Candidates: District No. 70-Hoff Rural School, Edinburg WPA Auditorium, Elmwood, Forest River State Bank, Grafton State School. Condition: The place is located in the city of Grafton. Question: Which candidates are located in Grafton?",
+        "output": "So the answer is: (1) Paraphrase Answer: The candidates located in Grafton are Elmwood and Grafton State School.; (2) Answer List: [\"Elmwood\", \"Grafton State School\"]"
+      },
+      {
+        "input": "Candidates: Cheatham County Courthouse, Indian Town Bluff, Kingston Springs Hotel and Buildings, Montgomery Bell Tunnel, Mound Bottom. Condition: The place is in Ashland City. Question: Which candidates are in Ashland City?",
+        "output": "So the answer is: (1) Paraphrase Answer: The candidates in Ashland City are Cheatham County Courthouse and Indian Town Bluff.; (2) Answer List: [\"Cheatham County Courthouse\", \"Indian Town Bluff\"]"
+      }
+    ],
+    "answer_from_child_qa": [
+      {
+        "input": "Child QA 1: Q: What is the name of the National Historic Landmark in Niagara Falls, New York, that was constructed in 1895? A: Adams Power Plant Transformer House. Child QA 2: Q: What is the description of the Adams Power Plant Transformer House? A: Transformer house of the first large-scale, alternating current electric generating plant in the world; tapped power of Niagara Falls via a 7,500 foot tail-race tunnel. Final Question: What is the description of the National Historic Landmark in Niagara Falls, New York, that was constructed in 1895?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Adams Power Plant Transformer House is the transformer house of the first large-scale, alternating current electric generating plant in the world; it tapped power of Niagara Falls via a 7,500 foot tail-race tunnel. (2) Answer List: [\"Transformer house of the first large-scale, alternating current electric generating plant in the world; tapped power of Niagara Falls via a 7,500 foot tail-race tunnel\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which historic site in Eminence, Kentucky, notes the burial spot of three Confederate prisoners who were shot while imprisoned? A: Confederate Soldiers Martyrs Monument in Eminence. Child QA 2: Q: What is the date listed for the Confederate Soldiers Martyrs Monument in Eminence? A: July 17, 1997. Final Question: What is the date listed for the historic site in Eminence, Kentucky, that notes the burial spot of three Confederate prisoners who were shot while imprisoned?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Confederate Soldiers Martyrs Monument in Eminence, which notes the burial spot of three Confederate prisoners who were shot while imprisoned, was listed on July 17, 1997. (2) Answer List: [\"July 17, 1997\"]"
+      },
+      {
+        "input": "Child QA 1: Q: What is the name of the historic building in downtown Fort Pierce, Florida, that was built in 1926? A: Arcade Building. Child QA 2: Q: What is the location of the Arcade Building? A: 101 U.S. Route 1, North. Final Question: What is the location of the historic building in downtown Fort Pierce, Florida, that was built in 1926?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Arcade Building, built in 1926, is located at 101 U.S. Route 1, North in Fort Pierce, Florida. (2) Answer List: [\"101 U.S. Route 1, North\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Who was the Speaker of the Legislative Assembly of Upper Canada during the 4th Parliament? A: Alexander Macdonell. Child QA 2: Q: What was Alexander Macdonell's term as Speaker? A: 1805-1808. Final Question: What was the term of the Speaker of the Legislative Assembly of Upper Canada during the 4th Parliament?",
+        "output": "So the answer is: (1) Paraphrase Answer: Alexander Macdonell served as Speaker during the 4th Parliament from 1805 to 1808. (2) Answer List: [\"1805-1808\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which ancient Egyptian pharaoh founded the 19th dynasty? A: Ramesses I Menpehtyre. Child QA 2: Q: What is the date range for Ramesses I Menpehtyre? A: fl. c. late-14th to early 13th century BC. Final Question: What is the date range for the ancient Egyptian pharaoh who founded the 19th dynasty?",
+        "output": "So the answer is: (1) Paraphrase Answer: Ramesses I Menpehtyre, the founding pharaoh of the 19th dynasty, dates to fl. c. late-14th to early 13th century BC. (2) Answer List: [\"fl. c. late-14th to early 13th century BC\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which baseball club in the Inland Empire was founded in 1941? A: Inland Empire 66ers. Child QA 2: Q: What is the venue of the Inland Empire 66ers? A: San Manuel Stadium. Final Question: What is the venue of the baseball club in the Inland Empire that was founded in 1941?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Inland Empire 66ers, founded in 1941, play at San Manuel Stadium. (2) Answer List: [\"San Manuel Stadium\"]"
+      },
+      {
+        "input": "Child QA 1: Q: What is the name of the historic school in Adams, North Dakota, that is listed on the National Register? A: District No. 70-Hoff Rural School. Child QA 2: Q: What is the date listed for District No. 70-Hoff Rural School? A: March 20, 2008. Final Question: What is the date listed for the historic school in Adams, North Dakota, that is listed on the National Register?",
+        "output": "So the answer is: (1) Paraphrase Answer: District No. 70-Hoff Rural School in Adams, North Dakota, was listed on March 20, 2008. (2) Answer List: [\"March 20, 2008\"]"
+      },
+      {
+        "input": "Child QA 1: Q: Which courthouse in Ashland City, Tennessee, is listed on the National Register? A: Cheatham County Courthouse. Child QA 2: Q: What is the date listed for the Cheatham County Courthouse? A: December 12, 1976. Final Question: What is the date listed for the courthouse in Ashland City, Tennessee, that is listed on the National Register?",
+        "output": "So the answer is: (1) Paraphrase Answer: The Cheatham County Courthouse in Ashland City, Tennessee, was listed on December 12, 1976. (2) Answer List: [\"December 12, 1976\"]"
+      }
+    ]
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_policy": "non_gold_tables_and_exclusive_docs_only"
+  }
+}

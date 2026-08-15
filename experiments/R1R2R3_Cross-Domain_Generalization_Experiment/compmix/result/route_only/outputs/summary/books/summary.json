@@ -1,0 +1,33 @@
+{
+  "domain": "books",
+  "routing_mode": "deepsieve",
+  "knowledge_base": [
+    "kg",
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/books/qa_benchmark/questions_clean.jsonl",
+  "output_dir": "/root/autodl-tmp/BBB_CompMix/experiments/route_only/outputs/deepsieve/books",
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 22.66984177287668,
+  "semantic_catalog": null,
+  "atomr_prompts": null,
+  "deepsieve_source_summary": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/books/deepsieve_source_summary.json",
+  "decomposition_counts": {
+    "1": 92,
+    "2": 8
+  },
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 9,
+    "route1.kg": 87,
+    "route1.table": 4,
+    "route2.kg": 7,
+    "route2.table": 1
+  }
+}

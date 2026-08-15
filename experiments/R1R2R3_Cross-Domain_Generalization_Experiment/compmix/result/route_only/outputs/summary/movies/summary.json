@@ -1,0 +1,32 @@
+{
+  "domain": "movies",
+  "routing_mode": "deepsieve",
+  "knowledge_base": [
+    "kg",
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/movies/qa_benchmark/questions_clean.jsonl",
+  "output_dir": "/root/autodl-tmp/BBB_CompMix/experiments/route_only/outputs/deepsieve/movies",
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 19.334036278538406,
+  "semantic_catalog": null,
+  "atomr_prompts": null,
+  "deepsieve_source_summary": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/movies/deepsieve_source_summary.json",
+  "decomposition_counts": {
+    "1": 97,
+    "2": 3
+  },
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 12,
+    "route1.kg": 80,
+    "route1.table": 8,
+    "route2.kg": 3
+  }
+}

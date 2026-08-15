@@ -1,0 +1,40 @@
+{
+  "input": "/root/autodl-tmp/new_model/qa_bench/kg-table-1147.jsonl",
+  "output_dir": "/root/autodl-tmp/route_result_new/kg_table/deepsieve",
+  "routing_mode": "deepsieve",
+  "knowledge_base": [
+    "kg",
+    "table",
+    "doc"
+  ],
+  "prompt_version": "v2",
+  "resume": true,
+  "skipped_existing_success": 0,
+  "processed_this_run": 1147,
+  "profiles_path": "/root/autodl-tmp/new_model/data_sources/source_profiles.json",
+  "total": 1147,
+  "succeeded": 1147,
+  "failed": 0,
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 78,
+    "route1.kg": 485,
+    "route1.table": 584,
+    "route2.doc": 74,
+    "route2.kg": 745,
+    "route2.table": 328
+  },
+  "fallback_source_counts": {
+    "route1.kg": 662,
+    "route1.table": 485,
+    "route2.kg": 402,
+    "route2.table": 745
+  },
+  "routing_layer_counts": {
+    "route1.deepsieve": 1147,
+    "route2.deepsieve": 1147
+  }
+}

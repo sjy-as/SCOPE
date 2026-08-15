@@ -1,0 +1,6081 @@
+{
+  "queries": [
+    {
+      "query": "which handedness did pele have?",
+      "ground_truth": "left-handedness",
+      "q1_answers": [],
+      "q2_answers": [
+        "left-handedness"
+      ],
+      "raw": {
+        "id": "dev-5082",
+        "question": "which handedness did pele have?",
+        "answer": "left-handedness",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006496",
+            "P552",
+            "E030994"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the award received by Andr\u00e9s Iniesta?",
+      "ground_truth": "Gold Medal of the Royal Order of Sports Merit",
+      "q1_answers": [],
+      "q2_answers": [
+        "Gold Medal of the Royal Order of Sports Merit"
+      ],
+      "raw": {
+        "id": "dev-5325",
+        "question": "What is the award received by Andr\u00e9s Iniesta?",
+        "answer": "Gold Medal of the Royal Order of Sports Merit",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E021305",
+            "P166",
+            "E017097"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the second football club Zlatko Dali\u0107 played for?",
+      "ground_truth": "Hajduk Split",
+      "q1_answers": [],
+      "q2_answers": [
+        "Hajduk Split"
+      ],
+      "raw": {
+        "id": "dev-5593",
+        "question": "What was the second football club Zlatko Dali\u0107 played for?",
+        "answer": "Hajduk Split",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E031213",
+            "P54",
+            "E009990"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which club did Robert Lewandowski played in 2009?",
+      "ground_truth": "Lech Pozna\u0144",
+      "q1_answers": [],
+      "q2_answers": [
+        "Lech Pozna\u0144"
+      ],
+      "raw": {
+        "id": "dev-5742",
+        "question": "Which club did Robert Lewandowski played in 2009?",
+        "answer": "Lech Pozna\u0144",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E032495",
+            "P3279",
+            "E007679"
+          ],
+          [
+            "E007679",
+            "P1344",
+            "E032367"
+          ],
+          [
+            "E007679",
+            "P1344",
+            "E032495"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Against whom did Harry Kane score his first goal in 2020?",
+      "ground_truth": "Ukraine national association football team",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ukraine national association football team"
+      ],
+      "raw": {
+        "id": "dev-5921",
+        "question": "Against whom did Harry Kane score his first goal in 2020?",
+        "answer": "Ukraine national association football team",
+        "source": "doc",
+        "source_ids": [
+          "D20697"
+        ]
+      }
+    },
+    {
+      "query": "What is place of birth of the Carlos Kaiser?",
+      "ground_truth": "Rio Pardo",
+      "q1_answers": [],
+      "q2_answers": [
+        "Rio Pardo"
+      ],
+      "raw": {
+        "id": "dev-5952",
+        "question": "What is place of birth of the Carlos Kaiser?",
+        "answer": "Rio Pardo",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E023007",
+            "P19",
+            "E023765"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which is the book published on Carlos Kaiser?",
+      "ground_truth": "The book Kaiser: The Greatest Footballer Never to Play Football",
+      "q1_answers": [],
+      "q2_answers": [
+        "The book Kaiser: The Greatest Footballer Never to Play Football"
+      ],
+      "raw": {
+        "id": "dev-5954",
+        "question": "Which is the book published on Carlos Kaiser?",
+        "answer": "The book Kaiser: The Greatest Footballer Never to Play Football",
+        "source": "doc",
+        "source_ids": [
+          "D28836"
+        ]
+      }
+    },
+    {
+      "query": "Who scored the most number of goals for the club Borussia Dortmund?",
+      "ground_truth": "Alfred Preissler",
+      "q1_answers": [],
+      "q2_answers": [
+        "Alfred Preissler"
+      ],
+      "raw": {
+        "id": "dev-6340",
+        "question": "Who scored the most number of goals for the club Borussia Dortmund?",
+        "answer": "Alfred Preissler",
+        "source": "doc",
+        "source_ids": [
+          "D30798",
+          "D22076"
+        ]
+      }
+    },
+    {
+      "query": "name of the football player who captains Borussia Dortmund currently?",
+      "ground_truth": "Marco Reus",
+      "q1_answers": [],
+      "q2_answers": [
+        "Marco Reus"
+      ],
+      "raw": {
+        "id": "dev-6341",
+        "question": "name of the football player who captains Borussia Dortmund currently?",
+        "answer": "Marco Reus",
+        "source": "doc",
+        "source_ids": [
+          "D13551"
+        ]
+      }
+    },
+    {
+      "query": "Who is the top goal scorer of the football club Borussia Dortmund?",
+      "ground_truth": "Alfred Preissler",
+      "q1_answers": [],
+      "q2_answers": [
+        "Alfred Preissler"
+      ],
+      "raw": {
+        "id": "dev-6345",
+        "question": "Who is the top goal scorer of the football club Borussia Dortmund?",
+        "answer": "Alfred Preissler",
+        "source": "doc",
+        "source_ids": [
+          "D30798",
+          "D22076"
+        ]
+      }
+    },
+    {
+      "query": "How much was Beckham's annual salary while he was at LA Galaxy?",
+      "ground_truth": "$6.5 million",
+      "q1_answers": [],
+      "q2_answers": [
+        "$6.5 million"
+      ],
+      "raw": {
+        "id": "dev-6431",
+        "question": "How much was Beckham's annual salary while he was at LA Galaxy?",
+        "answer": "$6.5 million",
+        "source": "doc",
+        "source_ids": [
+          "D02525"
+        ]
+      }
+    },
+    {
+      "query": "What is the name of Lu\u00eds Figo's wife?",
+      "ground_truth": "Helen Svedin",
+      "q1_answers": [],
+      "q2_answers": [
+        "Helen Svedin"
+      ],
+      "raw": {
+        "id": "dev-6463",
+        "question": "What is the name of Lu\u00eds Figo's wife?",
+        "answer": "Helen Svedin",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E022968",
+            "P26",
+            "E021492"
+          ],
+          [
+            "E021492",
+            "P26",
+            "E022968"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who scored the goal for Italy in the Euro 2020 final?",
+      "ground_truth": "Leonardo Bonucci",
+      "q1_answers": [],
+      "q2_answers": [
+        "Leonardo Bonucci"
+      ],
+      "raw": {
+        "id": "dev-6584",
+        "question": "Who scored the goal for Italy in the Euro 2020 final?",
+        "answer": "Leonardo Bonucci",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E029810",
+            "P3279",
+            "E012055"
+          ],
+          [
+            "E029810",
+            "P1363",
+            "E012055"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "The award received by the pele in 1997?",
+      "ground_truth": "Knight Commander of the Order of the British Empire",
+      "q1_answers": [],
+      "q2_answers": [
+        "Knight Commander of the Order of the British Empire"
+      ],
+      "raw": {
+        "id": "test-6704",
+        "question": "The award received by the pele in 1997?",
+        "answer": "Knight Commander of the Order of the British Empire",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006496",
+            "P166",
+            "E006151"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the political party did Andrey Arshavin joined?",
+      "ground_truth": "United Russia",
+      "q1_answers": [],
+      "q2_answers": [
+        "United Russia"
+      ],
+      "raw": {
+        "id": "test-6944",
+        "question": "What is the name of the political party did Andrey Arshavin joined?",
+        "answer": "United Russia",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E022627",
+            "P102",
+            "E007698"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "what is the abbreviation of the US soccer team?",
+      "ground_truth": "USWNT",
+      "q1_answers": [],
+      "q2_answers": [
+        "USWNT"
+      ],
+      "raw": {
+        "id": "test-6970",
+        "question": "what is the abbreviation of the US soccer team?",
+        "answer": "USWNT",
+        "source": "doc",
+        "source_ids": [
+          "D17668",
+          "D28053",
+          "D16283"
+        ]
+      }
+    },
+    {
+      "query": "the abbreviation of the soccer United States women's national soccer team?",
+      "ground_truth": "USWNT",
+      "q1_answers": [],
+      "q2_answers": [
+        "USWNT"
+      ],
+      "raw": {
+        "id": "test-6975",
+        "question": "the abbreviation of the soccer United States women's national soccer team?",
+        "answer": "USWNT",
+        "source": "doc",
+        "source_ids": [
+          "D17668",
+          "D28053",
+          "D16283"
+        ]
+      }
+    },
+    {
+      "query": "In which year was the Real Madrid Club de F\u00fatbol founded?",
+      "ground_truth": "1902",
+      "q1_answers": [],
+      "q2_answers": [
+        "1902"
+      ],
+      "raw": {
+        "id": "test-7059",
+        "question": "In which year was the Real Madrid Club de F\u00fatbol founded?",
+        "answer": "1902",
+        "source": "doc",
+        "source_ids": [
+          "D32200",
+          "D15163",
+          "D10025"
+        ]
+      }
+    },
+    {
+      "query": "What year was the Real Madrid Club de F\u00fatbolf founded?",
+      "ground_truth": "1902",
+      "q1_answers": [],
+      "q2_answers": [
+        "1902"
+      ],
+      "raw": {
+        "id": "test-7064",
+        "question": "What year was the Real Madrid Club de F\u00fatbolf founded?",
+        "answer": "1902",
+        "source": "doc",
+        "source_ids": [
+          "D32200",
+          "D15163",
+          "D10025"
+        ]
+      }
+    },
+    {
+      "query": "Who owns Manchester United?",
+      "ground_truth": "Manchester United Limited",
+      "q1_answers": [],
+      "q2_answers": [
+        "Manchester United Limited"
+      ],
+      "raw": {
+        "id": "test-7149",
+        "question": "Who owns Manchester United?",
+        "answer": "Manchester United Limited",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010395",
+            "P127",
+            "E033457"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the parent company of Manchester United Limited",
+      "ground_truth": "Manchester United Plc",
+      "q1_answers": [],
+      "q2_answers": [
+        "Manchester United Plc"
+      ],
+      "raw": {
+        "id": "test-7150",
+        "question": "What is the parent company of Manchester United Limited",
+        "answer": "Manchester United Plc",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E033457",
+            "P749",
+            "E033462"
+          ],
+          [
+            "E033462",
+            "P355",
+            "E033457"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the religious affiliation of Joel Glazer?",
+      "ground_truth": "Judaism",
+      "q1_answers": [],
+      "q2_answers": [
+        "Judaism"
+      ],
+      "raw": {
+        "id": "test-7153",
+        "question": "What is the religious affiliation of Joel Glazer?",
+        "answer": "Judaism",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006782",
+            "P140",
+            "E032539"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the owner of Manchester United FC?",
+      "ground_truth": "Manchester United Limited",
+      "q1_answers": [],
+      "q2_answers": [
+        "Manchester United Limited"
+      ],
+      "raw": {
+        "id": "test-7154",
+        "question": "Who is the owner of Manchester United FC?",
+        "answer": "Manchester United Limited",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010395",
+            "P127",
+            "E033457"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What university did Zinedine Zidane study in?",
+      "ground_truth": "University of Limoges",
+      "q1_answers": [],
+      "q2_answers": [
+        "University of Limoges"
+      ],
+      "raw": {
+        "id": "test-7213",
+        "question": "What university did Zinedine Zidane study in?",
+        "answer": "University of Limoges",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E015268",
+            "P31",
+            "E019044"
+          ],
+          [
+            "E015268",
+            "P31",
+            "E021633"
+          ],
+          [
+            "E015268",
+            "P463",
+            "E011974"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What was the name of the club when its started?",
+      "ground_truth": "Newton Heath LYR Football Club",
+      "q1_answers": [],
+      "q2_answers": [
+        "Newton Heath LYR Football Club"
+      ],
+      "raw": {
+        "id": "test-7242",
+        "question": "What was the name of the club when its started?",
+        "answer": "Newton Heath LYR Football Club",
+        "source": "doc",
+        "source_ids": [
+          "D11714",
+          "D23236"
+        ]
+      }
+    },
+    {
+      "query": "How many social media followers for the team Soccer?",
+      "ground_truth": "149,918",
+      "q1_answers": [],
+      "q2_answers": [
+        "149,918"
+      ],
+      "raw": {
+        "id": "test-7903",
+        "question": "How many social media followers for the team Soccer?",
+        "answer": "149,918",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E028963",
+            "P8687",
+            "E000393"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the award received in 2018 by Kylian Mbapp\u00e9?",
+      "ground_truth": "Best Young Player Award",
+      "q1_answers": [],
+      "q2_answers": [
+        "Best Young Player Award"
+      ],
+      "raw": {
+        "id": "test-8022",
+        "question": "What is the award received in 2018 by Kylian Mbapp\u00e9?",
+        "answer": "Best Young Player Award",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012632",
+            "P166",
+            "E008121"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Where did Kylian Mbapp\u00e9 born?",
+      "ground_truth": "19th arrondissement of Paris",
+      "q1_answers": [],
+      "q2_answers": [
+        "19th arrondissement of Paris"
+      ],
+      "raw": {
+        "id": "test-8023",
+        "question": "Where did Kylian Mbapp\u00e9 born?",
+        "answer": "19th arrondissement of Paris",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012632",
+            "P19",
+            "E011667"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which soccer club won the U.S. Open Cup title in 2019?",
+      "ground_truth": "Atlanta United FC",
+      "q1_answers": [],
+      "q2_answers": [
+        "Atlanta United FC"
+      ],
+      "raw": {
+        "id": "test-8052",
+        "question": "Which soccer club won the U.S. Open Cup title in 2019?",
+        "answer": "Atlanta United FC",
+        "source": "table",
+        "source_ids": [
+          "T1100",
+          "T1101"
+        ]
+      }
+    },
+    {
+      "query": "What is total population in 2018 of Camas, Seville?",
+      "ground_truth": "27,463",
+      "q1_answers": [],
+      "q2_answers": [
+        "27,463"
+      ],
+      "raw": {
+        "id": "test-8081",
+        "question": "What is total population in 2018 of Camas, Seville?",
+        "answer": "27,463",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E030446",
+            "P1082",
+            "E000732"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is time zone of Camas, Seville?",
+      "ground_truth": "UTC+01:00",
+      "q1_answers": [],
+      "q2_answers": [
+        "UTC+01:00"
+      ],
+      "raw": {
+        "id": "test-8083",
+        "question": "What is time zone of Camas, Seville?",
+        "answer": "UTC+01:00",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E030446",
+            "P421",
+            "E028184"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the award received by award receivedNuno Gomes?",
+      "ground_truth": "Officer of the Order of Prince Henry",
+      "q1_answers": [],
+      "q2_answers": [
+        "Officer of the Order of Prince Henry"
+      ],
+      "raw": {
+        "id": "test-8161",
+        "question": "What is the award received by award receivedNuno Gomes?",
+        "answer": "Officer of the Order of Prince Henry",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010835",
+            "P166",
+            "E012126"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who sang the official song of the 2010 FIFA World Cup?",
+      "ground_truth": "Shakira",
+      "q1_answers": [],
+      "q2_answers": [
+        "Shakira"
+      ],
+      "raw": {
+        "id": "test-8363",
+        "question": "Who sang the official song of the 2010 FIFA World Cup?",
+        "answer": "Shakira",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E007920",
+            "P175",
+            "E018681"
+          ],
+          [
+            "E007920",
+            "P676",
+            "E018681"
+          ],
+          [
+            "E007920",
+            "P162",
+            "E018681"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the architect of Stadio Olimpico Grande Torino?",
+      "ground_truth": "Raffaello Fagnoni",
+      "q1_answers": [],
+      "q2_answers": [
+        "Raffaello Fagnoni"
+      ],
+      "raw": {
+        "id": "test-8524",
+        "question": "What is the name of the architect of Stadio Olimpico Grande Torino?",
+        "answer": "Raffaello Fagnoni",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012525",
+            "P84",
+            "E020528"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What's the name of Florence's soccer stadium?",
+      "ground_truth": "Stadio Artemio Franchi",
+      "q1_answers": [],
+      "q2_answers": [
+        "Stadio Artemio Franchi"
+      ],
+      "raw": {
+        "id": "test-8526",
+        "question": "What's the name of Florence's soccer stadium?",
+        "answer": "Stadio Artemio Franchi",
+        "source": "doc",
+        "source_ids": [
+          "D02554"
+        ]
+      }
+    },
+    {
+      "query": "Where was Luigi Ridolfi born?",
+      "ground_truth": "Forl\u00ec",
+      "q1_answers": [],
+      "q2_answers": [
+        "Forl\u00ec"
+      ],
+      "raw": {
+        "id": "test-8529",
+        "question": "Where was Luigi Ridolfi born?",
+        "answer": "Forl\u00ec",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E020225",
+            "P19",
+            "E006694"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What's the name of Forl\u00ec's soccer stadium?",
+      "ground_truth": "Stadio Tullo Morgagni",
+      "q1_answers": [],
+      "q2_answers": [
+        "Stadio Tullo Morgagni"
+      ],
+      "raw": {
+        "id": "test-8530",
+        "question": "What's the name of Forl\u00ec's soccer stadium?",
+        "answer": "Stadio Tullo Morgagni",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006694",
+            "P1830",
+            "E032682"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who was Brooklyn Beckham's partner in 2019?",
+      "ground_truth": "Nicola Peltz",
+      "q1_answers": [],
+      "q2_answers": [
+        "Nicola Peltz"
+      ],
+      "raw": {
+        "id": "test-8585",
+        "question": "Who was Brooklyn Beckham's partner in 2019?",
+        "answer": "Nicola Peltz",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E009550",
+            "P451",
+            "E013474"
+          ],
+          [
+            "E013474",
+            "P451",
+            "E009550"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Against which opponent Bruno Fernandes scored his last international goal?",
+      "ground_truth": "Luxembourg",
+      "q1_answers": [],
+      "q2_answers": [
+        "Luxembourg"
+      ],
+      "raw": {
+        "id": "test-8638",
+        "question": "Against which opponent Bruno Fernandes scored his last international goal?",
+        "answer": "Luxembourg",
+        "source": "table",
+        "source_ids": [
+          "T0255"
+        ]
+      }
+    },
+    {
+      "query": "What soccer stadium is in Manchester?",
+      "ground_truth": "City of Manchester Stadium",
+      "q1_answers": [],
+      "q2_answers": [
+        "City of Manchester Stadium"
+      ],
+      "raw": {
+        "id": "test-8693",
+        "question": "What soccer stadium is in Manchester?",
+        "answer": "City of Manchester Stadium",
+        "source": "doc",
+        "source_ids": [
+          "D20893",
+          "D11091"
+        ]
+      }
+    },
+    {
+      "query": "What year did Limavady United F.C. form?",
+      "ground_truth": "1884",
+      "q1_answers": [],
+      "q2_answers": [
+        "1884"
+      ],
+      "raw": {
+        "id": "test-8804",
+        "question": "What year did Limavady United F.C. form?",
+        "answer": "1884",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010784",
+            "P571",
+            "E001901"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What honour was bestowed upon Paolo Maldini?",
+      "ground_truth": "Bravo Award",
+      "q1_answers": [],
+      "q2_answers": [
+        "Bravo Award"
+      ],
+      "raw": {
+        "id": "test-8963",
+        "question": "What honour was bestowed upon Paolo Maldini?",
+        "answer": "Bravo Award",
+        "source": "doc",
+        "source_ids": [
+          "D21763",
+          "D32186"
+        ]
+      }
+    },
+    {
+      "query": "What was the name of the first president of the FIFA organization?",
+      "ground_truth": "Robert Gu\u00e9rin",
+      "q1_answers": [],
+      "q2_answers": [
+        "Robert Gu\u00e9rin"
+      ],
+      "raw": {
+        "id": "test-9126",
+        "question": "What was the name of the first president of the FIFA organization?",
+        "answer": "Robert Gu\u00e9rin",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E005756",
+            "P21",
+            "E028051"
+          ],
+          [
+            "E005756",
+            "P106",
+            "E010798"
+          ],
+          [
+            "E005756",
+            "P31",
+            "E023415"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the current preside of the CONCACAF league?",
+      "ground_truth": "Victor Montagliani",
+      "q1_answers": [],
+      "q2_answers": [
+        "Victor Montagliani"
+      ],
+      "raw": {
+        "id": "test-9129",
+        "question": "Who is the current preside of the CONCACAF league?",
+        "answer": "Victor Montagliani",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E013433",
+            "P31",
+            "E023415"
+          ],
+          [
+            "E013433",
+            "P1472",
+            "E004165"
+          ],
+          [
+            "E013433",
+            "P735",
+            "E024504"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "In which year was Chelsea FC founded?",
+      "ground_truth": "1905",
+      "q1_answers": [],
+      "q2_answers": [
+        "1905"
+      ],
+      "raw": {
+        "id": "test-9234",
+        "question": "In which year was Chelsea FC founded?",
+        "answer": "1905",
+        "source": "doc",
+        "source_ids": [
+          "D08560",
+          "D03319",
+          "D23735"
+        ]
+      }
+    },
+    {
+      "query": "Where in London is Chelsea FC based?",
+      "ground_truth": "Fulham",
+      "q1_answers": [],
+      "q2_answers": [
+        "Fulham"
+      ],
+      "raw": {
+        "id": "test-9239",
+        "question": "Where in London is Chelsea FC based?",
+        "answer": "Fulham",
+        "source": "doc",
+        "source_ids": [
+          "D13973",
+          "D12279",
+          "D02211"
+        ]
+      }
+    },
+    {
+      "query": "When did Chelsea FC when their first FIFA Club World Cup?",
+      "ground_truth": "2021 FIFA Club World Cup",
+      "q1_answers": [],
+      "q2_answers": [
+        "2021 FIFA Club World Cup"
+      ],
+      "raw": {
+        "id": "test-9243",
+        "question": "When did Chelsea FC when their first FIFA Club World Cup?",
+        "answer": "2021 FIFA Club World Cup",
+        "source": "doc",
+        "source_ids": [
+          "D27511",
+          "D23123"
+        ]
+      }
+    },
+    {
+      "query": "What is the founding year of Chelsea FC?",
+      "ground_truth": "1905",
+      "q1_answers": [],
+      "q2_answers": [
+        "1905"
+      ],
+      "raw": {
+        "id": "test-9244",
+        "question": "What is the founding year of Chelsea FC?",
+        "answer": "1905",
+        "source": "doc",
+        "source_ids": [
+          "D08560",
+          "D03319",
+          "D23735"
+        ]
+      }
+    },
+    {
+      "query": "Which club won the Regionalliga West in 2020?",
+      "ground_truth": "SV R\u00f6dinghausen",
+      "q1_answers": [],
+      "q2_answers": [
+        "SV R\u00f6dinghausen"
+      ],
+      "raw": {
+        "id": "test-9353",
+        "question": "Which club won the Regionalliga West in 2020?",
+        "answer": "SV R\u00f6dinghausen",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008077",
+            "P118",
+            "E024987"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the team that was played against in which Rafael Pereira da Silva committed a foul and F\u00e1bio Pereira da Silva was booked?",
+      "ground_truth": "Barnsley F.C.",
+      "q1_answers": [],
+      "q2_answers": [
+        "Barnsley F.C."
+      ],
+      "raw": {
+        "id": "test-9400",
+        "question": "What is the name of the team that was played against in which Rafael Pereira da Silva committed a foul and F\u00e1bio Pereira da Silva was booked?",
+        "answer": "Barnsley F.C.",
+        "source": "doc",
+        "source_ids": [
+          "D29684"
+        ]
+      }
+    },
+    {
+      "query": "Where is the Charlotte Football Club stadium located?",
+      "ground_truth": "Bank of America Stadium, Charlotte",
+      "q1_answers": [],
+      "q2_answers": [
+        "Bank of America Stadium, Charlotte"
+      ],
+      "raw": {
+        "id": "train-1076",
+        "question": "Where is the Charlotte Football Club stadium located?",
+        "answer": "Bank of America Stadium, Charlotte",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E030993",
+            "P115",
+            "E031208"
+          ],
+          [
+            "E031208",
+            "P466",
+            "E030993"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who was the owner of the Charlotte Football Club?",
+      "ground_truth": "David Tepper",
+      "q1_answers": [],
+      "q2_answers": [
+        "David Tepper"
+      ],
+      "raw": {
+        "id": "train-1077",
+        "question": "Who was the owner of the Charlotte Football Club?",
+        "answer": "David Tepper",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E030993",
+            "P127",
+            "E022046"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is N'Golo Kant\u00e9's religion?",
+      "ground_truth": "Islam",
+      "q1_answers": [],
+      "q2_answers": [
+        "Islam"
+      ],
+      "raw": {
+        "id": "train-1107",
+        "question": "What is N'Golo Kant\u00e9's religion?",
+        "answer": "Islam",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E008913",
+            "P140",
+            "E021218"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the captain of Brazil national football team?",
+      "ground_truth": "Thiago Silva",
+      "q1_answers": [],
+      "q2_answers": [
+        "Thiago Silva"
+      ],
+      "raw": {
+        "id": "train-1137",
+        "question": "who is the captain of Brazil national football team?",
+        "answer": "Thiago Silva",
+        "source": "doc",
+        "source_ids": [
+          "D18652",
+          "D17660"
+        ]
+      }
+    },
+    {
+      "query": "What is the pseudonym of the soccer player Ra\u00fal Gonz\u00e1lez?",
+      "ground_truth": "El que nunca hace nada",
+      "q1_answers": [],
+      "q2_answers": [
+        "El que nunca hace nada"
+      ],
+      "raw": {
+        "id": "train-117",
+        "question": "What is the pseudonym of the soccer player Ra\u00fal Gonz\u00e1lez?",
+        "answer": "El que nunca hace nada",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E005724",
+            "P742",
+            "E003936"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which Football Association of Wales honor did Gareth Bale win multiple times?",
+      "ground_truth": "Welsh Footballer of the Year",
+      "q1_answers": [],
+      "q2_answers": [
+        "Welsh Footballer of the Year"
+      ],
+      "raw": {
+        "id": "train-1375",
+        "question": "Which Football Association of Wales honor did Gareth Bale win multiple times?",
+        "answer": "Welsh Footballer of the Year",
+        "source": "doc",
+        "source_ids": [
+          "D11907"
+        ]
+      }
+    },
+    {
+      "query": "Who was the kit manufacturer of Chelsea Football Club from 1981 to 1983?",
+      "ground_truth": "Le Coq Sportif",
+      "q1_answers": [],
+      "q2_answers": [
+        "Le Coq Sportif"
+      ],
+      "raw": {
+        "id": "train-1497",
+        "question": "Who was the kit manufacturer of Chelsea Football Club from 1981 to 1983?",
+        "answer": "Le Coq Sportif",
+        "source": "doc",
+        "source_ids": [
+          "D13762"
+        ]
+      }
+    },
+    {
+      "query": "What are the set of rules called in soccer?",
+      "ground_truth": "Laws of the Game",
+      "q1_answers": [],
+      "q2_answers": [
+        "Laws of the Game"
+      ],
+      "raw": {
+        "id": "train-1946",
+        "question": "What are the set of rules called in soccer?",
+        "answer": "Laws of the Game",
+        "source": "doc",
+        "source_ids": [
+          "D30004",
+          "D26213",
+          "D08520"
+        ]
+      }
+    },
+    {
+      "query": "Where was Kylian Mbapp\u00e9 born?",
+      "ground_truth": "19th arrondissement of Paris",
+      "q1_answers": [],
+      "q2_answers": [
+        "19th arrondissement of Paris"
+      ],
+      "raw": {
+        "id": "train-206",
+        "question": "Where was Kylian Mbapp\u00e9 born?",
+        "answer": "19th arrondissement of Paris",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012632",
+            "P19",
+            "E011667"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the footballer who captained the club S.S. Lazio in 2000?",
+      "ground_truth": "Alessandro Nesta",
+      "q1_answers": [],
+      "q2_answers": [
+        "Alessandro Nesta"
+      ],
+      "raw": {
+        "id": "train-2066",
+        "question": "What is the name of the footballer who captained the club S.S. Lazio in 2000?",
+        "answer": "Alessandro Nesta",
+        "source": "doc",
+        "source_ids": [
+          "D20103"
+        ]
+      }
+    },
+    {
+      "query": "Which award did soccer player Kylian Mbapp\u00e9 get in the year 2017?",
+      "ground_truth": "Golden Boy",
+      "q1_answers": [],
+      "q2_answers": [
+        "Golden Boy"
+      ],
+      "raw": {
+        "id": "train-207",
+        "question": "Which award did soccer player Kylian Mbapp\u00e9 get in the year 2017?",
+        "answer": "Golden Boy",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012632",
+            "P166",
+            "E008113"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What league does the team participate in?",
+      "ground_truth": "Eliteserien",
+      "q1_answers": [],
+      "q2_answers": [
+        "Eliteserien"
+      ],
+      "raw": {
+        "id": "train-2274",
+        "question": "What league does the team participate in?",
+        "answer": "Eliteserien",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012444",
+            "P118",
+            "E011490"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which club was the first to win the title?",
+      "ground_truth": "Rosenborg BK",
+      "q1_answers": [],
+      "q2_answers": [
+        "Rosenborg BK"
+      ],
+      "raw": {
+        "id": "train-2275",
+        "question": "Which club was the first to win the title?",
+        "answer": "Rosenborg BK",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010410",
+            "P118",
+            "E011490"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "what are all the award received by kylian mbappe ?",
+      "ground_truth": "Knight of the Legion of Honour,Best Young Player Award,Golden Boy",
+      "q1_answers": [],
+      "q2_answers": [
+        "Knight of the Legion of Honour,Best Young Player Award,Golden Boy"
+      ],
+      "raw": {
+        "id": "train-2393",
+        "question": "what are all the award received by kylian mbappe ?",
+        "answer": "Knight of the Legion of Honour,Best Young Player Award,Golden Boy",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E012632",
+            "P166",
+            "E008113"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the native language of the player Mohamed Salah?",
+      "ground_truth": "Egyptian Arabic",
+      "q1_answers": [],
+      "q2_answers": [
+        "Egyptian Arabic"
+      ],
+      "raw": {
+        "id": "train-2422",
+        "question": "What is the native language of the player Mohamed Salah?",
+        "answer": "Egyptian Arabic",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006848",
+            "P1412",
+            "E016645"
+          ],
+          [
+            "E006848",
+            "P103",
+            "E016645"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is currently the head coach of the Spanish Olympic football team?",
+      "ground_truth": "Luis de la Fuente",
+      "q1_answers": [],
+      "q2_answers": [
+        "Luis de la Fuente"
+      ],
+      "raw": {
+        "id": "train-2514",
+        "question": "Who is currently the head coach of the Spanish Olympic football team?",
+        "answer": "Luis de la Fuente",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E020234",
+            "P54",
+            "E015179"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who is the captain of Brazilian football team in 2021?",
+      "ground_truth": "Thiago Silva",
+      "q1_answers": [],
+      "q2_answers": [
+        "Thiago Silva"
+      ],
+      "raw": {
+        "id": "train-2542",
+        "question": "Who is the captain of Brazilian football team in 2021?",
+        "answer": "Thiago Silva",
+        "source": "doc",
+        "source_ids": [
+          "D18652",
+          "D17660"
+        ]
+      }
+    },
+    {
+      "query": "Who is the current head coach of Chicago Fire?",
+      "ground_truth": "Ezra Hendrickson",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ezra Hendrickson"
+      ],
+      "raw": {
+        "id": "train-2575",
+        "question": "Who is the current head coach of Chicago Fire?",
+        "answer": "Ezra Hendrickson",
+        "source": "table",
+        "source_ids": [
+          "T0282"
+        ]
+      }
+    },
+    {
+      "query": "Which player did Zinedine Zidane headbutts in 2006 FIFA World Cup final?",
+      "ground_truth": "Marco Materazzi",
+      "q1_answers": [],
+      "q2_answers": [
+        "Marco Materazzi"
+      ],
+      "raw": {
+        "id": "train-2664",
+        "question": "Which player did Zinedine Zidane headbutts in 2006 FIFA World Cup final?",
+        "answer": "Marco Materazzi",
+        "source": "doc",
+        "source_ids": [
+          "D24254",
+          "D24781",
+          "D13041"
+        ]
+      }
+    },
+    {
+      "query": "Who was the player Zinedine Zidane headbutts in 2006 FIFA World Cup?",
+      "ground_truth": "Marco Materazzi",
+      "q1_answers": [],
+      "q2_answers": [
+        "Marco Materazzi"
+      ],
+      "raw": {
+        "id": "train-2669",
+        "question": "Who was the player Zinedine Zidane headbutts in 2006 FIFA World Cup?",
+        "answer": "Marco Materazzi",
+        "source": "doc",
+        "source_ids": [
+          "D24254",
+          "D24781",
+          "D13041"
+        ]
+      }
+    },
+    {
+      "query": "From what famous location did the term \"soccer\" originate?",
+      "ground_truth": "Oxford University",
+      "q1_answers": [],
+      "q2_answers": [
+        "Oxford University"
+      ],
+      "raw": {
+        "id": "train-2906",
+        "question": "From what famous location did the term \"soccer\" originate?",
+        "answer": "Oxford University",
+        "source": "doc",
+        "source_ids": [
+          "D08938"
+        ]
+      }
+    },
+    {
+      "query": "which year founded of Manchester united F.C?",
+      "ground_truth": "1902",
+      "q1_answers": [],
+      "q2_answers": [
+        "1902"
+      ],
+      "raw": {
+        "id": "train-2996",
+        "question": "which year founded of Manchester united F.C?",
+        "answer": "1902",
+        "source": "doc",
+        "source_ids": [
+          "D11714",
+          "D16705",
+          "D17175"
+        ]
+      }
+    },
+    {
+      "query": "Who was the first person to serve as the team's captain?",
+      "ground_truth": "Jay DeMerit",
+      "q1_answers": [],
+      "q2_answers": [
+        "Jay DeMerit"
+      ],
+      "raw": {
+        "id": "train-3026",
+        "question": "Who was the first person to serve as the team's captain?",
+        "answer": "Jay DeMerit",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E019074",
+            "P54",
+            "E010967"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Where did he play college soccer?",
+      "ground_truth": "University of Illinois Chicago",
+      "q1_answers": [],
+      "q2_answers": [
+        "University of Illinois Chicago"
+      ],
+      "raw": {
+        "id": "train-3027",
+        "question": "Where did he play college soccer?",
+        "answer": "University of Illinois Chicago",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E019074",
+            "P69",
+            "E032959"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is Christine Bleakley's occupation?",
+      "ground_truth": "television presenter",
+      "q1_answers": [],
+      "q2_answers": [
+        "television presenter"
+      ],
+      "raw": {
+        "id": "train-3177",
+        "question": "What is Christine Bleakley's occupation?",
+        "answer": "television presenter",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E023689",
+            "P106",
+            "E032874"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the Dialling code of Stuttgart?",
+      "ground_truth": "0711",
+      "q1_answers": [],
+      "q2_answers": [
+        "0711"
+      ],
+      "raw": {
+        "id": "train-3414",
+        "question": "What is the Dialling code of Stuttgart?",
+        "answer": "0711",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E004325",
+            "P473",
+            "E001714"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What county is it a part of?",
+      "ground_truth": "Norfolk",
+      "q1_answers": [],
+      "q2_answers": [
+        "Norfolk"
+      ],
+      "raw": {
+        "id": "train-3444",
+        "question": "What county is it a part of?",
+        "answer": "Norfolk",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E024336",
+            "P131",
+            "E024540"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the president of Borussia Dortmund team?",
+      "ground_truth": "Reinhard Rauball",
+      "q1_answers": [],
+      "q2_answers": [
+        "Reinhard Rauball"
+      ],
+      "raw": {
+        "id": "train-3502",
+        "question": "who is the president of Borussia Dortmund team?",
+        "answer": "Reinhard Rauball",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E020942",
+            "P127",
+            "E032078"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the Sleeve Sponsor of Borussia Dortmund in 2022?",
+      "ground_truth": "Opel",
+      "q1_answers": [],
+      "q2_answers": [
+        "Opel"
+      ],
+      "raw": {
+        "id": "train-3504",
+        "question": "who is the Sleeve Sponsor of Borussia Dortmund in 2022?",
+        "answer": "Opel",
+        "source": "doc",
+        "source_ids": [
+          "D06312"
+        ]
+      }
+    },
+    {
+      "query": "who is the head coach of Al Hilal SFC team?",
+      "ground_truth": "Leonardo Jardim",
+      "q1_answers": [],
+      "q2_answers": [
+        "Leonardo Jardim"
+      ],
+      "raw": {
+        "id": "train-3591",
+        "question": "who is the head coach of Al Hilal SFC team?",
+        "answer": "Leonardo Jardim",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E030199",
+            "P286",
+            "E012637"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "name of Athletic Bilbao's head coach in 2021?",
+      "ground_truth": "Patxi Salinas",
+      "q1_answers": [],
+      "q2_answers": [
+        "Patxi Salinas"
+      ],
+      "raw": {
+        "id": "train-3710",
+        "question": "name of Athletic Bilbao's head coach in 2021?",
+        "answer": "Patxi Salinas",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E031062",
+            "P286",
+            "E014983"
+          ],
+          [
+            "E014983",
+            "P54",
+            "E031062"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who suggested increasing the number of teams in the 2026 FIFA World Cup?",
+      "ground_truth": "Michel Platini;Gianni Infantino",
+      "q1_answers": [],
+      "q2_answers": [
+        "Michel Platini;Gianni Infantino"
+      ],
+      "raw": {
+        "id": "train-388",
+        "question": "Who suggested increasing the number of teams in the 2026 FIFA World Cup?",
+        "answer": "Michel Platini;Gianni Infantino",
+        "source": "doc",
+        "source_ids": [
+          "D18266",
+          "D17211",
+          "D03649"
+        ]
+      }
+    },
+    {
+      "query": "Which club did Mesut \u00d6zil playing now?",
+      "ground_truth": "Fenerbah\u00e7e S.K.",
+      "q1_answers": [],
+      "q2_answers": [
+        "Fenerbah\u00e7e S.K."
+      ],
+      "raw": {
+        "id": "train-4096",
+        "question": "Which club did Mesut \u00d6zil playing now?",
+        "answer": "Fenerbah\u00e7e S.K.",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E031548",
+            "P1618",
+            "E001721"
+          ],
+          [
+            "E031548",
+            "P54",
+            "E028084"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is Mesut \u00d6zil's ethnic group?",
+      "ground_truth": "Turks in Germany",
+      "q1_answers": [],
+      "q2_answers": [
+        "Turks in Germany"
+      ],
+      "raw": {
+        "id": "train-4100",
+        "question": "What is Mesut \u00d6zil's ethnic group?",
+        "answer": "Turks in Germany",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E031548",
+            "P172",
+            "E029308"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "For which club did Mesut \u00d6zil playing currently?",
+      "ground_truth": "Fenerbah\u00e7e S.K.",
+      "q1_answers": [],
+      "q2_answers": [
+        "Fenerbah\u00e7e S.K."
+      ],
+      "raw": {
+        "id": "train-4101",
+        "question": "For which club did Mesut \u00d6zil playing currently?",
+        "answer": "Fenerbah\u00e7e S.K.",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E031548",
+            "P1618",
+            "E001721"
+          ],
+          [
+            "E031548",
+            "P54",
+            "E028084"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Which award received in 2012 by Xavi?",
+      "ground_truth": "Princess of Asturias Award for Sports",
+      "q1_answers": [],
+      "q2_answers": [
+        "Princess of Asturias Award for Sports"
+      ],
+      "raw": {
+        "id": "train-4160",
+        "question": "Which award received in 2012 by Xavi?",
+        "answer": "Princess of Asturias Award for Sports",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E009615",
+            "P166",
+            "E018298"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of Oliver Kahn's brother?",
+      "ground_truth": "Axel Kahn",
+      "q1_answers": [],
+      "q2_answers": [
+        "Axel Kahn"
+      ],
+      "raw": {
+        "id": "train-4190",
+        "question": "What is the name of Oliver Kahn's brother?",
+        "answer": "Axel Kahn",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E006572",
+            "P3373",
+            "E031021"
+          ],
+          [
+            "E031021",
+            "P3373",
+            "E006572"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the team he initially played on?",
+      "ground_truth": "Sporting de Gij\u00f3n B",
+      "q1_answers": [],
+      "q2_answers": [
+        "Sporting de Gij\u00f3n B"
+      ],
+      "raw": {
+        "id": "train-4246",
+        "question": "What is the name of the team he initially played on?",
+        "answer": "Sporting de Gij\u00f3n B",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E031502",
+            "P54",
+            "E016614"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of their home stadium?",
+      "ground_truth": "Escuela de F\u00fatbol de Mareo",
+      "q1_answers": [],
+      "q2_answers": [
+        "Escuela de F\u00fatbol de Mareo"
+      ],
+      "raw": {
+        "id": "train-4247",
+        "question": "What is the name of their home stadium?",
+        "answer": "Escuela de F\u00fatbol de Mareo",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E016614",
+            "P115",
+            "E025715"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "Who was the architect of the stadium?",
+      "ground_truth": "Miguel D\u00edaz Negrete",
+      "q1_answers": [],
+      "q2_answers": [
+        "Miguel D\u00edaz Negrete"
+      ],
+      "raw": {
+        "id": "train-4248",
+        "question": "Who was the architect of the stadium?",
+        "answer": "Miguel D\u00edaz Negrete",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E025715",
+            "P84",
+            "E026436"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "What is the name of the head coach of the club Hellas Verona F.C.?",
+      "ground_truth": "Ivan Juri\u0107",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ivan Juri\u0107"
+      ],
+      "raw": {
+        "id": "train-4367",
+        "question": "What is the name of the head coach of the club Hellas Verona F.C.?",
+        "answer": "Ivan Juri\u0107",
+        "source": "doc",
+        "source_ids": [
+          "D31599"
+        ]
+      }
+    },
+    {
+      "query": "In what city was the world's first international football match played?",
+      "ground_truth": "Glasgow",
+      "q1_answers": [],
+      "q2_answers": [
+        "Glasgow"
+      ],
+      "raw": {
+        "id": "train-4484",
+        "question": "In what city was the world's first international football match played?",
+        "answer": "Glasgow",
+        "source": "doc",
+        "source_ids": [
+          "D22204",
+          "D28841"
+        ]
+      }
+    },
+    {
+      "query": "Who was the first coach of San Jose Earthquakes?",
+      "ground_truth": "Laurie Calloway",
+      "q1_answers": [],
+      "q2_answers": [
+        "Laurie Calloway"
+      ],
+      "raw": {
+        "id": "train-4545",
+        "question": "Who was the first coach of San Jose Earthquakes?",
+        "answer": "Laurie Calloway",
+        "source": "table",
+        "source_ids": [
+          "T0987"
+        ]
+      }
+    },
+    {
+      "query": "At their premier game what team did FC Nantes face?",
+      "ground_truth": "CA Paris-Charenton",
+      "q1_answers": [],
+      "q2_answers": [
+        "CA Paris-Charenton"
+      ],
+      "raw": {
+        "id": "train-4634",
+        "question": "At their premier game what team did FC Nantes face?",
+        "answer": "CA Paris-Charenton",
+        "source": "doc",
+        "source_ids": [
+          "D19540"
+        ]
+      }
+    },
+    {
+      "query": "What is the soccer club Manchester United F.C.'s theme music?",
+      "ground_truth": "Glory Glory",
+      "q1_answers": [],
+      "q2_answers": [
+        "Glory Glory"
+      ],
+      "raw": {
+        "id": "train-4692",
+        "question": "What is the soccer club Manchester United F.C.'s theme music?",
+        "answer": "Glory Glory",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E010395",
+            "P942",
+            "E007776"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "How much money did Liverpool F.C. bought Mohamed Salah?",
+      "ground_truth": "\u00a336.9 million",
+      "q1_answers": [],
+      "q2_answers": [
+        "\u00a336.9 million"
+      ],
+      "raw": {
+        "id": "train-4720",
+        "question": "How much money did Liverpool F.C. bought Mohamed Salah?",
+        "answer": "\u00a336.9 million",
+        "source": "doc",
+        "source_ids": [
+          "D12049"
+        ]
+      }
+    },
+    {
+      "query": "Who was the Who was the head coach of the Chicago Fire Football Club?",
+      "ground_truth": "Ezra Hendrickson",
+      "q1_answers": [],
+      "q2_answers": [
+        "Ezra Hendrickson"
+      ],
+      "raw": {
+        "id": "train-475",
+        "question": "Who was the Who was the head coach of the Chicago Fire Football Club?",
+        "answer": "Ezra Hendrickson",
+        "source": "table",
+        "source_ids": [
+          "T0282"
+        ]
+      }
+    },
+    {
+      "query": "Which team played in 2008 by Thomas M\u00fcller?",
+      "ground_truth": "FC Bayern Munich II",
+      "q1_answers": [],
+      "q2_answers": [
+        "FC Bayern Munich II"
+      ],
+      "raw": {
+        "id": "train-595",
+        "question": "Which team played in 2008 by Thomas M\u00fcller?",
+        "answer": "FC Bayern Munich II",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E021298",
+            "P54",
+            "E033443"
+          ],
+          [
+            "E021298",
+            "P1344",
+            "E027539"
+          ]
+        ]
+      }
+    },
+    {
+      "query": "who is the fitness coach of Argentina national football team ?",
+      "ground_truth": "Luis Mart\u00edn",
+      "q1_answers": [],
+      "q2_answers": [
+        "Luis Mart\u00edn"
+      ],
+      "raw": {
+        "id": "train-684",
+        "question": "who is the fitness coach of Argentina national football team ?",
+        "answer": "Luis Mart\u00edn",
+        "source": "table",
+        "source_ids": [
+          "T0156"
+        ]
+      }
+    },
+    {
+      "query": "What division does Paris Saint-Germain F\u00e9minine belong to?",
+      "ground_truth": "Division 1 F\u00e9minine",
+      "q1_answers": [],
+      "q2_answers": [
+        "Division 1 F\u00e9minine"
+      ],
+      "raw": {
+        "id": "train-777",
+        "question": "What division does Paris Saint-Germain F\u00e9minine belong to?",
+        "answer": "Division 1 F\u00e9minine",
+        "source": "kg",
+        "source_ids": [
+          [
+            "E018417",
+            "P118",
+            "E006250"
+          ]
+        ]
+      }
+    }
+  ],
+  "overall_metrics": {
+    "avg_exact_match": 0.33,
+    "avg_f1": 0.37027743271221525,
+    "avg_retrieval_time": 9.710444409847259,
+    "avg_docs_searched": 6.29,
+    "avg_similarity": 11.024574746015439,
+    "avg_prompt_tokens_per_subquery": 0.0,
+    "avg_total_tokens_per_query": 168.41,
+    "avg_execution_time": 1.2663768475130182,
+    "avg_sq1_score": 0.0,
+    "avg_sq2_score": 0.2,
+    "avg_total_score": 0.2,
+    "sq1_hit_rate": 0.0,
+    "sq2_hit_rate": 0.2,
+    "total_elapsed_time": 126.637684751302
+  },
+  "all_query_metrics": [
+    {
+      "total_retrieval_time": 56.940627574920654,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 140,
+      "prompt_token_counts": [
+        140
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "left-handedness",
+        "ground_truth": "left-handedness",
+        "fallback_answer": "left-handedness",
+        "final_reason": "The evidence document directly states that Pel\u00e9 has the handedness relation to left-handedness."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "left-handedness"
+      },
+      "avg_retrieval_time": 56.940627574920654,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 140,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 56.763829469680786,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 187,
+      "prompt_token_counts": [
+        187
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.608695652173913,
+        "final_answer": "Gold Medal of the Royal Order of Sports Merit, 2012 UEFA Men's Player of the Year Award",
+        "ground_truth": "Gold Medal of the Royal Order of Sports Merit",
+        "fallback_answer": "Gold Medal of the Royal Order of Sports Merit, 2012 UEFA Men's Player of the Year Award",
+        "final_reason": "The reasoning steps indicate that Andr\u00e9s Iniesta received the Gold Medal of the Royal Order of Sports Merit and won the 2012 UEFA Men's Player of the Year Award."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.608695652173913,
+        "ground_truth": "Gold Medal of the Royal Order of Sports Merit"
+      },
+      "avg_retrieval_time": 56.763829469680786,
+      "avg_similarity": 0.611111111111111,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 187,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 7.147908926010132,
+      "total_docs_searched": 12,
+      "avg_similarity_scores": [
+        17.192199325094855,
+        0.37040816326530607
+      ],
+      "max_similarity_scores": [
+        17.79310816646583,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 220,
+      "prompt_token_counts": [
+        220
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "FK Vele\u017e Mostar",
+        "ground_truth": "Hajduk Split",
+        "fallback_answer": "FK Vele\u017e Mostar",
+        "final_reason": "The evidence lists Zlatko Dali\u0107's clubs in order: NK Varteks, FK Vele\u017e Mostar, HNK Cibalia, etc. The second club in this list is FK Vele\u017e Mostar."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Hajduk Split"
+      },
+      "avg_retrieval_time": 3.573954463005066,
+      "avg_similarity": 8.78130374418008,
+      "max_similarity": 17.79310816646583,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 220,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 57.187538146972656,
+      "total_docs_searched": 13,
+      "avg_similarity_scores": [
+        0.24462567347182732
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 177,
+      "prompt_token_counts": [
+        177
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Lech Pozna\u0144",
+        "ground_truth": "Lech Pozna\u0144",
+        "fallback_answer": "Lech Pozna\u0144",
+        "final_reason": "Robert Lewandowski played for Lech Pozna\u0144 in 2009, as evidenced by his participation in the 2009\u201310 Ekstraklasa with that club."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Lech Pozna\u0144"
+      },
+      "avg_retrieval_time": 57.187538146972656,
+      "avg_similarity": 0.24462567347182732,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 177,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.11192703247070312,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        27.672922712718247,
+        28.10003107850191
+      ],
+      "max_similarity_scores": [
+        29.009715384775717,
+        31.96982701393761
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 218,
+      "prompt_token_counts": [
+        218
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "West Ham",
+        "ground_truth": "Ukraine national association football team",
+        "fallback_answer": "West Ham",
+        "final_reason": "Harry Kane scored his first goal of 2020 against West Ham, sealing a 2\u20130 win."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Ukraine national association football team"
+      },
+      "avg_retrieval_time": 0.05596351623535156,
+      "avg_similarity": 27.88647689561008,
+      "max_similarity": 31.96982701393761,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 218,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 2.2145869731903076,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        26.976055582327966,
+        32.5026949230183
+      ],
+      "max_similarity_scores": [
+        29.861190921566838,
+        50.654080946818844
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 219,
+      "prompt_token_counts": [
+        219
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Rio Pardo",
+        "fallback_answer": "",
+        "final_reason": "The provided evidence does not include Carlos Kaiser's place of birth."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Rio Pardo"
+      },
+      "avg_retrieval_time": 1.1072934865951538,
+      "avg_similarity": 29.739375252673135,
+      "max_similarity": 50.654080946818844,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 219,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 37.07900595664978,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        26.976055582327966,
+        0.0
+      ],
+      "max_similarity_scores": [
+        29.861190921566838,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 199,
+      "prompt_token_counts": [
+        199
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No relevant information found",
+        "ground_truth": "The book Kaiser: The Greatest Footballer Never to Play Football",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps identified Carlos Kaiser as a Brazilian con artist and former footballer, but no book published about him was found in the available information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "The book Kaiser: The Greatest Footballer Never to Play Football"
+      },
+      "avg_retrieval_time": 18.53950297832489,
+      "avg_similarity": 13.488027791163983,
+      "max_similarity": 29.861190921566838,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 199,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 53.52027416229248,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.75,
+        0.0
+      ],
+      "max_similarity_scores": [
+        1.0,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 156,
+      "prompt_token_counts": [
+        156
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Alfred Preissler",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide any relevant information to determine the all-time top scorer for Borussia Dortmund."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Alfred Preissler"
+      },
+      "avg_retrieval_time": 26.76013708114624,
+      "avg_similarity": 0.375,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 156,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.3044881820678711,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        27.60687451689472,
+        29.72359713717479
+      ],
+      "max_similarity_scores": [
+        33.4497561781024,
+        31.41879035148583
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 215,
+      "prompt_token_counts": [
+        215
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Marco Reus",
+        "ground_truth": "Marco Reus",
+        "fallback_answer": "",
+        "final_reason": "The current captain of Borussia Dortmund is Marco Reus, and since the question asks for the name of the football player who captains the team, the answer is Marco Reus."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Marco Reus"
+      },
+      "avg_retrieval_time": 0.15224409103393555,
+      "avg_similarity": 28.665235827034756,
+      "max_similarity": 33.4497561781024,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 215,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 49.5236177444458,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 134,
+      "prompt_token_counts": [
+        134
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Alfred Preissler",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found to determine the top goal scorer of Borussia Dortmund."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Alfred Preissler"
+      },
+      "avg_retrieval_time": 49.5236177444458,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 134,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 55.87709975242615,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.2928968253968254
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 135,
+      "prompt_token_counts": [
+        135
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Information not found",
+        "ground_truth": "$6.5 million",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found regarding David Beckham's annual salary while at LA Galaxy."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "$6.5 million"
+      },
+      "avg_retrieval_time": 55.87709975242615,
+      "avg_similarity": 0.2928968253968254,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 135,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.044878244400024414,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        14.781049003367723
+      ],
+      "max_similarity_scores": [
+        15.05267237666268
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 128,
+      "prompt_token_counts": [
+        128
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Helen Svedin",
+        "ground_truth": "Helen Svedin",
+        "fallback_answer": "",
+        "final_reason": "Lu\u00eds Figo's wife is Helen Svedin, a Swedish model and TV presenter. They married in 2000."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Helen Svedin"
+      },
+      "avg_retrieval_time": 0.044878244400024414,
+      "avg_similarity": 14.781049003367723,
+      "max_similarity": 15.05267237666268,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 128,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 54.59681940078735,
+      "total_docs_searched": 3,
+      "avg_similarity_scores": [
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 168,
+      "prompt_token_counts": [
+        168
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Leonardo Bonucci",
+        "ground_truth": "Leonardo Bonucci",
+        "fallback_answer": "Leonardo Bonucci",
+        "final_reason": "The evidence indicates that Leonardo Bonucci scored Italy's goal in the Euro 2020 final."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Leonardo Bonucci"
+      },
+      "avg_retrieval_time": 54.59681940078735,
+      "avg_similarity": 0.611111111111111,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 168,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 56.691601037979126,
+      "total_docs_searched": 22,
+      "avg_similarity_scores": [
+        0.16776423864623977
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 157,
+      "prompt_token_counts": [
+        157
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 0.8571428571428571,
+        "final_answer": "Knight Commander of the Order of the British Empire",
+        "ground_truth": "Knight Commander of the Order of the British Empire",
+        "fallback_answer": "Knight Commander of the Order of the British Empire",
+        "final_reason": "The reasoning step directly states that the award Pel\u00e9 received in 1997 was Knight Commander of the Order of the British Empire."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 0.8571428571428571,
+        "ground_truth": "Knight Commander of the Order of the British Empire"
+      },
+      "avg_retrieval_time": 56.691601037979126,
+      "avg_similarity": 0.16776423864623977,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 157,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 56.11168146133423,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 151,
+      "prompt_token_counts": [
+        151
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "United Russia",
+        "ground_truth": "United Russia",
+        "fallback_answer": "United Russia",
+        "final_reason": "The evidence directly states that Andrei Arshavin is a member of the political party United Russia."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "United Russia"
+      },
+      "avg_retrieval_time": 56.11168146133423,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 151,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.12692999839782715,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        14.243548510160924,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        16.32401953919481,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 163,
+      "prompt_token_counts": [
+        163
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "USMNT",
+        "ground_truth": "USWNT",
+        "fallback_answer": "",
+        "final_reason": "The US soccer team is commonly referred to as the United States Men's National Team, abbreviated as USMNT. Although the reasoning steps did not find explicit evidence, the standard abbreviation for the US soccer team is USMNT."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "USWNT"
+      },
+      "avg_retrieval_time": 0.06346499919891357,
+      "avg_similarity": 7.350107588413795,
+      "max_similarity": 16.32401953919481,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 163,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 54.872355222702026,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 158,
+      "prompt_token_counts": [
+        158
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "USA",
+        "ground_truth": "USWNT",
+        "fallback_answer": "USA",
+        "final_reason": "The official abbreviation of the United States women's national soccer team is USA, as indicated by the FIFA country code."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "USWNT"
+      },
+      "avg_retrieval_time": 54.872355222702026,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 158,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 56.69603681564331,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 146,
+      "prompt_token_counts": [
+        146
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "1902",
+        "ground_truth": "1902",
+        "fallback_answer": "1902",
+        "final_reason": "The evidence states the inception date as 6 March 1902."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "1902"
+      },
+      "avg_retrieval_time": 56.69603681564331,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 146,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 56.442439794540405,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 145,
+      "prompt_token_counts": [
+        145
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "1902",
+        "ground_truth": "1902",
+        "fallback_answer": "1902",
+        "final_reason": "The evidence states the inception date as 6 March 1902."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "1902"
+      },
+      "avg_retrieval_time": 56.442439794540405,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 145,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 59.230849504470825,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.37040816326530607
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 171,
+      "prompt_token_counts": [
+        171
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.28571428571428575,
+        "final_answer": "Red Football Holdings Limited",
+        "ground_truth": "Manchester United Limited",
+        "fallback_answer": "Red Football Holdings Limited",
+        "final_reason": "Manchester United Plc is owned by Red Football Holdings Limited (100%), and Manchester United F.C. is owned by Manchester United Limited, which is owned by Red Football Holdings Limited. Thus, the current owner is Red Football Holdings Limited."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.28571428571428575,
+        "ground_truth": "Manchester United Limited"
+      },
+      "avg_retrieval_time": 59.230849504470825,
+      "avg_similarity": 0.37040816326530607,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 171,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.09431695938110352,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        20.300722552676735
+      ],
+      "max_similarity_scores": [
+        22.998570037366306
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 161,
+      "prompt_token_counts": [
+        161
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Glazer family via Red Football Shareholder Limited",
+        "ground_truth": "Manchester United Plc",
+        "fallback_answer": "Glazer family via Red Football Shareholder Limited",
+        "final_reason": "The evidence document for Manchester United F.C. states: 'Owner: Glazer family via Red Football Shareholder Limited', which indicates the parent company."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Manchester United Plc"
+      },
+      "avg_retrieval_time": 0.09431695938110352,
+      "avg_similarity": 20.300722552676735,
+      "max_similarity": 22.998570037366306,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 161,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.17429375648498535,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        30.4831444008056,
+        19.606514995115887
+      ],
+      "max_similarity_scores": [
+        32.78176512225208,
+        32.2689086283687
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 166,
+      "prompt_token_counts": [
+        166
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Judaism",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found regarding the religious affiliation of Joel Glazer."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Judaism"
+      },
+      "avg_retrieval_time": 0.08714687824249268,
+      "avg_similarity": 25.044829697960743,
+      "max_similarity": 32.78176512225208,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 166,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.12899112701416016,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        19.203458910618483
+      ],
+      "max_similarity_scores": [
+        19.95743484277113
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 155,
+      "prompt_token_counts": [
+        155
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.2,
+        "final_answer": "Glazer family via Red Football Shareholder Limited",
+        "ground_truth": "Manchester United Limited",
+        "fallback_answer": "Glazer family via Red Football Shareholder Limited",
+        "final_reason": "The evidence document 'Manchester United F.C.' states that the owner is the Glazer family via Red Football Shareholder Limited."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.2,
+        "ground_truth": "Manchester United Limited"
+      },
+      "avg_retrieval_time": 0.12899112701416016,
+      "avg_similarity": 19.203458910618483,
+      "max_similarity": 19.95743484277113,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 155,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.0035333633422851562,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        22.39045681654377
+      ],
+      "max_similarity_scores": [
+        24.008803153564543
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 130,
+      "prompt_token_counts": [
+        130
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "University of Limoges",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found about Zinedine Zidane attending a university."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "University of Limoges"
+      },
+      "avg_retrieval_time": 0.0035333633422851562,
+      "avg_similarity": 22.39045681654377,
+      "max_similarity": 24.008803153564543,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 130,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.21616744995117188,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        13.367459076846398,
+        12.932659565815419
+      ],
+      "max_similarity_scores": [
+        14.460835310729024,
+        16.484733956561563
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 151,
+      "prompt_token_counts": [
+        151
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Newton Heath LYR Football Club",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not identify the club or provide any information about its original name, so the final answer cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Newton Heath LYR Football Club"
+      },
+      "avg_retrieval_time": 0.10808372497558594,
+      "avg_similarity": 13.150059321330907,
+      "max_similarity": 16.484733956561563,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 151,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 11.70836329460144,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        1.0,
+        20.70153682475844,
+        0.0,
+        0.0
+      ],
+      "max_similarity_scores": [
+        1.0,
+        29.698070739161274,
+        0.0,
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 242,
+      "prompt_token_counts": [
+        242
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "149,918",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found for the social media handles or follower counts of the team soccer. Therefore, the total number of social media followers cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "149,918"
+      },
+      "avg_retrieval_time": 2.92709082365036,
+      "avg_similarity": 5.42538420618961,
+      "max_similarity": 29.698070739161274,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 242,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 6.8079938888549805,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        0.611111111111111,
+        32.49501767110899
+      ],
+      "max_similarity_scores": [
+        1.0,
+        34.07503999145113
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 249,
+      "prompt_token_counts": [
+        249
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Best Young Player Award",
+        "ground_truth": "Best Young Player Award",
+        "fallback_answer": "",
+        "final_reason": "The evidence indicates that Kylian Mbapp\u00e9 received two awards in 2018: the Knight of the Legion of Honour and the Best Young Player Award. Since the question asks for 'the award received in 2018' and the Best Young Player Award is a specific football award commonly associated with his performance in the 2018 World Cup, it is the most notable and commonly referred to award for that year."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Best Young Player Award"
+      },
+      "avg_retrieval_time": 3.4039969444274902,
+      "avg_similarity": 16.553064391110052,
+      "max_similarity": 34.07503999145113,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 249,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 5.934205770492554,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 153,
+      "prompt_token_counts": [
+        153
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "19th arrondissement of Paris",
+        "ground_truth": "19th arrondissement of Paris",
+        "fallback_answer": "19th arrondissement of Paris",
+        "final_reason": "The evidence document states that Kylian Mbapp\u00e9's place of birth is the 19th arrondissement of Paris."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "19th arrondissement of Paris"
+      },
+      "avg_retrieval_time": 5.934205770492554,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 153,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.1177217960357666,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        28.00972298604347,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        29.29524721867803,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 202,
+      "prompt_token_counts": [
+        202
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Atlanta United FC",
+        "ground_truth": "Atlanta United FC",
+        "fallback_answer": "Atlanta United FC",
+        "final_reason": "The reasoning steps indicate that Atlanta United FC won the 2019 U.S. Open Cup title, as they are listed with a win in 2019."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Atlanta United FC"
+      },
+      "avg_retrieval_time": 0.0588608980178833,
+      "avg_similarity": 14.233194826355069,
+      "max_similarity": 29.29524721867803,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 202,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.0017023086547851562,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 137,
+      "prompt_token_counts": [
+        137
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "27,463",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found to determine the population of Camas, Seville in 2018."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "27,463"
+      },
+      "avg_retrieval_time": 0.0017023086547851562,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 137,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 8.945857286453247,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.75,
+        17.448361927961113
+      ],
+      "max_similarity_scores": [
+        1.0,
+        22.74971496439096
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 170,
+      "prompt_token_counts": [
+        170
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "UTC+01:00",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find any relevant information about the time zone of Camas, Seville. Therefore, the time zone cannot be determined from the provided evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "UTC+01:00"
+      },
+      "avg_retrieval_time": 4.4729286432266235,
+      "avg_similarity": 9.099180963980556,
+      "max_similarity": 22.74971496439096,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 170,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.07324099540710449,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        28.615338847978556,
+        30.331446134120835
+      ],
+      "max_similarity_scores": [
+        32.82225104595755,
+        34.412545365958444
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 181,
+      "prompt_token_counts": [
+        181
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Officer of the Order of Prince Henry",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps identified Nuno Gomes as a Portuguese former professional footballer, but no information was found regarding an award he received. Therefore, the award cannot be determined from the given evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Officer of the Order of Prince Henry"
+      },
+      "avg_retrieval_time": 0.036620497703552246,
+      "avg_similarity": 29.473392491049694,
+      "max_similarity": 34.412545365958444,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 181,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.23510003089904785,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        28.327354645058684,
+        12.832393448632041
+      ],
+      "max_similarity_scores": [
+        33.68260625239626,
+        14.97602572799952
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 195,
+      "prompt_token_counts": [
+        195
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "R. Kelly with the Soweto Spiritual Singers",
+        "ground_truth": "Shakira",
+        "fallback_answer": "",
+        "final_reason": "The official song of the 2010 FIFA World Cup is 'Sign of a Victory', and it was performed by R. Kelly with the Soweto Spiritual Singers."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Shakira"
+      },
+      "avg_retrieval_time": 0.11755001544952393,
+      "avg_similarity": 20.57987404684536,
+      "max_similarity": 33.68260625239626,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 195,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.13099431991577148,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        46.478521382443766
+      ],
+      "max_similarity_scores": [
+        50.0355516580768
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 183,
+      "prompt_token_counts": [
+        183
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Brenno Del Giudice",
+        "ground_truth": "Raffaello Fagnoni",
+        "fallback_answer": "Brenno Del Giudice",
+        "final_reason": "The reasoning step identifies Brenno Del Giudice as the project architect of Stadio Olimpico Grande Torino."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Raffaello Fagnoni"
+      },
+      "avg_retrieval_time": 0.13099431991577148,
+      "avg_similarity": 46.478521382443766,
+      "max_similarity": 50.0355516580768,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 183,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 7.731895923614502,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        0.611111111111111,
+        15.273435136560654
+      ],
+      "max_similarity_scores": [
+        1.0,
+        15.991326740080972
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 189,
+      "prompt_token_counts": [
+        189
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Stadio Artemio Franchi",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps confirm that the stadium is in Florence, but no information was found about the stadium's name. Therefore, the final answer cannot be determined from the given evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Stadio Artemio Franchi"
+      },
+      "avg_retrieval_time": 3.865947961807251,
+      "avg_similarity": 7.942273123835882,
+      "max_similarity": 15.991326740080972,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 189,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 3.4362475872039795,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        11.00626180284093
+      ],
+      "max_similarity_scores": [
+        0.0,
+        11.719235389176822
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 139,
+      "prompt_token_counts": [
+        139
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Forl\u00ec",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not find any relevant information about Luigi Ridolfi or his birthplace."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Forl\u00ec"
+      },
+      "avg_retrieval_time": 1.7181237936019897,
+      "avg_similarity": 5.503130901420465,
+      "max_similarity": 11.719235389176822,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 139,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 5.707475423812866,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        1.0,
+        20.78583488826785
+      ],
+      "max_similarity_scores": [
+        1.0,
+        26.19795480202767
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 182,
+      "prompt_token_counts": [
+        182
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Stadio Tullo Morgagni",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found regarding the home stadium of Forl\u00ec F.C., so the name of Forl\u00ec's soccer stadium cannot be determined from the given reasoning steps."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Stadio Tullo Morgagni"
+      },
+      "avg_retrieval_time": 2.853737711906433,
+      "avg_similarity": 10.892917444133925,
+      "max_similarity": 26.19795480202767,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 182,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.08402585983276367,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        24.743610077080408
+      ],
+      "max_similarity_scores": [
+        26.6417164135404
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Nicola Peltz",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine Brooklyn Beckham's partner in 2019."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Nicola Peltz"
+      },
+      "avg_retrieval_time": 0.08402585983276367,
+      "avg_similarity": 24.743610077080408,
+      "max_similarity": 26.6417164135404,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.004206418991088867,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 361,
+      "prompt_token_counts": [
+        361
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Czech Republic",
+        "ground_truth": "Luxembourg",
+        "fallback_answer": "Czech Republic",
+        "final_reason": "Bruno Fernandes's last international goal was scored on 24 September 2022 against the Czech Republic in a 4-0 win during the 2022\u201323 UEFA Nations League A."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Luxembourg"
+      },
+      "avg_retrieval_time": 0.0021032094955444336,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 361,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.15038537979125977,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        17.582421842273124
+      ],
+      "max_similarity_scores": [
+        18.018257756479777
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 146,
+      "prompt_token_counts": [
+        146
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "City of Manchester Stadium",
+        "ground_truth": "City of Manchester Stadium",
+        "fallback_answer": "City of Manchester Stadium",
+        "final_reason": "The reasoning step identifies the soccer stadium in Manchester as the City of Manchester Stadium."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "City of Manchester Stadium"
+      },
+      "avg_retrieval_time": 0.15038537979125977,
+      "avg_similarity": 17.582421842273124,
+      "max_similarity": 18.018257756479777,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 146,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 4.648937463760376,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 149,
+      "prompt_token_counts": [
+        149
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "1884",
+        "ground_truth": "1884",
+        "fallback_answer": "1884",
+        "final_reason": "The evidence document states that Limavady United F.C. has an inception date of 1884."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "1884"
+      },
+      "avg_retrieval_time": 4.648937463760376,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 149,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 5.5608742237091064,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 232,
+      "prompt_token_counts": [
+        232
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Ambrogino d'oro, Premio internazionale Giacinto Facchetti, Q44722148, Knight of the Order of Merit of the Italian Republic, Officer of the Order of Merit of the Italian Republic",
+        "ground_truth": "Bravo Award",
+        "fallback_answer": "Ambrogino d'oro, Premio internazionale Giacinto Facchetti, Q44722148, Knight of the Order of Merit of the Italian Republic, Officer of the Order of Merit of the Italian Republic",
+        "final_reason": "The evidence lists multiple awards received by Paolo Maldini, including the Ambrogino d'oro, Premio internazionale Giacinto Facchetti, Q44722148, Knight of the Order of Merit of the Italian Republic, and Officer of the Order of Merit of the Italian Republic."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Bravo Award"
+      },
+      "avg_retrieval_time": 5.5608742237091064,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 232,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 6.280008316040039,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.37040816326530607
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 160,
+      "prompt_token_counts": [
+        160
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Robert Gu\u00e9rin",
+        "ground_truth": "Robert Gu\u00e9rin",
+        "fallback_answer": "Robert Gu\u00e9rin",
+        "final_reason": "The first president of FIFA was Robert Gu\u00e9rin, as he was the earliest chairperson with a start time of 1904."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Robert Gu\u00e9rin"
+      },
+      "avg_retrieval_time": 6.280008316040039,
+      "avg_similarity": 0.37040816326530607,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 160,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 5.369048833847046,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 160,
+      "prompt_token_counts": [
+        160
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Victor Montagliani",
+        "ground_truth": "Victor Montagliani",
+        "fallback_answer": "Victor Montagliani",
+        "final_reason": "The reasoning step identifies Victor Montagliani as the current chairperson of CONCACAF, and since no successor is indicated, he is the current president."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Victor Montagliani"
+      },
+      "avg_retrieval_time": 5.369048833847046,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 160,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 4.487232685089111,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 142,
+      "prompt_token_counts": [
+        142
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "1905",
+        "ground_truth": "1905",
+        "fallback_answer": "10 March 1905",
+        "final_reason": "Chelsea FC was founded on 10 March 1905, so the year is 1905."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "ground_truth": "1905"
+      },
+      "avg_retrieval_time": 4.487232685089111,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 142,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 4.973552703857422,
+      "total_docs_searched": 11,
+      "avg_similarity_scores": [
+        1.0,
+        16.416109024172087,
+        18.4743553866154
+      ],
+      "max_similarity_scores": [
+        1.0,
+        17.957268764022935,
+        19.848491936254
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 221,
+      "prompt_token_counts": [
+        221
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Kingsmeadow is located in Kingston upon Thames, London.",
+        "ground_truth": "Fulham",
+        "fallback_answer": "",
+        "final_reason": "Chelsea Football Club's home stadium is Kingsmeadow, which is situated in the district of Kingston upon Thames in London."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Fulham"
+      },
+      "avg_retrieval_time": 1.6578509012858074,
+      "avg_similarity": 11.963488136929163,
+      "max_similarity": 19.848491936254,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 221,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.07764291763305664,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        22.08765352675657
+      ],
+      "max_similarity_scores": [
+        22.508747622849025
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 170,
+      "prompt_token_counts": [
+        170
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.33333333333333337,
+        "final_answer": "2021",
+        "ground_truth": "2021 FIFA Club World Cup",
+        "fallback_answer": "2021",
+        "final_reason": "Chelsea FC won their first FIFA Club World Cup in the 2021 tournament, which was held in February 2022."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.33333333333333337,
+        "ground_truth": "2021 FIFA Club World Cup"
+      },
+      "avg_retrieval_time": 0.07764291763305664,
+      "avg_similarity": 22.08765352675657,
+      "max_similarity": 22.508747622849025,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 170,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 4.4434661865234375,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 143,
+      "prompt_token_counts": [
+        143
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "final_answer": "10 March 1905",
+        "ground_truth": "1905",
+        "fallback_answer": "10 March 1905",
+        "final_reason": "Chelsea FC was founded on 10 March 1905."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "ground_truth": "1905"
+      },
+      "avg_retrieval_time": 4.4434661865234375,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 143,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 5.592908620834351,
+      "total_docs_searched": 23,
+      "avg_similarity_scores": [
+        0.16236050048203654
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 133,
+      "prompt_token_counts": [
+        133
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "SV R\u00f6dinghausen",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine the club that won the Regionalliga West in 2020."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "SV R\u00f6dinghausen"
+      },
+      "avg_retrieval_time": 5.592908620834351,
+      "avg_similarity": 0.16236050048203654,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 133,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.05876445770263672,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        0.45666666666666667,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 207,
+      "prompt_token_counts": [
+        207
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Barnsley F.C.",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to determine the match or the opposing team."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Barnsley F.C."
+      },
+      "avg_retrieval_time": 0.02938222885131836,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 207,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.14607787132263184,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        19.754360613662055,
+        13.022801268260475
+      ],
+      "max_similarity_scores": [
+        20.833466430000577,
+        14.189488004534017
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 149,
+      "prompt_token_counts": [
+        149
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Bank of America Stadium, Charlotte",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide any relevant information to determine the stadium name or its location."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Bank of America Stadium, Charlotte"
+      },
+      "avg_retrieval_time": 0.07303893566131592,
+      "avg_similarity": 16.388580940961265,
+      "max_similarity": 20.833466430000577,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 149,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.11078166961669922,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        14.646494426550817
+      ],
+      "max_similarity_scores": [
+        17.800873169722927
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 127,
+      "prompt_token_counts": [
+        127
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "David Tepper",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide any relevant information about the owner of the Charlotte Football Club."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "David Tepper"
+      },
+      "avg_retrieval_time": 0.11078166961669922,
+      "avg_similarity": 14.646494426550817,
+      "max_similarity": 17.800873169722927,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 127,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 4.132752180099487,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 144,
+      "prompt_token_counts": [
+        144
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Islam",
+        "ground_truth": "Islam",
+        "fallback_answer": "Islam",
+        "final_reason": "The evidence document directly states that N'Golo Kant\u00e9's religion or worldview is Islam."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Islam"
+      },
+      "avg_retrieval_time": 4.132752180099487,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 144,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 4.160582065582275,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        0.3397321428571428
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 162,
+      "prompt_token_counts": [
+        162
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Neymar",
+        "ground_truth": "Thiago Silva",
+        "fallback_answer": "Neymar",
+        "final_reason": "The evidence states that Neymar is the outgoing captain of the Brazil national football team, which implies he is the current captain."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Thiago Silva"
+      },
+      "avg_retrieval_time": 4.160582065582275,
+      "avg_similarity": 0.3397321428571428,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 162,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.09426283836364746,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        12.37968783896491
+      ],
+      "max_similarity_scores": [
+        15.053897142037144
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 137,
+      "prompt_token_counts": [
+        137
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Ra\u00fal",
+        "ground_truth": "El que nunca hace nada",
+        "fallback_answer": "",
+        "final_reason": "Ra\u00fal Gonz\u00e1lez is commonly known by his first name 'Ra\u00fal' in the soccer world, which serves as his pseudonym or nickname."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "El que nunca hace nada"
+      },
+      "avg_retrieval_time": 0.09426283836364746,
+      "avg_similarity": 12.37968783896491,
+      "max_similarity": 15.053897142037144,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 137,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 2.3425543308258057,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        0.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 151,
+      "prompt_token_counts": [
+        151
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Welsh Footballer of the Year",
+        "ground_truth": "Welsh Footballer of the Year",
+        "fallback_answer": "",
+        "final_reason": "Gareth Bale won the Football Association of Wales (FAW) honor 'Welsh Footballer of the Year' multiple times, specifically six times (2010, 2011, 2013, 2014, 2015, 2016)."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Welsh Footballer of the Year"
+      },
+      "avg_retrieval_time": 1.1712771654129028,
+      "avg_similarity": 0.22833333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 151,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.15297842025756836,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        19.59403201502182
+      ],
+      "max_similarity_scores": [
+        23.11190508036201
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 178,
+      "prompt_token_counts": [
+        178
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Le Coq Sportif",
+        "ground_truth": "Le Coq Sportif",
+        "fallback_answer": "Le Coq Sportif",
+        "final_reason": "The evidence states that Chelsea's kit was manufactured by Le Coq Sportif from 1981 to 1986, which includes the 1981-1983 period."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Le Coq Sportif"
+      },
+      "avg_retrieval_time": 0.15297842025756836,
+      "avg_similarity": 19.59403201502182,
+      "max_similarity": 23.11190508036201,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 178,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.10909271240234375,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        13.217899810384646
+      ],
+      "max_similarity_scores": [
+        14.805460613842012
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 163,
+      "prompt_token_counts": [
+        163
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Laws of the Game",
+        "ground_truth": "Laws of the Game",
+        "fallback_answer": "Laws of the Game",
+        "final_reason": "The official rules of soccer are called 'Laws of the Game', as indicated by the reasoning step that references IFAB's laws."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Laws of the Game"
+      },
+      "avg_retrieval_time": 0.10909271240234375,
+      "avg_similarity": 13.217899810384646,
+      "max_similarity": 14.805460613842012,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 163,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.0012409687042236328,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 153,
+      "prompt_token_counts": [
+        153
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "19th arrondissement of Paris",
+        "ground_truth": "19th arrondissement of Paris",
+        "fallback_answer": "19th arrondissement of Paris",
+        "final_reason": "The evidence directly states that Kylian Mbapp\u00e9's place of birth is the 19th arrondissement of Paris."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "19th arrondissement of Paris"
+      },
+      "avg_retrieval_time": 0.0012409687042236328,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 153,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.29464077949523926,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        22.258063409756783,
+        24.44831519852607
+      ],
+      "max_similarity_scores": [
+        23.116231305529837,
+        25.59609542917522
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 219,
+      "prompt_token_counts": [
+        219
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Alessandro Nesta",
+        "ground_truth": "Alessandro Nesta",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that Alessandro Nesta was the captain of S.S. Lazio in 2000, as he was referred to as the 'fan favourite captain' during that period."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Alessandro Nesta"
+      },
+      "avg_retrieval_time": 0.14732038974761963,
+      "avg_similarity": 23.353189304141427,
+      "max_similarity": 25.59609542917522,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 219,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 4.20675253868103,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        19.699535135345677,
+        0.611111111111111
+      ],
+      "max_similarity_scores": [
+        22.50171534369545,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 215,
+      "prompt_token_counts": [
+        215
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Golden Boy",
+        "ground_truth": "Golden Boy",
+        "fallback_answer": "Golden Boy",
+        "final_reason": "The reasoning steps indicate that Kylian Mbapp\u00e9 received the Golden Boy award in 2017, which is a soccer-related award for the best young footballer in Europe."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Golden Boy"
+      },
+      "avg_retrieval_time": 2.103376269340515,
+      "avg_similarity": 10.155323123228394,
+      "max_similarity": 22.50171534369545,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 215,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.38147783279418945,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        14.479473225610963,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        15.599277952397061,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 144,
+      "prompt_token_counts": [
+        144
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Eliteserien",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not identify the team or its league due to lack of relevant information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Eliteserien"
+      },
+      "avg_retrieval_time": 0.19073891639709473,
+      "avg_similarity": 7.468069946138815,
+      "max_similarity": 15.599277952397061,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 144,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.45587754249572754,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        13.318368217285274,
+        11.116776996200185
+      ],
+      "max_similarity_scores": [
+        14.6992389882863,
+        11.957286322099169
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 149,
+      "prompt_token_counts": [
+        149
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Rosenborg BK",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not provide any information about the title or the club, so the answer cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Rosenborg BK"
+      },
+      "avg_retrieval_time": 0.22793877124786377,
+      "avg_similarity": 12.21757260674273,
+      "max_similarity": 14.6992389882863,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 149,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 15.616357564926147,
+      "total_docs_searched": 7,
+      "avg_similarity_scores": [
+        0.75,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 249,
+      "prompt_token_counts": [
+        249
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6,
+        "final_answer": "Knight of the Legion of Honour, Golden Boy, Best Young Player Award",
+        "ground_truth": "Knight of the Legion of Honour,Best Young Player Award,Golden Boy",
+        "fallback_answer": "Knight of the Legion of Honour, Golden Boy, Best Young Player Award",
+        "final_reason": "Based on the reasoning steps, Kylian Mbapp\u00e9's full name is Kylian Mbapp\u00e9 Lottin, and the awards he received are Knight of the Legion of Honour, Golden Boy, and Best Young Player Award."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.6,
+        "ground_truth": "Knight of the Legion of Honour,Best Young Player Award,Golden Boy"
+      },
+      "avg_retrieval_time": 7.808178782463074,
+      "avg_similarity": 0.6033333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 249,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.11499142646789551,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        25.023123535892946
+      ],
+      "max_similarity_scores": [
+        26.347065457244035
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Egyptian Arabic",
+        "ground_truth": "Egyptian Arabic",
+        "fallback_answer": "",
+        "final_reason": "Mohamed Salah is an Egyptian footballer, and the native language of Egypt is Egyptian Arabic."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Egyptian Arabic"
+      },
+      "avg_retrieval_time": 0.11499142646789551,
+      "avg_similarity": 25.023123535892946,
+      "max_similarity": 26.347065457244035,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.12027859687805176,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        19.54774792636584
+      ],
+      "max_similarity_scores": [
+        22.41648312536409
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 133,
+      "prompt_token_counts": [
+        133
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Luis de la Fuente",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found to determine the current head coach of the Spanish Olympic football team."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Luis de la Fuente"
+      },
+      "avg_retrieval_time": 0.12027859687805176,
+      "avg_similarity": 19.54774792636584,
+      "max_similarity": 22.41648312536409,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 133,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.1640760898590088,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        22.75528141342815
+      ],
+      "max_similarity_scores": [
+        22.927791862286703
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 213,
+      "prompt_token_counts": [
+        213
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Thiago Silva",
+        "ground_truth": "Thiago Silva",
+        "fallback_answer": "Thiago Silva",
+        "final_reason": "The reasoning steps indicate that Thiago Silva is the only captain mentioned, but the evidence does not confirm his captaincy in 2021. However, since the question asks for the captain in 2021 and no other captain is provided, the answer is inferred as Thiago Silva based on the available information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Thiago Silva"
+      },
+      "avg_retrieval_time": 0.1640760898590088,
+      "avg_similarity": 22.75528141342815,
+      "max_similarity": 22.927791862286703,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 213,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.08923578262329102,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        27.99794358283185
+      ],
+      "max_similarity_scores": [
+        29.194764761967868
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 127,
+      "prompt_token_counts": [
+        127
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Ezra Hendrickson",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to determine the current head coach of Chicago Fire."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Ezra Hendrickson"
+      },
+      "avg_retrieval_time": 0.08923578262329102,
+      "avg_similarity": 27.99794358283185,
+      "max_similarity": 29.194764761967868,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 127,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 3.456188678741455,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        0.0
+      ],
+      "max_similarity_scores": [
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 199,
+      "prompt_token_counts": [
+        199
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Marco Materazzi",
+        "ground_truth": "Marco Materazzi",
+        "fallback_answer": "Marco Materazzi",
+        "final_reason": "Zinedine Zidane headbutted Marco Materazzi during the 2006 FIFA World Cup final."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Marco Materazzi"
+      },
+      "avg_retrieval_time": 3.456188678741455,
+      "avg_similarity": 0.0,
+      "max_similarity": 0.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 199,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 3.9156601428985596,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        0.0
+      ],
+      "max_similarity_scores": [
+        0.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 192,
+      "prompt_token_counts": [
+        192
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Marco Materazzi",
+        "ground_truth": "Marco Materazzi",
+        "fallback_answer": "Marco Materazzi",
+        "final_reason": "Zinedine Zidane headbutted Marco Materazzi during the 2006 FIFA World Cup final."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Marco Materazzi"
+      },
+      "avg_retrieval_time": 3.9156601428985596,
+      "avg_similarity": 0.0,
+      "max_similarity": 0.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 192,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 9.208879709243774,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        12.18160832042606,
+        1.0
+      ],
+      "max_similarity_scores": [
+        13.439271852455395,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 216,
+      "prompt_token_counts": [
+        216
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "United Kingdom of Great Britain and Ireland",
+        "ground_truth": "Oxford University",
+        "fallback_answer": "United Kingdom of Great Britain and Ireland",
+        "final_reason": "The term 'soccer' originated from Oxford '-er' slang at the University of Oxford in England, which was part of the United Kingdom of Great Britain and Ireland at that time."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Oxford University"
+      },
+      "avg_retrieval_time": 4.604439854621887,
+      "avg_similarity": 6.59080416021303,
+      "max_similarity": 13.439271852455395,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 216,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 4.254356145858765,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 144,
+      "prompt_token_counts": [
+        144
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "1878",
+        "ground_truth": "1902",
+        "fallback_answer": "1878",
+        "final_reason": "The founding year of Manchester United F.C. is 1878."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "1902"
+      },
+      "avg_retrieval_time": 4.254356145858765,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 144,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.29638218879699707,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        14.479473225610963,
+        15.236568042933351
+      ],
+      "max_similarity_scores": [
+        15.599277952397061,
+        18.2484893639217
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 154,
+      "prompt_token_counts": [
+        154
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Jay DeMerit",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found to identify the team or the first captain. Therefore, the answer cannot be determined from the given information."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Jay DeMerit"
+      },
+      "avg_retrieval_time": 0.14819109439849854,
+      "avg_similarity": 14.858020634272158,
+      "max_similarity": 18.2484893639217,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 154,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.16927123069763184,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        15.940138326403098,
+        16.64796954731088
+      ],
+      "max_similarity_scores": [
+        17.18239834059332,
+        20.930927896128413
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 180,
+      "prompt_token_counts": [
+        180
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "No relevant information found",
+        "ground_truth": "University of Illinois Chicago",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps identified the person as Xavi, but no information about where he played college soccer was found in the evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "University of Illinois Chicago"
+      },
+      "avg_retrieval_time": 0.08463561534881592,
+      "avg_similarity": 16.29405393685699,
+      "max_similarity": 20.930927896128413,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 180,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.05372786521911621,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        19.085985171153517,
+        29.676790166235275
+      ],
+      "max_similarity_scores": [
+        23.579199143302116,
+        45.91100747843986
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 186,
+      "prompt_token_counts": [
+        186
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Northern Irish broadcaster",
+        "ground_truth": "television presenter",
+        "fallback_answer": "Christine Lampard",
+        "final_reason": "Christine Bleakley is identified as a Northern Irish broadcaster in the evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "television presenter"
+      },
+      "avg_retrieval_time": 0.026863932609558105,
+      "avg_similarity": 24.381387668694394,
+      "max_similarity": 45.91100747843986,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 186,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 4.641556262969971,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 141,
+      "prompt_token_counts": [
+        141
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "0711",
+        "ground_truth": "0711",
+        "fallback_answer": "0711",
+        "final_reason": "The evidence document states that Stuttgart has a local dialing code of '0711'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "0711"
+      },
+      "avg_retrieval_time": 4.641556262969971,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 141,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.19975662231445312,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        16.559690812740875,
+        12.859059084169036
+      ],
+      "max_similarity_scores": [
+        21.4182567505131,
+        15.881950828044506
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 171,
+      "prompt_token_counts": [
+        171
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Merseyside",
+        "ground_truth": "Norfolk",
+        "fallback_answer": "Merseyside",
+        "final_reason": "The entity is Liverpool, and it is part of the metropolitan county of Merseyside."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Norfolk"
+      },
+      "avg_retrieval_time": 0.09987831115722656,
+      "avg_similarity": 14.709374948454956,
+      "max_similarity": 21.4182567505131,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 171,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 3.3314900398254395,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 159,
+      "prompt_token_counts": [
+        159
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Hans-Joachim Watzke",
+        "ground_truth": "Reinhard Rauball",
+        "fallback_answer": "Hans-Joachim Watzke",
+        "final_reason": "The evidence states that Borussia Dortmund has a chairperson, Hans-Joachim Watzke, which is the president of the club."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Reinhard Rauball"
+      },
+      "avg_retrieval_time": 3.3314900398254395,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 159,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.1680009365081787,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        26.7949138203992
+      ],
+      "max_similarity_scores": [
+        32.27715460534086
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 135,
+      "prompt_token_counts": [
+        135
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Opel",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to determine the sleeve sponsor of Borussia Dortmund in 2022."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Opel"
+      },
+      "avg_retrieval_time": 0.1680009365081787,
+      "avg_similarity": 26.7949138203992,
+      "max_similarity": 32.27715460534086,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 135,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.1257004737854004,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        34.1162581786822
+      ],
+      "max_similarity_scores": [
+        34.95157288485003
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 133,
+      "prompt_token_counts": [
+        133
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Leonardo Jardim",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to determine the head coach of Al Hilal SFC team."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Leonardo Jardim"
+      },
+      "avg_retrieval_time": 0.1257004737854004,
+      "avg_similarity": 34.1162581786822,
+      "max_similarity": 34.95157288485003,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 133,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.12880492210388184,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        26.280401720171447
+      ],
+      "max_similarity_scores": [
+        29.65742241854502
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 134,
+      "prompt_token_counts": [
+        134
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Patxi Salinas",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to determine the head coach of Athletic Bilbao in 2021."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Patxi Salinas"
+      },
+      "avg_retrieval_time": 0.12880492210388184,
+      "avg_similarity": 26.280401720171447,
+      "max_similarity": 29.65742241854502,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 134,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.17093610763549805,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        29.608546638078373
+      ],
+      "max_similarity_scores": [
+        31.82156470411723
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 173,
+      "prompt_token_counts": [
+        173
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "final_answer": "Michel Platini and Gianni Infantino",
+        "ground_truth": "Michel Platini;Gianni Infantino",
+        "fallback_answer": "Michel Platini and Gianni Infantino",
+        "final_reason": "The evidence states that the idea of expanding the tournament was suggested by Michel Platini in 2013 and by Gianni Infantino in 2016."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "ground_truth": "Michel Platini;Gianni Infantino"
+      },
+      "avg_retrieval_time": 0.17093610763549805,
+      "avg_similarity": 29.608546638078373,
+      "max_similarity": 31.82156470411723,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 173,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.0010535717010498047,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 130,
+      "prompt_token_counts": [
+        130
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Fenerbah\u00e7e S.K.",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found to determine Mesut \u00d6zil's current club."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Fenerbah\u00e7e S.K."
+      },
+      "avg_retrieval_time": 0.0010535717010498047,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 130,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.06311583518981934,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        17.4179182182748
+      ],
+      "max_similarity_scores": [
+        19.75856284525588
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 129,
+      "prompt_token_counts": [
+        129
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Turks in Germany",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine Mesut \u00d6zil's ethnic group."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Turks in Germany"
+      },
+      "avg_retrieval_time": 0.06311583518981934,
+      "avg_similarity": 17.4179182182748,
+      "max_similarity": 19.75856284525588,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 129,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.12593746185302734,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        16.545099646133544
+      ],
+      "max_similarity_scores": [
+        18.29671690560815
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 159,
+      "prompt_token_counts": [
+        159
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Arsenal",
+        "ground_truth": "Fenerbah\u00e7e S.K.",
+        "fallback_answer": "Arsenal",
+        "final_reason": "The reasoning step indicates that Mesut \u00d6zil's current club is Arsenal, as mentioned in the Arsenal F.C. document."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Fenerbah\u00e7e S.K."
+      },
+      "avg_retrieval_time": 0.12593746185302734,
+      "avg_similarity": 16.545099646133544,
+      "max_similarity": 18.29671690560815,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 159,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 9.878917217254639,
+      "total_docs_searched": 4,
+      "avg_similarity_scores": [
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 167,
+      "prompt_token_counts": [
+        167
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Princess of Asturias Award for Sports",
+        "ground_truth": "Princess of Asturias Award for Sports",
+        "fallback_answer": "Princess of Asturias Award for Sports",
+        "final_reason": "The reasoning step indicates that Xavi received the Princess of Asturias Award for Sports in 2012, as confirmed by the point in time metadata."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Princess of Asturias Award for Sports"
+      },
+      "avg_retrieval_time": 9.878917217254639,
+      "avg_similarity": 0.5208333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 167,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 4.11773681640625,
+      "total_docs_searched": 2,
+      "avg_similarity_scores": [
+        0.75
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 137,
+      "prompt_token_counts": [
+        137
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Axel Kahn",
+        "ground_truth": "Axel Kahn",
+        "fallback_answer": "Axel Kahn",
+        "final_reason": "The evidence documents explicitly state that Oliver Kahn has a sibling relationship with Axel Kahn."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "ground_truth": "Axel Kahn"
+      },
+      "avg_retrieval_time": 4.11773681640625,
+      "avg_similarity": 0.75,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 137,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 4.471525192260742,
+      "total_docs_searched": 18,
+      "avg_similarity_scores": [
+        15.940138326403098,
+        0.24462567347182732
+      ],
+      "max_similarity_scores": [
+        17.18239834059332,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 218,
+      "prompt_token_counts": [
+        218
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.28571428571428575,
+        "final_answer": "FC Barcelona B",
+        "ground_truth": "Sporting de Gij\u00f3n B",
+        "fallback_answer": "FC Barcelona B",
+        "final_reason": "The person referred to as 'he' is Xavi, and the team he initially played on is FC Barcelona B."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.28571428571428575,
+        "ground_truth": "Sporting de Gij\u00f3n B"
+      },
+      "avg_retrieval_time": 2.235762596130371,
+      "avg_similarity": 8.092381999937462,
+      "max_similarity": 17.18239834059332,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 218,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 1.342501163482666,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        15.90691835760604
+      ],
+      "max_similarity_scores": [
+        0.0,
+        17.501959875806268
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 168,
+      "prompt_token_counts": [
+        168
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Escuela de F\u00fatbol de Mareo",
+        "fallback_answer": "",
+        "final_reason": "The question lacks a clear subject; 'their' cannot be resolved to a specific team, and the subquestion is incomplete, so the home stadium cannot be identified."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Escuela de F\u00fatbol de Mareo"
+      },
+      "avg_retrieval_time": 0.671250581741333,
+      "avg_similarity": 7.95345917880302,
+      "max_similarity": 17.501959875806268,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 168,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.20850801467895508,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        14.64621533658286,
+        10.999671230457
+      ],
+      "max_similarity_scores": [
+        15.599277952397061,
+        12.880770888354508
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 143,
+      "prompt_token_counts": [
+        143
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Miguel D\u00edaz Negrete",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps did not identify the stadium or provide any information about its architect, so the answer cannot be determined."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Miguel D\u00edaz Negrete"
+      },
+      "avg_retrieval_time": 0.10425400733947754,
+      "avg_similarity": 12.82294328351993,
+      "max_similarity": 15.599277952397061,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 143,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.11568307876586914,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        36.75471663826385
+      ],
+      "max_similarity_scores": [
+        39.61363915795379
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 170,
+      "prompt_token_counts": [
+        170
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Maurizio Sarri",
+        "ground_truth": "Ivan Juri\u0107",
+        "fallback_answer": "Maurizio Sarri",
+        "final_reason": "The evidence states that Maurizio Sarri was appointed as new head coach when a new owner acquired the club in late 2007."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Ivan Juri\u0107"
+      },
+      "avg_retrieval_time": 0.11568307876586914,
+      "avg_similarity": 36.75471663826385,
+      "max_similarity": 39.61363915795379,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 170,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 2.5881171226501465,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        10.962630288823155
+      ],
+      "max_similarity_scores": [
+        0.0,
+        12.737403388825687
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 149,
+      "prompt_token_counts": [
+        149
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0,
+        "final_answer": "Glasgow",
+        "ground_truth": "Glasgow",
+        "fallback_answer": "",
+        "final_reason": "The world's first international football match was played between Scotland and England on 30 November 1872 at Hamilton Crescent in Partick, Glasgow, Scotland."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Glasgow"
+      },
+      "avg_retrieval_time": 1.2940585613250732,
+      "avg_similarity": 5.481315144411577,
+      "max_similarity": 12.737403388825687,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 149,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.11716747283935547,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        34.649648665596246
+      ],
+      "max_similarity_scores": [
+        35.16269873313793
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 131,
+      "prompt_token_counts": [
+        131
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "Laurie Calloway",
+        "fallback_answer": "",
+        "final_reason": "No relevant information found in the reasoning steps to determine the first coach of San Jose Earthquakes."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Laurie Calloway"
+      },
+      "avg_retrieval_time": 0.11716747283935547,
+      "avg_similarity": 34.649648665596246,
+      "max_similarity": 35.16269873313793,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 131,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.20048022270202637,
+      "total_docs_searched": 10,
+      "avg_similarity_scores": [
+        22.537761889070445,
+        21.98354469088896
+      ],
+      "max_similarity_scores": [
+        25.962421598239402,
+        23.53125403400442
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 197,
+      "prompt_token_counts": [
+        197
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5,
+        "final_answer": "CA Paris",
+        "ground_truth": "CA Paris-Charenton",
+        "fallback_answer": "",
+        "final_reason": "The first official match of FC Nantes was against CA Paris, as stated in the evidence for q1."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "CA Paris-Charenton"
+      },
+      "avg_retrieval_time": 0.10024011135101318,
+      "avg_similarity": 22.2606532899797,
+      "max_similarity": 25.962421598239402,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 197,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 3.497741937637329,
+      "total_docs_searched": 1,
+      "avg_similarity_scores": [
+        1.0
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 151,
+      "prompt_token_counts": [
+        151
+      ],
+      "evaluation_metrics": {
+        "exact_match": 1.0,
+        "f1": 0.5,
+        "final_answer": "Glory Glory",
+        "ground_truth": "Glory Glory",
+        "fallback_answer": "Glory Glory",
+        "final_reason": "The evidence document directly states that the theme music of Manchester United F.C. is 'Glory Glory'."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 1.0,
+        "f1": 0.5,
+        "ground_truth": "Glory Glory"
+      },
+      "avg_retrieval_time": 3.497741937637329,
+      "avg_similarity": 1.0,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 151,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.0016727447509765625,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 135,
+      "prompt_token_counts": [
+        135
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Unknown",
+        "ground_truth": "\u00a336.9 million",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to determine the transfer fee paid by Liverpool F.C. for Mohamed Salah."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "\u00a336.9 million"
+      },
+      "avg_retrieval_time": 0.0016727447509765625,
+      "avg_similarity": 0.45666666666666667,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 135,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 4.205084800720215,
+      "total_docs_searched": 4,
+      "avg_similarity_scores": [
+        0.5208333333333333
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 164,
+      "prompt_token_counts": [
+        164
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "Veljko Paunovi\u0107",
+        "ground_truth": "Ezra Hendrickson",
+        "fallback_answer": "Veljko Paunovi\u0107",
+        "final_reason": "The evidence directly states that Veljko Paunovi\u0107 was the head coach of the Chicago Fire Soccer Club."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Ezra Hendrickson"
+      },
+      "avg_retrieval_time": 4.205084800720215,
+      "avg_similarity": 0.5208333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 164,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 10.173026084899902,
+      "total_docs_searched": 8,
+      "avg_similarity_scores": [
+        0.3397321428571428
+      ],
+      "max_similarity_scores": [
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 196,
+      "prompt_token_counts": [
+        196
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.8571428571428571,
+        "final_answer": "FC Bayern Munich",
+        "ground_truth": "FC Bayern Munich II",
+        "fallback_answer": "FC Bayern Munich",
+        "final_reason": "Thomas M\u00fcller was a member of FC Bayern Munich starting 15 August 2008, which is within 2008, and this is the primary club team he played for."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.8571428571428571,
+        "ground_truth": "FC Bayern Munich II"
+      },
+      "avg_retrieval_time": 10.173026084899902,
+      "avg_similarity": 0.3397321428571428,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 196,
+      "sq1_score": 0.0,
+      "sq2_score": 0.5,
+      "total_score": 0.5,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 0.10815095901489258,
+      "total_docs_searched": 5,
+      "avg_similarity_scores": [
+        23.03460285903877
+      ],
+      "max_similarity_scores": [
+        24.21515601406633
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 131,
+      "prompt_token_counts": [
+        131
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Luis Mart\u00edn",
+        "fallback_answer": "",
+        "final_reason": "No relevant information was found in the reasoning steps to identify the fitness coach of the Argentina national football team."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Luis Mart\u00edn"
+      },
+      "avg_retrieval_time": 0.10815095901489258,
+      "avg_similarity": 23.03460285903877,
+      "max_similarity": 24.21515601406633,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 131,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    },
+    {
+      "total_retrieval_time": 2.3496479988098145,
+      "total_docs_searched": 6,
+      "avg_similarity_scores": [
+        0.0,
+        0.45666666666666667
+      ],
+      "max_similarity_scores": [
+        0.0,
+        1.0
+      ],
+      "subquery_metrics": [],
+      "total_prompt_tokens": 182,
+      "prompt_token_counts": [
+        182
+      ],
+      "evaluation_metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "final_answer": "unknown",
+        "ground_truth": "Division 1 F\u00e9minine",
+        "fallback_answer": "",
+        "final_reason": "The reasoning steps indicate that no relevant information was found about Paris Saint-Germain F\u00e9minine, and the subsequent question about division lacks an entity. Therefore, the division cannot be determined from the provided evidence."
+      },
+      "evaluation_metrics_fallback": {
+        "exact_match": 0.0,
+        "f1": 0.0,
+        "ground_truth": "Division 1 F\u00e9minine"
+      },
+      "avg_retrieval_time": 1.1748239994049072,
+      "avg_similarity": 0.22833333333333333,
+      "max_similarity": 1.0,
+      "avg_prompt_tokens": 0.0,
+      "max_prompt_tokens": 0,
+      "min_prompt_tokens": 0,
+      "fusion_prompt_tokens": 182,
+      "sq1_score": 0.0,
+      "sq2_score": 0.0,
+      "total_score": 0.0,
+      "execution_time": 1.26637684751302
+    }
+  ]
+}

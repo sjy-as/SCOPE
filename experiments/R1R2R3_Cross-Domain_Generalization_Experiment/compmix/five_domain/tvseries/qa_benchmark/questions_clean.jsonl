@@ -1,0 +1,100 @@
+{"id": "dev-5168", "question": "What is the name of the first album of the Jeff Russo?", "answer": "Lemon Parade", "source": "table", "source_ids": ["T0337"]}
+{"id": "dev-5315", "question": "Who is the author of the tv series Sky Castle?", "answer": "Yoo Hyun-mi", "source": "kg", "source_ids": [["E010560", "P50", "E003599"]]}
+{"id": "dev-5316", "question": "who is the director of episode 1 in the tv series Sky Castle?", "answer": "Jo Hyun Tak", "source": "kg", "source_ids": [["E010560", "P57", "E009661"]]}
+{"id": "dev-5317", "question": "Which tv series was followed by the tv series Sky Castle?", "answer": "Legal High", "source": "kg", "source_ids": [["E010560", "P156", "E010567"], ["E010567", "P155", "E010560"]]}
+{"id": "dev-5319", "question": "who distributes the tv series Sky Castle?", "answer": "JTBC", "source": "kg", "source_ids": [["E010560", "P750", "E004661"], ["E010560", "P449", "E004661"]]}
+{"id": "dev-5320", "question": "Author of the tv series Sky Castle?", "answer": "Yoo Hyun-mi", "source": "kg", "source_ids": [["E010560", "P50", "E003599"]]}
+{"id": "dev-5525", "question": "Who directs the tv series The Tunnel?", "answer": "Dominik Moll", "source": "kg", "source_ids": [["E002853", "P57", "E011994"]]}
+{"id": "dev-5527", "question": "Who Composes the music in the tv series The Tunnel?", "answer": "Adrian Johnston", "source": "kg", "source_ids": [["E002853", "P86", "E007615"]]}
+{"id": "dev-5528", "question": "Who is the Original Broadcaster of Season 1 of the tv series The Tunnel?", "answer": "Sky Atlantic", "source": "kg", "source_ids": [["E002853", "P449", "E007352"]]}
+{"id": "dev-5530", "question": "Who is the director of tv series The Tunnel?", "answer": "Dominik Moll", "source": "kg", "source_ids": [["E002853", "P57", "E011994"]]}
+{"id": "dev-5828", "question": "In which film Benedict Wong got his debut role?", "answer": "Kiss Kiss (Bang Bang)", "source": "table", "source_ids": ["T0097"]}
+{"id": "dev-5917", "question": "Which character in the TV series The Marvelous Mrs. Maisel was played by Michael Arden", "answer": "Milken Prince", "source": "table", "source_ids": ["T0535"]}
+{"id": "dev-5974", "question": "What is the genre of the tv series On the Wings of Love?", "answer": "romantic comedy", "source": "doc", "source_ids": ["D10587", "D11237", "D07723"]}
+{"id": "dev-5979", "question": "Which genre is the tv series On the Wings of Love?", "answer": "romantic comedy", "source": "doc", "source_ids": ["D10587", "D11237", "D07723"]}
+{"id": "dev-6035", "question": "Who is the director of episode one of the tv series Ekaterina?", "answer": "Aleksandr Baranov", "source": "kg", "source_ids": [["E006515", "P57", "E007943"]]}
+{"id": "dev-6036", "question": "What is the genre of the tv series Ekaterina?", "answer": "historical film", "source": "kg", "source_ids": [["E006515", "P136", "E003533"]]}
+{"id": "dev-6037", "question": "Who is the creator of the tv series Ekaterina?", "answer": "Anton Zlatopolsky", "source": "kg", "source_ids": [["E002782", "P373", "E001047"], ["E002782", "P31", "E008851"], ["E002782", "P106", "E002485"]]}
+{"id": "dev-6038", "question": "Who is the original broadcaster of the tv series Ekaterina?", "answer": "Russia-1", "source": "kg", "source_ids": [["E006515", "P449", "E004612"]]}
+{"id": "dev-6098", "question": "What genre does the Hellbound  television show  belong to?", "answer": "hard rock", "source": "kg", "source_ids": [["E004138", "P136", "E012917"]]}
+{"id": "dev-6368", "question": "What is the main cast name in the tv series Tribes of Europa?", "answer": "Emilio Sakraya", "source": "kg", "source_ids": [["E001367", "P161", "E003036"]]}
+{"id": "dev-6456", "question": "What is the name of the role that the actor Nestor Carbonell played in the Lost series?", "answer": "Richard Alpert", "source": "kg", "source_ids": [["E009569", "P175", "E004902"]]}
+{"id": "dev-6457", "question": "In which sitcom did the actor Nestor Carbonell play the role of Luis Rivera?", "answer": "Suddenly Susan", "source": "kg", "source_ids": [["E011278", "P161", "E004902"]]}
+{"id": "test-6724", "question": "Number of episodes in third season of Third Watch?", "answer": "22", "source": "table", "source_ids": ["T0840"]}
+{"id": "test-6729", "question": "Third Watch how many episodes in third season?", "answer": "22", "source": "table", "source_ids": ["T0840"]}
+{"id": "test-6994", "question": "Who played the titular character in Anne with an E?", "answer": "Amybeth McNulty", "source": "kg", "source_ids": [["E006202", "P161", "E006205"], ["E012424", "P175", "E006205"]]}
+{"id": "test-6996", "question": "What show was Dalila Bella in before Anne with an E?", "answer": "Ready Jet Go!", "source": "table", "source_ids": ["T0167"]}
+{"id": "test-7087", "question": "Which is the first movie of Paul Scheuring as writer?", "answer": "Den of Thieves", "source": "table", "source_ids": ["T0610"]}
+{"id": "test-7173", "question": "Who is lead actor of the TV series Scam 1992?", "answer": "Pratik Gandhi", "source": "kg", "source_ids": [["E001223", "P161", "E004499"], ["E004499", "P800", "E001223"]]}
+{"id": "test-7174", "question": "Who directed the TV series Scam 1992?", "answer": "Hansal Mehta", "source": "kg", "source_ids": [["E001223", "P57", "E003356"]]}
+{"id": "test-7177", "question": "TV series Scam 1992 is based on which incident?", "answer": "1992 Indian stock market scam", "source": "kg", "source_ids": [["E001223", "P144", "E013056"]]}
+{"id": "test-7178", "question": "lead actor of Scam 1992?", "answer": "Pratik Gandhi", "source": "kg", "source_ids": [["E001223", "P161", "E004499"], ["E004499", "P800", "E001223"]]}
+{"id": "test-7206", "question": "Who was the founder of HBO?", "answer": "Charles Dolan", "source": "kg", "source_ids": [["E002217", "P31", "E008851"], ["E002217", "P19", "E007613"], ["E002217", "P569", "E000416"]]}
+{"id": "test-7207", "question": "Who played the role of Eddard Stark in Game of Thrones?", "answer": "Sean Bean", "source": "kg", "source_ids": [["E004079", "P21", "E011442"], ["E004079", "P27", "E002737"], ["E004079", "P19", "E010119"]]}
+{"id": "test-7443", "question": "Where does the Mary Tyler Moore Show take place?", "answer": "Minneapolis", "source": "doc", "source_ids": ["D01573", "D08641", "D02736"]}
+{"id": "test-7448", "question": "What is the location of the Mary Tyler Moore show?", "answer": "Minneapolis", "source": "doc", "source_ids": ["D01573", "D08641", "D02736"]}
+{"id": "test-7503", "question": "Who is the director of the TV series Kota Factory?", "answer": "Raghav SubbuRaghav Subbu", "source": "kg", "source_ids": [["E011337", "P31", "E009876"], ["E011337", "P1113", "E000013"], ["E011337", "P495", "E011613"]]}
+{"id": "test-7507", "question": "Which is the Production company of the TV series Kota Factory?", "answer": "The Viral Fever", "source": "kg", "source_ids": [["E011337", "P272", "E004278"]]}
+{"id": "test-7508", "question": "Director of the TV series Kota Factory?", "answer": "Raghav SubbuRaghav Subbu", "source": "kg", "source_ids": [["E011337", "P31", "E009876"], ["E011337", "P1113", "E000013"], ["E011337", "P495", "E011613"]]}
+{"id": "test-7654", "question": "Who is the creator of TV Series Money Heist?", "answer": "Álex Pina", "source": "kg", "source_ids": [["E008501", "P31", "E008851"], ["E008501", "P373", "E001168"], ["E008501", "P21", "E011442"]]}
+{"id": "test-7655", "question": "Which award is nominated for TV Series Money Heist?", "answer": "Feroz Awards", "source": "kg", "source_ids": [["E003013", "P31", "E001697"], ["E003013", "P31", "E005255"], ["E003013", "P571", "E000654"]]}
+{"id": "test-8017", "question": "Who composes the music in the  tv series Barbarians?", "answer": "Ali N. Aşkın", "source": "kg", "source_ids": [["E013745", "P86", "E005860"]]}
+{"id": "test-8075", "question": "Who are the lead actors of the TV series Decoupled?", "answer": "R. Madhavan; Surveen Chawla", "source": "doc", "source_ids": ["D04020"]}
+{"id": "test-8076", "question": "Who played the character of Arya Iyer in Decoupled?", "answer": "R. Madhavan", "source": "doc", "source_ids": ["D04020"]}
+{"id": "test-8460", "question": "What was the character Justin Chatwin played in Another Life series?", "answer": "a scientist employed by United States Interstellar Command", "source": "doc", "source_ids": ["D10184", "D08080"]}
+{"id": "test-8520", "question": "What network did Jamie Kellner run after The WB?", "answer": "Turner Broadcasting System", "source": "doc", "source_ids": ["D04381", "D08079"]}
+{"id": "test-8676", "question": "Who is the presenter of \"Penn & Teller: Fool Us?\"", "answer": "Alyson Hannigan", "source": "kg", "source_ids": [["E011941", "P371", "E004316"]]}
+{"id": "test-8686", "question": "Presenter on \"Penn & Teller: Fool Us?\"", "answer": "Alyson Hannigan", "source": "kg", "source_ids": [["E011941", "P371", "E004316"]]}
+{"id": "test-8737", "question": "What actor plays Lady Mary in the TV series Downton Actor?", "answer": "Michelle Dockery", "source": "table", "source_ids": ["T0454"]}
+{"id": "test-8793", "question": "What was Cherami Leigh's debut role?", "answer": "Shiki", "source": "table", "source_ids": ["T0143"]}
+{"id": "test-8850", "question": "Ernest Gold won an Academy Award for scoring which film?", "answer": "Exodus", "source": "kg", "source_ids": [["E004706", "P166", "E004923"], ["E004706", "P1411", "E004923"], ["E010064", "P175", "E004706"]]}
+{"id": "test-9116", "question": "What band played the opening song for How I Met Your Mother?", "answer": "The Solids", "source": "kg", "source_ids": [["E013024", "P31", "E004696"], ["E013024", "P571", "E000546"], ["E013024", "P495", "E006574"]]}
+{"id": "test-9172", "question": "What was Chi McBride tv debut?", "answer": "The Fresh Prince of Bel-Air", "source": "table", "source_ids": ["T0145"]}
+{"id": "test-9340", "question": "What program did the first season premier episode of Teen Wolf follow?", "answer": "2011 MTV Movie Awards", "source": "doc", "source_ids": ["D05491"]}
+{"id": "train-1339", "question": "what is the Nationality of Alba August?", "answer": "Sweden", "source": "kg", "source_ids": [["E003166", "P27", "E007159"]]}
+{"id": "train-1548", "question": "what is the genre of the TV show The Tunnel?", "answer": "drama television series,LGBTI+ related TV series", "source": "kg", "source_ids": [["E002853", "P136", "E013037"]]}
+{"id": "train-1549", "question": "Who is the original broadcaster of the he Tunnel tv series?", "answer": "Sky Atlantic , Canal+", "source": "kg", "source_ids": [["E002853", "P449", "E001328"]]}
+{"id": "train-1551", "question": "Who is the director of the Tunnel tv series?", "answer": "Dominik Moll", "source": "kg", "source_ids": [["E002853", "P57", "E011994"]]}
+{"id": "train-1907", "question": "Who directs season 1 episode \"Welcome to Matheson\" in the tv series locke & key?", "answer": "Michael Morris", "source": "kg", "source_ids": [["E010400", "P57", "E011754"]]}
+{"id": "train-1912", "question": "Director of season 1 episode 1 in the tv series locke & key?", "answer": "Michael Morris", "source": "kg", "source_ids": [["E010400", "P57", "E011754"]]}
+{"id": "train-1939", "question": "What city was Good Morning, Miss Bliss set?", "answer": "Indianapolis", "source": "doc", "source_ids": ["D09824"]}
+{"id": "train-201", "question": "What is the name of Sofia Vergara's husband whom she married in 2015?", "answer": "Joe Manganiello", "source": "kg", "source_ids": [["E005100", "P26", "E008428"], ["E008428", "P26", "E005100"]]}
+{"id": "train-2266", "question": "What was their first well popular series produced for the USA network?", "answer": "Duckman", "source": "kg", "source_ids": [["E013646", "P272", "E003652"]]}
+{"id": "train-228", "question": "who was the actor of Detective Robert Parker in Unbelievable?", "answer": "Eric Lange", "source": "doc", "source_ids": ["D04660", "D05240"]}
+{"id": "train-233", "question": "who played Detective Robert Parker in Unbelievable?", "answer": "Eric Lange", "source": "doc", "source_ids": ["D04660", "D05240"]}
+{"id": "train-2447", "question": "Who directed Caretaker, Part I?", "answer": "Winrich Kolbe", "source": "kg", "source_ids": [["E008023", "P57", "E003743"]]}
+{"id": "train-2750", "question": "Who played the character of Krishna of Goloka in RadhaKrishn?", "answer": "Himanshu Soni", "source": "doc", "source_ids": ["D03921"]}
+{"id": "train-2868", "question": "Who is the creator of Money Heist?", "answer": "Álex Pina", "source": "kg", "source_ids": [["E008501", "P31", "E008851"], ["E008501", "P373", "E001168"], ["E008501", "P21", "E011442"]]}
+{"id": "train-2873", "question": "Who is the director of money heist?", "answer": "Álex Pina", "source": "kg", "source_ids": [["E008501", "P31", "E008851"], ["E008501", "P373", "E001168"], ["E008501", "P21", "E011442"]]}
+{"id": "train-2989", "question": "who is the creator of Emily in Paris ?", "answer": "Darren Star", "source": "kg", "source_ids": [["E011290", "P170", "E008234"]]}
+{"id": "train-2990", "question": "who is the producer of Emily in Paris series?", "answer": "Stephen Brown", "source": "kg", "source_ids": [["E011290", "P162", "E012333"]]}
+{"id": "train-3020", "question": "Who created the series?", "answer": "Donald P. Bellisario", "source": "kg", "source_ids": [["E013481", "P170", "E011893"]]}
+{"id": "train-3139", "question": "How many daily views did the Rachael Ray Show get on average during its first season?", "answer": "2.6 million", "source": "doc", "source_ids": ["D02608"]}
+{"id": "train-3140", "question": "What award did The Rachael Ray Show win in 2008?", "answer": "Daytime Emmy Award for Outstanding Talk Show Entertainment", "source": "table", "source_ids": ["T0636", "T0635"]}
+{"id": "train-3261", "question": "Which is the first film as writer of Leena Gangopadhyay?", "answer": "Bhalo Theko", "source": "table", "source_ids": ["T0437"]}
+{"id": "train-3287", "question": "Who is the creator of the tv series wizards of waverly place?", "answer": "Todd J. Greenwald", "source": "kg", "source_ids": [["E006711", "P31", "E008851"], ["E006711", "P21", "E011442"], ["E006711", "P735", "E003966"]]}
+{"id": "train-3289", "question": "What is the Production company of the tv series wizards of waverly place", "answer": "It's a Laugh Productions", "source": "kg", "source_ids": [["E013287", "P31", "E002073"], ["E013287", "P159", "E006832"], ["E013287", "P17", "E006574"]]}
+{"id": "train-3376", "question": "In what film did Donald Sutherland make his acting debut?", "answer": "The World Ten Times Over", "source": "table", "source_ids": ["T0188"]}
+{"id": "train-3464", "question": "Who directed the episode MADMAX of Stranger Things series?", "answer": "Duffer brothers", "source": "doc", "source_ids": ["D02745", "D02200", "D00254"]}
+{"id": "train-3469", "question": "Who were the directors of the episode named MADMAX of the series Stranger Things?", "answer": "Duffer brothers", "source": "doc", "source_ids": ["D02745", "D02200", "D00254"]}
+{"id": "train-3613", "question": "What show did Leslie Jordan have a recurring role on in 2005?", "answer": "Boston Legal", "source": "table", "source_ids": ["T0445"]}
+{"id": "train-3645", "question": "What is the production company of the tv series High Seas?", "answer": "Bambú Producciones", "source": "kg", "source_ids": [["E010799", "P272", "E004535"]]}
+{"id": "train-3733", "question": "Who is the director of the Second season of Locke & Key?", "answer": "Mark Tonderai", "source": "kg", "source_ids": [["E010400", "P57", "E007061"]]}
+{"id": "train-3941", "question": "Who directs the tv series hospital playlist?", "answer": "Shin Won-ho", "source": "kg", "source_ids": [["E012936", "P57", "E002334"]]}
+{"id": "train-3942", "question": "what is the genre of the tv series Hospital Playlist?", "answer": "medical drama", "source": "kg", "source_ids": [["E012936", "P136", "E003748"]]}
+{"id": "train-3943", "question": "Who is the screenwriter of the tv series Hospital Playlist?", "answer": "Lee Woo-jung", "source": "kg", "source_ids": [["E012936", "P58", "E003146"]]}
+{"id": "train-3946", "question": "Who is the director of the tv series Hospital Playlist?", "answer": "Shin Won-ho", "source": "kg", "source_ids": [["E012936", "P57", "E002334"]]}
+{"id": "train-4004", "question": "Which is the debut movie of Kevin Alejandro?", "answer": "Purgatory Flats", "source": "table", "source_ids": ["T0398"]}
+{"id": "train-4151", "question": "Who directs the episode \"Liber\" \"The Book\" in tv series Luna Nera?", "answer": "Francesca Comencini", "source": "kg", "source_ids": [["E012877", "P57", "E008277"]]}
+{"id": "train-4210", "question": "What was Nathan Fillion's first television show?", "answer": "Ordeal in the Arctic", "source": "table", "source_ids": ["T0588"]}
+{"id": "train-4215", "question": "What show was Nathan Fillion's first TV role?", "answer": "Ordeal in the Arctic", "source": "table", "source_ids": ["T0588"]}
+{"id": "train-4361", "question": "What 2002 movie starred Mary-Kate and Ashley Olsen?", "answer": "When in Rome", "source": "table", "source_ids": ["T0503"]}
+{"id": "train-4863", "question": "Who is the Inspector of the Burgue Constabulary in Carnival Row series?", "answer": "Orlando Bloom", "source": "kg", "source_ids": [["E008309", "P161", "E008192"]]}
+{"id": "train-4866", "question": "Who played as human street performer in Carnival Row series?", "answer": "Simon McBurney", "source": "kg", "source_ids": [["E008309", "P161", "E011860"]]}
+{"id": "train-4868", "question": "Name of the Inspector of Burgue Constabulary in Carnival Row series?", "answer": "Orlando Bloom", "source": "kg", "source_ids": [["E008309", "P161", "E008192"]]}
+{"id": "train-797", "question": "Who played teenage Martha in Dark?", "answer": "Lisa Vicari", "source": "table", "source_ids": ["T0176"]}
+{"id": "train-802", "question": "What is the name of the actress who played teenage Martha in Dark?", "answer": "Lisa Vicari", "source": "table", "source_ids": ["T0176"]}
+{"id": "train-917", "question": "Who is the creator of the tv series Loki?", "answer": "Michael Waldron", "source": "kg", "source_ids": [["E001383", "P31", "E008851"], ["E001383", "P21", "E011442"], ["E001383", "P27", "E006574"]]}
+{"id": "train-920", "question": "Who directs the episode \"Glorious Purpose\" in the tv series Loki?", "answer": "Kate Herron", "source": "kg", "source_ids": [["E001611", "P31", "E008851"], ["E001611", "P21", "E011441"], ["E001611", "P106", "E005659"]]}
+{"id": "train-922", "question": "Who creates the flim The Princess Bride?", "answer": "Michael Waldron", "source": "kg", "source_ids": [["E001383", "P31", "E008851"], ["E001383", "P21", "E011442"], ["E001383", "P27", "E006574"]]}
+{"id": "train-950", "question": "What business school did Aaron Korsh attend?", "answer": "The Wharton School", "source": "kg", "source_ids": [["E002530", "P69", "E002490"]]}

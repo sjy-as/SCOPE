@@ -1,0 +1,27 @@
+{
+  "domain": "history",
+  "routing_mode": "deepsieve",
+  "knowledge_base": [
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/history/questions.json",
+  "output_dir": "/root/autodl-tmp/BBB_hybridQA/experiments/route_only/outputs/deepsieve/history",
+  "semantic_catalog": null,
+  "atomr_prompts": null,
+  "deepsieve_source_summary": "/root/autodl-tmp/BBB_hybridQA/data/hybridqa/domains/history/deepsieve_source_summary.json",
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 29.54645499959588,
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 20,
+    "route1.table": 80,
+    "route2.doc": 15,
+    "route2.table": 85
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "domain": "books",
+  "generated_from": "semantic_catalog_build_report.json",
+  "multi_source_patterns": [
+    "Questions about a book's plot, characters, themes, or narrative details are best answered from doc sources, which contain rich prose context.",
+    "Questions about specific factual relationships, such as authorship, publication dates, awards, or character affiliations, are best answered from kg sources, which provide explicit entity-relation-entity triples.",
+    "Questions that require comparing multiple attributes across a set of items (e.g., a list of books by an author with their publication years) are best answered from table sources, which offer structured row/column data.",
+    "Some questions may require combining sources, e.g., using kg to identify an author and doc to understand the plot of their work."
+  ],
+  "routing_boundary": "Use doc for narrative and descriptive content; use kg for precise factual relations and entity attributes; use table for structured comparisons and aggregations. Avoid using kg for questions requiring prose interpretation or subjective analysis; avoid using doc for exact numeric or relational queries; avoid using table for open-ended or context-dependent questions.",
+  "sources": {
+    "doc": {
+      "data_shape": "Narrative passages from books, articles, or summaries, providing rich contextual and descriptive information.",
+      "best_for": [
+        "Understanding plot, character development, themes, and stylistic elements.",
+        "Answering 'why' and 'how' questions that require reasoning over text.",
+        "Extracting quotes, paraphrases, or specific narrative events.",
+        "Handling ambiguous or open-ended queries where context is key."
+      ],
+      "avoid_when": [
+        "Exact factual lookups (e.g., 'Who wrote X?' or 'When was Y published?') where a single triple suffices.",
+        "Structured comparisons across multiple entities (e.g., 'List all books by author Z with their page counts').",
+        "Queries requiring precise numeric or date values that are better stored in tables or KG."
+      ],
+      "summary": "Doc sources are the go-to for any question that involves reading comprehension, narrative detail, or subjective interpretation. They provide the depth needed for complex reasoning but are less efficient for straightforward factual queries."
+    },
+    "kg": {
+      "data_shape": "Explicit entity-relation-entity triples (subject-predicate-object) with possible qualifiers, forming a knowledge graph of entities and their attributes.",
+      "best_for": [
+        "Direct factual questions: 'Who is the author of X?', 'What awards did Y win?', 'When was Z born?'",
+        "Traversing relationships: 'Which books are part of the same series?', 'Who collaborated with whom?'",
+        "Questions about entity attributes like nationality, occupation, or publication date.",
+        "Disambiguating entities with similar names by using relations."
+      ],
+      "avoid_when": [
+        "Questions requiring narrative context or explanation (e.g., 'Why did the character act this way?').",
+        "Queries that need aggregation or comparison across many instances (better in tables).",
+        "When the relation is not explicitly modeled in the KG, or when the predicate is too broad (e.g., 'has part' might be too generic)."
+      ],
+      "summary": "KG is the most precise source for factual, relation-based queries. It excels at answering 'who', 'what', 'when', and 'where' with exactness, but it lacks the nuance of prose and the structure of tables for comparative analysis."
+    },
+    "table": {
+      "data_shape": "Structured rows and columns, often representing lists of items with attributes (e.g., books with author, year, genre).",
+      "best_for": [
+        "Comparative queries: 'Which of these books has the highest rating?', 'Sort authors by birth year.'",
+        "Aggregations: 'How many books by X were published in the 1990s?', 'What is the average page count?'",
+        "Filtering and sorting: 'List all fantasy novels by Y.'",
+        "When the answer is a set of items with multiple attributes."
+      ],
+      "avoid_when": [
+        "Questions requiring deep narrative understanding or subjective interpretation.",
+        "Queries that involve complex relationships not easily flattened into a table (e.g., 'Who influenced whom?').",
+        "When the table lacks the necessary columns or rows to answer the question."
+      ],
+      "summary": "Tables are ideal for structured data retrieval and analysis. They provide a clear, concise view of multiple entities and their properties, making them perfect for comparison and aggregation tasks, but they are limited to the predefined schema."
+    }
+  },
+  "generator": {
+    "platform": "DeepSeek",
+    "model": "deepseek-chat",
+    "evidence_basis": "balanced_cluster_representatives"
+  }
+}

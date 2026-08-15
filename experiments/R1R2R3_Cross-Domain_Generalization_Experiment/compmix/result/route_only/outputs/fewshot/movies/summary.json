@@ -1,0 +1,33 @@
+{
+  "domain": "movies",
+  "routing_mode": "atomr",
+  "knowledge_base": [
+    "kg",
+    "table",
+    "doc"
+  ],
+  "input": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/movies/qa_benchmark/questions_clean.jsonl",
+  "output_dir": "/root/autodl-tmp/BBB_CompMix/experiments/route_only/outputs/atomr/movies",
+  "total": 100,
+  "succeeded": 100,
+  "failed": 0,
+  "elapsed_seconds": 21.00584810320288,
+  "semantic_catalog": null,
+  "atomr_prompts": "/root/autodl-tmp/BBB_CompMix/experiments/five_domain/benchmarks/movies/atomr_few_shot_prompts.json",
+  "deepsieve_source_summary": null,
+  "decomposition_counts": {
+    "1": 97,
+    "2": 3
+  },
+  "parse_failed_counts": {
+    "route1": 0,
+    "route2": 0
+  },
+  "primary_source_counts": {
+    "route1.doc": 21,
+    "route1.kg": 61,
+    "route1.table": 18,
+    "route2.kg": 2,
+    "route2.table": 1
+  }
+}

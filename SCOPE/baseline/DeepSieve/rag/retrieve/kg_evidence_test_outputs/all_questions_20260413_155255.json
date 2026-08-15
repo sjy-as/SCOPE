@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Which team was founded by Peter Holt?",
+    "program": {
+      "question": "Which team was founded by Peter Holt?",
+      "backend": "mmqa_local_kg",
+      "api_url": "http://127.0.0.1:8002/query",
+      "entities": [
+        "Peter Holt"
+      ],
+      "relation_text": "founded team",
+      "relation_targets": [
+        {
+          "head": "Peter Holt",
+          "predicate": "founded",
+          "tail": "team"
+        }
+      ],
+      "relation_target": {
+        "head": "Peter Holt",
+        "predicate": "founded",
+        "tail": "team"
+      },
+      "parser": "llm"
+    },
+    "answer": "",
+    "inner_content": [
+      {
+        "content": []
+      }
+    ],
+    "evidence_count": 1,
+    "evidence": [
+      {
+        "label": "San Antonio Spurs",
+        "qid": "Q159729",
+        "meta": {
+          "enwiki_title": "San Antonio Spurs",
+          "inception": "1967",
+          "owners": "Peter Holt",
+          "fallback_target_type": "team",
+          "fallback_column": "owners",
+          "fallback_match_value": "Peter Holt"
+        },
+        "head_entity": "Peter Holt",
+        "head_qid": "",
+        "relation": "founded",
+        "direction": "fallback_property",
+        "parser": "llm",
+        "evidence_source": "fallback_property_match",
+        "relation_target": {
+          "head": "Peter Holt",
+          "predicate": "founded",
+          "tail": "team"
+        },
+        "head_entity_snapshot": {},
+        "tail_entity_snapshot": {
+          "qid": "Q159729",
+          "label": "San Antonio Spurs",
+          "types": [
+            "team"
+          ],
+          "attrs": {
+            "enwiki_title": "San Antonio Spurs",
+            "inception": "1967",
+            "owners": "Peter Holt"
+          }
+        },
+        "similarity_score": 11.6279
+      }
+    ],
+    "unresolved": []
+  }
+]

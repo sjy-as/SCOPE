@@ -1,0 +1,36 @@
+{
+  "question": "Who was the coach of L.A. Lakers in the 1968-69 season?",
+  "program": {
+    "question": "Who was the coach of L.A. Lakers in the 1968-69 season?",
+    "backend": "mmqa_local_kg",
+    "api_url": "http://127.0.0.1:8002/query",
+    "entities": [
+      "L.A. Lakers"
+    ],
+    "relation_text": "coach of",
+    "relation_targets": [
+      {
+        "head": "L.A. Lakers",
+        "predicate": "coachedBy",
+        "tail": "coach"
+      }
+    ],
+    "relation_target": {
+      "head": "L.A. Lakers",
+      "predicate": "coachedBy",
+      "tail": "coach"
+    },
+    "parser": "llm"
+  },
+  "answer": "",
+  "inner_content": [
+    {
+      "content": []
+    }
+  ],
+  "evidence_count": 0,
+  "evidence": [],
+  "unresolved": [
+    "L.A. Lakers"
+  ]
+}
