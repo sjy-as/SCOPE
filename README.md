@@ -22,7 +22,7 @@ We also introduce a new benchmark for multi-source QA over heterogeneous sources
   <img src="figure/framework.png" width="860" alt="SCOPE framework">
 </p>
 
-## 🧪 Benchmark
+## 🌐 Benchmark
 <p align="center">
   <img src="figure/CMQA.jpg" width="860" alt="CMQA benchmark">
 </p>
