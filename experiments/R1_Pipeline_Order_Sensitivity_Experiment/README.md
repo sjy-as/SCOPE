@@ -6,6 +6,27 @@
 > **Main Metric:** Final-answer accuracy judged as **Exact + Partial**.
 
 ---
+## 🧪 Full-Scale Evaluation
+
+🎉 We further extend the pipeline-order sensitivity experiment to the **full CMQA benchmark (3,421 questions)**.
+
+The swapped-order pipeline is compared with the original full SCOPE results reported in the main experiment.
+
+| Source Pair | Original SCOPE | Swapped Order (Full) |     Δ |
+| ----------- | -------------: | -------------------: | ----: |
+| KG–Doc      |          0.771 |                    — |     — |
+| KG–Table    |          0.737 |                    — |     — |
+| Table–Doc   |          0.696 |                    — |     — |
+| **Overall** |      **0.735** |                **—** | **—** |
+
+---
+
+
+### 🧪 Sampled Evaluation
+
+The following experiment reports the original **900-question sampled evaluation** used for pipeline-order sensitivity analysis.
+
+
 
 ## ⚙️ Experimental Setup
 
@@ -71,7 +92,3 @@ Together with the backbone and cross-dataset experiments reported in the paper, 
 * **Swapped order:**
   `DDD_order/result/swapped_promptfix_parallel/`
 
-
-## 🧪 Full-Scale Evaluation
-
-We are currently extending this experiment to the **full dataset**. The complete results will be added to this file once available.
