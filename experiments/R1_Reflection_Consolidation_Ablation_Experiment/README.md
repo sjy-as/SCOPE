@@ -13,6 +13,13 @@ This experiment disentangles the roles of **Reflection** and **Consolidation** i
 
 **Conclusion.** Reflection is the primary **accuracy safeguard**, while Consolidation mainly improves **execution efficiency** by converting repeated reflection outcomes into reusable experience.
 
+### 📌 Note on Re-run Variance
+
+The original full-model cost logs were unavailable, so we re-ran **Full SCOPE** to obtain the cost statistics reported below. The re-run achieves **0.721 accuracy**, which is close to the **0.735** reported in the paper. Given the stochastic nature of LLM-based execution, this small variation is considered reasonable.
+
+For future reporting, we will run each setting **three times** and report the **mean ± standard deviation** to better account for run-to-run variance.
+
+
 ## ⚙️ Efficiency Impact of Consolidation
 
 Without Consolidation, execution becomes more expensive:
