@@ -16,14 +16,15 @@ SCOPE is a multi-source QA framework designed to answer complex questions whose 
 
 We also introduce a new benchmark for multi-source QA over heterogeneous sources, CMQA. CMQA is a challenging multi-source QA benchmark where each question requires joint reasoning across multiple heterogeneous sources and cannot be reliably answered from a single source or from model parametric knowledge alone. Specifically, we adopt CMQA-style NBA data with three paired-source QA splits: KG-Doc, KG-Table, and Table-Doc.
 
-<p align="center">
-  <img src="figure/CMQA.jpg" width="860" alt="CMQA benchmark">
-</p>
-
 ## 🧩 Framework
 
 <p align="center">
   <img src="figure/framework.png" width="860" alt="SCOPE framework">
+</p>
+
+## 🧪 Benchmark
+<p align="center">
+  <img src="figure/CMQA.jpg" width="860" alt="CMQA benchmark">
 </p>
 
 ## 📁 Repository Structure
