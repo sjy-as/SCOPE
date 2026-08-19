@@ -39,11 +39,16 @@ CompMix requires answering questions over **KG, Table, and Document** sources.
 | Without Retrieval | Standard Prompt |     58.0 |     37.0 |     44.0 |     42.0 |      46.0 |     45.4 |
 |                   | CoT             |     60.0 |     42.0 |     45.0 |     46.0 |      59.0 |     50.4 |
 |                   | Self-Ask        |     59.0 |     39.0 |     47.0 |     45.0 |  **60.0** |     50.0 |
-| With Retrieval    | DeepSieve       |     63.0 |     44.0 |     53.0 |     43.0 |      49.0 |     50.4 |
+| With Retrieval    | StandardRAG     |     53.0 |     37.0 |     40.0 |     40.0 |      44.0 |     42.8 |
+|                   | CoK             |     65.0 |     45.0 |     52.0 |     30.0 |      31.0 |     44.6 |
+|                   | IRCoT           |     69.0 |     44.0 |     57.0 | **53.0** |      59.0 |     56.4 |
+|                   | TOG2            |     37.0 |     20.0 |     44.0 |     15.0 |      42.0 |     31.6 |
+|                   | HydraRAG        |     65.0 |     42.0 |     50.0 |     39.0 |      47.0 |     48.6 |
+|                   | DeepSieve       |     63.0 |     44.0 |     53.0 |     43.0 |      49.0 |     50.4 |
 |                   | AtomR           |     63.0 | **51.0** |     59.0 | **53.0** |      56.0 |     56.4 |
 | **Ours**          | **SCOPE**       | **74.0** | **51.0** | **60.0** | **53.0** |      53.0 | **58.2** |
 
-> **SCOPE achieves the highest average strict accuracy of 58.2%**, outperforming AtomR by **1.8 pp** and DeepSieve by **7.8 pp**.
+> **SCOPE achieves the highest average strict accuracy of 58.2%**, outperforming AtomR by **1.8 pp** and DeepSieve by **7.8 pp**. Among the five additional retrieval baselines, **IRCoT** is the strongest (**56.4%** strict accuracy, tied with AtomR).
 
 ---
 
@@ -66,7 +71,7 @@ HybridQA evaluates cross-source QA across five additional domains.
 
 ---
 
-> 🚧 **Evaluation in progress.** Standard RAG, CoK, IRCoT, ToG2, and HydraRAG are still being evaluated. Their results will be added here, and **this README will be updated shortly**.
+> ✅ **CompMix baseline results are complete.** CoK, IRCoT, StandardRAG, HydraRAG, and TOG2 are now included in the CompMix table above, reported with the same LLM-judge **Strict Accuracy** as the other methods. HybridQA baseline results are still being evaluated and will be added here shortly.
 
 ---
 
@@ -258,7 +263,7 @@ All experiments support **per-question checkpointing and automatic resume**.
 
 # ✅ 6. Takeaways
 
-* 🎯 **End-to-end QA:** SCOPE achieves the best average accuracy on **both CompMix (58.2%) and HybridQA (73.0%)**.
+* 🎯 **End-to-end QA:** SCOPE achieves the best average strict accuracy on **both CompMix (58.2%) and HybridQA (73.0%)**.
 * 🧭 **Routing:** SCOPE also achieves the best overall routing score on **both benchmarks**—**49.75% source-macro accuracy** on CompMix and **61.52% average hop accuracy** on HybridQA.
 * 🌐 **Generalization:** The gains hold across **10 domains outside the original NBA setting**, supporting that SCOPE is not benchmark- or domain-specific.
 * ⚖️ **Mechanism:** SCOPE is especially effective at balancing heterogeneous source selection and maintaining reliable multi-hop routing, rather than overfitting to a dominant source.
@@ -267,4 +272,4 @@ All experiments support **per-question checkpointing and automatic resume**.
 
 ---
 
-> 🚧 **Status:** Additional long-running baselines are still being evaluated. Their results will be added and **this README will be updated shortly**.
+> 🚧 **Status:** HybridQA baselines (StandardRAG, CoK, IRCoT, TOG2, HydraRAG) are still being evaluated. Their results will be added and **this README will be updated shortly**.
