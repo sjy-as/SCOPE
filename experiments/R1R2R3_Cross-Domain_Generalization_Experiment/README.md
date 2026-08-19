@@ -21,7 +21,7 @@ Each benchmark contains **500 sampled questions** (**100 per domain**).
 | ------------ | ----------- | ---------: | -----: | --------: | -----------------: |
 | **CompMix**  | Strict Acc. | **58.20%** | 56.40% |    50.40% |       **+1.80 pp** |
 |              | Macro F1    | **57.38%** | 55.43% |    49.79% |       **+1.95 pp** |
-| **HybridQA** | Strict Acc. | **73.00%** | 57.60% |    61.00% |      **+12.00 pp** |
+| **HybridQA** | Strict Acc. | **73.00%** | 57.60% |    61.00% |       **+0.80 pp** |
 |              | Macro F1    | **72.96%** | 58.27% |    62.03% |      **+10.93 pp** |
 
 > **SCOPE achieves the best average end-to-end performance on both benchmarks**, showing that its advantage extends beyond CMQA to 10 additional domains.
@@ -63,15 +63,20 @@ HybridQA evaluates cross-source QA across five additional domains.
 | Without Retrieval | Standard Prompt |          11.0 |      15.0 |      7.0 |      7.0 |            8.0 |      9.6 |
 |                   | CoT             |          19.0 |      20.0 |     10.0 |     10.0 |           11.0 |     14.0 |
 |                   | Self-Ask        |          18.0 |      18.0 |     10.0 |      9.0 |           10.0 |     13.0 |
-| With Retrieval    | DeepSieve       |          67.0 |      57.0 |     60.0 |     63.0 |           58.0 |     61.0 |
+| With Retrieval    | StandardRAG     |          59.0 |      54.0 |     64.0 |     62.0 |           54.0 |     58.6 |
+|                   | CoK             |          29.0 |      19.0 |     22.0 |     20.0 |           23.0 |     22.6 |
+|                   | IRCoT           |          79.0 |      71.0 |     69.0 |     75.0 |           67.0 |     72.2 |
+|                   | TOG2            |          54.0 |      61.0 |     58.0 |     60.0 |           52.0 |     57.0 |
+|                   | HydraRAG        |          49.0 |      48.0 |     47.0 |     47.0 |           49.0 |     48.0 |
+|                   | DeepSieve       |          67.0 |      57.0 |     60.0 |     63.0 |           58.0 |     61.0 |
 |                   | AtomR           |          73.0 |      54.0 |     49.0 |     57.0 |           55.0 |     57.6 |
 | **Ours**          | **SCOPE**       |      **81.0** |  **76.0** | **73.0** | **71.0** |       **64.0** | **73.0** |
 
-> **SCOPE achieves 73.0% average strict accuracy on HybridQA**, outperforming DeepSieve by **12.0 pp** and AtomR by **15.4 pp**.
+> **SCOPE achieves 73.0% average strict accuracy on HybridQA**, outperforming DeepSieve by **12.0 pp** and AtomR by **15.4 pp**. Among the five additional retrieval baselines, **IRCoT** is the strongest (**72.2%** strict accuracy), 0.8 pp behind SCOPE.
 
 ---
 
-> ✅ **CompMix baseline results are complete.** CoK, IRCoT, StandardRAG, HydraRAG, and TOG2 are now included in the CompMix table above, reported with the same LLM-judge **Strict Accuracy** as the other methods. HybridQA baseline results are still being evaluated and will be added here shortly.
+> ✅ **Baseline results on both benchmarks are complete.** StandardRAG, CoK, IRCoT, TOG2, and HydraRAG are now included in both the CompMix and HybridQA tables above, reported with the same LLM-judge **Strict Accuracy** as the other methods.
 
 ---
 
@@ -272,4 +277,4 @@ All experiments support **per-question checkpointing and automatic resume**.
 
 ---
 
-> 🚧 **Status:** HybridQA baselines (StandardRAG, CoK, IRCoT, TOG2, HydraRAG) are still being evaluated. Their results will be added and **this README will be updated shortly**.
+> ✅ **Status:** HybridQA baselines (StandardRAG, CoK, IRCoT, TOG2, HydraRAG) are complete and included in the table above.
